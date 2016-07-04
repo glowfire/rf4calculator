@@ -633,7 +633,7 @@ var leveliser96 = {
 	"materials":[emeryFlower,leafClover,noelGrass,autumnGrass,fireflower,hotHotFruit]
 }
 
-var currentItem=pickledTurnip12;
+var currentItem=cornOnTheCob;
 
 var nameLine = document.createElement('p');
 var nameString = currentItem.name;
@@ -1350,7 +1350,7 @@ for (row=0;row<maxLv;row++){
         	if (0>currentValue){
         		td.style.color="red"
             } else if (currentValue>0){
-            	td.style.color="green";
+            	td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
                 td.style.fontWeight="bold";
                 td.style.fontSize=18;
             }
@@ -1363,7 +1363,7 @@ for (row=0;row<maxLv;row++){
             	td.style.color="blue";
                 td.style.fontWeight="bold";
                 if (profitArray[row+maxLv*(col-1)]>0){
-                	td.style.color="green";
+                	td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
                 	td.style.fontSize=18;
                 }
             }
