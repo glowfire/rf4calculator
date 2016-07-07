@@ -734,7 +734,7 @@ registerItem({
     "effects":{
     	// None
         },
-	"materials":["Great 4-Leaf Clover","Great Emery Flower","Turnip"]
+	"materials":["Great 4-Leaf Clover","Great Emery Flower"]
 })
 
 registerItem({
@@ -925,9 +925,8 @@ function getItemInfo(){
 
 function showBasicStats(){
 	var nameLine = document.createElement('p');
-	var nameString = currentItem.name;
+	var nameString = "<span style='color:#00FF00'>" + currentItem.name + "</span>";
 	nameLine.appendChild(document.createTextNode(nameString));
-	nameLine.style.color="darkgreen";
 	nameLine.style.fontWeight="bold";
 	nameLine.style.fontSize=25;
 	nameLine.style.fontFamily="comic sans ms";
