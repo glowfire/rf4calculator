@@ -925,7 +925,7 @@ function getItemInfo(){
 
 function showBasicStats(){
 	var nameLine = document.createElement('p');
-	var nameString = "<span style='color:#00FF00'>" + currentItem.name + "</span>";
+	var nameString = currentItem.name;
 	nameLine.appendChild(document.createTextNode(nameString));
 	nameLine.style.fontWeight="bold";
 	nameLine.style.fontSize=25;
