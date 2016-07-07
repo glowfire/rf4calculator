@@ -1,5 +1,8 @@
 <html>
 	<LINK href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
+<div id="itemSelectionDiv">
+</div>
+
 <div id="currentItemDiv">
 </div>
 
@@ -12,131 +15,138 @@
 
 <div id="multiplierTableDiv">
 <button id="multiplierTable" onclick="showMultiplierTable()">Show Multiplier Table</button>
-</div>	
-</html>
+</div>
 
 <script>
 
-var turnip = {
-	"name":"Turnip",
-    "category":"Vegetable",
-    "sell":30,
-    "buy":200,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":30,
-        "rp":5
-        },
-	"upgradeinfo":{
-    	"rarity":1,
-        "difficulty":1,
-    	"str":1
-        },
-	"ingredienteffects":{
-    	"hp":2
-        }
-	}
+String.prototype.lettersOnly=function(){
+	return this.replace(/[^A-Za-z]/g, "")
+}
 
-var pinkTurnip = {
-	"name":"Pink Turnip",
-    "category":"Vegetable",
-    "sell":200,
-    "buy":700,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":70,
-        },
-	"upgradeinfo":{
-    	"rarity":1,
-        "difficulty":21,
-    	"str":4
-        },
-	"ingredienteffects":{
-    	"hp":2//unknown
-        }
-	}
+String.prototype.numbersOnly=function(){
+	return this.replace(/[^0-9]/g, "")
+}
 
-var goldenPumpkin = {
-	"name":"Golden Pumpkin",
-    "category":"Vegetable",
-    "sell":4000,
-    "buy":2e4,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":400
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":56,
-    	"str":25,
-        "faintatkP":1
-        },
-	"ingredienteffects":{
-    	"hp":2//unknown
-        }
-	}
+String.prototype.alphanumericOnly=function(){
+	return this.replace(/[^A-Za-z0-9]/g, "")
+}
 
-var goldenPotato = {
-	"name":"Golden Potato",
-    "category":"Vegetable",
-    "sell":6e3,
-    "buy":3e4,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":350
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":55,
-    	"vit":30,
-        "faintatkP":1
-        },
-	"ingredienteffects":{
-    	"hp":2//unknown
-        }
-	}
+String.prototype.getModifiedNameString=function(number){
+	return this.lettersOnly().toLowerCase()+number
+}
 
-var goldenCabbage = {
-	"name":"Golden Cabbage",
-    "category":"Vegetable",
-    "sell":11500,
-    "buy":5e4,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":500
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":59,
-    	"int":20,
-        "faintatkP":1
-        },
-	"ingredienteffects":{
-    	"hp":2//unknown
-        }
-	}
+Object.prototype.getProductionLevel=function(){
+	var productionLevel = 0;
+	if (this.cookinglevel!==undefined){
+    	productionLevel = this.cookinglevel
+    }
+	if (this.craftinglevel!==undefined){
+    	productionLevel = this.craftinglevel
+    }
+	if (this.chemistrylevel!==undefined){
+    	productionLevel = this.chemistrylevel
+    }
+	if (this.forginglevel!==undefined){
+    	productionLevel = this.forginglevel
+    }
+    return productionLevel
+}
 
-var goldenTurnip = {
-	"name":"Golden Turnip",
-    "category":"Vegetable",
-    "sell":2e4,
-    "buy":1e5,
+Object.prototype.getUniqueNameString = function(){
+	var itemProductionLevel = this.getProductionLevel()
+    var itemName = this.name
+	return itemName.getModifiedNameString(itemProductionLevel)
+}
+
+
+masterItemList={};
+masterNameList=[];
+productMaterialMapping={};
+normalNameList=[];
+nonUniqueNames=[];
+
+function registerItem(item){
+    var normalName = item.name;
+	var uniqueNumber = item.getProductionLevel();
+    var uniqueName = item.getUniqueNameString();
+    var listedName = normalName;
+    
+    if (normalNameList.indexOf(normalName) > -1){
+    	if (nonUniqueNames.indexOf(normalName)<0){
+        	nonUniqueNames.push(normalName)
+        }
+    }
+    
+    if (item.materials!==undefined){
+    	for (i=0;i<item.materials.length;i++){
+        	var currentMaterialName = item.materials[i].getModifiedNameString("")
+        	if (productMaterialMapping[currentMaterialName]!==undefined){
+            	productMaterialMapping[currentMaterialName].push(item)
+            } else {
+            	productMaterialMapping[currentMaterialName]=[item]
+            }
+        }
+    } else {
+    	if (normalNameList.indexOf(normalName) > -1){
+        	uniqueNumber++
+        	for (j=0;j<normalNameList.length;j++){
+            	if (normalNameList[j]==normalName){
+                	uniqueNumber++
+                }
+            }
+            uniqueName = normalName.getModifiedNameString(uniqueNumber)
+        }
+    }
+    
+    if (normalNameList.indexOf(normalName)>-1){
+    	listedName += " (" + uniqueNumber +")"
+    }
+    
+	masterItemList[uniqueName]=item;
+    masterNameList.push([listedName,normalName,uniqueName,uniqueNumber]);
+    normalNameList.push(normalName)
+}
+
+///////////////////////////////////////////////////////////////////////
+
+registerItem({
+	"name":"4-Leaf Clover",
+    "category":"Plant",
+    "sell":980,
+    "buy":4000,
     "pricemultiplier":"E",
     "effects":{
-    	"hp":800
+    	"rp":50
         },
 	"upgradeinfo":{
     	"rarity":1,//unknown
-        "difficulty":67,
-    	"str":30,
-        "faintatkP":1
+        "difficulty":29
         },
 	"ingredienteffects":{
-    	"hp":2//unknown
-        }
-	}
+    	"rp":20//unknown
+		}
+	})
 
-var corn = {
+registerItem({
+	"name":"Autumn Grass",
+    "category":"Plant",
+    "sell":1800,
+    "buy":6000,
+    "pricemultiplier":"E",
+    "effects":{
+    	"rp":60
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":35,
+    	"slpresp":6
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
 	"name":"Corn",
     "category":"Vegetable",
     "sell":1000,
@@ -153,89 +163,28 @@ var corn = {
 	"ingredienteffects":{
     	"rp":20
 		}
-	}
+	})
 
-var hotHotFruit = {
-	"name":"Hot-Hot Fruit",
-    "category":"Vegetable",
-    "sell":900,
-    "buy":7000,
-    "pricemultiplier":"E",
-    "effects":{
-    	// None
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":35,
-    	"mdef":7,
-        "fireresP":5
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var pinkMelon = {
-	"name":"Pink Melon",
-    "category":"Vegetable",
-    "sell":850,
-    "buy":5000,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":90,
-        "rp":30
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":45,
-    	"int":7
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var strawberry = {
-	"name":"Strawberry",
-    "category":"Fruit",
-    "sell":135,
-    "buy":800,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":35,
-        "rp":15
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":24,
-    	"str":3,
-        "vit":3
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var pinkCat = {
-	"name":"Pink Cat",
+registerItem({
+	"name":"Emery Flower",
     "category":"Plant",
-    "sell":110,
-    "buy":450,
+    "sell":55000,
+    "buy":5e5,
     "pricemultiplier":"E",
     "effects":{
-    	"rp":25
+    	"rp":300
         },
 	"upgradeinfo":{
     	"rarity":1,//unknown
-        "difficulty":15,
-        "int":2
+        "difficulty":66,
+        "int":30
         },
 	"ingredienteffects":{
     	"rp":20//unknown
 		}
-	}
+	})
 
-var fireflower = {
+registerItem({
 	"name":"Fireflower",
     "category":"Plant",
     "sell":2800,
@@ -253,65 +202,127 @@ var fireflower = {
 	"ingredienteffects":{
     	"rp":20//unknown
 		}
-	}
+	})
 
-var autumnGrass = {
-	"name":"Autumn Grass",
-    "category":"Plant",
-    "sell":1800,
-    "buy":6000,
+registerItem({
+	"name":"Golden Cabbage",
+    "category":"Vegetable",
+    "sell":11500,
+    "buy":5e4,
     "pricemultiplier":"E",
     "effects":{
-    	"rp":60
+    	"hp":500
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":59,
+    	"int":20,
+        "faintatkP":1
+        },
+	"ingredienteffects":{
+    	"hp":2//unknown
+        }
+	})
+
+registerItem({
+	"name":"Golden Potato",
+    "category":"Vegetable",
+    "sell":6e3,
+    "buy":3e4,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":350
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":55,
+    	"vit":30,
+        "faintatkP":1
+        },
+	"ingredienteffects":{
+    	"hp":2//unknown
+        }
+	})
+
+registerItem({
+	"name":"Golden Pumpkin",
+    "category":"Vegetable",
+    "sell":4000,
+    "buy":2e4,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":400
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":56,
+    	"str":25,
+        "faintatkP":1
+        },
+	"ingredienteffects":{
+    	"hp":2//unknown
+        }
+	})
+    
+registerItem({
+	"name":"Golden Turnip",
+    "category":"Vegetable",
+    "sell":2e4,
+    "buy":1e5,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":800
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":67,
+    	"str":30,
+        "faintatkP":1
+        },
+	"ingredienteffects":{
+    	"hp":2//unknown
+        }
+	})
+
+registerItem({
+	"name":"Great Emery Flower",
+    "category":"Plant",
+    "sell":25*1e4,
+    "pricemultiplier":"E",
+    "effects":{
+    	"rp":500
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":95,
+        "int":80
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Hot-Hot Fruit",
+    "category":"Vegetable",
+    "sell":900,
+    "buy":7000,
+    "pricemultiplier":"E",
+    "effects":{
+    	// None
         },
 	"upgradeinfo":{
     	"rarity":1,//unknown
         "difficulty":35,
-    	"slpresp":6
+    	"mdef":7,
+        "fireresP":5
         },
 	"ingredienteffects":{
     	"rp":20//unknown
 		}
-	}
-
-var emeryFlower = {
-	"name":"Emery Flower",
-    "category":"Plant",
-    "sell":55000,
-    "buy":5e5,
-    "pricemultiplier":"E",
-    "effects":{
-    	"rp":300
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":66,
-        "int":30
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var leafClover = {
-	"name":"4-Leaf Clover",
-    "category":"Plant",
-    "sell":980,
-    "buy":4000,
-    "pricemultiplier":"E",
-    "effects":{
-    	"rp":50
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":29
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var noelGrass = {
+	})
+    
+registerItem({
 	"name":"Noel Grass",
     "category":"Plant",
     "sell":2000,
@@ -328,123 +339,9 @@ var noelGrass = {
 	"ingredienteffects":{
     	"rp":20//unknown
 		}
-	}
+	})
 
-var greatEmeryFlower = {
-	"name":"Great Emery Flower",
-    "category":"Plant",
-    "sell":25*1e4,
-    "pricemultiplier":"E",
-    "effects":{
-    	"rp":500
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":95,
-        "int":80
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var witheredGrass = {
-	"name":"Withered Grass",
-    "category":"Plant",
-    "sell":1,
-    "buy":100,
-    "pricemultiplier":"E",
-    "effects":{
-    	"statusailments":["PSN"],
-    	"rpP":-20
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":1,
-        "vit":-1
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var blueGrass = {
-	"name":"Blue Grass",
-    "category":"Plant",
-    "sell":5,
-    "buy":120,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":30,
-    	"rp":3
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":11
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var blackGrass = {
-	"name":"Black Grass",
-    "category":"Plant",
-    "sell":5,
-    "buy":120,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":50,
-    	"rp":3
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":23
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var whiteGrass = {
-	"name":"White Grass",
-    "category":"Plant",
-    "sell":5,
-    "buy":120,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":200,
-    	"rp":3
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":65
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-
-var yellowGrass = {
-	"name":"Yellow Grass",
-    "category":"Plant",
-    "sell":5,
-    "buy":120,
-    "pricemultiplier":"E",
-    "effects":{
-    	"hp":100,
-    	"rp":3
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":39
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	}
-    
-var pickledTurnip4 = {
+registerItem({
 	"name":"Pickled Turnip",
     "cookinglevel":4,
     "category":"No Tool",
@@ -458,10 +355,10 @@ var pickledTurnip4 = {
         "vit":3,
         "int":5
         },
-	"materials":[turnip]
-	}
+	"materials":["Turnip"]
+	})
     
-var pickledTurnip12 = {
+registerItem({
 	"name":"Pickled Turnip",
     "cookinglevel":12,
     "category":"No Tool",
@@ -475,26 +372,48 @@ var pickledTurnip12 = {
         "vit":3,
         "int":5
         },
-	"materials":[pinkTurnip]
-	}
-    
-var cornOnTheCob = {
-	"name":"Corn on the Cob",
-    "cookinglevel":52,
-    "category":"Oven",
-    "sell":1860,
-    "buy":6200,
-    "pricemultiplier":"C1",
+	"materials":["Pink Turnip"]
+	})
+
+registerItem({
+	"name":"Pink Cat",
+    "category":"Plant",
+    "sell":110,
+    "buy":450,
+    "pricemultiplier":"E",
     "effects":{
-    	"hp":5000,
-        "hpP":20,
-        "rp":1000,
-        "vit":180,
+    	"rp":25
         },
-	"materials":[corn]
-	}
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":15,
+        "int":2
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Pink Turnip",
+    "category":"Vegetable",
+    "sell":200,
+    "buy":700,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":70,
+        },
+	"upgradeinfo":{
+    	"rarity":1,
+        "difficulty":21,
+    	"str":4
+        },
+	"ingredienteffects":{
+    	"hp":2//unknown
+        }
+	})
     
-var preludeToLove = {
+registerItem({
 	"name":"Prelude to Love",
     "cookinglevel":61,
     "category":"Mixer",
@@ -516,10 +435,51 @@ var preludeToLove = {
         "darkresP":50,
         "loveresP":100
         },
-	"materials":[pinkMelon,strawberry]
-}
-    
-var turnipHeaven = {
+	"materials":["Pink Melon","Strawberry"]
+})
+
+registerItem({
+	"name":"Strawberry",
+    "category":"Fruit",
+    "sell":135,
+    "buy":800,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":35,
+        "rp":15
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":24,
+    	"str":3,
+        "vit":3
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Turnip",
+    "category":"Vegetable",
+    "sell":30,
+    "buy":200,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":30,
+        "rp":5
+        },
+	"upgradeinfo":{
+    	"rarity":1,
+        "difficulty":1,
+    	"str":1
+        },
+	"ingredienteffects":{
+    	"hp":2
+        }
+	})
+
+registerItem({
 	"name":"Turnip Heaven",
     "cookinglevel":96,
     "category":"No Tool",
@@ -541,10 +501,122 @@ var turnipHeaven = {
         "lightresP":20,
         "darkresP":20
         },
-	"materials":[turnip,pinkTurnip,goldenTurnip]
-}
+	"materials":["Turnip","Pink Turnip","Golden Turnip"]
+})
     
-var goldJuice = {
+registerItem({
+	"name":"Withered Grass",
+    "category":"Plant",
+    "sell":1,
+    "buy":100,
+    "pricemultiplier":"E",
+    "effects":{
+    	"statusailments":["PSN"],
+    	"rpP":-20
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":1,
+        "vit":-1
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Blue Grass",
+    "category":"Plant",
+    "sell":5,
+    "buy":120,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":30,
+    	"rp":3
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":11
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Black Grass",
+    "category":"Plant",
+    "sell":5,
+    "buy":120,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":50,
+    	"rp":3
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":23
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"White Grass",
+    "category":"Plant",
+    "sell":5,
+    "buy":120,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":200,
+    	"rp":3
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":65
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Yellow Grass",
+    "category":"Plant",
+    "sell":5,
+    "buy":120,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":100,
+    	"rp":3
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":39
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Corn on the Cob",
+    "cookinglevel":52,
+    "category":"Oven",
+    "sell":1860,
+    "buy":6200,
+    "pricemultiplier":"C1",
+    "effects":{
+    	"hp":5000,
+        "hpP":20,
+        "rp":1000,
+        "vit":180,
+        },
+	"materials":["Corn"]
+	})
+
+registerItem({
 	"name":"Gold Juice",
     "cookinglevel":99,
     "category":"Mixer",
@@ -562,30 +634,31 @@ var goldJuice = {
         "earthresP":10,
         "windresP":10
         },
-	"materials":[goldenPumpkin,emeryFlower,goldenPotato,goldenTurnip,goldenCabbage]
-}
-    
-var formulaA = {
+	"materials":["Golden Pumpkin","Emery Flower","Golden Potato",
+    	"Golden Turnip","Golden Cabbage"]
+})
+
+registerItem({
 	"name":"Formula A",
     "chemistrylevel":29,
     "category":"Nutrient",
     "sell":30,
     "buy":1200,
     "pricemultiplier":"Ch",    
-	"materials":[witheredGrass,blueGrass,blackGrass]
-}
+	"materials":["Withered Grass","Blue Grass","Black Grass"]
+})
     
-var formulaB = {
+registerItem({
 	"name":"Formula B",
     "chemistrylevel":41,
     "category":"Nutrient",
     "sell":240,
     "buy":3600,
     "pricemultiplier":"Ch",    
-	"materials":[yellowGrass,pinkCat,leafClover]
-}
+	"materials":["Yellow Grass","Pink Cat","4-Leaf Clover"]
+})
     
-var formuade65 = {
+registerItem({
 	"name":"Formuade",
     "chemistrylevel":65,
     "category":"Medicine",
@@ -607,20 +680,20 @@ var formuade65 = {
         "sickresP":25,
         "faintresP":25
         },
-	"materials":[hotHotFruit]
-}
+	"materials":["Hot-Hot Fruit"]
+})
     
-var formulaC = {
+registerItem({
 	"name":"Formula C",
     "chemistrylevel":72,
     "category":"Nutrient",
     "sell":500,
     "buy":9800,
     "pricemultiplier":"Ch",    
-	"materials":[whiteGrass,fireflower,corn]
-}
+	"materials":["White Grass","Fireflower","Corn"]
+})
     
-var leveliser96 = {
+registerItem({
 	"name":"Leveliser",
     "chemistrylevel":96,
     "category":"Medicine",
@@ -630,51 +703,275 @@ var leveliser96 = {
     "effects":{
     	// None
         },
-	"materials":[emeryFlower,leafClover,noelGrass,autumnGrass,fireflower,hotHotFruit]
-}
+	"materials":["Emery Flower","4-Leaf Clover","Noel Grass",
+    	"Autumn Grass","Fireflower","Hot-Hot Fruit"]
+})
 
-var currentItem=cornOnTheCob;
-
-var nameLine = document.createElement('p');
-var nameString = currentItem.name;
-nameLine.appendChild(document.createTextNode(nameString));
-nameLine.style.color="darkgreen";
-nameLine.style.fontWeight="bold";
-nameLine.style.fontSize=25;
-nameLine.style.fontFamily="comic sans ms";
-
-var basicStats = document.createElement('p');
-var basicStatsString = "Category: "+currentItem.category
-var node = document.createTextNode(basicStatsString);
-basicStats.appendChild(node);
-basicStats.innerHTML+="<br>";
-if (currentItem.cookinglevel!==undefined){
-	basicStats.innerHTML+="Cooking Lv: "+currentItem.cookinglevel
-    }
-if (currentItem.forginglevel!==undefined){
-	basicStats.innerHTML+="Forging Lv: "+currentItem.forginglevel
-    }
-if (currentItem.craftinglevel!==undefined){
-	basicStats.innerHTML+="Crafting Lv: "+currentItem.craftinglevel
-    }
-if (currentItem.chemistrylevel!==undefined){
-	basicStats.innerHTML+="Chemistry Lv: "+currentItem.chemistrylevel
-    }
+registerItem({
+	"name":"Great 4-Leaf Clover",
+    "category":"Plant",
+    "sell":5000,
+    "pricemultiplier":"E",
+    "effects":{
+    	"rp":100
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":52
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
     
-var currentSellPrice=currentItem.sell;
+registerItem({
+	"name":"Leveliser",
+    "chemistrylevel":99,
+    "category":"Medicine",
+    "sell":3e3,
+    "buy":5e6,
+    "pricemultiplier":"Ch",
+    "effects":{
+    	// None
+        },
+	"materials":["Great 4-Leaf Clover","Great Emery Flower","Turnip"]
+})
 
-if (currentItem.buy!==undefined){
-	var currentBuyPrice=currentItem.buy;
-	var currentBuyPriceDiscount=Math.ceil(currentBuyPrice*.9);
+registerItem({
+	"name":"Dark Crystal",
+    "category":"Crystals",
+    "sell":240,
+    "buy":1440,
+    "pricemultiplier":"E",
+	"upgradematerial":{
+    	"rarity":1,//unknown
+        "difficulty":25,
+        "str":3,
+        "vit":3
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Devil Blood",
+    "category":"Liquids",
+    "sell":116,
+    "buy":920,
+    "pricemultiplier":"E",
+	"upgradematerial":{
+    	"rarity":1,//unknown
+        "difficulty":39,
+        "str":3,/////////////////
+        "vit":3//////////////////
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+registerItem({
+	"name":"Pink Melon",
+    "category":"Vegetable",
+    "sell":850,
+    "buy":5000,
+    "pricemultiplier":"E",
+    "effects":{
+    	"hp":90,
+        "rp":30
+        },
+	"upgradeinfo":{
+    	"rarity":1,//unknown
+        "difficulty":45,
+    	"int":7
+        },
+	"ingredienteffects":{
+    	"rp":20//unknown
+		}
+	})
+
+////////////////////////////////////////////////////////////////////////////
+
+function nameComparator(a, b) {
+   if (a[0].toLowerCase() < b[0].toLowerCase()){ return -1;
+   } else if (a[0].toLowerCase() > b[0].toLowerCase()){ return 1;
+   } else {return 0;}
 }
 
-var currentMaterialsBuyPrice=0;
-var currentMaterialsBuyPriceDiscount=0;
+function levelComparator(a, b) {
+   if (parseInt(a[2]) < parseInt(b[2])){ return -1;
+   } else if (parseInt(a[2]) > parseInt(b[2])){ return 1;
+   } else {return 0};
+}
+
+var sortedMasterNameList = masterNameList.sort(nameComparator);
+
+for (i=0;i<nonUniqueNames.length;i++){
+	var currentName = nonUniqueNames[i];
+	for (j=0;j<sortedMasterNameList.length;j++){
+    	if (sortedMasterNameList[j][0]==currentName){
+        	sortedMasterNameList[j][0]+=" ("
+            if (sortedMasterNameList[j][3]==0){
+        		sortedMasterNameList[j][0]+=1
+            } else {
+            	sortedMasterNameList[j][0]+=sortedMasterNameList[j][3]
+            }
+        	sortedMasterNameList[j][0]+=")"
+        }
+    }
+}
+
+String.prototype.convertStringToItem=function(){
+	var fullLength = masterNameList.length
+	var halfWayPoint = Math.ceil(fullLength/2)
+	for (i=0;i<halfWayPoint;i++){
+    	var frontNameSet = sortedMasterNameList[i]
+        var backNameSet = sortedMasterNameList[fullLength-1-i]
+        
+        var currentString = this
+        var frontString = frontNameSet[1]
+        var backString = backNameSet[1]
+        
+        var currentModifiedString = this.replace(/ /g,'').toLowerCase()
+        var frontModifiedString = frontNameSet[1].replace(/ /g,'').toLowerCase()
+        var backModifiedString = backNameSet[1].replace(/ /g,'').toLowerCase()
+    	
+        if (currentString==frontString){
+        	return masterItemList[frontNameSet[2]]
+            break;
+        } else if (currentString==backString){
+        	return masterItemList[backNameSet[2]]
+            break;
+        } else if (currentModifiedString==backModifiedString){
+        	return masterItemList[backNameSet[2]]
+            break;
+        } else if (currentModifiedString==frontModifiedString){
+        	return masterItemList[frontNameSet[2]]
+            break;
+        }
+    }
+}
+
+String.prototype.convertStringToItemByListedName=function(){
+	var fullLength = masterNameList.length
+	var halfWayPoint = Math.ceil(fullLength/2)
+	for (i=0;i<halfWayPoint;i++){
+    	var frontNameSet = masterNameList[i]
+        var backNameSet = masterNameList[fullLength-1-i]
+        var currentString = this.replace(/ /g,'').toLowerCase().alphanumericOnly()
+        var frontString = frontNameSet[0].replace(/ /g,'').toLowerCase().alphanumericOnly()
+        var backString = backNameSet[0].replace(/ /g,'').toLowerCase().alphanumericOnly()
+    	if (currentString==frontString){
+        	return masterItemList[frontNameSet[2]]
+            break;
+        } else if (currentString==backString){
+        	return masterItemList[backNameSet[2]]
+            break;
+        }
+    }
+}
+
+Array.prototype.convertStringListToObjectList=function(){
+	var materialsArray = [];
+    for (i=0;i<this.length;i++){
+    	this[i].convertStringToItem()
+    }
+}
+
+var dropdownList = document.createElement("select");
+dropdownList.setAttribute("id","itemSelect")
+document.getElementById("itemSelectionDiv").appendChild(dropdownList);
+
+var getStatsBtn = document.createElement("button");
+getStatsBtn.setAttribute("id","getInfo")
+getStatsBtn.setAttribute("onclick","getItemInfo()")
+getStatsBtn.innerHTML="Get Item Statistics"
+document.getElementById("itemSelectionDiv").appendChild(getStatsBtn);
+
+for (i=0;i<sortedMasterNameList.length;i++){
+	var currentNameSet = sortedMasterNameList[i];
+	var currentUniqueName = currentNameSet[2];
+	option=document.createElement("option");
+    document.getElementById("itemSelect").appendChild(option);
+    option.innerHTML = currentNameSet[0];
+    option.value = currentUniqueName;
+}
+
+////////////////////////////////////////////////////////////////
+//var currentItem="cornonthecob".convertStringToItem()
+//var currentItem="leveliser99".convertStringToItemByListedName()
+///////////////////////////////////////////////////////////////
+    
+var currentItem
+var currentSellPrice
+var currentBuyPrice
+var currentBuyPriceDiscount
+        
+function getItemInfo(){
+	var itemSelected = document.getElementById("itemSelect").value
+    currentItem=masterItemList[itemSelected]
+    currentSellPrice=currentItem.sell;
+    document.getElementById("currentItemDiv").innerHTML = '';
+    showBasicStats()
+	if (currentItem.materials!==undefined){
+    	createMaterialListing()
+    }
+    //document.getElementById("dependantDiv").innerHTML = '';
+    getEffectsTable()
+    getUpgradeInfo()
+    getProfitTable()
+}
+
+function showBasicStats(){
+	var nameLine = document.createElement('p');
+	var nameString = currentItem.name;
+	nameLine.appendChild(document.createTextNode(nameString));
+	nameLine.style.color="darkgreen";
+	nameLine.style.fontWeight="bold";
+	nameLine.style.fontSize=25;
+	nameLine.style.fontFamily="comic sans ms";
+	document.getElementById('currentItemDiv').appendChild(nameLine);
+
+	var basicStats = document.createElement('p');
+	document.getElementById('currentItemDiv').appendChild(basicStats);
+	var basicStatsString = "Category: "+currentItem.category
+	var node = document.createTextNode(basicStatsString);
+	basicStats.appendChild(node);
+	basicStats.innerHTML+="<br>";
+	if (currentItem.cookinglevel!==undefined){
+		basicStats.innerHTML+="Cooking Lv: "+currentItem.cookinglevel
+    }
+	if (currentItem.forginglevel!==undefined){
+		basicStats.innerHTML+="Forging Lv: "+currentItem.forginglevel
+    }
+	if (currentItem.craftinglevel!==undefined){
+		basicStats.innerHTML+="Crafting Lv: "+currentItem.craftinglevel
+    }
+	if (currentItem.chemistrylevel!==undefined){
+		basicStats.innerHTML+="Chemistry Lv: "+currentItem.chemistrylevel
+    }
+
+	if (currentItem.buy!==undefined){
+		currentBuyPrice=currentItem.buy;
+		currentBuyPriceDiscount=Math.ceil(currentBuyPrice*.9);
+	}
+
+	var priceLine = document.createElement('p');
+	document.getElementById('currentItemDiv').appendChild(priceLine);
+	var priceString="Base Sell Price: "+currentSellPrice+" G";
+	var node = document.createTextNode(priceString);
+	priceLine.appendChild(node);
+	if (currentItem.buy!==undefined){
+		priceLine.innerHTML+="<br>Base Buy Price: "+currentBuyPrice+" G";
+		priceLine.innerHTML+=" (with discount: "+currentBuyPriceDiscount+" G)";
+	}
+}
 
 function allMaterialsBuyable(materialsArray){
 	var foo=true
     for (i=0;i<materialsArray.length;i++){
-    	var currentMaterial = materialsArray[i];
+    	var currentMaterial = materialsArray[i].convertStringToItem();
         if (currentMaterial.buy==undefined){
         	foo=false;
             break;
@@ -682,87 +979,88 @@ function allMaterialsBuyable(materialsArray){
 		}
 	return foo
     }
-
-if (currentItem.materials!==undefined){
-	var materialsList = document.createElement('p');
-	var materialsListString = "Materials: "
-	var node = document.createTextNode(materialsListString);
-	materialsList.appendChild(node);
-    for (i=0;i<currentItem.materials.length;i++){
-    	var currentMaterial = currentItem.materials[i]
-    	materialsList.innerHTML+="<br>"+(i+1)+". "+currentMaterial.name
-		if (currentMaterial.buy!==undefined){
-        	currentMaterialBuy=currentMaterial.buy;
-			currentMaterialsBuyPrice+=currentMaterialBuy;
-    		currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterialBuy*.9);
-    		materialsList.innerHTML+=" (buy: "+currentMaterial.buy+" G, discounted: "
-        	materialsList.innerHTML+=Math.ceil(currentMaterial.buy*.9)+" G)"
-        } else {
-    		materialsList.innerHTML+=" (cannot be bought)"
-        }
-    }
     
-    if (currentMaterialsBuyPrice>0){
-		materialsList.innerHTML+="<br><br>Total cost of buyable materials: "+currentMaterialsBuyPrice+" G "
-		materialsList.innerHTML+="(all discounted: "+currentMaterialsBuyPriceDiscount+" G)"
-        
-        if (currentItem.buy==undefined){
-        	materialsList.innerHTML+="<br>This item cannot be bought and must be produced."
-        } else if (currentMaterialsBuyPrice>currentItem.buy){
-        	materialsList.innerHTML+="<br>Assuming no discounts, it is cheaper to "
-            materialsList.innerHTML+="<span style='font-weight:bold'>buy the product directly</span>";
-            materialsList.innerHTML+=" than buying and processing the materials."
-        } else {
-        	materialsList.innerHTML+="<br>Assuming no discounts, it is cheaper to "
-            materialsList.innerHTML+="<span style='font-weight:bold'>buy and process the materials</span>";
-            materialsList.innerHTML+=" than buying the product directly."
-        }
-        
-    } else {
-    	materialsList.innerHTML+="<br><br>None of the materials can be bought."
-    }
-    }
+var materialsList
 
-var priceLine = document.createElement('p');
-var priceString="Base Sell Price: "+currentSellPrice+" G";
-var node = document.createTextNode(priceString);
-priceLine.appendChild(node);
-if (currentItem.buy!==undefined){
-	priceLine.innerHTML+="<br>Base Buy Price: "+currentBuyPrice+" G";
-	priceLine.innerHTML+=" (with discount: "+currentBuyPriceDiscount+" G)";
+var currentMaterialsBuyPrice
+var currentMaterialsBuyPriceDiscount
+
+function createMaterialListing(){
+
+	currentMaterialsBuyPrice = 0
+    currentMaterialsBuyPriceDiscount = 0
+
+	if (currentItem.materials!==undefined){
+		var materialsList = document.createElement('p');
+		var materialsListString = "Materials: "
+		var node = document.createTextNode(materialsListString);
+		materialsList.appendChild(node);
+    	for (j=0;j<currentItem.materials.length;j++){
+    		var currentMaterial = currentItem.materials[j].convertStringToItem()
+    		materialsList.innerHTML+="<br>"+(j+1)+". "+currentMaterial.name
+			if (currentMaterial.buy!==undefined){
+        		currentMaterialBuy=currentMaterial.buy;
+				currentMaterialsBuyPrice+=currentMaterialBuy;
+    			currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterialBuy*.9);
+    			materialsList.innerHTML+=" (buy: "+currentMaterial.buy+" G, discounted: "
+        		materialsList.innerHTML+=Math.ceil(currentMaterial.buy*.9)+" G)"
+        	} else {
+    			materialsList.innerHTML+=" (cannot be bought)"
+        	}
+    	}
+    
+    	if (currentMaterialsBuyPrice>0){
+			materialsList.innerHTML+="<br><br>Total cost of buyable materials: "+currentMaterialsBuyPrice+" G "
+			materialsList.innerHTML+="(all discounted: "+currentMaterialsBuyPriceDiscount+" G)"
+        
+        	if (currentItem.buy==undefined){
+        		materialsList.innerHTML+="<br>This item cannot be bought and must be produced."
+        	} else if (allMaterialsBuyable(currentItem.materials)){
+            	if (currentMaterialsBuyPrice>currentItem.buy){
+        			materialsList.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+            		materialsList.innerHTML+="<span style='font-weight:bold'>buy the product directly</span>";
+            		materialsList.innerHTML+=" than buying and processing the materials."
+        		} else {
+        			materialsList.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+            		materialsList.innerHTML+="<span style='font-weight:bold'>buy and process the materials</span>";
+            		materialsList.innerHTML+=" than buying the product directly."
+				}
+        	}
+        
+    	} else {
+    		materialsList.innerHTML+="<br><br>None of the materials can be bought."
+    	}
+    }
+    document.getElementById('currentItemDiv').appendChild(materialsList)
 }
 
 // Section for level independent stats like upgrade info
-var independentStats = document.createElement('p');
+var independentStats
 
-// Section for level dependent stats like effects
-var dependentStats = document.getElementById('dependantDiv');
+var dependentStats
 
-if (currentItem.upgradeinfo!==undefined){ //Effects of item when used for upgrades
-	var currentUpgradeInfo=currentItem.upgradeinfo
-	var upgradeInfoSection=document.createElement('p');
-	var upgradeInfoString="UPGRADE INFO";
-	var node = document.createTextNode(upgradeInfoString);
-	upgradeInfoSection.appendChild(node);
+function getUpgradeInfo(){
+	independentStats = document.createElement('p');
+	independentStats.innerHTML=""
+	if (currentItem.upgradeinfo!==undefined){ //Effects of item when used for upgrades
+		var currentUpgradeInfo=currentItem.upgradeinfo
+		var upgradeInfoSection=document.createElement('p');
+		var upgradeInfoString="UPGRADE INFO";
+		var node = document.createTextNode(upgradeInfoString);
+		upgradeInfoSection.appendChild(node);
     
-    if (currentUpgradeInfo.hp!==undefined){
-		upgradeInfoSection.innerHTML+="<br>HP: "+currentEffects.hp
+	    if (currentUpgradeInfo.hp!==undefined){
+			upgradeInfoSection.innerHTML+="<br>HP: "+currentEffects.hp
         }
     
-    // Upgrade effects are level independent
-    independentStats.appendChild(upgradeInfoSection)
-    }
+	    // Upgrade effects are level independent
+	    independentStats.appendChild(upgradeInfoSection)
+	    }
 
-
-document.getElementById('currentItemDiv').appendChild(nameLine);
-document.getElementById('currentItemDiv').appendChild(basicStats);
-document.getElementById('currentItemDiv').appendChild(priceLine);
-if (independentStats.hasChildNodes()){
-	document.getElementById('currentItemDiv').appendChild(independentStats);
+	if (independentStats.hasChildNodes()){
+		document.getElementById('currentItemDiv').appendChild(independentStats);
     }
-if (currentItem.materials!==undefined){
-	document.getElementById('currentItemDiv').appendChild(materialsList);
-    }
+}
 
 var maxLv=10;
 
@@ -795,153 +1093,157 @@ for (i=1;i<maxLv;i++){
         
 }
 
-if (currentItem.effects!==undefined){ //Effects of item when ingested
-	var currentEffects=currentItem.effects
-	var effectsSectionHeader=document.createElement('p');
-	effectsSectionHeader.innerHTML="<span style='font-weight:bold'>EFFECTS</span>";
-    
-    if (currentEffects.heal!==undefined){
-    	effectsSectionHeader.innerHTML+="<br>Heal: "
-        for (i=0;i<currentEffects.heal.length;i++){
-        	var currentHeal=currentEffects.heal[i];
-        	effectsSectionHeader.innerHTML+=" "+currentHeal
-        }
+function stringIsInArray(arrayOfStrings,string){
+    var foo=false;
+    if (arrayOfStrings.indexOf(string) > -1){
+    	foo=true;
     }
+    	return foo;
+}
+
+function getEffectsTable(){
+	// Section for level dependent stats like effects
+	dependentStats = document.getElementById('dependantDiv');
+    if (dependentStats.hasChildNodes()){
+		dependentStats.innerHTML=""
+	}
+	if (currentItem.effects!==undefined){ //Effects of item when ingested
+		var currentEffects=currentItem.effects
+		var effectsSectionHeader=document.createElement('p');
+		effectsSectionHeader.innerHTML="<span style='font-weight:bold'>EFFECTS</span>";
     
-    if (currentEffects.statusailments!==undefined){
-    	effectsSectionHeader.innerHTML+="<br>Status Ailments:"
-        for (i=0;i<currentEffects.statusailments.length;i++){
-        	var currentAilment=currentEffects.statusailments[i];
-        	effectsSectionHeader.innerHTML+=" "+currentAilment
-        }
-    }
+	    if (currentEffects.heal!==undefined){
+	    	effectsSectionHeader.innerHTML+="<br>Heal: "
+	        for (i=0;i<currentEffects.heal.length;i++){
+	        	var currentHeal=currentEffects.heal[i];
+	        	effectsSectionHeader.innerHTML+=" "+currentHeal
+	        }
+	    }
     
-    var effectsValueArray=[];
-    var effectsTypeArray=[];
+	    if (currentEffects.statusailments!==undefined){
+    		effectsSectionHeader.innerHTML+="<br>Status Ailments:"
+        	for (i=0;i<currentEffects.statusailments.length;i++){
+        		var currentAilment=currentEffects.statusailments[i];
+        		effectsSectionHeader.innerHTML+=" "+currentAilment
+        	}
+    	}
     
-    var effectsTypeMax100=["HP (%)","RP (%)"];
-    var effectsTypeMax200=["Fire Res (%)","Water Res (%)",
-    	"Earth Res (%)","Wind Res (%)",
-        "Light Res (%)","Dark Res (%)","Love Res (%)"];
-    var effectsTypeMinNeg100=["HP (%)","RP (%)",
-    	"HP max (%)","RP max (%)",
-    	"STR (%)","VIT (%)","INT (%)"];
+    	var effectsValueArray=[];
+    	var effectsTypeArray=[];
+    
+    	var effectsTypeMax100=["HP (%)","RP (%)"];
+    	var effectsTypeMax200=["Fire Res (%)","Water Res (%)",
+    		"Earth Res (%)","Wind Res (%)",
+        	"Light Res (%)","Dark Res (%)","Love Res (%)"];
+    	var effectsTypeMinNeg100=["HP (%)","RP (%)",
+    		"HP max (%)","RP max (%)",
+    		"STR (%)","VIT (%)","INT (%)"];
+    
+		var effectsTable = document.createElement('table'), tr, td, row, cell;
+
+    	dependentStats.appendChild(effectsSectionHeader) // Effects are level dependent
+    	dependentStats.appendChild(effectsTable)
+
+		effectsTableHeader=document.createElement('tr');
+		effectsTable.appendChild(effectsTableHeader);
+
+		c1 = document.createElement('td');
+		effectsTableHeader.appendChild(c1);
+		c1.innerHTML="Lv.";
+    
+    	function appendEffectsHeader(value,string){
+    		if (value!==undefined){
+    			c=document.createElement('td');
+				effectsTableHeader.appendChild(c);
+				c.innerHTML=string;
+        		effectsValueArray.push(value);
+        		effectsTypeArray.push(string);
+        	}
+    	}
+
+		appendEffectsHeader(currentEffects.hp,"HP");
+		appendEffectsHeader(currentEffects.hpP,"HP (%)");
+		appendEffectsHeader(currentEffects.rp,"RP");
+		appendEffectsHeader(currentEffects.rpP,"RP (%)");
+    
+		appendEffectsHeader(currentEffects.hpmax,"HP max");
+		appendEffectsHeader(currentEffects.hpmaxP,"HP max (%)");
+		appendEffectsHeader(currentEffects.rpmax,"RP max");
+		appendEffectsHeader(currentEffects.rpmaxP,"RP max (%)");
+    
+		appendEffectsHeader(currentEffects.str,"STR");
+		appendEffectsHeader(currentEffects.strP,"STR (%)");
+		appendEffectsHeader(currentEffects.vit,"VIT");
+    	appendEffectsHeader(currentEffects.vitP,"VIT (%)");
+		appendEffectsHeader(currentEffects.int,"INT");
+		appendEffectsHeader(currentEffects.intP,"INT (%)");
+    
+    	appendEffectsHeader(currentEffects.fireresP,"Fire Res (%)");
+    	appendEffectsHeader(currentEffects.waterresP,"Water Res (%)");
+    	appendEffectsHeader(currentEffects.earthresP,"Earth Res (%)");
+    	appendEffectsHeader(currentEffects.windresP,"Wind Res (%)");
+    	appendEffectsHeader(currentEffects.lightresP,"Light Res (%)");
+    	appendEffectsHeader(currentEffects.darkresP,"Dark Res (%)");
+    	appendEffectsHeader(currentEffects.loveresP,"Love Res (%)");
+    
+    	appendEffectsHeader(currentEffects.critP,"Crit (%)");
+    
+    	appendEffectsHeader(currentEffects.critresP,"Crit Res (%)");
+    	appendEffectsHeader(currentEffects.knockresP,"Knock Res (%)");
+    
+    	appendEffectsHeader(currentEffects.psnresP,"Psn Res (%)");
+    	appendEffectsHeader(currentEffects.sealresP,"Seal Res (%)");
+    	appendEffectsHeader(currentEffects.parresP,"Par Res (%)");
+    	appendEffectsHeader(currentEffects.slpresP,"Slp Res (%)");
+    	appendEffectsHeader(currentEffects.ftgresP,"Ftg Res (%)");
+    	appendEffectsHeader(currentEffects.sickresP,"Sick Res (%)");
+    	appendEffectsHeader(currentEffects.faintresP,"Faint Res (%)");
+    
+    	appendEffectsHeader(currentEffects.psnatkP,"Psn Atk (%)")
+    
+    	function appendRow(rowid,value){
+    		td1 = document.createElement('td');
+    		rowid.appendChild(td1);
+    		td1.innerHTML = value;
+    	}
+    
+    	for (row = 0; row < maxLv; row++) {
+    		tr = document.createElement('tr');
+    	    effectsTable.appendChild(tr)
+    	
+    		td1 = document.createElement('td');
+    		tr.appendChild(td1);
+    		td1.innerHTML = row+1;
+    	    
+    	    var integerCorrector=1e6;
+    	    var effectsMultiplier = statMultiplier[row]*integerCorrector
         
-	function stringIsInArray(arrayOfStrings,string){
-    	var foo=false;
-        if (arrayOfStrings.indexOf(string) > -1){
-        	foo=true;
-            }
-		return foo;
-    }
-    
-	var effectsTable = document.createElement('table'), tr, td, row, cell;
-
-    dependentStats.appendChild(effectsSectionHeader) // Effects are level dependent
-    dependentStats.appendChild(effectsTable)
-
-	effectsTableHeader=document.createElement('tr');
-	effectsTable.appendChild(effectsTableHeader);
-
-	c1 = document.createElement('td');
-	effectsTableHeader.appendChild(c1);
-	c1.innerHTML="Lv.";
-    
-    function appendEffectsHeader(value,string){
-    	if (value!==undefined){
-    		c=document.createElement('td');
-			effectsTableHeader.appendChild(c);
-			c.innerHTML=string;
-        	effectsValueArray.push(value);
-        	effectsTypeArray.push(string);
-        }
-    }
-
-	appendEffectsHeader(currentEffects.hp,"HP");
-	appendEffectsHeader(currentEffects.hpP,"HP (%)");
-	appendEffectsHeader(currentEffects.rp,"RP");
-	appendEffectsHeader(currentEffects.rpP,"RP (%)");
-    
-	appendEffectsHeader(currentEffects.hpmax,"HP max");
-	appendEffectsHeader(currentEffects.hpmaxP,"HP max (%)");
-	appendEffectsHeader(currentEffects.rpmax,"RP max");
-	appendEffectsHeader(currentEffects.rpmaxP,"RP max (%)");
-    
-	appendEffectsHeader(currentEffects.str,"STR");
-	appendEffectsHeader(currentEffects.strP,"STR (%)");
-	appendEffectsHeader(currentEffects.vit,"VIT");
-    appendEffectsHeader(currentEffects.vitP,"VIT (%)");
-	appendEffectsHeader(currentEffects.int,"INT");
-	appendEffectsHeader(currentEffects.intP,"INT (%)");
-    
-    appendEffectsHeader(currentEffects.fireresP,"Fire Res (%)");
-    appendEffectsHeader(currentEffects.waterresP,"Water Res (%)");
-    appendEffectsHeader(currentEffects.earthresP,"Earth Res (%)");
-    appendEffectsHeader(currentEffects.windresP,"Wind Res (%)");
-    appendEffectsHeader(currentEffects.lightresP,"Light Res (%)");
-    appendEffectsHeader(currentEffects.darkresP,"Dark Res (%)");
-    appendEffectsHeader(currentEffects.loveresP,"Love Res (%)");
-    
-    appendEffectsHeader(currentEffects.critP,"Crit (%)");
-    
-    appendEffectsHeader(currentEffects.critresP,"Crit Res (%)");
-    appendEffectsHeader(currentEffects.knockresP,"Knock Res (%)");
-    
-    appendEffectsHeader(currentEffects.psnresP,"Psn Res (%)");
-    appendEffectsHeader(currentEffects.sealresP,"Seal Res (%)");
-    appendEffectsHeader(currentEffects.parresP,"Par Res (%)");
-    appendEffectsHeader(currentEffects.slpresP,"Slp Res (%)");
-    appendEffectsHeader(currentEffects.ftgresP,"Ftg Res (%)");
-    appendEffectsHeader(currentEffects.sickresP,"Sick Res (%)");
-    appendEffectsHeader(currentEffects.faintresP,"Faint Res (%)");
-    
-    appendEffectsHeader(currentEffects.psnatkP,"Psn Atk (%)")
-    
-    function appendRow(rowid,value){
-    	td1 = document.createElement('td');
-    	rowid.appendChild(td1);
-    	td1.innerHTML = value;
-    }
-    
-    for (row = 0; row < maxLv; row++) {
-    	tr = document.createElement('tr');
-        effectsTable.appendChild(tr)
-    
-    	td1 = document.createElement('td');
-    	tr.appendChild(td1);
-    	td1.innerHTML = row+1;
-        
-        var integerCorrector=1e6;
-        var effectsMultiplier = statMultiplier[row]*integerCorrector
-        
-        for (j=0;j<effectsValueArray.length;j++){
-        	var currentEffectsValueModified = effectsMultiplier*effectsValueArray[j]
-            var currentEffectsValue= currentEffectsValueModified/integerCorrector;
-        	var currentEffectsType = effectsTypeArray[j];
-        	if (currentEffectsType.includes("%")){
-            	var appendValue = Math.ceil(currentEffectsValue);
-                if (stringIsInArray(effectsTypeMax200,currentEffectsType)){
-                	appendValue = Math.min(200,appendValue)
-                }
-                if (stringIsInArray(effectsTypeMax100,currentEffectsType)){
-                	appendValue = Math.min(100,appendValue)
-                }
-                if (stringIsInArray(effectsTypeMinNeg100,currentEffectsType)){
-                	appendValue = Math.max(-100,appendValue)
-                }
+    	    for (j=0;j<effectsValueArray.length;j++){
+    	    	var currentEffectsValueModified = effectsMultiplier*effectsValueArray[j]
+    	        var currentEffectsValue= currentEffectsValueModified/integerCorrector;
+    	    	var currentEffectsType = effectsTypeArray[j];
+    	    	if (currentEffectsType.includes("%")){
+    	        	var appendValue = Math.ceil(currentEffectsValue);
+    	            if (stringIsInArray(effectsTypeMax200,currentEffectsType)){
+    	            	appendValue = Math.min(200,appendValue)
+    	            }
+    	            if (stringIsInArray(effectsTypeMax100,currentEffectsType)){
+    	            	appendValue = Math.min(100,appendValue)
+    	            }
+    	            if (stringIsInArray(effectsTypeMinNeg100,currentEffectsType)){
+    	            	appendValue = Math.max(-100,appendValue)
+    	            }
                 } else {
                 var appendValue = Math.floor(currentEffectsValue);
                 }
-            appendRow(tr,appendValue)
-        }
+            	appendRow(tr,appendValue)
+        	}
         
         }
-        
-    }
 
-if (dependentStats.hasChildNodes()){
-	document.getElementById('currentItemDiv').appendChild(dependentStats);
+	
     }
+}
 
 function getPriceMultiplierArray(multiplierType){
 	switch(multiplierType){
@@ -966,8 +1268,6 @@ function getPriceMultiplierArray(multiplierType){
 	}
 }
     
-var currentMultiplierArray=getPriceMultiplierArray(currentItem.pricemultiplier)
-
 function getMultiplierAtLevel(multiplierArray,level){
 	// Gets multiplier based on multiplier type and level
     var currentMultiplier=multiplierArray[level-1]
@@ -1190,206 +1490,211 @@ function canProduceAtVaryingLevels(item){
     return foo
     }
 
-var profitTable = document.createElement('table'), tr, td, row, cell;
-var profitTableHeader=document.createElement('tr');
-profitTable.appendChild(profitTableHeader);
-
-function appendToProfitHeader(string){
-	var c = document.createElement('td');
-	profitTableHeader.appendChild(c);
-	c.innerHTML=string;
-}
-
-appendToProfitHeader("Lv.");
-appendToProfitHeader("Multiplier<br>("+currentItem.pricemultiplier+")");
-var c3header="Sell Price<br>of "
-if (currentItem.materials!==undefined){
-	c3header+="Product";
-    } else {
-    c3header+="Item";
-    }
-appendToProfitHeader(c3header)
-appendToProfitHeader("Increment from<br>previous level")
-
-var profitArray=[];
-var previousPrice;
-
-var levelColumn=[];
-var multiplierColumn=[];
-var sellPriceColumn=[];
-var incrementColumn=[];
-var profitColumn=[];
-var discountedProfitColumn=[];
-var opportunityCostColumn=[];
-var opportunityProfitColumn=[];
-var returnOnInvestmentColumn=[];
-
-for (i=0;i<maxLv;i++){
-	levelColumn.push(i+1);
-    var currentMultiplier=currentMultiplierArray[i]
-	multiplierColumn.push(currentMultiplier.toPrecision(3));
-    sellPriceColumn.push(getSellPriceAtLevel(currentItem,i+1))
-    if (i==0){
-    	incrementColumn.push("N/A")
-    } else {
-    	incrementColumn.push(getSellPriceAtLevel(currentItem,i+1)-previousPrice)
-    }
-    previousPrice=getSellPriceAtLevel(currentItem,i+1)
-}
-
 Array.prototype.arrayPush = function(elementArray){
     for (i=0;i<elementArray.length;i++){
     	this.push(elementArray[i]);
         };
 };
 
-if (canProduceAtVaryingLevels(currentItem)||canBuyAtVaryingLevels(currentItem)){
+function getProfitTable(){
+	
+    var profitTable = document.createElement('table'), tr, td, row, cell;
+	var profitTableHeader=document.createElement('tr');
+	profitTable.appendChild(profitTableHeader);
 
-	document.getElementById('profitTable').innerHTML="<b>Profitability by Level</b>"
+	function appendToProfitHeader(string){
+		var c = document.createElement('td');
+		profitTableHeader.appendChild(c);
+		c.innerHTML=string;
+	}
 
+	appendToProfitHeader("Lv.");
+	appendToProfitHeader("Multiplier<br>("+currentItem.pricemultiplier+")");
+	var c3header="Sell Price<br>of "
 	if (currentItem.materials!==undefined){
-    	if (allMaterialsBuyable(currentItem.materials)){
-    		appendToProfitHeader("Profit<br>(w/o D)");
-			appendToProfitHeader("Profit<br>(w/ D)");
-            }
+		c3header+="Product";
+	    } else {
+	    c3header+="Item";
+	    }
+	appendToProfitHeader(c3header)
+	appendToProfitHeader("Increment from<br>previous level")
 
-		column6 = document.createElement('td');
-		profitTableHeader.appendChild(column6);
-		column6.innerHTML="Opportunity<br>Cost";
-    	column6.align="center";
-    
-		if (allMaterialsBuyable(currentItem.materials)){
-        	column7 = document.createElement('td');
-			profitTableHeader.appendChild(column7);
-			column7.innerHTML="Opportunity<br>Profit";
-    		column7.align="center";
-		}
-    } else if (currentItem.buy!==undefined){
-    		appendToProfitHeader("Profit<br>(w/o D)");
-			appendToProfitHeader("Profit<br>(w/ D)");
-    }
+	var profitArray=[];
+	var previousPrice;
+	
+	var levelColumn=[];
+	var multiplierColumn=[];
+	var sellPriceColumn=[];
+	var incrementColumn=[];
+	var profitColumn=[];
+	var discountedProfitColumn=[];
+	var opportunityCostColumn=[];
+	var opportunityProfitColumn=[];
+	var returnOnInvestmentColumn=[];
+	
+	var currentMultiplierArray=getPriceMultiplierArray(currentItem.pricemultiplier)
 
-	for (row = 0; row < maxLv; row++) {
-    
-	var sellPrice=getSellPriceAtLevel(currentItem,row+1);
-	var sellPriceOfMaterials=sellPrice;
+	for (i=0;i<maxLv;i++){
+		levelColumn.push(i+1);
+	    var currentMultiplier=currentMultiplierArray[i]
+		multiplierColumn.push(currentMultiplier.toPrecision(3));
+	    sellPriceColumn.push(getSellPriceAtLevel(currentItem,i+1))
+	    if (i==0){
+	    	incrementColumn.push("N/A")
+	    } else {
+	    	incrementColumn.push(getSellPriceAtLevel(currentItem,i+1)-previousPrice)
+	    }
+	    previousPrice=getSellPriceAtLevel(currentItem,i+1)
+	}
+
+	if (canProduceAtVaryingLevels(currentItem)||canBuyAtVaryingLevels(currentItem)){
+
+		document.getElementById('profitTable').innerHTML="<b>Profitability by Level</b>"
 
 		if (currentItem.materials!==undefined){
-        	var buyPrice=currentMaterialsBuyPrice;
-        	var buyPriceDiscount=currentMaterialsBuyPriceDiscount
-            var sellPriceOfMaterials=0;
+    		if (allMaterialsBuyable(currentItem.materials)){
+    			appendToProfitHeader("Profit<br>(w/o D)");
+				appendToProfitHeader("Profit<br>(w/ D)");
+            }
+    
+			if (allMaterialsBuyable(currentItem.materials)){
+        		column6 = document.createElement('td');
+            	profitTableHeader.appendChild(column6);
+            	column6.innerHTML="Opportunity<br>Cost";
+            	column6.align="center";
             
-            for (j=0;j<currentItem.materials.length;j++){
-            	var currentMaterial=currentItem.materials[j];
-                sellPriceOfMaterials+=getSellPriceAtLevel(currentMaterial,row+1)
+        		column7 = document.createElement('td');
+				profitTableHeader.appendChild(column7);
+				column7.innerHTML="Opportunity<br>Profit";
+    			column7.align="center";
+			}
+    	} else if (currentItem.buy!==undefined){
+    		appendToProfitHeader("Profit<br>(w/o D)");
+			appendToProfitHeader("Profit<br>(w/ D)");
+    	}
+
+		for (row = 0; row < maxLv; row++) {
+    
+		var sellPrice=getSellPriceAtLevel(currentItem,row+1);
+		var sellPriceOfMaterials=sellPrice;
+
+			if (currentItem.materials!==undefined){
+        		var buyPrice=currentMaterialsBuyPrice;
+        		var buyPriceDiscount=currentMaterialsBuyPriceDiscount
+            	var sellPriceOfMaterials=0;
+            
+            	for (j=0;j<currentItem.materials.length;j++){
+            		var currentMaterial=currentItem.materials[j].convertStringToItem();
+                	sellPriceOfMaterials+=getSellPriceAtLevel(currentMaterial,row+1)
             	}
                 
-    		if (allMaterialsBuyable(currentItem.materials)){
-        		profitColumn.push(sellPrice-buyPrice);
-    			profitWDiscount = sellPrice-buyPriceDiscount;
-    			discountedProfitColumn.push(profitWDiscount);
-                opportunityCostColumn.push(sellPriceOfMaterials);
-                opportunityProfitColumn.push(sellPriceOfMaterials-buyPrice);
-			}
+    			if (allMaterialsBuyable(currentItem.materials)){
+        			profitColumn.push(sellPrice-buyPrice);
+    				profitWDiscount = sellPrice-buyPriceDiscount;
+    				discountedProfitColumn.push(profitWDiscount);
+                	opportunityCostColumn.push(sellPriceOfMaterials);
+                	opportunityProfitColumn.push(sellPriceOfMaterials-buyPrice);
+				}
                 
-		} else {
-        	var buyPrice=currentItem.buy
-        	var buyPriceDiscount=Math.ceil(.9*currentItem.buy)
+			} else {
+        		var buyPrice=currentItem.buy
+        		var buyPriceDiscount=Math.ceil(.9*currentItem.buy)
         	
-            if(currentItem.buy!==undefined){
+            	if(currentItem.buy!==undefined){
             
-            	profitColumn.push(sellPrice-buyPrice);
-                profitWDiscount = sellPrice-buyPriceDiscount;
-                discountedProfitColumn.push(profitWDiscount)
+            		profitColumn.push(sellPrice-buyPrice);
+                	profitWDiscount = sellPrice-buyPriceDiscount;
+                	discountedProfitColumn.push(profitWDiscount)
+				}
 			}
 		}
-	}
     
-	var footer=document.createElement('p')
-	footer.innerHTML="Red denotes <span style='color:#FF0000'>not profitable</span> at the specified level.<br>"
-	footer.innerHTML+="Blue denotes profit only if the "
-    footer.innerHTML+="<span style='color:#0000FF'>materials are discounted</span>.<br>"
-	footer.innerHTML+="Green denotes <span style='color:#00FF00'>profit</span> at the specified level.<br>"
-    footer.innerHTML+="Violet denotes higher profit from "
-    footer.innerHTML+="<span style='color:#FF00FF'>selling the materials directly</span> than the product.<br>"
-    footer.innerHTML+="Underlined denotes higher profit from "
-    footer.innerHTML+="<span style='text-decoration:underline'>buying and selling the materials</span>"
-    footer.innerHTML+=" directly than buying and converting the materials to this product."
+		var footer=document.createElement('p')
+		footer.innerHTML="Red denotes <span style='color:#FF0000'>not profitable</span> at the specified level.<br>"
+		footer.innerHTML+="Blue denotes profit only if the "
+    	footer.innerHTML+="<span style='color:#0000FF'>materials are discounted</span>.<br>"
+		footer.innerHTML+="Green denotes <span style='color:#00FF00'>profit</span> at the specified level.<br>"
+    	footer.innerHTML+="Violet denotes higher profit from "
+    	footer.innerHTML+="<span style='color:#FF00FF'>selling the materials directly</span> than the product.<br>"
+    	footer.innerHTML+="Underlined denotes higher profit from "
+    	footer.innerHTML+="<span style='text-decoration:underline'>buying and selling the materials</span>"
+    	footer.innerHTML+=" directly than buying and converting the materials to this product."
     
-    footer.innerHTML+="<br><br>Opportunity cost: total sell price of materials."
-    footer.innerHTML+="<br>Opportunity profit: total sell price of materials minus total buy price of materials."
+    	footer.innerHTML+="<br><br>Opportunity cost: total sell price of materials."
+    	footer.innerHTML+="<br>Opportunity profit: total sell price of materials minus total buy price of materials."
     
-    } else {
-	//document.getElementById('profitTable').innerHTML="<b>Profit table is not applicable.</b>"
-    document.getElementById('profitTable').innerHTML="<b>Price by Level</b>"
-    }
+    	} else {
+		//document.getElementById('profitTable').innerHTML="<b>Profit table is not applicable.</b>"
+    	document.getElementById('profitTable').innerHTML="<b>Price by Level</b>"
+    	}
         
-profitArray.arrayPush(levelColumn);
-profitArray.arrayPush(multiplierColumn);
-profitArray.arrayPush(sellPriceColumn);
-profitArray.arrayPush(incrementColumn);
-profitArray.arrayPush(profitColumn);
-profitArray.arrayPush(discountedProfitColumn);
-profitArray.arrayPush(opportunityCostColumn);
-profitArray.arrayPush(opportunityProfitColumn);
-profitArray.arrayPush(returnOnInvestmentColumn);
+	profitArray.arrayPush(levelColumn);
+	profitArray.arrayPush(multiplierColumn);
+	profitArray.arrayPush(sellPriceColumn);
+	profitArray.arrayPush(incrementColumn);
+	profitArray.arrayPush(profitColumn);
+	profitArray.arrayPush(discountedProfitColumn);
+	profitArray.arrayPush(opportunityCostColumn);
+	profitArray.arrayPush(opportunityProfitColumn);
+	profitArray.arrayPush(returnOnInvestmentColumn);
 
-for (row=0;row<maxLv;row++){
-    tr = document.createElement('tr');
+	for (row=0;row<maxLv;row++){
+	    tr = document.createElement('tr');
+	    
+	    for (col=0;col<profitArray.length/maxLv;col++){
+	    	td = document.createElement('td');
+	    	tr.appendChild(td);
+	        var currentValue = profitArray[row+maxLv*col];
+	    	td.innerHTML = currentValue;
+	        if ([3,6,7].indexOf(col) > -1){
+    	    	td.align="center";
+    	    }
+        
+    	    if (col==4){
+        		if (0>currentValue){
+        			td.style.color="red"
+            	} else if (currentValue>0){
+            		td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
+            	    td.style.fontWeight="bold";
+            	    td.style.fontSize=18;
+            	}
+        	}
+        
+        	if (col==5){
+        		if (0>currentValue){
+        			td.style.color="red";
+        	    } else if (currentValue>0){
+        	    	td.style.color="blue";
+        	        td.style.fontWeight="bold";
+        	        if (profitArray[row+maxLv*(col-1)]>0){
+        	        	td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
+        	        	td.style.fontSize=18;
+        	        }
+        	    }
+        	}
+        
+        	if (col==6){
+        		if (currentValue>profitArray[row+maxLv*(col-4)]){
+        	    	td.style.color="violet";
+        			td.style.fontWeight="bold";
+					td.style.fontSize=18;
+        	    }
+        	}
+        
+        	if (col==7){
+        		if (currentValue>profitArray[row+maxLv*(col-2)]){
+        	    	td.style.textDecoration="underline";
+					td.style.fontSize=18;
+        	    }
+        	}
+		}
     
-    for (col=0;col<profitArray.length/maxLv;col++){
-    	td = document.createElement('td');
-    	tr.appendChild(td);
-        var currentValue = profitArray[row+maxLv*col];
-    	td.innerHTML = currentValue;
-        if ([3,6,7].indexOf(col) > -1){
-        	td.align="center";
-        }
-        
-        if (col==4){
-        	if (0>currentValue){
-        		td.style.color="red"
-            } else if (currentValue>0){
-            	td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
-                td.style.fontWeight="bold";
-                td.style.fontSize=18;
-            }
-        }
-        
-        if (col==5){
-        	if (0>currentValue){
-        		td.style.color="red";
-            } else if (currentValue>0){
-            	td.style.color="blue";
-                td.style.fontWeight="bold";
-                if (profitArray[row+maxLv*(col-1)]>0){
-                	td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
-                	td.style.fontSize=18;
-                }
-            }
-        }
-        
-        if (col==6){
-        	if (currentValue>profitArray[row+maxLv*(col-4)]){
-            	td.style.color="violet";
-        		td.style.fontWeight="bold";
-				td.style.fontSize=18;
-            }
-        }
-        
-        if (col==7){
-        	if (currentValue>profitArray[row+maxLv*(col-2)]){
-            	td.style.textDecoration="underline";
-				td.style.fontSize=18;
-            }
-        }
+    	profitTable.appendChild(tr);
 	}
     
-    profitTable.appendChild(tr);
-}
-    
-document.getElementById('profitTable').appendChild(profitTable);
-if (footer!==undefined){
-	document.getElementById('profitTable').appendChild(footer);
+	document.getElementById('profitTable').appendChild(profitTable);
+	if (footer!==undefined){
+		document.getElementById('profitTable').appendChild(footer);
+	}
 }
 </script>
