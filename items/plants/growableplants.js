@@ -34,22 +34,3 @@ registerItem({
     "rp":20//unknown
   }
 })
-
-registerItem({
-  "name":"Corn",
-  "category":"Vegetable",
-  "sell":1000,
-  "buy":3000,
-  "pricemultiplier":"E",
-  "effects":{
-    "hp":75
-  },
-  "upgradeinfo":{
-    "rarity":1,
-    "difficulty":1,
-    "vit":6
-  },
-  "ingredienteffects":{
-    "rp":20
-  }
-})
