@@ -19,5 +19,9 @@ table {
 }
 
 tr:hover {
-    background-color:grey;
+    background-color:darkgrey;
+}
+
+td {
+    text-align:center;
 }
