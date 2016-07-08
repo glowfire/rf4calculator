@@ -6,26 +6,37 @@ var priceMultiplierC1=[1,1.05,1.1,1.15,1.25,1.4,1.6,2,2.5,3];
 var priceMultiplierC2=[1,1.05,1.1,1.15,1.25,1.5,2,2.5,3,4];
 var priceMultiplierC3=[1,1.05,1.1,1.15,1.25,1.5,2,3,4,5];
 var priceMultiplierCh=[1];
+var priceMultiplierSd=[1];
 var priceMultiplierX=[1];
 
 for (i=1;i<maxLv;i++){
-    
-    priceMultiplierX.push(1);
-
+	
+	priceMultiplierX.push(1);
+	
 	var lastElementStat=statMultiplier[i-1];
-    var currentElementStat=lastElementStat+.125;
-    statMultiplier.push(currentElementStat);
-
+	var statIncrement=.125
+	var currentElementStat=lastElementStat+statIncrement;
+	statMultiplier.push(currentElementStat);
+	
 	var lastElementCh=priceMultiplierCh[i-1];
-    var currentElementCh=lastElementCh+.05;
+	var ChIncrement=.05
+	var currentElementCh=lastElementCh+ChIncrement;
+	
 	var lastElementE=priceMultiplierE[i-1];
-    var currentElementE=lastElementE+.1;
-    if (i==(maxLv-1)){
-		currentElementCh=lastElementCh+2*.05;
-		currentElementE=lastElementE+2*.1;
-        }
-    priceMultiplierCh.push(currentElementCh);
-    priceMultiplierE.push(currentElementE);
+	var EIncrement=.1
+	var currentElementE=lastElementE+EIncrement;
+	
+	var lastElementSd=priceMultiplierS[i-1];
+	var SdIncrement=.02
+	var currentElementSd=lastElementSd+SdIncrement;
+	if (i==(maxLv-1)){
+		currentElementCh=lastElementCh+2*ChIncrement;
+		currentElementE=lastElementE+2*EIncrement;
+		currentElementSd=lastElementSd+2*SdIncrement;
+	}
+	priceMultiplierCh.push(currentElementCh);
+	priceMultiplierE.push(currentElementE);
+	priceMultiplierSd.push(currentElementSd);
         
 }
 
@@ -46,6 +57,7 @@ appendMultiplierTable("Price (C1)");
 appendMultiplierTable("Price (C2)");
 appendMultiplierTable("Price (C3)");
 appendMultiplierTable("Price (Ch)");
+appendMultiplierTable("Price (Sd)");
 appendMultiplierTable("Price (X)");
 appendMultiplierTable("Lv.");
 
@@ -65,6 +77,7 @@ for (row = 0; row < maxLv; row++) {
     rowOfValue.push("×"+priceMultiplierC2[row].toPrecision(3));
     rowOfValue.push("×"+priceMultiplierC3[row].toPrecision(3));
     rowOfValue.push("×"+priceMultiplierCh[row].toPrecision(3));
+    rowOfValue.push("×"+priceMultiplierSd[row].toPrecision(3));
     rowOfValue.push("×"+priceMultiplierX[row].toPrecision(2));
     
     function appendMultiplierValueByRow(value){
@@ -99,12 +112,13 @@ explanation.innerHTML+="At Lv. 6, the price multiplier value for C1 is ×1.40. "
 explanation.innerHTML+="Multiply the sell price by this multiplier:<br>48 G × 1.40 = 67.2 G<br>";
 explanation.innerHTML+="Round this result down. Thus, Lv. 6 Pickled Turnip sells for 67 G.";
 
-examples.innerHTML+="Raw materials and equipment have price multiplier E.<br>";
-examples.innerHTML+="Most cooked dishes have price multiplier C1.<br>";
-examples.innerHTML+="Some cooked dishes have price multiplier C2.<br>";
-examples.innerHTML+="A few cooked dishes have price multiplier C3.<br>";
-examples.innerHTML+="Most items produceable with the Chemistry Set have price multiplier Ch.<br>";
-examples.innerHTML+="A few items have price multiplier X i.e. their sell prices do not change with respect to their level."
+examples.innerHTML+="E: By far the most used price multiplier in the game. Raw materials, growables, equipment, rune abilities and spells have this price multiplier. It may be simpler to list the items whose price multiplier is not E: seeds, cooked dishes, fish and products of the Chemistry Set.<br>";
+examples.innerHTML+="C1: Almost all cooked dishes have this price multiplier. The known exceptions to this rule have [Fish] in the recipe. Also, some [Fish] items have this price multiplier. <br>";
+examples.innerHTML+="C2: Known cooked dishes with this price multiplier have [Fish] with 10,000 G - 59,000 G buy prices. For example: Blowfish Sashimi, Grilled Yellowtail and Rockfish Stew. Some [Fish] also have this price multiplier.<br>";
+examples.innerHTML+="C3: This group includes cooked [Fish] dishes whose [Fish] ingredient have buy prices above 60,000 G. Some [Fish] also fall under this group.<br>";
+examples.innerHTML+="Ch: This group may exclusively consists of Chemistry Set products.<br>";
+examples.innerHTML+="Sd: This group may exclusively consists of [Seed] items.<br>";
+examples.innerHTML+="X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strnage Pendant."
 
 function showMultiplierTable(){
 	var node = document.getElementById('multiplierTable');
