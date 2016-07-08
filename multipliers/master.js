@@ -92,7 +92,6 @@ for (row = 0; row < maxLv; row++) {
 		td = document.createElement('td');
 		tr.appendChild(td);
 		td.innerHTML=value;
-		td.align="center";
 	}
 	
 	for (i=0;i<rowOfValue.length;i++){
