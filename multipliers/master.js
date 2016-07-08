@@ -101,25 +101,19 @@ for (row = 0; row < maxLv; row++) {
 var explanation = document.createElement('p');
 var examples = document.createElement('p');
 
-explanation.innerHTML="An item's sell price at a specified level can be predicted with its price multiplier. "
-explanation.innerHTML+="The item's base sell price is its sell price at Lv. 1. "
-explanation.innerHTML+="This info can be obtained from the item's info screen in shipping records, "
-explanation.innerHTML+="shop lists, recipe lists, material lists in recipes, etc. "
-explanation.innerHTML+="The item's price multiplier is not shown and must be determined by experimentation.<br><br>";
-explanation.innerHTML+="For example, Pickled Turnip has a base sell price of 48 G (from the info screen) "
-explanation.innerHTML+="and price multiplier C1 (as determined experimentally). "
-explanation.innerHTML+="At Lv. 6, the price multiplier value for C1 is ×1.40. "
-explanation.innerHTML+="Multiply the sell price by this multiplier:<br>48 G × 1.40 = 67.2 G<br>";
-explanation.innerHTML+="Round this result down. Thus, Lv. 6 Pickled Turnip sells for 67 G.";
+explanation.innerHTML="An item's sell price at a specified level can be predicted with its price multiplier type and base sell price. "
+explanation.innerHTML+="The item's base sell price is its sell price at Lv. 1. This info can be obtained from the item's info screen in shipping records, recipes, etc. "
+explanation.innerHTML+="The item's price multiplier type is not shown and must be determined by experimentation.<br><br>";
+explanation.innerHTML+="For example, Pickled Turnip has a base sell price of 48 G (from the info screen) and price multiplier type C1 (as determined experimentally). At Lv. 6, the price multiplier value for C1 is ×1.40. Multiply the sell price by this multiplier: 48 G × 1.40 = 67.2 G. Round this result down. Thus, Lv. 6 Pickled Turnip sells for 67 G.";
 
-examples.innerHTML="<br>Items with the same price multipliers can be grouped together. The following is a breakdown of the groups by price multiplers."
-examples.innerHTML+="<br>Group E: By far the most used price multiplier in the game. Raw materials, growables, equipment, rune abilities and spells have this price multiplier. It may be simpler to list the items whose price multiplier is not E: seeds, cooked dishes, fish and products of the Chemistry Set.<br>";
-examples.innerHTML+="<br>Group C1: Almost all cooked dishes have this price multiplier. The known exceptions to this rule have [Fish] in the recipe. Also, some [Fish] items have this price multiplier. <br>";
-examples.innerHTML+="<br>Group C2: Known cooked dishes with this price multiplier have [Fish] with 10,000 G - 59,000 G buy prices. For example: Blowfish Sashimi, Grilled Yellowtail and Rockfish Stew. Some [Fish] also have this price multiplier.<br>";
+examples.innerHTML="<br>Items with the same price multiplier type can be grouped together. The following is a breakdown of the groups by price multipler type.<br>"
+examples.innerHTML+="<br>Group E: By far the biggest price multiplier group in the game. Raw materials, growables, equipment, rune abilities and spells have price multiplier type E. It may be easier to list non-group E items: seeds, cooked dishes, [Fish] items and products of the Chemistry Set.<br>";
+examples.innerHTML+="<br>Group C1: Almost all cooked dishes fall under this group. Interestingly, some [Fish] items also have price multiplier type C1. <br>";
+examples.innerHTML+="<br>Group C2: Known cooked dishes with this price multiplier have [Fish] with 10,000 G - 59,000 G buy prices. For example: Blowfish Sashimi, Grilled Yellowtail and Rockfish Stew. Some [Fish] also have this price multiplier type.<br>";
 examples.innerHTML+="<br>Group C3: This group includes cooked [Fish] dishes whose [Fish] ingredient have buy prices above 60,000 G. Some [Fish] also fall under this group.<br>";
 examples.innerHTML+="<br>Group Ch: This group may exclusively consists of Chemistry Set products.<br>";
 examples.innerHTML+="<br>Group Sd: This group may exclusively consists of [Seed] items.<br>";
-examples.innerHTML+="<br>Group X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strnage Pendant."
+examples.innerHTML+="<br>Group X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strange Pendant."
 
 function showMultiplierTable(){
 	var node = document.getElementById('multiplierTable');
