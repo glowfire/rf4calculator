@@ -26,7 +26,7 @@ for (i=1;i<maxLv;i++){
 	var EIncrement=.1
 	var currentElementE=lastElementE+EIncrement;
 	
-	var lastElementSd=priceMultiplierS[i-1];
+	var lastElementSd=priceMultiplierSd[i-1];
 	var SdIncrement=.02
 	var currentElementSd=lastElementSd+SdIncrement;
 	if (i==(maxLv-1)){
