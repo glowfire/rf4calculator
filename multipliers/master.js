@@ -60,13 +60,13 @@ function appendMultiplierTable(string){
 
 appendMultiplierTable("Lv.");
 appendMultiplierTable("Effects");
-appendMultiplierTable("Price (E)");
-appendMultiplierTable("Price (C1)");
-appendMultiplierTable("Price (C2)");
-appendMultiplierTable("Price (C3)");
-appendMultiplierTable("Price (Ch)");
-appendMultiplierTable("Price (Sd)");
-appendMultiplierTable("Price (X)");
+appendMultiplierTable("Type E");
+appendMultiplierTable("Type C1");
+appendMultiplierTable("Type C2");
+appendMultiplierTable("Type C3");
+appendMultiplierTable("Type Ch");
+appendMultiplierTable("Type Sd");
+appendMultiplierTable("Type X");
 appendMultiplierTable("Lv.");
 
 multiplierTable.appendChild(multiplierTableHeader);
