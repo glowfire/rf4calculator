@@ -1,3 +1,33 @@
+var maxLv=10;
+
+var statMultiplier=[1];
+var priceMultiplierE=[1];
+var priceMultiplierC1=[1,1.05,1.1,1.15,1.25,1.4,1.6,2,2.5,3];
+var priceMultiplierC2=[1,1.05,1.1,1.15,1.25,1.5,2,2.5,3,4];
+var priceMultiplierC3=[1,1.05,1.1,1.15,1.25,1.5,2,3,4,5];
+var priceMultiplierCh=[1];
+var priceMultiplierX=[1];
+
+for (i=1;i<maxLv;i++){
+    
+    priceMultiplierX.push(1);
+
+	var lastElementStat=statMultiplier[i-1];
+    var currentElementStat=lastElementStat+.125;
+    statMultiplier.push(currentElementStat);
+
+	var lastElementCh=priceMultiplierCh[i-1];
+    var currentElementCh=lastElementCh+.05;
+	var lastElementE=priceMultiplierE[i-1];
+    var currentElementE=lastElementE+.1;
+    if (i==(maxLv-1)){
+		currentElementCh=lastElementCh+2*.05;
+		currentElementE=lastElementE+2*.1;
+        }
+    priceMultiplierCh.push(currentElementCh);
+    priceMultiplierE.push(currentElementE);
+        
+}
 
 var multiplierTable = document.createElement('table'), tr, td, row, cell;
 
