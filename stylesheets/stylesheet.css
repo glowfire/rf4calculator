@@ -17,3 +17,7 @@ form {
 table {
     color:white;
 }
+
+tr:hover {
+    background-color:grey;
+}
