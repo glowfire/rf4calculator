@@ -31,6 +31,9 @@ Object.prototype.getProductionLevel=function(){
     	return productionLevel
 }
 
+// May not work for "+" non-product items, eg Scrap Metal+, Cooking Bread+ etc.
+// Will work for "+" products with different recipe levels than their base products, eg Platinum Sword+, War Hammer+ etc.
+// Will not work for "+" products with equal recipe levels as their base products, but there are no known such "+" products.
 Object.prototype.getUniqueNameString = function(){
 	var itemProductionLevel = this.getProductionLevel()
 	var itemName = this.name
