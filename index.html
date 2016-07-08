@@ -1,7 +1,8 @@
 <html>
 	<LINK href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
 	<script src="items/master.js"></script>
-	<script src="items/plants/growableplants.js"></script>
+	<script src="items/plants/growable/master.js"></script>
+	<script src="items/plants/nongrowable/master.js"></script>
 <div id="itemSelectionDiv">
 </div>
 
@@ -380,26 +381,6 @@ registerItem({
         },
 	"materials":["Turnip","Pink Turnip","Golden Turnip"]
 })
-    
-registerItem({
-	"name":"Withered Grass",
-    "category":"Plant",
-    "sell":1,
-    "buy":100,
-    "pricemultiplier":"E",
-    "effects":{
-    	"statusailments":["PSN"],
-    	"rpP":-20
-        },
-	"upgradeinfo":{
-    	"rarity":1,//unknown
-        "difficulty":1,
-        "vit":-1
-        },
-	"ingredienteffects":{
-    	"rp":20//unknown
-		}
-	})
 
 registerItem({
 	"name":"Blue Grass",
