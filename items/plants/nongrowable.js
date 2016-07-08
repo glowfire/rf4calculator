@@ -1,0 +1,19 @@
+registerItem({
+  "name":"Withered Grass",
+  "category":"Plant",
+  "sell":1,
+  "buy":100,
+  "pricemultiplier":"E",
+  "effects":{
+    "statusailments":["PSN"],
+    "rpP":-20
+  },
+  "upgradeinfo":{
+    "rarity":1,//unknown
+    "difficulty":1,
+    "vit":-1
+  },
+  "ingredienteffects":{
+    "rp":20//unknown
+  }
+})
