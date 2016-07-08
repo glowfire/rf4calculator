@@ -112,13 +112,14 @@ explanation.innerHTML+="At Lv. 6, the price multiplier value for C1 is ×1.40. "
 explanation.innerHTML+="Multiply the sell price by this multiplier:<br>48 G × 1.40 = 67.2 G<br>";
 explanation.innerHTML+="Round this result down. Thus, Lv. 6 Pickled Turnip sells for 67 G.";
 
-examples.innerHTML+="E: By far the most used price multiplier in the game. Raw materials, growables, equipment, rune abilities and spells have this price multiplier. It may be simpler to list the items whose price multiplier is not E: seeds, cooked dishes, fish and products of the Chemistry Set.<br>";
-examples.innerHTML+="C1: Almost all cooked dishes have this price multiplier. The known exceptions to this rule have [Fish] in the recipe. Also, some [Fish] items have this price multiplier. <br>";
-examples.innerHTML+="C2: Known cooked dishes with this price multiplier have [Fish] with 10,000 G - 59,000 G buy prices. For example: Blowfish Sashimi, Grilled Yellowtail and Rockfish Stew. Some [Fish] also have this price multiplier.<br>";
-examples.innerHTML+="C3: This group includes cooked [Fish] dishes whose [Fish] ingredient have buy prices above 60,000 G. Some [Fish] also fall under this group.<br>";
-examples.innerHTML+="Ch: This group may exclusively consists of Chemistry Set products.<br>";
-examples.innerHTML+="Sd: This group may exclusively consists of [Seed] items.<br>";
-examples.innerHTML+="X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strnage Pendant."
+examples.innerHTML="<br>Items with the same price multipliers can be grouped together. The following is a breakdown of the groups by price multiplers."
+examples.innerHTML+="<br>Group E: By far the most used price multiplier in the game. Raw materials, growables, equipment, rune abilities and spells have this price multiplier. It may be simpler to list the items whose price multiplier is not E: seeds, cooked dishes, fish and products of the Chemistry Set.<br>";
+examples.innerHTML+="<br>Group C1: Almost all cooked dishes have this price multiplier. The known exceptions to this rule have [Fish] in the recipe. Also, some [Fish] items have this price multiplier. <br>";
+examples.innerHTML+="<br>Group C2: Known cooked dishes with this price multiplier have [Fish] with 10,000 G - 59,000 G buy prices. For example: Blowfish Sashimi, Grilled Yellowtail and Rockfish Stew. Some [Fish] also have this price multiplier.<br>";
+examples.innerHTML+="<br>Group C3: This group includes cooked [Fish] dishes whose [Fish] ingredient have buy prices above 60,000 G. Some [Fish] also fall under this group.<br>";
+examples.innerHTML+="<br>Group Ch: This group may exclusively consists of Chemistry Set products.<br>";
+examples.innerHTML+="<br>Group Sd: This group may exclusively consists of [Seed] items.<br>";
+examples.innerHTML+="<br>Group X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strnage Pendant."
 
 function showMultiplierTable(){
 	var node = document.getElementById('multiplierTable');
