@@ -30,3 +30,7 @@ tr:hover {
 td {
     text-align:center;
 }
+
+th, td {
+    padding: 5px;
+}
