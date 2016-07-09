@@ -18,6 +18,14 @@ table {
     color:white;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
 tr:hover {
     background-color:forestgreen;
 }
