@@ -42,9 +42,11 @@ registerItem({
 
 registerItem({
 	"name":"Strawberry",
+	"giantname":"Sultan Strawberry",
 	"category":"Fruit",
 	"sell":135,
 	"buy":800,
+	"flavourtext":"The red fairy of the dining table. Its sweet and sour kiss never fails to attract people.",
 	"pricemultiplier":"E",
 	"effects":{
 		"hp":35,
@@ -62,5 +64,31 @@ registerItem({
 	"psnresP":5,
 	"sealresP":5,
 	"parresP":5
+	}
+})
+
+registerItem({
+	"name":"Sultan Strawberry",
+	"mininame":"Strawberry",
+	"category":"Fruit",
+	"sell":700,
+	"flavourtext":"The red fairy of the dining table. Its sweet and sour kiss never fails to attract people.",
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":100,
+		"rp":35
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":49,
+		"str":8,
+		"vit":8
+	},
+	"ingredienteffects":{ // confirmed
+		"hp":100,
+		"rp":35, // wikia is wrong
+		"psnresP":30,
+		"sealresP":30,
+		"parresP":30
 	}
 })
