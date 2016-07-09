@@ -1,3 +1,7 @@
+// There are 8 [Fruit] items in the game: Mealy Apple, (Sultan) Strawberry, (King) Pineapple, Orange, Grapes and Apple. This section is complete.
+
+var fruitCategory = ["Mealy Apple","Strawberry","Sultan Strawberry","Pineapple","King Pineapple","Orange","Grapes","Apple"]
+
 registerItem({
 	"name":"Mealy Apple",
 	"category":"Fruit",
@@ -137,5 +141,77 @@ registerItem({
 		"hp":400,
 		"rp":200,
 		"faintresP":100
+	}
+})
+
+registerItem({
+	"name":"Orange",
+	"category":"Fruit",
+	"sell":80,
+	"buy":500,
+	"flavourtext":"A fruit with a good balance between sweet and sour. Your fingers can turn yellow if you eat too much of it.",
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":100,
+		"rp":10
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":30,
+		"vit":4,
+		"int":4
+	},
+	"cookingeffects":{ // confirmed
+		"hp":10,
+		"rp":5,
+		"parresP":5
+	}
+})
+
+registerItem({
+	"name":"Grapes",
+	"category":"Fruit",
+	"sell":120,
+	"buy":650,
+	"flavourtext":"Small purple fruits growing in clusters. They say that royalty would hire servants to pluck these piece-by-piece for them out of laziness. Sweet and juicy.",
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":100,
+		"rp":10
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":30,
+		"str":4,
+		"vit":4
+	},
+	"cookingeffects":{ // confirmed
+		"hp":10,
+		"rp":5,
+		"psnresP":5
+	}
+})
+
+registerItem({
+	"name":"Apple",
+	"category":"Fruit",
+	"sell":150,
+	"buy":850,
+	"flavourtext":"A pretty red fruit with high nutrition. Known for the old saying, <q>an apple a day keeps the doctor away.</q>",
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":100,
+		"rp":10
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":30,
+		"str":4,
+		"int":4
+	},
+	"cookingeffects":{ // confirmed
+		"hp":10,
+		"rp":5,
+		"sealresP":5
 	}
 })
