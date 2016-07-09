@@ -58,7 +58,7 @@ registerItem({
 		"str":3,
 		"vit":3
 	},
-	"ingredienteffects":{ // confirmed
+	"cookingeffects":{ // confirmed
 		"hp":35,
 		"rp":15, // wikia is wrong
 		"psnresP":5,
@@ -84,7 +84,7 @@ registerItem({
 		"str":8,
 		"vit":8
 	},
-	"ingredienteffects":{ // confirmed
+	"cookingeffects":{ // confirmed
 		"hp":100,
 		"rp":35, // wikia is wrong
 		"psnresP":30,
@@ -110,7 +110,7 @@ registerItem({
 		"difficulty":50,
 		"str":15
 	},
-	"ingredienteffects":{ // confirmed
+	"cookingeffects":{ // confirmed
 		"hp":120,
 		"rp":40,
 		"faintresP":25
@@ -133,7 +133,7 @@ registerItem({
 		"difficulty":72,
 		"atk":35
 	},
-	"ingredienteffects":{ // confirmed
+	"cookingeffects":{ // confirmed
 		"hp":400,
 		"rp":200,
 		"faintresP":100
