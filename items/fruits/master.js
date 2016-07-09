@@ -150,7 +150,7 @@ registerItem({
 	"sell":80,
 	"buy":500,
 	"flavourtext":"A fruit with a good balance between sweet and sour. Your fingers can turn yellow if you eat too much of it.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":100,
 		"rp":10
@@ -174,7 +174,7 @@ registerItem({
 	"sell":120,
 	"buy":650,
 	"flavourtext":"Small purple fruits growing in clusters. They say that royalty would hire servants to pluck these piece-by-piece for them out of laziness. Sweet and juicy.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":100,
 		"rp":10
@@ -198,7 +198,7 @@ registerItem({
 	"sell":150,
 	"buy":850,
 	"flavourtext":"A pretty red fruit with high nutrition. Known for the old saying, <q>an apple a day keeps the doctor away.</q>",
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":100,
 		"rp":10
