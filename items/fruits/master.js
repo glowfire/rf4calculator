@@ -59,11 +59,11 @@ registerItem({
 		"vit":3
 	},
 	"ingredienteffects":{ // confirmed
-	"hp":35,
-	"rp":15, // wikia is wrong
-	"psnresP":5,
-	"sealresP":5,
-	"parresP":5
+		"hp":35,
+		"rp":15, // wikia is wrong
+		"psnresP":5,
+		"sealresP":5,
+		"parresP":5
 	}
 })
 
@@ -90,5 +90,52 @@ registerItem({
 		"psnresP":30,
 		"sealresP":30,
 		"parresP":30
+	}
+})
+
+registerItem({
+	"name":"Pineapple",
+	"giantname":"King Pineapple",
+	"category":"Fruit",
+	"sell":1600,
+	"buy":8500,
+	"flavourtext":"Tropical fruit with a hint of sourness hidden amidst its sweet flavor. Feel the tropical sun!",
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":120,
+		"rp":40
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":50,
+		"str":15
+	},
+	"ingredienteffects":{ // confirmed
+		"hp":120,
+		"rp":40,
+		"faintresP":25
+	}
+})
+
+registerItem({
+	"name":"King Pineapple",
+	"mininame":"Pineapple",
+	"category":"Fruit",
+	"sell":8000,
+	"flavourtext":"Tropical fruit with a hint of sourness hidden amidst its sweet flavor. Feel the tropical sun!",
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":400,
+		"rp":200
+	},
+	"upgradeinfo":{
+		"rarity":12,
+		"difficulty":72,
+		"atk":35
+	},
+	"ingredienteffects":{ // confirmed
+		"hp":400,
+		"rp":200,
+		"faintresP":100
 	}
 })
