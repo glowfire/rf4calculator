@@ -39,3 +39,28 @@ registerItem({
     "darkresP":-10
   }
 })
+
+registerItem({
+	"name":"Strawberry",
+	"category":"Fruit",
+	"sell":135,
+	"buy":800,
+	"pricemultiplier":"E",
+	"effects":{
+	  "hp":35,
+	  "rp":15
+	},
+	"upgradeinfo":{
+	  "rarity":4,
+	  "difficulty":24,
+	  "str":3,
+	  "vit":3
+	},
+	"ingredienteffects":{ // confirmed
+    	"hp":35,
+    	"rp":15, // wikia is wrong
+    	"psnresP":5,
+    	"sealresP":5,
+    	"parresP":5
+  }
+})
