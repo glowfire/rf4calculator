@@ -16,11 +16,6 @@ form {
 
 table {
     color:white;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid white;
 }
 
 tr:hover {
