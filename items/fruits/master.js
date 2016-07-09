@@ -1,6 +1,6 @@
 // There are 8 [Fruit] items in the game: Mealy Apple, (Sultan) Strawberry, (King) Pineapple, Orange, Grapes and Apple. This section is complete.
 
-var fruitCategory = ["Mealy Apple","Strawberry","Sultan Strawberry","Pineapple","King Pineapple","Orange","Grapes","Apple"]
+var fruitCategory = ["Mealy Apple","Strawberry","Sultan Strawberry","Pineapple","King Pineapple","Orange","Grapes","Apple"];
 
 registerItem({
 	"name":"Mealy Apple",
@@ -42,7 +42,7 @@ registerItem({
 		"lightresP":-10,
 		"darkresP":-10
 	}
-})
+});
 
 registerItem({
 	"name":"Strawberry",
@@ -69,7 +69,7 @@ registerItem({
 		"sealresP":5,
 		"parresP":5
 	}
-})
+});
 
 registerItem({
 	"name":"Sultan Strawberry",
@@ -95,7 +95,7 @@ registerItem({
 		"sealresP":30,
 		"parresP":30
 	}
-})
+});
 
 registerItem({
 	"name":"Pineapple",
@@ -119,7 +119,7 @@ registerItem({
 		"rp":40,
 		"faintresP":25
 	}
-})
+});
 
 registerItem({
 	"name":"King Pineapple",
@@ -142,7 +142,7 @@ registerItem({
 		"rp":200,
 		"faintresP":100
 	}
-})
+});
 
 registerItem({
 	"name":"Orange",
@@ -166,7 +166,7 @@ registerItem({
 		"rp":5,
 		"parresP":5
 	}
-})
+});
 
 registerItem({
 	"name":"Grapes",
@@ -190,7 +190,7 @@ registerItem({
 		"rp":5,
 		"psnresP":5
 	}
-})
+});
 
 registerItem({
 	"name":"Apple",
@@ -214,4 +214,4 @@ registerItem({
 		"rp":5,
 		"sealresP":5
 	}
-})
+});
