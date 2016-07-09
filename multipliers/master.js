@@ -107,6 +107,10 @@ for (row = 0; row < maxLv; row++) {
     
 var explanation = document.createElement('p');
 var examples = document.createElement('p');
+var multiplierTableTitle = document.createElement('p');
+
+multiplierTableTitle.innerHTML="Table of Multipliers"
+multiplierTableTitle.style.fontWeight="bold";
 
 explanation.innerHTML="An item's sell price at a specified level can be predicted with its price multiplier type and base sell price. ";
 explanation.innerHTML+="The item's base sell price is its sell price at Lv. 1. This info can be obtained from the item's info screen in shipping records, recipes, etc. ";
@@ -125,6 +129,7 @@ examples.innerHTML+="<br>Group X: Items in this tiny group have sell prices that
 function showMultiplierTable(){
 	var node = document.getElementById('multiplierTable');
 	node.innerHTML="Hide Multiplier Table";
+	document.getElementById('multiplierTableDiv').appendChild(multiplierTableTitle);
 	document.getElementById('multiplierTableDiv').appendChild(multiplierTable);
 	document.getElementById('multiplierTableDiv').appendChild(explanation);
 	document.getElementById('multiplierTableDiv').appendChild(examples);
@@ -135,6 +140,7 @@ function hideMultiplierTable(){
 	var node = document.getElementById('multiplierTable');
 	node.innerHTML="Show Multiplier Table";
 	node.setAttribute('onclick','showMultiplierTable()');
+	document.getElementById('multiplierTableDiv').removeChild(multiplierTableTitle);
 	document.getElementById('multiplierTableDiv').removeChild(multiplierTable);
 	document.getElementById('multiplierTableDiv').removeChild(explanation);
 	document.getElementById('multiplierTableDiv').removeChild(examples);
