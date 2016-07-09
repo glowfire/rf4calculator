@@ -1340,7 +1340,7 @@ function getProfitTable(){
 		var footer=document.createElement('p')
 		footer.innerHTML="Red denotes <span style='color:#FF0000'>not profitable</span> at the specified level.<br>"
 		footer.innerHTML+="Blue denotes profit only if the "
-    	footer.innerHTML+="<span style='color:#0000FF'>materials are discounted</span>.<br>"
+    	footer.innerHTML+="<span style='color:#87CEFA'>materials are discounted</span>.<br>"
 		footer.innerHTML+="Green denotes <span style='color:#00FF00'>profit</span> at the specified level.<br>"
     	footer.innerHTML+="Violet denotes higher profit from "
     	footer.innerHTML+="<span style='color:#FF00FF'>selling the materials directly</span> than the product.<br>"
@@ -1392,7 +1392,7 @@ function getProfitTable(){
         		if (0>currentValue){
         			td.style.color="red";
         	    } else if (currentValue>0){
-        	    	td.style.color="blue";
+        	    	td.style.color="lightskyblue";
         	        td.style.fontWeight="bold";
         	        if (profitArray[row+maxLv*(col-1)]>0){
         	        	td.innerHTML="<span style='color:#00FF00'>"+td.innerHTML+"</span>";
