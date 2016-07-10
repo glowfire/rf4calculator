@@ -40,6 +40,14 @@ Object.prototype.getUniqueNameString = function(){
 	return itemName.getModifiedNameString(itemProductionLevel)
 }
 
+function stringIsInArray(arrayOfStrings,string){
+    var foo=false;
+    if (arrayOfStrings.indexOf(string) > -1){
+    	foo=true;
+    }
+    	return foo;
+}
+
 masterItemList={};
 masterNameList=[];
 productMaterialMapping={};
