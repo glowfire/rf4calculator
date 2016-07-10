@@ -38,7 +38,7 @@ registerItem({
 	"flavourtext":"A type of alcohol made from grapes. Popular for its taste and mellowness.",
 	"pricemultiplier":"Ch",
 	"effects":{
-		"statusailments":["SLP"]
+		"statusailments":["SLP"],
 	  "rp":20
 	},
 	"cookingeffects":{
