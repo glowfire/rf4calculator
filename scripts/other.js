@@ -545,4 +545,3 @@ function getProfitTable(){
 		document.getElementById('profitTable').appendChild(footer);
 	}
 }
-</script>
