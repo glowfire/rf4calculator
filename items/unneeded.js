@@ -1,4 +1,4 @@
-
+// Can delete if no further use.
 
 ////////////////////////////////////////////////////////////////
 //var currentItem="cornonthecob".convertStringToItem()
