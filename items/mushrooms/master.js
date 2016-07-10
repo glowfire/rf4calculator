@@ -1,4 +1,29 @@
 registerItem({
+  "name":"Monarch Mushroom",
+  "category":"Mushroom",
+  "sell":1e4,
+  "pricemultiplier":"E", // tentative
+  "flavourtext":"The king of mushrooms. Has such a profound flavor that even royalty must bow down.",
+  "effects":{ // unconfirmed
+    "hpP":100,
+    "rpP":100,
+    "heal":["PSN","SEAL","PAR","FTG","SICK"]
+  },
+  "upgradeinfo":{ // unconfirmed
+		"rarity":0, // unknown
+		"difficulty":1, //unknown
+		"str":5, // according to http://gwiki.jp/rf4/?%BA%EE%CA%AA
+		"vit":5, // according to http://gwiki.jp/rf4/?%BA%EE%CA%AA
+		"int":5 // according to http://gwiki.jp/rf4/?%BA%EE%CA%AA
+	},
+	"cookingeffects":{ // unknown
+    "hp":3000,
+    "rp":500,
+    "heal":["PSN","SEAL","PAR","FTG","SICK"]
+  }
+})
+
+registerItem({
   "name":"Mushroom",
   "category":"Mushroom",
   "sell":10,
