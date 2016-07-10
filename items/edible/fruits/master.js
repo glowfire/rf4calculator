@@ -6,6 +6,7 @@ registerItem({
 	"name":"Mealy Apple",
 	"category":"Fruit",
 	"sell":3000,
+	"flavourtext":"???",
 	"pricemultiplier":"E",
 	"effects":{
 		"strP":-50,
