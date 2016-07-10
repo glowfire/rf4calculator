@@ -68,7 +68,7 @@ registerItem({
 	"category":"Shells and Bones",
 	"sell":200,
 	"buy":1600,
-	"flavourtext":"A shell that is extremely hard. You need to be skilled enough towork on this.",
+	"flavourtext":"A shell that is extremely hard. You need to be skilled enough to work on this.",
 	"pricemultiplier":"E",
 	"upgradematerial":{
 		"rarity":12,
