@@ -145,3 +145,45 @@ function hideMultiplierTable(){
 	document.getElementById('multiplierTableDiv').removeChild(explanation);
 	document.getElementById('multiplierTableDiv').removeChild(examples);
 }
+
+function getPriceMultiplierArray(multiplierType){
+	switch(multiplierType){
+    	case "E":
+        	return priceMultiplierE;
+        	break;
+    	case "C1":
+        	return priceMultiplierC1;
+        	break;
+    	case "C2":
+        	return priceMultiplierC2;
+        	break;
+    	case "C3":
+        	return priceMultiplierC3;
+        	break;
+    	case "Ch":
+        	return priceMultiplierCh;
+        	break;
+    	case "Sd":
+        	return priceMultiplierSd;
+        	break;
+    	case "X":
+        	return priceMultiplierX;
+        	break;
+	}
+}
+    
+function getMultiplierAtLevel(multiplierArray,level){
+	// Gets multiplier based on multiplier type and level
+    var currentMultiplier=multiplierArray[level-1]
+    return currentMultiplier
+}
+
+function getValueAtLevel(baseValue,level){
+	// Gets stat value based on level and base stat
+    var currentMultiplierValue=statMultiplier[level-1];
+    var integerCorrector=1e6;
+    var currentModifiedMultiplierValue=currentMultiplierValue*integerCorrector;
+    var currentModifiedValue=currentModifiedMultiplierValue*baseValue;
+    var currentValue=currentModifiedValue/integerCorrector;
+    return currentValue;
+}
