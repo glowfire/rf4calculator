@@ -48,6 +48,12 @@ function stringIsInArray(arrayOfStrings,string){
     	return foo;
 }
 
+Array.prototype.arrayPush = function(elementArray){
+    for (i=0;i<elementArray.length;i++){
+    	this.push(elementArray[i]);
+        };
+};
+
 masterItemList={};
 masterNameList=[];
 productMaterialMapping={};
