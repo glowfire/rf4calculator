@@ -1,4 +1,4 @@
-
+// Rewrite these.
 
 function nameComparator(a, b) {
    if (a[0].toLowerCase() < b[0].toLowerCase()){ return -1;
