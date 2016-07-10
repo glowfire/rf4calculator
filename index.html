@@ -2,10 +2,10 @@
 	<LINK href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
 	<script src="multipliers/master.js"></script>
 	<script src="items/master.js"></script>
-	<script src="items/plants/growable/master.js"></script>
-	<script src="items/plants/nongrowable/master.js"></script>
-	<script src="items/fruits/master.js"></script>
-	<script src="items/mushrooms/master.js"></script>
+	<script src="items/edible/plants/growable/master.js"></script>
+	<script src="items/edible/plants/nongrowable/master.js"></script>
+	<script src="items/edible/fruits/master.js"></script>
+	<script src="items/edible/mushrooms/master.js"></script>
 <div id="itemSelectionDiv">
 </div>
 
@@ -901,14 +901,6 @@ function getUpgradeInfo(){
     }
 }
 
-function stringIsInArray(arrayOfStrings,string){
-    var foo=false;
-    if (arrayOfStrings.indexOf(string) > -1){
-    	foo=true;
-    }
-    	return foo;
-}
-
 function getEffectsTable(){
 	// Section for level dependent stats like effects
 	dependentStats = document.getElementById('dependantDiv');
@@ -1053,45 +1045,6 @@ function getEffectsTable(){
     }
 }
 
-function getPriceMultiplierArray(multiplierType){
-	switch(multiplierType){
-    	case "E":
-        	return priceMultiplierE;
-        	break;
-    	case "C1":
-        	return priceMultiplierC1;
-        	break;
-    	case "C2":
-        	return priceMultiplierC2;
-        	break;
-    	case "C3":
-        	return priceMultiplierC3;
-        	break;
-    	case "Ch":
-        	return priceMultiplierCh;
-        	break;
-    	case "X":
-        	return priceMultiplierX;
-        	break;
-	}
-}
-    
-function getMultiplierAtLevel(multiplierArray,level){
-	// Gets multiplier based on multiplier type and level
-    var currentMultiplier=multiplierArray[level-1]
-    return currentMultiplier
-}
-
-function getValueAtLevel(baseValue,level){
-	// Gets stat value based on level and base stat
-    var currentMultiplierValue=statMultiplier[level-1];
-    var integerCorrector=1e6;
-    var currentModifiedMultiplierValue=currentMultiplierValue*integerCorrector;
-    var currentModifiedValue=currentModifiedMultiplierValue*baseValue;
-    var currentValue=currentModifiedValue/integerCorrector;
-    return currentValue;
-}
-
 function getSellPriceAtLevel(item,level){
 	// Gets the price of an item at a specified level
 	var sellPriceAtLv1=item.sell;
@@ -1198,12 +1151,6 @@ function canProduceAtVaryingLevels(item){
         
     return foo
     }
-
-Array.prototype.arrayPush = function(elementArray){
-    for (i=0;i<elementArray.length;i++){
-    	this.push(elementArray[i]);
-        };
-};
 
 function getProfitTable(){
 	
