@@ -4,7 +4,7 @@ body {
 
 p {
     color:aquamarine;
-    font-size:medium;
+    font-size:1.5em;
 }
 
 form {
@@ -13,7 +13,7 @@ form {
 
 table {
     color:white;
-    font-size:medium;
+    font-size:1.25em;
 }
 
 tr:hover {
