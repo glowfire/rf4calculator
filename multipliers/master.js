@@ -122,7 +122,7 @@ examples.innerHTML+="<br>Group E: By far the biggest price multiplier group in t
 examples.innerHTML+="<br>Group C1: Almost all cooked dishes fall under this group. Interestingly, some [Fish] items also have price multiplier type C1. <br>";
 examples.innerHTML+="<br>Group C2: Known cooked dishes with this price multiplier have [Fish] with 10,000 G - 59,000 G buy prices. For example: Blowfish Sashimi, Grilled Yellowtail and Rockfish Stew. Some [Fish] also have this price multiplier type.<br>";
 examples.innerHTML+="<br>Group C3: This group includes cooked [Fish] dishes whose [Fish] ingredient have buy prices above 60,000 G. Some [Fish] also fall under this group.<br>";
-examples.innerHTML+="<br>Group Ch: This group mainly consists of Chemistry Set products. Also included are Orange, Grapes, Apple, Branch, Rock, Lumber and Material Stone.<br>";
+examples.innerHTML+="<br>Group Ch: This group mainly consists of Chemistry Set products. Also included are [Ready-made] items, Orange, Grapes, Apple, Branch, Rock, Lumber and Material Stone.<br>";
 examples.innerHTML+="<br>Group Sd: This group may exclusively consist of [Seed] items.<br>";
 examples.innerHTML+="<br>Group X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strange Pendant.";
 
