@@ -734,6 +734,10 @@ function showBasicStats(){
 		priceLine.innerHTML+="<br>Base Buy Price: "+currentBuyPrice+" G";
 		priceLine.innerHTML+=" (with discount: "+currentBuyPriceDiscount+" G)";
 	}
+	
+	var flavourTextLine = document.createElement('p');
+	document.getElementById('currentItemDiv').appendChild(flavourTextLine);
+	flavourTextLine.innerHTML="Flavour text: "+currentItem.flavourtext;
 }
     
 var materialsList
