@@ -4,12 +4,10 @@ body {
 
 h1 {
     color:aquamarine;
-    font-size:1.75em;
 }
 
 p {
     color:aquamarine;
-    font-size:1.5em;
 }
 
 form {
@@ -18,7 +16,6 @@ form {
 
 table {
     color:white;
-    font-size:1.25em;
 }
 
 tr:hover {
