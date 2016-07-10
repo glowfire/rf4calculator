@@ -1,4 +1,4 @@
-// May have cooking effects
+// Complete
 
 registerItem({
 	"name":"Turtle Shell",
@@ -63,32 +63,33 @@ registerItem({
 	}
 });
 
-registerItem({////////////////////////////////////////////////////////////////////
-	"name":"Blk",
+registerItem({
+	"name":"Blk. Tortoise Shell",
 	"category":"Shells and Bones",
-	"sell":33,
-	"buy":165,
-	"flavourtext":"An ancient fish fossil. Some collectors would kill to find one!",
+	"sell":200,
+	"buy":1600,
+	"flavourtext":"A shell that is extremely hard. You need to be skilled enough towork on this.",
 	"pricemultiplier":"E",
 	"upgradematerial":{
-		"rarity":3,
-		"difficulty":20,
-		"matk":4,
-		"mdef":1
+		"rarity":12,
+		"difficulty":62,
+		"def":26,
+		"mdef":7
 	}
 });
 
 registerItem({
 	"name":"Ammonite",
 	"category":"Shells and Bones",
-	"sell":33,
-	"buy":165,
-	"flavourtext":"An ancient fish fossil. Some collectors would kill to find one!",
+	"sell":3200,
+	"buy":168000,
+	"flavourtext":"Octopirate's ancient friend. Used to endure hardships, but not resistant to magic.",
 	"pricemultiplier":"E",
 	"upgradematerial":{
-		"rarity":3,
-		"difficulty":20,
-		"matk":4,
-		"mdef":1
+		"rarity":15,
+		"difficulty":92,
+		"def":135,
+		"mdef":82,
+		"str":-5
 	}
 });
