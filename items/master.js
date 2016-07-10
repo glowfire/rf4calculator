@@ -103,3 +103,179 @@ function registerItem(item){
 	masterNameList.push([listedName,normalName,uniqueName,uniqueNumber]);
 	normalNameList.push(normalName)
 }
+
+function canProduceAtVaryingLevels(item){
+	var foo=false;
+    
+    if (item.cookinglevel!==undefined){
+    	//Cooked dishes can be produced at levels above 1
+    	foo=true; 
+    	}
+    if (item.chemistrylevel!==undefined){
+    	// Chemistry products can be produced at levels above 1
+    	foo=true;
+        }
+        
+    return foo
+    }
+
+function canBuyAtVaryingLevels(item){
+	var foo=false
+    
+    switch(item.category){
+		case ("Vegetable"):
+			foo=true;
+    		break;
+    	case ("Seed"):
+			foo=true;
+    		break;
+    	case ("Plant"):
+			foo=true;
+    		break;
+	}
+    
+    switch(item.name){
+    
+		case ("Pineapple"): // Most fruits do not vary level by purchase
+			foo=true; // Pineapple can be bought at different levels
+    		break;
+    	case ("Strawberry"): // Fruit
+			foo=true; // Strawberry can be bought at different levels
+    		break;
+            
+    	case ("Antidote Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Bamboo Sprout"): // Vegetable
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Elli Leaves"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Medicinal Herb"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Weeds"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Withered Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+            
+    	case ("Black Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("White Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Red Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Orange Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;            
+    	case ("Yellow Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Green Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Blue Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Indigo Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+    	case ("Purple Grass"): // Plant
+			foo=false; // cannot be bought at levels above 1
+    		break;
+	}
+        
+    if (item.buy==undefined){
+    	foo=false;
+        }
+    
+    return foo;
+    }
+
+String.prototype.convertStringToItem=function(){
+	var fullLength = masterNameList.length
+	var halfWayPoint = Math.ceil(fullLength/2)
+	for (i=0;i<halfWayPoint;i++){
+    	var frontNameSet = sortedMasterNameList[i]
+        var backNameSet = sortedMasterNameList[fullLength-1-i]
+        
+        var currentString = this
+        var frontString = frontNameSet[1]
+        var backString = backNameSet[1]
+        
+        var currentModifiedString = this.replace(/ /g,'').toLowerCase()
+        var frontModifiedString = frontNameSet[1].replace(/ /g,'').toLowerCase()
+        var backModifiedString = backNameSet[1].replace(/ /g,'').toLowerCase()
+    	
+        if (currentString==frontString){
+        	return masterItemList[frontNameSet[2]]
+            break;
+        } else if (currentString==backString){
+        	return masterItemList[backNameSet[2]]
+            break;
+        } else if (currentModifiedString==backModifiedString){
+        	return masterItemList[backNameSet[2]]
+            break;
+        } else if (currentModifiedString==frontModifiedString){
+        	return masterItemList[frontNameSet[2]]
+            break;
+        }
+    }
+}
+
+String.prototype.convertStringToItemByListedName=function(){
+	var fullLength = masterNameList.length
+	var halfWayPoint = Math.ceil(fullLength/2)
+	for (i=0;i<halfWayPoint;i++){
+    	var frontNameSet = masterNameList[i]
+        var backNameSet = masterNameList[fullLength-1-i]
+        var currentString = this.replace(/ /g,'').toLowerCase().alphanumericOnly()
+        var frontString = frontNameSet[0].replace(/ /g,'').toLowerCase().alphanumericOnly()
+        var backString = backNameSet[0].replace(/ /g,'').toLowerCase().alphanumericOnly()
+    	if (currentString==frontString){
+        	return masterItemList[frontNameSet[2]]
+            break;
+        } else if (currentString==backString){
+        	return masterItemList[backNameSet[2]]
+            break;
+        }
+    }
+}
+
+Array.prototype.convertStringListToObjectList=function(){
+	var materialsArray = [];
+    for (i=0;i<this.length;i++){
+    	this[i].convertStringToItem()
+    }
+}
+
+function getSellPriceAtLevel(item,level){
+	// Gets the price of an item at a specified level
+	var sellPriceAtLv1=item.sell;
+    var currentMultiplierArray = getPriceMultiplierArray(item.pricemultiplier);
+    var currentMultiplier=getMultiplierAtLevel(currentMultiplierArray,level);
+    var integerCorrector=1e6;
+    // Not converting all factors into integers may result in undesirable floating numbers
+    var currentModifiedMultiplier=integerCorrector*currentMultiplier;
+    var sellPriceAtSpecifiedLvModified=sellPriceAtLv1*currentModifiedMultiplier;
+    var sellPriceAtSpecifiedLv=Math.floor(sellPriceAtSpecifiedLvModified/integerCorrector);
+    return sellPriceAtSpecifiedLv;
+}
+
+function allMaterialsBuyable(materialsArray){
+	var foo=true
+    for (i=0;i<materialsArray.length;i++){
+    	var currentMaterial = materialsArray[i].convertStringToItem();
+        if (currentMaterial.buy==undefined){
+        	foo=false;
+            break;
+            }
+		}
+	return foo
+    }
