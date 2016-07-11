@@ -4,7 +4,7 @@ var fruitCategory = ["Mealy Apple","Strawberry","Sultan Strawberry","Pineapple",
 
 registerItem({
 	"name":"Mealy Apple",
-	"category":"Fruit",
+	"category":"Eew, gross! Makes you very,very weak.",
 	"sell":3000,
 	"flavourtext":"???",
 	"pricemultiplier":"E",
