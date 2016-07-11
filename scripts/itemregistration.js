@@ -104,6 +104,18 @@ function registerItem(item){
 	normalNameList.push(normalName)
 }
 
+function listedNameComparator(a, b) {
+   if (a[0].toLowerCase() < b[0].toLowerCase()){ return -1;
+   } else if (a[0].toLowerCase() > b[0].toLowerCase()){ return 1;
+   } else {return 0;}
+}
+
+function levelComparator(a, b) {
+   if (parseInt(a[2]) < parseInt(b[2])){ return -1;
+   } else if (parseInt(a[2]) > parseInt(b[2])){ return 1;
+   } else {return 0};
+}
+
 function canProduceAtVaryingLevels(item){
 	var foo=false;
     
