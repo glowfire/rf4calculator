@@ -1,4 +1,6 @@
 <html>
+<head>
+	<title>Rune Factory 4 Item Database</title>
 	<LINK href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
 	<script src="scripts/multipliers.js"></script>
 	<script src="scripts/itemregistration.js"></script>
@@ -10,22 +12,23 @@
 	<script src="items/nonedible/collectible/liquids/master.js"></script>
 	<script src="items/nonedible/collectible/feathers/master.js"></script>
 	<script src="items/nonedible/collectible/shellsandbones/master.js"></script>
-<div id="itemSelectionDiv">
-</div>
+</head>
+<body>
+	
+	<div id="itemSelectionDiv"></div>
+	
+	<div id="currentItemDiv"></div>
+	<div id="dependantDiv"></div>
+	
+	<div id="profitTableDiv">
+		<p id="profitTable"></p>
+	</div>
 
-<div id="currentItemDiv">
-</div>
+	<div id="multiplierTableDiv">
+		<button id="multiplierTable" onclick="showMultiplierTable()">Show Multiplier Table</button>
+	</div>
 
-<div id="dependantDiv">
-</div>
-
-<div id="profitTableDiv">
-<p id="profitTable"></p>
-</div>
-
-<div id="multiplierTableDiv">
-<button id="multiplierTable" onclick="showMultiplierTable()">Show Multiplier Table</button>
-</div>
-
-<script src="scripts/recordsorder.js"></script>
-<script src="scripts/other.js"></script>
+	<script src="scripts/recordsorder.js"></script>
+	<script src="scripts/other.js"></script>
+</body>
+</html>
