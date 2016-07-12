@@ -62,7 +62,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"hp":70,
-		"str"2
+		"str":2
 	}
 })
 
