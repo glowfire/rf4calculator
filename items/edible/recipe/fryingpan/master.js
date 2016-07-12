@@ -5,7 +5,7 @@ registerItem({
 	"category":"Frying Pan",
 	"cookinglevel":31,
 	"sell":375,
-	"buy":1800,,
+	"buy":1800,
 	"pricemultiplier":"C1",
 	"flavourtext":"Roasted eggplant with miso. Mellow and rich in flavor.",
 	"effects":{
