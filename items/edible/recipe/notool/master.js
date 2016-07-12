@@ -1,27 +1,57 @@
+
+
 registerItem({
-	"name":"Turnip Heaven",
-    "cookinglevel":96,
+	"name":"Pickled Turnip",
+    "cookinglevel":4,
 	"category":"No Tool",
-    "sell":150000,
-    "buy":542000,
+    "sell":48,
+    "buy":400,
     "pricemultiplier":"C1",
-    "flavourtext":"Turnips from three corners of the globe, gathered together into a turnip paradise. Try to eat all three at once!",
+    "flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
     "effects":{
-    	"hp":5000,
-        "hpP":90,
-        "rp":1000,
-        "rpP":90,
-        "str":90,
-        "strP":12,
-        "vit":80,
-        "vitP":15,
-        "int":50,
-        "intP":10,
-        "fireresP":20,
-        "lightresP":20,
-        "darkresP":20
+    	"hp":250,
+        "rp":100,
+        "str":5,
+        "vit":3,
+        "int":5
         },
-	"materials":["Turnip","Pink Turnip","Golden Turnip"]
+	"materials":["Turnip"]
+})
+
+registerItem({
+	"name":"Pickles",
+    "cookinglevel":10,
+	"category":"No Tool",
+    "sell":105,
+    "buy":450,
+    "pricemultiplier":"C1",
+    "flavourtext":"Lightly pickled cucumber. Has a crunchy texture.",
+    "effects":{
+    	"hp":400,
+        "rp":100,
+        "str":4,
+        "vit":3,
+        "int":2
+        },
+	"materials":["Cucumber"]
+})
+
+registerItem({
+	"name":"Pickled Turnip",
+    "cookinglevel":12,
+	"category":"No Tool",
+    "sell":48,
+    "buy":400,
+    "pricemultiplier":"C1",
+    "flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
+    "effects":{
+    	"hp":250,
+        "rp":100,
+        "str":5,
+        "vit":3,
+        "int":5
+        },
+	"materials":["Pink Turnip"]
 })
 
 registerItem({
@@ -49,56 +79,28 @@ registerItem({
 })
 
 registerItem({
-	"name":"Pickled Turnip",
-    "cookinglevel":12,
+	"name":"Turnip Heaven",
+    "cookinglevel":96,
 	"category":"No Tool",
-    "sell":48,
-    "buy":400,
+    "sell":150000,
+    "buy":542000,
     "pricemultiplier":"C1",
-    "flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
+    "flavourtext":"Turnips from three corners of the globe, gathered together into a turnip paradise. Try to eat all three at once!",
     "effects":{
-    	"hp":250,
-        "rp":100,
-        "str":5,
-        "vit":3,
-        "int":5
+    	"hp":5000,
+        "hpP":90,
+        "rp":1000,
+        "rpP":90,
+        "str":90,
+        "strP":12,
+        "vit":80,
+        "vitP":15,
+        "int":50,
+        "intP":10,
+        "fireresP":20,
+        "lightresP":20,
+        "darkresP":20
         },
-	"materials":["Pink Turnip"]
-})
-
-registerItem({
-	"name":"Pickles",
-    "cookinglevel":10,
-	"category":"No Tool",
-    "sell":105,
-    "buy":450,
-    "pricemultiplier":"C1",
-    "flavourtext":"Lightly pickled cucumber. Has a crunchy texture.",
-    "effects":{
-    	"hp":400,
-        "rp":100,
-        "str":4,
-        "vit":3,
-        "int":2
-        },
-	"materials":["Cucumber"]
-})
-
-registerItem({
-	"name":"Pickled Turnip",
-    "cookinglevel":4,
-	"category":"No Tool",
-    "sell":48,
-    "buy":400,
-    "pricemultiplier":"C1",
-    "flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
-    "effects":{
-    	"hp":250,
-        "rp":100,
-        "str":5,
-        "vit":3,
-        "int":5
-        },
-	"materials":["Turnip"]
+	"materials":["Turnip","Pink Turnip","Golden Turnip"]
 })
 
