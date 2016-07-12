@@ -46,6 +46,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Corn",
+	"category":"Vegetable",
+	"sell":1e3,
+	"buy":3e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A vegetable studded with yellow kernels. Hard to decide which side to eat from. Best lathered with butter.",
+	"effects":{
+		"hp":75
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":27,
+		"vit":6
+	},
+	"cookingeffects":{
+		"hp":75,
+		"rpmax":10
+	}
+})
+
+registerItem({
 	"name":"Pink Turnip",
 	"category":"Vegetable",
 	"sell":200,
@@ -63,6 +84,27 @@ registerItem({
 	"cookingeffects":{
 		"hp":70,
 		"str":2
+	}
+})
+
+registerItem({
+	"name":"Eggplant",
+	"category":"Vegetable",
+	"sell":190,
+	"buy":950,
+	"pricemultiplier":"E",
+	"flavourtext":"A purple vegetable with a cute stem. Has a soft texture.",
+	"effects":{
+		"hp":100
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":33,
+		"str":7
+	},
+	"cookingeffects":{
+		"hp":100,
+		"critP":1
 	}
 })
 
