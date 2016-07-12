@@ -25,6 +25,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Spinach",
+	"category":"Vegetable",
+	"sell":65,
+	"buy":300,
+	"pricemultiplier":"E",
+	"flavourtext":"A dark green vegetable rich in nutrients. Said to give you strength and energy.",
+	"effects":{
+		"hp":50
+	},
+	"upgradeinfo":{
+		"rarity":1,
+		"difficulty":9,
+		"matk":2
+	},
+	"cookingeffects":{
+		"hp":50,
+		"int":1
+	}
+})
+
+registerItem({
 	"name":"Cucumber",
 	"category":"Vegetable",
 	"sell":68,
