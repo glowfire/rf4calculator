@@ -23,7 +23,7 @@ registerItem({
 	"category":"Frying Pan",
 	"cookinglevel":51,
 	"sell":1800,
-	"buy":6200,,
+	"buy":6200,
 	"pricemultiplier":"C1",
 	"flavourtext":"Corn kernels popped in a pan. Generally eaten with salt.",
 	"effects":{
