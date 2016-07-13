@@ -37,4 +37,28 @@ registerItem({
 	},
 	"materials":["Corn"]
 })
+
+registerItem({
+	"name":"Fried Veggies",
+	"category":"Frying Pan",
+	"cookinglevel":62,
+	"sell":1550,
+	"buy":5000,
+	"pricemultiplier":"C1",
+	"flavourtext":"Various vegetables fried together. Much better than eating them raw. But anyone could have told you that- frying makes anything better!",
+	"effects":{
+		"hp":5000,
+		"hpP":71,
+		"rp":1000,
+		"hpmax":800,
+		"hpmaxP":3,
+		"str":50,
+		"strP":3,
+		"vit":50,
+		"vitP":3,
+		"int":50,
+		"intP":3
+	},
+	"materials":["Cabbage"]
+})
 	
