@@ -25,6 +25,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Radish",
+	"category":"Vegetable",
+	"sell":360,
+	"buy":1580,
+	"pricemultiplier":"E",
+	"flavourtext":"A white, thick <q>daikon</q> radish. Used in many home-cooking recipes.",
+	"effects":{
+		"hp":5
+	},
+	"upgradeinfo":{
+		"rarity":2,
+		"difficulty":12,
+		"vit":3
+	},
+	"cookingeffects":{
+		"hp":5,
+		"critresP":5
+	}
+})
+
+registerItem({
 	"name":"Spinach",
 	"category":"Vegetable",
 	"sell":65,
