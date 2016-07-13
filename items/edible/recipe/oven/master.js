@@ -8,7 +8,7 @@ registerItem({
 	"sell":240,
 	"buy":870,
 	"pricemultiplier":"C1",
-	"flavourtext":"A slow-roasted sweet potato. Often cooked over bonfires in the fall."
+	"flavourtext":"A slow-roasted sweet potato. Often cooked over bonfires in the fall.",
 	"effects":{
 		"hp":2020,
 		"rp":500,
@@ -24,7 +24,7 @@ registerItem({
 	"sell":1860,
 	"buy":6200,
 	"pricemultiplier":"C1",
-	"flavourtext":"Fragrantly roasted corn. Very sweet."
+	"flavourtext":"Fragrantly roasted corn. Very sweet.",
 	"effects":{
 		"hp":5000,
 		"hpP":20,
