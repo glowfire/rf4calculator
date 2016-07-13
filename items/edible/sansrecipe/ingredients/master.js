@@ -12,7 +12,7 @@ registerItem({
 		"str":1
 	},
 	"flavourtext":"Made by grinding wheat. A necessity in making dough, used in many recipes. Pretty amazing if you think about it.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -28,5 +28,5 @@ registerItem({
 		"fireresP":-30
 	},
 	"flavourtext":"Often used in fried recipes to add flavor and prevent sticking. Careful, it's highly flammable.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
