@@ -12,7 +12,7 @@ registerItem({
 		"hp":4000,
 		"rp":920,
 		"int":45
-	}
+	},
 	"flavourtext":"Juice made from fresh tomatoes. Thick and highly nutritious.",
 	"pricemultiplier":"C1"
 })
@@ -30,7 +30,7 @@ registerItem({
 		"rp":1000,
 		"int":80,
 		"intP":5
-	}
+	},
 	"flavourtext":"A healthy juice made from various vegetables. Bitter but strangely addictive.",
 	"pricemultiplier":"C1"
 })
