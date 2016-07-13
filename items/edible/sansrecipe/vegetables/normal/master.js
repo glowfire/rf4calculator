@@ -280,6 +280,28 @@ registerItem({
 })
 
 registerItem({
+	"name":"Golden Potato",
+	"category":"Vegetable",
+	"sell":6e3,
+	"buy":3e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Easy to spot, as its light shines brightly through the ground.",
+	"effects":{
+		"hp":350
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":55,
+		"vit":30,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":350,
+		"hpmaxP":3
+	}
+})
+
+registerItem({
 	"name":"Golden Turnip",
 	"category":"Vegetable",
 	"sell":2e4,
