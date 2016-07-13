@@ -25,6 +25,48 @@ registerItem({
 })
 
 registerItem({
+	"name":"Potato",
+	"category":"Vegetable",
+	"sell":90,
+	"buy":600,
+	"pricemultiplier":"E",
+	"flavourtext":"Loved by people from around the world. Used in various recipes from appetizers to main dishes.",
+	"effects":{
+		"hp":40
+	},
+	"upgradeinfo":{
+		"rarity":1,
+		"difficulty":7,
+		"vit":2
+	},
+	"cookingeffects":{
+		"hp":40,
+		"hpmax":15
+	}
+})
+
+registerItem({
+	"name":"Spinach",
+	"category":"Vegetable",
+	"sell":65,
+	"buy":300,
+	"pricemultiplier":"E",
+	"flavourtext":"A dark green vegetable rich in nutrients. Said to give you strength and energy.",
+	"effects":{
+		"hp":50
+	},
+	"upgradeinfo":{
+		"rarity":1,
+		"difficulty":9,
+		"matk":2
+	},
+	"cookingeffects":{
+		"hp":50,
+		"int":1
+	}
+})
+
+registerItem({
 	"name":"Radish",
 	"category":"Vegetable",
 	"sell":360,
@@ -63,27 +105,6 @@ registerItem({
 	"cookingeffects":{
 		"hp":60,
 		"hpmax":50
-	}
-})
-
-registerItem({
-	"name":"Spinach",
-	"category":"Vegetable",
-	"sell":65,
-	"buy":300,
-	"pricemultiplier":"E",
-	"flavourtext":"A dark green vegetable rich in nutrients. Said to give you strength and energy.",
-	"effects":{
-		"hp":50
-	},
-	"upgradeinfo":{
-		"rarity":1,
-		"difficulty":9,
-		"matk":2
-	},
-	"cookingeffects":{
-		"hp":50,
-		"int":1
 	}
 })
 
@@ -172,6 +193,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Leek",
+	"category":"Vegetable",
+	"sell":1600,
+	"buy":4800,
+	"pricemultiplier":"E",
+	"flavourtext":"A must-have vegetable for winter dishes such as hot pot.",
+	"effects":{
+		"hp":120
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":35,
+		"matk":6
+	},
+	"cookingeffects":{
+		"hp":120,
+		"sickresP":10
+	}
+})
+
+registerItem({
 	"name":"Pink Turnip",
 	"category":"Vegetable",
 	"sell":200,
@@ -193,6 +235,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Green Pepper",
+	"category":"Vegetable",
+	"sell":150,
+	"buy":700,
+	"pricemultiplier":"E",
+	"flavourtext":"Although nutritious and tasty when prepared right, green peppers are sometimes disliked for their bitterness.",
+	"effects":{
+		"hp":90
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":31,
+		"str":6
+	},
+	"cookingeffects":{
+		"hp":90,
+		"vit":8
+	}
+})
+
+registerItem({
 	"name":"Eggplant",
 	"category":"Vegetable",
 	"sell":190,
@@ -208,6 +271,27 @@ registerItem({
 		"str":7
 	},
 	"cookingeffects":{
+		"hp":100,
+		"critP":1
+	}
+})
+
+registerItem({
+	"name":"Hot-Hot Fruit",
+	"category":"Vegetable",
+	"sell":900,
+	"buy":7000,
+	"pricemultiplier":"E",
+	"flavourtext":"Covered in fuzz. Some use it to boil water.",
+	"effects":{
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":35,
+		"mdef":7,
+		"fireresP":5
+	},
+	"cookingeffects":{////////////////////////// unknown
 		"hp":100,
 		"critP":1
 	}
