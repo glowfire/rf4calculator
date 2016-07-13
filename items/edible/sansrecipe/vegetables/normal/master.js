@@ -130,6 +130,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Carrot",
+	"category":"Vegetable",
+	"sell":380,
+	"buy":2600,
+	"pricemultiplier":"E",
+	"flavourtext":"A long and thin vegetable with an orange color. Horses love to eat them, snowmen love to wear them, and children love to hate them.",
+	"effects":{
+		"hp":80
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":27,
+		"vit":7
+	},
+	"cookingeffects":{
+		"hp":80,
+		"critresP":8
+	}
+})
+
+registerItem({
 	"name":"Corn",
 	"category":"Vegetable",
 	"sell":1e3,
