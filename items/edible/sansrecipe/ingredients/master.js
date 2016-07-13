@@ -38,9 +38,10 @@ registerItem({
 	"buy":300,
 	"effects":{
 	},
-	"cookingeffects":{///////////// unknown
+	"cookingeffects":{
 		"rp":5,
-		"str":1
+		"hpmax":1,
+		"waterresP":5
 	},
 	"flavourtext":"Powder used to cook curry. Made by mixing various spices. Goes well with lots of stuff.",
 	"pricemultiplier":"Sd"
