@@ -46,6 +46,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Yam",
+	"category":"Vegetable",
+	"sell":140,
+	"buy":450,
+	"pricemultiplier":"E",
+	"flavourtext":"A vegetable high in fiber that will scour your gut and pipes.",
+	"effects":{
+		"hp":60
+	},
+	"upgradeinfo":{
+		"rarity":3,
+		"difficulty":18,
+		"vit":5
+	},
+	"cookingeffects":{
+		"hp":60,
+		"hpmax":50
+	}
+})
+
+registerItem({
 	"name":"Spinach",
 	"category":"Vegetable",
 	"sell":65,
