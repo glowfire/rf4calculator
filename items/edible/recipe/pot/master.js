@@ -14,3 +14,19 @@ registerItem({
 	},
 	"materials":["Spinach"]
 })
+
+registerItem({
+	"name":"Boiled Pumpkin",
+	"cookinglevel":25,
+	"materials":["Pumpkin"],
+	"category":"Pot",
+	"sell":180,
+	"buy":580,
+	"effects":{
+		"hp":2500,
+		"rp":820,
+		"hpmax":1000
+	},
+	"flavourtext":"Flavored and boiled pumpkin. Soft in texture. Boiling brings out the natural sweetness of the pumpkin.",
+	"pricemultiplier":"C1"
+})
