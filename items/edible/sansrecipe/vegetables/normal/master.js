@@ -46,6 +46,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Pumpkin",
+	"category":"Vegetable",
+	"sell":110,
+	"buy":420,
+	"pricemultiplier":"E",
+	"flavourtext":"A nutritious seasonal vegetable. Can be worn during the autumn festial by scooping out the inside.",
+	"effects":{
+		"hp":65
+	},
+	"upgradeinfo":{
+		"rarity":3,
+		"difficulty":19,
+		"str":3
+	},
+	"cookingeffects":{
+		"hp":65,
+		"vit":4
+	}
+})
+
+registerItem({
 	"name":"Cucumber",
 	"category":"Vegetable",
 	"sell":68,
