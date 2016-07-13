@@ -1,7 +1,7 @@
 
 
 registerItem({
-	"name":"Tomato Juice"
+	"name":"Tomato Juice",
 	"cookinglevel":35,
 	"materials":["Tomato"],
 	"category":"Mixer",
@@ -18,7 +18,7 @@ registerItem({
 })
 
 registerItem({
-	"name":"Vegetable Juice"
+	"name":"Vegetable Juice",
 	"cookinglevel":59,
 	"materials":["Pumpkin","Turnip","Carrot","Spinach"],
 	"category":"Mixer",
