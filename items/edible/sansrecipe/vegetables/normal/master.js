@@ -214,6 +214,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Tomato",
+	"category":"Vegetable",
+	"sell":540,
+	"buy":1800,
+	"pricemultiplier":"E",
+	"flavourtext":"A brilliant tomato, ruddy red like the summer sun. Popular for its high nutrition and health benefits.",
+	"effects":{
+		"hp":180
+	},
+	"upgradeinfo":{
+		"rarity":7,
+		"difficulty":43,
+		"str":9
+	},
+	"cookingeffects":{
+		"hp":180,
+		"psnresP":10
+	}
+})
+
+registerItem({
 	"name":"Golden Turnip",
 	"category":"Vegetable",
 	"sell":2e4,
