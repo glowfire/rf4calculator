@@ -34,3 +34,29 @@ registerItem({
 	"flavourtext":"A healthy juice made from various vegetables. Bitter but strangely addictive.",
 	"pricemultiplier":"C1"
 })
+
+registerItem({
+	"name":"Prelude to Love",
+	"cookinglevel":61,
+	"category":"Mixer",
+	"sell":2600,
+	"buy":11200,
+	"pricemultiplier":"C1",
+	"effects":{
+		"hp":5000,
+		"hpP":68,
+		"rp":1000,
+		"hpmaxP":-50,
+		"rpmaxP":-50,
+		"vitP":-50,
+		"fireresP":50,
+		"waterresP":50,
+		"earthresP":50,
+		"windresP":50,
+		"lightresP":50,
+		"darkresP":50,
+		"loveresP":100
+        },
+	"materials":["Pink Melon","Strawberry"],
+	"flavourtext":"Strawberries and pink melons mixed together to form the sweet & sour taste of love. Might have a bitter aftertaste."
+})
