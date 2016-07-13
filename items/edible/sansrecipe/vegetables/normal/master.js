@@ -256,6 +256,30 @@ registerItem({
 })
 
 registerItem({
+	"name":"Pink Melon",
+	"category":"Vegetable",
+	"sell":850,
+	"buy":5000,
+	"pricemultiplier":"E",
+	"flavourtext":"A pink melon overflowing with cuteness. Attracts young girls with its adorable shape and taste. Truly heinous.",
+	"effects":{
+		"hp":90,
+		"rp":30
+	},
+	"upgradeinfo":{
+		"rarity":7,
+		"difficulty":45,
+		"int":7
+	},
+	"cookingeffects":{
+		"hp":90,
+		"rp":30,
+		"str":5,
+		"vit":5
+	}
+})
+
+registerItem({
 	"name":"Golden Turnip",
 	"category":"Vegetable",
 	"sell":2e4,
