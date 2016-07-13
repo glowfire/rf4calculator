@@ -1,3 +1,4 @@
+// Complete
 // Turnip, Potato, Spinach, Radish, Yam, Pumpkin, Cucumber, Carrot, Corn, Strawberry, Leek, Pink Turnip, Green Pepper, Eggplant, Hot-hot,
 // Bok Choy, Cabbage, Onion, Tomato, Pink Melon, Pineapple, G Potato, G Pumpkin, G Cabbage, G Turnip, in that order.
 
@@ -291,9 +292,30 @@ registerItem({
 		"mdef":7,
 		"fireresP":5
 	},
-	"cookingeffects":{////////////////////////// unknown
-		"hp":100,
-		"critP":1
+	"cookingeffects":{
+		"fireresP":5,
+		"slpresP":10
+	}
+})
+
+registerItem({
+	"name":"Bok Choy",
+	"category":"Vegetable",
+	"sell":420,
+	"buy":1900,
+	"pricemultiplier":"E",
+	"flavourtext":"A popular winter crop. The colder it is, the sweeter it gets.",
+	"effects":{
+		"hp":130
+	},
+	"upgradeinfo":{
+		"rarity":6,
+		"difficulty":36,
+		"matk":8
+	},
+	"cookingeffects":{
+		"hp":130,
+		"sealresP":10
 	}
 })
 
@@ -315,6 +337,27 @@ registerItem({
 	"cookingeffects":{
 		"hp":140,
 		"int":2
+	}
+})
+
+registerItem({
+	"name":"Onion",
+	"category":"Vegetable",
+	"sell":800,
+	"buy":6700,
+	"pricemultiplier":"E",
+	"flavourtext":"When raw it has a sharp taste, but turns mild when cooked. Many cry chopping onions, but those tears aren't for you!",
+	"effects":{
+		"hp":150
+	},
+	"upgradeinfo":{
+		"rarity":6,
+		"difficulty":37,
+		"vit":10
+	},
+	"cookingeffects":{
+		"hp":150,
+		"parresP":10
 	}
 })
 
@@ -386,12 +429,56 @@ registerItem({
 })
 
 registerItem({
+	"name":"Golden Pumpkin",
+	"category":"Vegetable",
+	"sell":4000,
+	"buy":2e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. It has a ghostly aura even when uncarved and unpainted.",
+	"effects":{
+		"hp":400
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":56,
+		"str":25,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":400,
+		"vitP":3
+	}
+})
+
+registerItem({
+	"name":"Golden Cabbage",
+	"category":"Vegetable",
+	"sell":11500,
+	"buy":5e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Suddenly changed its color through a mysterious power.",
+	"effects":{
+		"hp":500
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":59,
+		"int":20,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":500,
+		"intP":3
+	}
+})
+
+registerItem({
 	"name":"Golden Turnip",
 	"category":"Vegetable",
 	"sell":2e4,
 	"buy":1e5,
 	"pricemultiplier":"E",
-	"flavourtext":"",
+	"flavourtext":"A rare golden vegetable. Invented in an effort to create turnips that looked like blonde hair. Truly the work of a madman.",
 	"effects":{
 		"hp":800
 	},
