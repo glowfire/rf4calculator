@@ -172,6 +172,27 @@ registerItem({
 })
 
 registerItem({
+	"name":"Cabbage",
+	"category":"Vegetable",
+	"sell":680,
+	"buy":2800,
+	"pricemultiplier":"E",
+	"flavourtext":"A well-balanced vegetable that can be eaten raw, fried or boiled. Helps with digestion after a big meal.",
+	"effects":{
+		"hp":140
+	},
+	"upgradeinfo":{
+		"rarity":6,
+		"difficulty":37,
+		"int":6
+	},
+	"cookingeffects":{
+		"hp":140,
+		"int":2
+	}
+})
+
+registerItem({
 	"name":"Golden Turnip",
 	"category":"Vegetable",
 	"sell":2e4,
