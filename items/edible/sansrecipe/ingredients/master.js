@@ -1,4 +1,5 @@
 // Flour, Oil, Curry Powder, Rice Flour
+// List is complete, but effects multiplier investigation is not.
 
 registerItem({
 	"name":"Flour",
@@ -54,9 +55,9 @@ registerItem({
 	"buy":100,
 	"effects":{
 	},
-	"cookingeffects":{///////////// unknown
+	"cookingeffects":{
 		"rp":5,
-		"str":1
+		"hpmax":1
 	},
 	"flavourtext":"Powder used to make rice dumplings. Adds stickiness to the resulting dish.",
 	"pricemultiplier":"Sd"
