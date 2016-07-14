@@ -16,9 +16,9 @@ registerItem({
 		"loveresP":15
 	},
 	"cookingeffects":{
-		"hp":30,
-		"rp":5,
-		"str":1
+		"hp":72,
+		"str":5,
+		"loveresP":15
 	}
 })
 
@@ -37,8 +37,8 @@ registerItem({
 		"vit":9
 	},
 	"cookingeffects":{
-		"hp":40,
-		"hpmax":15
+		"hp":110,
+		"hpmax":100
 	}
 })
 
@@ -57,8 +57,8 @@ registerItem({
 		"matk":7
 	},
 	"cookingeffects":{
-		"hp":50,
-		"int":1
+		"hp":115,
+		"int":5
 	}
 })
 
@@ -77,8 +77,8 @@ registerItem({
 		"vit":12
 	},
 	"cookingeffects":{
-		"hp":5,
-		"critresP":5
+		"hp":168,
+		"critresP":20
 	}
 })
 
@@ -97,8 +97,8 @@ registerItem({
 		"vit":15
 	},
 	"cookingeffects":{
-		"hp":60,
-		"hpmax":50
+		"hp":200,
+		"hpmax":200
 	}
 })
 
@@ -107,7 +107,7 @@ registerItem({
 	"category":"Vegetable",
 	"sell":550,
 	"pricemultiplier":"E",
-	"flavourtext":"A nutritious seasonal vegetable. Can be worn during the autumn festial by scooping out the inside.",
+	"flavourtext":"A nutritious seasonal vegetable. Can be worn during the autumn festival by scooping out the inside.",
 	"effects":{
 		"hp":210
 	},
@@ -117,8 +117,8 @@ registerItem({
 		"str":10
 	},
 	"cookingeffects":{
-		"hp":65,
-		"vit":4
+		"hp":210,
+		"vit":20
 	}
 })
 
@@ -137,8 +137,8 @@ registerItem({
 		"str":8
 	},
 	"cookingeffects":{
-		"hp":55,
-		"vit":2
+		"hp":175,
+		"vit":15
 	}
 })
 
@@ -157,8 +157,8 @@ registerItem({
 		"vit":21
 	},
 	"cookingeffects":{
-		"hp":80,
-		"critresP":8
+		"hp":240,
+		"critresP":50
 	}
 })
 
@@ -177,8 +177,8 @@ registerItem({
 		"vit":17
 	},
 	"cookingeffects":{
-		"hp":75,
-		"rpmax":10
+		"hp":230,
+		"rpmax":50
 	}
 })
 
@@ -197,8 +197,8 @@ registerItem({
 		"matk":11
 	},
 	"cookingeffects":{
-		"hp":120,
-		"sickresP":10
+		"hp":280,
+		"sickresP":50
 	}
 })
 
@@ -217,8 +217,8 @@ registerItem({
 		"str":12
 	},
 	"cookingeffects":{
-		"hp":70,
-		"str":2
+		"hp":220,
+		"str":15
 	}
 })
 
@@ -237,8 +237,8 @@ registerItem({
 		"str":16
 	},
 	"cookingeffects":{
-		"hp":90,
-		"vit":8
+		"hp":250,
+		"vit":30
 	}
 })
 
@@ -257,8 +257,8 @@ registerItem({
 		"str":17
 	},
 	"cookingeffects":{
-		"hp":100,
-		"critP":1
+		"hp":270,
+		"critP":10
 	}
 })
 
@@ -279,8 +279,10 @@ registerItem({
 		"fireresP":15
 	},
 	"cookingeffects":{
-		"fireresP":5,
-		"slpresP":10
+		"hp":300,
+		"rp":140,
+		"fireresP":15,
+		"slpresP":50
 	}
 })
 
@@ -299,8 +301,8 @@ registerItem({
 		"matk":21
 	},
 	"cookingeffects":{
-		"hp":130,
-		"sealresP":10
+		"hp":550,
+		"sealresP":50
 	}
 })
 
@@ -319,8 +321,8 @@ registerItem({
 		"int":22
 	},
 	"cookingeffects":{
-		"hp":140,
-		"int":2
+		"hp":600,
+		"int":15
 	}
 })
 
@@ -339,15 +341,15 @@ registerItem({
 		"vit":35
 	},
 	"cookingeffects":{
-		"hp":150,
-		"parresP":10
+		"hp":650,
+		"parresP":50
 	}
 })
 
 registerItem({
 	"name":"Titan Tomato",
 	"category":"Vegetable",
-	"sell":540,
+	"sell":3000,
 	"pricemultiplier":"E",
 	"flavourtext":"A brilliant tomato, ruddy red like the summer sun. Popular for its high nutrition and health benefits.",
 	"effects":{
@@ -359,8 +361,8 @@ registerItem({
 		"str":28
 	},
 	"cookingeffects":{
-		"hp":180,
-		"psnresP":10
+		"hp":700,
+		"psnresP":50
 	}
 })
 
@@ -380,10 +382,10 @@ registerItem({
 		"int":31
 	},
 	"cookingeffects":{
-		"hp":90,
-		"rp":30,
-		"str":5,
-		"vit":5
+		"hp":300,
+		"rp":150,
+		"str":10,
+		"int":10
 	}
 })
 
@@ -403,8 +405,8 @@ registerItem({
 		"faintatkP":2
 	},
 	"cookingeffects":{
-		"hp":350,
-		"hpmaxP":3
+		"hp":950,
+		"hpmaxP":5
 	}
 })
 
@@ -424,8 +426,8 @@ registerItem({
 		"faintatkP":2
 	},
 	"cookingeffects":{
-		"hp":400,
-		"vitP":3
+		"hp":950,
+		"vitP":5
 	}
 })
 
@@ -445,8 +447,8 @@ registerItem({
 		"faintatkP":2
 	},
 	"cookingeffects":{
-		"hp":500,
-		"intP":3
+		"hp":950,
+		"intP":5
 	}
 })
 
@@ -466,7 +468,7 @@ registerItem({
 		"faintatkP":2
 	},
 	"cookingeffects":{
-		"hp":800,
-		"strP":3
+		"hp":1000,
+		"strP":5
 	}
 })
