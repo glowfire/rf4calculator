@@ -402,7 +402,7 @@ registerItem({
 		"hp":90,
 		"rp":30,
 		"str":5,
-		"vit":5
+		"int":5
 	}
 })
 
