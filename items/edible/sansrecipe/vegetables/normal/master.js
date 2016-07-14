@@ -115,7 +115,7 @@ registerItem({
 	"sell":110,
 	"buy":420,
 	"pricemultiplier":"E",
-	"flavourtext":"A nutritious seasonal vegetable. Can be worn during the autumn festial by scooping out the inside.",
+	"flavourtext":"A nutritious seasonal vegetable. Can be worn during the autumn festival by scooping out the inside.",
 	"effects":{
 		"hp":65
 	},
