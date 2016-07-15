@@ -60,3 +60,25 @@ registerItem({
 	"materials":["Pink Melon","Strawberry"],
 	"flavourtext":"Strawberries and pink melons mixed together to form the sweet & sour taste of love. Might have a bitter aftertaste."
 })
+
+registerItem({
+	"name":"Gold Juice",
+	"cookinglevel":99,
+	"category":"Mixer",
+	"sell":8e5,
+	"pricemultiplier":"C1",
+	"effects":{
+		"hp":5000,
+		"hpP":100,
+		"rp":1000,
+		"rpP":100,
+		"int":100,
+		"intP":25,
+		"fireresP":10,
+		"waterresP":10,
+		"earthresP":10,
+		"windresP":10
+        },
+	"materials":["Golden Pumpkin","Emery Flower","Golden Potato","Golden Turnip","Golden Cabbage"],
+	"flavourtext":"Juice made from a mixture of golden ingredients. Not, uh... Not very good, honestly."
+})
