@@ -105,7 +105,7 @@ function createMaterialTable(){
 	
 	var materialTable = document.createElement("table");
 	document.getElementById('currentItemDiv').appendChild(materialTable)
-	materialTableHeader=document.createElement('tr');materialTableHeader);
+	materialTableHeader=document.createElement('tr');
 	
 	function appendMaterialHeader(string){
 		var c = document.createElement('td');
