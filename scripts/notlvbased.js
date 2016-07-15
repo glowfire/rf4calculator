@@ -142,4 +142,6 @@ function createMaterialTable(){
 		}
 	}
 	
+	currentItem.materials.forEach(createMaterialRow);
+	
 }
