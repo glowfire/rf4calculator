@@ -116,8 +116,8 @@ function createMaterialTable(){
 	
 	appendMaterialHeader("#");
 	appendMaterialHeader("Material");
-	appendMaterialHeader("Buy Price");
-	appendMaterialHeader("Discounted Buy Price");
+	appendMaterialHeader("Normal<br>Buy Price");
+	appendMaterialHeader("Discounted<br>Buy Price");
 	
 	function createMaterialRow(item,index){
 		var currentMaterial = item.convertStringToItem();
@@ -136,6 +136,8 @@ function createMaterialTable(){
 		if (currentMaterial.buy!==undefined){
 			appendMaterialRow(currentMaterial.buy);
 			appendMaterialRow(Math.ceil(currentMaterial.buy)*.9);
+			currentMaterialsBuyPrice+=currentMaterial.buy;
+			currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
 		} else {
 			appendMaterialRow("N/A");
 			appendMaterialRow("N/A");
