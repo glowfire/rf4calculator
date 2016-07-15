@@ -16,3 +16,22 @@ for (i=0;i<nonUniqueNames.length;i++){
         }
     }
 }
+
+var dropdownList = document.createElement("select");
+dropdownList.setAttribute("id","itemSelect")
+document.getElementById("itemSelectionDiv").appendChild(dropdownList);
+
+var getStatsBtn = document.createElement("button");
+getStatsBtn.setAttribute("id","getInfo")
+getStatsBtn.setAttribute("onclick","getItemInfo()")
+getStatsBtn.innerHTML="Get Item Statistics"
+document.getElementById("itemSelectionDiv").appendChild(getStatsBtn);
+
+for (i=0;i<sortedMasterNameList.length;i++){
+	var currentNameSet = sortedMasterNameList[i];
+	var currentUniqueName = currentNameSet[2];
+	option=document.createElement("option");
+	document.getElementById("itemSelect").appendChild(option);
+	option.innerHTML = currentNameSet[0];
+	option.value = currentUniqueName;
+}
