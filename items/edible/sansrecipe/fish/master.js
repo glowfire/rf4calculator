@@ -1,4 +1,5 @@
 // Follow reverse order of listing on shipping record
+// Fish with unconfirmed price multipliers: Snapper, Blowfish, Lamp Squid, Rockfish
 
 registerItem({
 	"name":"Masu Trout",
