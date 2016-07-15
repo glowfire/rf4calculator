@@ -182,11 +182,11 @@ function createMaterialTable(){
 	} else if (allMaterialsBuyable(currentItem.materials)){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
-			materialComments.innerHTML+="<span style='font-weight:bold'><span style="text-decoration:underline;">buy the product directly</span></span>";
+			materialComments.innerHTML+="<span style='text-decoration:underline'>buy the product directly</span>";
 			materialComments.innerHTML+=" than buying and processing the materials."
 		} else {
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
-			materialComments.innerHTML+="<span style='font-weight:bold'><span style="text-decoration:underline;">buy and process the materials</span></span>";
+			materialComments.innerHTML+="<span style='text-decoration:underline'>buy and process the materials</span>";
 			materialComments.innerHTML+=" than buying the product directly."
 		}
 	}
