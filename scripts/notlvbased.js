@@ -139,8 +139,10 @@ function createMaterialTable(){
 			currentMaterialsBuyPrice+=currentMaterial.buy;
 			currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
 		} else {
-			appendMaterialRow("N/A");
-			appendMaterialRow("N/A");
+			var c34 = document.createElement('td');
+			c34.colSpan=2
+			materialRow.appendChild(c34);
+			c34.innerHTML="Not buyable";
 		}
 	}
 	
@@ -149,17 +151,42 @@ function createMaterialTable(){
 	var summationRow = document.createElement("tr");
 	materialTable.appendChild(summationRow);
 	
-	var c12 = document.createElement('td');
-	c12.colSpan=2
-	summationRow.appendChild(c12);
-	c12.innerHTML="Total price of buyable materials";
+	if (currentMaterialsBuyPrice>0){
+		
+		var c12 = document.createElement('td');
+		c12.colSpan=2
+		summationRow.appendChild(c12);
+		c12.innerHTML="Total cost of buyable materials";
+		
+		var c3 = document.createElement('td');
+		summationRow.appendChild(c3);
+		c3.innerHTML=currentMaterialsBuyPrice;
+		
+		var c4 = document.createElement('td');
+		summationRow.appendChild(c4);
+		c4.innerHTML=currentMaterialsBuyPriceDiscount;
+	} else {
+		var lastC = document.createElement('td');
+		lastC.colSpan = 4;
+		summationRow.appendChild(lastC);
+		lastC.innerHTML = "None of the materials can be bought."
+	}
 	
-	var c3 = document.createElement('td');
-	summationRow.appendChild(c3);
-	c3.innerHTML=currentMaterialsBuyPrice;
+	var materialComments = document.createElement("p");
+	document.getElementById('currentItemDiv').appendChild(materialComments);
 	
-	var c4 = document.createElement('td');
-	summationRow.appendChild(c4);
-	c4.innerHTML=currentMaterialsBuyPriceDiscount;
+	if (currentItem.buy==undefined){
+		materialComments.innerHTML+="<br>This item cannot be bought and must be produced."
+	} else if (allMaterialsBuyable(currentItem.materials)){
+		if (currentMaterialsBuyPrice>currentItem.buy){
+			materialComments.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+			materialComments.innerHTML+="<span style='font-weight:bold'>buy the product directly</span>";
+			materialComments.innerHTML+=" than buying and processing the materials."
+		} else {
+			materialComments.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+			materialComments.innerHTML+="<span style='font-weight:bold'>buy and process the materials</span>";
+			materialComments.innerHTML+=" than buying the product directly."
+		}
+	}
 	
 }
