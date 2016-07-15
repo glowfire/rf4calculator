@@ -117,5 +117,29 @@ function createMaterialTable(){
 	appendMaterialHeader("#");
 	appendMaterialHeader("Material");
 	appendMaterialHeader("Buy Price");
-	appendMaterialHeader("Discounted Buy Price")
+	appendMaterialHeader("Discounted Buy Price");
+	
+	function createMaterialRow(item,index){
+		var currentMaterial = item.convertStringToItem();
+		
+		var materialRow = document.createElement("tr");
+		materialTable.appendChild(materialRow);
+		
+		function appendMaterialRow(string){
+			var c = document.createElement('td');
+			materialRow.appendChild(c);
+			c.innerHTML=string;
+		}
+		
+		appendMaterialRow(index+1);
+		appendMaterialRow(item);
+		if (currentMaterial.buy!==undefined){
+			appendMaterialRow(currentMaterial.buy);
+			appendMaterialRow(Math.ceil(currentMaterial.buy)*.9);
+		} else {
+			appendMaterialRow("N/A");
+			appendMaterialRow("N/A");
+		}
+	}
+	
 }
