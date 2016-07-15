@@ -4,7 +4,6 @@ function showBasicStats(){
 	var nameLine = document.createElement('h1');
 	var nameString = currentItem.name;
 	nameLine.appendChild(document.createTextNode(nameString));
-	nameLine.style.fontWeight="bold";
 	document.getElementById('currentItemDiv').appendChild(nameLine);
 	
 	var flavourTextLine = document.createElement('p');
@@ -19,16 +18,16 @@ function showBasicStats(){
 	basicStats.innerHTML+="<br>";
 	if (currentItem.cookinglevel!==undefined){
 		basicStats.innerHTML+="Cooking Lv: "+currentItem.cookinglevel
-    }
+	}
 	if (currentItem.forginglevel!==undefined){
 		basicStats.innerHTML+="Forging Lv: "+currentItem.forginglevel
-    }
+	}
 	if (currentItem.craftinglevel!==undefined){
 		basicStats.innerHTML+="Crafting Lv: "+currentItem.craftinglevel
-    }
+	}
 	if (currentItem.chemistrylevel!==undefined){
 		basicStats.innerHTML+="Chemistry Lv: "+currentItem.chemistrylevel
-    }
+	}
 
 	if (currentItem.buy!==undefined){
 		currentBuyPrice=currentItem.buy;
@@ -50,3 +49,52 @@ var materialsList
 
 var currentMaterialsBuyPrice
 var currentMaterialsBuyPriceDiscount
+
+function createMaterialListing(){
+
+	currentMaterialsBuyPrice = 0
+    currentMaterialsBuyPriceDiscount = 0
+
+	if (currentItem.materials!==undefined){
+		var materialsList = document.createElement('p');
+		var materialsListString = "Materials: "
+		var node = document.createTextNode(materialsListString);
+		materialsList.appendChild(node);
+    	for (j=0;j<currentItem.materials.length;j++){
+    		var currentMaterial = currentItem.materials[j].convertStringToItem()
+    		materialsList.innerHTML+="<br>"+(j+1)+". "+currentMaterial.name
+			if (currentMaterial.buy!==undefined){
+        		currentMaterialBuy=currentMaterial.buy;
+				currentMaterialsBuyPrice+=currentMaterialBuy;
+    			currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterialBuy*.9);
+    			materialsList.innerHTML+=" (buy: "+currentMaterial.buy+" G, discounted: "
+        		materialsList.innerHTML+=Math.ceil(currentMaterial.buy*.9)+" G)"
+        	} else {
+    			materialsList.innerHTML+=" (cannot be bought)"
+        	}
+    	}
+    
+    	if (currentMaterialsBuyPrice>0){
+			materialsList.innerHTML+="<br><br>Total cost of buyable materials: "+currentMaterialsBuyPrice+" G "
+			materialsList.innerHTML+="(all discounted: "+currentMaterialsBuyPriceDiscount+" G)"
+        
+        	if (currentItem.buy==undefined){
+        		materialsList.innerHTML+="<br>This item cannot be bought and must be produced."
+        	} else if (allMaterialsBuyable(currentItem.materials)){
+            	if (currentMaterialsBuyPrice>currentItem.buy){
+        			materialsList.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+            		materialsList.innerHTML+="<span style='font-weight:bold'>buy the product directly</span>";
+            		materialsList.innerHTML+=" than buying and processing the materials."
+        		} else {
+        			materialsList.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+            		materialsList.innerHTML+="<span style='font-weight:bold'>buy and process the materials</span>";
+            		materialsList.innerHTML+=" than buying the product directly."
+				}
+        	}
+        
+    	} else {
+    		materialsList.innerHTML+="<br><br>None of the materials can be bought."
+    	}
+    }
+    document.getElementById('currentItemDiv').appendChild(materialsList)
+}
