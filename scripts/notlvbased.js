@@ -174,6 +174,7 @@ function createMaterialTable(){
 	
 	var materialComments = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(materialComments);
+	materialComments.style.marginTop=0
 	
 	if (currentItem.buy==undefined){
 		materialComments.innerHTML+="This item cannot be bought and must be produced.<br>"
