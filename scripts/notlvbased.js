@@ -105,8 +105,7 @@ function createMaterialTable(){
 	
 	var materialTable = document.createElement("table");
 	document.getElementById('currentItemDiv').appendChild(materialTable)
-	materialTableHeader=document.createElement('tr');
-	materialTable.appendChild(materialTableHeader);
+	materialTableHeader=document.createElement('tr');materialTableHeader);
 	
 	function appendMaterialHeader(string){
 		var c = document.createElement('td');
@@ -115,7 +114,7 @@ function createMaterialTable(){
 	}
 	
 	appendMaterialHeader("#");
-	appendMaterialHeader("Material");
+	appendMaterialHeader("Material<br>Name");
 	appendMaterialHeader("Normal<br>Buy Price");
 	appendMaterialHeader("Discounted<br>Buy Price");
 	
@@ -145,5 +144,20 @@ function createMaterialTable(){
 	}
 	
 	currentItem.materials.forEach(createMaterialRow);
+	var summationRow = document.createElement("tr");
+	materialTable.appendChild(summationRow);
+	
+	var c12 = document.createElement('td');
+	c12.colSpan=2
+	summationRow.appendChild(c12);
+	c12.innerHTML="Total price of buyable materials";
+	
+	var c3 = document.createElement('td');
+	summationRow.appendChild(c3);
+	c3.innerHTML=currentMaterialsBuyPrice;
+	
+	var c4 = document.createElement('td');
+	summationRow.appendChild(c4);
+	c4.innerHTML=currentMaterialsBuyPriceDiscount;
 	
 }
