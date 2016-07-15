@@ -104,8 +104,9 @@ function createMaterialTable(){
 	currentMaterialsBuyPriceDiscount = 0
 	
 	var materialTable = document.createElement("table");
-	document.getElementById('currentItemDiv').appendChild(materialTable)
+	document.getElementById('currentItemDiv').appendChild(materialTable);
 	materialTableHeader=document.createElement('tr');
+	materialTable.appendChild(materialTableHeader);
 	
 	function appendMaterialHeader(string){
 		var c = document.createElement('td');
@@ -144,6 +145,7 @@ function createMaterialTable(){
 	}
 	
 	currentItem.materials.forEach(createMaterialRow);
+	
 	var summationRow = document.createElement("tr");
 	materialTable.appendChild(summationRow);
 	
