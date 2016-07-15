@@ -28,7 +28,7 @@ registerItem({
 	"sell":6500,
 	"buy":78000,
 	"flavourtext":"The largest freshwater salmonid. Very rare and valued.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C3",
 	"cookingeffects":{
 	}
 })
@@ -72,7 +72,7 @@ registerItem({
 	"sell":8800,
 	"buy":12e4,
 	"flavourtext":"A fish with a body of glittering silver. Very easy to spot, but hard to catch.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C3",
 	"cookingeffects":{
 	}
 })
@@ -160,7 +160,7 @@ registerItem({
 	"sell":6800,
 	"buy":74e3,
 	"flavourtext":"A squid from the tropics. Has a tanned body and swims in shallow water.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C3",
 	"cookingeffects":{
 	}
 })
@@ -182,7 +182,7 @@ registerItem({
 	"sell":1280,
 	"buy":14800,
 	"flavourtext":"A fish known to bring good luck. Has long been served in festivals and ceremonies.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C1",//////////////////////// unknown
 	"cookingeffects":{
 	}
 })
@@ -193,7 +193,7 @@ registerItem({
 	"sell":3500,
 	"buy":38e3,
 	"flavourtext":"A rare type of snapper that's considered legendary among fishermen.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C2",
 	"cookingeffects":{
 	}
 })
@@ -226,7 +226,7 @@ registerItem({
 	"sell":4200,
 	"buy":57e3,
 	"flavourtext":"Known as one of the most expensive fish. Filled with poison, requiring high skill to cook safely.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C1",//////////////////// unknown
 	"cookingeffects":{
 	}
 })
@@ -237,7 +237,7 @@ registerItem({
 	"sell":3800,
 	"buy":45e3,
 	"flavourtext":"A stock name given to numerous varieties of fish. All have large bodies and are renowned for bringing good luck.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C2",
 	"cookingeffects":{
 	}
 })
@@ -259,7 +259,7 @@ registerItem({
 	"sell":5600,
 	"buy":61e3,
 	"flavourtext":"A large and tasty fish that's widely loved. Traded at high prices and generally found in deep waters.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C3",
 	"cookingeffects":{
 	}
 })
@@ -281,7 +281,7 @@ registerItem({
 	"sell":2e3,
 	"buy":27e3,
 	"flavourtext":"A fish that looks like fallen leaves. When seen swimming, you'd just think there's debris floating by.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C2",
 	"cookingeffects":{
 	}
 })
@@ -303,7 +303,7 @@ registerItem({
 	"sell":1800,
 	"buy":21e3,
 	"flavourtext":"A squid with a lamp-shaped body. The lamp holds poison with a sealing effect, so it must be cooked with caution.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C2", ///////////////////////////// unknown
 	"cookingeffects":{
 	}
 })
@@ -347,7 +347,7 @@ registerItem({
 	"sell":1040,
 	"buy":10400,
 	"flavourtext":"A unique fish that swims in the sand. Has a hard head that can crush even rocks.",
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C2", /////////////// unknown
 	"cookingeffects":{
 	}
 })
