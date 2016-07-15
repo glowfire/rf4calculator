@@ -1,7 +1,7 @@
 registerItem({
 	"name":"Fake Item",
 	"cookinglevel":66,
-	"materials":["Titan Tomato","Tomato","Leek","Gigant Corn"],
+	"materials":["Titan Tomato","Gigant Corn"],
 	"category":"Mixer",
 	sell:3e4,
 	"efffects":{
