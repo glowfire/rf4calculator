@@ -1,15 +1,4 @@
-registerItem({
-	"name":"Fake Item",
-	"cookinglevel":66,
-	"materials":["Tomato","Corn"],
-	"category":"Mixer",
-	sell:3e4,
-	"efffects":{
-		
-	},
-	"flavourtext":"???",
-	"pricemultiplier":"C1"
-})
+
 
 registerItem({
 	"name":"Tomato Juice",
