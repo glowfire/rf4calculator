@@ -172,21 +172,18 @@ function createMaterialTable(){
 		lastC.innerHTML = "None of the materials can be bought."
 	}
 	
-	materialTable.style.marginBottom=0;
-	
 	var materialComments = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(materialComments);
-	materialComments.style.marginTop=0
 	
 	if (currentItem.buy==undefined){
-		materialComments.innerHTML+="This item cannot be bought and must be produced.<br>"
+		materialComments.innerHTML+="This item cannot be bought and must be produced."
 	} else if (allMaterialsBuyable(currentItem.materials)){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
 			materialComments.innerHTML+="<span style='font-weight:bold'>buy the product directly</span>";
 			materialComments.innerHTML+=" than buying and processing the materials."
 		} else {
-			materialComments.innerHTML+="<br>Assuming no discounts, it is cheaper to "
+			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
 			materialComments.innerHTML+="<span style='font-weight:bold'>buy and process the materials</span>";
 			materialComments.innerHTML+=" than buying the product directly."
 		}
