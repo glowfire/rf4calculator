@@ -172,6 +172,8 @@ function createMaterialTable(){
 		lastC.innerHTML = "None of the materials can be bought."
 	}
 	
+	materialTable.style.marginBottom=0;
+	
 	var materialComments = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(materialComments);
 	
