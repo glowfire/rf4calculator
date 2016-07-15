@@ -1,4 +1,15 @@
-
+registerItem({
+	"name":"Fake Item",
+	"cookinglevel":66,
+	"materials":["Titan Tomato","Tomato"],
+	"category":"Mixer",
+	sell:3e4,
+	"efffects":{
+		
+	},
+	"flavourtext":"???",
+	"pricemultiplier":"C1"
+})
 
 registerItem({
 	"name":"Tomato Juice",
