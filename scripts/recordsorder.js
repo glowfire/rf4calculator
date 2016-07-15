@@ -35,3 +35,23 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	option.innerHTML = currentNameSet[0];
 	option.value = currentUniqueName;
 }
+    
+var currentItem
+var currentSellPrice
+var currentBuyPrice
+var currentBuyPriceDiscount
+        
+function getItemInfo(){
+	var itemSelected = document.getElementById("itemSelect").value
+	currentItem=masterItemList[itemSelected]
+	currentSellPrice=currentItem.sell;
+	document.getElementById("currentItemDiv").innerHTML = '';
+	showBasicStats()
+	if (currentItem.materials!==undefined){
+		createMaterialListing()
+	}
+	//document.getElementById("dependantDiv").innerHTML = '';
+	getEffectsTable()
+	getUpgradeInfo()
+	getProfitTable()
+}
