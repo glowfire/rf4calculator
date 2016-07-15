@@ -118,5 +118,4 @@ function createMaterialTable(){
 	appendMaterialHeader("Material");
 	appendMaterialHeader("Buy Price");
 	appendMaterialHeader("Discounted Buy Price")
-	document.getElementById('currentItemDiv').appendChild(materialsList)
 }
