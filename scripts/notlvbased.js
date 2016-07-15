@@ -115,7 +115,7 @@ function createMaterialTable(){
 	}
 	
 	appendMaterialHeader("#");
-	appendMaterialHeader("Material<br>Name");
+	appendMaterialHeader("Material Name");
 	appendMaterialHeader("Normal<br>Buy Price");
 	appendMaterialHeader("Discounted<br>Buy Price");
 	
@@ -174,7 +174,6 @@ function createMaterialTable(){
 	
 	var materialComments = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(materialComments);
-	materialComments.innerHTML="";
 	
 	if (currentItem.buy==undefined){
 		materialComments.innerHTML+="This item cannot be bought and must be produced.<br>"
