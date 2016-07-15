@@ -99,4 +99,24 @@ function createMaterialListing(){
 	document.getElementById('currentItemDiv').appendChild(materialsList)
 }
 
-function createMaterialTable(){}
+function createMaterialTable(){
+	currentMaterialsBuyPrice = 0
+	currentMaterialsBuyPriceDiscount = 0
+	
+	var materialTable = document.createElement("table");
+	document.getElementById('currentItemDiv').appendChild(materialTable)
+	materialTableHeader=document.createElement('tr');
+	materialTable.appendChild(materialTableHeader);
+	
+	function appendMaterialHeader(string){
+		var c = document.createElement('td');
+		materialTableHeader.appendChild(c);
+		c.innerHTML=string;
+	}
+	
+	appendMaterialHeader("#");
+	appendMaterialHeader("Material");
+	appendMaterialHeader("Buy Price");
+	appendMaterialHeader("Discounted Buy Price")
+	document.getElementById('currentItemDiv').appendChild(materialsList)
+}
