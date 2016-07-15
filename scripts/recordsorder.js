@@ -48,7 +48,8 @@ function getItemInfo(){
 	document.getElementById("currentItemDiv").innerHTML = '';
 	showBasicStats()
 	if (currentItem.materials!==undefined){
-		createMaterialListing()
+		//createMaterialListing()
+		createMaterialTable()
 	}
 	//document.getElementById("dependantDiv").innerHTML = '';
 	getEffectsTable()
