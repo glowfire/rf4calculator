@@ -2443,3 +2443,175 @@ registerItem({
 		"heal":["FTG","SICK"]
 	}
 })
+
+registerItem({
+	"name":"Golden Tyrant Turnip",
+	"category":"Vegetable",
+	"sell":9e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Invented in an effort to create turnips that looked like blonde hair. Truly the work of a madman.",
+	"effects":{
+		"hp":1000
+	},
+	"upgradeinfo":{
+		"rarity":14,
+		"difficulty":91,
+		"str":90,
+		"faintatkP":2
+	},
+	"cookingeffects":{
+		"hp":1000,
+		"strP":5
+	}
+})
+
+registerItem({
+	"name":"Golden Turnip",
+	"category":"Vegetable",
+	"sell":2e4,
+	"buy":1e5,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Invented in an effort to create turnips that looked like blonde hair. Truly the work of a madman.",
+	"effects":{
+		"hp":800
+	},
+	"upgradeinfo":{
+		"rarity":10,
+		"difficulty":67,
+		"str":30,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":800,
+		"strP":3
+	}
+})
+
+registerItem({
+	"name":"Gold Prince Potato",
+	"category":"Vegetable",
+	"sell":27e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Easy to spot, as its light shines brightly through the ground.",
+	"effects":{
+		"hp":950
+	},
+	"upgradeinfo":{
+		"rarity":13,
+		"difficulty":78,
+		"vit":80,
+		"faintatkP":2
+	},
+	"cookingeffects":{
+		"hp":950,
+		"hpmaxP":5
+	}
+})
+
+registerItem({
+	"name":"Golden Potato",
+	"category":"Vegetable",
+	"sell":6e3,
+	"buy":3e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Easy to spot, as its light shines brightly through the ground.",
+	"effects":{
+		"hp":350
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":55,
+		"vit":30,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":350,
+		"hpmaxP":3
+	}
+})
+
+registerItem({
+	"name":"Gldn. Doom Pumpkin",
+	"category":"Vegetable",
+	"sell":18000,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. It has a ghostly aura even when uncarved and unpainted.",
+	"effects":{
+		"hp":950
+	},
+	"upgradeinfo":{
+		"rarity":13,
+		"difficulty":79,
+		"str":50,
+		"faintatkP":2
+	},
+	"cookingeffects":{
+		"hp":950,
+		"vitP":5
+	}
+})
+
+registerItem({
+	"name":"Golden Pumpkin",
+	"category":"Vegetable",
+	"sell":4000,
+	"buy":2e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. It has a ghostly aura even when uncarved and unpainted.",
+	"effects":{
+		"hp":400
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":56,
+		"str":25,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":400,
+		"vitP":3
+	}
+})
+
+registerItem({
+	"name":"Golden King Cabbage",
+	"category":"Vegetable",
+	"sell":52000,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Suddenly changed its color through a mysterious power.",
+	"effects":{
+		"hp":950
+	},
+	"upgradeinfo":{
+		"rarity":13,
+		"difficulty":82,
+		"int":50,
+		"faintatkP":2
+	},
+	"cookingeffects":{
+		"hp":950,
+		"intP":5
+	}
+})
+
+registerItem({
+	"name":"Golden Cabbage",
+	"category":"Vegetable",
+	"sell":11500,
+	"buy":5e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A rare golden vegetable. Suddenly changed its color through a mysterious power.",
+	"effects":{
+		"hp":500
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":59,
+		"int":20,
+		"faintatkP":1
+	},
+	"cookingeffects":{
+		"hp":500,
+		"intP":3
+	}
+})
