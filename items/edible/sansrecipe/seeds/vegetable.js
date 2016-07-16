@@ -65,25 +65,3 @@ registerItem({
 		"hp":5
 	}
 })
-
-registerItem({
-	"name":"Cabbage Seeds",
-	"sell":98,
-	"buy":980,
-	"value":680,
-	"growth":8,
-	"harvested":3,
-	"flavourtext":"Grows well in spring and fall. Grows fast, and rarely withers.",
-	"regrow":false,
-	"seasons":{
-		"spring":"good",
-		"summer":"normal",
-		"autumn":"good",
-		"winter":"normal"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
