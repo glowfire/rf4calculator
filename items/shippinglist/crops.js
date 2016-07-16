@@ -653,3 +653,25 @@ registerItem({
 		"hp":5
 	}
 })
+
+registerItem({
+	"name":"Fodder Seeds",
+	"sell":3,
+	"buy":30,
+	"value":60,
+	"growth":4,
+	"harvested":1,
+	"flavourtext":"Grow feed for the monsters. Hearty ones may grow again after harvesting.",
+	"regrow":true,
+	"seasons":{
+		"spring":"normal",
+		"summer":"normal",
+		"autumn":"normal",
+		"winter":"normal"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
