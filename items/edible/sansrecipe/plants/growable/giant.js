@@ -80,7 +80,7 @@ registerItem({
 	"upgradeinfo":{
 		"rarity":7,
 		"difficulty":46,
-		"int":8
+		"int":8,
 		"psnatkP":17
 	},
 	"cookingeffects":{
