@@ -1285,7 +1285,7 @@ registerItem({
 		"difficulty":57,
 		"slpresP":25
 	},
-	"ingredienteffects":{
+	"cookingeffects":{
 		"hp":450,
 		"rp":150,
 		"rpmaxP":3
@@ -1307,7 +1307,7 @@ registerItem({
 		"difficulty":35,
 		"slpresP":6
 	},
-	"ingredienteffects":{
+	"cookingeffects":{
 		"rp":60,
 		"rpmaxP":1
 	}
@@ -1675,7 +1675,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"rp":85,
-		"intP":3
+		"intP":i3
 	}
 })
 
@@ -1697,5 +1697,275 @@ registerItem({
 	"cookingeffects":{
 		"rp":30,
 		"intP":1
+	}
+})
+
+registerItem({
+	"name":"Withered Grass",
+	"category":"Plant",
+	"sell":1,
+	"buy":100,
+	"pricemultiplier":"E",
+	"effects":{
+		"statusailments":["PSN"],
+		"rpP":-20
+	},
+	"upgradeinfo":{
+		"rarity":0,
+		"difficulty":1,
+		"vit":-1
+    },
+    "flavourtext":"You'd get sick if you ate this grass, but it can be used to improve the quality of soil.",
+	"cookingeffects":{
+		"statusailments":["PSN"],
+		"rpP":-20
+    }
+})
+
+registerItem({
+	"name":"Weeds",
+	"category":"Plant",
+	"sell":1,
+	"buy":30,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":-5
+	},
+	"upgradeinfo":{
+		"rarity":0,
+		"difficulty":1
+	},
+	"flavourtext":"Grows anywhere, anytime. It doesn't obey any rules. It does its own thing. And that's why it's cool.",
+	"cookingeffects":{
+		"hp":-5
+	}
+})
+
+registerItem({
+	"name":"White Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":200,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":65
+	},
+	"flavourtext":"Beautiful grass of purest white. Hard to find in winter since it blends in with the snow. Fragile, but noble.",
+	"cookingeffects":{
+		"hp":200,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Indigo Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":80,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":29
+	},
+	"flavourtext":"Soothing grass that supposedly resolves arguments just by being there.",
+	"cookingeffects":{
+		"hp":80,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Purple Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":20,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":1,
+		"difficulty":5
+	},
+	"flavourtext":"A sophisticated purple grass. Has trouble getting along with the other grasses due to its massive ego.",
+	"cookingeffects":{
+		"hp":20,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Green Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":0,
+		"difficulty":1
+	},
+	"flavourtext":"Plain green grass. Trying hard to change so people will stop calling it boring.",
+	"cookingeffects":{
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Blue Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":30,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":0,
+		"difficulty":11
+	},
+	"flavourtext":"A nifty blue grass that's cold to the touch. Used in medicine due to its soothing effect.",
+	"cookingeffects":{
+		"hp":30,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Yellow Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":100,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":39
+	},
+	"flavourtext":"Grass which brings you luck. People carry it in hopes that it will make them rich.",
+	"cookingeffects":{
+		"hp":100,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Red Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":120,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":6,
+		"difficulty":40
+	},
+	"flavourtext":"Grass of passion. Its red color helps it grow faster than other grasses.",
+	"cookingeffects":{
+		"hp":120,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Orange Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":150,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":7,
+		"difficulty":48
+	},
+	"flavourtext":"Grass as orange as the sun. Its bright color gives you energy just by looking at it.",
+	"cookingeffects":{
+		"hp":150,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Black Grass",
+	"category":"Plant",
+	"sell":5,
+	"buy":120,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":50,
+		"rp":3
+	},
+	"upgradeinfo":{
+		"rarity":3,
+		"difficulty":23
+	},
+	"flavourtext":"Grass with a dull, mysterious glow like a muffled black light. Hard to see at night, so it's often stepped on.",
+	"cookingeffects":{
+		"hp":50,
+		"rp":3
+	}
+})
+
+registerItem({
+	"name":"Antidote Grass",
+	"category":"Plant",
+	"sell":6,
+	"buy":150,
+	"pricemultiplier":"E",
+	"effects":{
+		"heal":["PSN"],
+		"hp":5
+	},
+	"upgradeinfo":{
+		"rarity":0,
+		"difficulty":8,
+		"psnresP":3
+	},
+	"flavourtext":"A grass that purifies poisons in the body. Very bitter, but effective.",
+	"cookingeffects":{
+		"heal":["PSN"],
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Medicinal Herb",
+	"category":"Plant",
+	"sell":8,
+	"buy":80,
+	"pricemultiplier":"E",
+	"effects":{
+		"hp":20
+	},
+	"upgradeinfo":{
+		"rarity":0,
+		"difficulty":2,
+		"ftgresP":1
+	},
+	"flavourtext":"A wild herb with a bitter taste. Helps regain energy.",
+	"cookingeffects":{
+		"hp":20
 	}
 })
