@@ -67,28 +67,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Radish Seeds",
-	"sell":12,
-	"buy":120,
-	"value":360,
-	"growth":5,
-	"harvested":1,
-	"flavourtext":"Grows well in fall, but not in summer. Has a good balance of growth rate and resilience. Easy on the soil.",
-	"regrow":false,
-	"seasons":{
-		"spring":"normal",
-		"summer":"bad",
-		"autumn":"good",
-		"winter":"normal"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
 	"name":"Yam Seeds",
 	"sell":25,
 	"buy":250,
@@ -199,50 +177,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Leek Seeds",
-	"sell":68,
-	"buy":680,
-	"value":1600,
-	"growth":9,
-	"harvested":1,
-	"flavourtext":"Grows well in spring and fall, but not in summer. Withers fairly easily, but is easy on the soil.",
-	"regrow":false,
-	"seasons":{
-		"spring":"good",
-		"summer":"bad",
-		"autumn":"good",
-		"winter":"normal"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Pink Turnip Seeds",
-	"sell":16,
-	"buy":160,
-	"value":200,
-	"growth":11,
-	"harvested":4,
-	"flavourtext":"Grows well in spring, but not in winter. Grows a beautiful pink turnip. Easy to harvest. Popular with novice farmers.",
-	"regrow":false,
-	"seasons":{
-		"spring":"good",
-		"summer":"normal",
-		"autumn":"normal",
-		"winter":"bad"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
 	"name":"Green Pepper Seeds",
 	"sell":80,
 	"buy":800,
@@ -278,50 +212,6 @@ registerItem({
 		"summer":"good",
 		"autumn":"normal",
 		"winter":"bad"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Hot-Hot Seeds",
-	"sell":120,
-	"buy":1200,
-	"value":900,
-	"growth":31,
-	"harvested":5,
-	"flavourtext":"Grows well in winter, but not in summer. Takes some time to grow, but is easy to harvest and doesn't wither easily.",
-	"regrow":false,
-	"seasons":{
-		"spring":"normal",
-		"summer":"normal",
-		"autumn":"normal",
-		"winter":"normal"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Bok Choy Seeds",
-	"sell":100,
-	"buy":1000,
-	"value":420,
-	"growth":5,
-	"harvested":4,
-	"flavourtext":"Grows well in fall, but not in summer. Weak to heat.",
-	"regrow":true,
-	"seasons":{
-		"spring":"normal",
-		"summer":"bad",
-		"autumn":"good",
-		"winter":"normal"
 	},
 	"category":"Seed",
 	"pricemultiplier":"Sd",
@@ -388,116 +278,6 @@ registerItem({
 		"summer":"good",
 		"autumn":"normal",
 		"winter":"bad"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Gold Melon Seeds",
-	"sell":212,
-	"buy":2120,
-	"value":850,
-	"growth":7,
-	"harvested":2,
-	"flavourtext":"Grows well from spring to summer, but not in winter. Cultivated by a cute girl. May grow again after harvesting.",
-	"regrow":true,
-	"seasons":{
-		"spring":"good",
-		"summer":"good",
-		"autumn":"normal",
-		"winter":"bad"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Gold Potato Seeds",
-	"sell":400,
-	"buy":4000,
-	"value":6000,
-	"growth":50,
-	"harvested":3,
-	"flavourtext":"Grows well in winter, but not in summer. Grows into a gorgeous golden potato.",
-	"regrow":false,
-	"seasons":{
-		"spring":"normal",
-		"summer":"bad",
-		"autumn":"normal",
-		"winter":"good"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Gold Pumpkin Seeds",
-	"sell":450,
-	"buy":4500,
-	"value":4000,
-	"growth":70,
-	"harvested":3,
-	"flavourtext":"Grows well in winter, but not in summer. Grows into a gorgeous golden pumpkin. May grow again after harvesting.",
-	"regrow":true,
-	"seasons":{
-		"spring":"normal",
-		"summer":"bad",
-		"autumn":"normal",
-		"winter":"good"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Gold Cabbage Seeds",
-	"sell":500,
-	"buy":5000,
-	"value":11500,
-	"growth":90,
-	"harvested":3,
-	"flavourtext":"Grows well in winter, but not in summer. Grows into a gorgeous golden cabbage.",
-	"regrow":false,
-	"seasons":{
-		"spring":"normal",
-		"summer":"bad",
-		"autumn":"normal",
-		"winter":"good"
-	},
-	"category":"Seed",
-	"pricemultiplier":"Sd",
-	"cookingeffects":{
-		"hp":5
-	}
-})
-
-registerItem({
-	"name":"Gold Turnip Seeds",
-	"sell":1e3,
-	"buy":1e4,
-	"value":2e4,
-	"growth":120,
-	"harvested":3,
-	"flavourtext":"Grows well in winter, but not in summer. Grows into a gorgeous golden turnip.",
-	"regrow":false,
-	"seasons":{
-		"spring":"normal",
-		"summer":"bad",
-		"autumn":"normal",
-		"winter":"good"
 	},
 	"category":"Seed",
 	"pricemultiplier":"Sd",
