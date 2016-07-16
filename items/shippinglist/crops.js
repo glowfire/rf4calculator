@@ -675,3 +675,25 @@ registerItem({
 		"hp":5
 	}
 })
+
+registerItem({
+	"name":"Charm Blue Seeds",
+	"sell":37,
+	"buy":370,
+	"value":220,
+	"growth":8,
+	"harvested":3,
+	"flavourtext":"Grows well in fall, but not in winter. Easy to grow, with a good balance of growth rate and resilience.",
+	"regrow":false,
+	"seasons":{
+		"spring":"normal",
+		"summer":"normal",
+		"autumn":"good",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
