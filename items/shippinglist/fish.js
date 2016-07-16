@@ -1,4 +1,6 @@
-// Follow reverse order of listing on shipping record
+// Registration of items in the reverse order as shown in the shipping records.
+// This list contains the items listed in the seventh section.
+
 // Fish with unconfirmed price multipliers: Snapper, Blowfish, Lamp Squid, Rockfish
 
 registerItem({
