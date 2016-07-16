@@ -1,24 +1,6 @@
 
 
 registerItem({
-	"name":"Elli Leaves",
-	"category":"Plant",
-	"sell":250,
-	"buy":3500,
-	"pricemultiplier":"E",
-	"effects":{
-		"hp":400,
-		"rp":5
-	},
-	"upgradeinfo":{
-		"rarity":10,
-		"difficulty":60
-	},
-	"flavourtext":"An exotic plant with a dark, blue flower. Beautiful!",
-	"cookingeffects":{}
-})
-
-registerItem({
 	"name":"Ayngondaia Lawn",
 	"category":"Plant",
 	"sell":33,
