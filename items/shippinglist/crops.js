@@ -1,5 +1,5 @@
 // Registration of items in the order as shown in the shipping records.
-// This list contains the items listed in the first slot.
+// This list contains the items listed in the first section.
 
 registerItem({
 	"name":"Shield Seed",
@@ -1129,5 +1129,573 @@ registerItem({
 	"flavourtext":"A rare plant. Imbued with incredible vitality, rumor has it that this bright bounty has rejuvenating qualities.",
 	"cookingeffects":{
 		"hpmaxP":5
+	}
+})
+
+registerItem({
+	"name":"Big White Crystal",
+	"category":"Plant",
+	"sell":101500,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears white during winter.",
+	"effects":{
+		"rp":400
+	},
+	"upgradeinfo":{
+		"rarity":12,
+		"difficulty":76,
+		"int":60,
+		"earthresP":20
+	},
+	"cookingeffects":{
+		"rp":400,
+		"intP":3,
+		"earthresP":20
+	}
+})
+
+registerItem({
+	"name":"White Crystal",
+	"category":"Plant",
+	"sell":22500,
+	"buy":8e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears white during winter.",
+	"effects":{
+		"rp":120
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":53,
+		"int":20,
+		"earthresP":5
+	},
+	"cookingeffects":{
+		"rp":120,
+		"int":10,
+		"earthresP":5
+	}
+})
+
+registerItem({
+	"name":"Big Red Crystal",
+	"category":"Plant",
+	"sell":9e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears red during autumn.",
+	"effects":{
+		"rp":400
+	},
+	"upgradeinfo":{
+		"rarity":12,
+		"difficulty":75,
+		"matk":60,
+		"fireresP":20
+	},
+	"cookingeffects":{
+		"rp":400,
+		"intP":3,
+		"fireresP":20
+	}
+})
+
+registerItem({
+	"name":"Red Crystal",
+	"category":"Plant",
+	"sell":2e4,
+	"buy":56e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears red during autumn.",
+	"effects":{
+		"rp":120
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":53,
+		"matk":20,
+		"fireresP":5
+	},
+	"cookingeffects":{
+		"rp":120,
+		"int":10,
+		"fireresP":5
+	}
+})
+
+registerItem({
+	"name":"King Pom-Pom Grass",
+	"category":"Plant",
+	"sell":2300,
+	"pricemultiplier":"E",
+	"flavourtext":"Has white cotton-like flowers in its center. Looks cute like a dandelion, but is poisonous, so say no to the blow!",
+	"effects":{
+		"statusailments":["PSN"],
+		"rp":100
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":52,
+		"psnatkP":15,
+		"psnresP":19
+	},
+	"cookingeffects":{
+		"statusailments":["PSN"],
+		"rp":100,
+		"str":10,
+		"psnatkP":80
+	}
+})
+
+registerItem({
+	"name":"Pom-Pom Grass",
+	"category":"Plant",
+	"sell":440,
+	"buy":1500,
+	"pricemultiplier":"E",
+	"flavourtext":"Has white cotton-like flowers in its center. Looks cute like a dandelion, but is poisonous, so say no to the blow!",
+	"effects":{
+		"statusailments":["PSN"],
+		"rp":45
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":28,
+		"psnatkP":3,
+		"psnresP":5
+	},
+	"cookingeffects":{
+		"statusailments":["PSN"],
+		"rp":45,
+		"psnatkP":15
+	}
+})
+	
+registerItem({
+	"name":"Big Autumn Grass",
+	"category":"Plant",
+	"sell":9000,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant which grows colorful flowers. Named as it is due to its autumnal color scheme.",
+	"effects":{
+		"hp":450,
+		"rp":150
+	},
+	"upgradeinfo":{
+		"rarity":9,
+		"difficulty":57,
+		"slpresP":25
+	},
+	"ingredienteffects":{
+		"hp":450,
+		"rp":150,
+		"rpmaxP":3
+	}
+})
+	
+registerItem({
+	"name":"Autumn Grass",
+	"category":"Plant",
+	"sell":1800,
+	"buy":6000,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant which grows colorful flowers. Named as it is due to its autumnal color scheme.",
+	"effects":{
+		"rp":60
+	},
+	"upgradeinfo":{
+		"rarity":5,
+		"difficulty":35,
+		"slpresP":6
+	},
+	"ingredienteffects":{
+		"rp":60,
+		"rpmaxP":1
+	}
+})
+
+registerItem({
+	"name":"Large Noel Grass",
+	"category":"Plant",
+	"sell":1e4,
+	"pricemultiplier":"E",
+	"flavourtext":"Weirdly tree-shaped plant. Can be fun to decorate in winter.",
+	"effects":{
+		"rp":180
+	},
+	"upgradeinfo":{
+		"rarity":10,
+		"difficulty":63,
+		"int":22
+	},
+	"cookingeffects":{
+		"rp":180,
+		"vitP":3
+	}
+})
+
+registerItem({
+	"name":"Noel Grass",
+	"category":"Plant",
+	"sell":2e3,
+	"buy":6660,
+	"pricemultiplier":"E",
+	"flavourtext":"Weirdly tree-shaped plant. Can be fun to decorate in winter.",
+	"effects":{
+		"rp":75
+	},
+	"upgradeinfo":{
+		"rarity":6,
+		"difficulty":41,
+		"int":7
+	},
+	"cookingeffects":{
+		"rp":75,
+		"vitP":1
+	}
+})
+
+registerItem({
+	"name":"Big Green Crystal",
+	"category":"Plant",
+	"sell":76500,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears green during summer.",
+	"effects":{
+		"rp":400
+	},
+	"upgradeinfo":{
+		"rarity":12,
+		"difficulty":74,
+		"mdef":60,
+		"windresP":20
+	},
+	"cookingeffects":{
+		"rp":400,
+		"intP":3,
+		"windresP":20
+	}
+})
+
+registerItem({
+	"name":"Green Crystal",
+	"category":"Plant",
+	"sell":17e3,
+	"buy":48e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears green during summer.",
+	"effects":{
+		"rp":120
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":53,
+		"mdef":20,
+		"windresP":5
+	},
+	"cookingeffects":{
+		"rp":120,
+		"int":10,
+		"windresP":5
+	}
+})
+
+registerItem({
+	"name":"Big Fireflower",
+	"category":"Plant",
+	"sell":14e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower with a unique shape. Also called the 'Mountain Fireworks,' as you can almost hear the sounds of exploding powder when you pluck it.",
+	"effects":{
+		"rp":200
+	},
+	"upgradeinfo":{
+		"rarity":10,
+		"difficulty":64,
+		"str":10,
+		"int":18
+	},
+	"cookingeffects":{
+		"rp":200,
+		"hpmaxP":3
+	}
+})
+
+registerItem({
+	"name":"Fireflower",
+	"category":"Plant",
+	"sell":2800,
+	"buy":1e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower with a unique shape. Also called the 'Mountain Fireworks,' as you can almost hear the sounds of exploding powder when you pluck it.",
+	"effects":{
+		"rp":70
+	},
+	"upgradeinfo":{
+		"rarity":6,
+		"difficulty":41,
+		"str":2,
+		"int":6
+	},
+	"cookingeffects":{
+		"rp":70,
+		"hpmaxP":1
+	}
+})
+
+registerItem({
+	"name":"Great 4-Leaf Clover",
+	"category":"Plant",
+	"sell":5e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant which brings you good luck. Carry it around or make it a gift, and happiness will follow you!",
+	"effects":{
+		"rp":100
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":52
+	},
+	"cookingeffects":{
+		"rp":100,
+		"critP":15
+	}
+})
+
+registerItem({
+	"name":"4-Leaf Clover",
+	"category":"Plant",
+	"sell":980,
+	"buy":4000,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant which brings you good luck. Carry it around or make it a gift, and happiness will follow you!",
+	"effects":{
+		"rp":50
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":29
+	},
+	"cookingeffects":{
+		"rp":50,
+		"critP":5
+	}
+})
+
+registerItem({
+	"name":"Super Ironleaf",
+	"category":"Plant",
+	"sell":5555,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant with 1000 spikes. Its unique shape is the result of iron content collected from the ground.",
+	"effects":{
+		"hp":-1000
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":52,
+		"atk":18
+	},
+	"cookingeffects":{
+		"hp":-1000,
+		"str":30
+	}
+})
+
+registerItem({
+	"name":"Ironleaf",
+	"category":"Plant",
+	"sell":1111,
+	"buy":4444,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant with many spikes. Its unique shape is the result of iron content collected from the ground.",
+	"effects":{
+		"hp":-100
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":29,
+		"atk":4
+	},
+	"cookingeffects":{
+		"hp":-100,
+		"str":10
+	}
+})
+
+registerItem({
+	"name":"Great Emery Flower",
+	"category":"Plant",
+	"sell":25e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A unique golden flower that's extremely tough and resilient. Don't step on it or it'll really hurt!",
+	"effects":{
+		"rp":500
+	},
+	"upgradeinfo":{
+		"rarity":15,
+		"difficulty":95,
+		"int":80
+	},
+	"cookingeffects":{
+		"rp":500,
+		"hpmaxP":3,
+		"rpmaxP":3,
+		"strP":3,
+		"vitP":3,
+		"intP":3
+	}
+})
+
+registerItem({
+	"name":"Emery Flower",
+	"category":"Plant",
+	"sell":55e3,
+	"buy":5e5,
+	"pricemultiplier":"E",
+	"flavourtext":"A unique golden flower that's extremely tough and resilient. Don't step on it or it'll really hurt!",
+	"effects":{
+		"rp":300
+	},
+	"upgradeinfo":{
+		"rarity":10,
+		"difficulty":66,
+		"int":30
+	},
+	"cookingeffects":{
+		"rp":300,
+		"hpmaxP":1,
+		"rpmaxP":1,
+		"strP":1,
+		"vitP":1,
+		"intP":1
+	}
+})
+
+registerItem({
+	"name":"Big Blue Crystal",
+	"category":"Plant",
+	"sell":67500,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears blue during spring.",
+	"effects":{
+		"rp":400
+	},
+	"upgradeinfo":{
+		"rarity":12,
+		"difficulty":73,
+		"matk":30,
+		"mdef":30,
+		"waterresP":20
+	},
+	"cookingeffects":{
+		"rp":400,
+		"intP":3,
+		"waterresP":20
+	}
+})
+
+registerItem({
+	"name":"Blue Crystal",
+	"category":"Plant",
+	"sell":15e3,
+	"buy":4e4,
+	"pricemultiplier":"E",
+	"flavourtext":"A flower made of rune crystals that mixed together in the ground. Appears blue during spring.",
+	"effects":{
+		"rp":120
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":53,
+		"matk":10,
+		"mdef":10,
+		"waterresP":5
+	},
+	"cookingeffects":{
+		"rp":120,
+		"int":10,
+		"waterresP":5
+	}
+})
+
+registerItem({
+	"name":"Kaiser Lamp Grass",
+	"category":"Plant",
+	"sell":3250,
+	"pricemultiplier":"E",
+	"flavourtext":"A grass with luminous powder all throughout its blossomed stem. Has a strong calming effect.",
+	"effects":{
+		"rp":90
+	},
+	"upgradeinfo":{
+		"rarity":8,
+		"difficulty":52,
+		"int":10
+	},
+	"cookingeffects":{
+		"rp":90,
+		"strP":3
+	}
+})
+
+registerItem({
+	"name":"Lamp Grass",
+	"category":"Plant",
+	"sell":650,
+	"buy":2e3,
+	"pricemultiplier":"E",
+	"flavourtext":"A grass with luminous powder all throughout its blossomed stem. Has a strong calming effect.",
+	"effects":{
+		"rp":40
+	},
+	"upgradeinfo":{
+		"rarity":4,
+		"difficulty":28,
+		"int":3
+	},
+	"cookingeffects":{
+		"rp":40,
+		"strP":1
+	}
+})
+
+registerItem({
+	"name":"King Cherry Grass",
+	"category":"Plant",
+	"sell":1200,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant that works hard to be prettier than all the other flowers. Other flowers sometimes sneer, but they're just jealous. Can be found in spring.",
+	"effects":{
+		"rp":85
+	},
+	"upgradeinfo":{
+		"rarity":7,
+		"difficulty":47,
+		"slpatkP":9
+	},
+	"cookingeffects":{
+		"rp":85,
+		"intP":3
+	}
+})
+
+registerItem({
+	"name":"Cherry Grass",
+	"category":"Plant",
+	"sell":230,
+	"buy":700,
+	"pricemultiplier":"E",
+	"flavourtext":"A plant that works hard to be prettier than all the other flowers. Other flowers sometimes sneer, but they're just jealous. Can be found in spring.",
+	"effects":{
+		"rp":30
+	},
+	"upgradeinfo":{
+		"rarity":3,
+		"difficulty":22,
+		"slpatkP":1
+	},
+	"cookingeffects":{
+		"rp":30,
+		"intP":1
 	}
 })
