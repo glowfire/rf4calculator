@@ -939,3 +939,47 @@ registerItem({
 		"hp":5
 	}
 })
+
+registerItem({
+	"name":"Toyherb Seeds",
+	"sell":6,
+	"buy":60,
+	"value":65,
+	"growth":4,
+	"harvested":2,
+	"flavourtext":"Grows well in spring but not in winter. A fast grower, but delicate and tough to harvest. Cures fatigue if fully grown.",
+	"regrow":false,
+	"seasons":{
+		"spring":"good",
+		"summer":"normal",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Moondrop Seeds",
+	"sell":25,
+	"buy":250,
+	"value":115,
+	"growth":7,
+	"harvested":4,
+	"flavourtext":"Grows well in spring and fall, but not in winter. An easy flower to grow.",
+	"regrow":false,
+	"seasons":{
+		"spring":"good",
+		"summer":"normal",
+		"autumn":"good",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
