@@ -697,3 +697,113 @@ registerItem({
 		"hp":5
 	}
 })
+
+registerItem({
+	"name":"Green Pepper Seeds",
+	"sell":80,
+	"buy":800,
+	"value":150,
+	"growth":7,
+	"harvested":5,
+	"flavourtext":"Grows well in summer, but not in winter. Highly nutritious. Hearty ones may grow again after harvesting.",
+	"regrow":true,
+	"seasons":{
+		"spring":"normal",
+		"summer":"good",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Spinach Seeds",
+	"sell":6,
+	"buy":60,
+	"value":65,
+	"growth":2,
+	"harvested":2,
+	"flavourtext":"Grows well in fall. Grows fast, but withers quickly. Don't forget to water it every day!",
+	"regrow":false,
+	"seasons":{
+		"spring":"normal",
+		"summer":"normal",
+		"autumn":"good",
+		"winter":"normal"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Yam Seeds",
+	"sell":25,
+	"buy":250,
+	"value":140,
+	"growth":8,
+	"harvested":5,
+	"flavourtext":"Grows well from summer to fall, but not in winter. Easy on the soil.",
+	"regrow":false,
+	"seasons":{
+		"spring":"normal",
+		"summer":"good",
+		"autumn":"good",
+		"winter":"normal"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Carrot Seeds",
+	"sell":40,
+	"buy":400,
+	"value":380,
+	"growth":10,
+	"harvested":3,
+	"flavourtext":"Grows well in fall. A well-balanced crop that's easy on the soil.",
+	"regrow":false,
+	"seasons":{
+		"spring":"normal",
+		"summer":"normal",
+		"autumn":"good",
+		"winter":"normal"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Eggplant Seeds",
+	"sell":72,
+	"buy":720,
+	"value":190,
+	"growth":7,
+	"harvested":4,
+	"flavourtext":"Grows well from spring to summer, but not in winter. Hearty ones may grow again after harvesting.",
+	"regrow":true,
+	"seasons":{
+		"spring":"good",
+		"summer":"good",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
