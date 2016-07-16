@@ -1114,3 +1114,20 @@ registerItem({
 		"rp":5
 	}
 })
+
+registerItem({
+	"name":"Ayngondaia Lawn",
+	"category":"Plant",
+	"sell":33,
+	"pricemultiplier":"E", ///////////////////////////////////// unknown
+	"effects":{
+	},
+	"upgradeinfo":{
+		"rarity":10, ///////////////////////////////////// unknown
+		"difficulty":30
+	},
+	"flavourtext":"A rare plant. Imbued with incredible vitality, rumor has it that this bright bounty has rejuvenating qualities.",
+	"cookingeffects":{
+		"hpmaxP":5
+	}
+})
