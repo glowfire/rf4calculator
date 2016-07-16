@@ -6,7 +6,7 @@ registerItem({
 	"name":"Mealy Apple",
 	"category":"Fruit",
 	"sell":3000,
-	"flavourtext":"Eew, gross! Makes you very,very weak.",
+	"flavourtext":"Eew, gross! Makes you very, very weak.",
 	"pricemultiplier":"E",
 	"effects":{
 		"strP":-50,
