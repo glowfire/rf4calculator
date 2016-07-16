@@ -1,3 +1,4 @@
+// Complete
 // Toyherb, Pink Cat, Moondrop, Charm Blue, Cherry Grass, Pom-Pom Grass, Lamp Grass, Ironleaf, Clover, Autumn Grass, Noel Grass,
 // Fireflower, Emery Flower, Blue, Green, Red, White Crystal
 
@@ -18,8 +19,8 @@ registerItem({
 	},
 	"cookingeffects":{
 		"heal":["FTG"],
-		"rp":15,
-		"ftgresP":15
+		"rp":37,
+		"ftgresP":100
 	}
 })
 
@@ -38,13 +39,13 @@ registerItem({
 		"int":5
 	},
 	"cookingeffects":{
-		"rp":25,
-		"psnresP":5,
-		"sealresP":5,
-		"parresP":5,
-		"slpresP":5,
-		"ftgresP":5,
-		"sickresP":5
+		"rp":65,
+		"psnresP":25,
+		"sealresP":25,
+		"parresP":25,
+		"slpresP":25,
+		"ftgresP":25,
+		"sickresP":25
 	}
 })
 
@@ -63,7 +64,11 @@ registerItem({
 		"int":4
 	},
 	"cookingeffects":{
-		"rp":20
+		"rp":58,
+		"hpmax":50,
+		"str":3,
+		"vit":3,
+		"int":3
 	}
 })
 
@@ -85,11 +90,14 @@ registerItem({
 	},
 	"cookingeffects":{
 		"statusailments":["PSN"],
-		"rp":28,
-		"hpmax":10,
-		"slpresP":10,
-		"ftgresP":10,
-		"sickresP":10
+		"rp":80,
+		"hpmax":100,
+		"str":5,
+		"vit":5,
+		"int":5,
+		"slpresP":75,
+		"ftgresP":75,
+		"sickresP":75
 	}
 })
 
@@ -108,8 +116,8 @@ registerItem({
 		"slpatkP":9
 	},
 	"cookingeffects":{
-		"rp":30,
-		"intP":1
+		"rp":85,
+		"intP":3
 	}
 })
 
@@ -131,8 +139,9 @@ registerItem({
 	},
 	"cookingeffects":{
 		"statusailments":["PSN"],
-		"rp":45,
-		"psnatkP":15
+		"rp":100,
+		"str":10,
+		"psnatkP":80
 	}
 })
 
@@ -151,8 +160,8 @@ registerItem({
 		"int":10
 	},
 	"cookingeffects":{
-		"rp":40,
-		"strP":1
+		"rp":90,
+		"strP":3
 	}
 })
 
@@ -171,8 +180,8 @@ registerItem({
 		"atk":18
 	},
 	"cookingeffects":{
-		"hp":-100,
-		"str":10
+		"hp":-1000,
+		"str":30
 	}
 })
 
@@ -190,8 +199,8 @@ registerItem({
 		"difficulty":52
 	},
 	"cookingeffects":{
-		"rp":50,
-		"critP":5
+		"rp":100,
+		"critP":15
 	}
 })
 	
@@ -211,8 +220,9 @@ registerItem({
 		"slpresP":25
 	},
 	"ingredienteffects":{
-		"rp":60,
-		"rpmaxP":1
+		"hp":450,
+		"rp":150,
+		"rpmaxP":3
 	}
 })
 
@@ -231,8 +241,8 @@ registerItem({
 		"int":22
 	},
 	"cookingeffects":{
-		"rp":75,
-		"vitP":1
+		"rp":180,
+		"vitP":3
 	}
 })
 
@@ -252,8 +262,8 @@ registerItem({
 		"int":18
 	},
 	"cookingeffects":{
-		"rp":70,
-		"hpmaxP":1
+		"rp":200,
+		"hpmaxP":3
 	}
 })
 
@@ -272,12 +282,12 @@ registerItem({
 		"int":80
 	},
 	"cookingeffects":{
-		"rp":300,
-		"hpmaxP":1,
-		"rpmaxP":1,
-		"strP":1,
-		"vitP":1,
-		"intP":1
+		"rp":500,
+		"hpmaxP":3,
+		"rpmaxP":3,
+		"strP":3,
+		"vitP":3,
+		"intP":3
 	}
 })
 
@@ -298,9 +308,9 @@ registerItem({
 		"waterresP":20
 	},
 	"cookingeffects":{
-		"rp":120,
-		"int":10,
-		"waterresP":5
+		"rp":400,
+		"intP":3,
+		"waterresP":20
 	}
 })
 
@@ -320,9 +330,9 @@ registerItem({
 		"windresP":20
 	},
 	"cookingeffects":{
-		"rp":120,
-		"int":10,
-		"windresP":5
+		"rp":400,
+		"intP":3,
+		"windresP":20
 	}
 })
 
