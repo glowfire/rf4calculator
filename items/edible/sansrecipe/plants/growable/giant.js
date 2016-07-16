@@ -202,7 +202,7 @@ registerItem({
 	"pricemultiplier":"E",
 	"flavourtext":"A plant which grows colorful flowers. Named as it is due to its autumnal color scheme.",
 	"effects":{
-		"hp"450,
+		"hp":450,
 		"rp":150
 	},
 	"upgradeinfo":{
