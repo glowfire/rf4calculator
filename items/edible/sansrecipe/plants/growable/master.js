@@ -312,7 +312,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"rp":120,
-		"int":10
+		"int":10,
 		"waterresP":5
 	}
 })
@@ -335,7 +335,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"rp":120,
-		"int":10
+		"int":10,
 		"windresP":5
 	}
 })
@@ -358,7 +358,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"rp":120,
-		"int":10
+		"int":10,
 		"fireresP":5
 	}
 })
@@ -381,7 +381,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"rp":120,
-		"int":10
+		"int":10,
 		"earthresP":5
 	}
 })
