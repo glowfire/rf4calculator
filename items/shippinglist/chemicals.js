@@ -6,7 +6,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":100,
 	"buy":8e3,
-	"materials":[],
+	"chemistrylevel":53,
+	"materials":["Ironleaf"],
 	"flavourtext":"Sprinkle on soil to grow smaller plants. Also makes soil healthier.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -17,7 +18,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":300,
 	"buy":12e3,
-	"materials":[],
+	"chemistrylevel":57,
+	"materials":["Lamp Grass"],
 	"flavourtext":"Sprinkle on soil to grow gargantuan produce.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -28,7 +30,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":480,
 	"buy":8e3,
-	"materials":[],
+	"chemistrylevel":50,
+	"materials":["Withered Grass","Red Grass","4-Leaf Clover"],
 	"flavourtext":"Sprinkle on soil to prevent plants from wilting. It's more effective than the α version.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -39,7 +42,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":50,
 	"buy":2e3,
-	"materials":[],
+	"chemistrylevel":26,
+	"materials":["Withered Grass","Toyherb"],
 	"flavourtext":"Sprinkle on soil to prevent plants from wilting.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -50,7 +54,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":500,
 	"buy":9800,
-	"materials":[],
+	"chemistrylevel":72,
+	"materials":["White Grass","Fireflower","Corn"],
 	"flavourtext":"Sprinkle on soil to grow crops faster. It's super effective!",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -61,7 +66,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":240,
 	"buy":3600,
-	"materials":[],
+	"chemistrylevel":41,
+	"materials":["Yellow Grass","Pink Cat","4-Leaf Clover"],
 	"flavourtext":"Sprinkle on soil to grow crops faster. It's pretty effective.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -72,7 +78,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":30,
 	"buy":1200,
-	"materials":[],
+	"chemistrylevel":29,
+	"materials":["Withered Grass","Blue Grass","Black Grass"],
 	"flavourtext":"Sprinkle on soil to grow crops faster. It's somewhat effective.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -83,7 +90,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":800,
 	"buy":12e3,
-	"materials":[],
+	"chemistrylevel":64,
+	"materials":["Withered Grass","Orange Grass","Corn"],
 	"flavourtext":"An item used to raise soil quality. Improves soil's ability to grow higher-level crops.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -94,7 +102,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":80,
 	"buy":3e3,
-	"materials":[],
+	"chemistrylevel":34,
+	"materials":["Withered Grass","Indigo Grass","Moondrop Flower"],
 	"flavourtext":"An item used to raise soil quality. Improves soil's ability to grow higher-level crops.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -105,7 +114,8 @@ registerItem({
 	"category":"Nutrient",
 	"sell":150,
 	"buy":2e3,
-	"materials":[],
+	"chemistrylevel":30,
+	"materials":["Charm Blue","Cherry Grass"],
 	"flavourtext":"Sprinkle on soil to make plants stronger against typhoons and snowstorms.",
 	"cookingeffects":{},
 	"pricemultiplier":"Ch"
@@ -130,7 +140,23 @@ registerItem({
 	"category":"Medicine",
 	"sell":2e3,
 	"buy":5e3,
-	"materials":[],
+	"chemistrylevel":45,
+	"materials":["Medicinal Herb","Elli Leaves"],
+	"flavourtext":"One of the greatest achievements of magic medical science. Was only possible through the greatest of efforts.",
+	"effects":{
+		"hpP":50
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Magical Potion",
+	"category":"Medicine",
+	"sell":2e3,
+	"buy":5e3,
+	"chemistrylevel":70,
+	"materials":["Fireflower"],
 	"flavourtext":"One of the greatest achievements of magic medical science. Was only possible through the greatest of efforts.",
 	"effects":{
 		"hpP":50
@@ -144,7 +170,23 @@ registerItem({
 	"category":"Medicine",
 	"sell":200,
 	"buy":1500,
-	"materials":[],
+	"chemistrylevel":33,
+	"materials":["Medicinal Herb","White Grass"],
+	"flavourtext":"A blue-colored medicinal drink. Recovers HP.",
+	"effects":{
+		"hp":3000
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Mystery Potion",
+	"category":"Medicine",
+	"sell":200,
+	"buy":1500,
+	"chemistrylevel":60,
+	"materials":["Autumn Grass"],
 	"flavourtext":"A blue-colored medicinal drink. Recovers HP.",
 	"effects":{
 		"hp":3000
@@ -158,7 +200,23 @@ registerItem({
 	"category":"Medicine",
 	"sell":120,
 	"buy":500,
-	"materials":[],
+	"chemistrylevel":20,
+	"materials":["Medicinal Herb","Red Grass"],
+	"flavourtext":"A deep green-colored medicinal drink. Recovers HP.",
+	"effects":{
+		"hp":800
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Healing Potion",
+	"category":"Medicine",
+	"sell":120,
+	"buy":500,
+	"chemistrylevel":40,
+	"materials":["Pom-Pom Grass"],
 	"flavourtext":"A deep green-colored medicinal drink. Recovers HP.",
 	"effects":{
 		"hp":800
@@ -172,7 +230,23 @@ registerItem({
 	"category":"Medicine",
 	"sell":15,
 	"buy":80,
-	"materials":[],
+	"chemistrylevel":3,
+	"materials":["Medicinal Herb","Green Grass"],
+	"flavourtext":"A light green-colored medicinal drink. Recovers HP.",
+	"effects":{
+		"hp":150
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Recovery Potion",
+	"category":"Medicine",
+	"sell":15,
+	"buy":80,
+	"chemistrylevel":15,
+	"materials":["Blue Grass"],
 	"flavourtext":"A light green-colored medicinal drink. Recovers HP.",
 	"effects":{
 		"hp":150
@@ -186,7 +260,21 @@ registerItem({
 	"category":"Medicine",
 	"sell":3e3,
 	"buy":5e6,
-	"materials":[],
+	"chemistrylevel":96,
+	"materials":["Emery Flower","4-Leaf Clover","Noel Grass","Autumn Grass","Fireflower","Hot-Hot Fruit"],
+	"flavourtext":"A medicine made from a hodge-podge of things. Heats your body and increases your level.",
+	"effects":{},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Leveliser",
+	"category":"Medicine",
+	"sell":3e3,
+	"buy":5e6,
+	"chemistrylevel":99,
+	"materials":["Great Emery Flower","Great 4-Leaf Clover"],
 	"flavourtext":"A medicine made from a hodge-podge of things. Heats your body and increases your level.",
 	"effects":{},
 	"cookingeffects":{},
@@ -198,7 +286,33 @@ registerItem({
 	"category":"Medicine",
 	"sell":5e3,
 	"buy":112e4,
-	"materials":[],
+	"chemistrylevel":76,
+	"materials":["Formuade","Autumn Grass","Hot-Hot Fruit","Noel Grass","Emery Flower"],
+	"flavourtext":"You can be invincible! ...Or not. But it cures all status effects, so that's pretty cool.",
+	"effects":{
+		"heal":["PSN","SEAL","PAR","FTG","SICK"],
+		"hpP":100,
+		"rpP":100,
+		"hpmax":1000,
+		"hpmaxP":10,
+		"str":50,
+		"strP":10,
+		"vit":50,
+		"vitP":10,
+		"int":50,
+		"intP":10
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Invinciroid",
+	"category":"Medicine",
+	"sell":5e3,
+	"buy":112e4,
+	"chemistrylevel":86,
+	"materials":["Formuade","Giant Hot-Hot Fruit"],
 	"flavourtext":"You can be invincible! ...Or not. But it cures all status effects, so that's pretty cool.",
 	"effects":{
 		"heal":["PSN","SEAL","PAR","FTG","SICK"],
@@ -222,7 +336,33 @@ registerItem({
 	"category":"Medicine",
 	"sell":500,
 	"buy":3e6,
-	"materials":[],
+	"chemistrylevel":87,
+	"materials":["Grape Liqueur","Pink Melon","Strawberry","Honey","Hot-Hot Fruit","Emery Flower"],
+	"flavourtext":"A medicine loved by all. Give it to someone and they might like you. Heals all status effects.",
+	"effects":{
+		"heal":["PSN","SEAL","PAR","FTG","SICK"],
+		"rpP":50,
+		"critresP":50,
+		"knockresP":10,
+		"psnresP":25,
+		"sealresP":25,
+		"parresP":25,
+		"slpresP":25,
+		"ftgresP":25,
+		"sickresP":25,
+		"faintresP":25
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Love Potion",
+	"category":"Medicine",
+	"sell":500,
+	"buy":3e6,
+	"chemistrylevel":97,
+	"materials":["Great Emery Flower"],
 	"flavourtext":"A medicine loved by all. Give it to someone and they might like you. Heals all status effects.",
 	"effects":{
 		"heal":["PSN","SEAL","PAR","FTG","SICK"],
@@ -246,7 +386,35 @@ registerItem({
 	"category":"Medicine",
 	"sell":2500,
 	"buy":2e4,
-	"materials":[],
+	"chemistrylevel":46,
+	"materials":["Heavy Spice","Lamp Grass","Ironleaf","Liquids","Powders and Spores"],
+	"flavourtext":"Medicine made from fertilizer. Tastes awful, but whatever doesn't kill you can only make you stronger, right?",
+	"effects":{
+		"rpP":75,
+		"hpmaxP":-50,
+		"str":70,
+		"vit":70,
+		"int":70,
+		"critP":20,
+		"psnresP":25,
+		"sealresP":25,
+		"parresP":25,
+		"slpresP":25,
+		"ftgresP":25,
+		"sickresP":25,
+		"faintresP":25
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Formuade",
+	"category":"Medicine",
+	"sell":2500,
+	"buy":2e4,
+	"chemistrylevel":65,
+	"materials":["Hot-Hot Fruit"],
 	"flavourtext":"Medicine made from fertilizer. Tastes awful, but whatever doesn't kill you can only make you stronger, right?",
 	"effects":{
 		"rpP":75,
@@ -272,7 +440,24 @@ registerItem({
 	"category":"Medicine",
 	"sell":110,
 	"buy":1e3,
-	"materials":[],
+	"chemistrylevel":22,
+	"materials":["Orange Grass","Toyherb"],
+	"flavourtext":"Caught a cold? Nine out of ten doctors agree this medicine will cure it. And the tenth one is a quack.",
+	"effects":{
+		"heal":["SICK"],
+		"hp":1000
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Cold Medicine",
+	"category":"Medicine",
+	"sell":110,
+	"buy":1e3,
+	"chemistrylevel":32,
+	"materials":["Charm Blue"],
 	"flavourtext":"Caught a cold? Nine out of ten doctors agree this medicine will cure it. And the tenth one is a quack.",
 	"effects":{
 		"heal":["SICK"],
@@ -287,7 +472,24 @@ registerItem({
 	"category":"Medicine",
 	"sell":60,
 	"buy":800,
-	"materials":[],
+	"chemistrylevel":13,
+	"materials":["Black Grass","Black Grass"],
+	"flavourtext":"Medicine that dissolves seals.",
+	"effects":{
+		"heal":["SEAL"],
+		"hp":300
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Roundoff",
+	"category":"Medicine",
+	"sell":60,
+	"buy":800,
+	"chemistrylevel":28,
+	"materials":["Moondrop Flower"],
 	"flavourtext":"Medicine that dissolves seals.",
 	"effects":{
 		"heal":["SEAL"],
@@ -302,7 +504,24 @@ registerItem({
 	"category":"Medicine",
 	"sell":80,
 	"buy":900,
-	"materials":[],
+	"chemistrylevel":18,
+	"materials":["Indigo Grass","Indigo Grass"],
+	"flavourtext":"Medicine that cures paralysis.",
+	"effects":{
+		"heal":["PAR"],
+		"hp":500
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Para-Gone",
+	"category":"Medicine",
+	"sell":80,
+	"buy":900,
+	"chemistrylevel":31,
+	"materials":["Pink Cat"],
 	"flavourtext":"Medicine that cures paralysis.",
 	"effects":{
 		"heal":["PAR"],
@@ -317,7 +536,24 @@ registerItem({
 	"category":"Medicine",
 	"sell":150,
 	"buy":1200,
-	"materials":[],
+	"chemistrylevel":25,
+	"materials":["Antidote Grass","Yellow Grass"],
+	"flavourtext":"Easier to take than herbs. Used for curing poison.",
+	"effects":{
+		"heal":["PSN"],
+		"hp":1500
+	},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Antidote Potion",
+	"category":"Medicine",
+	"sell":150,
+	"buy":1200,
+	"chemistrylevel":38,
+	"materials":["Cherry Grass"],
 	"flavourtext":"Easier to take than herbs. Used for curing poison.",
 	"effects":{
 		"heal":["PSN"],
@@ -332,7 +568,21 @@ registerItem({
 	"category":"Medicine",
 	"sell":1300,
 	"buy":15e5,
-	"materials":[],
+	"chemistrylevel":85,
+	"materials":["Green Crystal","Green Crystal","Ironleaf","Powders and Spores","Liquids"],
+	"flavourtext":"A specially made medicine. Increases maximum HP.",
+	"effects":{},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Heart Drink",
+	"category":"Medicine",
+	"sell":1300,
+	"buy":15e5,
+	"chemistrylevel":95,
+	"materials":["Big Green Crystal"],
 	"flavourtext":"A specially made medicine. Increases maximum HP.",
 	"effects":{},
 	"cookingeffects":{},
@@ -344,7 +594,21 @@ registerItem({
 	"category":"Medicine",
 	"sell":1500,
 	"buy":2e6,
-	"materials":[],
+	"chemistrylevel":83,
+	"materials":["Blue Crystal","Blue Crystal","Bok Choy","Powders and Spores","Liquids"],
+	"flavourtext":"A specially made medicine. Increases maximum vitality.",
+	"effects":{},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Vital Gummi",
+	"category":"Medicine",
+	"sell":1500,
+	"buy":2e6,
+	"chemistrylevel":93,
+	"materials":["Big Blue Crystal"],
 	"flavourtext":"A specially made medicine. Increases maximum vitality.",
 	"effects":{},
 	"cookingeffects":{},
@@ -356,7 +620,21 @@ registerItem({
 	"category":"Medicine",
 	"sell":1500,
 	"buy":2e6,
-	"materials":[],
+	"chemistrylevel":82,
+	"materials":["White Crystal","White Crystal","Eggplant","Powders and Spores","Liquids"],
+	"flavourtext":"A specially made medicine. Increases maximum intelligence.",
+	"effects":{},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"Intelligencer",
+	"category":"Medicine",
+	"sell":1500,
+	"buy":2e6,
+	"chemistrylevel":92,
+	"materials":["Big White Crystal"],
 	"flavourtext":"A specially made medicine. Increases maximum intelligence.",
 	"effects":{},
 	"cookingeffects":{},
@@ -368,7 +646,21 @@ registerItem({
 	"category":"Medicine",
 	"sell":1500,
 	"buy":2e6,
-	"materials":[],
+	"chemistrylevel":80,
+	"materials":["Red Crystal","Red Crystal","Spinach","Powders and Spores","Liquids"],
+	"flavourtext":"A specially made medicine. Increases maximum strength. Get fit, brah.",
+	"effects":{},
+	"cookingeffects":{},
+	"pricemultiplier":"Ch"
+})
+
+registerItem({
+	"name":"The Protein",
+	"category":"Medicine",
+	"sell":1500,
+	"buy":2e6,
+	"chemistrylevel":90,
+	"materials":["Big Red Crystal"],
 	"flavourtext":"A specially made medicine. Increases maximum strength. Get fit, brah.",
 	"effects":{},
 	"cookingeffects":{},
