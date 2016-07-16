@@ -807,3 +807,25 @@ registerItem({
 		"hp":5
 	}
 })
+
+registerItem({
+	"name":"Pink Cat Seeds",
+	"sell":18,
+	"buy":180,
+	"value":110,
+	"growth":6,
+	"harvested":3,
+	"flavourtext":"Grows well in summer, but not in winter. Grows fast, is easy to harvest, but withers fast.",
+	"regrow":false,
+	"seasons":{
+		"spring":"normal",
+		"summer":"good",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
