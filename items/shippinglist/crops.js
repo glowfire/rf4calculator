@@ -1715,12 +1715,12 @@ registerItem({
 		"rarity":0,
 		"difficulty":1,
 		"vit":-1
-    },
-    "flavourtext":"You'd get sick if you ate this grass, but it can be used to improve the quality of soil.",
+	},
+	"flavourtext":"You'd get sick if you ate this grass, but it can be used to improve the quality of soil.",
 	"cookingeffects":{
 		"statusailments":["PSN"],
 		"rpP":-20
-    }
+	}
 })
 
 registerItem({
