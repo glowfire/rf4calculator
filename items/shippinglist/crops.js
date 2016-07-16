@@ -851,3 +851,91 @@ registerItem({
 		"hp":5
 	}
 })
+
+registerItem({
+	"name":"Pumpkin Seeds",
+	"sell":20,
+	"buy":200,
+	"value":110,
+	"growth":7,
+	"harvested":3,
+	"flavourtext":"Grows well from spring to summer, but not in winter. Easy on the soil. May grow again after harvesting.",
+	"regrow":true,
+	"seasons":{
+		"spring":"good",
+		"summer":"good",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Onion Seeds",
+	"sell":148,
+	"buy":1480,
+	"value":800,
+	"growth":18,
+	"harvested":5,
+	"flavourtext":"Grows well in fall. Easy to harvest and easy on the soil.",
+	"regrow":false,
+	"seasons":{
+		"spring":"normal",
+		"summer":"normal",
+		"autumn":"good",
+		"winter":"normal"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Corn Seeds",
+	"sell":45,
+	"buy":450,
+	"value":1000,
+	"growth":7,
+	"harvested":1,
+	"flavourtext":"Grows well from spring to summer, but not in winter. Improves the soil if you till it without harvesting.",
+	"regrow":false,
+	"seasons":{
+		"spring":"good",
+		"summer":"good",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
+
+registerItem({
+	"name":"Tomato Seeds",
+	"sell":188,
+	"buy":1880,
+	"value":540,
+	"growth":7,
+	"harvested":3,
+	"flavourtext":"Grows well from spring to summer, but not in winter. Grows nutritious tomatoes. May grow again after harvesting.",
+	"regrow":true,
+	"seasons":{
+		"spring":"good",
+		"summer":"good",
+		"autumn":"normal",
+		"winter":"bad"
+	},
+	"category":"Seed",
+	"pricemultiplier":"Sd",
+	"cookingeffects":{
+		"hp":5
+	}
+})
