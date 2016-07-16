@@ -1676,7 +1676,7 @@ registerItem({
 	},
 	"cookingeffects":{
 		"rp":85,
-		"intP":i3
+		"intP":3
 	}
 })
 
