@@ -48,7 +48,15 @@ function showBasicStats(){
 function showRecipesOfItem(){
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
-	recipeComment.innerHTML = "Recipes requiring " + currentItem.name + ": ";
+	recipeComment.innerHTML = "There "
+	
+	if (currentRecipeListing.length!==1){
+		recipeComment.innerHTML += "are " + currentRecipeListing.length + " recipes";
+	} else {
+		recipeComment.innerHTML += "is 1 recipe"
+	}
+	
+	recipeComment.innerHTML += " requiring " + currentItem.name + ": "
 	
 	function addRecipeToList(item,index){
 		recipeComment.innerHTML += item.name + ", "
