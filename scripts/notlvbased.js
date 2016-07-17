@@ -206,6 +206,8 @@ function getUpgradeInfo(){
 		}
 	}
 	
+	updateUpgradeInfoArrays(currentUpgradeInfo.matk,"M.ATK",false)
+	
 	updateUpgradeInfoArrays(currentUpgradeInfo.str,"STR",false)
 	updateUpgradeInfoArrays(currentUpgradeInfo.vit,"VIT",false)
 	updateUpgradeInfoArrays(currentUpgradeInfo.int,"INT",false)
