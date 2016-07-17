@@ -52,6 +52,11 @@ function getItemInfo(){
 	}
 	//document.getElementById("dependantDiv").innerHTML = '';
 	getEffectsTable()
-	getUpgradeInfo()
+	if (currentItem.upgradeinfo!==undefined){
+		getUpgradeInfo()
+	}
+	if (currentItem.upgradematerial!==undefined){
+		getUpgradeMaterial()
+	}
 	getProfitTable()
 }
