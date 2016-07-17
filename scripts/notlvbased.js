@@ -168,7 +168,7 @@ function getUpgradeInfo(){
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListing);
 	upgradeStatListing.innerHTML = ""
 	
-	switch (true) {
+	switch (false) {
 		case currentUpgradeInfo.rarity !== undefined:
 			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity + "<br>"
 		case currentUpgradeInfo.difficulty !== undefined:
