@@ -4,6 +4,9 @@ var integerCorrector = 1e6; // For use when non-integers are involved in multipl
 var statMultiplier=[1];
 var statIncrement=.125;
 
+var effectMultiplier=[1];
+var effectIncrement=.0625;
+
 var priceMultiplierE=[1];
 var EIncrement=.1;
 
@@ -26,6 +29,9 @@ for (i=1;i<maxLv;i++){
 	var lastElementStat=statMultiplier[i-1];
 	var currentElementStat=lastElementStat+statIncrement;
 	
+	var lastElementEffect=effectMultiplier[i-1];
+	var currentElementEffect=lastElementEffect+effectIncrement;
+	
 	var lastElementCh=priceMultiplierCh[i-1];
 	var currentElementCh=lastElementCh+ChIncrement;
 	
@@ -42,6 +48,7 @@ for (i=1;i<maxLv;i++){
 	}
 	
 	statMultiplier.push(currentElementStat);
+	effectMultiplier.push(currentElementEffect);
 	priceMultiplierCh.push(currentElementCh);
 	priceMultiplierE.push(currentElementE);
 	priceMultiplierSd.push(currentElementSd);
@@ -60,6 +67,7 @@ function appendMultiplierTable(string){
 
 appendMultiplierTable("Lv.");
 appendMultiplierTable("Effects");
+appendMultiplierTable("Effects<br>(minor)");
 appendMultiplierTable("Type E");
 appendMultiplierTable("Type C1");
 appendMultiplierTable("Type C2");
@@ -80,6 +88,7 @@ for (row = 0; row < maxLv; row++) {
 	td1.innerHTML = row+1;
 	
 	rowOfValue.push("×"+statMultiplier[row].toPrecision(4));
+	rowOfValue.push("×"+effectMultiplier[row].toPrecision(5));
 	rowOfValue.push("×"+priceMultiplierE[row].toPrecision(2));
 	rowOfValue.push("×"+priceMultiplierC1[row].toPrecision(3));
 	rowOfValue.push("×"+priceMultiplierC2[row].toPrecision(3));
