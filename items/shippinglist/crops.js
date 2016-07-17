@@ -1100,7 +1100,7 @@ registerItem({
 	"category":"Plant",
 	"sell":250,
 	"buy":3500,
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"effects":{
 		"hp":400,
 		"rp":5
