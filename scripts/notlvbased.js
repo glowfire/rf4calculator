@@ -62,7 +62,7 @@ function showRecipesOfItem(){
 		recipeComment.innerHTML += item.name + ", "
 	}
 	
-	currentRecipeListing.sort().forEach(addRecipeToList)
+	currentRecipeListing.forEach(addRecipeToList)
 	
 	recipeComment.innerHTML = recipeComment.innerHTML.slice(0,-2)
 }
