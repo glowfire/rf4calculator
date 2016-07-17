@@ -169,41 +169,41 @@ function getUpgradeInfo(){
 	upgradeStatListing.innerHTML = ""
 	
 	switch (false) {
-		case currentUpgradeInfo.rarity === undefined:
+		case currentUpgradeInfo.rarity == undefined:
 			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity + "<br>"
-		case currentUpgradeInfo.difficulty === undefined:
+		case currentUpgradeInfo.difficulty == undefined:
 			upgradeStatListing.innerHTML += "Difficulty: " + currentUpgradeInfo.difficulty + "<br>"
 		
-		case currentUpgradeInfo.str === undefined:
+		case currentUpgradeInfo.str == undefined:
 			signString(currentUpgradeInfo.str)
 			upgradeStatListing.innerHTML += "STR: " + sign + currentUpgradeInfo.str + "<br>"
-		case currentUpgradeInfo.vit === undefined:
+		case currentUpgradeInfo.vit == undefined:
 			signString(currentUpgradeInfo.vit)
 			upgradeStatListing.innerHTML += "VIT: " + sign + currentUpgradeInfo.vit + "<br>"
-		case currentUpgradeInfo.int === undefined:
+		case currentUpgradeInfo.int == undefined:
 			signString(currentUpgradeInfo.int)
 			upgradeStatListing.innerHTML += "INT: " + sign + currentUpgradeInfo.int + "<br>"
 		
-		case currentUpgradeInfo.fireresP === undefined:
+		case currentUpgradeInfo.fireresP == undefined:
 			signString(currentUpgradeInfo.fireresP)
 			upgradeStatListing.innerHTML += "Fire Res: " + sign + currentUpgradeInfo.fireresP + "%<br>"
-		case currentUpgradeInfo.waterresP === undefined:
+		case currentUpgradeInfo.waterresP == undefined:
 			signString(currentUpgradeInfo.waterresP)
 			upgradeStatListing.innerHTML += "Water Res: " + sign + currentUpgradeInfo.waterresP + "%<br>"
-		case currentUpgradeInfo.earthresP === undefined:
+		case currentUpgradeInfo.earthresP == undefined:
 			signString(currentUpgradeInfo.earthresP)
 			upgradeStatListing.innerHTML += "Earth Res: " + sign + currentUpgradeInfo.earthresP + "%<br>"
-		case currentUpgradeInfo.windresP === undefined:
+		case currentUpgradeInfo.windresP == undefined:
 			signString(currentUpgradeInfo.windresP)
 			upgradeStatListing.innerHTML += "Wind Res: " + sign + currentUpgradeInfo.windresP + "%<br>"
 		
-		case currentUpgradeInfo.lightresP === undefined:
+		case currentUpgradeInfo.lightresP == undefined:
 			signString(currentUpgradeInfo.lightresP)
 			upgradeStatListing.innerHTML += "Light Res: " + sign + currentUpgradeInfo.lightresP + "%<br>"
-		case currentUpgradeInfo.darkresP === undefined:
+		case currentUpgradeInfo.darkresP == undefined:
 			signString(currentUpgradeInfo.darkresP)
 			upgradeStatListing.innerHTML += "Dark Res: " + sign + currentUpgradeInfo.darkresP + "%<br>"
-		case currentUpgradeInfo.loveresP === undefined:
+		case currentUpgradeInfo.loveresP == undefined:
 			signString(currentUpgradeInfo.loveresP)
 			upgradeStatListing.innerHTML += "Love Res: " + sign + currentUpgradeInfo.loveresP + "%<br>"
 	}
