@@ -47,8 +47,8 @@ function showBasicStats(){
     
 var materialsList // May not be needed
 
-var currentMaterialsBuyPrice
-var currentMaterialsBuyPriceDiscount
+var currentMaterialsBuyPrice // needed
+var currentMaterialsBuyPriceDiscount // needed
 
 function createMaterialTable(){
 	currentMaterialsBuyPrice = 0
@@ -66,7 +66,7 @@ function createMaterialTable(){
 	}
 	
 	appendMaterialHeader("#");
-	appendMaterialHeader("Material Name");
+	appendMaterialHeader("Name of Material");
 	appendMaterialHeader("Normal<br>Buy Price");
 	appendMaterialHeader("Discounted<br>Buy Price");
 	
@@ -149,6 +149,15 @@ var upgradeInfoCaseList = {rarity:"Rarity",difficulty:"Difficulty"}
 function getUpgradeInfo(){
 	
 	var currentUpgradeInfo = currentItem.upgradeinfo;
+	var sign
+	
+	function signChange(number){
+		if (number>0){
+			sign = "+"
+		} else {
+			sign = ""
+		}
+	}
 	
 	var upgradeStatListHead = document.createElement('p');
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListHead);
@@ -161,8 +170,22 @@ function getUpgradeInfo(){
 	
 	switch (true) {
 		case currentUpgradeInfo.rarity !== undefined:
-			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity
+			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity + "<br>"
 		case currentUpgradeInfo.difficulty !== undefined:
-			upgradeStatListing.innerHTML += "<br>Difficulty: " + currentUpgradeInfo.difficulty
+			upgradeStatListing.innerHTML += "Difficulty: " + currentUpgradeInfo.difficulty + "<br>"
+		case currentUpgradeInfo.int !== undefined:
+			if (currentUpgradeInfo.int>0){
+				sign = "+"
+			} else {
+				sign = ""
+			}
+			upgradeStatListing.innerHTML += "INT: " + sign + currentUpgradeInfo.int + "<br>"
+		case currentUpgradeInfo.earthresP !== undefined:
+			if (currentUpgradeInfo.earthresP>0){
+				sign = "+"
+			} else {
+				sign = ""
+			}
+			upgradeStatListing.innerHTML += "Earth Res: " + sign + currentUpgradeInfo.earthresP + "%<br>"
 	}
 }
