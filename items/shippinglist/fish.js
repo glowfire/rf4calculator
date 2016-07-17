@@ -3,6 +3,7 @@
 
 // Cooking effects are checked
 // Fish with unconfirmed price multipliers: Snapper, Blowfish, Lamp Squid, Rockfish
+// All other fish price multipliers are confirmed
 
 registerItem({
 	"name":"Masu Trout",
