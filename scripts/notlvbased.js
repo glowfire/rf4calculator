@@ -144,8 +144,6 @@ function createMaterialTable(){
 	
 }
 
-var upgradeInfoCaseList = {rarity:"Rarity",difficulty:"Difficulty"}
-
 function getUpgradeInfo(){
 	
 	var currentUpgradeInfo = currentItem.upgradeinfo;
@@ -168,43 +166,58 @@ function getUpgradeInfo(){
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListing);
 	upgradeStatListing.innerHTML = ""
 	
-	switch (false) {
-		case currentUpgradeInfo.rarity == undefined:
-			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity + "<br>"
-		case currentUpgradeInfo.difficulty == undefined:
-			upgradeStatListing.innerHTML += "Difficulty: " + currentUpgradeInfo.difficulty + "<br>"
-		
-		case currentUpgradeInfo.str == undefined:
-			signString(currentUpgradeInfo.str)
-			upgradeStatListing.innerHTML += "STR: " + sign + currentUpgradeInfo.str + "<br>"
-		case currentUpgradeInfo.vit == undefined:
-			signString(currentUpgradeInfo.vit)
-			upgradeStatListing.innerHTML += "VIT: " + sign + currentUpgradeInfo.vit + "<br>"
-		case currentUpgradeInfo.int == undefined:
-			signString(currentUpgradeInfo.int)
-			upgradeStatListing.innerHTML += "INT: " + sign + currentUpgradeInfo.int + "<br>"
-		
-		case currentUpgradeInfo.fireresP == undefined:
-			signString(currentUpgradeInfo.fireresP)
-			upgradeStatListing.innerHTML += "Fire Res: " + sign + currentUpgradeInfo.fireresP + "%<br>"
-		case currentUpgradeInfo.waterresP == undefined:
-			signString(currentUpgradeInfo.waterresP)
-			upgradeStatListing.innerHTML += "Water Res: " + sign + currentUpgradeInfo.waterresP + "%<br>"
-		case currentUpgradeInfo.earthresP == undefined:
-			signString(currentUpgradeInfo.earthresP)
-			upgradeStatListing.innerHTML += "Earth Res: " + sign + currentUpgradeInfo.earthresP + "%<br>"
-		case currentUpgradeInfo.windresP == undefined:
-			signString(currentUpgradeInfo.windresP)
-			upgradeStatListing.innerHTML += "Wind Res: " + sign + currentUpgradeInfo.windresP + "%<br>"
-		
-		case currentUpgradeInfo.lightresP == undefined:
-			signString(currentUpgradeInfo.lightresP)
-			upgradeStatListing.innerHTML += "Light Res: " + sign + currentUpgradeInfo.lightresP + "%<br>"
-		case currentUpgradeInfo.darkresP == undefined:
-			signString(currentUpgradeInfo.darkresP)
-			upgradeStatListing.innerHTML += "Dark Res: " + sign + currentUpgradeInfo.darkresP + "%<br>"
-		case currentUpgradeInfo.loveresP == undefined:
-			signString(currentUpgradeInfo.loveresP)
-			upgradeStatListing.innerHTML += "Love Res: " + sign + currentUpgradeInfo.loveresP + "%<br>"
+	var upgradeInfoNumbers = [];
+	var upgradeInfoFrontString = [];
+	var upgradeInfoSignString = [];
+	var upgradeInfoBackString = [];
+	
+	function writeUpgradeInfo(item,index){
+		upgradeStatListing.innerHTML += upgradeInfoFrontString[index]
+		upgradeStatListing.innerHTML += upgradeInfoSignString[index]
+		upgradeStatListing.innerHTML += item
+		upgradeStatListing.innerHTML += upgradeInfoBackString[index]
 	}
+	
+	if (currentUpgradeInfo.rarity!==undefined){
+		upgradeInfoNumbers.push(currentUpgradeInfo.rarity);
+		upgradeInfoFrontString.push("Rarity: ");
+		upgradeInfoSignString.push("");
+		upgradeInfoBackString.push("<br>")
+	}
+	
+	if (currentUpgradeInfo.difficulty!==undefined){
+		upgradeInfoNumbers.push(currentUpgradeInfo.difficulty);
+		upgradeInfoFrontString.push("Difficulty: ");
+		upgradeInfoSignString.push("");
+		upgradeInfoBackString.push("<br>")
+	}
+	
+	function updateUpgradeInfoArrays(number,string,percent){
+		if (number!==undefined){
+			upgradeInfoNumbers.push(number);
+			upgradeInfoFrontString.push(string+": ");
+			signString(number);
+			upgradeInfoSignString.push(sign);
+			var backString = ""
+			if (percent){
+				backString += "%"
+			}
+			upgradeInfoBackString.push(backString+"<br>");
+		}
+	}
+	
+	updateUpgradeInfoArrays(currentUpgradeInfo.str,"STR",false)
+	updateUpgradeInfoArrays(currentUpgradeInfo.vit,"VIT",false)
+	updateUpgradeInfoArrays(currentUpgradeInfo.int,"INT",false)
+	
+	updateUpgradeInfoArrays(currentUpgradeInfo.fireresP,"Fire Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.waterresP,"Water Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.earthresP,"Earth Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.windresP,"Wind Res",true)
+	
+	updateUpgradeInfoArrays(currentUpgradeInfo.lightresP,"Light Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.darkresP,"Dark Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.loveresP,"Love Res",true)
+	
+	upgradeInfoNumbers.forEach(writeUpgradeInfo)
 }
