@@ -1934,7 +1934,7 @@ registerItem({
 	"category":"Plant",
 	"sell":6,
 	"buy":150,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"heal":["PSN"],
 		"hp":5
