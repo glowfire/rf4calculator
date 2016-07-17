@@ -44,6 +44,20 @@ function showBasicStats(){
 		priceLine.innerHTML+=" (with discount: "+currentBuyPriceDiscount+" G)";
 	}
 }
+
+function showRecipesOfItem(){
+	var recipeComment = document.createElement("p");
+	document.getElementById('currentItemDiv').appendChild(recipeComment);
+	recipeComment.innerHTML = "Recipes requiring " + currentItem.name + ": ";
+	
+	function addRecipeToList(item,index){
+		recipeComment.innerHTML += item.name + ", "
+	}
+	
+	currentRecipeListing.forEach(addRecipeToList)
+	
+	recipeComment.innerHTML = recipeComment.innerHTML.slice(0,-2)
+}
     
 var materialsList // May not be needed
 
