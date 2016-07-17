@@ -5,29 +5,6 @@ var independentStats
 
 var dependentStats
 
-function getUpgradeInfoFoo(){
-	independentStats = document.createElement('p');
-	independentStats.innerHTML=""
-	if (currentItem.upgradeinfo!==undefined){ //Effects of item when used for upgrades
-		var currentUpgradeInfo=currentItem.upgradeinfo
-		var upgradeInfoSection=document.createElement('p');
-		var upgradeInfoString="UPGRADE INFO";
-		var node = document.createTextNode(upgradeInfoString);
-		upgradeInfoSection.appendChild(node);
-    
-	    if (currentUpgradeInfo.hp!==undefined){
-			upgradeInfoSection.innerHTML+="<br>HP: "+currentEffects.hp
-        }
-    
-	    // Upgrade effects are level independent
-	    independentStats.appendChild(upgradeInfoSection)
-	    }
-
-	if (independentStats.hasChildNodes()){
-		document.getElementById('currentItemDiv').appendChild(independentStats);
-    }
-}
-
 function getEffectsTable(){
 	// Section for level dependent stats like effects
 	dependentStats = document.getElementById('dependantDiv');
