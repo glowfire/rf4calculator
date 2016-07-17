@@ -5,7 +5,7 @@ var independentStats
 
 var dependentStats
 
-function getUpgradeInfo(){
+function getUpgradeInfoFoo(){
 	independentStats = document.createElement('p');
 	independentStats.innerHTML=""
 	if (currentItem.upgradeinfo!==undefined){ //Effects of item when used for upgrades
