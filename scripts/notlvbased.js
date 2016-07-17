@@ -168,7 +168,7 @@ function getUpgradeInfo(){
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListing);
 	upgradeStatListing.innerHTML = ""
 	
-	switch (false) {
+	switch (truee) {
 		case currentUpgradeInfo.rarity !== undefined:
 			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity + "<br>"
 		case currentUpgradeInfo.difficulty !== undefined:
@@ -203,8 +203,8 @@ function getUpgradeInfo(){
 		case currentUpgradeInfo.darkresP !== undefined:
 			signString(currentUpgradeInfo.darkresP)
 			upgradeStatListing.innerHTML += "Dark Res: " + sign + currentUpgradeInfo.darkresP + "%<br>"
-		case currentUpgradeInfo.loveresP !== undefined:
-			signString(currentUpgradeInfo.loveresP)
-			upgradeStatListing.innerHTML += "Love Res: " + sign + currentUpgradeInfo.loveresP + "%<br>"
+		//case currentUpgradeInfo.loveresP !== undefined:
+		//	signString(currentUpgradeInfo.loveresP)
+	//		upgradeStatListing.innerHTML += "Love Res: " + sign + currentUpgradeInfo.loveresP + "%<br>"
 	}
 }
