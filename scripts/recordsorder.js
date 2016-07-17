@@ -59,8 +59,8 @@ function getItemInfo(){
 	if (currentItem.upgradematerial!==undefined){
 		getUpgradeMaterial()
 	}
-	if (productMaterialMapping[itemSelected]!==undefined){
-		currentRecipeListing = productMaterialMapping[itemSelected];
+	if (productMaterialMapping[currentItem.name.getModifiedNameString("")]!==undefined){
+		currentRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
 		showRecipesOfItem();
 	}
 	getProfitTable()
