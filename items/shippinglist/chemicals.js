@@ -9,7 +9,9 @@ registerItem({
 	"chemistrylevel":53,
 	"materials":["Ironleaf"],
 	"flavourtext":"Sprinkle on soil to grow smaller plants. Also makes soil healthier.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -21,7 +23,9 @@ registerItem({
 	"chemistrylevel":57,
 	"materials":["Lamp Grass"],
 	"flavourtext":"Sprinkle on soil to grow gargantuan produce.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -33,7 +37,9 @@ registerItem({
 	"chemistrylevel":50,
 	"materials":["Withered Grass","Red Grass","4-Leaf Clover"],
 	"flavourtext":"Sprinkle on soil to prevent plants from wilting. It's more effective than the α version.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -45,7 +51,9 @@ registerItem({
 	"chemistrylevel":26,
 	"materials":["Withered Grass","Toyherb"],
 	"flavourtext":"Sprinkle on soil to prevent plants from wilting.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -57,7 +65,9 @@ registerItem({
 	"chemistrylevel":72,
 	"materials":["White Grass","Fireflower","Corn"],
 	"flavourtext":"Sprinkle on soil to grow crops faster. It's super effective!",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -69,7 +79,9 @@ registerItem({
 	"chemistrylevel":41,
 	"materials":["Yellow Grass","Pink Cat","4-Leaf Clover"],
 	"flavourtext":"Sprinkle on soil to grow crops faster. It's pretty effective.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -81,7 +93,9 @@ registerItem({
 	"chemistrylevel":29,
 	"materials":["Withered Grass","Blue Grass","Black Grass"],
 	"flavourtext":"Sprinkle on soil to grow crops faster. It's somewhat effective.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -93,7 +107,9 @@ registerItem({
 	"chemistrylevel":64,
 	"materials":["Withered Grass","Orange Grass","Corn"],
 	"flavourtext":"An item used to raise soil quality. Improves soil's ability to grow higher-level crops.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -105,7 +121,9 @@ registerItem({
 	"chemistrylevel":34,
 	"materials":["Withered Grass","Indigo Grass","Moondrop Flower"],
 	"flavourtext":"An item used to raise soil quality. Improves soil's ability to grow higher-level crops.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -117,7 +135,9 @@ registerItem({
 	"chemistrylevel":30,
 	"materials":["Charm Blue","Cherry Grass"],
 	"flavourtext":"Sprinkle on soil to make plants stronger against typhoons and snowstorms.",
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":-100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -131,7 +151,10 @@ registerItem({
 		"statusailments":["PSN","SEAL","PAR","SLP","FTG","SICK"],
 		"rpP":-50
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"statusailments":["PSN","SEAL","PAR","SLP","FTG","SICK"],
+		"rpP":-50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -146,7 +169,9 @@ registerItem({
 	"effects":{
 		"hpP":50
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hpP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -161,7 +186,9 @@ registerItem({
 	"effects":{
 		"hpP":50
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hpP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -176,7 +203,9 @@ registerItem({
 	"effects":{
 		"hp":3000
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":3000
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -191,7 +220,9 @@ registerItem({
 	"effects":{
 		"hp":3000
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":3000
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -206,7 +237,9 @@ registerItem({
 	"effects":{
 		"hp":800
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":800
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -221,7 +254,9 @@ registerItem({
 	"effects":{
 		"hp":800
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":800
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -236,7 +271,9 @@ registerItem({
 	"effects":{
 		"hp":150
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":150
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -251,7 +288,9 @@ registerItem({
 	"effects":{
 		"hp":150
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":150
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -263,8 +302,13 @@ registerItem({
 	"chemistrylevel":96,
 	"materials":["Emery Flower","4-Leaf Clover","Noel Grass","Autumn Grass","Fireflower","Hot-Hot Fruit"],
 	"flavourtext":"A medicine made from a hodge-podge of things. Heats your body and increases your level.",
-	"effects":{},
-	"cookingeffects":{},
+	"effects":{
+		// none
+	},
+	"cookingeffects":{
+		// none in the form of stats
+		// resulting dish could raise level like a normal leveliser
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -302,7 +346,11 @@ registerItem({
 		"int":50,
 		"intP":10
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PSN","SEAL","PAR","FTG","SICK"],
+		"hpP":100,
+		"rpP":100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -327,7 +375,11 @@ registerItem({
 		"int":50,
 		"intP":10
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PSN","SEAL","PAR","FTG","SICK"],
+		"hpP":100,
+		"rpP":100
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -352,7 +404,10 @@ registerItem({
 		"sickresP":25,
 		"faintresP":25
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PSN","SEAL","PAR","FTG","SICK"],
+		"rpP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -377,7 +432,10 @@ registerItem({
 		"sickresP":25,
 		"faintresP":25
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PSN","SEAL","PAR","FTG","SICK"],
+		"rpP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -404,7 +462,9 @@ registerItem({
 		"sickresP":25,
 		"faintresP":25
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rpP":75
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -431,7 +491,9 @@ registerItem({
 		"sickresP":25,
 		"faintresP":25
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rpP":75
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -447,7 +509,11 @@ registerItem({
 		"heal":["SICK"],
 		"hp":1000
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["SICK"],
+		"hp":1000,
+		"sickresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -463,7 +529,11 @@ registerItem({
 		"heal":["SICK"],
 		"hp":1000
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["SICK"],
+		"hp":1000,
+		"sickresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -479,7 +549,11 @@ registerItem({
 		"heal":["SEAL"],
 		"hp":300
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["SEAL"],
+		"hp":300,
+		"sealresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -495,7 +569,11 @@ registerItem({
 		"heal":["SEAL"],
 		"hp":300
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["SEAL"],
+		"hp":300,
+		"sealresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -511,7 +589,11 @@ registerItem({
 		"heal":["PAR"],
 		"hp":500
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PAR"],
+		"hp":500,
+		"parresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -527,7 +609,11 @@ registerItem({
 		"heal":["PAR"],
 		"hp":500
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PAR"],
+		"hp":500,
+		"parresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -543,7 +629,11 @@ registerItem({
 		"heal":["PSN"],
 		"hp":1500
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PSN"],
+		"hp":1500,
+		"psnresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -559,7 +649,11 @@ registerItem({
 		"heal":["PSN"],
 		"hp":1500
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"heal":["PSN"],
+		"hp":1500,
+		"psnresP":50
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -571,8 +665,12 @@ registerItem({
 	"chemistrylevel":85,
 	"materials":["Green Crystal","Green Crystal","Ironleaf","Powders and Spores","Liquids"],
 	"flavourtext":"A specially made medicine. Increases maximum HP.",
-	"effects":{},
-	"cookingeffects":{},
+	"effects":{
+		// none
+	},
+	"cookingeffects":{
+		// resulting dish seems to not raise maximum HP
+	},
 	"pricemultiplier":"Ch"
 })
 
@@ -597,8 +695,12 @@ registerItem({
 	"chemistrylevel":83,
 	"materials":["Blue Crystal","Blue Crystal","Bok Choy","Powders and Spores","Liquids"],
 	"flavourtext":"A specially made medicine. Increases maximum vitality.",
-	"effects":{},
-	"cookingeffects":{},
+	"effects":{
+		// none listed
+	},
+	"cookingeffects":{
+		// resulting dish appears not to raise VIT
+	},
 	"pricemultiplier":"Ch"
 })
 
