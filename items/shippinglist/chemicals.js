@@ -54,7 +54,7 @@ registerItem({
 	"cookingeffects":{
 		"hp":-100
 	},
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"E" // For some reason the price multiplier type of the α version is different from the β version.
 })
 
 registerItem({
@@ -333,7 +333,7 @@ registerItem({
 	"chemistrylevel":76,
 	"materials":["Formuade","Autumn Grass","Hot-Hot Fruit","Noel Grass","Emery Flower"],
 	"flavourtext":"You can be invincible! ...Or not. But it cures all status effects, so that's pretty cool.",
-	"effects":{
+	"effects":{ // some/all of the effects follow the minor effect multiplier
 		"heal":["PSN","SEAL","PAR","FTG","SICK"],
 		"hpP":100,
 		"rpP":100,
@@ -362,7 +362,7 @@ registerItem({
 	"chemistrylevel":86,
 	"materials":["Formuade","Giant Hot-Hot Fruit"],
 	"flavourtext":"You can be invincible! ...Or not. But it cures all status effects, so that's pretty cool.",
-	"effects":{
+	"effects":{ // some/all of the effects follow the minor effect multiplier
 		"heal":["PSN","SEAL","PAR","FTG","SICK"],
 		"hpP":100,
 		"rpP":100,
@@ -391,7 +391,7 @@ registerItem({
 	"chemistrylevel":87,
 	"materials":["Grape Liqueur","Pink Melon","Strawberry","Honey","Hot-Hot Fruit","Emery Flower"],
 	"flavourtext":"A medicine loved by all. Give it to someone and they might like you. Heals all status effects.",
-	"effects":{
+	"effects":{// some/all of the effects follow the minor effect multiplier
 		"heal":["PSN","SEAL","PAR","FTG","SICK"],
 		"rpP":50,
 		"critresP":50,
@@ -419,7 +419,7 @@ registerItem({
 	"chemistrylevel":97,
 	"materials":["Great Emery Flower"],
 	"flavourtext":"A medicine loved by all. Give it to someone and they might like you. Heals all status effects.",
-	"effects":{
+	"effects":{// some/all of the effects follow the minor effect multiplier
 		"heal":["PSN","SEAL","PAR","FTG","SICK"],
 		"rpP":50,
 		"critresP":50,
@@ -447,7 +447,7 @@ registerItem({
 	"chemistrylevel":46,
 	"materials":["Heavy Spice","Lamp Grass","Ironleaf","Liquids","Powders and Spores"],
 	"flavourtext":"Medicine made from fertilizer. Tastes awful, but whatever doesn't kill you can only make you stronger, right?",
-	"effects":{
+	"effects":{ // follows the standard effects multiplier
 		"rpP":75,
 		"hpmaxP":-50,
 		"str":70,
@@ -476,7 +476,7 @@ registerItem({
 	"chemistrylevel":65,
 	"materials":["Hot-Hot Fruit"],
 	"flavourtext":"Medicine made from fertilizer. Tastes awful, but whatever doesn't kill you can only make you stronger, right?",
-	"effects":{
+	"effects":{ // follows the standard effects multiplier
 		"rpP":75,
 		"hpmaxP":-50,
 		"str":70,
