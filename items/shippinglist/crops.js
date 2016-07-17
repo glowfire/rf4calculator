@@ -1747,7 +1747,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":200,
 		"rp":3
@@ -1768,7 +1768,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":80,
 		"rp":3
@@ -1789,7 +1789,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":20,
 		"rp":3
@@ -1810,7 +1810,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"rp":3
 	},
@@ -1829,7 +1829,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":30,
 		"rp":3
@@ -1850,7 +1850,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":100,
 		"rp":3
@@ -1871,7 +1871,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":120,
 		"rp":3
@@ -1892,7 +1892,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":150,
 		"rp":3
@@ -1913,7 +1913,7 @@ registerItem({
 	"category":"Plant",
 	"sell":5,
 	"buy":120,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":50,
 		"rp":3
