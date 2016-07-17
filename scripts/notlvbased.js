@@ -172,24 +172,24 @@ function getUpgradeInfo(){
 	var upgradeInfoBackString = [];
 	
 	function writeUpgradeInfo(item,index){
-		upgradeStatListing.innerHTML += upgradeInfoFrontString[index]
-		upgradeStatListing.innerHTML += upgradeInfoSignString[index]
-		upgradeStatListing.innerHTML += item
-		upgradeStatListing.innerHTML += upgradeInfoBackString[index]
+		upgradeStatListing.innerHTML += upgradeInfoFrontString[index];
+		upgradeStatListing.innerHTML += upgradeInfoSignString[index];
+		upgradeStatListing.innerHTML += upgradeInfoNumbers[index];
+		upgradeStatListing.innerHTML += upgradeInfoBackString[index];
 	}
 	
 	if (currentUpgradeInfo.rarity!==undefined){
 		upgradeInfoNumbers.push(currentUpgradeInfo.rarity);
 		upgradeInfoFrontString.push("Rarity: ");
 		upgradeInfoSignString.push("");
-		upgradeInfoBackString.push("<br>")
+		upgradeInfoBackString.push("<br>");
 	}
 	
 	if (currentUpgradeInfo.difficulty!==undefined){
 		upgradeInfoNumbers.push(currentUpgradeInfo.difficulty);
 		upgradeInfoFrontString.push("Difficulty: ");
 		upgradeInfoSignString.push("");
-		upgradeInfoBackString.push("<br>")
+		upgradeInfoBackString.push("<br>");
 	}
 	
 	function updateUpgradeInfoArrays(number,string,percent){
@@ -198,39 +198,39 @@ function getUpgradeInfo(){
 			upgradeInfoFrontString.push(string+": ");
 			signString(number);
 			upgradeInfoSignString.push(sign);
-			var backString = ""
+			var backString = "";
 			if (percent){
-				backString += "%"
+				backString += "%";
 			}
 			upgradeInfoBackString.push(backString+"<br>");
 		}
 	}
 	
-	updateUpgradeInfoArrays(currentUpgradeInfo.atk,"ATK",false)
-	updateUpgradeInfoArrays(currentUpgradeInfo.def,"DEF",false)
-	updateUpgradeInfoArrays(currentUpgradeInfo.matk,"M.ATK",false)
-	updateUpgradeInfoArrays(currentUpgradeInfo.mdef,"M.DEF",false)
+	updateUpgradeInfoArrays(currentUpgradeInfo.atk,"ATK",false);
+	updateUpgradeInfoArrays(currentUpgradeInfo.def,"DEF",false);
+	updateUpgradeInfoArrays(currentUpgradeInfo.matk,"M.ATK",false);
+	updateUpgradeInfoArrays(currentUpgradeInfo.mdef,"M.DEF",false);
 	
-	updateUpgradeInfoArrays(currentUpgradeInfo.str,"STR",false)
-	updateUpgradeInfoArrays(currentUpgradeInfo.vit,"VIT",false)
-	updateUpgradeInfoArrays(currentUpgradeInfo.int,"INT",false)
+	updateUpgradeInfoArrays(currentUpgradeInfo.str,"STR",false);
+	updateUpgradeInfoArrays(currentUpgradeInfo.vit,"VIT",false);
+	updateUpgradeInfoArrays(currentUpgradeInfo.int,"INT",false);
 	
-	updateUpgradeInfoArrays(currentUpgradeInfo.fireresP,"Fire Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.waterresP,"Water Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.earthresP,"Earth Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.windresP,"Wind Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.fireresP,"Fire Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.waterresP,"Water Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.earthresP,"Earth Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.windresP,"Wind Res",true);
 	
-	updateUpgradeInfoArrays(currentUpgradeInfo.lightresP,"Light Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.darkresP,"Dark Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.loveresP,"Love Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.lightresP,"Light Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.darkresP,"Dark Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.loveresP,"Love Res",true);
 	
-	updateUpgradeInfoArrays(currentUpgradeInfo.psnatkP,"Psn Atk",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.slpatkP,"Slp Atk",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.faintatkP,"Faint Atk",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.psnatkP,"Psn Atk",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.slpatkP,"Slp Atk",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.faintatkP,"Faint Atk",true);
 	
-	updateUpgradeInfoArrays(currentUpgradeInfo.psnresP,"Psn Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.slpresP,"Slp Res",true)
-	updateUpgradeInfoArrays(currentUpgradeInfo.ftgresP,"Ftg Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.psnresP,"Psn Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.slpresP,"Slp Res",true);
+	updateUpgradeInfoArrays(currentUpgradeInfo.ftgresP,"Ftg Res",true);
 	
-	upgradeInfoNumbers.forEach(writeUpgradeInfo)
+	upgradeInfoNumbers.forEach(writeUpgradeInfo);
 }
