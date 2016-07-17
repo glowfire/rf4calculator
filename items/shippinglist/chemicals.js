@@ -1,5 +1,7 @@
 // Registration of items in the order as shown in the shipping records.
 // This list contains the items listed in the second section.
+// Cooking effects complete
+// Price multipliers checked
 
 registerItem({
 	"name":"Minimizer",
