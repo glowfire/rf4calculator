@@ -2,6 +2,9 @@
 // This list contains the items listed in the first section.
 // Only mushrooms are incomplete.
 
+// Cooking effects checked (except Mushrooms)
+// Price multipliers checked (except Mushrooms)
+
 registerItem({
 	"name":"Shield Seed",
 	"sell":150,
