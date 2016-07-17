@@ -1096,7 +1096,7 @@ registerItem({
 })
 
 registerItem({
-	"name":"Elli Leaves",
+	"name":"Elli Leaves", ///////////// effects not following standard effect multipliers
 	"category":"Plant",
 	"sell":250,
 	"buy":3500,
@@ -1956,7 +1956,7 @@ registerItem({
 	"category":"Plant",
 	"sell":8,
 	"buy":80,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":20
 	},
