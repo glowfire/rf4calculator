@@ -66,15 +66,15 @@ function appendMultiplierTable(string){
 }
 
 appendMultiplierTable("Lv.");
-appendMultiplierTable("Effects");
+appendMultiplierTable("Effects<br>(standard)");
 appendMultiplierTable("Effects<br>(minor)");
-appendMultiplierTable("Type E");
-appendMultiplierTable("Type C1");
-appendMultiplierTable("Type C2");
-appendMultiplierTable("Type C3");
-appendMultiplierTable("Type Ch");
-appendMultiplierTable("Type Sd");
-appendMultiplierTable("Type X");
+appendMultiplierTable("Type<br>E");
+appendMultiplierTable("Type<br>C1");
+appendMultiplierTable("Type<br>C2");
+appendMultiplierTable("Type<br>C3");
+appendMultiplierTable("Type<br>Ch");
+appendMultiplierTable("Type<br>Sd");
+appendMultiplierTable("Type<br>X");
 appendMultiplierTable("Lv.");
 
 multiplierTable.appendChild(multiplierTableHeader);
