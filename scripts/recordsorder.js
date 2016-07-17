@@ -40,6 +40,7 @@ var currentItem
 var currentSellPrice
 var currentBuyPrice
 var currentBuyPriceDiscount
+var currentRecipeListing
         
 function getItemInfo(){
 	var itemSelected = document.getElementById("itemSelect").value
@@ -57,6 +58,10 @@ function getItemInfo(){
 	}
 	if (currentItem.upgradematerial!==undefined){
 		getUpgradeMaterial()
+	}
+	if (productMaterialMapping[itemSelected]!==undefined){
+		currentRecipeListing = productMaterialMapping[itemSelected];
+		showRecipesOfItem();
 	}
 	getProfitTable()
 }
