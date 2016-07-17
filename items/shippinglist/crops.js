@@ -1120,7 +1120,7 @@ registerItem({
 	"name":"Ayngondaia Lawn",
 	"category":"Plant",
 	"sell":33,
-	"pricemultiplier":"E", ///////////////////////////////////// unknown
+	"pricemultiplier":"Ch", ///////////////////////////////////// unknown
 	"effects":{
 	},
 	"upgradeinfo":{
@@ -1706,7 +1706,7 @@ registerItem({
 	"category":"Plant",
 	"sell":1,
 	"buy":100,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"statusailments":["PSN"],
 		"rpP":-20
@@ -1728,7 +1728,7 @@ registerItem({
 	"category":"Plant",
 	"sell":1,
 	"buy":30,
-	"pricemultiplier":"E",
+	"pricemultiplier":"Ch",
 	"effects":{
 		"hp":-5
 	},
