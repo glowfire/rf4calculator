@@ -2631,7 +2631,9 @@ registerItem({
 		"atk":1
 	},
 	"flavourtext":"Known for its crunchy texture and fragrant allure. Grows quickly during spring.",
-	"cookingeffects":{}
+	"cookingeffects":{
+		"rp":5
+	}
 })
 
 registerItem({
