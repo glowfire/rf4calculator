@@ -45,7 +45,7 @@ function showBasicStats(){
 	}
 }
     
-var materialsList
+var materialsList // May not be needed
 
 var currentMaterialsBuyPrice
 var currentMaterialsBuyPriceDiscount
@@ -142,4 +142,27 @@ function createMaterialTable(){
 		}
 	}
 	
+}
+
+var upgradeInfoCaseList = {rarity:"Rarity",difficulty:"Difficulty"}
+
+function getUpgradeInfo(){
+	
+	var currentUpgradeInfo = currentItem.upgradeinfo;
+	
+	var upgradeStatListHead = document.createElement('p');
+	document.getElementById('currentItemDiv').appendChild(upgradeStatListHead);
+	upgradeStatListHead.innerHTML = "Upgrade Info".toUpperCase();
+	upgradeStatListHead.style.fontWeight = "bold";
+	
+	var upgradeStatListing = document.createElement('p');
+	document.getElementById('currentItemDiv').appendChild(upgradeStatListing);
+	upgradeStatListing.innerHTML = ""
+	
+	switch (true) {
+		case currentUpgradeInfo.rarity !== undefined:
+			upgradeStatListing.innerHTML += "Rarity: " + currentUpgradeInfo.rarity
+		case currentUpgradeInfo.difficulty !== undefined:
+			upgradeStatListing.innerHTML += "<br>Difficulty: " + currentUpgradeInfo.difficulty
+	}
 }
