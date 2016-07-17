@@ -151,7 +151,7 @@ function getUpgradeInfo(){
 	var currentUpgradeInfo = currentItem.upgradeinfo;
 	var sign
 	
-	function signChange(number){
+	function signString(number){
 		if (number>0){
 			sign = "+"
 		} else {
@@ -174,18 +174,10 @@ function getUpgradeInfo(){
 		case currentUpgradeInfo.difficulty !== undefined:
 			upgradeStatListing.innerHTML += "Difficulty: " + currentUpgradeInfo.difficulty + "<br>"
 		case currentUpgradeInfo.int !== undefined:
-			if (currentUpgradeInfo.int>0){
-				sign = "+"
-			} else {
-				sign = ""
-			}
+			signString(currentUpgradeInfo.int)
 			upgradeStatListing.innerHTML += "INT: " + sign + currentUpgradeInfo.int + "<br>"
 		case currentUpgradeInfo.earthresP !== undefined:
-			if (currentUpgradeInfo.earthresP>0){
-				sign = "+"
-			} else {
-				sign = ""
-			}
+			signString(currentUpgradeInfo.earthresP)
 			upgradeStatListing.innerHTML += "Earth Res: " + sign + currentUpgradeInfo.earthresP + "%<br>"
 	}
 }
