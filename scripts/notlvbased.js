@@ -206,7 +206,10 @@ function getUpgradeInfo(){
 		}
 	}
 	
+	updateUpgradeInfoArrays(currentUpgradeInfo.atk,"ATK",false)
+	updateUpgradeInfoArrays(currentUpgradeInfo.def,"DEF",false)
 	updateUpgradeInfoArrays(currentUpgradeInfo.matk,"M.ATK",false)
+	updateUpgradeInfoArrays(currentUpgradeInfo.mdef,"M.DEF",false)
 	
 	updateUpgradeInfoArrays(currentUpgradeInfo.str,"STR",false)
 	updateUpgradeInfoArrays(currentUpgradeInfo.vit,"VIT",false)
@@ -220,6 +223,14 @@ function getUpgradeInfo(){
 	updateUpgradeInfoArrays(currentUpgradeInfo.lightresP,"Light Res",true)
 	updateUpgradeInfoArrays(currentUpgradeInfo.darkresP,"Dark Res",true)
 	updateUpgradeInfoArrays(currentUpgradeInfo.loveresP,"Love Res",true)
+	
+	updateUpgradeInfoArrays(currentUpgradeInfo.psnatkP,"Psn Atk",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.slpatkP,"Slp Atk",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.faintatkP,"Faint Atk",true)
+	
+	updateUpgradeInfoArrays(currentUpgradeInfo.psnresP,"Psn Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.slpresP,"Slp Res",true)
+	updateUpgradeInfoArrays(currentUpgradeInfo.ftgresP,"Ftg Res",true)
 	
 	upgradeInfoNumbers.forEach(writeUpgradeInfo)
 }
