@@ -302,7 +302,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A failed dish that got burned. Edible, but tastes pretty bad. Maybe you'll like it, though!",
-	"pricemultiplier":"E"
+	"pricemultiplier":"Ch" // confirmed
 })
 
 registerItem({
