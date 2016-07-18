@@ -11,7 +11,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Powder used to make rice dumplings. Adds stickiness to the resulting dish.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -24,7 +24,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Powder used to cook curry. Made by mixing various spices. Goes well with lots of stuff.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -37,7 +37,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Often used in fried recipes to add flavor and prevent sticking. Careful, it's highly flammable.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -50,7 +50,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by grinding wheat. A necessity in making dough, used in many recipes. Pretty amazing if you think about it.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -63,7 +63,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Honey collected for a queen bee. Very nutritious and popular for its natural sweetness.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -76,9 +76,9 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by processing milk. It eases upset stomachs.",
-	"pricemultiplier":"Ch",
-	"cookinglevel":19,
-	"materials":["Sweet Powder","Milk (S)"]
+	"pricemultiplier":"Sd",
+	//"cookinglevel":19,
+	//"materials":["Sweet Powder","Milk (S)"]
 })
 
 registerItem({
@@ -91,9 +91,9 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by processing milk. Has a distinctive flavor. You can eat it as it is, or use it in various recipes.",
-	"pricemultiplier":"Ch",
-	"cookinglevel":22,
-	"materials":["Sour Drop","Milk (S)"]
+	"pricemultiplier":"Sd",
+	//"cookinglevel":22,
+	//"materials":["Sour Drop","Milk (S)"]
 })
 
 registerItem({
@@ -106,7 +106,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A condiment made by processing eggs. Used in various recipes with vegetables and fish.",
-	"pricemultiplier":"Ch",
+	"pricemultiplier":"Sd",
 	"cookinglevel":28,
 	"materials":["Oil","Egg (S)"]
 })
@@ -122,7 +122,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A large Cluckadoodle egg. Has a soft white shell.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -136,7 +136,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A Cluckadoodle egg. Has a soft white shell.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -150,7 +150,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A small Cluckadoodle egg. Has a soft white shell.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -163,7 +163,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A large amount of milk taken from a Buffamoo. High in calcium.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -176,7 +176,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A medium portion of Milk taken from a Buffamoo. High in calcium.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -189,7 +189,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A small portion of Milk taken from a Buffamoo. High in calcium.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -203,7 +203,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A type of alcohol made from grapes. Popular for its taste and mellowness.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -216,7 +216,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Smooth and sweet, it's an absolute standard. Found in endless varieties.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
 
 registerItem({
@@ -229,5 +229,5 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A staple of the dining table. Plays well with other dishes, so it's used in a wide variety of recipes.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Sd"
 })
