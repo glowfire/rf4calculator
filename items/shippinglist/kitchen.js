@@ -275,7 +275,7 @@ registerItem({
 	"category":"Failed Dish",
 	"sell":50,
 	"buy":1e3,
-	"effects":{
+	"effects":{ // standard
 		"hpP":-80,
 		"rpmaxP":-25,
 		"strP":-25,
@@ -285,7 +285,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"How did such a blight upon foodkind come to be? You can try eating it, but I sure wouldn't recommend it...",
-	"pricemultiplier":"E"
+	"pricemultiplier":"Ch" // confirmed
 })
 
 registerItem({
