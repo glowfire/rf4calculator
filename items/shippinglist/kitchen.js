@@ -313,7 +313,11 @@ registerItem({
 	"effects":{ // standard
 		"windresP":-30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":500,
+		"rp":100,
+		"windresP":-10
+	},
 	"flavourtext":"Seasoning made from various herbs. Has a savory scent.",
 	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":8,
@@ -328,7 +332,11 @@ registerItem({
 	"effects":{ // standard
 		"earthresP":-30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":500,
+		"rp":100,
+		"earthresP":-10
+	},
 	"flavourtext":"Seasoning made from sour leaves. Mouth-puckering, but leaves you feeling refreshed.",
 	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":7,
@@ -362,7 +370,11 @@ registerItem({
 	"effects":{ // standard
 		"fireresP":-30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":500,
+		"rp":100,
+		"fireresP":-10
+	},
 	"flavourtext":"Seasoning made from hot leaves. One bite and your mouth will be on fire!",
 	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":10,
