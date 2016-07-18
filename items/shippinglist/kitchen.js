@@ -11,7 +11,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Powder used to make rice dumplings. Adds stickiness to the resulting dish.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Sd" // Confirmed
 })
 
 registerItem({
@@ -24,7 +24,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Powder used to cook curry. Made by mixing various spices. Goes well with lots of stuff.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Sd" // Confirmed
 })
 
 registerItem({
@@ -32,12 +32,12 @@ registerItem({
 	"category":"Ingredient",
 	"sell":250,
 	"buy":650,
-	"effects":{
+	"effects":{ // uses the minor effects multipliers
 		"fireresP":-30
 	},
 	"cookingeffects":{},
 	"flavourtext":"Often used in fried recipes to add flavor and prevent sticking. Careful, it's highly flammable.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Sd" // Confirmed
 })
 
 registerItem({
@@ -50,7 +50,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by grinding wheat. A necessity in making dough, used in many recipes. Pretty amazing if you think about it.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Sd" // Confirmed
 })
 
 registerItem({
@@ -58,12 +58,12 @@ registerItem({
 	"category":"Diary",
 	"sell":680,
 	"buy":1800,
-	"effects":{
+	"effects":{ // follows the minor effects multiplier
 		"rp":15
 	},
 	"cookingeffects":{},
 	"flavourtext":"Honey collected for a queen bee. Very nutritious and popular for its natural sweetness.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Ch" // Confirmed
 })
 
 registerItem({
@@ -71,14 +71,14 @@ registerItem({
 	"category":"Diary",
 	"sell":800,
 	"buy":3000,
-	"effects":{
+	"effects":{ // unclear if standard or minor
 		"rp":50
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by processing milk. It eases upset stomachs.",
-	"pricemultiplier":"Sd",
-	//"cookinglevel":19,
-	//"materials":["Sweet Powder","Milk (S)"]
+	"pricemultiplier":"C1", // Confirmed
+	"cookinglevel":19,
+	"materials":["Sweet Powder","Milk (S)"]
 })
 
 registerItem({
@@ -86,14 +86,14 @@ registerItem({
 	"category":"Diary",
 	"sell":400,
 	"buy":2500,
-	"effects":{
+	"effects":{ // unclear if standard or minor
 		"rp":30
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by processing milk. Has a distinctive flavor. You can eat it as it is, or use it in various recipes.",
-	"pricemultiplier":"Sd",
-	//"cookinglevel":22,
-	//"materials":["Sour Drop","Milk (S)"]
+	"pricemultiplier":"Ch", // Confirmed
+	"cookinglevel":22,
+	"materials":["Sour Drop","Milk (S)"]
 })
 
 registerItem({
@@ -101,12 +101,12 @@ registerItem({
 	"category":"Diary",
 	"sell":720,
 	"buy":2200,
-	"effects":{
+	"effects":{ // unclear if standard, minor or some undiscovered effects multiplier
 		"hp":5
 	},
 	"cookingeffects":{},
 	"flavourtext":"A condiment made by processing eggs. Used in various recipes with vegetables and fish.",
-	"pricemultiplier":"Sd",
+	"pricemultiplier":"Ch",
 	"cookinglevel":28,
 	"materials":["Oil","Egg (S)"]
 })
@@ -116,13 +116,13 @@ registerItem({
 	"category":"Diary",
 	"sell":480,
 	"buy":1800,
-	"effects":{
+	"effects":{ // standard
 		"hp":30,
 		"rp":30
 	},
 	"cookingeffects":{},
 	"flavourtext":"A large Cluckadoodle egg. Has a soft white shell.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"E" // Confirmed
 })
 
 registerItem({
@@ -130,13 +130,13 @@ registerItem({
 	"category":"Diary",
 	"sell":380,
 	"buy":1500,
-	"effects":{
+	"effects":{ // possibly follows an effect multiplier that is neither standard or minor.
 		"hp":20,
 		"rp":20
 	},
 	"cookingeffects":{},
 	"flavourtext":"A Cluckadoodle egg. Has a soft white shell.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Ch" // Confirmed
 })
 
 registerItem({
@@ -144,13 +144,13 @@ registerItem({
 	"category":"Diary",
 	"sell":280,
 	"buy":1200,
-	"effects":{
+	"effects":{ // appears to follow the minor effect multipliers
 		"hp":10,
 		"rp":10
 	},
 	"cookingeffects":{},
 	"flavourtext":"A small Cluckadoodle egg. Has a soft white shell.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Sd" // Confirmed
 })
 
 registerItem({
@@ -158,12 +158,12 @@ registerItem({
 	"category":"Diary",
 	"sell":500,
 	"buy":2800,
-	"effects":{
+	"effects":{ // standard
 		"hp":90
 	},
 	"cookingeffects":{},
 	"flavourtext":"A large amount of milk taken from a Buffamoo. High in calcium.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"E" // Confirmed
 })
 
 registerItem({
@@ -171,12 +171,12 @@ registerItem({
 	"category":"Diary",
 	"sell":380,
 	"buy":2000,
-	"effects":{
+	"effects":{ // Does not follow standard or minor effects multipliers.
 		"hp":60
 	},
 	"cookingeffects":{},
 	"flavourtext":"A medium portion of Milk taken from a Buffamoo. High in calcium.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Ch" // Confirmed
 })
 
 registerItem({
@@ -184,12 +184,12 @@ registerItem({
 	"category":"Diary",
 	"sell":260,
 	"buy":1600,
-	"effects":{
+	"effects":{ // follows the minor effect multipliers
 		"hp":30
 	},
 	"cookingeffects":{},
 	"flavourtext":"A small portion of Milk taken from a Buffamoo. High in calcium.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Sd" // Confirmed
 })
 
 registerItem({
@@ -197,13 +197,13 @@ registerItem({
 	"category":"Ready-made",
 	"sell":800,
 	"buy":2000,
-	"effects":{
+	"effects":{ // follows the minor effect multipliers
 		"statusailments":["SLP"],
 		"rp":20
 	},
 	"cookingeffects":{},
 	"flavourtext":"A type of alcohol made from grapes. Popular for its taste and mellowness.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Ch" // Confirmed
 })
 
 registerItem({
@@ -211,12 +211,12 @@ registerItem({
 	"category":"Ready-made",
 	"sell":150,
 	"buy":400,
-	"effects":{
+	"effects":{ // follows the minor effect multipliers
 		"rp":10
 	},
 	"cookingeffects":{},
 	"flavourtext":"Smooth and sweet, it's an absolute standard. Found in endless varieties.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Ch" // Confirmed
 })
 
 registerItem({
@@ -224,10 +224,10 @@ registerItem({
 	"category":"Ready-made",
 	"sell":30,
 	"buy":200,
-	"effects":{
+	"effects":{ // follows the minor effect multipliers
 		"hp":30
 	},
 	"cookingeffects":{},
 	"flavourtext":"A staple of the dining table. Plays well with other dishes, so it's used in a wide variety of recipes.",
-	"pricemultiplier":"Sd"
+	"pricemultiplier":"Ch" // Confirmed
 })
