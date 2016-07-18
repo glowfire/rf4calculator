@@ -231,3 +231,41 @@ registerItem({
 	"flavourtext":"A staple of the dining table. Plays well with other dishes, so it's used in a wide variety of recipes.",
 	"pricemultiplier":"Ch" // Confirmed
 })
+
+registerItem({
+	"name":"Bread",
+	"category":"Oven",
+	"sell":145,
+	"buy":440,
+	"effects":{
+		"hp":400,
+		"rp":120,
+		"str":4,
+		"vit":4,
+		"int":4
+	},
+	"cookingeffects":{
+		// none
+	},
+	"flavourtext":"A staple food for many. You can toast it, stuff it, stick things between it or eat it any other way you'd like.",
+	"pricemultiplier":"E",
+	"cookinglevel":8,
+	"materials":["Flour"]
+})
+
+registerItem({
+	"name":"Toast",
+	"category":"Oven",
+	"sell":170,
+	"buy":610,
+	"effects":{
+		"hp":2040,
+		"rp":800,
+		"vit":15
+	},
+	"cookingeffects":{},
+	"flavourtext":"Browned bread. Neck-and-neck with rice in the struggle for worldwide breakfast dominance.",
+	"pricemultiplier":"E",
+	"cookinglevel":21,
+	"materials":["Bread"]
+})
