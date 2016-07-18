@@ -343,7 +343,11 @@ registerItem({
 	"effects":{ //standard
 		"waterresP":-30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":500,
+		"rp":100,
+		"waterresP":-10
+	},
 	"flavourtext":"Seasoning made from sweet leaves. Reminds you of sweet honey.",
 	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":5,
