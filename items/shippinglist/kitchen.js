@@ -293,7 +293,7 @@ registerItem({
 	"category":"Failed Dish",
 	"sell":2,
 	"buy":15,
-	"effects":{
+	"effects":{ // standard
 		"hpP":-20,
 		"rpmaxP":-10,
 		"strP":-10,
