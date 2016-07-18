@@ -269,3 +269,98 @@ registerItem({
 	"cookinglevel":21,
 	"materials":["Bread"]
 })
+
+registerItem({
+	"name":"Disastrous Dish",
+	"category":"Failed Dish",
+	"sell":50,
+	"buy":1e3,
+	"effects":{
+		"hpP":-80,
+		"rpmaxP":-25,
+		"strP":-25,
+		"vitP":-25,
+		"intP":-25,
+		"lightresP":-25
+	},
+	"cookingeffects":{},
+	"flavourtext":"How did such a blight upon foodkind come to be? You can try eating it, but I sure wouldn't recommend it...",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Failed Dish",
+	"category":"Failed Dish",
+	"sell":2,
+	"buy":15,
+	"effects":{
+		"hpP":-20,
+		"rpmaxP":-10,
+		"strP":-10,
+		"vitP":-10,
+		"intP":-10
+	},
+	"cookingeffects":{},
+	"flavourtext":"A failed dish that got burned. Edible, but tastes pretty bad. Maybe you'll like it, though!",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Mixed Herbs",
+	"category":"Ingredient",
+	"sell":280,
+	"buy":750,
+	"effects":{
+		"windresP":-30
+	},
+	"cookingeffects":{},
+	"flavourtext":"Seasoning made from various herbs. Has a savory scent.",
+	"pricemultiplier":"Ch",
+	"chemistrylevel":8,
+	"materials":["Green Grass","Toyherb"]
+})
+
+registerItem({
+	"name":"Sour Drop",
+	"category":"Ingredient",
+	"sell":90,
+	"buy":250,
+	"effects":{
+		"earthresP":-30
+	},
+	"cookingeffects":{},
+	"flavourtext":"Seasoning made from sour leaves. Mouth-puckering, but leaves you feeling refreshed.",
+	"pricemultiplier":"Ch",
+	"chemistrylevel":7,
+	"materials":["Orange"]
+})
+
+registerItem({
+	"name":"Sweet Powder",
+	"category":"Ingredient",
+	"sell":170,
+	"buy":450,
+	"effects":{
+		"waterresP":-30
+	},
+	"cookingeffects":{},
+	"flavourtext":"Seasoning made from sweet leaves. Reminds you of sweet honey.",
+	"pricemultiplier":"Ch",
+	"chemistrylevel":5,
+	"materials":["Apple"]
+})
+
+registerItem({
+	"name":"Heavy Spice",
+	"category":"Ingredient",
+	"sell":180,
+	"buy":480,
+	"effects":{
+		"fireresP":-30
+	},
+	"cookingeffects":{},
+	"flavourtext":"Seasoning made from hot leaves. One bite and your mouth will be on fire!",
+	"pricemultiplier":"Ch",
+	"chemistrylevel":10,
+	"materials":["Purple Grass"]
+})
