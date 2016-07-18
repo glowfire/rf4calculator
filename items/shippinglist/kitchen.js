@@ -76,7 +76,9 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by processing milk. It eases upset stomachs.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Ch",
+	"cookinglevel":19,
+	"materials":["Sweet Powder","Milk (S)"]
 })
 
 registerItem({
@@ -89,7 +91,9 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made by processing milk. Has a distinctive flavor. You can eat it as it is, or use it in various recipes.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Ch",
+	"cookinglevel":22,
+	"materials":["Sour Drop","Milk (S)"]
 })
 
 registerItem({
@@ -102,7 +106,9 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A condiment made by processing eggs. Used in various recipes with vegetables and fish.",
-	"pricemultiplier":"Ch"
+	"pricemultiplier":"Ch",
+	"cookinglevel":28,
+	"materials":["Oil","Egg (S)"]
 })
 
 registerItem({
