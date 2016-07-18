@@ -310,12 +310,12 @@ registerItem({
 	"category":"Ingredient",
 	"sell":280,
 	"buy":750,
-	"effects":{
+	"effects":{ // standard
 		"windresP":-30
 	},
 	"cookingeffects":{},
 	"flavourtext":"Seasoning made from various herbs. Has a savory scent.",
-	"pricemultiplier":"Ch",
+	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":8,
 	"materials":["Green Grass","Toyherb"]
 })
@@ -325,12 +325,12 @@ registerItem({
 	"category":"Ingredient",
 	"sell":90,
 	"buy":250,
-	"effects":{
+	"effects":{ // standard
 		"earthresP":-30
 	},
 	"cookingeffects":{},
 	"flavourtext":"Seasoning made from sour leaves. Mouth-puckering, but leaves you feeling refreshed.",
-	"pricemultiplier":"Ch",
+	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":7,
 	"materials":["Orange"]
 })
@@ -340,12 +340,12 @@ registerItem({
 	"category":"Ingredient",
 	"sell":170,
 	"buy":450,
-	"effects":{
+	"effects":{ //standard
 		"waterresP":-30
 	},
 	"cookingeffects":{},
 	"flavourtext":"Seasoning made from sweet leaves. Reminds you of sweet honey.",
-	"pricemultiplier":"Ch",
+	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":5,
 	"materials":["Apple"]
 })
@@ -355,12 +355,12 @@ registerItem({
 	"category":"Ingredient",
 	"sell":180,
 	"buy":480,
-	"effects":{
+	"effects":{ // standard
 		"fireresP":-30
 	},
 	"cookingeffects":{},
 	"flavourtext":"Seasoning made from hot leaves. One bite and your mouth will be on fire!",
-	"pricemultiplier":"Ch",
+	"pricemultiplier":"Ch", // confirmed
 	"chemistrylevel":10,
 	"materials":["Purple Grass"]
 })
