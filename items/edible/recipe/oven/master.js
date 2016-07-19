@@ -252,6 +252,24 @@ registerItem({
 })
 
 registerItem({
+	"name":"Chocolate Cake",
+	"sell":3860,
+	"buy":12e3,
+	"effects":{
+		"heal":["PSN","SEAL","PAR","FTG"]
+		"hp":5760,
+		"rp":1000,
+		"vit":160
+	},
+	"flavourtext":"Bittersweet cake covered with chocolate.",
+	"cookinglevel":48,
+	"materials":["Flour","Chocolate","Butter","Sweet Powder","Milk (S)","Egg (S)"],
+	"category":"Oven",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
 	"name":"Corn on the Cob",
 	"cookinglevel":52,
 	"category":"Oven",
