@@ -9,7 +9,10 @@ registerItem({
 	"effects":{
 		// None
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":5,
+		"hpmax":1
+	},
 	"flavourtext":"Powder used to make rice dumplings. Adds stickiness to the resulting dish.",
 	"pricemultiplier":"Sd" // Confirmed
 })
@@ -22,7 +25,11 @@ registerItem({
 	"effects":{
 		// None
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":5,
+		"hpmax":1,
+		"waterresP":5
+	},
 	"flavourtext":"Powder used to cook curry. Made by mixing various spices. Goes well with lots of stuff.",
 	"pricemultiplier":"Sd" // Confirmed
 })
@@ -35,7 +42,10 @@ registerItem({
 	"effects":{ // uses the minor effects multipliers
 		"fireresP":-30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":5,
+		"fireresP":-30
+	},
 	"flavourtext":"Often used in fried recipes to add flavor and prevent sticking. Careful, it's highly flammable.",
 	"pricemultiplier":"Sd" // Confirmed
 })
@@ -48,7 +58,10 @@ registerItem({
 	"effects":{
 		// None
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":5,
+		"str":1
+	},
 	"flavourtext":"Made by grinding wheat. A necessity in making dough, used in many recipes. Pretty amazing if you think about it.",
 	"pricemultiplier":"Sd" // Confirmed
 })
@@ -61,7 +74,10 @@ registerItem({
 	"effects":{ // follows the minor effects multiplier
 		"rp":15
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":100,
+		"str":5
+	},
 	"flavourtext":"Honey collected for a queen bee. Very nutritious and popular for its natural sweetness.",
 	"pricemultiplier":"Ch" // Confirmed
 })
@@ -74,7 +90,10 @@ registerItem({
 	"effects":{ // unclear if standard or minor
 		"rp":50
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":100,
+		"int":5
+	},
 	"flavourtext":"Made by processing milk. It eases upset stomachs.",
 	"pricemultiplier":"C1", // Confirmed
 	"cookinglevel":19,
@@ -89,7 +108,10 @@ registerItem({
 	"effects":{ // unclear if standard or minor
 		"rp":30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":100,
+		"vit":10
+	},
 	"flavourtext":"Made by processing milk. Has a distinctive flavor. You can eat it as it is, or use it in various recipes.",
 	"pricemultiplier":"Ch", // Confirmed
 	"cookinglevel":22,
@@ -104,7 +126,11 @@ registerItem({
 	"effects":{ // unclear if standard, minor or some undiscovered effects multiplier
 		"hp":5
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":30,
+		"critresP":10,
+		"knockresP":10
+	},
 	"flavourtext":"A condiment made by processing eggs. Used in various recipes with vegetables and fish.",
 	"pricemultiplier":"Ch",
 	"cookinglevel":28,
@@ -120,7 +146,10 @@ registerItem({
 		"hp":30,
 		"rp":30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":50,
+		"strP":2
+	},
 	"flavourtext":"A large Cluckadoodle egg. Has a soft white shell.",
 	"pricemultiplier":"E" // Confirmed
 })
@@ -134,7 +163,10 @@ registerItem({
 		"hp":20,
 		"rp":20
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":20,
+		"str":2
+	},
 	"flavourtext":"A Cluckadoodle egg. Has a soft white shell.",
 	"pricemultiplier":"Ch" // Confirmed
 })
@@ -148,7 +180,10 @@ registerItem({
 		"hp":10,
 		"rp":10
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":10,
+		"str":1
+	},
 	"flavourtext":"A small Cluckadoodle egg. Has a soft white shell.",
 	"pricemultiplier":"Sd" // Confirmed
 })
@@ -161,7 +196,10 @@ registerItem({
 	"effects":{ // standard
 		"hp":90
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":50,
+		"intP":2
+	},
 	"flavourtext":"A large amount of milk taken from a Buffamoo. High in calcium.",
 	"pricemultiplier":"E" // Confirmed
 })
@@ -174,7 +212,10 @@ registerItem({
 	"effects":{ // Does not follow standard or minor effects multipliers.
 		"hp":60
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":20,
+		"int":2
+	},
 	"flavourtext":"A medium portion of Milk taken from a Buffamoo. High in calcium.",
 	"pricemultiplier":"Ch" // Confirmed
 })
@@ -187,7 +228,10 @@ registerItem({
 	"effects":{ // follows the minor effect multipliers
 		"hp":30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":10,
+		"int":1
+	},
 	"flavourtext":"A small portion of Milk taken from a Buffamoo. High in calcium.",
 	"pricemultiplier":"Sd" // Confirmed
 })
@@ -201,7 +245,11 @@ registerItem({
 		"statusailments":["SLP"],
 		"rp":20
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":20,
+		"critP":5,
+		"critresP":-1
+	},
 	"flavourtext":"A type of alcohol made from grapes. Popular for its taste and mellowness.",
 	"pricemultiplier":"Ch" // Confirmed
 })
@@ -214,7 +262,10 @@ registerItem({
 	"effects":{ // follows the minor effect multipliers
 		"rp":10
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"rp":10,
+		"int":2
+	},
 	"flavourtext":"Smooth and sweet, it's an absolute standard. Found in endless varieties.",
 	"pricemultiplier":"Ch" // Confirmed
 })
@@ -227,7 +278,10 @@ registerItem({
 	"effects":{ // follows the minor effect multipliers
 		"hp":30
 	},
-	"cookingeffects":{},
+	"cookingeffects":{
+		"hp":10,
+		"hpmax":5
+	},
 	"flavourtext":"A staple of the dining table. Plays well with other dishes, so it's used in a wide variety of recipes.",
 	"pricemultiplier":"Ch" // Confirmed
 })
