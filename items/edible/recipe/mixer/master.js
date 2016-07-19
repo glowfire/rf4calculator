@@ -1,6 +1,57 @@
 
 
 registerItem({
+	"name":"Orange Juice",
+	"cookinglevel":5,
+	"materials":["Orange"],
+	"category":"Mixer",
+	"sell":92,
+	"buy":290,
+	"effects":{
+		"hp":150,
+		"rp":150,
+		"int":2
+	},
+	"flavourtext":"Juice made from fresh oranges. A good mixture of sweet and sour.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Grape Juice",
+	"cookinglevel":7,
+	"materials":["Grapes"],
+	"category":"Mixer",
+	"sell":140,
+	"buy":440,
+	"effects":{
+		"hp":220,
+		"rp":200,
+		"int":8
+	},
+	"flavourtext":"Juice made from fresh grapes. Rich, sweet and deep in flavor.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Apple Juice",
+	"cookinglevel":11,
+	"materials":["Apple"],
+	"category":"Mixer",
+	"sell":175,
+	"buy":530,
+	"effects":{
+		"hp":500,
+		"rp":230,
+		"int":10
+	},
+	"flavourtext":"Juice made from fresh apples. Enjoy the natural taste, color and smell of nature's candy!",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
 	"name":"Tomato Juice",
 	"cookinglevel":35,
 	"materials":["Tomato"],
