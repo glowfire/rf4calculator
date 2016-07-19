@@ -1140,7 +1140,7 @@ registerItem({
 	"sell":2540,
 	"buy":7820,
 	"effects":{
-		"heal":["PSN","SEAL","PAR","FTG"]
+		"heal":["PSN","SEAL","PAR","FTG"],
 		"hp":5520,
 		"rp":1000,
 		"vit":120
@@ -1158,7 +1158,7 @@ registerItem({
 	"sell":3860,
 	"buy":12e3,
 	"effects":{
-		"heal":["PSN","SEAL","PAR","FTG"]
+		"heal":["PSN","SEAL","PAR","FTG"],
 		"hp":5760,
 		"rp":1000,
 		"vit":160
@@ -1176,7 +1176,7 @@ registerItem({
 	"sell":4200,
 	"buy":15e3,
 	"effects":{
-		"heal":["PSN","SEAL","PAR","FTG"]
+		"heal":["PSN","SEAL","PAR","FTG"],
 		"hp":5000,
 		"hpP":23,
 		"rp":1000,
