@@ -434,64 +434,60 @@ registerItem({
 })
 
 registerItem({
-	"name":"Salad",
-	"category":"No Tool",
-	"sell":6900,
-	"buy":21e3,
+	"name":"Raisin Bread",
+	"cookinglevel":27,
+	"category":"Oven",
+	"sell":380,
+	"buy":1200,
+	"pricemultiplier":"C1",
+	"flavourtext":"Bread with raisins in it. Soft, sweet and sour, all at once.",
 	"effects":{
-		"hp":5000,
-		"hpP":86,
-		"rp":1000,
-		"str":70,
-		"strP":7,
-		"vit":30,
-		"vitP":8,
-		"int":40,
-		"intP":4
+		"hp":3000,
+		"rp":400,
+		"str":15,
+		"vit":8,
+		"int":10
 	},
-	"cookingeffects":{},
-	"flavourtext":"Assorted fresh vegetables. Both healthy and nutritious!",
-	"pricemultiplier":"E",
-	"cookinglevel":67,
-	"materials":["Mayonnaise","Cucumber","Tomato","Cabbage"]
+	"materials":["Flour","Grapes"],
+	"cookingeffects":{}
 })
 
 registerItem({
-	"name":"Fruit Sandwich",
+	"name":"Bamboo Rice",
 	"category":"No Tool",
-	"sell":540,
-	"buy":1920,
+	"sell":162,
+	"buy":490,
 	"effects":{
-		"hp":4080,
-		"rp":1000,
-		"str":30,
-		"vit":15,
-		"int":20
+		"hp":300,
+		"rp":80,
+		"str":2,
+		"vit":2,
+		"int":2
 	},
 	"cookingeffects":{},
-	"flavourtext":"Fruit placed between two slices of bread. Beloved by children... or so parents hope!",
+	"flavourtext":"Rice mixed with bamboo shoots. A popular dish in spring, with a savory flavor.",
 	"pricemultiplier":"E",
-	"cookinglevel":35,
-	"materials":["Bread","Strawberry"]
+	"cookinglevel":7,
+	"materials":["Rice","Bamboo Sprout"]
 })
 
 registerItem({
-	"name":"Sandwich",
+	"name":"Pickles",
 	"category":"No Tool",
-	"sell":964,
-	"buy":3900,
+	"sell":105,
+	"buy":450,
 	"effects":{
-		"hp":4000,
-		"rp":840,
-		"str":23,
-		"vit":12,
-		"int":17
+		"hp":400,
+		"rp":100,
+		"str":4,
+		"vit":3,
+		"int":2
 	},
 	"cookingeffects":{},
-	"flavourtext":"Vegetables and other ingredients placed between two slices of bread. Easy to eat with one hand.",
+	"flavourtext":"Lightly pickled cucumber. Has a crunchy texture.",
 	"pricemultiplier":"E",
-	"cookinglevel":34,
-	"materials":["Bread","Egg (S)","Cucumber"]
+	"cookinglevel":10,
+	"materials":["Cucumber"]
 })
 
 registerItem({
@@ -533,41 +529,64 @@ registerItem({
 })
 
 registerItem({
-	"name":"Pickles",
+	"name":"Fruit Sandwich",
 	"category":"No Tool",
-	"sell":105,
-	"buy":450,
+	"sell":540,
+	"buy":1920,
 	"effects":{
-		"hp":400,
-		"rp":100,
-		"str":4,
-		"vit":3,
-		"int":2
+		"hp":4080,
+		"rp":1000,
+		"str":30,
+		"vit":15,
+		"int":20
 	},
 	"cookingeffects":{},
-	"flavourtext":"Lightly pickled cucumber. Has a crunchy texture.",
+	"flavourtext":"Fruit placed between two slices of bread. Beloved by children... or so parents hope!",
 	"pricemultiplier":"E",
-	"cookinglevel":10,
-	"materials":["Cucumber"]
+	"cookinglevel":35,
+	"materials":["Bread","Strawberry"]
 })
 
 registerItem({
-	"name":"Bamboo Rice",
+	"name":"Sandwich",
 	"category":"No Tool",
-	"sell":162,
-	"buy":490,
+	"sell":964,
+	"buy":3900,
 	"effects":{
-		"hp":300,
-		"rp":80,
-		"str":2,
-		"vit":2,
-		"int":2
+		"hp":4000,
+		"rp":840,
+		"str":23,
+		"vit":12,
+		"int":17
 	},
 	"cookingeffects":{},
-	"flavourtext":"Rice mixed with bamboo shoots. A popular dish in spring, with a savory flavor.",
+	"flavourtext":"Vegetables and other ingredients placed between two slices of bread. Easy to eat with one hand.",
 	"pricemultiplier":"E",
-	"cookinglevel":7,
-	"materials":["Rice","Bamboo Sprout"]
+	"cookinglevel":34,
+	"materials":["Bread","Egg (S)","Cucumber"]
+})
+
+registerItem({
+	"name":"Salad",
+	"category":"No Tool",
+	"sell":6900,
+	"buy":21e3,
+	"effects":{
+		"hp":5000,
+		"hpP":86,
+		"rp":1000,
+		"str":70,
+		"strP":7,
+		"vit":30,
+		"vitP":8,
+		"int":40,
+		"intP":4
+	},
+	"cookingeffects":{},
+	"flavourtext":"Assorted fresh vegetables. Both healthy and nutritious!",
+	"pricemultiplier":"E",
+	"cookinglevel":67,
+	"materials":["Mayonnaise","Cucumber","Tomato","Cabbage"]
 })
 
 registerItem({
