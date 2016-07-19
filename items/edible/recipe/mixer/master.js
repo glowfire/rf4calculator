@@ -105,6 +105,23 @@ registerItem({
 })
 
 registerItem({
+	"name":"Strawberry Milk",
+	"category":"Mixer",
+	"sell":720,
+	"buy":2980,
+	"effects":{
+		"hp":4e3,
+		"rp":680,
+		"int":30
+	},
+	"flavourtext":"Strawberries mixed with milk. Sweet and popular. Can be made with as much or as little milk as you'd like.",
+	"cookinglevel":33,
+	"materials":["Strawberry","Milk (S)"],
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
 	"name":"Tomato Juice",
 	"cookinglevel":35,
 	"materials":["Tomato"],
@@ -118,7 +135,40 @@ registerItem({
 		"int":45
 	},
 	"flavourtext":"Juice made from fresh tomatoes. Thick and highly nutritious.",
-	"pricemultiplier":"C1"
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Fruit Smoothie",
+	"category":"Mixer",
+	"sell":1400,
+	"buy":4280,
+	"effects":{
+		"hp":4480,
+		"rp":1000,
+		"int":65
+	},
+	"flavourtext":"Juice made from mixed fruits and milk. Easy to drink, with a mellow flavor.",
+	"cookinglevel":37,
+	"materials":["Fruit Juice","Milk (S)"],
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Ketchup",
+	"category":"Mixer",
+	"sell":1300,
+	"buy":4e3,
+	"effects":{
+		// none
+	},
+	"flavourtext":"Condiment made from tomatoes. Its tangy taste goes well with egg and potato recipes.",
+	"cookinglevel":38,
+	"materials":["Sour Drop","Tomato"],
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
 })
 
 registerItem({
@@ -136,7 +186,8 @@ registerItem({
 		"intP":5
 	},
 	"flavourtext":"A healthy juice made from various vegetables. Bitter but strangely addictive.",
-	"pricemultiplier":"C1"
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
 })
 
 registerItem({
@@ -162,7 +213,108 @@ registerItem({
 		"loveresP":100
         },
 	"materials":["Pink Melon","Strawberry"],
-	"flavourtext":"Strawberries and pink melons mixed together to form the sweet & sour taste of love. Might have a bitter aftertaste."
+	"flavourtext":"Strawberries and pink melons mixed together to form the sweet & sour taste of love. Might have a bitter aftertaste.",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Veggie Smoothie",
+	"category":"Mixer",
+	"sell":5200,
+	"buy":15800,
+	"effects":{
+		"hp":5e3,
+		"hpP":80,
+		"rp":1000,
+		"int":100,
+		"intP":8
+	},
+	"flavourtext":"Vegetables mixed with milk, softening the bitterness.",
+	"cookinglevel":65,
+	"materials":["Vegetable Juice","Milk (S)"],
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Hot Juice",
+	"cookinglevel":76,
+	"materials":["Heavy Spice","Hot-Hot Fruit"],
+	"category":"Mixer",
+	"sell":3600,
+	"buy":13e3,
+	"effects":{
+		"hp":5e3,
+		"hpP":100,
+		"rp":1e3,
+		"rpP":13,
+		"int":100,
+		"intP":10,
+		"fireresP":20
+	},
+	"flavourtext":"Made from hot-hot fruit. Always stays hot, so it's good to carry in cold weather.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Pineapple Juice",
+	"cookinglevel":81,
+	"materials":["Pineapple"],
+	"category":"Mixer",
+	"sell":4400,
+	"buy":14800,
+	"effects":{
+		"hp":5e3,
+		"hpP":100,
+		"rp":1e3,
+		"rpP":28,
+		"int":100,
+		"intP":15
+	},
+	"flavourtext":"Juice made from fresh pineapples. Great fragrance and color combined with sweet taste.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Mixed Juice",
+	"cookinglevel":83,
+	"materials":["Apple","Grapes","Orange","Pineapple","Strawberry","Milk (S)"],
+	"category":"Mixer",
+	"sell":12e3,
+	"buy":36e3,
+	"effects":{
+		"hp":5e3,
+		"hpP":100,
+		"rp":1e3,
+		"rpP":34,
+		"int":100,
+		"intP":20
+	},
+	"flavourtext":"Juice made from mixed fruits and vegetables. Just like the name says!",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Mixed Smoothie",
+	"cookinglevel":91,
+	"materials":["Mixed Juice","Honey"],
+	"category":"Mixer",
+	"sell":25e3,
+	"buy":75e3,
+	"effects":{
+		"hp":5e3,
+		"hpP":100,
+		"rp":1e3,
+		"rpP":58,
+		"int":100,
+		"intP":21
+	},
+	"flavourtext":"Milk added to mixed fruits and vegetables. Cures fatigue.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
 })
 
 registerItem({
@@ -184,5 +336,6 @@ registerItem({
 		"windresP":10
         },
 	"materials":["Golden Pumpkin","Emery Flower","Golden Potato","Golden Turnip","Golden Cabbage"],
-	"flavourtext":"Juice made from a mixture of golden ingredients. Not, uh... Not very good, honestly."
+	"flavourtext":"Juice made from a mixture of golden ingredients. Not, uh... Not very good, honestly.",
+	"cookingeffects":{}
 })
