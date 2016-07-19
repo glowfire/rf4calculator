@@ -314,44 +314,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Salad",
-	"category":"No Tool",
-	"sell":6900,
-	"buy":21e3,
-	"effects":{
-		"hp":5000,
-		"hpP":86,
-		"rp":1000,
-		"str":70,
-		"strP":7,
-		"vit":30,
-		"vitP":8,
-		"int":40,
-		"intP":4
-	},
-	"cookingeffects":{},
-	"flavourtext":"Assorted fresh vegetables. Both healthy and nutritious!",
-	"pricemultiplier":"E",
-	"cookinglevel":67,
-	"materials":["Mayonnaise","Cucumber","Tomato","Cabbage"]
-})
-
-registerItem({
-	"name":"Relax Tea Leaves",
-	"category":"No Tool",
-	"sell":100,
-	"buy":2800,
-	"effects":{
-		"rpmax":50
-	},
-	"cookingeffects":{},
-	"flavourtext":"A medicinal herb made by mixing various plants. Make tea with it for greater effect.",
-	"pricemultiplier":"E",
-	"cookinglevel":50,
-	"materials":["White Grass","Orange Grass","Green Grass","Yellow Grass","Blue Grass","Purple Grass"]
-})
-
-registerItem({
 	"name":"Pickle Mix",
 	"category":"No Tool",
 	"sell":520,
@@ -374,6 +336,124 @@ registerItem({
 	"pricemultiplier":"E",
 	"cookinglevel":48,
 	"materials":["Turnip","Pink Turnip"]
+})
+
+registerItem({
+	"name":"Salmon Onigiri",
+	"category":"No Tool",
+	"sell":645,
+	"buy":2e3,
+	"effects":{
+		"hp":2700,
+		"rp":220,
+		"str":10,
+		"vit":6,
+		"int":9
+	},
+	"cookingeffects":{},
+	"flavourtext":"Onigiri with salmon inside. One of the most popular rice ball recipes.",
+	"pricemultiplier":"E",
+	"cookinglevel":20,
+	"materials":["Salted Salmon","Rice"]
+})
+
+registerItem({
+	"name":"Bread",
+	"category":"Oven",
+	"sell":145,
+	"buy":440,
+	"effects":{
+		"hp":400,
+		"rp":120,
+		"str":4,
+		"vit":4,
+		"int":4
+	},
+	"cookingeffects":{
+		// none
+	},
+	"flavourtext":"A staple food for many. You can toast it, stuff it, stick things between it or eat it any other way you'd like.",
+	"pricemultiplier":"E",
+	"cookinglevel":8,
+	"materials":["Flour"]
+})
+
+registerItem({
+	"name":"Onigiri",
+	"category":"No Tool",
+	"sell":57,
+	"buy":180,
+	"effects":{
+		"hp":220,
+		"rp":30,
+		"str":1,
+		"vit":1,
+		"int":1
+	},
+	"cookingeffects":{},
+	"flavourtext":"Rice formed into a triangular shape. Often called a <q>rice ball.</q> Easy to eat on the go, making it a staple lunch item.",
+	"pricemultiplier":"E",
+	"cookinglevel":2,
+	"materials":["Rice"]
+})
+
+registerItem({
+	"name":"Relax Tea Leaves",
+	"category":"No Tool",
+	"sell":100,
+	"buy":2800,
+	"effects":{
+		"rpmax":50
+	},
+	"cookingeffects":{},
+	"flavourtext":"A medicinal herb made by mixing various plants. Make tea with it for greater effect.",
+	"pricemultiplier":"E",
+	"cookinglevel":50,
+	"materials":["White Grass","Orange Grass","Green Grass","Yellow Grass","Blue Grass","Purple Grass"]
+})
+
+registerItem({
+	"name":"Ice Cream",
+	"cookinglevel":25,
+	"materials":["Sweet Powder","Milk (S)"],
+	"category":"Mixer",
+	"sell":645,
+	"buy":2000,
+	"effects":{
+		"hp":3e3,
+		"rp":450,
+		"str":17,
+		"vit":10,
+		"int":15,
+		"fireresP":30,
+		"waterresP":-30
+	},
+	"flavourtext":"A dessert made by freezing milk. Melts in your mouth. If you eat it too fast, you'll regret it.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Salad",
+	"category":"No Tool",
+	"sell":6900,
+	"buy":21e3,
+	"effects":{
+		"hp":5000,
+		"hpP":86,
+		"rp":1000,
+		"str":70,
+		"strP":7,
+		"vit":30,
+		"vitP":8,
+		"int":40,
+		"intP":4
+	},
+	"cookingeffects":{},
+	"flavourtext":"Assorted fresh vegetables. Both healthy and nutritious!",
+	"pricemultiplier":"E",
+	"cookinglevel":67,
+	"materials":["Mayonnaise","Cucumber","Tomato","Cabbage"]
 })
 
 registerItem({
@@ -412,25 +492,6 @@ registerItem({
 	"pricemultiplier":"E",
 	"cookinglevel":34,
 	"materials":["Bread","Egg (S)","Cucumber"]
-})
-
-registerItem({
-	"name":"Salmon Onigiri",
-	"category":"No Tool",
-	"sell":645,
-	"buy":2e3,
-	"effects":{
-		"hp":2700,
-		"rp":220,
-		"str":10,
-		"vit":6,
-		"int":9
-	},
-	"cookingeffects":{},
-	"flavourtext":"Onigiri with salmon inside. One of the most popular rice ball recipes.",
-	"pricemultiplier":"E",
-	"cookinglevel":20,
-	"materials":["Salted Salmon","Rice"]
 })
 
 registerItem({
@@ -507,46 +568,6 @@ registerItem({
 	"pricemultiplier":"E",
 	"cookinglevel":7,
 	"materials":["Rice","Bamboo Sprout"]
-})
-
-registerItem({
-	"name":"Onigiri",
-	"category":"No Tool",
-	"sell":57,
-	"buy":180,
-	"effects":{
-		"hp":220,
-		"rp":30,
-		"str":1,
-		"vit":1,
-		"int":1
-	},
-	"cookingeffects":{},
-	"flavourtext":"Rice formed into a triangular shape. Often called a <q>rice ball.</q> Easy to eat on the go, making it a staple lunch item.",
-	"pricemultiplier":"E",
-	"cookinglevel":2,
-	"materials":["Rice"]
-})
-
-registerItem({
-	"name":"Bread",
-	"category":"Oven",
-	"sell":145,
-	"buy":440,
-	"effects":{
-		"hp":400,
-		"rp":120,
-		"str":4,
-		"vit":4,
-		"int":4
-	},
-	"cookingeffects":{
-		// none
-	},
-	"flavourtext":"A staple food for many. You can toast it, stuff it, stick things between it or eat it any other way you'd like.",
-	"pricemultiplier":"E",
-	"cookinglevel":8,
-	"materials":["Flour"]
 })
 
 registerItem({
