@@ -394,6 +394,25 @@ registerItem({
 	"cookingeffects":{},
 	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
 	"pricemultiplier":"E",
+	"cookinglevel":4,
+	"materials":["Turnip"]
+})
+
+registerItem({
+	"name":"Pickled Turnip",
+	"category":"No Tool",
+	"sell":48,
+	"buy":400,
+	"effects":{
+		"hp":250,
+		"rp":100,
+		"str":5,
+		"vit":3,
+		"int":5
+	},
+	"cookingeffects":{},
+	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
+	"pricemultiplier":"E",
 	"cookinglevel":12,
 	"materials":["Pink Turnip"]
 })
@@ -437,29 +456,10 @@ registerItem({
 })
 
 registerItem({
-	"name":"Pickled Turnip",
-	"category":"No Tool",
-	"sell":48,
-	"buy":400,
-	"effects":{
-		"hp":250,
-		"rp":100,
-		"str":5,
-		"vit":3,
-		"int":5
-	},
-	"cookingeffects":{},
-	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
-	"pricemultiplier":"E",
-	"cookinglevel":4,
-	"materials":["Turnip"]
-})
-
-registerItem({
 	"name":"Onigiri",
 	"category":"No Tool",
-	"sell":645,
-	"buy":2e3,
+	"sell":57,
+	"buy":180,
 	"effects":{
 		"hp":220,
 		"rp":30,
@@ -470,7 +470,7 @@ registerItem({
 	"cookingeffects":{},
 	"flavourtext":"Rice formed into a triangular shape. Often called a <q>rice ball.</q> Easy to eat on the go, making it a staple lunch item.",
 	"pricemultiplier":"E",
-	"cookinglevel":20,
+	"cookinglevel":2,
 	"materials":["Rice"]
 })
 
