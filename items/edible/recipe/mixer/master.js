@@ -52,6 +52,59 @@ registerItem({
 })
 
 registerItem({
+	"name":"Butter",
+	"cookinglevel":15,
+	"materials":["Milk (S)"],
+	"category":"Mixer",
+	"sell":300,
+	"buy":1500,
+	"effects":{
+		// none
+	},
+	"flavourtext":"Made by churning milk. Usually eaten with other food for taste. Sometimes eaten alone, by the stick, in shame.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Fruit Juice",
+	"cookinglevel":18,
+	"materials":["Apple","Grapes","Orange"],
+	"category":"Mixer",
+	"sell":630,
+	"buy":1980,
+	"effects":{
+		"hp":1620,
+		"rp":500,
+		"int":25
+	},
+	"flavourtext":"Fresh juice made from various fruits. Twice the flavor, twice the nutrition, twice the fun.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Ice Cream",
+	"cookinglevel":25,
+	"materials":["Sweet Powder","Milk (S)"],
+	"category":"Mixer",
+	"sell":645,
+	"buy":2000,
+	"effects":{
+		"hp":3e3,
+		"rp":450,
+		"str":17,
+		"vit":10,
+		"int":15,
+		"fireresP":30,
+		"waterresP":-30
+	},
+	"flavourtext":"A dessert made by freezing milk. Melts in your mouth. If you eat it too fast, you'll regret it.",
+	"pricemultiplier":"C1",
+	"cookingeffects":{}
+})
+
+registerItem({
 	"name":"Tomato Juice",
 	"cookinglevel":35,
 	"materials":["Tomato"],
