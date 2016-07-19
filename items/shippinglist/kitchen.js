@@ -233,6 +233,248 @@ registerItem({
 })
 
 registerItem({
+	"name":"Turnip Heaven",
+	"category":"No Tool",
+	"sell":15e4,
+	"buy":542e3,
+	"effects":{
+		"hp":5000,
+		"hpP":90,
+		"rp":1000,
+		"rpP":90,
+		"str":90,
+		"strP":12,
+		"vit":80,
+		"vitP":15,
+		"int":50,
+		"intP":10,
+		"fireresP":20,
+		"lightresP":20,
+		"darkresP":20
+	},
+	"cookingeffects":{},
+	"flavourtext":"Turnips from three corners of the globe, gathered together into a turnip paradise. Try to eat all three at once!",
+	"pricemultiplier":"E",
+	"cookinglevel":96,
+	"materials":["Turnip","Pink Turnip","Golden Turnip"]
+})
+
+registerItem({
+	"name":"Salad",
+	"category":"No Tool",
+	"sell":6900,
+	"buy":21e3,
+	"effects":{
+		"hp":5000,
+		"hpP":86,
+		"rp":1000,
+		"str":70,
+		"strP":7,
+		"vit":30,
+		"vitP":8,
+		"int":40,
+		"intP":4
+	},
+	"cookingeffects":{},
+	"flavourtext":"Assorted fresh vegetables. Both healthy and nutritious!",
+	"pricemultiplier":"E",
+	"cookinglevel":67,
+	"materials":["Mayonnaise","Cucumber","Tomato","Cabbage"]
+})
+
+registerItem({
+	"name":"Relax Tea Leaves",
+	"category":"No Tool",
+	"sell":100,
+	"buy":2800,
+	"effects":{
+		"rpmax":50
+	},
+	"cookingeffects":{},
+	"flavourtext":"A medicinal herb made by mixing various plants. Make tea with it for greater effect.",
+	"pricemultiplier":"E",
+	"cookinglevel":50,
+	"materials":["White Grass","Orange Grass","Green Grass","Yellow Grass","Blue Grass","Purple Grass"]
+})
+
+registerItem({
+	"name":"Pickle Mix",
+	"category":"No Tool",
+	"sell":520,
+	"buy":2800,
+	"effects":{
+		"hp":5000,
+		"hpP":11,
+		"rp":1000,
+		"str":60,
+		"strP":3,
+		"vit":20,
+		"vitP":3,
+		"int":35,
+		"intP":1,
+		"fireresP":10,
+		"lightresP":10
+	},
+	"cookingeffects":{},
+	"flavourtext":"Made with spring and winter turnips. The red and white colors symbolize good luck. Often served at festivals.",
+	"pricemultiplier":"E",
+	"cookinglevel":48,
+	"materials":["Turnip","Pink Turnip"]
+})
+
+registerItem({
+	"name":"Fruit Sandwich",
+	"category":"No Tool",
+	"sell":540,
+	"buy":1920,
+	"effects":{
+		"hp":4080,
+		"rp":1000,
+		"str":30,
+		"vit":15,
+		"int":20
+	},
+	"cookingeffects":{},
+	"flavourtext":"Fruit placed between two slices of bread. Beloved by children... or so parents hope!",
+	"pricemultiplier":"E",
+	"cookinglevel":35,
+	"materials":["Bread","Strawberry"]
+})
+
+registerItem({
+	"name":"Sandwich",
+	"category":"No Tool",
+	"sell":964,
+	"buy":3900,
+	"effects":{
+		"hp":4000,
+		"rp":840,
+		"str":23,
+		"vit":12,
+		"int":17
+	},
+	"cookingeffects":{},
+	"flavourtext":"Vegetables and other ingredients placed between two slices of bread. Easy to eat with one hand.",
+	"pricemultiplier":"E",
+	"cookinglevel":34,
+	"materials":["Bread","Egg (S)","Cucumber"]
+})
+
+registerItem({
+	"name":"Salmon Onigiri",
+	"category":"No Tool",
+	"sell":645,
+	"buy":2e3,
+	"effects":{
+		"hp":2700,
+		"rp":220,
+		"str":10,
+		"vit":6,
+		"int":9
+	},
+	"cookingeffects":{},
+	"flavourtext":"Onigiri with salmon inside. One of the most popular rice ball recipes.",
+	"pricemultiplier":"E",
+	"cookinglevel":20,
+	"materials":["Salted Salmon","Rice"]
+})
+
+registerItem({
+	"name":"Pickled Turnip",
+	"category":"No Tool",
+	"sell":48,
+	"buy":400,
+	"effects":{
+		"hp":250,
+		"rp":100,
+		"str":5,
+		"vit":3,
+		"int":5
+	},
+	"cookingeffects":{},
+	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
+	"pricemultiplier":"E",
+	"cookinglevel":12,
+	"materials":["Pink Turnip"]
+})
+
+registerItem({
+	"name":"Pickles",
+	"category":"No Tool",
+	"sell":105,
+	"buy":450,
+	"effects":{
+		"hp":400,
+		"rp":100,
+		"str":4,
+		"vit":3,
+		"int":2
+	},
+	"cookingeffects":{},
+	"flavourtext":"Lightly pickled cucumber. Has a crunchy texture.",
+	"pricemultiplier":"E",
+	"cookinglevel":10,
+	"materials":["Cucumber"]
+})
+
+registerItem({
+	"name":"Bamboo Rice",
+	"category":"No Tool",
+	"sell":162,
+	"buy":490,
+	"effects":{
+		"hp":300,
+		"rp":80,
+		"str":2,
+		"vit":2,
+		"int":2
+	},
+	"cookingeffects":{},
+	"flavourtext":"Rice mixed with bamboo shoots. A popular dish in spring, with a savory flavor.",
+	"pricemultiplier":"E",
+	"cookinglevel":7,
+	"materials":["Rice","Bamboo Sprout"]
+})
+
+registerItem({
+	"name":"Pickled Turnip",
+	"category":"No Tool",
+	"sell":48,
+	"buy":400,
+	"effects":{
+		"hp":250,
+		"rp":100,
+		"str":5,
+		"vit":3,
+		"int":5
+	},
+	"cookingeffects":{},
+	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
+	"pricemultiplier":"E",
+	"cookinglevel":4,
+	"materials":["Turnip"]
+})
+
+registerItem({
+	"name":"Onigiri",
+	"category":"No Tool",
+	"sell":645,
+	"buy":2e3,
+	"effects":{
+		"hp":220,
+		"rp":30,
+		"str":1,
+		"vit":1,
+		"int":1
+	},
+	"cookingeffects":{},
+	"flavourtext":"Rice formed into a triangular shape. Often called a <q>rice ball.</q> Easy to eat on the go, making it a staple lunch item.",
+	"pricemultiplier":"E",
+	"cookinglevel":20,
+	"materials":["Rice"]
+})
+
+registerItem({
 	"name":"Bread",
 	"category":"Oven",
 	"sell":145,
