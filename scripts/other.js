@@ -45,7 +45,7 @@ function getEffectsTable(){
     	var effectsTypeMinNeg100=["HP (%)","RP (%)",
     		"HP max (%)","RP max (%)",
     		"STR (%)","VIT (%)","INT (%)"];
-    	var unknownEffectsType=["Crit (%)","Knock Res (%)"]
+    	var unknownEffectsType=["Crit (%)","Knock Res (%)","Psn Atk (%)","Par Atk (%)"]
     
 		var effectsTable = document.createElement('table'), tr, td, row, cell;
 
@@ -108,6 +108,7 @@ function getEffectsTable(){
     	appendEffectsHeader(currentEffects.faintresP,"Faint Res (%)");
     
     	appendEffectsHeader(currentEffects.psnatkP,"Psn Atk (%)")
+    	appendEffectsHeader(currentEffects.paratkP,"Par Atk (%)")
     
     	function appendRow(rowid,value){
     		td1 = document.createElement('td');
