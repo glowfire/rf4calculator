@@ -366,7 +366,7 @@ registerItem({
 	},
 	"flavourtext":"Water, flour and cabbage mixed and baked like a pancake. Recipes vary from region to region.",
 	"cookinglevel":64,
-	"materials":["Flour","Cabbage","Egg(S)","Leek"],
+	"materials":["Flour","Cabbage","Egg (S)","Leek"],
 	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
