@@ -36,15 +36,16 @@ function getEffectsTable(){
     	var effectsTypeArray=[];
     
     	var effectsTypeMax100=["HP (%)","RP (%)",
-    		"Slp Res (%)"];
+    		"Crit Res (%)",
+    		"Psn Res (%)","Seal Res (%)","Par Res (%)","Slp Res (%)","Ftg Res (%)","Sick Res (%)",
+    		"Faint Res (%)"];
     	var effectsTypeMax200=["Fire Res (%)","Water Res (%)",
     		"Earth Res (%)","Wind Res (%)",
         	"Light Res (%)","Dark Res (%)","Love Res (%)"];
     	var effectsTypeMinNeg100=["HP (%)","RP (%)",
     		"HP max (%)","RP max (%)",
     		"STR (%)","VIT (%)","INT (%)"];
-    	var unknownEffectsType=["Crit (%)","Crit Res (%)","Knock Res (%)",
-    		"Psn Res (%)","Seal Res (%)","Par Res (%)","Ftg Res (%)","Sick Res (%)","Faint Res (%)"]
+    	var unknownEffectsType=["Crit (%)","Knock Res (%)"]
     
 		var effectsTable = document.createElement('table'), tr, td, row, cell;
 
