@@ -14,7 +14,7 @@ registerItem({
 	"flavourtext":"An apple-based dessert item. Good mix of sweet and tart.",
 	"cookinglevel":9,
 	"materials":["Apple"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -33,7 +33,7 @@ registerItem({
 	"flavourtext":"Typical home-cooked egg dish. How long they should be fried is up to you!",
 	"cookinglevel":20,
 	"materials":["Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -52,7 +52,7 @@ registerItem({
 	"flavourtext":"Peeled and sliced potatoes fried in oil until they're crisp. Hard to resist.",
 	"cookinglevel":24,
 	"materials":["Oil","Potato"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -71,7 +71,7 @@ registerItem({
 	"flavourtext":"Typical breakfast item eaten around the world. Why is this? Have you met a person who doesn't like omelets? No? Well there you go.",
 	"cookinglevel":28,
 	"materials":["Milk (S)","Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -90,7 +90,7 @@ registerItem({
 	"flavourtext":"Rice and egg fried in oil. The sweet, fluffy egg makes it extra tasty.",
 	"cookinglevel":30,
 	"materials":["Rice","Oil","Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -128,7 +128,7 @@ registerItem({
 	"flavourtext":"Bread fried with milk and egg. Mmmm, such a delicate texture! Like a work of art...",
 	"cookinglevel":31,
 	"materials":["Bread","Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -147,7 +147,7 @@ registerItem({
 	"flavourtext":"Mashed potatoes packed together and fried in oil. Widely beloved as comfort food.",
 	"cookinglevel":33,
 	"materials":["Oil","Potato","Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -166,7 +166,7 @@ registerItem({
 	"flavourtext":"Food battered in flour and egg that is later deep fried. A somewhat generic name for a whole category of yumminess.",
 	"cookinglevel":36,
 	"materials":["Oil","Flour","Shrimp","Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -185,7 +185,7 @@ registerItem({
 	"flavourtext":"Flour and butter mixed and fried in a convenient ring shape.",
 	"cookinglevel":46,
 	"materials":["Oil","Flour","Butter","Egg (M)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -204,7 +204,7 @@ registerItem({
 	"flavourtext":"Rice mixed with sauce to create perfect harmony.",
 	"cookinglevel":48,
 	"materials":["Rice","Wine","Butter"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -224,7 +224,7 @@ registerItem({
 	"flavourtext":"Eaten for breakfast or as a snack. Possible toppings are limited only by your imagination.",
 	"cookinglevel":49,
 	"materials":["Flour","Honey","Milk (S)","Egg (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -266,7 +266,7 @@ registerItem({
 	"flavourtext":"Corn flattened and baked. A popular breakfast food.",
 	"cookinglevel":53,
 	"materials":["Corn","Milk (S)"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -292,7 +292,7 @@ registerItem({
 	"flavourtext":"Bread with curry inside. Crispy on the outside, soft on the inside. Perfect harmony!",
 	"cookinglevel":59,
 	"materials":["Oil","Flour","Curry"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -317,7 +317,7 @@ registerItem({
 	"flavourtext":"Fried rice flavored with ketchup and wrapped in a thin omelet.",
 	"cookinglevel":60,
 	"materials":["Omelet","Rice","Ketchup"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -342,7 +342,7 @@ registerItem({
 	"flavourtext":"Various vegetables fried together. Much better than eating them raw. But anyone could have told you that- frying makes anything better!",
 	"cookinglevel":62,
 	"materials":["Cabbage"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -367,7 +367,7 @@ registerItem({
 	"flavourtext":"Water, flour and cabbage mixed and baked like a pancake. Recipes vary from region to region.",
 	"cookinglevel":64,
 	"materials":["Flour","Cabbage","Egg(S)","Leek"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -394,7 +394,7 @@ registerItem({
 	"flavourtext":"Unlike normal curry, it's more a powder than a sauce. Can be eaten with rice or bread.",
 	"cookinglevel":86,
 	"materials":["Rice","Curry Powder","Carrot","Onion"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -421,7 +421,7 @@ registerItem({
 	"flavourtext":"Meat and vegetables wrapped in thin dough and fried. Can also be steamed or boiled.",
 	"cookinglevel":88,
 	"materials":["Flour","Onion","Cabbage"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
@@ -448,7 +448,7 @@ registerItem({
 	"flavourtext":"Someone happened to try frying udon noodles. It turned out surprisingly well.",
 	"cookinglevel":95,
 	"materials":["Flour","Onion","Carrot","Cabbage"],
-	"preicemultiplier":"C1",
+	"pricemultiplier":"C1",
 	"category":"Frying Pan",
 	"cookingeffects":{}
 })
