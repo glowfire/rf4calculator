@@ -1983,7 +1983,7 @@ registerItem({
 })
 
 registerItem({
-	"name":"Grilled S. Flounder",
+	"name":"Grilled S.Flounder",
 	"sell":275,
 	"buy":850,
 	"effects":{
