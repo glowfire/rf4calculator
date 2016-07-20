@@ -474,7 +474,7 @@ registerItem({
 })
 
 registerItem({
-	"name":"Utlimate Curry",
+	"name":"Ultimate Curry",
 	"sell":25e4,
 	"effects":{
 		"heal":["PSN","SEAL","PAR"],
