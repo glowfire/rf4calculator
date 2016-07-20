@@ -2618,7 +2618,7 @@ registerItem({
 		"hpmax":800,
 		"hpmaxP":8,
 		"str":50,
-		"strP"6:,
+		"strP":6,
 		"vit":50,
 		"vitP":6,
 		"int":50,
