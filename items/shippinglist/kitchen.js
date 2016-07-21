@@ -1,5 +1,12 @@
 // Registration of items in the order as shown in the shipping records.
 // This list contains the items listed in the sixth section.
+// All entries registered!
+
+// Have not checked price multipliers for those not marked confirmed.
+// Cooking effects have not started for cooked dishes.
+// Some items follow the minor effects multiplier.
+
+// Comment "// none" for nonexistent cooking effects to avoid confusion of unchecked and no-effect.
 
 registerItem({
 	"name":"Rice Flour",
