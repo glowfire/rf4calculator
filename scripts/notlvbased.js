@@ -175,17 +175,17 @@ function createMaterialTable(){
 	
 }
 
-function getUpgradeInfo(){
-	
-	var sign
-	
-	function signString(number){
-		if (number>0){
-			sign = "+"
-		} else {
-			sign = ""
-		}
+var sign;
+
+function signString(number){
+	if (number>0){
+		sign = "+";
+	} else {
+		sign = "";
 	}
+}
+
+function getUpgradeInfo(){
 	
 	var upgradeStatListHead = document.createElement('p');
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListHead);
