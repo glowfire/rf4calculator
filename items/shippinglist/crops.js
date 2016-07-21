@@ -5,6 +5,9 @@
 // Cooking effects checked (except Mushrooms)
 // Price multipliers checked (except Mushrooms)
 
+// CTRL+F "///" to look for commentary on some issues.
+// MUSHROOMS INCOMPLETE
+
 registerItem({
 	"name":"Shield Seed",
 	"sell":150,
