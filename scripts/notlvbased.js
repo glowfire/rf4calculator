@@ -168,7 +168,6 @@ function createMaterialTable(){
 
 function getUpgradeInfo(){
 	
-	var currentUpgradeInfo = currentItem.upgradeinfo;
 	var sign
 	
 	function signString(number){
@@ -181,8 +180,15 @@ function getUpgradeInfo(){
 	
 	var upgradeStatListHead = document.createElement('p');
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListHead);
-	upgradeStatListHead.innerHTML = "Upgrade Info".toUpperCase();
 	upgradeStatListHead.style.fontWeight = "bold";
+	
+	if (currentItem.upgradeinfo!==undefined){
+		var currentUpgradeInfo = currentItem.upgradeinfo;
+		upgradeStatListHead.innerHTML = "Upgrade Info".toUpperCase();
+	} else if (currentItem.upgradematerial!==undefined){
+		var currentUpgradeInfo = currentItem.upgradematerial;
+		upgradeStatListHead.innerHTML = "Upgrade Material".toUpperCase();
+	}
 	
 	var upgradeStatListing = document.createElement('p');
 	document.getElementById('currentItemDiv').appendChild(upgradeStatListing);
