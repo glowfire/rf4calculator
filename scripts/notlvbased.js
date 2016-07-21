@@ -56,7 +56,7 @@ function showRecipesOfItem(){
 		recipeComment.innerHTML += "is 1 recipe"
 	}
 	
-	recipeComment.innerHTML += " requiring " + currentItem.name + ": "
+	recipeComment.innerHTML += " involving " + currentItem.name + ": "
 	
 	function addRecipeToList(item,index){
 		recipeComment.innerHTML += item.name + ", "
