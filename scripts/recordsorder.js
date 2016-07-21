@@ -53,11 +53,8 @@ function getItemInfo(){
 	}
 	//document.getElementById("dependantDiv").innerHTML = '';
 	getEffectsTable()
-	if (currentItem.upgradeinfo!==undefined){
+	if (currentItem.upgradeinfo!==undefined||currentItem.upgradematerial!==undefined){
 		getUpgradeInfo()
-	}
-	if (currentItem.upgradematerial!==undefined){
-		getUpgradeMaterial()
 	}
 	if (productMaterialMapping[currentItem.name.getModifiedNameString("")]!==undefined){
 		currentRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
