@@ -49,10 +49,25 @@ function stringIsInArray(arrayOfStrings,string){
 }
 
 Array.prototype.arrayPush = function(elementArray){
-    for (i=0;i<elementArray.length;i++){
-    	this.push(elementArray[i]);
-        };
+	for (i=0;i<elementArray.length;i++){
+		this.push(elementArray[i]);
+	};
 };
+
+Array.prototype.killDuplicates = function() {
+	var i;
+	var arrayLength=this.length;
+	var onlyUniques=[];
+	var dummyObject={};
+	
+	for (i=0;i<arrayLength;i++) {
+		dummyObject[this[i]]=0;
+	}
+	for (i in dummyObject) {
+		onlyUniques.push(i);
+	}
+	return onlyUniques;
+}
 
 masterItemList={};
 masterNameList=[];
@@ -75,8 +90,9 @@ function registerItem(item){
 	////This part maps products to materials
 	// May have issues with some products needing more than 1 copy of a material, e.g. Twin Leeks
 	if (item.materials!==undefined){
-		for (i=0;i<item.materials.length;i++){
-			var currentMaterialName = item.materials[i].getModifiedNameString("")
+		var uniqueMaterials = item.materials.killDuplicates();
+		for (i=0;i<uniqueMaterials.length;i++){
+			var currentMaterialName = uniqueMaterials[i].getModifiedNameString("")
 			if (productMaterialMapping[currentMaterialName]!==undefined){
 				productMaterialMapping[currentMaterialName].push(item)
 			} else {
