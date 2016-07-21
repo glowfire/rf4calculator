@@ -33,7 +33,7 @@ Object.prototype.getProductionLevel=function(){
 
 // May not work for "+" non-product items, eg Scrap Metal+, Cooking Bread+ etc.
 // Will work for "+" products with different recipe levels than their base products, eg Platinum Sword+, War Hammer+ etc.
-// Will not work for "+" products with equal recipe levels as their base products, but there are no known such "+" products.
+// May not work for "+" products with equal recipe levels as their base products, but there are no known such "+" products.
 Object.prototype.getUniqueNameString = function(){
 	var itemProductionLevel = this.getProductionLevel()
 	var itemName = this.name
@@ -54,6 +54,9 @@ Array.prototype.arrayPush = function(elementArray){
 	};
 };
 
+// Really charming code that cleverly kills duplicates by exploiting the fact object keys must be unique.
+// Source: https://dreaminginjavascript.wordpress.com/2008/08/22/eliminating-duplicates/
+// Works for arrays of strings, but untested for arrays of objects.
 Array.prototype.killDuplicates = function() {
 	var arrayLength=this.length;
 	var onlyUniques=[];
