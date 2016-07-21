@@ -115,7 +115,13 @@ function createMaterialTable(){
 			var c34 = document.createElement('td');
 			c34.colSpan=2
 			materialRow.appendChild(c34);
-			c34.innerHTML="Not buyable";
+			
+			if (currentMaterial.sell!==undefined){
+				c34.innerHTML="Varies";
+			} else {
+				c34.innerHTML="Not Buyable"
+			}
+			
 		}
 	}
 	
@@ -138,11 +144,14 @@ function createMaterialTable(){
 		var c4 = document.createElement('td');
 		summationRow.appendChild(c4);
 		c4.innerHTML=currentMaterialsBuyPriceDiscount;
+		
 	} else {
+		
 		var lastC = document.createElement('td');
 		lastC.colSpan = 4;
 		summationRow.appendChild(lastC);
 		lastC.innerHTML = "None of the materials can be bought."
+		
 	}
 	
 	var materialComments = document.createElement("p");
@@ -151,7 +160,7 @@ function createMaterialTable(){
 	materialComments.style.marginTop=0;
 	
 	if (currentItem.buy==undefined){
-		materialComments.innerHTML+="This item cannot be bought and must be produced."
+		materialComments.innerHTML+="This item is not for sale and must be produced."
 	} else if (allMaterialsBuyable(currentItem.materials)){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
