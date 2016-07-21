@@ -612,23 +612,105 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Material Stone",
 	"category":"Other",
-	"sell":,
-	"buy":,
-	"flavourtext":".",
+	"sell":40,
+	"buy":500,
+	"flavourtext":"Stones needed to build buildings. Always keep a lot of them in stock -- they will absolutely come in handy!",
 	"pricemultiplier":"X", /// unknown
 	"cookingeffects":{}
 })
-Material Stone
-Lumber
-Branch
-Rock
-Rare Can
-Boot
-Can
-Dragonic Stone*
-Love Scale
+
+registerItem({
+	"name":"Lumber",
+	"category":"Other",
+	"sell":40,
+	"buy":500,
+	"flavourtext":"Wood needed to build buildings. Always keep a lot of it in stock -- it will definitely come in handy!",
+	"pricemultiplier":"X", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Branch",
+	"category":"Other",
+	"sell":20,
+	"buy":100,
+	"flavourtext":"A tree branch that blew in. Chop it up with an axe to make Lumber.",
+	"pricemultiplier":"X", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Rock",
+	"category":"Other",
+	"sell":2,
+	"buy":10,
+	"flavourtext":"An ordinary rock. Hit it with a hammer to make usable material out of it.",
+	"pricemultiplier":"X", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Rare Can",
+	"category":"Trash",
+	"sell":300,
+	"flavourtext":"A rare can that's no longer manufactured. Worth a lot among collectors.",
+	"pricemultiplier":"X", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Boot",
+	"category":"Trash",
+	"sell":2,
+	"buy":8,
+	"flavourtext":"An old boot that was found floating in the water. Worn-out and useless.",
+	"pricemultiplier":"X", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Can",
+	"category":"Trash",
+	"sell":1,
+	"buy":5,
+	"flavourtext":"An empty can that someone tossed aside. Don't follow suit -- littering is bad!",
+	"pricemultiplier":"X", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Dragonic Stone",
+	"category":"Minerals",
+	"sell":5e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":95,
+		"def":160,
+		"mdef":120
+	},
+	"flavourtext":"A mineral that was believed not to exist in reality.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Love Scale",
+	"category":"Scales",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+
 Crimson Scale
 Glitter Scale
 Blue Scale
@@ -638,14 +720,14 @@ Tablet of Truth
 Chimera's Claw
 Dangerous Scissors
 Poison King
-Queen's Jaw
-Ancient Orc Cloth
+Queen's Jaw // unshipped
+Ancient Orc Cloth // unshipped
 Golem Spirit Stone
 Dragon Scale
 Turnip's Miracle
 Proof of Rank
 Blade Shard
-Pirate's Armor
+Pirate's Armor // unshipped
 Quality Worn Cloth
 Yellow Feather
 Big Giant's Nail
@@ -666,7 +748,7 @@ Insect Horn
 Vine
 Black Bird Feather
 Paralysis Poison
-Tiny Golem Stone
+Tiny Golem Stone // unshipped
 Unbroken Ivory Tusk
 Ivory Tusk
 Penguin Down
@@ -675,11 +757,11 @@ Quality Puffy Fur
 Stick
 Scrap Metal+
 Light Ore
-Glitta Augite*
+Glitta Augite* // unshipped
 Round Stone*
-10-Fold Steel*
+10-Fold Steel* // unshipped
 Double Steel*
-Shade Stone*
+Shade Stone* // unshipped
 Invisible Stone
 White Stone*
 Holy Spore
@@ -717,252 +799,7 @@ Melody Bottle
 Electro Crystal
 Moving Branch
 Dragon Fin
-Legendary Scale
-Grimoire Scale
-Chimera Tail
-Chest Hair
-Icy Nose
-Ammonite
-Broken Ice Wall
-Blue Lion Fur
-Red Lion Fur
-Dragon Bones
-Raccoon Leaf
-Love Crystal
-Dark Crystal
-Light Crystal
-Wooly Furball
-Small Crystal
-Fairy Dust
-Broken Box
-Broken Hilt
-Skull
-Ghost Hood
-Fire Crystal
-Turtle Shell
-Water Crystal
-Fish Fossil
-Strong Vine
-Plant Stem
-Poison Powder
-Spore
-Root
-Fur
-Wind Crystal
-Bird's Feather
-Bull's Horn
-Quality Fur
-Wolf Fang
-Dragon Fang
-Panther Claw
-Scorpion Pincer
-Scorpion Tail
-Rigid Horn
-Pretty Carapace
-Pretty Thread
-Spider Thread
-Insect Jaw
-Insect Carapace
-Hammer Piece
-Giant's Glove
-Giant's Nail
-Shoulder Piece
-Magic Crystal
-Magic Powder
-Old Bandage
-Glue
-Warrior's Proof
-Arrowhead
-Silk Cloth
-Quality Cloth
-Cheap Cloth
-Aquamarine
-Amethyst
-Sapphire
-Emerald
-Ruby
-Diamond
-Orichalcum
-Platinum
-Gold
-Silver
-Bronze
-Iron
-Scrap Metal
-Yarn
-Fur (L)
-Fur (M)
-Fur (S)
-Fodder
-Magnifying Glass
-Farming Bread+*
-Farming Bread
-Accessory Bread+*
-Accessory Bread
-Weapon Bread+*
-Weapon Bread
-Cooking Bread+*
-Cooking Bread
-Medicine Bread+*
-Medicine Bread
-
-
-Iron Waltz
-Striking March
-Bonus Concerto
-Rapid Move
-Cyclone
-Rush Punch
-Neko Demashi
-Straight Punch
-Double Kick
-Upper Cut
-Giga Swing
-Grand Impact
-Tornado Swing
-Stardust Upper
-Axel Disaster
-Millionstrike
-Reaper Slash
-Hurricane
-Delta Strike
-Steel Heart
-Naive Blade
-Flash Strike
-Wind Slash
-Rail Strike
-Twin Attack
-Blitz
-Storm
-Gust
-Mind Thrust
-Round Break
-Rush Attack
-Dash Slash
-Power Wave
-Greeting Spell
-Mediseal
-Mediparalyze
-Medipoison
-Master Cure
-Cure All
-Cure
-Darkness
-Dark Snake
-Dark Ball
-Prism
-Shine
-Light Barrier
-Penetrate Sonic
-Double Sonic
-Sonic Wind
-Avenger Rock
-Earth Spike
-Screw Rock
-Delta Laser
-Parallel Laser
-Water Laser
-Explosion
-Big Fire
-Fireball
-Material Stone
-Lumber
-Branch
-Rock
-Rare Can
-Boot
-Can
-Dragonic Stone*
-Love Scale
-Crimson Scale
-Glitter Scale
-Blue Scale
-Black Scale
-Big Bird's Comb
-Tablet of Truth
-Chimera's Claw
-Dangerous Scissors
-Poison King
-Queen's Jaw
-Ancient Orc Cloth
-Golem Spirit Stone
-Dragon Scale
-Turnip's Miracle
-Proof of Rank
-Blade Shard
-Pirate's Armor
-Quality Worn Cloth
-Yellow Feather
-Big Giant's Nail
-Thunderbird Feather
-Blk. Tortoise Shell
-Golem Stone
-Great Hammer Shard
-Fairy Elixir
-Glistening Blade
-Magic Claw
-Thick Stick
-Blue Giant's Glove
-Gold Wolf Fang
-Magic
-Wet Scale
-Mysterious Powder
-Insect Horn
-Vine
-Black Bird Feather
-Paralysis Poison
-Tiny Golem Stone
-Unbroken Ivory Tusk
-Ivory Tusk
-Penguin Down
-Yellow Down
-Quality Puffy Fur
-Stick
-Scrap Metal+
-Light Ore
-Glitta Augite*
-Round Stone*
-10-Fold Steel*
-Double Steel*
-Shade Stone*
-Invisible Stone
-White Stone*
-Holy Spore
-Earth Dragon Ash
-Fire Dragon Ash
-Water Dragon Ash
-Blue Core
-Yellow Core
-Red Core
-Green Core
-Rune Crystal*
-Big Crystal
-Malm Claw
-Palm Claw
-Shiny Screw
-Rusty Screw
-Quality Propeller
-Cheap Propeller
-MTGU Plate
-Rafflesia Petal
-Rune Sphere Shard*
-Wind Dragon Tooth*
-Throne of the Empire*
-Crystal Skull
-Right Rock Shard
-Left Rock Shard
-Puppetry Strings
-Cursed Doll
-Lightning Mane
-Ambrosia's Thorns
-Firewyrm Scale
-Earthwyrm Scale
-Golem Tablet
-Melody Bottle
-Electro Crystal
-Moving Branch
-Dragon Fin
-Legendary Scale
+Legendary Scale // unshipped
 Grimoire Scale
 Chimera Tail
 Chest Hair
