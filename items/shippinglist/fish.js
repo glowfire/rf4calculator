@@ -1,9 +1,10 @@
 // Registration of items in the reverse order as shown in the shipping records.
 // This list contains the items listed in the seventh section.
+// All entries entered!
 
-// Cooking effects are checked
+// All cooking effects are checked!
 // Fish with unconfirmed price multipliers: Snapper, Blowfish, Lamp Squid, Rockfish
-// All other fish price multipliers are confirmed
+// All other fish price multipliers are confirmed.
 
 registerItem({
 	"name":"Masu Trout",
