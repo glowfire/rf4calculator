@@ -55,7 +55,6 @@ Array.prototype.arrayPush = function(elementArray){
 };
 
 Array.prototype.killDuplicates = function() {
-	var i;
 	var arrayLength=this.length;
 	var onlyUniques=[];
 	var dummyObject={};
@@ -63,8 +62,8 @@ Array.prototype.killDuplicates = function() {
 	for (i=0;i<arrayLength;i++) {
 		dummyObject[this[i]]=0;
 	}
-	for (i in dummyObject) {
-		onlyUniques.push(i);
+	for (j in dummyObject) {
+		onlyUniques.push(j);
 	}
 	return onlyUniques;
 }
@@ -88,7 +87,7 @@ function registerItem(item){
 	}
 	
 	////This part maps products to materials
-	// May have issues with some products needing more than 1 copy of a material, e.g. Twin Leeks
+	// Should have no issues with products needing more than 1 copy of a material, e.g. Twin Leeks, Para-Gone (18)
 	if (item.materials!==undefined){
 		var uniqueMaterials = item.materials.killDuplicates();
 		for (i=0;i<uniqueMaterials.length;i++){
