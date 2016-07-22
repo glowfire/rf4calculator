@@ -315,7 +315,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Turnips from three corners of the globe, gathered together into a turnip paradise. Try to eat all three at once!",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":96,
 	"materials":["Turnip","Pink Turnip","Golden Turnip"]
 })
@@ -340,7 +340,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Made with spring and winter turnips. The red and white colors symbolize good luck. Often served at festivals.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":48,
 	"materials":["Turnip","Pink Turnip"]
 })
@@ -359,7 +359,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Onigiri with salmon inside. One of the most popular rice ball recipes.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":20,
 	"materials":["Salted Salmon","Rice"]
 })
@@ -380,7 +380,7 @@ registerItem({
 		// none
 	},
 	"flavourtext":"A staple food for many. You can toast it, stuff it, stick things between it or eat it any other way you'd like.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":8,
 	"materials":["Flour"]
 })
@@ -399,7 +399,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Rice formed into a triangular shape. Often called a <q>rice ball.</q> Easy to eat on the go, making it a staple lunch item.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":2,
 	"materials":["Rice"]
 })
@@ -414,7 +414,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"A medicinal herb made by mixing various plants. Make tea with it for greater effect.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":50,
 	"materials":["White Grass","Orange Grass","Green Grass","Yellow Grass","Blue Grass","Purple Grass"]
 })
@@ -473,7 +473,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Rice mixed with bamboo shoots. A popular dish in spring, with a savory flavor.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":7,
 	"materials":["Rice","Bamboo Sprout"]
 })
@@ -492,7 +492,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Lightly pickled cucumber. Has a crunchy texture.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":10,
 	"materials":["Cucumber"]
 })
@@ -511,7 +511,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":4,
 	"materials":["Turnip"]
 })
@@ -530,7 +530,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Turnip that's been pickled. Has a fresh taste and is sometimes eaten after meals.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":12,
 	"materials":["Pink Turnip"]
 })
@@ -549,7 +549,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Fruit placed between two slices of bread. Beloved by children... or so parents hope!",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":35,
 	"materials":["Bread","Strawberry"]
 })
@@ -568,7 +568,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Vegetables and other ingredients placed between two slices of bread. Easy to eat with one hand.",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":34,
 	"materials":["Bread","Egg (S)","Cucumber"]
 })
@@ -591,7 +591,7 @@ registerItem({
 	},
 	"cookingeffects":{},
 	"flavourtext":"Assorted fresh vegetables. Both healthy and nutritious!",
-	"pricemultiplier":"E",
+	"pricemultiplier":"C1",
 	"cookinglevel":67,
 	"materials":["Mayonnaise","Cucumber","Tomato","Cabbage"]
 })
