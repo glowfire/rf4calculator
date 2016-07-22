@@ -966,20 +966,35 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Blade Shard",
 	"category":"Shards",
-	"sell":,
-	"buy":,
+	"sell":29,
+	"buy":145,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"str":
+		"rarity":2,
+		"difficulty":9,
+		"str":2
 	},
-	"flavourtext":".",
+	"flavourtext":"A small piece of a blade from a knife or something. Don't touch it with your bare hands.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Blade Shard
-Pirate's Armor // unshipped
+})
+
+registerItem({ // unshipped
+	"name":"Pirate's Armor",
+	"category":"Shards",
+	"sell":311,
+	"buy":2800,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":84,
+		"def":83,
+		"knockP":15
+	},
+	"flavourtext":"A shoulder guard made of steel.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Quality Worn Cloth",
@@ -999,8 +1014,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Yellow Feather
 
+registerItem({
+	"name":"",
+	"category":"Feathers",
+	"sell":,
+	"buy":0,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"int":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Yellow Feather
 
 registerItem({
 	"name":"Big Giant's Nail",
@@ -1035,7 +1063,21 @@ registerItem({
 	"cookingeffects":{}
 })
 
-Great Hammer Shard
+registerItem({
+	"name":"Great Hammer Shard",
+	"category":"Shards",
+	"sell":217,
+	"buy":1740,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":60,
+		"str":30,
+		"diz":2
+	},
+	"flavourtext":"A shard of a broken hammer that used to be a legendary weapon.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Fairy Elixir",
@@ -1051,8 +1093,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Glistening Blade
 
+registerItem({
+	"name":"Glistening Blade",
+	"category":"Shards",
+	"sell":212,
+	"buy":1700,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":66,
+		"atk":38
+	},
+	"flavourtext":"A blade of a scythe. It's glistening.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Magic Claw",
@@ -1433,10 +1488,38 @@ registerItem({
 	"cookingeffects":{}
 })
 
+registerItem({
+	"name":"Shiny Screw",
+	"category":"Shards",
+	"sell":2300,
+	"buy":15e4,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":80,
+		"def":30,
+		"matk":40,
+		"mdef":10
+	},
+	"flavourtext":"A screw from something. People get upset if they find a screw left after making something.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
-Shiny Screw
-Rusty Screw
-
+registerItem({
+	"name":"Rusty Screw",
+	"category":"Shards",
+	"sell":198,
+	"buy":1590,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":57,
+		"matk":25,
+		"mdef":-2
+	},
+	"flavourtext":"A screw from something.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Quality Propeller",
@@ -1470,7 +1553,22 @@ registerItem({
 	"cookingeffects":{}
 })
 
-MTGU Plate
+registerItem({
+	"name":"MTGU Plate",
+	"category":"Shards",
+	"sell":2300,
+	"buy":15e4,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":80,
+		"def":8,
+		"ftgresP":8,
+		"sickresP":8
+	},
+	"flavourtext":'A plate created through science. "MGTU" stands for Miserable Trash Garbage Useless. See? Even the name is poorly designed.',
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Rafflesia Petal",
@@ -1536,8 +1634,49 @@ registerItem({
 	"cookingeffects":{}
 })
 Crystal Skull
-Right Rock Shard
-Left Rock Shard
+
+registerItem({
+	"name":"Right Rock Shard",
+	"category":"Shards",
+	"sell":2500,
+	"buy":11e4,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"def":35,
+		"mdef":120,
+		"dizresP":5,
+		"critresP":3,
+		"knockresP":15
+	},
+	"flavourtext":"A shard that Uno gave you as a favor. You didn't take it away by force, right?!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Left Rock Shard",
+	"category":"Shards",
+	"sell":2500,
+	"buy":11e4,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"def":120,
+		"mdef":35,
+		"psnresP":6,
+		"sealresP":6,
+		"parresP":6,
+		"slpresP":6,
+		"ftgresP":6,
+		"sickresP":6,
+		"faintresP":1,
+		"drainresP":1
+	},
+	"flavourtext":"A shard that Sano gave you as a favor. You didn't take it away by force, right?!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Puppetry Strings
 
 registerItem({
@@ -1693,7 +1832,24 @@ registerItem({
 	"cookingeffects":{}
 })
 Ammonite
-Broken Ice Wall
+
+registerItem({
+	"name":"Broken Ice Wall",
+	"category":"Shards",
+	"sell":4444,
+	"buy":9e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":96,
+		"atk":105,
+		"matk":95,
+		"stunP":25,
+		"slpresP":10
+	},
+	"flavourtext":"A piece of Death Wall that's still conscious. Might try to creep up on you sometimes.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Blue Lion Fur
 Red Lion Fur
 Dragon Bones
@@ -1731,8 +1887,48 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Broken Box
-Broken Hilt
+
+registerItem({
+	"name":"Broken Box",
+	"category":"Shards",
+	"sell":220,
+	"buy":800,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":44,
+		"def":4,
+		"psnresP":10,
+		"sealresP":10,
+		"parresP":10,
+		"slpresP":10,
+		"ftgresP":5,
+		"sickresP":5
+	},
+	"flavourtext":"An old wooden box. Get inside and pretend it's a spaceship!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Broken Hilt",
+	"category":"Shards",
+	"sell":90,
+	"buy":540,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":21,
+		"def":2,
+		"psnresP":5,
+		"sealresP":5,
+		"parresP":5,
+		"slpresP":5,
+		"ftgresP":5,
+		"sickresP":5
+	},
+	"flavourtext":"A broken piece of hilt. Fits nicely in the hand.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Skull
 
 registerItem({
@@ -1921,7 +2117,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Hammer Piece
+
+registerItem({
+	"name":"Hammer Piece",
+	"category":"Shards",
+	"sell":118,
+	"buy":940,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":37,
+		"str":6,
+		"diz":1
+	},
+	"flavourtext":"A piece of broken hammer. Gotta be useful for something, right?",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Giant's Gloves",
@@ -1954,7 +2165,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Shoulder Piece
+
+registerItem({
+	"name":"Shoulder Piece",
+	"category":"Shards",
+	"sell":149,
+	"buy":1190,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":45,
+		"def":11,
+		"knockP":8
+	},
+	"flavourtext":"Rough, wooden shoulder piece. Not terribly exciting.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Magic Crystal
 
 registerItem({
@@ -2039,7 +2265,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Arrowhead
+
+registerItem({
+	"name":"Arrowhead",
+	"category":"Shards",
+	"sell":12,
+	"buy":60,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":3,
+		"str":1
+	},
+	"flavourtext":"Rusty and useless as-is, but might shine if polished. Kind of like humanity...",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Silk Cloth",
