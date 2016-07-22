@@ -698,6 +698,89 @@ registerItem({
 registerItem({
 	"name":"Love Scale",
 	"category":"Scales",
+	"sell":364,
+	"buy":3280,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"str":50,
+		"vit":50,
+		"int":50
+	},
+	"flavourtext":"A scale that is famous as a love charm. But only few people have ever seen it because of its rarity.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Crimson Scale",
+	"category":"Scales",
+	"sell":364,
+	"buy":3280,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"str":40,
+		"vit":10
+	},
+	"flavourtext":"A dragon scale the color of flames.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Glitter Scale",
+	"category":"Scales",
+	"sell":364,
+	"buy":3280,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"str":70,
+		"vit":10,
+		"int":70
+	},
+	"flavourtext":"It glitters and shines. Mesmerizing. Like tinfoil.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Blue Scale",
+	"category":"Scales",
+	"sell":364,
+	"buy":3280,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"vit":10,
+		"int":140
+	},
+	"flavourtext":"An ocean-blue dragon's scale. It makes you feel intelligent just holding it.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Black Scale",
+	"category":"Scales",
+	"sell":364,
+	"buy":3280,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"str":10,
+		"vit":70,
+		"int":70
+	},
+	"flavourtext":"A dragon's scale. You feel darkness emanating from it.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"",
+	"category":"",
 	"sell":,
 	"buy":,
 	"upgradematerial":{
@@ -705,16 +788,16 @@ registerItem({
 		"difficulty":,
 		"":
 	},
-	"flavourtext":".",
+	"flavourtext":". .",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
 
 
-Crimson Scale
-Glitter Scale
-Blue Scale
-Black Scale
+
+
+
+
 Big Bird's Comb
 Tablet of Truth
 Chimera's Claw
@@ -723,7 +806,23 @@ Poison King
 Queen's Jaw // unshipped
 Ancient Orc Cloth // unshipped
 Golem Spirit Stone
-Dragon Scale
+
+registerItem({
+	"name":"Dragon Scale",
+	"category":"Scales",
+	"sell":364,
+	"buy":3280,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"str":10,
+		"vit":140
+	},
+	"flavourtext":"One of many scales that cover a dragon's body. Diamond hard, and also effective as a charm.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 Turnip's Miracle
 Proof of Rank
 Blade Shard
@@ -742,7 +841,22 @@ Thick Stick
 Blue Giant's Glove
 Gold Wolf Fang
 Magic
-Wet Scale
+
+registerItem({
+	"name":"Wet Scale",
+	"category":"Scales",
+	"sell":151,
+	"buy":1210,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":58,
+		"vit":22
+	},
+	"flavourtext":"A scale damp with moisture.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 Mysterious Powder
 Insect Horn
 Vine
@@ -792,15 +906,79 @@ Puppetry Strings
 Cursed Doll
 Lightning Mane
 Ambrosia's Thorns
-Firewyrm Scale
-Earthwyrm Scale
+
+registerItem({
+	"name":"Firewyrm Scale",
+	"category":"Scales",
+	"sell":1e4,
+	"buy":3e5,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":96,
+		"str":300,
+		"int":-10
+	},
+	"flavourtext":"A scale from a legendary fire dragon. Strong enough to endure even volcanic eruptions.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Earthwyrm Scale",
+	"category":"Scales",
+	"sell":1e4,
+	"buy":3e5,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":96,
+		"str":-10,
+		"vit":300
+	},
+	"flavourtext":"A scale from a legendary earth dragon. Incredibly hard and unable to be scratched.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+
 Golem Tablet
 Melody Bottle
 Electro Crystal
 Moving Branch
 Dragon Fin
-Legendary Scale // unshipped
-Grimoire Scale
+
+registerItem({
+	"name":"Legendary Scale",
+	"category":"Scales",
+	"sell":3e3,
+	"buy":5e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":90,
+		"drainatkP":10
+	},
+	"flavourtext":"A scale from a legendary fish in the lake. Greatly absorbs HP when used in upgrades.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Grimoire Scale",
+	"category":"Scales",
+	"sell":2800,
+	"buy":154e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":95,
+		"str":50,
+		"vit":160,
+		"int":50
+	},
+	"flavourtext":"A scale of the legendary Grimoire. Nobody has ever possessed one. Until now!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+
 Chimera Tail
 Chest Hair
 Icy Nose
