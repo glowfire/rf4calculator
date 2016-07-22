@@ -6,3 +6,4 @@ Jam Roll has lower recipe level, higher sell, lower buy, and less specific mater
 
 Throne of the Empire has Knock %, which may not be coded in the upgrade material section.
 Icy Nose may have similar issues.
+The rock shards of Uno and Sano, Broken Ice Wall may have uncommon upgrade material stats.
