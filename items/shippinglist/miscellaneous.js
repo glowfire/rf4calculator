@@ -848,27 +848,21 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Poison King",
 	"category":"Liquids",
-	"sell":,
-	"buy":,
+	"sell":308,
+	"buy":2770,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"atk":
+		"rarity":14,
+		"difficulty":86,
+		"atk":5,
+		"matk":88,
+		"psnatkP":80
 	},
-	"flavourtext":".",
+	"flavourtext":"Liquid that is very toxic. Just one lick is fatal. So stop licking it!",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-
-
-
-
-
-
-
-Poison King
 
 registerItem({ // unshipped
 	"name":"Queen's Jaw",
@@ -888,7 +882,24 @@ registerItem({ // unshipped
 	"cookingeffects":{}
 })
 
-Ancient Orc Cloth // unshipped
+registerItem({ // unshipped
+	"name":"Ancient Orc Cloth",
+	"category":"Cloths and Skins",
+	"sell":324,
+	"buy":2920,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":90,
+		"def":96,
+		"mdef":48,
+		"dizresP":15,
+		"critresP":15,
+		"sealresP":30
+	},
+	"flavourtext":"An orc's cloth that is described as a legendary cloth sometimes. But a cloth is a cloth, and an orc is an orc.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Golem Spirit Stone",
@@ -922,11 +933,43 @@ registerItem({
 	"cookingeffects":{}
 })
 
-Turnip's Miracle
+
+registerItem({
+	"name":"",
+	"category":"Powders and Spores",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"def":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Turnip's Miracle
 Proof of Rank
 Blade Shard
 Pirate's Armor // unshipped
-Quality Worn Cloth
+
+registerItem({
+	"name":"Quality Worn Cloth",
+	"category":"Cloths and Skins",
+	"sell":215,
+	"buy":900,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":83,
+		"def":52,
+		"mdef":35,
+		"dizresP":10,
+		"critresP":10,
+		"sealresP":30
+	},
+	"flavourtext":"Used to be a high-quality cloth, but it's worn out from overuse.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Yellow Feather
 
 
@@ -984,8 +1027,23 @@ registerItem({
 	"cookingeffects":{}
 })
 Thick Stick
-Blue Giant's Glove
 
+registerItem({
+	"name":"Blue Giant's Glove",
+	"category":"Cloths and Skins",
+	"sell":210,
+	"buy":1650,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":54,
+		"atk":6,
+		"def":12,
+		"critresP":8
+	},
+	"flavourtext":"A glove used by a Blue Giant. Almost impossible to tear it apart. Why you would even try, I have no idea.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Gold Wolf Fang",
@@ -1022,8 +1080,21 @@ Mysterious Powder
 Insect Horn
 Vine
 Black Bird Feather
-Paralysis Poison
 
+registerItem({
+	"name":"Paralysis Poison",
+	"category":"Liquids",
+	"sell":131,
+	"buy":1050,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":30,
+		"psnatkP":20
+	},
+	"flavourtext":"Toxic liquid that can paralyze you or poison you, depending on your luck. Or lack of luck.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({ // unshipped
 	"name":"Tiny Golem Stone",
@@ -1314,7 +1385,22 @@ Fairy Dust
 Broken Box
 Broken Hilt
 Skull
-Ghost Hood
+
+registerItem({
+	"name":"Ghost Hood",
+	"category":"Cloths and Skins",
+	"sell":52,
+	"buy":310,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":24,
+		"def":3,
+		"sealresP":30
+	},
+	"flavourtext":"A hood that covers the head. Special material with spooky powers.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Fire Crystal
 Turtle Shell
 Water Crystal
@@ -1392,7 +1478,23 @@ registerItem({
 
 Scorpion Tail
 Rigid Horn
-Pretty Carapace
+
+registerItem({
+	"name":"Pretty Carapace",
+	"category":"Cloths and Skins",
+	"sell":90,
+	"buy":630,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":35,
+		"def":3,
+		"sealresP":5,
+		"parresP":25
+	},
+	"flavourtext":"The carapace of an insect. Dappled and beautiful.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Pretty Thread
 Spider Thread
 
@@ -1410,9 +1512,40 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Insect Carapace
+
+registerItem({
+	"name":"Insect Carapace",
+	"category":"Cloths and Skins",
+	"sell":10,
+	"buy":50,
+	"upgradematerial":{
+		"rarity":1,
+		"difficulty":7,
+		"def":1,
+		"psnresP":15
+	},
+	"flavourtext":"The carapace of an insect. Light but tough.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Hammer Piece
-Giant's Glove
+
+registerItem({
+	"name":"Giant's Gloves",
+	"category":"Cloths and Skins",
+	"sell":135,
+	"buy":1070,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":43,
+		"atk":3,
+		"def":8,
+		"critresP":6
+	},
+	"flavourtext":"Gloves worn by giants. Tough material that doesn't tear easily.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Giant's Nail",
@@ -1431,13 +1564,93 @@ registerItem({
 Shoulder Piece
 Magic Crystal
 Magic Powder
+
+registerItem({
+	"name":"Devil Blood",
+	"category":"Liquids",
+	"sell":116,
+	"buy":920,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":39,
+		"matk":9,
+		"drainresP":15
+	},
+	"flavourtext":"Life's blood collected from demons. Valued as medicine.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+Devil Horn
+Earth Crystal
+Gunpowder
 Old Bandage
-Glue
+registerItem({
+	"name":"Glue",
+	"category":"Liquids",
+	"sell":70,
+	"buy":420,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":26,
+		"atk":1,
+		"def":2,
+		"mdef":2
+	},
+	"flavourtext":"An adhesive made from boiled animal skin. Teacher will get mad if she catches you eating it.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 Warrior's Proof
 Arrowhead
-Silk Cloth
-Quality Cloth
-Cheap Cloth
+
+registerItem({
+	"name":"Silk Cloth",
+	"category":"Cloths and Skins",
+	"sell":126,
+	"buy":1e3,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":38,
+		"def":9,
+		"critresP":4
+	},
+	"flavourtext":"A smooth, silky cloth. Go ahead and rub your face in it. Doesn't that feel nice?",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Quality Cloth",
+	"category":"Cloths and Skins",
+	"sell":96,
+	"buy":720,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":32,
+		"def":5,
+		"critresP":5
+	},
+	"flavourtext":"A cloth of fine quality. Its fabric is tough and not easily torn.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Cheap Cloth",
+	"category":"Cloths and Skins",
+	"sell":11,
+	"buy":55,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":2,
+		"def":1,
+		"critresP":1
+	},
+	"flavourtext":"A poor-quality swatch of cloth. Unstitches when you so much as breathe on it.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Aquamarine
 Amethyst
 Sapphire
