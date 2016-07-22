@@ -814,14 +814,48 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Chimera's Claw",
 	"category":"Claws and Fangs",
+	"sell":1e3,
+	"buy":48e3,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":45,
+		"atk":15,
+		"matk":2,
+		"psnatkP":5,
+		"paratkP":5
+	},
+	"flavourtext":"A claw of a Chimera. It looks amazing enough to be called the claw of a king.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Dangerous Scissors",
+	"category":"Claws and Fangs",
+	"sell":335,
+	"buy":3010,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":90,
+		"atk":195,
+		"def":-50
+	},
+	"flavourtext":"Scissors that look dangerous. But dangerous means sexy, some people say. Just don't run with them.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"",
+	"category":"Liquids",
 	"sell":,
 	"buy":,
 	"upgradematerial":{
 		"rarity":,
 		"difficulty":,
-		"":
+		"atk":
 	},
 	"flavourtext":".",
 	"pricemultiplier":"E", /// unknown
@@ -833,10 +867,27 @@ registerItem({
 
 
 
-Chimera's Claw
-Dangerous Scissors
+
 Poison King
-Queen's Jaw // unshipped
+
+registerItem({ // unshipped
+	"name":"Queen's Jaw",
+	"category":"Claws and Fangs",
+	"sell":345,
+	"buy":3100,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":89,
+		"atk":100,
+		"def":10,
+		"matk":40,
+		"mdef":10
+	},
+	"flavourtext":"A jaw that chews everything up except for diamonds. Diamonds are forever!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 Ancient Orc Cloth // unshipped
 
 registerItem({
@@ -877,7 +928,22 @@ Blade Shard
 Pirate's Armor // unshipped
 Quality Worn Cloth
 Yellow Feather
-Big Giant's Nail
+
+
+registerItem({
+	"name":"Big Giant's Nail",
+	"category":"Claws and Fangs",
+	"sell":320,
+	"buy":1150,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":90,
+		"atk":150
+	},
+	"flavourtext":"A huge fingernail from a big giants[sic]. Even grosser!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Thunderbird Feather
 Blk. Tortoise Shell
 
@@ -900,10 +966,41 @@ registerItem({
 Great Hammer Shard
 Fairy Elixir
 Glistening Blade
-Magic Claw
+
+
+registerItem({
+	"name":"Magic Claw",
+	"category":"Claws and Fangs",
+	"sell":224,
+	"buy":1800,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":74,
+		"atk":42,
+		"matk":15
+	},
+	"flavourtext":"A sharp claw with magic power. It's the best to equip it with an animal suit.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Thick Stick
 Blue Giant's Glove
-Gold Wolf Fang
+
+
+registerItem({
+	"name":"Gold Wolf Fang",
+	"category":"Claws and Fangs",
+	"sell":160,
+	"buy":1280,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":61,
+		"atk":26
+	},
+	"flavourtext":"A sharp fang that glitters. It takes any prey down with a one [sic] bite.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Magic
 
 registerItem({
@@ -943,8 +1040,41 @@ registerItem({ // unshipped
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Unbroken Ivory Tusk
-Ivory Tusk
+
+registerItem({
+	"name":"Unbroken Ivory Tusk",
+	"category":"Claws and Fangs",
+	"sell":151,
+	"buy":1220,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":55,
+		"atk":19,
+		"matk":2
+	},
+	"flavourtext":"The discarded tusk of a mammoth. It doesn't break, but it sheds and regrows. Even if 100 people step on it, it won't break.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Ivory Tusk",
+	"category":"Claws and Fangs",
+	"sell":110,
+	"buy":880,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":50,
+		"atk":16,
+		"def":-5,
+		"matk":1
+	},
+	"flavourtext":"The discarded tusk of an elephant. Beautiful and easy to work with. It's shed and regrown.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+
 Penguin Down
 Yellow Down
 Quality Puffy Fur
@@ -983,16 +1113,92 @@ Red Core
 Green Core
 Rune Crystal*
 Big Crystal
-Malm Claw
-Palm Claw
+
+registerItem({
+	"name":"Malm Claw",
+	"category":"Claws and Fangs",
+	"sell":360,
+	"buy":3240,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":88,
+		"atk":121
+	},
+	"flavourtext":"It's sharp. It hurts. Also, it's blue.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Palm Claw",
+	"category":"Claws and Fangs",
+	"sell":86,
+	"buy":600,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":32,
+		"atk":8
+	},
+	"flavourtext":"It's sharp. Also, it hurts.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+
 Shiny Screw
 Rusty Screw
-Quality Propeller
-Cheap Propeller
+
+
+registerItem({
+	"name":"Quality Propeller",
+	"category":"Claws and Fangs",
+	"sell":238,
+	"buy":1900,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":69,
+		"atk":40,
+		"def":5
+	},
+	"flavourtext":"A well-made propeller used as a weapon. It's obvious that the company had a lot of assets when they made this.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Cheap Propeller",
+	"category":"Claws and Fangs",
+	"sell":165,
+	"buy":1320,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":62,
+		"atk":29,
+		"def":-2
+	},
+	"flavourtext":"A cheap-looking propeller used as a weapon. Being poor is not sad, but this is sad.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 MTGU Plate
 Rafflesia Petal
 Rune Sphere Shard*
-Wind Dragon Tooth*
+registerItem({
+	"name":"Wind Dragon Tooth",
+	"category":"Claws and Fangs",
+	"sell":1e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":98,
+		"atk":180,
+		"matk":180
+	},
+	"flavourtext":"According to Venti, she can grow new teeth by using her magic power, but since it's tiring, she hates to do it.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 Throne of the Empire*
 Crystal Skull
 Right Rock Shard
@@ -1123,20 +1329,105 @@ Wind Crystal
 Bird's Feather
 Bull's Horn
 Quality Fur
-Wolf Fang
-Dragon Fang
-Panther Claw
-Scorpion Pincer
+registerItem({
+	"name":"Wolf Fang",
+	"category":"Claws and Fangs",
+	"sell":76,
+	"buy":460,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":30,
+		"atk":6
+	},
+	"flavourtext":"A sharp fang that can instantly kill prey with a single bite.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Dragon Fang",
+	"category":"Claws and Fangs",
+	"sell":240,
+	"buy":1920,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":80,
+		"atk":60
+	},
+	"flavourtext":"A hard fang strong enough to leave tooth marks on iron.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Panther Claw",
+	"category":"Claws and Fangs",
+	"sell":60,
+	"buy":360,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":20,
+		"atk":4
+	},
+	"flavourtext":"Razor-sharp claw, stronger than steel.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Scorpion Pincer",
+	"category":"Claws and Fangs",
+	"sell":153,
+	"buy":1230,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":60,
+		"atk":30,
+		"def":-5
+	},
+	"flavourtext":"Pincers that can easily cut through branches. They hurt, like, sooo much.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 Scorpion Tail
 Rigid Horn
 Pretty Carapace
 Pretty Thread
 Spider Thread
-Insect Jaw
+
+registerItem({
+	"name":"Insect Jaw",
+	"category":"Claws and Fangs",
+	"sell":16,
+	"buy":80,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":4,
+		"atk":2
+	},
+	"flavourtext":"A monster jaw strong enough to chew through just about anything.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Insect Carapace
 Hammer Piece
 Giant's Glove
-Giant's Nail
+
+registerItem({
+	"name":"Giant's Nail",
+	"category":"Claws and Fangs",
+	"sell":98,
+	"buy":690,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":40,
+		"atk":10
+	},
+	"flavourtext":"A giant fingernail. Gross!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Shoulder Piece
 Magic Crystal
 Magic Powder
