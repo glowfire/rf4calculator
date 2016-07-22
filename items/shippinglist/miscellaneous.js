@@ -813,7 +813,20 @@ registerItem({
 	"cookingeffects":{}
 })
 
-
+registerItem({
+	"name":"",
+	"category":"Claws and Fangs",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 
 
