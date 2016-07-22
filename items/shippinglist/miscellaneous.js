@@ -949,20 +949,36 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Proof of Rank",
 	"category":"Collectible",
+	"sell":300,
+	"buy":2700,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":77,
+		"str":15,
+		"int":48,
+		"faintresP":15
+	},
+	"flavourtext":"Proof that you are in a high position. If you lose it... well, it's over.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"",
+	"category":"Shards",
 	"sell":,
 	"buy":,
 	"upgradematerial":{
 		"rarity":,
 		"difficulty":,
-		"":
+		"str":
 	},
 	"flavourtext":".",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Proof of Rank
-Blade Shard
+})Blade Shard
 Pirate's Armor // unshipped
 
 registerItem({
@@ -1207,9 +1223,32 @@ Yellow Down
 Quality Puffy Fur
 Stick
 Scrap Metal+
-Light Ore
-Glitta Augite* // unshipped
 
+registerItem({
+	"name":"Light Ore",
+	"category":"Collectible",
+	"sell":1e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":50
+	},
+	"flavourtext":"A highly rare ore that can be used to change a weapon's category.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({ // unshipped
+	"name":"Glitta Augite",
+	"category":"Collectible",
+	"sell":680,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":50
+	},
+	"flavourtext":"A strange stone produced by a tree. Emits strong light. If used for reinforcing a weapon, extends the range.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Round Stone",
@@ -1225,11 +1264,71 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-10-Fold Steel* // unshipped
-Double Steel*
-Shade Stone* // unshipped
-Invisible Stone
-White Stone*
+
+registerItem({ // unshipped
+	"name":"10-Fold Steel",
+	"category":"Collectible",
+	"sell":1e3,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":95
+	},
+	"flavourtext":"The rarest steel among Double Steels. Multiplies the effect of the material used to previously reinforce an item.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Double Steel",
+	"category":"Collectible",
+	"sell":100,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":50
+	},
+	"flavourtext":"Special steel that doubles the effect of the material used to previously reinforce an item.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({ // unshipped
+	"name":"Shade Stone",
+	"category":"Collectible",
+	"sell":250,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":40
+	},
+	"flavourtext":"A rare stone that absorbs all surrounding light. Often used to blot out the world when darkness is preferred.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Invisible Stone",
+	"category":"Collectible",
+	"sell":600,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":33
+	},
+	"flavourtext":"A stone that is invisible. Difficult to find for obvious reasons. It's classified as a monster in a country to the east.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"White Stone",
+	"category":"Collectible",
+	"sell":8e3,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":30
+	},
+	"flavourtext":"There's a legend that women who were asked to marry while being presented with this stone lived happily ever after.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Holy Spore",
@@ -1372,8 +1471,41 @@ registerItem({
 })
 
 MTGU Plate
-Rafflesia Petal
-Rune Sphere Shard*
+
+registerItem({
+	"name":"Rafflesia Petal",
+	"category":"Collectible",
+	"sell":1250,
+	"buy":5e4,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":55,
+		"atk":7,
+		"matk":17,
+		"ftgatkP":20,
+		"sickatkP":15
+	},
+	"flavourtext":"A petal from a rafflesia. It makes a really fancy fan.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Rune Sphere Shard",
+	"category":"Collectible",
+	"sell":15e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":99,
+		"str":120,
+		"vit":120,
+		"int":120
+	},
+	"flavourtext":"A shard made from an enormous amount of crystallized runes. Although just a piece, it has a lot of power.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 registerItem({
 	"name":"Wind Dragon Tooth",
 	"category":"Claws and Fangs",
@@ -1389,12 +1521,43 @@ registerItem({
 	"cookingeffects":{}
 })
 
-Throne of the Empire*
+registerItem({
+	"name":"Throne of the Empire",
+	"category":"Collectible",
+	"sell":1,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":97,
+		"int":-5,
+		"knockP":30
+	},
+	"flavourtext":"A picture of the emperor. It goes for a high price in the Sechs Empire.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Crystal Skull
 Right Rock Shard
 Left Rock Shard
 Puppetry Strings
-Cursed Doll
+
+registerItem({
+	"name":"Cursed Doll",
+	"category":"Collectible",
+	"sell":666,
+	"buy":3e4,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":40,
+		"def":4,
+		"mdef":7,
+		"sealresP":15,
+		"parresP":15,
+		"drainresP":20
+	},
+	"flavourtext":"It's scary. Very scary. By the way, who's standing behind you?",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Lightning Mane
 Ambrosia's Thorns
 
@@ -1509,13 +1672,46 @@ registerItem({
 
 Chimera Tail
 Chest Hair
-Icy Nose
+
+registerItem({
+	"name":"Icy Nose",
+	"category":"Collectible",
+	"sell":3e3,
+	"buy":17e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":92,
+		"atk":128,
+		"matk":90,
+		"int":-5,
+		"diz":1,
+		"critP":2,
+		"stun":5
+	},
+	"flavourtext":"A sculpture in the shape of a Crystal Mammoth's trunk. Mammoths love to carry it around.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Ammonite
 Broken Ice Wall
 Blue Lion Fur
 Red Lion Fur
 Dragon Bones
-Raccoon Leaf
+
+registerItem({
+	"name":"Raccoon Leaf",
+	"category":"Collectible",
+	"sell":2e3,
+	"buy":3e4,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":65,
+		"int":40
+	},
+	"flavourtext":"A magical leaf used by wily raccoons. Very handy tool that aids in transformation. Improves a weapon's range.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Love Crystal
 Dark Crystal
 Light Crystal
@@ -1827,7 +2023,22 @@ registerItem({
 	"cookingeffects":{}
 })
 
-Warrior's Proof
+registerItem({
+	"name":"Warrior's Proof",
+	"category":"Collectible",
+	"sell":300,
+	"buy":2780,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":77,
+		"str":58,
+		"int":5,
+		"faintresP":15
+	},
+	"flavourtext":"A proof handed down among the warrior tribes. Awarded by chiefs when a warrior attains manhood.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Arrowhead
 
 registerItem({
@@ -1889,12 +2100,40 @@ Gold
 Silver
 Bronze
 Iron
-Scrap Metal
+
+registerItem({
+	"name":"Scrap Metal",
+	"category":"Collectible",
+	"sell":3,
+	"buy":50,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":1,
+		"def":-2
+	},
+	"flavourtext":"Has limited use, and thus sees limited shipments.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Yarn
 Fur (L)
 Fur (M)
 Fur (S)
-Fodder
+
+registerItem({
+	"name":"Fodder",
+	"category":"Collectible",
+	"sell":60,
+	"buy":240,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":0, ////////////////// Difficulty actually not listed in the game info screen. This is just a placeholder
+		"matk":1
+	},
+	"flavourtext":"Feed for monsters. Nutritious and sweet. Generally well-liked.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Magnifying Glass
 Farming Bread+*
 Farming Bread
