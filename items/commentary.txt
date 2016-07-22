@@ -3,3 +3,5 @@ Scrap Metal+ at lv 10 sells for 4G and thus appears to be of price multiplier ty
 Apple Pie has recipe level 36, sells for 1910, buys for 5820, with materials Flour, Apple, Butter, Egg
 Compared with Jam Roll: recipe lv 34, sell 1940, buy 5000, with materials Flour, Jam, Egg, Milk
 Jam Roll has lower recipe level, higher sell, lower buy, and less specific materials.
+
+Throne of the Empire has Knock %, which may not be coded in the upgrade material section.
