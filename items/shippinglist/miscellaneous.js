@@ -779,16 +779,36 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"category":"",
-	"sell":,
-	"buy":,
+	"name":"Big Bird's Comb",
+	"category":"Collectible",
+	"sell":1200,
+	"buy":5200,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"":
+		"rarity":10,
+		"difficulty":65,
+		"atk":22,
+		"faintresP":50
 	},
-	"flavourtext":". .",
+	"flavourtext":"A big cock's comb. When you get mad, just try to <q>comb</q> down.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Tablet of Truth",
+	"category":"Stones",
+	"sell":3800,
+	"buy":82e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":95,
+		"atk":50,
+		"def":160,
+		"matk":20,
+		"mdef":-15,
+		"critP":10
+	},
+	"flavourtext":"A tablet that was once part of a Golem's body. It has 'EMETH' written on it, and serves as a source of power.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
@@ -798,14 +818,29 @@ registerItem({
 
 
 
-Big Bird's Comb
-Tablet of Truth
+
+
 Chimera's Claw
 Dangerous Scissors
 Poison King
 Queen's Jaw // unshipped
 Ancient Orc Cloth // unshipped
-Golem Spirit Stone
+
+registerItem({
+	"name":"Golem Spirit Stone",
+	"category":"Stones",
+	"sell":320,
+	"buy":2880,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":85,
+		"def":105,
+		"critP":6
+	},
+	"flavourtext":"A stone with a mark to activate a Golem. The spirit is unchanging forever.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Dragon Scale",
@@ -832,6 +867,21 @@ Yellow Feather
 Big Giant's Nail
 Thunderbird Feather
 Blk. Tortoise Shell
+
+registerItem({
+	"name":"",
+	"category":"Stones",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"":
+	},
+	"flavourtext":". .",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Golem Stone
 Great Hammer Shard
 Fairy Elixir
@@ -946,7 +996,7 @@ Electro Crystal
 Moving Branch
 Dragon Fin
 
-registerItem({
+registerItem({ // unshipped
 	"name":"Legendary Scale",
 	"category":"Scales",
 	"sell":3e3,
