@@ -933,22 +933,35 @@ registerItem({
 	"cookingeffects":{}
 })
 
+registerItem({
+	"name":"Turnip's Miracle",
+	"category":"Powders and Spores",
+	"sell":500,
+	"buy":4500,
+	"upgradematerial":{
+		"rarity":14,
+		"difficulty":85,
+		"mdef":99
+	},
+	"flavourtext":"A mysterious item that is said to show the order of the world. The root of dreams?",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"",
-	"category":"Powders and Spores",
+	"category":"Collectible",
 	"sell":,
 	"buy":,
 	"upgradematerial":{
 		"rarity":,
 		"difficulty":,
-		"def":
+		"":
 	},
 	"flavourtext":".",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Turnip's Miracle
-Proof of Rank
+})Proof of Rank
 Blade Shard
 Pirate's Armor // unshipped
 
@@ -1007,7 +1020,21 @@ registerItem({
 })
 
 Great Hammer Shard
-Fairy Elixir
+
+registerItem({
+	"name":"Fairy Elixir",
+	"category":"Powders and Spores",
+	"sell":220,
+	"buy":1760,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":67,
+		"matk":40
+	},
+	"flavourtext":"Secret fairy item. Fairies are considered full-fledged sprites when they have this.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Glistening Blade
 
 
@@ -1059,7 +1086,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Magic
+
+registerItem({
+	"name":"Magic",
+	"category":"Powders and Spores",
+	"sell":156,
+	"buy":1250,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":53,
+		"matk":20
+	},
+	"flavourtext":"An elixir with magic power. It's necessaary for wizards.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Wet Scale",
@@ -1076,7 +1117,22 @@ registerItem({
 	"cookingeffects":{}
 })
 
-Mysterious Powder
+registerItem({
+	"name":"Mysterious Powder",
+	"category":"Powders and Spores",
+	"sell":139,
+	"buy":1110,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":55,
+		"matk":15,
+		"ftgatkP":10,
+		"sickatkP":5
+	},
+	"flavourtext":"A.k.a. Zombie Powder. It's veiled in mystery. Undead mystery.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Insect Horn
 Vine
 Black Bird Feather
@@ -1174,10 +1230,73 @@ Double Steel*
 Shade Stone* // unshipped
 Invisible Stone
 White Stone*
-Holy Spore
-Earth Dragon Ash
-Fire Dragon Ash
-Water Dragon Ash
+
+registerItem({
+	"name":"Holy Spore",
+	"category":"Powders and Spores",
+	"sell":880,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":33,
+		"matk":10,
+		"psnatkP":33,
+		"sealatkP":33,
+		"paratkP":33,
+		"drainresP":50
+	},
+	"flavourtext":"A spore that is very rare. It is said the spore goes to Gandhara when it disperses.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Earth Dragon Ash",
+	"category":"Powders and Spores",
+	"sell":2000,
+	"buy":9e4,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":80,
+		"def":33,
+		"mdef":33,
+		"vit":5
+	},
+	"flavourtext":"A mockery of an Earth Dragon ended up like this.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Fire Dragon Ash",
+	"category":"Powders and Spores",
+	"sell":2100,
+	"buy":11e4,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":80,
+		"atk":80,
+		"str":10
+	},
+	"flavourtext":"A mockery of a Fire Dragon ended up like this.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Water Dragon Ash",
+	"category":"Powders and Spores",
+	"sell":2200,
+	"buy":13e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":80,
+		"matk":80,
+		"int":10
+	},
+	"flavourtext":"A mockery of a Water Dragon ended up like this.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Blue Core
 Yellow Core
 Red Core
@@ -1327,9 +1446,30 @@ registerItem({
 	"cookingeffects":{}
 })
 
-
-
-Melody Bottle
+registerItem({
+	"name":"Melody Bottle",
+	"category":"Powders and Spores",
+	"sell":3500,
+	"buy":18e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":94,
+		"atk":30,
+		"def":-10,
+		"matk":170,
+		"mdef":30,
+		"psnatkP":10,
+		"sealatkP":10,
+		"paratkP":10,
+		"slpatkP":10,
+		"ftgatkP":10,
+		"sickatkP":10,
+		"faintatkP":1
+	},
+	"flavourtext":"A small bottle that contains a Siren's voice. Sings an intoxicating melody if opened.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Electro Crystal
 Moving Branch
 Dragon Fin
@@ -1381,7 +1521,20 @@ Dark Crystal
 Light Crystal
 Wooly Furball
 Small Crystal
-Fairy Dust
+registerItem({
+	"name":"Fairy Dust",
+	"category":"Powders and Spores",
+	"sell":45,
+	"buy":270,
+	"upgradematerial":{
+		"rarity":3,
+		"difficulty":19,
+		"matk":5
+	},
+	"flavourtext":"Fairy dust that sparkles at night.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Broken Box
 Broken Hilt
 Skull
@@ -1407,9 +1560,53 @@ Water Crystal
 Fish Fossil
 Strong Vine
 Plant Stem
-Poison Powder
-Spore
-Root
+
+registerItem({
+	"name":"Poison Powder",
+	"category":"Powders and Spores",
+	"sell":82,
+	"buy":570,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":20,
+		"matk":2,
+		"mdef":2,
+		"psnatkP":5
+	},
+	"flavourtext":"Poisonous powder used to add poison to weapons and equipment. Leon might like it. Weirdo.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Spore",
+	"category":"Powders and Spores",
+	"sell":22,
+	"buy":110,
+	"upgradematerial":{
+		"rarity":1,
+		"difficulty":8,
+		"matk":2
+	},
+	"flavourtext":"A mushroom spore. Could it be an ancient menace from outer space?!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Root",
+	"category":"Powders and Spores",
+	"sell":105,
+	"buy":840,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":35,
+		"matk":8
+	},
+	"flavourtext":"Tree root used in crafting. Can be used in weapons or ground into medicine.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Fur
 Wind Crystal
 Bird's Feather
@@ -1563,7 +1760,21 @@ registerItem({
 })
 Shoulder Piece
 Magic Crystal
-Magic Powder
+
+registerItem({
+	"name":"Magic Powder",
+	"category":"Powders and Spores",
+	"sell":120,
+	"buy":960,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":40,
+		"matk":10
+	},
+	"flavourtext":"Magically-infused powder. Water-soluble and has many uses.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Devil Blood",
@@ -1582,7 +1793,22 @@ registerItem({
 })
 Devil Horn
 Earth Crystal
-Gunpowder
+
+registerItem({
+	"name":"Gunpowder",
+	"category":"Powders and Spores",
+	"sell":72,
+	"buy":430,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":27,
+		"atk":1,
+		"matk":5
+	},
+	"flavourtext":"Gunpowder for fire arrows. Explosive and dangerous. Handle with care.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Old Bandage
 registerItem({
 	"name":"Glue",
