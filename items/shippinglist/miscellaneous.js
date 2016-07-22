@@ -869,20 +869,21 @@ Thunderbird Feather
 Blk. Tortoise Shell
 
 registerItem({
-	"name":"",
+	"name":"Golem Stone",
 	"category":"Stones",
-	"sell":,
-	"buy":,
+	"sell":208,
+	"buy":1670,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"":
+		"rarity":12,
+		"difficulty":53,
+		"def":15,
+		"critP":3
 	},
-	"flavourtext":". .",
+	"flavourtext":"A stone with a mark to activate a Golem. The mark might just come off if you rub it.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Golem Stone
+
 Great Hammer Shard
 Fairy Elixir
 Glistening Blade
@@ -912,7 +913,23 @@ Insect Horn
 Vine
 Black Bird Feather
 Paralysis Poison
-Tiny Golem Stone // unshipped
+
+
+registerItem({ // unshipped
+	"name":"Tiny Golem Stone",
+	"category":"Stones",
+	"sell":121,
+	"buy":970,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":38,
+		"def":8,
+		"critP":2
+	},
+	"flavourtext":"A stone with a mark to activate a Golem. The mark is so minuscule, the one who wrote it must be a craftsman.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Unbroken Ivory Tusk
 Ivory Tusk
 Penguin Down
@@ -922,7 +939,22 @@ Stick
 Scrap Metal+
 Light Ore
 Glitta Augite* // unshipped
-Round Stone*
+
+
+registerItem({
+	"name":"Round Stone",
+	"category":"Stones",
+	"sell":50,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":25,
+		"atk":5,
+		"critP":5
+	},
+	"flavourtext":"Turned round after years of polishing under a waterfall.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 10-Fold Steel* // unshipped
 Double Steel*
 Shade Stone* // unshipped
@@ -989,8 +1021,24 @@ registerItem({
 	"cookingeffects":{}
 })
 
+registerItem({
+	"name":"Golem Tablet",
+	"category":"Stones",
+	"sell":2300,
+	"buy":15e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":80,
+		"def":30,
+		"critP":5
+	},
+	"flavourtext":"A tablet that was once part of a Golem's body. It has '_METH' written on it, and serves as a source of power.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
-Golem Tablet
+
+
 Melody Bottle
 Electro Crystal
 Moving Branch
