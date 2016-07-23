@@ -1155,19 +1155,19 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Thick Stick",
 	"category":"Sticks and Stems",
-	"sell":,
-	"buy":,
+	"sell":198,
+	"buy":1590,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"atk":
+		"rarity":12,
+		"difficulty":65,
+		"atk":34
 	},
-	"flavourtext":".",
+	"flavourtext":"A thick stick that can be used for materials, but is not a substitute for lumber. At least you can smack people upside the head with it and laugh!",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Thick Stick
+})
 
 registerItem({
 	"name":"Blue Giant's Glove",
@@ -1247,8 +1247,36 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Insect Horn
-Vine
+
+registerItem({
+	"name":"Insect Horn",
+	"category":"Sticks and Stems",
+	"sell":21,
+	"buy":100,
+	"upgradematerial":{
+		"rarity":1,
+		"difficulty":7,
+		"atk":3
+	},
+	"flavourtext":"A jagged insect horn that has a patchy pattern.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"",
+	"category":"Strings",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"matk":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Vine
 
 registerItem({
 	"name":"Black Bird Feather",
@@ -1333,7 +1361,21 @@ registerItem({
 Penguin Down
 Yellow Down
 Quality Puffy Fur
-Stick
+
+registerItem({
+	"name":"Stick",
+	"category":"Sticks and Stems",
+	"sell":9,
+	"buy":50,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":2,
+		"atk":1
+	},
+	"flavourtext":"A thin stick that can be used for materials. You could poke things with it too, I guess.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Scrap Metal+
 
 registerItem({
@@ -1830,7 +1872,22 @@ registerItem({
 	"cookingeffects":{}
 })
 Electro Crystal
-Moving Branch
+
+registerItem({
+	"name":"Moving Branch",
+	"category":"Sticks and Stems",
+	"sell":4500,
+	"buy":21e4,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":95,
+		"atk":-10,
+		"matk":200
+	},
+	"flavourtext":"A creepy branch that twitches. Strong in vitality, cutting it only makes it grow.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Dragon Fin",
@@ -2102,7 +2159,22 @@ registerItem({
 	"cookingeffects":{}
 })
 Strong Vine
-Plant Stem
+
+registerItem({
+	"name":"Plant Stem",
+	"category":"Sticks and Stems",
+	"sell":65,
+	"buy":390,
+	"upgradematerial":{
+		"rarity":3,
+		"difficulty":28,
+		"atk":3,
+		"matk":3
+	},
+	"flavourtext":"Strong and thick plant stem used for various purposes.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Poison Powder",
@@ -2167,7 +2239,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Bull's Horn
+
+registerItem({
+	"name":"Bull's Horn",
+	"category":"Sticks and Stems",
+	"sell":95,
+	"buy":670,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":36,
+		"atk":7,
+		"def":1
+	},
+	"flavourtext":"A sharp and dangerous horn. Worth a lot if its [sic] unscratched.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Quality Fur
 registerItem({
 	"name":"Wolf Fang",
@@ -2231,7 +2318,22 @@ registerItem({
 })
 
 Scorpion Tail
-Rigid Horn
+
+registerItem({
+	"name":"Rigid Horn",
+	"category":"Sticks and Stems",
+	"sell":130,
+	"buy":1040,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":52,
+		"atk":15,
+		"critP":1
+	},
+	"flavourtext":"A jagged and dappled horn. Looks dangerous.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Pretty Carapace",
@@ -2378,7 +2480,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Devil Horn
+
+registerItem({
+	"name":"Devil Horn",
+	"category":"Sticks and Stems",
+	"sell":312,
+	"buy":2810,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":86,
+		"atk":55,
+		"matk":50
+	},
+	"flavourtext":"A horn of a demon/ Filled with magical power.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Earth Crystal
 
 registerItem({
