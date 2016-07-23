@@ -1016,19 +1016,19 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Yellow Feather",
 	"category":"Feathers",
-	"sell":,
-	"buy":0,
+	"sell":100,
+	"buy":800,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"int":
+		"rarity":5,
+		"difficulty":90,
+		"int":130
 	},
-	"flavourtext":".",
+	"flavourtext":"A soft-textured yellow feather. It's believed to bring happiness.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Yellow Feather
+})
 
 registerItem({
 	"name":"Big Giant's Nail",
@@ -1044,8 +1044,36 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Thunderbird Feather
-Blk. Tortoise Shell
+
+registerItem({
+	"name":"Thunderbird Feather",
+	"category":"Feathers",
+	"sell":210,
+	"buy":1680,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":58,
+		"int":28
+	},
+	"flavourtext":"A soft-textured feather that contains electricity.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"",
+	"category":"Shells and Bones",
+	"sell":,
+	"buy":0,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"def":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Blk. Tortoise Shell
 
 registerItem({
 	"name":"Golem Stone",
@@ -1206,7 +1234,21 @@ registerItem({
 })
 Insect Horn
 Vine
-Black Bird Feather
+
+registerItem({
+	"name":"Black Bird Feather",
+	"category":"Feathers",
+	"sell":135,
+	"buy":1080,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":50,
+		"int":14
+	},
+	"flavourtext":"A soft black feather. The quill is rather sharp.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Paralysis Poison",
@@ -1774,7 +1816,22 @@ registerItem({
 })
 Electro Crystal
 Moving Branch
-Dragon Fin
+
+registerItem({
+	"name":"Dragon Fin",
+	"category":"Feathers",
+	"sell":1e4,
+	"buy":3e5,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":96,
+		"vit":-10,
+		"int":300
+	},
+	"flavourtext":"The fin of a legendary dragon. A perfect material that's hard, supple and lightweight.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({ // unshipped
 	"name":"Legendary Scale",
@@ -2001,7 +2058,21 @@ registerItem({
 })
 Fur
 Wind Crystal
-Bird's Feather
+
+registerItem({
+	"name":"Bird's Feather",
+	"category":"Feathers",
+	"sell":31,
+	"buy":155,
+	"upgradematerial":{
+		"rarity":2,
+		"difficulty":10,
+		"int":2
+	},
+	"flavourtext":"A soft feather that's prickly at the base and pointy on one end.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Bull's Horn
 Quality Fur
 registerItem({
