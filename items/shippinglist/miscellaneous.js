@@ -1264,19 +1264,20 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Vine",
 	"category":"Strings",
-	"sell":,
-	"buy":,
+	"sell":84,
+	"buy":590,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"matk":
+		"rarity":6,
+		"difficulty":30,
+		"matk":7,
+		"sealatkP":4
 	},
-	"flavourtext":".",
+	"flavourtext":"A long, thin vine that can be used to tie down, wind about, and otherwise constrict things.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Vine
+})
 
 registerItem({
 	"name":"Black Bird Feather",
@@ -1357,8 +1358,21 @@ registerItem({
 	"cookingeffects":{}
 })
 
-
-Penguin Down
+registerItem({
+	"name":"",
+	"category":"Furs",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"def":,
+		"resP":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Penguin Down
 Yellow Down
 Quality Puffy Fur
 
@@ -1776,7 +1790,24 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Puppetry Strings
+
+registerItem({
+	"name":"Puppetry Strings",
+	"category":"Strings",
+	"sell":964,
+	"buy":32e3,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":40,
+		"atk":5,
+		"matk":8,
+		"sealatkP":15,
+		"paratkP":5
+	},
+	"flavourtext":"Strings that were controlling Marionetta. Not the thread of a spider you saved.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Cursed Doll",
@@ -1797,7 +1828,23 @@ registerItem({
 	"cookingeffects":{}
 })
 Lightning Mane
-Ambrosia's Thorns
+
+registerItem({
+	"name":"Ambrosia's Thorns",
+	"category":"Strings",
+	"sell":400,
+	"buy":7e3,
+	"upgradematerial":{
+		"rarity":2,
+		"difficulty":30,
+		"atk":7,
+		"matk":7,
+		"slpatkP":10
+	},
+	"flavourtext":"Thorns that protect Ambrosia's chrysalis. All beautiful roses have sharp thorns.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Firewyrm Scale",
@@ -1937,8 +1984,23 @@ registerItem({
 	"cookingeffects":{}
 })
 
-
-Chimera Tail
+registerItem({
+	"name":"Chimera Tail",
+	"category":"Strings",
+	"sell":4500,
+	"buy":215e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":95,
+		"atk":200,
+		"matk":-10,
+		"psnatkP":50,
+		"paratkP":50
+	},
+	"flavourtext":"A Chimera's snake-like tail. Has a mind of its own.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Chest Hair
 
 registerItem({
@@ -2158,7 +2220,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Strong Vine
+
+registerItem({
+	"name":"Strong Vine",
+	"category":"Strings",
+	"sell":132,
+	"buy":1060,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":44,
+		"matk":12,
+		"sealatkP":10
+	},
+	"flavourtext":"A long, thin, strong vine. Can be wrapped and banded.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Plant Stem",
@@ -2317,7 +2394,21 @@ registerItem({
 	"cookingeffects":{}
 })
 
-Scorpion Tail
+registerItem({
+	"name":"Scorpion Tail",
+	"category":"Strings",
+	"sell":93,
+	"buy":650,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":30,
+		"atk":5,
+		"psnatkP":8
+	},
+	"flavourtext":"A highly poisonous scorpion tail. Handle with care!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Rigid Horn",
@@ -2351,8 +2442,39 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Pretty Thread
-Spider Thread
+
+registerItem({
+	"name":"Pretty Thread",
+	"category":"Strings",
+	"sell":201,
+	"buy":1610,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":52,
+		"matk":16,
+		"paratkP":25
+	},
+	"flavourtext":"A shiny thread commonly used to make fabric. Comes from a spider's butt.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Spider's Thread",
+	"category":"Strings",
+	"sell":48,
+	"buy":290,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":18,
+		"atk":2,
+		"matk":2,
+		"paratkP":5
+	},
+	"flavourtext":"An elastic string that's hard to break. Comes from a spider's butt.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Insect Jaw",
@@ -2513,7 +2635,23 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Old Bandage
+
+registerItem({
+	"name":"Old Bandage",
+	"category":"Strings",
+	"sell":28,
+	"buy":140,
+	"upgradematerial":{
+		"rarity":2,
+		"difficulty":11,
+		"matk":2,
+		"mdef":1
+	},
+	"flavourtext":"Tattered bandage that's basically falling apart. Kind of grody.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 registerItem({
 	"name":"Glue",
 	"category":"Liquids",
@@ -2637,7 +2775,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Yarn
+
+registerItem({
+	"name":"Yarn",
+	"category":"Strings",
+	"sell":80,
+	"buy":300,
+	"upgradematerial":{
+		"rarity":1,
+		"difficulty":4,
+		"def":1,
+		"matk":1
+	},
+	"flavourtext":"A large ball of yarn.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Fur (L)
 Fur (M)
 Fur (S)
