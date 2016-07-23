@@ -1061,19 +1061,20 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Blk. Tortoise Shell",
 	"category":"Shells and Bones",
-	"sell":,
-	"buy":0,
+	"sell":200,
+	"buy":1600,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"def":
+		"rarity":12,
+		"difficulty":62,
+		"def":26,
+		"mdef":7
 	},
-	"flavourtext":".",
+	"flavourtext":"A shell that is extremely hard. You need to be skilled enough to work on this.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Blk. Tortoise Shell
+})
 
 registerItem({
 	"name":"Golem Stone",
@@ -1152,7 +1153,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Thick Stick
+
+registerItem({
+	"name":"",
+	"category":"Sticks and Stems",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"atk":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Thick Stick
 
 registerItem({
 	"name":"Blue Giant's Glove",
@@ -1888,7 +1903,23 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Ammonite
+
+registerItem({
+	"name":"Ammonite",
+	"category":"Shells and Bones",
+	"sell":3200,
+	"buy":168e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":92,
+		"def":135,
+		"mdef":82,
+		"str":-5
+	},
+	"flavourtext":"Octopirate's ancient friend. Used to endure hardships, but not resistant to magic.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Broken Ice Wall",
@@ -1909,7 +1940,23 @@ registerItem({
 })
 Blue Lion Fur
 Red Lion Fur
-Dragon Bones
+
+registerItem({
+	"name":"Dragon Bones",
+	"category":"Shells and Bones",
+	"sell":1800,
+	"buy":24e3,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":50,
+		"def":10,
+		"mdef":10,
+		"vit":10
+	},
+	"flavourtext":"Ancient dragon bones. Old, but still quite tough. Used for numerous purposes.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Raccoon Leaf",
@@ -1986,7 +2033,23 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Skull
+
+registerItem({
+	"name":"Skull",
+	"category":"Shells and Bones",
+	"sell":120,
+	"buy":960,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":39,
+		"matk":8,
+		"mdef":5,
+		"sickatkP":4
+	},
+	"flavourtext":"A creepy skull. Some people love this kind of stuff, though.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Ghost Hood",
@@ -2004,9 +2067,40 @@ registerItem({
 	"cookingeffects":{}
 })
 Fire Crystal
-Turtle Shell
+
+registerItem({
+	"name":"Turtle Shell",
+	"category":"Shells and Bones",
+	"sell":30,
+	"buy":150,
+	"upgradematerial":{
+		"rarity":2,
+		"difficulty":15,
+		"def":4,
+		"mdef":1,
+		"critP":-3
+	},
+	"flavourtext":"A hard turtle shell. Good when you want to make something hard. (Hey, get your mind out of the gutter!)",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Water Crystal
-Fish Fossil
+
+registerItem({
+	"name":"Fish Fossil",
+	"category":"Shells and Bones",
+	"sell":33,
+	"buy":165,
+	"upgradematerial":{
+		"rarity":3,
+		"difficulty":20,
+		"matk":4,
+		"mdef":1
+	},
+	"flavourtext":"An ancient fish fossil. Some collectors would kill to find one!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Strong Vine
 Plant Stem
 
