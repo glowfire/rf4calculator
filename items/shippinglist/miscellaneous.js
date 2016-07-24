@@ -1425,19 +1425,18 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Scrap Metal+",
 	"category":"Minerals",
-	"sell":,
-	"buy":,
+	"sell":2,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"def":
+		"rarity":2,
+		"difficulty":10,
+		"def":3
 	},
-	"flavourtext":".",
+	"flavourtext":"A super-duper awesomely spectacular piece of scrap metal that's super-duper useless to most people.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Scrap Metal+
+})
 
 registerItem({
 	"name":"Light Ore",
@@ -1611,7 +1610,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Blue Core
+
+registerItem({
+	"name":"",
+	"category":"Jewels",
+	"sell":3e3,
+	"buy":3e4,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"mdef":
+	},
+	"flavourtext":"A  crystal.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Blue Core
 Yellow Core
 Red Core
 Green Core
@@ -2920,12 +2933,96 @@ Sapphire
 Emerald
 Ruby
 Diamond
-Orichalcum
-Platinum
-Gold
-Silver
-Bronze
-Iron
+
+registerItem({
+	"name":"Orichalcum",
+	"category":"Minerals",
+	"sell":3500,
+	"buy":28e3,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":80,
+		"def":95
+	},
+	"flavourtext":"A legendary ore used for making weapons or accessories.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Platinum",
+	"category":"Minerals",
+	"sell":1500,
+	"buy":12e3,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":50,
+		"def":25
+	},
+	"flavourtext":"A type of mineral used in the forging of items and accessories. Extremely rare and hard to find.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Gold",
+	"category":"Minerals",
+	"sell":480,
+	"buy":7800,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":40,
+		"def":10
+	},
+	"flavourtext":"A type of mineral used in the forging of items and accessories. Valuable and highly sought after.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Silver",
+	"category":"Minerals",
+	"sell":320,
+	"buy":3600,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":32,
+		"def":7
+	},
+	"flavourtext":"A type of mineral used in the forging of items and accessories. Valuable and highly sought after.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Bronze",
+	"category":"Minerals",
+	"sell":100,
+	"buy":800,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":15,
+		"def":4
+	},
+	"flavourtext":"A type of mineral used in the forging of items and accessories. Pretty common.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Iron",
+	"category":"Minerals",
+	"sell":20,
+	"buy":200,
+	"upgradematerial":{
+		"rarity":1,
+		"difficulty":2,
+		"def":1
+	},
+	"flavourtext":"A type of mineral used in the forging of items and accessories. Found everywhere.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Scrap Metal",
