@@ -3011,7 +3011,7 @@ registerItem({
 		"atk":55,
 		"matk":50
 	},
-	"flavourtext":"A horn of a demon/ Filled with magical power.",
+	"flavourtext":"A horn of a demon. Filled with magical power.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
