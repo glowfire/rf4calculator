@@ -115,16 +115,53 @@ registerItem({
 })
 
 registerItem({
-	"name":" Ring",
-	"sell":0,
-	"buy":,
+	"name":"Silver Ring",
+	"sell":450,
+	"buy":45e3,
 	"ability":{
-		"atr":,
-		"resP"
+		"atr":["Light","Dark"],
+		"lightresP":50,
+		"darkresP":50
 	},
-	"flavourtext":"Beloved for its simple design.",
-	"craftinglevel":,
-	"materials":[""],
+	"flavourtext":"Beloved for its simple design, but otherwise unremarkable.",
+	"craftinglevel":24,
+	"materials":["Silver","Crystals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Gold Ring",
+	"sell":5200,
+	"ability":{
+		"atr":["Fire","Water","Earth","Wind"],
+		"fireresP":15,
+		"waterresP":15,
+		"earthresP":15,
+		"windresP":15
+	},
+	"flavourtext":"Beloved for its simple design. More expensive than silver.",
+	"craftinglevel":63,
+	"materials":["Orichalcum","Gold","Turnip's Miracle"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Platinum Ring",
+	"sell":7200,
+	"ability":{
+		"atr":["Fire","Water","Earth","Wind","Light","Dark"],
+		"fireresP":10,
+		"waterresP":10,
+		"earthresP":10,
+		"windresP":10,
+		"lightresP":25,
+		"darkresP":25
+	},
+	"flavourtext":"Beloved for its simple design. This platinum type is rare and hard to find.",
+	"craftinglevel":75,
+	"materials":["Dragonic Stone","Platinum"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
@@ -155,6 +192,20 @@ registerItem({
 	"flavourtext":"Dangly earrings. They're so cute when they bobble in the breeze.",
 	"craftinglevel":8,
 	"materials":["Iron","Powders and Spores"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"":
+	},
+	"flavourtext":".",
+	"craftinglevel":,
+	"materials":[""],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
