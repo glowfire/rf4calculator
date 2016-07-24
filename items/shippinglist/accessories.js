@@ -587,16 +587,116 @@ registerItem({
 })
 
 registerItem({
-	"name":" Pendant",
-	"sell":10,
+	"name":"Star Pendant",
+	"sell":1380,
 	"buy":75e3,
 	"ability":{
-		"atr":[""],
-		"resP":33
+		"atr":["Love"],
+		"loveresP":33
 	},
-	"flavourtext":"A pendant. .",
+	"flavourtext":"A star-shaped pendant that shines as bright as a real heavenly body. Increases experience gain.",
+	"craftinglevel":40,
+	"materials":["Silver Pendant","Gold","Love Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Sun Pendant",
+	"sell":1300,
+	"buy":75e3,
+	"ability":{
+		"atr":["Fire"],
+		"fireresP":33
+	},
+	"flavourtext":"A sun-shaped pendant. Increases companions' abilities with its light.",
 	"craftinglevel":,
-	"materials":["Silver Pendant",""],
+	"materials":["Silver Pendant","Gold","Fire Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Field Pendant",
+	"sell":1350,
+	"buy":75e3,
+	"ability":{
+		"atr":["Wind"],
+		"windresP":33
+	},
+	"flavourtext":"A pendant inspired by the wind. Its scent increases the ability of friendly monsters.",
+	"craftinglevel":35,
+	"materials":["Silver Pendant","Gold","Wind Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Dew Pendant",
+	"sell":1400,
+	"buy":75e3,
+	"ability":{
+		"atr":["Water"],
+		"waterresP":33
+	},
+	"flavourtext":"An outdoorsy pendant inspired by dew. Raises attack for farm tools.",
+	"craftinglevel":28,
+	"materials":["Silver Pendant","Gold","Water Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Earth Pendant",
+	"sell":1370,
+	"buy":75e3,
+	"ability":{
+		"atr":["Earth"],
+		"earthresP":33
+	},
+	"flavourtext":"A pendant inspired by earth. Its bounty boosts the effects of recovery items.",
+	"craftinglevel":19,
+	"materials":["Silver Pendant","Gold","Earth Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Heart Pendant",
+	"sell":800,
+	"buy":25e4,
+	"ability":{
+		// None
+	},
+	"flavourtext":"A cute heart-shaped pendant. Warms your heart and increases skill experience gained.",
+	"craftinglevel":40,
+	"materials":["Silver Pendant","Love Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Strange Pendant",
+	"sell":600,
+	"ability":{
+		// None
+	},
+	"flavourtext":"This creepy-looking pendant nullifies your defense and magic defense. So, uh, good luck with that.",
+	"craftinglevel":85,
+	"materials":["Amethyst","Ruby","Minerals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Anette's Necklace",
+	"sell":25e3,
+	"ability":{
+		// None
+	},
+	"flavourtext":"With wearing this necklace, you can move faster. Also, you're kicking up more clouds of dirt. Stop that.", // The first word is unaltered.
+	"craftinglevel":80,
+	"materials":["Rune Sphere Shard","Ancient Orc Cloth","Strings"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
