@@ -15,20 +15,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Charm",
-	"sell":45,
-	"buy":350,
-	"ability":{
-		"critresP":100
-	},
-	"flavourtext":"A charm from the Far East. Protects you from misfortune by blocking critical hits.",
-	"craftinglevel":3,
-	"materials":["Cloths and Skins","Strings"],
-	"pricemultiplier":"E",
-	"category":"Accessory"
-})
-
-registerItem({
 	"name":"Cheap Bracelet",
 	"sell":24,
 	"buy":100,
@@ -736,20 +722,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Badge",
-	"sell":14,
-	"buy":500,
-	"ability":{
-		"vit":3
-	},
-	"flavourtext":"A vintage, collectible badge given out as a consolation prize.",
-	"craftinglevel":6,
-	"materials":["Shards"],
-	"pricemultiplier":"E",
-	"category":"Accessory"
-})
-
-registerItem({
 	"name":"Earrings",
 	"sell":50,
 	"buy":1500,
@@ -761,6 +733,72 @@ registerItem({
 	"flavourtext":"Dangly earrings. They're so cute when they bobble in the breeze.",
 	"craftinglevel":8,
 	"materials":["Iron","Powders and Spores"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Witch Earrings",
+	"sell":1200,
+	"buy":16e4,
+	"ability":{
+		"def":5,
+		"matk":15,
+		"mdef":94,
+		"darkresP":30,
+		"sealresP":50
+	},
+	"flavourtext":"Small, jaggy earrings. Coordinate nicely with a broomstick and pointy hat.",
+	"craftinglevel":30,
+	"materials":["Gold","Emerald","Mysterious Powder"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Magic Earrings",
+	"sell":1400,
+	"buy":425e3,
+	"ability":{
+		"def":10,
+		"matk":25,
+		"mdef":100,
+		"lightresP":30,
+		"dizresP":20,
+		"critresP":20,
+		"sealresP":50
+	},
+	"flavourtext":"Earrings made from dazzling magic stones. Makes even the ugliest of earlobes look nice.",
+	"craftinglevel":45,
+	"materials":["Diamond","Ruby","Minerals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Charm",
+	"sell":45,
+	"buy":350,
+	"ability":{
+		"critresP":100
+	},
+	"flavourtext":"A charm from the Far East. Protects you from misfortune by blocking critical hits.",
+	"craftinglevel":3,
+	"materials":["Cloths and Skins","Strings"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Badge",
+	"sell":14,
+	"buy":500,
+	"ability":{
+		"vit":3
+	},
+	"flavourtext":"A vintage, collectible badge given out as a consolation prize.",
+	"craftinglevel":6,
+	"materials":["Shards"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
