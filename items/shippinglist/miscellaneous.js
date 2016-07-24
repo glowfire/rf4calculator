@@ -1612,23 +1612,79 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Blue Core",
 	"category":"Jewels",
 	"sell":3e3,
 	"buy":3e4,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"mdef":
+		"rarity":13,
+		"difficulty":81,
+		"mdef":77
 	},
-	"flavourtext":"A  crystal.",
+	"flavourtext":"A blue crystal that has magic power. Makes you feel calm.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Blue Core
-Yellow Core
-Red Core
-Green Core
-Rune Crystal*
+})
+
+registerItem({
+	"name":"Yellow Core",
+	"category":"Jewels",
+	"sell":3e3,
+	"buy":3e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":81,
+		"mdef":77
+	},
+	"flavourtext":"A yellow crystal suffused with magic power. Makes you cheerful.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Red Core",
+	"category":"Jewels",
+	"sell":3e3,
+	"buy":3e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":81,
+		"mdef":77
+	},
+	"flavourtext":"A red crystal overflowing with magic power. Makes you energetic.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Green Core",
+	"category":"Jewels",
+	"sell":3e3,
+	"buy":3e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":81,
+		"mdef":77
+	},
+	"flavourtext":"A green crystal with magic power. Makes you more kindly for some reason.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"",
+	"category":"Crystals",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"matk":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Rune Crystal*
 Big Crystal
 
 registerItem({
@@ -1806,7 +1862,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Crystal Skull
+
+registerItem({
+	"name":"Crystal Skull",
+	"category":"Jewels",
+	"sell":4e3,
+	"buy":18e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":95,
+		"matk":60,
+		"mdef":195
+	},
+	"flavourtext":"A crystal in the shape of a skull. Those who love jewels and hate ghosts will be upset by this.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Right Rock Shard",
@@ -2927,12 +2998,96 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Aquamarine
-Amethyst
-Sapphire
-Emerald
-Ruby
-Diamond
+
+registerItem({
+	"name":"Aquamarine",
+	"category":"Jewels",
+	"sell":150,
+	"buy":1500,
+	"upgradematerial":{
+		"rarity":2,
+		"difficulty":11,
+		"mdef":3
+	},
+	"flavourtext":"A gem as blue as the deep sea. Symbolizes calmness.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Amethyst",
+	"category":"Jewels",
+	"sell":50,
+	"buy":500,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":4,
+		"mdef":1
+	},
+	"flavourtext":"A gem long known for its mysterious energy. Symbolizes peace of mind.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Sapphire",
+	"category":"Jewels",
+	"sell":520,
+	"buy":9800,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":42,
+		"mdef":12
+	},
+	"flavourtext":"A gem that comes in different colors such as pink, blue, yellow and green. Symbolizes love.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Emerald",
+	"category":"Jewels",
+	"sell":380,
+	"buy":4800,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":26,
+		"mdef":5
+	},
+	"flavourtext":"A beautiful green-colored gem symbolizing happiness. Those that are clear and smooth are the most valuable.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Ruby",
+	"category":"Jewels",
+	"sell":440,
+	"buy":7e3,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":36,
+		"mdef":8
+	},
+	"flavourtext":"A red-colored gem symbolizing passion. Those that cast star-shaped reflections are particularly valuable.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Diamond",
+	"category":"Jewels",
+	"sell":640,
+	"buy":14400,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":50,
+		"mdef":24
+	},
+	"flavourtext":"A very hard gem known as the 'King of Gemstones.' Symbolizes purity.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Orichalcum",
