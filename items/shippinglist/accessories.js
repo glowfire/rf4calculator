@@ -167,6 +167,163 @@ registerItem({
 })
 
 registerItem({
+	"name":"Shield Ring",
+	"sell":320,
+	"buy":68e3,
+	"ability":{
+		"vit":25
+	},
+	"flavourtext":"A ring used as a shield. Though tough, it only covers a short range. Occasionally reduces damage received to 1.",
+	"craftinglevel":44,
+	"materials":["Blk. Tortoise Shell","Turtle Shell","Minerals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Critical Ring",
+	"sell":750,
+	"buy":65e3,
+	"ability":{
+		"diz":5,
+		"critP":20
+	},
+	"flavourtext":"A ring that raises your chance of landing critical hits. Just by wearing it, you'll know right where to attack.",
+	"craftinglevel":30,
+	"materials":["Gold","Rigid Horn"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Silent Ring",
+	"sell":2600,
+	"buy":19800,
+	"ability":{
+		"sealresP":100
+	},
+	"flavourtext":"A ring that not only resists seals, but places them upon foes as well due to the medicines set into its trim.",
+	"craftinglevel":29,
+	"materials":["Silver","Lamp Squid"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Paralysis Ring",
+	"sell":550,
+	"buy":19800,
+	"ability":{
+		"parresP":100
+	},
+	"flavourtext":"A ring that not only resists paralysis, but inflicts it upon foes as well due to the medicines set into its trim.",
+	"craftinglevel":28,
+	"materials":["Silver","Scorpion Tail"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Poison Ring",
+	"sell":480,
+	"buy":19800,
+	"ability":{
+		"psnresP":100
+	},
+	"flavourtext":"A ring that not only resists poison, but inflicts it upon foes as well due to the medicines set into its trim.",
+	"craftinglevel":27,
+	"materials":["Silver","Poison Powder"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Magic Ring",
+	"sell":1900,
+	"buy":18e4,
+	"ability":{
+		"mdef":50
+	},
+	"flavourtext":"A ring imbued with magical power. Speeds up the time needed to charge.",
+	"craftinglevel":51,
+	"materials":["Platinum","Crystals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Throwing Ring",
+	"sell":1200,
+	"ability":{
+	},
+	"flavourtext":"You can throw an item far away with this ring.",
+	"craftinglevel":33,
+	"materials":["Puppetry Strings","Minerals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Stay-up Ring",
+	"sell":1100,
+	"ability":{
+		"slpresP":-25,
+		"ftgresP":30,
+		"sickresP":30
+	},
+	"flavourtext":"You will no longer yawn with this ring. Hail to short sleepers!",
+	"craftinglevel":46,
+	"materials":["Holy Spore","Minerals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Aquamarine Ring",
+	"sell":580,
+	"buy":19800,
+	"ability":{
+		"atr":["Water"],
+		"waterresP":50
+	},
+	"flavourtext":"A roughly cut stone makes this ring quite attractive.",
+	"craftinglevel":15,
+	"materials":["Silver","Aquamarine"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Amethyst Ring",
+	"sell":450,
+	"buy":19800,
+	"ability":{
+		"atr":["Earth"],
+		"earthresP":50
+	},
+	"flavourtext":"The elegance of the amethyst brings a calmness to the atmosphere.",
+	"craftinglevel":15,
+	"materials":["Silver","Amethyst"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":" Ring",
+	"sell":0,
+	"buy":19800,
+	"ability":{
+		"atr":[""],
+		"resP":50
+	},
+	"flavourtext":".",
+	"craftinglevel":15,
+	"materials":["Silver",""],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
 	"name":"Badge",
 	"sell":14,
 	"buy":500,
