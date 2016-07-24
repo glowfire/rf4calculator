@@ -31,9 +31,11 @@ Object.prototype.getProductionLevel=function(){
     	return productionLevel
 }
 
-// May not work for "+" non-product items, eg Scrap Metal+, Cooking Bread+ etc.
-// Will work for "+" products with different recipe levels than their base products, eg Platinum Sword+, War Hammer+ etc.
-// May not work for "+" products with equal recipe levels as their base products, but there are no known such "+" products.
+// Will work for Greenifer+ and Greenifier et al because they have different recipe levels.
+// Will work for Scrap Metal+ even if Scrap Metal is registered, because the + is accounted for.
+// Will not work for eg Scrap Metal-, because the - is not accounted for.
+// The six varities of mushrooms have identical names, but they are accounted for by the registration function.
+// Should change this function and the registration function to account for the + in Scrap Metal+ and Recipe Breads+.
 Object.prototype.getUniqueNameString = function(){
 	var itemProductionLevel = this.getProductionLevel()
 	var itemName = this.name
