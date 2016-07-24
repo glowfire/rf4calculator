@@ -3436,28 +3436,108 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Magnifying Glass
-Farming Bread+*
-Farming Bread
-Accessory Bread+*
-Accessory Bread
-Weapon Bread+*
-Weapon Bread
-Cooking Bread+*
-Cooking Bread
-Medicine Bread+*
-Medicine Bread
 
 registerItem({
-	"name":"",
-	"category":"",
-	"sell":,
-	"buy":,
-	"upgradematerial":{
-		"rarity":,
-		"":
-	},
-	"flavourtext":".",
+	"name":"Magnifying Glass",
+	"category":"Magnifying Glass",
+	"sell":500,
+	"buy":2e3,
+	"flavourtext":"An item used to check soil quality. Equip and examine fields to learn more about your crops.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Farming Bread+",
+	"category":"Recipe Bread",
+	"sell":3e3,
+	"flavourtext":"A nicely baked Farming Bread. Teaches you a difficult recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Farming Bread",
+	"category":"Recipe Bread",
+	"sell":250,
+	"buy":900,
+	"flavourtext":"A magic bread that teaches you new recipes. You can learn one (simple) recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Accessory Bread+",
+	"category":"Recipe Bread",
+	"sell":3e3,
+	"flavourtext":"A nicely baked Accessory Bread. Teaches you a difficult recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Accessory Bread",
+	"category":"Recipe Bread",
+	"sell":150,
+	"buy":600,
+	"flavourtext":"A magic bread that teaches you new recipes. You can learn one (simple) recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Weapon Bread+",
+	"category":"Recipe Bread",
+	"sell":3e3,
+	"flavourtext":"A nicely baked Weapon Bread. Teaches you a difficult recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Weapon Bread",
+	"category":"Recipe Bread",
+	"sell":180,
+	"buy":700,
+	"flavourtext":"A magic bread that teaches you new recipes. You can learn one (simple) recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Cooking Bread+",
+	"category":"Recipe Bread",
+	"sell":3e3,
+	"flavourtext":"A nicely baked Cooking Bread. Teaches you a difficult recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Cooking Bread",
+	"category":"Recipe Bread",
+	"sell":100,
+	"buy":400,
+	"flavourtext":"A nicely baked Cooking Bread. Teaches you a difficult recipe appropriate to your skill.", // Exactly like the + version
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Medicine Bread+",
+	"category":"Recipe Bread",
+	"sell":3e3,
+	"flavourtext":"A nicely baked Medicine Bread. Teaches you a difficult recipe appropriate to your skill.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Medicine Bread",
+	"category":"Recipe Bread",
+	"sell":120,
+	"buy":320,
+	"flavourtext":"A magic bread that teaches you new recipes. You can learn one (simple) recipe appropriate to your skill.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
