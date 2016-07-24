@@ -2,6 +2,19 @@
 // This list contains the items listed in the fifth section.
 
 registerItem({
+	"name":"Engagement Ring",
+	"sell":1,
+	"ability":{
+		"loveresP":50
+	},
+	"flavourtext":"Use it to propose to your #1 love. Be sure you also prepare a double bed! Well...after they say yes, anyway.",
+	"craftinglevel":20,
+	"materials":["Minerals","Jewels"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
 	"name":"Charm",
 	"sell":45,
 	"buy":350,
@@ -38,7 +51,7 @@ registerItem({
 	"ability":{
 		"mdef":5
 	},
-	"flavourtext":"An old, rusty bracelet. Slight raises magic defense.",
+	"flavourtext":"An old, rusty bracelet. Slightly raises magic defense.",
 	"craftinglevel":5,
 	"materials":["Minerals"],
 	"pricemultiplier":"E",
@@ -46,15 +59,102 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
+	"name":"Bronze Bracelet",
+	"sell":135,
+	"buy":8500,
+	"ability":{
+		"mdef":35
+	},
+	"flavourtext":"A heavy, bronze bracelet. Raises magic defense for a little bit.",
+	"craftinglevel":10,
+	"materials":["Bronze","Cloths and Skins"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Silver Bracelet",
+	"sell":390,
+	"buy":27200,
+	"ability":{
+		"mdef":62
+	},
+	"flavourtext":"A silver bracelet. Raises magic defense.",
+	"craftinglevel":25,
+	"materials":["Silver","Cloths and Skins"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Gold Bracelet",
+	"sell":600,
+	"buy":72800,
+	"ability":{
+		"mdef":88
+	},
+	"flavourtext":"A golden bracelet. Raises magic defense quite considerably.",
+	"craftinglevel":39,
+	"materials":["Gold","Cloths and Skins"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Platinum Bracelet",
+	"sell":1800,
+	"buy":102e4,
+	"ability":{
+		"mdef":120
+	},
+	"flavourtext":"A platinum bracelet. Greatly raises magic defense.",
+	"craftinglevel":50,
+	"materials":["Platinum","Cloths and Skins"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":" Ring",
+	"sell":0,
 	"buy":,
 	"ability":{
-		"":
+		"atr":,
+		"resP"
 	},
-	"flavourtext":".",
+	"flavourtext":"Beloved for its simple design.",
 	"craftinglevel":,
 	"materials":[""],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Badge",
+	"sell":14,
+	"buy":500,
+	"ability":{
+		"vit":3
+	},
+	"flavourtext":"A vintage, collectible badge given out as a consolation prize.",
+	"craftinglevel":6,
+	"materials":["Shards"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Earrings",
+	"sell":50,
+	"buy":1500,
+	"ability":{
+		"matk":5,
+		"mdef":15,
+		"sealresP":5
+	},
+	"flavourtext":"Dangly earrings. They're so cute when they bobble in the breeze.",
+	"craftinglevel":8,
+	"materials":["Iron","Powders and Spores"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
