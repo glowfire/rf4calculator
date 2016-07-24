@@ -3368,6 +3368,8 @@ registerItem({
 	},
 	"flavourtext":"A large ball of yarn.",
 	"pricemultiplier":"E", /// unknown
+	"craftinglevel":6,
+	"materials":["Furs"],
 	"cookingeffects":{}
 })
 
