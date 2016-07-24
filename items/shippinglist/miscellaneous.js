@@ -1359,22 +1359,55 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Penguin Down",
 	"category":"Furs",
-	"sell":,
-	"buy":,
+	"sell":150,
+	"buy":1050,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"def":,
-		"resP":
+		"rarity":11,
+		"difficulty":66,
+		"def":30,
+		"mdef":8,
+		"dizresP":18
 	},
-	"flavourtext":".",
+	"flavourtext":'Down from an emperor penguin. "Emperor" is not their title, but their name.',
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Penguin Down
-Yellow Down
-Quality Puffy Fur
+})
+
+registerItem({
+	"name":"Yellow Down",
+	"category":"Furs",
+	"sell":40,
+	"buy":240,
+	"upgradematerial":{
+		"rarity":3,
+		"difficulty":17,
+		"def":2,
+		"mdef":2,
+		"dizresP":5
+	},
+	"flavourtext":"Soft, feathery duck down. Looks outstanding.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Quality Puffy Fur",
+	"category":"Furs",
+	"sell":80,
+	"buy":560,
+	"upgradematerial":{
+		"rarity":6,
+		"difficulty":36,
+		"def":5,
+		"mdef":3,
+		"dizresP":8
+	},
+	"flavourtext":"Really puffy fur. Like, the puffiest of puff. It's really puffy for sure!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Stick",
@@ -1390,7 +1423,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Scrap Metal+
+
+registerItem({
+	"name":"",
+	"category":"Minerals",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"difficulty":,
+		"def":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})Scrap Metal+
 
 registerItem({
 	"name":"Light Ore",
@@ -1827,7 +1874,24 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Lightning Mane
+
+registerItem({
+	"name":"Lightning Mane",
+	"category":"Furs",
+	"sell":700,
+	"buy":12e3,
+	"upgradematerial":{
+		"rarity":5,
+		"difficulty":35,
+		"def":7,
+		"mdef":6,
+		"vit":4,
+		"dizresP":20
+	},
+	"flavourtext":"A mane crackling with electricity. It'll shock you if you touch it.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Ambrosia's Thorns",
@@ -2001,7 +2065,25 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Chest Hair
+
+registerItem({
+	"name":"Chest Hair",
+	"category":"Furs",
+	"sell":3600,
+	"buy":196e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":91,
+		"atk":25,
+		"def":110,
+		"mdef":60,
+		"int":-5,
+		"dizresP":25
+	},
+	"flavourtext":"A Greater Demon's wild chest hair. So masculine!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Icy Nose",
@@ -2057,8 +2139,42 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Blue Lion Fur
-Red Lion Fur
+
+registerItem({
+	"name":"Blue Lion Fur",
+	"category":"Furs",
+	"sell":2800,
+	"buy":75e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":92,
+		"def":35,
+		"matk":10,
+		"mdef":105,
+		"dizresP":20
+	},
+	"flavourtext":"Beautiful blue lion fur. The sparkling coat and dark blue hue symbolize wisdom.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Red Lion Fur",
+	"category":"Furs",
+	"sell":2800,
+	"buy":75e3,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":92,
+		"atk":10,
+		"def":105,
+		"mdef":35,
+		"dizresP":20
+	},
+	"flavourtext":"Beautiful red lion fur. The burning red color symbolizes strength.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Dragon Bones",
@@ -2094,7 +2210,24 @@ registerItem({
 Love Crystal
 Dark Crystal
 Light Crystal
-Wooly Furball
+
+registerItem({
+	"name":"Wooly Furball",
+	"category":"Furs",
+	"sell":120,
+	"buy":960,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":41,
+		"def":8,
+		"mdef":4,
+		"dizresP":16,
+		"slpatkP":1
+	},
+	"flavourtext":"Fur dropped by a Wooly. Inconceivably soft.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Small Crystal
 registerItem({
 	"name":"Fairy Dust",
@@ -2299,7 +2432,23 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Fur
+
+registerItem({
+	"name":"Fur",
+	"category":"Furs",
+	"sell":25,
+	"buy":120,
+	"upgradematerial":{
+		"rarity":1,
+		"difficulty":9,
+		"def":2,
+		"mdef":1,
+		"dizresP":2
+	},
+	"flavourtext":"Stiffly textured fur. Slightly matted.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 Wind Crystal
 
 registerItem({
@@ -2332,7 +2481,24 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Quality Fur
+
+registerItem({
+	"name":"Quality Fur",
+	"category":"Furs",
+	"sell":51,
+	"buy":300,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":23,
+		"def":3,
+		"mdef":2,
+		"dizresP":10
+	},
+	"flavourtext":"Warm, soft and shiny fur. Raises resistance to knockouts when used in upgrades.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 registerItem({
 	"name":"Wolf Fang",
 	"category":"Claws and Fangs",
@@ -2791,9 +2957,57 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Fur (L)
-Fur (M)
-Fur (S)
+
+registerItem({
+	"name":"Fur (L)",
+	"category":"Furs",
+	"sell":700,
+	"buy":3800,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":52,
+		"def":10,
+		"mdef":5,
+		"dizresP":25,
+		"slpatkP":3
+	},
+	"flavourtext":"Wooly's fur. Used as yarn.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Fur (M)",
+	"category":"Furs",
+	"sell":200,
+	"buy":1400,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":35,
+		"def":5,
+		"mdef":3,
+		"dizresP":10
+	},
+	"flavourtext":"Wooly's fur. Used as yarn.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Fur (S)",
+	"category":"Furs",
+	"sell":6,
+	"buy":30,
+	"upgradematerial":{
+		"rarity":0,
+		"difficulty":1,
+		"vit":1,
+		"dizresP":1
+	},
+	"flavourtext":"Wooly's fur. Used as yarn.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Fodder",
