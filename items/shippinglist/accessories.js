@@ -505,9 +505,9 @@ registerItem({
 	"ability":{
 		"atr":["Fire"],
 		"fireresP":100,
-		"resP":-50
+		"waterresP":-50
 	},
-	"flavourtext":"A ring imbued with the magical power of fire. It blocks fire damage, but makes you vulnerable to  damage.",
+	"flavourtext":"A ring imbued with the magical power of fire. It blocks fire damage, but makes you vulnerable to water damage.",
 	"craftinglevel":95,
 	"materials":["Orichalcum","Fire Crystal"],
 	"pricemultiplier":"E",
@@ -519,10 +519,10 @@ registerItem({
 	"sell":5e3,
 	"ability":{
 		"atr":["Wind"],
-		"windresP":100,
-		"resP":-50
+		"earthresP":-50,
+		"windresP":100
 	},
-	"flavourtext":"A ring imbued with the magical power of wind. It blocks wind damage, but makes you vulnerable to  damage.",
+	"flavourtext":"A ring imbued with the magical power of wind. It blocks wind damage, but makes you vulnerable to earth damage.",
 	"craftinglevel":93,
 	"materials":["Orichalcum","Wind Crystal"],
 	"pricemultiplier":"E",
@@ -530,31 +530,73 @@ registerItem({
 })
 
 registerItem({
-	"name":" Ring",
+	"name":"Water Ring",
 	"sell":5e3,
 	"ability":{
-		"atr":[""],
-		"resP":100,
-		"resP":-50
+		"atr":["Water"],
+		"fireresP":-50,
+		"waterresP":100
 	},
-	"flavourtext":"A ring imbued with the magical power of . It blocks  damage, but makes you vulnerable to  damage.",
-	"craftinglevel":9,
-	"materials":["Orichalcum"," Crystal"],
+	"flavourtext":"A ring imbued with the magical power of water. It blocks water damage, but makes you vulnerable to fire damage.",
+	"craftinglevel":96,
+	"materials":["Orichalcum","Water Crystal"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
 
 registerItem({
-	"name":" Ring",
+	"name":"Earth Ring",
 	"sell":5e3,
 	"ability":{
-		"atr":[""],
-		"resP":100,
-		"resP":-50
+		"atr":["Earth"],
+		"earthresP":100,
+		"windresP":-50
 	},
-	"flavourtext":"A ring imbued with the magical power of . It blocks  damage, but makes you vulnerable to  damage.",
-	"craftinglevel":9,
-	"materials":["Orichalcum"," Crystal"],
+	"flavourtext":"A ring imbued with the magical power of earth. It blocks earth damage, but makes you vulnerable to wind damage.",
+	"craftinglevel":94,
+	"materials":["Orichalcum","Earth Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Happy Ring",
+	"sell":1800,
+	"ability":{
+		// None
+	},
+	"flavourtext":"A ring that brings you happiness. Increases your chance of finding items.",
+	"craftinglevel":30,
+	"materials":["Silver","4-Leaf Clover"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Silver Pendant",
+	"sell":380,
+	"buy":5e3,
+	"ability":{
+		"matk":12
+	},
+	"flavourtext":"A silver pendant. Simple but elegant in design.",
+	"craftinglevel":20,
+	"materials":["Silver"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":" Pendant",
+	"sell":10,
+	"buy":75e3,
+	"ability":{
+		"atr":[""],
+		"resP":33
+	},
+	"flavourtext":"A pendant. .",
+	"craftinglevel":,
+	"materials":["Silver Pendant",""],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
