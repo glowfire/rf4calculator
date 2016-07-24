@@ -467,6 +467,26 @@ registerItem({
 })
 
 registerItem({
+	"name":"Diamond Brooch",
+	"sell":28e3,
+	"ability":{
+		"psnresP":100,
+		"sealresP":100,
+		"parresP":100,
+		"slpresP":100,
+		"ftgresP":100,
+		"sickresP":100,
+		"faintresP":100,
+		"drainresP":100
+	},
+	"flavourtext":"A golden brooch with scattered diamonds. Enjoy its smooth lines and beautiful glimmer. Resists all status ailments.",
+	"craftinglevel":77,
+	"materials":["Orichalcum","Diamond"],/////////////
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
 	"name":"Badge",
 	"sell":14,
 	"buy":500,
