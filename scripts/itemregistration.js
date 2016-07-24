@@ -37,6 +37,9 @@ Object.prototype.getProductionLevel=function(){
 Object.prototype.getUniqueNameString = function(){
 	var itemProductionLevel = this.getProductionLevel()
 	var itemName = this.name
+	if (itemName.slice(-1)==="+"){
+		itemName+="plus"
+	}
 	return itemName.getModifiedNameString(itemProductionLevel)
 }
 
