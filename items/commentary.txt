@@ -11,3 +11,5 @@ The rock shards of Uno and Sano, Broken Ice Wall may have uncommon upgrade mater
 Should check if their upgrade stats are not unique.
 
 The liquids may have cooking effects
+
+The registration function does not work for Scrap Metal+ and Recipe Bread+.
