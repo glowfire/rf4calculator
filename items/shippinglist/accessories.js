@@ -790,6 +790,104 @@ registerItem({
 })
 
 registerItem({
+	"name":"Holy Amulet",
+	"sell":2600,
+	"buy":498e3,
+	"ability":{
+		"atr":["Dark"],
+		"mdef":80,
+		"darkresP":80
+	},
+	"flavourtext":"A charm that is said to protect one from danger.",
+	"craftinglevel":55,
+	"materials":["Platinum","Diamond"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Rosary",
+	"sell":1580,
+	"buy":78e3,
+	"ability":{
+		// None
+	},
+	"flavourtext":"An accessory bearing a holy cross, used for prayers. Prevents most monsters from appearing at all.",
+	"craftinglevel":68,
+	"materials":["Silver","Puppetry Strings"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Talisman",
+	"sell":2100,
+	"buy":6e4,
+	"ability":{
+		// None
+	},
+	"flavourtext":"A type of protective charm. Reverses status effects such as poison, paralysis, fatigue and cold.",
+	"craftinglevel":71,
+	"materials":["Rafflesia Petal","Ambrosia's Thorns","Powders and Spores","Crystals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Magic Charm",
+	"sell":800,
+	"buy":15e4,
+	"ability":{
+		// None
+	},
+	"flavourtext":"A must-have charm among magic knights. Favors either attack or magic attack -- whichever is stronger.",
+	"craftinglevel":66,
+	"materials":["Round Stone","Turnip's Miracle","Strings"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Leather Belt",
+	"sell":27,
+	"buy":1600,
+	"ability":{
+		"def":15
+	},
+	"flavourtext":"An ordinary leather belt of the sort one can find almost anywhere. Raises defensive skills.",
+	"craftinglevel":13,
+	"materials":["Cloths and Skins","Shards"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Lucky Strike",
+	"sell":6200,
+	"ability":{
+		"critP":100
+	},
+	"flavourtext":"Brings you good luck. Grants a higher than average chance of landing critical hits.",
+	"craftinglevel":78,
+	"materials":["Critical Ring","Tablet of Truth","Dangerous Scissors","Minerals"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Champ Belt",
+	"sell":720,
+	"ability":{
+		"vit":120
+	},
+	"flavourtext":"An honorary belt given to champions. Greatly increases maximum HP.",
+	"craftinglevel":58,
+	"materials":["Warrior's Proof","Proof of Rank",],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
 	"name":"Badge",
 	"sell":14,
 	"buy":500,
