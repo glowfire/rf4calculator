@@ -309,16 +309,159 @@ registerItem({
 })
 
 registerItem({
-	"name":" Ring",
-	"sell":0,
+	"name":"Emerald Ring",
+	"sell":850,
 	"buy":19800,
 	"ability":{
-		"atr":[""],
-		"resP":50
+		"atr":["Wind"],
+		"windresP":50
 	},
-	"flavourtext":".",
+	"flavourtext":"The bright-shining emerald beautifully adorns your finger.",
 	"craftinglevel":15,
-	"materials":["Silver",""],
+	"materials":["Silver","Emerald"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Sapphire Ring",
+	"sell":1e3,
+	"buy":19800,
+	"ability":{
+		"atr":["Light"],
+		"lightresP":50
+	},
+	"flavourtext":"A ring with a beautifully shining inset sapphire.",
+	"craftinglevel":15,
+	"materials":["Silver","Sapphire"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Ruby Ring",
+	"sell":900,
+	"buy":19800,
+	"ability":{
+		"atr":["Fire"],
+		"fireresP":50
+	},
+	"flavourtext":"A ring with a mysterious and alluring design.",
+	"craftinglevel":15,
+	"materials":["Silver","Ruby"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Cursed Ring",
+	"sell":420,
+	"buy":19800,
+	"ability":{
+		"atr":["dark"],
+		"darkresP":50
+	},
+	"flavourtext":"A cursed ring with spikes that hurt your fingers.",
+	"craftinglevel":15,
+	"materials":["Silver","Shells and Bones"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Diamond Ring",
+	"sell":5e3,
+	"ability":{
+		"mdef":180,
+		"vit":50,
+		"slpresP":100,
+		"ftgresP":100,
+		"sickresP":100,
+		"drainresP":100
+	},
+	"flavourtext":"A glittering ring. Protects against sleepiness, fatigue, illness and HP absorption.",
+	"craftinglevel":60,
+	"materials":["Orichalcum","Diamond"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Aquamarine Brooch",
+	"sell":2e3,
+	"buy":498e3,
+	"ability":{
+		"atr":["Water"],
+		"mdef":80,
+		"waterresP":80
+	},
+	"flavourtext":"A brooch in the color of the deepest sea.",
+	"craftinglevel":55,
+	"materials":["Platinum","Aquamarine"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Amethyst Brooch",
+	"sell":2e3,
+	"buy":498e3,
+	"ability":{
+		"atr":["Earth"],
+		"mdef":80,
+		"earthresP":80
+	},
+	"flavourtext":"A brooch with a strangely soothing effect.",
+	"craftinglevel":55,
+	"materials":["Platinum","Amethyst"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Emerald Brooch",
+	"sell":2300,
+	"buy":498e3,
+	"ability":{
+		"atr":["Wind"],
+		"mdef":80,
+		"windresP":80
+	},
+	"flavourtext":"A beautiful emerald brooch with an airy sheen to it.",
+	"craftinglevel":55,
+	"materials":["Platinum","Emerald"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Sapphire Brooch",
+	"sell":2500,
+	"buy":498e3,
+	"ability":{
+		"atr":["Light"],
+		"mdef":80,
+		"lightresP":80
+	},
+	"flavourtext":"A lovely pink-colored sapphire brooch with a shell motif.",
+	"craftinglevel":55,
+	"materials":["Platinum","Sapphire"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Ruby Brooch",
+	"sell":2350,
+	"buy":498e3,
+	"ability":{
+		"atr":["Fire"],
+		"mdef":80,
+		"fireresP":80
+	},
+	"flavourtext":"A brooch shining with ruby-red light. When put under the sun, it glitters like a star.",
+	"craftinglevel":55,
+	"materials":["Platinum","Ruby"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
