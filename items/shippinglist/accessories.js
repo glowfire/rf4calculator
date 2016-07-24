@@ -29,22 +29,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Work Gloves",
-	"sell":13,
-	"buy":1500,
-	"ability":{
-		"atk":5,
-		"diz":1,
-		"stunP":10
-	},
-	"flavourtext":"Protects your hands from blisters. A must-have for farming.",
-	"craftinglevel":4,
-	"materials":["Cloths and Skins"],
-	"pricemultiplier":"E",
-	"category":"Accessory"
-})
-
-registerItem({
 	"name":"Cheap Bracelet",
 	"sell":24,
 	"buy":100,
@@ -697,6 +681,56 @@ registerItem({
 	"flavourtext":"With wearing this necklace, you can move faster. Also, you're kicking up more clouds of dirt. Stop that.", // The first word is unaltered.
 	"craftinglevel":80,
 	"materials":["Rune Sphere Shard","Ancient Orc Cloth","Strings"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Work Gloves",
+	"sell":13,
+	"buy":1500,
+	"ability":{
+		"atk":5,
+		"diz":1,
+		"stunP":10
+	},
+	"flavourtext":"Protects your hands from blisters. A must-have for farming.",
+	"craftinglevel":4,
+	"materials":["Cloths and Skins"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Gloves",
+	"sell":170,
+	"buy":12e4,
+	"ability":{
+		"atk":40,
+		"def":42,
+		"diz":2,
+		"stunP":30
+	},
+	"flavourtext":"Fine quality leather gloves. Their soft green color is attractive to girls.",
+	"craftinglevel":18,
+	"materials":["Giant's Gloves"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Power Gloves",
+	"sell":420,
+	"buy":312e3,
+	"ability":{
+		"atk":72,
+		"def":58,
+		"diz":3,
+		"stunP":50
+	},
+	"flavourtext":"Gloves that fit snugly on one's hands. Used to carry heavy things. They're so bad!",
+	"craftinglevel":42,
+	"materials":["Giant's Gloves","Blue Giant's Glove"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
