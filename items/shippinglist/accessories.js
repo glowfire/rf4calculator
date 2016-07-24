@@ -481,7 +481,80 @@ registerItem({
 	},
 	"flavourtext":"A golden brooch with scattered diamonds. Enjoy its smooth lines and beautiful glimmer. Resists all status ailments.",
 	"craftinglevel":77,
-	"materials":["Orichalcum","Diamond"],/////////////
+	"materials":["Orichalcum","Light Ore","Rune Crystal","Diamond"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Dolphin Brooch",
+	"sell":15e3,
+	"ability":{
+		// None
+	},
+	"flavourtext":"A lovely brooch made by a master craftsman. If one of your family equips it, it enhances their status.",
+	"craftinglevel":88,
+	"materials":["White Stone","Orichalcum"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Fire Ring",
+	"sell":5e3,
+	"ability":{
+		"atr":["Fire"],
+		"fireresP":100,
+		"resP":-50
+	},
+	"flavourtext":"A ring imbued with the magical power of fire. It blocks fire damage, but makes you vulnerable to  damage.",
+	"craftinglevel":95,
+	"materials":["Orichalcum","Fire Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Wind Ring",
+	"sell":5e3,
+	"ability":{
+		"atr":["Wind"],
+		"windresP":100,
+		"resP":-50
+	},
+	"flavourtext":"A ring imbued with the magical power of wind. It blocks wind damage, but makes you vulnerable to  damage.",
+	"craftinglevel":93,
+	"materials":["Orichalcum","Wind Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":" Ring",
+	"sell":5e3,
+	"ability":{
+		"atr":[""],
+		"resP":100,
+		"resP":-50
+	},
+	"flavourtext":"A ring imbued with the magical power of . It blocks  damage, but makes you vulnerable to  damage.",
+	"craftinglevel":9,
+	"materials":["Orichalcum"," Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":" Ring",
+	"sell":5e3,
+	"ability":{
+		"atr":[""],
+		"resP":100,
+		"resP":-50
+	},
+	"flavourtext":"A ring imbued with the magical power of . It blocks  damage, but makes you vulnerable to  damage.",
+	"craftinglevel":9,
+	"materials":["Orichalcum"," Crystal"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
