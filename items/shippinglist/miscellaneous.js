@@ -1672,20 +1672,34 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Rune Crystal",
 	"category":"Crystals",
-	"sell":,
-	"buy":,
+	"sell":9800,
 	"upgradematerial":{
-		"rarity":,
-		"difficulty":,
-		"matk":
+		"rarity":14,
+		"difficulty":89,
+		"matk":100
 	},
-	"flavourtext":".",
+	"flavourtext":"Runes that crystalized naturally. Feels warm somehow.",
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
-})Rune Crystal*
-Big Crystal
+})
+
+registerItem({
+	"name":"Big Crystal",
+	"category":"Crystals",
+	"sell":1600,
+	"buy":16e3,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":83,
+		"atk":40,
+		"matk":40
+	},
+	"flavourtext":"A big crystal made of something that's been mixed together. It is said that it's made up of people's thoughts.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Malm Claw",
@@ -2066,7 +2080,24 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Electro Crystal
+
+registerItem({
+	"name":"Electro Crystal",
+	"category":"Crystals",
+	"sell":3100,
+	"buy":16e4,
+	"upgradematerial":{
+		"rarity":15,
+		"difficulty":93,
+		"atk":60,
+		"matk":150,
+		"mdef":-5,
+		"paratkP":35
+	},
+	"flavourtext":"An electrified crystal found within a Bane Dragon. Don't hold it with your bare hands!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Moving Branch",
@@ -2291,9 +2322,53 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Love Crystal
-Dark Crystal
-Light Crystal
+
+registerItem({
+	"name":"Love Crystal",
+	"category":"Crystals",
+	"sell":255,
+	"buy":2080,
+	"upgradematerial":{
+		"rarity":9,
+		"difficulty":50,
+		"drainatkP":3
+	},
+	"flavourtext":"Crystallized love that brings happiness. Generously lets you take your foes' HP when you attack.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Dark Crystal",
+	"category":"Crystals",
+	"sell":240,
+	"buy":1440,
+	"upgradematerial":{
+		"rarity":3,
+		"difficulty":25,
+		"str":3,
+		"vit":3
+	},
+	"flavourtext":"Crystallized darkness magic. Turns everything light to dark.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
+registerItem({
+	"name":"Light Crystal",
+	"category":"Crystals",
+	"sell":1200,
+	"buy":3e3,
+	"upgradematerial":{
+		"rarity":12,
+		"difficulty":25,
+		"vit":3,
+		"int":3
+	},
+	"flavourtext":"Crystallized light magic. Naturally luminous.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Wooly Furball",
@@ -2312,7 +2387,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Small Crystal
+
+registerItem({
+	"name":"Small Crystal",
+	"category":"Crystals",
+	"sell":12e3,
+	"buy":12e4,
+	"upgradematerial":{
+		"rarity":13,
+		"difficulty":80,
+		"atk":80
+	},
+	"flavourtext":"Runes that have crystallized over the years. Very rare.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
+
 registerItem({
 	"name":"Fairy Dust",
 	"category":"Powders and Spores",
@@ -2402,7 +2492,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Fire Crystal
+
+registerItem({
+	"name":"Fire Crystal",
+	"category":"Crystals",
+	"sell":200,
+	"buy":1600,
+	"upgradematerial":{
+		"rarity":7,
+		"difficulty":25,
+		"atk":5
+	},
+	"flavourtext":"Crystallized fire magic. Extremely hot. Must not be touched with bare hands.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Turtle Shell",
@@ -2420,7 +2524,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Water Crystal
+
+registerItem({
+	"name":"Water Crystal",
+	"category":"Crystals",
+	"sell":300,
+	"buy":2400,
+	"upgradematerial":{
+		"rarity":11,
+		"difficulty":25,
+		"matk":5
+	},
+	"flavourtext":"Crystallized water magic. Easily broken, so must be handled with care.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Fish Fossil",
@@ -2533,7 +2651,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Wind Crystal
+
+registerItem({
+	"name":"Wind Crystal",
+	"category":"Crystals",
+	"sell":260,
+	"buy":2150,
+	"upgradematerial":{
+		"rarity":10,
+		"difficulty":25,
+		"mdef":5
+	},
+	"flavourtext":"Crystallized wind magic. Constantly cushioned in fierce, ravaging winds.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Bird's Feather",
@@ -2820,7 +2952,22 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Magic Crystal
+
+registerItem({
+	"name":"Magic Crystal",
+	"category":"Crystals",
+	"sell":58,
+	"buy":350,
+	"upgradematerial":{
+		"rarity":4,
+		"difficulty":27,
+		"matk":5,
+		"mdef":1
+	},
+	"flavourtext":"Crystallized magic. Often dissolved before use.",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Magic Powder",
@@ -2868,7 +3015,21 @@ registerItem({
 	"pricemultiplier":"E", /// unknown
 	"cookingeffects":{}
 })
-Earth Crystal
+
+registerItem({
+	"name":"Earth Crystal",
+	"category":"Crystals",
+	"sell":250,
+	"buy":2e3,
+	"upgradematerial":{
+		"rarity":8,
+		"difficulty":25,
+		"def":5
+	},
+	"flavourtext":"Crystallized earth magic. Hard as a rock. Harder, actually!",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
 
 registerItem({
 	"name":"Gunpowder",
@@ -3286,3 +3447,17 @@ Cooking Bread+*
 Cooking Bread
 Medicine Bread+*
 Medicine Bread
+
+registerItem({
+	"name":"",
+	"category":"",
+	"sell":,
+	"buy":,
+	"upgradematerial":{
+		"rarity":,
+		"":
+	},
+	"flavourtext":".",
+	"pricemultiplier":"E", /// unknown
+	"cookingeffects":{}
+})
