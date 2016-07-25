@@ -359,3 +359,14 @@ function allMaterialsBuyable(materialsArray){
         }
         return foo
 }
+
+function allMaterialsSpecific(materialsArray){
+	var foo=true
+	for (i=0;i<materialsArray.length;i++){
+		if (materialsArray[i].isAnItem()!==true){
+			foo=false;
+			break;
+		}
+        }
+        return foo
+}
