@@ -77,6 +77,7 @@ Array.prototype.killDuplicates = function() {
 }
 
 masterItemList={};
+masterCategoryList={};
 masterNameList=[];
 productMaterialMapping={};
 normalNameList=[];
@@ -92,6 +93,20 @@ function registerItem(item){
 		if (nonUniqueNames.indexOf(normalName)<0){
 			nonUniqueNames.push(normalName)
 		}
+	}
+	
+	if (masterCategoryList[item.category]!==undefined){
+		masterCategoryList[item.category].membershipList.push(item)
+		if (masterCategoryList[item.category].minSell>item.sell){
+			masterCategoryList[item.category].minSell=item.sell
+		}
+		if (masterCategoryList[item.category].maxSell<item.sell){
+			masterCategoryList[item.category].maxSell=item.sell
+		}
+	} else {
+		masterCategoryList[item.category].membershipList=[item]
+		masterCategoryList[item.category].minSell=item.sell
+		masterCategoryList[item.category].maxSell=item.sell
 	}
 	
 	////This part maps products to materials
