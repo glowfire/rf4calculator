@@ -94,20 +94,28 @@ function createMaterialTable(){
 	
 	function createMaterialRow(item,index){
 		
-		if (masterCategoryList[item]!==undefined){} else {
+		var materialRow = document.createElement("tr");
+		materialTable.appendChild(materialRow);
+		
+		function appendMaterialRow(string){
+			var c = document.createElement('td');
+			materialRow.appendChild(c);
+			c.innerHTML=string;
+		}
+		
+		appendMaterialRow(index+1);
+		appendMaterialRow(item);
+		
+		if (masterCategoryList[item]!==undefined){
+			
+			var c34 = document.createElement('td');
+			c34.colSpan=2
+			materialRow.appendChild(c34);
+			c34.innerHTML="Varies";
+			
+		} else {
 			var currentMaterial = item.convertStringToItem();
-		
-			var materialRow = document.createElement("tr");
-			materialTable.appendChild(materialRow);
-		
-			function appendMaterialRow(string){
-				var c = document.createElement('td');
-				materialRow.appendChild(c);
-				c.innerHTML=string;
-			}
-		
-			appendMaterialRow(index+1);
-			appendMaterialRow(item);
+			
 			if (currentMaterial.buy!==undefined){
 				appendMaterialRow(currentMaterial.buy);
 				appendMaterialRow(Math.ceil(currentMaterial.buy)*.9);
