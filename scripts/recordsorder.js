@@ -49,7 +49,7 @@ function getItemInfo(){
 	document.getElementById("currentItemDiv").innerHTML = '';
 	showBasicStats()
 	if (currentItem.materials!==undefined){
-		createMaterialTable()
+		//createMaterialTable()
 	}
 	//document.getElementById("dependantDiv").innerHTML = '';
 	getEffectsTable()
@@ -60,5 +60,5 @@ function getItemInfo(){
 		currentRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
 		showRecipesOfItem();
 	}
-	//getProfitTable()
+	getProfitTable()
 }
