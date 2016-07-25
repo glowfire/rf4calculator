@@ -60,5 +60,5 @@ function getItemInfo(){
 		currentRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
 		showRecipesOfItem();
 	}
-	getProfitTable()
+	//getProfitTable()
 }
