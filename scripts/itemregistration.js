@@ -104,7 +104,7 @@ function registerItem(item){
 			masterCategoryList[item.category].maxSell=item.sell
 		}
 	} else {
-		masterCategoryList[item.category].membershipList=[item]
+		masterCategoryList[item.category]=[item]
 		masterCategoryList[item.category].minSell=item.sell
 		masterCategoryList[item.category].maxSell=item.sell
 	}
