@@ -106,9 +106,9 @@ function createMaterialTable(){
 		appendMaterialRow(index+1);
 		appendMaterialRow(item);
 		
-		if (masterCategoryList[item.lettersOnly()]!==undefined){
+		if (masterCategoryList[item]!==undefined){
 			
-			var currentCategory = masterCategoryList[item.lettersOnly()];
+			var currentCategory = masterCategoryList[item];
 			
 			if (currentCategory.minBuy==currentCategory.maxBuy){
 				appendMaterialRow(Math.ceil(currentCategory.minBuy*.9));
