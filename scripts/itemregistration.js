@@ -339,12 +339,21 @@ String.prototype.isAnItem=function(){
 
 function allMaterialsBuyable(materialsArray){
 	var foo=true
-    for (i=0;i<materialsArray.length;i++){
-    	var currentMaterial = materialsArray[i].convertStringToItem();
-        if (currentMaterial.buy==undefined){
-        	foo=false;
-            break;
-            }
+	for (i=0;i<materialsArray.length;i++){
+		if (materialsArray[i].isAnItem()!==true){
+			var currentCategory = masterCategoryList[materialsArray[i]];
+			if (currentCategory.minBuy==undefined){
+				foo=false;
+				break;
+			}
+		} else {
+		
+			var currentMaterial = materialsArray[i].convertStringToItem();
+			if (currentMaterial.buy==undefined){
+				foo=false;
+				break;
+			}
 		}
-	return foo
-    }
+        }
+        return foo
+}
