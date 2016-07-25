@@ -96,34 +96,33 @@ function registerItem(item){
 	}
 	
 	var itemCategory = item.category
-	var itemCategoryKey = itemCategory.lettersOnly()
 	
-	if (masterCategoryList[itemCategoryKey]!==undefined){
-		masterCategoryList[itemCategoryKey].membershipList.push(item)
-		if (masterCategoryList[itemCategoryKey].minSell>item.sell){
-			masterCategoryList[itemCategoryKey].minSell=item.sell
+	if (masterCategoryList[itemCategory]!==undefined){
+		masterCategoryList[itemCategory].membershipList.push(item)
+		if (masterCategoryList[itemCategory].minSell>item.sell){
+			masterCategoryList[itemCategory].minSell=item.sell
 		}
-		if (masterCategoryList[itemCategoryKey].maxSell<item.sell){
-			masterCategoryList[itemCategoryKey].maxSell=item.sell
+		if (masterCategoryList[itemCategory].maxSell<item.sell){
+			masterCategoryList[itemCategory].maxSell=item.sell
 		}
 	} else {
-		masterCategoryList[itemCategoryKey]={}
-		masterCategoryList[itemCategoryKey].name=itemCategory
-		masterCategoryList[itemCategoryKey].membershipList=[item]
-		masterCategoryList[itemCategoryKey].minSell=item.sell
-		masterCategoryList[itemCategoryKey].maxSell=item.sell
+		masterCategoryList[itemCategory]={}
+		masterCategoryList[itemCategory].name=itemCategory
+		masterCategoryList[itemCategory].membershipList=[item]
+		masterCategoryList[itemCategory].minSell=item.sell
+		masterCategoryList[itemCategory].maxSell=item.sell
 	}
 	
 	if (item.buy!==undefined){
-		if (masterCategoryList[itemCategoryKey].minBuy==undefined){
-			masterCategoryList[itemCategoryKey].minBuy=item.buy
-			masterCategoryList[itemCategoryKey].maxBuy=item.buy
+		if (masterCategoryList[itemCategory].minBuy==undefined){
+			masterCategoryList[itemCategory].minBuy=item.buy
+			masterCategoryList[itemCategory].maxBuy=item.buy
 		} else {
-			if (masterCategoryList[itemCategoryKey].minBuy>item.buy){
-				masterCategoryList[itemCategoryKey].minBuy=item.buy
+			if (masterCategoryList[itemCategory].minBuy>item.buy){
+				masterCategoryList[itemCategory].minBuy=item.buy
 			}
-			if (masterCategoryList[itemCategoryKey].maxBuy<item.buy){
-				masterCategoryList[itemCategoryKey].maxBuy=item.buy
+			if (masterCategoryList[itemCategory].maxBuy<item.buy){
+				masterCategoryList[itemCategory].maxBuy=item.buy
 			}
 		}
 	}
@@ -344,16 +343,15 @@ String.prototype.isAnItem=function(){
 function allMaterialsBuyable(materialsArray){
 	var foo=true
 	for (i=0;i<materialsArray.length;i++){
-		if (materialsArray[i].isAnItem()!==true){
-			var currentCategory = masterCategoryList[materialsArray[i].lettersOnly()];
-			if (currentCategory.minBuy==undefined){
+		if (materialsArray[i].isAnItem()==true){
+			var currentMaterial = materialsArray[i].convertStringToItem();
+			if (currentMaterial.buy==undefined){
 				foo=false;
 				break;
 			}
 		} else {
-		
-			var currentMaterial = materialsArray[i].convertStringToItem();
-			if (currentMaterial.buy==undefined){
+			var currentCategory = masterCategoryList[materialsArray[i]];
+			if (currentCategory.minBuy==undefined){
 				foo=false;
 				break;
 			}
