@@ -190,7 +190,7 @@ function createMaterialTable(){
 	materialComments.style.marginTop=0;
 	
 	if (currentItem.buy==undefined){
-		materialComments.innerHTML+="This item is not for sale and must be produced."
+		materialComments.innerHTML+="This item cannot be bought in any shop in the game and must be produced."
 	} else if (canBuyAllMaterials){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
