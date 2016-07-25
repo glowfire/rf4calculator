@@ -345,7 +345,7 @@ function allMaterialsBuyable(materialsArray){
 	var foo=true
 	for (i=0;i<materialsArray.length;i++){
 		if (materialsArray[i].isAnItem()!==true){
-			var currentCategory = masterCategoryList[materialsArray[i]];
+			var currentCategory = masterCategoryList[materialsArray[i].lettersOnly()];
 			if (currentCategory.minBuy==undefined){
 				foo=false;
 				break;
