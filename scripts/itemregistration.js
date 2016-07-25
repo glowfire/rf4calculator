@@ -333,6 +333,10 @@ function getSellPriceAtLevel(item,level){
     return sellPriceAtSpecifiedLv;
 }
 
+String.prototype.isAnItem=function(){
+	(normalNameList.indexOf(this) > -1)
+}
+
 function allMaterialsBuyable(materialsArray){
 	var foo=true
     for (i=0;i<materialsArray.length;i++){
