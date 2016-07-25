@@ -89,8 +89,8 @@ function createMaterialTable(){
 	
 	appendMaterialHeader("#");
 	appendMaterialHeader("Name of Material");
-	appendMaterialHeader("Normal<br>Buy Price");
 	appendMaterialHeader("Discounted<br>Buy Price");
+	appendMaterialHeader("Normal<br>Buy Price");
 	
 	function createMaterialRow(item,index){
 		
@@ -111,8 +111,8 @@ function createMaterialTable(){
 			var currentCategory = masterCategoryList[item];
 			
 			if (currentCategory.minBuy==currentCategory.maxBuy){
-				appendMaterialRow(currentCategory.minBuy);
 				appendMaterialRow(Math.ceil(currentCategory.minBuy*.9));
+				appendMaterialRow(currentCategory.minBuy);
 				currentMaterialsBuyPrice+=currentCategory.minBuy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(currentCategory.minBuy*.9);
 			} else if (currentCategory.minBuy<currentCategory.maxBuy){
@@ -124,14 +124,19 @@ function createMaterialTable(){
 				c34.innerHTML+=currentCategory.maxBuy
 				currentMaterialsBuyPrice+=currentCategory.minBuy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(currentCategory.minBuy*.9);
+			} else {
+				var c34 = document.createElement('td');
+				c34.colSpan=2
+				materialRow.appendChild(c34);
+				c34.innerHTML="Not Buyable";
 			}
 			
 		} else {
 			var currentMaterial = item.convertStringToItem();
 			
 			if (currentMaterial.buy!==undefined){
-				appendMaterialRow(currentMaterial.buy);
 				appendMaterialRow(Math.ceil(currentMaterial.buy*.9));
+				appendMaterialRow(currentMaterial.buy);
 				currentMaterialsBuyPrice+=currentMaterial.buy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
 			} else {
