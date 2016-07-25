@@ -186,16 +186,16 @@ function createMaterialTable(){
 	
 	if (currentItem.buy==undefined){
 		materialComments.innerHTML+="This item is not for sale and must be produced."
-	//} else if (allMaterialsBuyable(currentItem.materials)){
-		//if (currentMaterialsBuyPrice>currentItem.buy){
-			//materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
-			//materialComments.innerHTML+="<span style='text-decoration:underline'>buy the product directly</span>";
-			//materialComments.innerHTML+=" than buying and processing the materials."
-		//} else {
-			//materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
-			//materialComments.innerHTML+="<span style='text-decoration:underline'>buy and process the materials</span>";
-			//materialComments.innerHTML+=" than buying the product directly."
-		//}
+	} else if (allMaterialsSpecific(currentItem.materials)){
+		if (currentMaterialsBuyPrice>currentItem.buy){
+			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
+			materialComments.innerHTML+="<span style='text-decoration:underline'>buy the product directly</span>";
+			materialComments.innerHTML+=" than buying and processing the materials."
+		} else {
+			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
+			materialComments.innerHTML+="<span style='text-decoration:underline'>buy and process the materials</span>";
+			materialComments.innerHTML+=" than buying the product directly."
+		}
 	}
 	
 }
