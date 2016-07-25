@@ -352,12 +352,6 @@ function allMaterialsBuyable(materialsArray){
 				foo=false;
 				break;
 			}
-		} else {
-			var currentCategory = masterCategoryList[materialString];
-			if (currentCategory.minBuy==undefined){
-				foo=false;
-				break;
-			}
 		}
         }
         return foo
