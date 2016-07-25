@@ -110,6 +110,20 @@ function registerItem(item){
 		masterCategoryList[item.category].maxSell=item.sell
 	}
 	
+	if (item.buy!==undefined){
+		if (masterCategoryList[item.category].minBuy==undefined){
+			masterCategoryList[item.category].minBuy=item.buy
+			masterCategoryList[item.category].maxBuy=item.buy
+		} else {
+			if (masterCategoryList[item.category].minBuy>item.buy){
+				masterCategoryList[item.category].minBuy=item.buy
+			}
+			if (masterCategoryList[item.category].maxBuy<item.buy){
+				masterCategoryList[item.category].maxBuy=item.buy
+			}
+		}
+	}
+	
 	////This part maps products to materials
 	// Should have no issues with products needing more than 1 copy of a material, e.g. Twin Leeks, Para-Gone (18)
 	if (item.materials!==undefined){
