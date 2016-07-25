@@ -186,7 +186,7 @@ function createMaterialTable(){
 	
 	if (currentItem.buy==undefined){
 		materialComments.innerHTML+="This item is not for sale and must be produced."
-	} else if (allMaterialsSpecific(currentItem.materials)){
+	} else if (allMaterialsBuyable(currentItem.materials)){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
 			materialComments.innerHTML+="<span style='text-decoration:underline'>buy the product directly</span>";
