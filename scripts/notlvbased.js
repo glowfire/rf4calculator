@@ -76,6 +76,8 @@ function createMaterialTable(){
 	currentMaterialsBuyPrice = 0
 	currentMaterialsBuyPriceDiscount = 0
 	
+	allMaterialsCanBuy = true
+	
 	var materialTable = document.createElement("table");
 	document.getElementById('currentItemDiv').appendChild(materialTable);
 	materialTableHeader=document.createElement('tr');
@@ -129,6 +131,7 @@ function createMaterialTable(){
 				c34.colSpan=2
 				materialRow.appendChild(c34);
 				c34.innerHTML="Not Buyable";
+				allMaterialsCanBuy = false
 			}
 			
 		} else {
@@ -144,6 +147,7 @@ function createMaterialTable(){
 				c34.colSpan=2
 				materialRow.appendChild(c34);
 				c34.innerHTML="Not Buyable";
+				allMaterialsCanBuy = false
 			
 			}
 		}
@@ -186,7 +190,7 @@ function createMaterialTable(){
 	
 	if (currentItem.buy==undefined){
 		materialComments.innerHTML+="This item is not for sale and must be produced."
-	} else if (allMaterialsBuyable(currentItem.materials)){
+	} else if (allMaterialsCanBuy){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
 			materialComments.innerHTML+="<span style='text-decoration:underline'>buy the product directly</span>";
