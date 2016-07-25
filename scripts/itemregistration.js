@@ -352,16 +352,6 @@ function allMaterialsBuyable(materialsArray){
 				foo=false;
 				break;
 			}
-		} else {
-			var currentMembershipList = masterCategoryList[materialString].membershipList;
-			var bar = false
-			for (j=0;j<currentMembershipList.length;j++){
-				if (currentMembershipList[j].buy!==undefined){
-					bar = true;
-					break;
-				}
-			}
-			foo=bar
 		}
         }
         return foo
