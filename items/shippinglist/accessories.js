@@ -580,7 +580,7 @@ registerItem({
 		"fireresP":33
 	},
 	"flavourtext":"A sun-shaped pendant. Increases companions' abilities with its light.",
-	"craftinglevel":,
+	"craftinglevel":45,
 	"materials":["Silver Pendant","Gold","Fire Crystal"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
@@ -882,7 +882,99 @@ registerItem({
 	},
 	"flavourtext":"An honorary belt given to champions. Greatly increases maximum HP.",
 	"craftinglevel":58,
-	"materials":["Warrior's Proof","Proof of Rank",],
+	"materials":["Warrior's Proof","Proof of Rank","Cloths and Skins"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Hand-Knit Scarf",
+	"sell":390,
+	"buy":18e3,
+	"ability":{
+		// None
+	},
+	"flavourtext":"A warm, woolen scarf. Halves RP consumption (with some exceptions).",
+	"craftinglevel":43,
+	"materials":["Yarn","Yarn","Yarn","Yarn"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Fluffy Scarf",
+	"sell":1350,
+	"ability":{
+		"vit":40
+	},
+	"flavourtext":"A scarf made of soft cotton. Very warm. Cuts all RP consumption (with some exceptions).",
+	"craftinglevel":96,
+	"materials":["Wooly Furball","Fur (S)","Fur (M)","Fur (L)","Yarn"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Hero's Proof",
+	"sell":3e4,
+	"ability":{
+		"def":100
+	},
+	"flavourtext":"Proof of almighty power. Slowly recovers HP.",
+	"craftinglevel":73,
+	"materials":["Chest Hair","Small Crystal","Rune Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Proof of Wisdom",
+	"sell":3e4,
+	"ability":{
+		"mdef":100
+	},
+	"flavourtext":"Proof of almighty wisdom. Slowly recovers RP.",
+	"craftinglevel":74,
+	"materials":["Moving Branch","Small Crystal","Rune Crystal"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Art of Attack",
+	"sell":3e4,
+	"ability":{
+		"str":100
+	},
+	"flavourtext":"A book on the secrets of combat. Generates sonic waves and expands your weapon's target area.",
+	"craftinglevel":91,
+	"materials":["Dragonic Stone","Throne of the Empire","Wind Dragon Tooth"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Art of Defense",
+	"sell":3e4,
+	"ability":{
+		"vit":50
+	},
+	"flavourtext":"A book on the secrets of guarding. Halves time spent flinching, granting its reader a heart of steel.",
+	"craftinglevel":90,
+	"materials":["Dragonic Stone","Grimoire Scale","Broken Ice Wall"],
+	"pricemultiplier":"E",
+	"category":"Accessory"
+})
+
+registerItem({
+	"name":"Art of Magic",
+	"sell":3e4,
+	"ability":{
+		"int":100
+	},
+	"flavourtext":"A book on the secrets of spellcasting. Halves non-elemental attacks by way of magic walls.",
+	"craftinglevel":92,
+	"materials":["Dragonic Stone","Chimera Tail","Melody Bottle"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
@@ -902,15 +994,31 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Courage Badge",
+	"sell":8e4,
 	"ability":{
-		"":
+		"atk":500,
+		"def":50,
+		"matk":500,
+		"mdef":50,
+		"str":150,
+		"vit":150,
+		"int":150,
+		"dizresP":20,
+		"critresP":50,
+		"psnresP":50,
+		"sealresP":50,
+		"parresP":50,
+		"slpresP":50,
+		"ftgresP":30,
+		"sickresP":30,
+		"faintresP":30,
+		"drainresP":30,
+		"critP":5
 	},
-	"flavourtext":".",
-	"craftinglevel":,
-	"materials":[""],
+	"flavourtext":"Given to those of brave heart and courageous mind. Ain't it the truth!",
+	"craftinglevel":99,
+	"materials":["Badge","Rune Sphere Shard","Rune Crystal"],
 	"pricemultiplier":"E",
 	"category":"Accessory"
 })
