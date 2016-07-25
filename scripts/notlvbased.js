@@ -164,11 +164,11 @@ function createMaterialTable(){
 		
 		var c3 = document.createElement('td');
 		summationRow.appendChild(c3);
-		c3.innerHTML=currentMaterialsBuyPrice;
+		c3.innerHTML=currentMaterialsBuyPriceDiscount;
 		
 		var c4 = document.createElement('td');
 		summationRow.appendChild(c4);
-		c4.innerHTML=currentMaterialsBuyPriceDiscount;
+		c4.innerHTML=currentMaterialsBuyPrice;
 		
 	} else {
 		
