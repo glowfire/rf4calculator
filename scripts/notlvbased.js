@@ -71,12 +71,13 @@ var materialsList // May not be needed
 
 var currentMaterialsBuyPrice // needed
 var currentMaterialsBuyPriceDiscount // needed
+var canBuyAllMaterials // Used because the allMaterialsBuyable function seems unfixable
 
 function createMaterialTable(){
 	currentMaterialsBuyPrice = 0
 	currentMaterialsBuyPriceDiscount = 0
 	
-	allMaterialsCanBuy = true
+	canBuyAllMaterials = true
 	
 	var materialTable = document.createElement("table");
 	document.getElementById('currentItemDiv').appendChild(materialTable);
@@ -131,7 +132,7 @@ function createMaterialTable(){
 				c34.colSpan=2
 				materialRow.appendChild(c34);
 				c34.innerHTML="Not Buyable";
-				allMaterialsCanBuy = false
+				canBuyAllMaterials = false
 			}
 			
 		} else {
@@ -147,7 +148,7 @@ function createMaterialTable(){
 				c34.colSpan=2
 				materialRow.appendChild(c34);
 				c34.innerHTML="Not Buyable";
-				allMaterialsCanBuy = false
+				canBuyAllMaterials = false
 			
 			}
 		}
@@ -190,7 +191,7 @@ function createMaterialTable(){
 	
 	if (currentItem.buy==undefined){
 		materialComments.innerHTML+="This item is not for sale and must be produced."
-	} else if (allMaterialsCanBuy){
+	} else if (canBuyAllMaterials){
 		if (currentMaterialsBuyPrice>currentItem.buy){
 			materialComments.innerHTML+="Assuming no discounts, it is cheaper to "
 			materialComments.innerHTML+="<span style='text-decoration:underline'>buy the product directly</span>";
@@ -200,8 +201,6 @@ function createMaterialTable(){
 			materialComments.innerHTML+="<span style='text-decoration:underline'>buy and process the materials</span>";
 			materialComments.innerHTML+=" than buying the product directly."
 		}
-	} else {
-		materialComments.innerHTML+="MEH"
 	}
 	
 }
