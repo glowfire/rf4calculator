@@ -1,6 +1,8 @@
 // Registration of items in the order as shown in the shipping records.
 // This list contains the items listed in the fifth section.
 
+// All items entered; unchecked for price multipliers.
+
 registerItem({
 	"name":"Engagement Ring",
 	"sell":1,
