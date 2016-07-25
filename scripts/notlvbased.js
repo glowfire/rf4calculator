@@ -117,9 +117,9 @@ function createMaterialTable(){
 			materialRow.appendChild(c34);
 			
 			if (currentMaterial.sell!==undefined){
-				c34.innerHTML="Varies";
+				c34.innerHTML="Not Buyable";
 			} else {
-				c34.innerHTML="Not Buyable"
+				c34.innerHTML="Varies";
 			}
 			
 		}
