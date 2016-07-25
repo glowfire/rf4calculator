@@ -353,11 +353,15 @@ function allMaterialsBuyable(materialsArray){
 				break;
 			}
 		} else {
-			var currentCategory = masterCategoryList[materialString]
-			if (currentCategory.minBuy==undefined){
-				foo=false;
-				break;
+			var currentMembershipList = masterCategoryList[materialString].membershipList;
+			var bar = false
+			for (j=0;j<currentMembershipList.length;j++){
+				if (currentMembershipList[j].buy!==undefined){
+					bar = true;
+					break;
+				}
 			}
+			foo=bar
 		}
         }
         return foo
