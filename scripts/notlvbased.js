@@ -118,7 +118,7 @@ function createMaterialTable(){
 			
 			if (currentMaterial.sell!==undefined){
 				c34.innerHTML="Not Buyable";
-			} else {
+			} else if (masterCategoryList[item.name]!==undefined) {
 				c34.innerHTML="Varies";
 			}
 			
