@@ -111,6 +111,8 @@ function registerItem(item){
 		masterCategoryList[itemCategory].membershipList=[item]
 		masterCategoryList[itemCategory].minSell=item.sell
 		masterCategoryList[itemCategory].maxSell=item.sell
+		masterCategoryList[itemCategory].minBuy=undefined
+		masterCategoryList[itemCategory].maxBuy=undefined
 	}
 	
 	if (item.buy!==undefined){
