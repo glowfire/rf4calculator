@@ -107,18 +107,27 @@ function createMaterialTable(){
 		appendMaterialRow(item);
 		
 		if (masterCategoryList[item]!==undefined){
+			var currentCategory = masterCategoryList[item];
 			
-			var c34 = document.createElement('td');
-			c34.colSpan=2
-			materialRow.appendChild(c34);
-			c34.innerHTML="Varies";
+			if (currentCategory.minBuy==currentCategory.maxBuy){
+				appendMaterialRow(currentCategory.minBuy);
+				appendMaterialRow(Math.ceil(currentCategory.minBuy*.9));
+				currentMaterialsBuyPrice+=currentCategory.minBuy;
+				currentMaterialsBuyPriceDiscount+=Math.ceil(currentCategory.minBuy*.9);
+			} else if (currentCategory.minBuy<currentCategory.maxBuy){
+				var c34 = document.createElement('td');
+				materialRow.appendChild(c34);
+				c34.colSpan=2
+				c34.innerHTML="Varies";
+			}
+			
 			
 		} else {
 			var currentMaterial = item.convertStringToItem();
 			
 			if (currentMaterial.buy!==undefined){
 				appendMaterialRow(currentMaterial.buy);
-				appendMaterialRow(Math.ceil(currentMaterial.buy)*.9);
+				appendMaterialRow(Math.ceil(currentMaterial.buy*.9));
 				currentMaterialsBuyPrice+=currentMaterial.buy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
 			} else {
