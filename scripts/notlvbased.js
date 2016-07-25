@@ -107,6 +107,7 @@ function createMaterialTable(){
 		appendMaterialRow(item);
 		
 		if (masterCategoryList[item]!==undefined){
+			
 			var currentCategory = masterCategoryList[item];
 			
 			if (currentCategory.minBuy==currentCategory.maxBuy){
@@ -118,9 +119,12 @@ function createMaterialTable(){
 				var c34 = document.createElement('td');
 				materialRow.appendChild(c34);
 				c34.colSpan=2
-				c34.innerHTML="Varies";
+				c34.innerHTML=Math.ceil(currentCategory.minBuy*.9);
+				c34.innerHTML+=" - "
+				c34.innerHTML+=currentCategory.maxBuy
+				currentMaterialsBuyPrice+=currentCategory.minBuy;
+				currentMaterialsBuyPriceDiscount+=Math.ceil(currentCategory.minBuy*.9);
 			}
-			
 			
 		} else {
 			var currentMaterial = item.convertStringToItem();
