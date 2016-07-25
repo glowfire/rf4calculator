@@ -345,14 +345,15 @@ String.prototype.isAnItem=function(){
 function allMaterialsBuyable(materialsArray){
 	var foo=true
 	for (i=0;i<materialsArray.length;i++){
-		if (materialsArray[i].isAnItem()==true){
-			var currentMaterial = materialsArray[i].convertStringToItem();
+		var materialString = materialsArray[i]
+		if (materialString.isAnItem()==true){
+			var currentMaterial = materialString.convertStringToItem();
 			if (currentMaterial.buy==undefined){
 				foo=false;
 				break;
 			}
 		} else {
-			var currentCategory = masterCategoryList[materialsArray[i]];
+			var currentCategory = masterCategoryList[materialString];
 			if (currentCategory.minBuy==undefined){
 				foo=false;
 				break;
