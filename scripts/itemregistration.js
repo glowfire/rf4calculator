@@ -95,31 +95,35 @@ function registerItem(item){
 		}
 	}
 	
-	if (masterCategoryList[item.category]!==undefined){
-		masterCategoryList[item.category].membershipList.push(item)
-		if (masterCategoryList[item.category].minSell>item.sell){
-			masterCategoryList[item.category].minSell=item.sell
+	var itemCategory = item.category
+	var itemCategoryKey = itemCategory.lettersOnly()
+	
+	if (masterCategoryList[itemCategoryKey]!==undefined){
+		masterCategoryList[itemCategoryKey].membershipList.push(item)
+		if (masterCategoryList[itemCategoryKey].minSell>item.sell){
+			masterCategoryList[itemCategoryKey].minSell=item.sell
 		}
-		if (masterCategoryList[item.category].maxSell<item.sell){
-			masterCategoryList[item.category].maxSell=item.sell
+		if (masterCategoryList[itemCategoryKey].maxSell<item.sell){
+			masterCategoryList[itemCategoryKey].maxSell=item.sell
 		}
 	} else {
-		masterCategoryList[item.category]={}
-		masterCategoryList[item.category].membershipList=[item]
-		masterCategoryList[item.category].minSell=item.sell
-		masterCategoryList[item.category].maxSell=item.sell
+		masterCategoryList[itemCategoryKey]={}
+		masterCategoryList[itemCategoryKey].name=itemCategory
+		masterCategoryList[itemCategoryKey].membershipList=[item]
+		masterCategoryList[itemCategoryKey].minSell=item.sell
+		masterCategoryList[itemCategoryKey].maxSell=item.sell
 	}
 	
 	if (item.buy!==undefined){
-		if (masterCategoryList[item.category].minBuy==undefined){
-			masterCategoryList[item.category].minBuy=item.buy
-			masterCategoryList[item.category].maxBuy=item.buy
+		if (masterCategoryList[itemCategoryKey].minBuy==undefined){
+			masterCategoryList[itemCategoryKey].minBuy=item.buy
+			masterCategoryList[itemCategoryKey].maxBuy=item.buy
 		} else {
-			if (masterCategoryList[item.category].minBuy>item.buy){
-				masterCategoryList[item.category].minBuy=item.buy
+			if (masterCategoryList[itemCategoryKey].minBuy>item.buy){
+				masterCategoryList[itemCategoryKey].minBuy=item.buy
 			}
-			if (masterCategoryList[item.category].maxBuy<item.buy){
-				masterCategoryList[item.category].maxBuy=item.buy
+			if (masterCategoryList[itemCategoryKey].maxBuy<item.buy){
+				masterCategoryList[itemCategoryKey].maxBuy=item.buy
 			}
 		}
 	}
