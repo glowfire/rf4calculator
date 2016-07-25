@@ -72,14 +72,6 @@ var materialsList // May not be needed
 var currentMaterialsBuyPrice // needed
 var currentMaterialsBuyPriceDiscount // needed
 
-String.prototype.isAnItem=function(){
-	(normalNameList.indexOf(this) > -1)
-}
-
-Array.prototype.allAreItem=function(){
-	var foo = true
-}
-
 function createMaterialTable(){
 	currentMaterialsBuyPrice = 0
 	currentMaterialsBuyPriceDiscount = 0
