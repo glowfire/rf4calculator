@@ -196,6 +196,8 @@ function createMaterialTable(){
 			materialComments.innerHTML+="<span style='text-decoration:underline'>buy and process the materials</span>";
 			materialComments.innerHTML+=" than buying the product directly."
 		}
+	} else {
+		materialComments.innerHTML+="MEH"
 	}
 	
 }
