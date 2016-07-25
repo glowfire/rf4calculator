@@ -93,36 +93,35 @@ function createMaterialTable(){
 	appendMaterialHeader("Discounted<br>Buy Price");
 	
 	function createMaterialRow(item,index){
-		var currentMaterial = item.convertStringToItem();
 		
-		var materialRow = document.createElement("tr");
-		materialTable.appendChild(materialRow);
+		if (masterCategoryList[item]!==undefined){} else {
+			var currentMaterial = item.convertStringToItem();
 		
-		function appendMaterialRow(string){
-			var c = document.createElement('td');
-			materialRow.appendChild(c);
-			c.innerHTML=string;
-		}
+			var materialRow = document.createElement("tr");
+			materialTable.appendChild(materialRow);
 		
-		appendMaterialRow(index+1);
-		appendMaterialRow(item);
-		if (currentMaterial.buy!==undefined){
-			appendMaterialRow(currentMaterial.buy);
-			appendMaterialRow(Math.ceil(currentMaterial.buy)*.9);
-			currentMaterialsBuyPrice+=currentMaterial.buy;
-			currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
-		} else {
-			var c34 = document.createElement('td');
-			c34.colSpan=2
-			materialRow.appendChild(c34);
-			
-			if (currentMaterial.sell!==undefined){
-				c34.innerHTML="Not Buyable";
-			} else if (masterCategoryList[item.name]!==undefined) {
-				c34.innerHTML="Varies";
+			function appendMaterialRow(string){
+				var c = document.createElement('td');
+				materialRow.appendChild(c);
+				c.innerHTML=string;
 			}
+		
+			appendMaterialRow(index+1);
+			appendMaterialRow(item);
+			if (currentMaterial.buy!==undefined){
+				appendMaterialRow(currentMaterial.buy);
+				appendMaterialRow(Math.ceil(currentMaterial.buy)*.9);
+				currentMaterialsBuyPrice+=currentMaterial.buy;
+				currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
+			} else {
+				var c34 = document.createElement('td');
+				c34.colSpan=2
+				materialRow.appendChild(c34);
+				c34.innerHTML="Not Buyable";
 			
+			}
 		}
+		
 	}
 	
 	currentItem.materials.forEach(createMaterialRow);
