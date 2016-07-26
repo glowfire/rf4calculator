@@ -75,7 +75,7 @@ registerItem({
 
 registerItem({
 	"name":"Honey",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":680,
 	"buy":1800,
 	"effects":{ // follows the minor effects multiplier
@@ -91,7 +91,7 @@ registerItem({
 
 registerItem({
 	"name":"Yogurt",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":800,
 	"buy":3000,
 	"effects":{ // unclear if standard or minor
@@ -109,7 +109,7 @@ registerItem({
 
 registerItem({
 	"name":"Cheese",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":400,
 	"buy":2500,
 	"effects":{ // unclear if standard or minor
@@ -127,7 +127,7 @@ registerItem({
 
 registerItem({
 	"name":"Mayonnaise",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":720,
 	"buy":2200,
 	"effects":{ // unclear if standard, minor or some undiscovered effects multiplier
@@ -146,7 +146,7 @@ registerItem({
 
 registerItem({
 	"name":"Egg (L)",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":480,
 	"buy":1800,
 	"effects":{ // standard
@@ -163,7 +163,7 @@ registerItem({
 
 registerItem({
 	"name":"Egg (M)",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":380,
 	"buy":1500,
 	"effects":{ // possibly follows an effect multiplier that is neither standard or minor.
@@ -180,7 +180,7 @@ registerItem({
 
 registerItem({
 	"name":"Egg (S)",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":280,
 	"buy":1200,
 	"effects":{ // appears to follow the minor effect multipliers
@@ -197,7 +197,7 @@ registerItem({
 
 registerItem({
 	"name":"Milk (L)",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":500,
 	"buy":2800,
 	"effects":{ // standard
@@ -213,7 +213,7 @@ registerItem({
 
 registerItem({
 	"name":"Milk (M)",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":380,
 	"buy":2000,
 	"effects":{ // Does not follow standard or minor effects multipliers.
@@ -229,7 +229,7 @@ registerItem({
 
 registerItem({
 	"name":"Milk (S)",
-	"category":"Diary",
+	"category":"Dairy",
 	"sell":260,
 	"buy":1600,
 	"effects":{ // follows the minor effect multipliers
