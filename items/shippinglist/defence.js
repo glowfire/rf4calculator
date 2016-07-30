@@ -282,6 +282,339 @@ registerItem({
 })
 
 registerItem({
+	"name":"Free Farming Shoes",
+	"sell":40,
+	"buy":450,
+	"ability":{
+		"def":3,
+		"ftgresP":3,
+		"sickresP":3
+	},
+	"flavourtext":"Shoes for advanced farmers that make it possible to cultivate regardless of the grid lines.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fairy Boots",
+	"sell":52e3,
+	"ability":{
+		"def":2402,
+		"mdef":1980,
+		"psnresP":15,
+		"sealresP":15,
+		"parresP":15,
+		"slpresP":15,
+		"ftgresP":15,
+		"sickresP":15
+	},
+	"flavourtext":'Rare boots made with fairy dust. Very light, but "fairy" tough.',
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Bone Boots",
+	"sell":2100,
+	"buy":68900,
+	"ability":{
+		"def":39
+	},
+	"flavourtext":"Boots made with a combination of hard bones. Though they may look primitive, they're high in defense.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gold Boots",
+	"sell":1200,
+	"buy":5e4,
+	"ability":{
+		"def":30
+	},
+	"flavourtext":"Simple golden boots. Wearing them increases defense.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Silver Boots",
+	"sell":400,
+	"buy":14280,
+	"ability":{
+		"def":16
+	},
+	"flavourtext":"Simple silver boots. Wearing them increases defense.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rocket Wing",
+	"sell":12e4,
+	"ability":{
+		"dizresP":-50,
+		"critresP":-25,
+		"knockresP":-50
+	},
+	"flavourtext":"Boots that help you walk faster than ever before. Takes your breath away, so make sure not to pass out!",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Water Shoes",
+	"sell":280,
+	"ability":{
+		// None
+	},
+	"flavourtext":"Footwear used by Ninja of the Far East. Helps you walk on water.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fast Step Boots",
+	"sell":770,
+	"buy":33600,
+	"ability":{
+		"def":25
+	},
+	"flavourtext":"Boots designed for dance practice. Puts a spring in their wearer's step.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Sneaking Boots",
+	"sell":780,
+	"buy":22e3,
+	"ability":{
+		"def":6,
+		"dizresP":-20,
+		"critP":30
+	},
+	"flavourtext":"Boots used to sneak up on unsuspecting foes unnoticed. Allows you to attack monsters before they attack you!",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Wet Boots",
+	"sell":370,
+	"buy":78e3,
+	"ability":{
+		"def":55,
+		"int":-5,
+		"critP":75
+	},
+	"flavourtext":"Boots that are wet and slippery. Their natural power helps you land critical hits.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Secret Shoes",
+	"sell":108,
+	"buy":8120,
+	"ability":{
+		"def":12
+	},
+	"flavourtext":"Boots with secret heels that make you look taller.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Strider Boots",
+	"sell":2600,
+	"buy":188e3,
+	"ability":{
+		"def":50
+	},
+	"flavourtext":"Boots that help you take bigger steps. Lengthens your invincibility when dashing.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iron Geta",
+	"sell":7e3,
+	"ability":{
+		"def":920,
+		"mdef":680,
+		"knockresP":25
+	},
+	"flavourtext":"Simple iron footwear. Made for training purposes. Decreases travel speed.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Ghost Boots",
+	"sell":6800,
+	"ability":{
+		"def":670,
+		"mdef":420,
+		"knockresP":-10
+	},
+	"flavourtext":"Boots designed to lessen one's weight through principles learned from flying foes. Increases travel speed.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Step-In Boots",
+	"sell":3200,
+	"ability":{
+		"def":98,
+		"knockresP":25
+	},
+	"flavourtext":"Boots designed to prevent you from executing dash attacks.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Piyo Sandals",
+	"sell":25,
+	"buy":320,
+	"ability":{
+		"def":5,
+		"loveresP":25,
+		"dizresP":100,
+		"diz":20
+	},
+	"flavourtext":"Shoes that chirp with every step. They make you want to run around just to see how loud they can get.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Ice Skates",
+	"sell":5400,
+	"ability":{
+		"def":1520,
+		"mdef":1400,
+		"dizresP":25,
+		"critresP":25,
+		"knockresP":-25
+	},
+	"flavourtext":"Boots that make you skate around like you're in a rink, anywhere you go. They don't let you jump or spin, though.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Snow Boots",
+	"sell":1500,
+	"buy":95e3,
+	"ability":{
+		"def":49
+	},
+	"flavourtext":"Special boots originally created for wear in snowy regions. They stop you from slipping in any weather!",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Knight Boots",
+	"sell":12500,
+	"ability":{
+		"def":1666,
+		"mdef":1050,
+		"str":5
+	},
+	"flavourtext":"Boots with very high defense. Fine quality. Often worn by knights.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Leather Boots",
+	"sell":7,
+	"buy":80,
+	"ability":{
+		"def":3
+	},
+	"flavourtext":"Leather boots made for travelers. Tough and durable.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Heavy Boots",
+	"sell":520,
+	"buy":20700,
+	"ability":{
+		"def":22,
+		"critresP":10,
+		"knockresP":25,
+		"ftgresP":-30
+	},
+	"flavourtext":"Boots made of steel. Keep you from blowing away, but you'll get tired more easily.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Feather Boots",
+	"sell":7780,
+	"ability":{
+		"def":140,
+		"mdef":30,
+		"knockresP":-15
+	},
+	"flavourtext":"Boots made of a light material. Makes you feel like you're walking on air!",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shoes",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
@@ -290,7 +623,7 @@ registerItem({
 	},
 	"flavourtext":".",
 	"craftinglevel":,
-	"materials":[""],
+	"materials":["",""],
 	"category":"",
 	"pricemultiplier":"E"
 })
