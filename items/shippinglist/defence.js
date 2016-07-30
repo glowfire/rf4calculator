@@ -615,6 +615,404 @@ registerItem({
 })
 
 registerItem({
+	"name":"Silk Hat",
+	"sell":19,
+	"ability":{
+		"def":5,
+		"mdef":3,
+		"int":5
+	},
+	"flavourtext":"When you wear this, you might hear a song. No tricks, no gimmicks!",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Four Seasons",
+	"sell":2500,
+	"ability":{
+		"def":35,
+		"mdef":50,
+		"fireresP":7,
+		"waterresP":7,
+		"earthresP":7,
+		"windresP":7
+	},
+	"flavourtext":"A headdress that makes you feel all seasons. It's for those who have pure, strong, merciful and open hearts.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Crown",
+	"sell":6e4,
+	"ability":{
+		"def":1512,
+		"mdef":1380,
+		"slpresP":30,
+		"faintresP":100
+	},
+	"flavourtext":"A classy crown that kings wear.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cat Ears",
+	"sell":7,
+	"buy":25e3,
+	"ability":{
+		"def":9,
+		"str":2
+	},
+	"flavourtext":"An accessory inspired by a Palm Cat's ears.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Headdress",
+	"sell":75,
+	"buy":11480,
+	"ability":{
+		"def":8,
+		"int":2
+	},
+	"flavourtext":"An accessory that decorates your head. It must be frilly and flashy.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lolita Headdress",
+	"sell":68,
+	"buy":9200,
+	"ability":{
+		"def":8,
+		"mdef":4
+	},
+	"flavourtext":"Gothic Lolita fashion that is popular among some people.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Winter Headdress",
+	"sell":500,
+	"ability":{
+		"def":22,
+		"mdef":5,
+		"waterresP":5
+	},
+	"flavourtext":"A headdress that makes you feel winter-y. People who love winter have open hearts.",
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Autumn Headdress",
+	"sell":500,
+	"ability":{
+		"def":9,
+		"mdef":2,
+		"windresP":5
+	},
+	"flavourtext":"A headdress that makes you feel autumn-y. People who love autumn have merciful hearts.",
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Summer Headdress",
+	"sell":500,
+	"ability":{
+		"def":2,
+		"mdef":1,
+		"fireresP":5
+	},
+	"flavourtext":"A headdress that makes you feel summer-y. People who love summer have strong hearts.",
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Spring Headdress",
+	"sell":500,
+	"ability":{
+		"def":16,
+		"mdef":12,
+		"earthresP":5
+	},
+	"flavourtext":"A headdress that makes you feel spring-y. People who love spring have pure hearts.",
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Pumpkin Headgear",
+	"sell":135,
+	"buy":2500,
+	"ability":{
+		"def":15
+	},
+	"flavourtext":"A hat made from a pumpkin. The hero of Halloween.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Turnip Headgear",
+	"sell":40,
+	"buy":2500,
+	"ability":{
+		"def":10,
+		"mdef":10
+	},
+	"flavourtext":"A hat made from a turnip. It was once used during Halloween, but it got replaced by a pumpkin.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"White Ribbon",
+	"sell":50,
+	"buy":8e4,
+	"ability":{
+		"def":28,
+		"sealresP":5
+	},
+	"flavourtext":"A white-colored ribbon. Those who wear it should probably avoid eating spaghetti.",
+	"craftinglevel":,
+	"materials":["White Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Indigo Ribbon",
+	"sell":500,
+	"ability":{
+		"def":976,
+		"mdef":892,
+		"sealresP":5
+	},
+	"flavourtext":"An indigo-colored ribbon. Those who wear it look regal.",
+	"craftinglevel":,
+	"materials":["Indigo Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Purple Ribbon",
+	"sell":50,
+	"buy":500,
+	"ability":{
+		"def":2,
+		"mdef":1,
+		"sealresP":5
+	},
+	"flavourtext":"A purple-colored ribbon. Those who wear it look sort of gothic.",
+	"craftinglevel":,
+	"materials":["Purple Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Green Ribbon",
+	"sell":50,
+	"buy":500,
+	"ability":{
+		"mdef":3,
+		"sealresP":5
+	},
+	"flavourtext":"A green-colored ribbon. Those who wear it look environmentally conscious. Possibly hipster.",
+	"craftinglevel":,
+	"materials":["Green Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Blue Ribbon",
+	"sell":50,
+	"buy":500,
+	"ability":{
+		"def":3,
+		"sealresP":5
+	},
+	"flavourtext":"A blue-colored ribbon. Those who wear it look loyal.",
+	"craftinglevel":,
+	"materials":["Blue Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Yellow Ribbon",
+	"sell":50,
+	"buy":1e4,
+	"ability":{
+		"def":9,
+		"sealresP":5
+	},
+	"flavourtext":"A yellow-colored ribbon. Those who wear it look intelligent.",
+	"craftinglevel":,
+	"materials":["Yellow Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Red Ribbon",
+	"sell":50,
+	"buy":31500,
+	"ability":{
+		"def":12,
+		"sealresP":5
+	},
+	"flavourtext":"A red-colored ribbon. Those who wear it look passionate.",
+	"craftinglevel":,
+	"materials":["Red Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Orange Ribbon",
+	"sell":50,
+	"buy":5e4,
+	"ability":{
+		"def":18,
+		"sealresP":5
+	},
+	"flavourtext":"An orange-colored ribbon. Those who wear it look fun to hang out with.",
+	"craftinglevel":,
+	"materials":["Orange Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Black Ribbon",
+	"sell":50,
+	"buy":5e3,
+	"ability":{
+		"def":7,
+		"mdef":3,
+		"sealresP":5
+	},
+	"flavourtext":"A black-colored ribbon. Those who wear it look intimidating.",
+	"craftinglevel":,
+	"materials":["Black Grass","Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cute Knitting",
+	"sell":27,
+	"buy":1800,
+	"ability":{
+		"def":4
+	},
+	"flavourtext":"A warm, woolen hat.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fireproof Hood",
+	"sell":77,
+	"buy":6800,
+	"ability":{
+		"def":8,
+		"mdef":1
+	},
+	"flavourtext":"Protects your head. Don't push. Don't run. Don't talk. Just stop, drop...and rooooooll...",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Straw Hat",
+	"sell":68,
+	"buy":1600,
+	"ability":{
+		"def":3
+	},
+	"flavourtext":"A hat great for summer. It feels good because it lets the heat out.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Intelligent Glasses",
+	"sell":420,
+	"buy":5500,
+	"ability":{
+		"int":10
+	},
+	"flavourtext":"You look rather more silly than smart in these.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Spectacles",
+	"sell":350,
+	"buy":5e3,
+	"ability":{
+		"mdef":4,
+		"int":2
+	},
+	"flavourtext":"People say you look smart with these.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"def":
+	},
+	"flavourtext":".",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
