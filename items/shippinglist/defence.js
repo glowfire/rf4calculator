@@ -13,8 +13,8 @@ registerItem({
 		"windresP":5
 	},
 	"flavourtext":"A vest blessed by Native Dragons. Can tolerate any attack.",
-	"craftinglevel":,
-	"materials":["","",""],
+	"craftinglevel":99,
+	"materials":["Dragon Fin","Earthwyrm Scale","Firewyrm Scale","Wind Dragon Tooth","Rune Crystal"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -27,8 +27,8 @@ registerItem({
 		"mdef":2780
 	},
 	"flavourtext":"Makes you feel the dignity of a king.",
-	"craftinglevel":,
-	"materials":["","",""],
+	"craftinglevel":90,
+	"materials":["Dragonic Stone","Ancient Orc Cloth","Love Scale","Small Crystal","White Stone"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -41,8 +41,8 @@ registerItem({
 		"mdef":2310
 	},
 	"flavourtext":"A vest imbued with the power of runes.",
-	"craftinglevel":,
-	"materials":[""],
+	"craftinglevel":76,
+	"materials":["Golem Spirit Stone","Rune Crystal","Rune Crystal","Cloths and Skins","Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -55,8 +55,8 @@ registerItem({
 		"mdef":1200
 	},
 	"flavourtext":"A cloak with the symbol of a dragon. Anything with dragons on it is strong, right?",
-	"craftinglevel":,
-	"materials":[""],
+	"craftinglevel":64,
+	"materials":["Dragon Scale","Crimson Scale","Grimoire Scale","Earth Dragon Ash","Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -69,8 +69,8 @@ registerItem({
 		"mdef":1820
 	},
 	"flavourtext":"A reinforced protector. It will prevent any accidents.<br>Disclaimer: Not to be used when cooking.",
-	"craftinglevel":,
-	"materials":[""],
+	"craftinglevel":69,
+	"materials":["Orichalcum","Orichalcum","Orichalcum","MTGU Plate","Dangerous Scissors"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -83,8 +83,8 @@ registerItem({
 		"mdef":850
 	},
 	"flavourtext":"A brilliant cloak that is absolutely perfect. Only the beautiful can wear this.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":59,
+	"materials":["Turnip's Miracle","Ambrosia's Thorns","Crystal Skull","Powders and Spores"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -97,8 +97,8 @@ registerItem({
 		"mdef":140
 	},
 	"flavourtext":"Armor made from plate-shaped scales. It doesn't impede your speed and also protects you well.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":50,
+	"materials":["Orichalcum","Scales","Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -112,8 +112,8 @@ registerItem({
 		"mdef":80
 	},
 	"flavourtext":"A luxurious mail made of platinum.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":44,
+	"materials":["Platinum","Platinum","Blk. Tortoise Shell","Cloths and Skins"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -127,8 +127,8 @@ registerItem({
 		"mdef":52
 	},
 	"flavourtext":"This is the biggest challenge for people who love clothes. Wearing something like this... Are you out of mind?",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":28,
+	"materials":["Gold","Furs","Cloths and Skins"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -143,8 +143,8 @@ registerItem({
 		"windresP":10
 	},
 	"flavourtext":"A cloak imbued with the element of wind. Don't get any bright ideas and start jumping off of buildings, though.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":32,
+	"materials":["Black Bird Feather","Wind Crystal","Emerald","Cloths and Skins","Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -158,8 +158,8 @@ registerItem({
 		"mdef":68
 	},
 	"flavourtext":"Equipment that prevents accidents before they happen.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":38,
+	"materials":["Shoulder Piece","Diamond"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -173,8 +173,8 @@ registerItem({
 		"mdef":36
 	},
 	"flavourtext":"A vest studded with scales.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":25,
+	"materials":["Silver","Pretty Carapace","Root"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -188,8 +188,8 @@ registerItem({
 		"mdef":30
 	},
 	"flavourtext":"With this, straw sandals and a ninja sword on your back, you're on your way to becoming a true warrior!",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":20,
+	"materials":["Silver","Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -203,8 +203,8 @@ registerItem({
 		"mdef":11
 	},
 	"flavourtext":"Might look like bandages, but they're not. Also not recommended as a chest wrap for women.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":12,
+	"materials":["Old Bandage","Old Bandage","Spider's Thread"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -218,8 +218,8 @@ registerItem({
 		"mdef":18
 	},
 	"flavourtext":"You've got mail!",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":16,
+	"materials":["Bronze","Liquids"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -232,8 +232,8 @@ registerItem({
 		"mdef":320
 	},
 	"flavourtext":"Makes you look super cool.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":53,
+	"materials":["Quality Worn Cloth","Big Bird's Comb","Puppetry Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -246,8 +246,8 @@ registerItem({
 		"mdef":468
 	},
 	"flavourtext":"The puffy wool protects you from attacks, but it's soooooo annoying to wash.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":56,
+	"materials":["Electro Crystal","Wooly Furball","Wooly Furball","Strings"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -261,8 +261,8 @@ registerItem({
 		"mdef":2
 	},
 	"flavourtext":"Fancy clothing that keeps you warm. Also called a waistcoat.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":8,
+	"materials":["Cloths and Skins","Furs"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
@@ -275,8 +275,8 @@ registerItem({
 		"def":5
 	},
 	"flavourtext":"A plain shirt to wear under clothes. It's made from materials which absorb sweat well.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":2,
+	"materials":["Cloths and Skins"],
 	"category":"Armor",
 	"pricemultiplier":"E"
 })
