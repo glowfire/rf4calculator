@@ -293,15 +293,64 @@ registerItem({
 })
 
 registerItem({
-	"name":" Sickle",
-	"sell":,
-	"buy":,
+	"name":"Iron Sickle",
+	"sell":140,
+	"buy":3e3,
 	"ability":{
-		"atk":
+		"atk":20
 	},
-	"flavourtext":"A sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"forginglevel":,
-	"materials":["","Shards"],
+	"flavourtext":"A fairly sharp sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":15,
+	"materials":["Bronze","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Quality Sickle",
+	"sell":400,
+	"buy":25e3,
+	"ability":{
+		"atk":60
+	},
+	"flavourtext":"A high-quality sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":30,
+	"materials":["Silver","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Super Sickle",
+	"sell":600,
+	"ability":{
+		"atr":["Wind"],
+		"atk":100,
+		"matk":20,
+		"str":20
+	},
+	"flavourtext":"An outstanding sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":45,
+	"materials":["Gold","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Legendary Sickle",
+	"sell":2500,
+	"ability":{
+		"atr":["Wind"],
+		"atk":178,
+		"matk":80,
+		"str":50,
+		"diz":5,
+		"critP":20,
+		"stunP":30
+	},
+	"flavourtext":"This sickle is sick...le! Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":80,
+	"materials":["Platinum","Shards"],
 	"category":"Sickle",
 	"pricemultiplier":"E"
 })
