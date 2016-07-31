@@ -844,7 +844,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A green-colored ribbon. Those who wear it look environmentally conscious. Possibly hipster.",
-	"craftinglevel":,
+	"craftinglevel":5,
 	"materials":["Green Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -1090,15 +1090,291 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Magic Plant Shield",
+	"sell":1e3,
 	"ability":{
-		"":
+		// None
 	},
-	"flavourtext":".",
+	"flavourtext":"A shield from a magic plant. The better you take care of it, the stronger it will be.",
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Umbrella",
+	"sell":52,
+	"buy":300,
+	"ability":{
+		"mdef":6
+	},
+	"flavourtext":"An expensive umbrella. Mainly meant for use as a parasol, but works against rain, too!",
+	"craftinglevel":6,
+	"materials":["Cloths and Skins","Strings","Sticks and Stems"],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Monkey Plush",
+	"sell":74,
+	"buy":3950,
+	"ability":{
+		"atr":["Love"],
+		"mdef":18,
+		"loveresP":50
+	},
+	"flavourtext":"A cute stuffed animal. Sold out in stores due to how terrifyingly cuddly it is.",
 	"craftinglevel":,
 	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Magical Shield",
+	"sell":18e3,
+	"ability":{
+		"def":840,
+		"mdef":800,
+		"psnresP":50,
+		"sealresP":50,
+		"parresP":50,
+		"slpresP":50,
+		"ftgresP":25,
+		"sickresP":25,
+		"drainresP":50
+	},
+	"flavourtext":"High in magic defense and resists status ailments. The crystal in its center reduces magic attacks.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Kite Shield",
+	"sell":4600,
+	"buy":378e3,
+	"ability":{
+		"def":208,
+		"mdef":162,
+		"dizresP":50
+	},
+	"flavourtext":"A shield with high defensive power. Simply shaped, easy to use and highly resistant to knockouts.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Bone Shield",
+	"sell":610,
+	"buy":42e3,
+	"ability":{
+		"def":66,
+		"mdef":56
+	},
+	"flavourtext":"A shield that's both light and hard. Its featherweight nature makes it easy to handle.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Turtle Shield",
+	"sell":240,
+	"buy":9800,
+	"ability":{
+		"def":24,
+		"mdef":16,
+		"critresP":30,
+		"knockresP":75
+	},
+	"flavourtext":"A shield made by combining turtle shells. Very heavy, and often used in training. Resists being blown away.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Chaos Shield",
+	"sell":480,
+	"buy":21500,
+	"ability":{
+		"def":40,
+		"mdef":38,
+		"psnresP":80,
+		"sealresP":80,
+		"parresP":80
+	},
+	"flavourtext":"A shield that goes with the chaos blade. Highly resistant to poison, paralysis and seals.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Element Shield",
+	"sell":14800,
+	"ability":{
+		"atr":["Fire","Water","Earth","Wind"],
+		"def":610,
+		"mdef":580,
+		"fireresP":15,
+		"waterresP":15,
+		"earthresP":15,
+		"windresP":15
+	},
+	"flavourtext":"A shield that raises defense against elemental attacks. Lighter than it looks and very easy to use.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Prism Shield",
+	"sell":3e4,
+	"ability":{
+		"def":1080,
+		"mdef":960,
+		"int":10,
+		"sealresP":100
+	},
+	"flavourtext":"A shield that fends off magic attacks. Reduces damage by diffusing magical power. Blocks seals.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Magic Shield",
+	"sell":1200,
+	"buy":71500,
+	"ability":{
+		"def":84,
+		"mdef":78,
+		"int":5,
+		"sealresP":100
+	},
+	"flavourtext":"A shield that blocks magic attacks and seals. Best used together with a staff.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rune Shield",
+	"sell":11e4,
+	"ability":{
+		"atr":["Light","Dark"],
+		"def":2800,
+		"mdef":3120,
+		"lightresP":50,
+		"darkresP":50
+	},
+	"flavourtext":"A shield made with runes. Not easily damaged, and blocks magic attacks. Halves light and darkness damage.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Knight Shield",
+	"sell":7900,
+	"ability":{
+		"def":325,
+		"mdef":320,
+		"dizresP":50,
+		"critresP":50
+	},
+	"flavourtext":"Proof of bravery, only borne by a chosen few. Has a very high chance of resisting critical hits.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Heavy Shield",
+	"sell":940,
+	"buy":9e4,
+	"ability":{
+		"def":102,
+		"mdef":84,
+		"critresP":50,
+		"knockresP":20
+	},
+	"flavourtext":"A shield made from layers of silver. Big and tough, it has a high chance of resisting critical hits.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Platinum Shield",
+	"sell":3800,
+	"buy":127e3,
+	"ability":{
+		"def":150,
+		"mdef":150,
+		"dizresP":85,
+		"critresP":70
+	},
+	"flavourtext":"A durable shield made of pure platinum. Greatly resists critical hits.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Round Shield",
+	"sell":118,
+	"buy":5440,
+	"ability":{
+		"def":15,
+		"mdef":7
+	},
+	"flavourtext":"A rounded shield. Used to fend off attacks rather than simply deflecting them.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iron Shield",
+	"sell":47,
+	"buy":1240,
+	"ability":{
+		"def":8
+	},
+	"flavourtext":"A simple shield made from iron. Wide, so it stops attacks fairly easily.",
+	"craftinglevel":,
+	"materials":["",""],
+	"category":"Shield",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Small Shield",
+	"sell":22,
+	"buy":70,
+	"ability":{
+		"def":3
+	},
+	"flavourtext":"A small shield, easy to use. Low defense capability.",
+	"craftinglevel":2,
+	"materials":["Minerals"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
