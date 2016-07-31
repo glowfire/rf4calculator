@@ -111,6 +111,87 @@ registerItem({
 })
 
 registerItem({
+	"name":"Miracle Axe",
+	"sell":2500,
+	"ability":{
+		"atk":190,
+		"def":30,
+		"matk":15,
+		"mdef":50,
+		"str":20,
+		"diz":5,
+		"critP":10,
+		"stunP":50
+	},
+	"flavourtext":"An axe so amazing, poems are written of its noble deeds. Shorter time needed to charge, making it highly efficient.",
+	"craftinglevel":80,
+	"materials":["Platinum","Stones","Sticks and Stems"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Mountain Axe",
+	"sell":600,
+	"ability":{
+		"atk":108,
+		"matk":10,
+		"critP":5
+	},
+	"flavourtext":"An axe like an ox. Made from gold and can be charged to cover wider areas.",
+	"craftinglevel":45,
+	"materials":["Gold","Stones","Sticks and Stems"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lumber Axe",
+	"sell":400,
+	"buy":3e4,
+	"ability":{
+		"atk":67,
+		"matk":5,
+		"critP":5
+	},
+	"flavourtext":"A nice, strong silver axe. Can be charged to cover wider areas.",
+	"craftinglevel":30,
+	"materials":["Silver","Stones","Sticks and Stems"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Chopping Axe",
+	"sell":130,
+	"buy":5e3,
+	"ability":{
+		"atk":25,
+		"critP":5
+	},
+	"flavourtext":"A sturdy bronze axe. Can be charged to cover wider areas.",
+	"craftinglevel":15,
+	"materials":["Bronze","Stones","Sticks and Stems"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cheap Axe",
+	"sell":34,
+	"buy":1500,
+	"ability":{
+		"atk":3,
+		"critP":5
+	},
+	"flavourtext":"An old rusty axe. Too old to be charged.",
+	"craftinglevel":5,
+	"materials":["Stones","Sticks and Stems"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
