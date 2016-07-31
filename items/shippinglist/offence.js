@@ -519,15 +519,137 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Fenrir",
+	"sell":1e5,
 	"ability":{
-		"":
+		"atk":12350,
+		"def":720,
+		"matk":1e4,
+		"mdef":500,
+		"diz":3
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"A weapon in the shape of a wolf-like monster that can swallow gods.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Rune Crystal","Red Lion Fur","Blue Lion Fur","Broken Ice Wall"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Bazal Katar",
+	"sell":6e4,
+	"ability":{
+		"atk":9800,
+		"def":580,
+		"mdef":300,
+		"diz":3
+	},
+	"flavourtext":"A foreign weapon that looks like a sword. Actually, it's called a jamadhar.",
+	"forginglevel":90,
+	"materials":["Dragonic Stone","Earthwyrm Scale","Firewyrm Scale","Crystal Skull","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Hand of God",
+	"sell":4e4,
+	"ability":{
+		"atk":7500,
+		"def":360,
+		"matk":2e3
+		"mdef":100,
+		"diz":3
+	},
+	"flavourtext":"A.k.a. God hand.",
+	"forginglevel":82,
+	"materials":["Dragonic Stone","Chimera Tail","Ambrosia's Thorns","Small Crystal","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Golem  Punch", // More than one space in name
+	"sell":18e3,
+	"ability":{
+		"atk":4980,
+		"def":300,
+		"mdef":90,
+		"diz":3
+	},
+	"flavourtext":"Learning the way of Golems' punch. It's sad that they don't fly off.",
+	"forginglevel":75,
+	"materials":["Orichalcum","Golem Spirit Stone","Golem Tablet","MTGU Plate","Shiny Screw"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Caestus",
+	"sell":12500,
+	"ability":{
+		"atk":4e3,
+		"def":220,
+		"matk":1e3,
+		"mdef":80,
+		"diz":3
+	},
+	"flavourtext":"It's said that ancient boxers used them.",
+	"forginglevel":69,
+	"materials":["Orichalcum","Dangerous Scissors","Red Lion Fur","Blue Lion Fur"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Ironleaf Fists",
+	"sell":11e3,
+	"ability":{
+		"atk":2550,
+		"def":180,
+		"matk":800,
+		"mdef":60,
+		"diz":3,
+		"critP":3
+	},
+	"flavourtext":"Hurts, of course. Be careful not to stab yourself instead.",
+	"forginglevel":64,
+	"materials":["Orichalcum","Crimson Scale","MTGU Plate","Ironleaf","Ironleaf"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Animal Puppets",
+	"sell":14e3,
+	"ability":{
+		"atk":1960,
+		"def":150,
+		"matk":500,
+		"mdef":50,
+		"diz":3
+	},
+	"flavourtext":"A useful tool to have when performing a skit alone, but as a weapon...",
+	"forginglevel":60,
+	"materials":["Turnip's Miracle","Rune Crystal","Puppetry Strings","Furs","Furs"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cat Punch",
+	"sell":7500,
+	"ability":{
+		"atk":1411,
+		"def":125,
+		"matk":200,
+		"mdef":45,
+		"diz":3,
+		"critP":5
+	},
+	"flavourtext":"A weapon in the shape of a cat's paws. Although it looks soft, the claw part seriously hurts.",
+	"forginglevel":57,
+	"materials":["Orichalcum","Quality Worn Cloth","Yellow Feather","Big Bird's Comb","Chimera's Claw"],
 	"category":"Fist",
 	"pricemultiplier":"E"
 })
