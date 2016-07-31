@@ -4,6 +4,12 @@
 // Unchecked price multipliers
 
 // Need Water Dragon Ash x1, Earth Dragon Ash x1, Glitta Augite x1 to complete this shipping section
+// Unshipped: Twin Justice, Earnest Edge, Dark Invitation, Orcus Sword,
+// Magic Shot,
+// Splash Star, Saint Axe, Fatal Crush, Mjolnir,
+// Gungnir, Dragon's Fang, Bjor,
+// Caliburn, Heaven Asunder, Braveheart,
+// Rune Legend, Rune Blade
 
 registerItem({
 	"name":"Clippers",
@@ -552,12 +558,29 @@ registerItem({
 })
 
 registerItem({
+	"name":"Caestus",
+	"sell":12500,
+	"ability":{
+		"atk":4e3,
+		"def":220,
+		"matk":1e3,
+		"mdef":80,
+		"diz":3
+	},
+	"flavourtext":"It's said that ancient boxers used them.",
+	"forginglevel":69,
+	"materials":["Orichalcum","Dangerous Scissors","Red Lion Fur","Blue Lion Fur"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Hand of God",
 	"sell":4e4,
 	"ability":{
 		"atk":7500,
 		"def":360,
-		"matk":2e3
+		"matk":2e3,
 		"mdef":100,
 		"diz":3
 	},
@@ -580,23 +603,6 @@ registerItem({
 	"flavourtext":"Learning the way of Golems' punch. It's sad that they don't fly off.",
 	"forginglevel":75,
 	"materials":["Orichalcum","Golem Spirit Stone","Golem Tablet","MTGU Plate","Shiny Screw"],
-	"category":"Fist",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Caestus",
-	"sell":12500,
-	"ability":{
-		"atk":4e3,
-		"def":220,
-		"matk":1e3,
-		"mdef":80,
-		"diz":3
-	},
-	"flavourtext":"It's said that ancient boxers used them.",
-	"forginglevel":69,
-	"materials":["Orichalcum","Dangerous Scissors","Red Lion Fur","Blue Lion Fur"],
 	"category":"Fist",
 	"pricemultiplier":"E"
 })
@@ -637,6 +643,22 @@ registerItem({
 })
 
 registerItem({
+	"name":"Dragon Claws",
+	"sell":2350,
+	"buy":126e3,
+	"ability":{
+		"atk":592,
+		"def":40,
+		"diz":3
+	},
+	"flavourtext":"A weapon made from dragon claws. Can even cut steel.",
+	"forginglevel":42,
+	"materials":["Platinum","Dragon Fang","Scales","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Cat Punch",
 	"sell":7500,
 	"ability":{
@@ -651,6 +673,221 @@ registerItem({
 	"forginglevel":57,
 	"materials":["Orichalcum","Quality Worn Cloth","Yellow Feather","Big Bird's Comb","Chimera's Claw"],
 	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gloves",
+	"sell":380,
+	"buy":21500,
+	"ability":{
+		"atk":172,
+		"vit":20,
+		"diz":3,
+		"critP":2
+	},
+	"flavourtext":"These are for protecting your fists. Pretty basic, really.",
+	"forginglevel":20,
+	"materials":["Quality Cloth","Fur (M)","Strings"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fists of Dark",
+	"sell":1580,
+	"buy":429500,
+	"ability":{
+		"atr":["Dark"],
+		"atk":748,
+		"def":45,
+		"matk":30,
+		"mdef":15,
+		"int":15,
+		"diz":3
+	},
+	"flavourtext":"Evil iron gauntlets. This is the power gained by giving your heart to the dark side.",
+	"forginglevel":46,
+	"materials":["Malm Claw","Dark Crystal","Cursed Doll"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fists of Light",
+	"sell":9e3,
+	"ability":{
+		"atr":["Light"],
+		"atk":1110,
+		"def":100,
+		"matk":100,
+		"mdef":40,
+		"int":15,
+		"diz":3
+	},
+	"flavourtext":"Shiny iron gauntlets. So bright they make you want sunglasses.",
+	"forginglevel":53,
+	"materials":["Orichalcum","Light Crystal","Light Crystal","Big Crystal"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fists of the Earth",
+	"sell":1020,
+	"buy":64e3,
+	"ability":{
+		"atr":["Earth"],
+		"atk":318,
+		"def":25,
+		"matk":5,
+		"mdef":10,
+		"int":15,
+		"diz":3
+	},
+	"flavourtext":"Heavy iron gauntlets. They make you feel powerful and grounded.",
+	"forginglevel":30,
+	"materials":["Gold","Rigid Horn","Earth Crystal","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fists of Wind",
+	"sell":2e3,
+	"buy":999999,
+	"ability":{
+		"atr":["Wind"],
+		"atk":906,
+		"def":50,
+		"matk":30,
+		"mdef":20,
+		"int":15,
+		"diz":3
+	},
+	"flavourtext":"Sharp iron gauntlets. It's important to draw your punches quickly for maximum effect.",
+	"forginglevel":50,
+	"materials":["Malm Claw","Wind Crystal","Chimera's Claw"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fists of Water",
+	"sell":2300,
+	"buy":98e3,
+	"ability":{
+		"atr":["Water"],
+		"atk":482,
+		"def":35,
+		"matk":15,
+		"mdef":10,
+		"int":15,
+		"diz":3
+	},
+	"flavourtext":"Cold iron gauntlets. They can deliver merciless blows.",
+	"forginglevel":38,
+	"materials":["Platinum","Water Crystal","Aquamarine","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fists of Fire",
+	"sell":1030,
+	"buy":86e3,
+	"ability":{
+		"atr":["Fire"],
+		"atk":396,
+		"def":30,
+		"matk":10,
+		"mdef":10,
+		"int":15,
+		"diz":3
+	},
+	"flavourtext":"Burning iron gauntlets. We all are friends after a fight!",
+	"forginglevel":33,
+	"materials":["Diamond","Fire Crystal","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Bear Claws",
+	"sell":580,
+	"buy":35700,
+	"ability":{
+		"atk":222,
+		"def":20,
+		"diz":3
+	},
+	"flavourtext":"A weapon that looks like the claws of a bear.",
+	"forginglevel":28,
+	"materials":["Gold","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Kote",
+	"sell":139,
+	"buy":10150,
+	"ability":{
+		"atk":112,
+		"def":15,
+		"diz":3
+	},
+	"flavourtext":"A weapon that can be used as armor.",
+	"forginglevel":16,
+	"materials":["Iron","Palm Claw","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Brass Knuckles",
+	"sell":130,
+	"buy":4660,
+	"ability":{
+		"atk":59,
+		"def":3,
+		"diz":3
+	},
+	"flavourtext":"A lethal weapon mainly used by Goblin gangs.",
+	"forginglevel":10,
+	"materials":["Bronze","Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Leather Gloves",
+	"sell":13,
+	"buy":290,
+	"ability":{
+		"atk":24,
+		"def":1,
+		"diz":3
+	},
+	"flavourtext":"They're for protecting your fists rather than attacking. Since there are holes for fingers, it's easy to grab monsters.",
+	"forginglevel":2,
+	"materials":["Cloths and Skins"],
+	"category":"Fist",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"diz":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Dual Blade",
 	"pricemultiplier":"E"
 })
 
