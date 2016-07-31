@@ -435,17 +435,100 @@ registerItem({
 })
 
 registerItem({
-	"name":" Hoe",
+	"name":"Blessed Hoe",
+	"sell":2500,
+	"ability":{
+		"atr":["Earth"],
+		"atk":150,
+		"def":60,
+		"matk":30,
+		"mdef":20,
+		"str":20,
+		"vit":20,
+		"diz":5,
+		"critP":10,
+		"stunP":30
+	},
+	"flavourtext":"A hoe so strong that the soil is all like, thank you, may I have another? Really wide coverage when charged.",
+	"forginglevel":80,
+	"materials":["Platinum"],
+	"category":"Hoe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Shiny Hoe",
+	"sell":600,
+	"ability":{
+		"atr":["Earth"],
+		"atk":64,
+		"matk":15
+	},
+	"flavourtext":"A hoe that glimmers like the sweat on your brow. Covers a very wide area when charged.",
+	"forginglevel":45,
+	"materials":["Gold"],
+	"category":"Hoe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Seasoned Hoe",
+	"sell":400,
+	"buy":25e3,
+	"ability":{
+		"atr":["Earth"],
+		"atk":30,
+		"matk":10
+	},
+	"flavourtext":"A stronger hoe. Covers an even wider area when charged than the Sturdy Hoe.",
+	"forginglevel":30,
+	"materials":["Silver"],
+	"category":"Hoe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Sturdy Hoe",
+	"sell":120,
+	"buy":3e3,
+	"ability":{
+		"atr":["Earth"],
+		"atk":18,
+		"matk":5
+	},
+	"flavourtext":"A slightly stronger hoe. No longer chipped by rocks. Charge to cover a wider area.",
+	"forginglevel":15,
+	"materials":["Bronze"],
+	"category":"Hoe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cheap Hoe",
+	"sell":24,
+	"buy":150,
+	"ability":{
+		"atr":["Earth"],
+		"atk":1
+	},
+	"flavourtext":"An old, rusty hoe. You can till the fields with it. Its blade is chipped.",
+	"forginglevel":5,
+	"materials":["Minerals"],
+	"category":"Hoe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
 	"sell":,
 	"buy":,
 	"ability":{
-		"atr":["Earth"],
-		"atk":
+		"":
 	},
-	"flavourtext":". .",
+	"flavourtext":".",
 	"forginglevel":,
-	"materials":[""],
-	"category":"Hoe",
+	"materials":["",""],
+	"category":"Fist",
 	"pricemultiplier":"E"
 })
 
