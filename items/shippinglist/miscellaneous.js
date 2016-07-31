@@ -1460,7 +1460,7 @@ registerItem({ // unshipped
 		"difficulty":50
 	},
 	"flavourtext":"A strange stone produced by a tree. Emits strong light. If used for reinforcing a weapon, extends the range.",
-	"pricemultiplier":"E", /// unknown
+	"pricemultiplier":"E", /// confirmed
 	"cookingeffects":{}
 })
 
