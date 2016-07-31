@@ -192,6 +192,123 @@ registerItem({
 })
 
 registerItem({
+	"name":"Platinum Hammer",
+	"sell":2500,
+	"ability":{
+		"atk":187,
+		"def":50,
+		"matk":15,
+		"mdef":30,
+		"str":20,
+		"diz":18,
+		"critP":-5,
+		"stunP":75
+	},
+	"flavourtext":"A hammer made from platinum. Shorter time needed to charge, making it highly efficient. Used to flatten soil.",
+	"craftinglevel":80,
+	"materials":["Platinum","Sticks and Stems"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Golden Hammer",
+	"sell":600,
+	"ability":{
+		"atk":106,
+		"matk":10,
+		"diz":5,
+		"critP":-5,
+		"stunP":20
+	},
+	"flavourtext":"A hammer reinforced with gold. Can be charged to cover wider areas. Used to flatten soil.",
+	"craftinglevel":45,
+	"materials":["Gold","Sticks and Stems"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Silver Hammer",
+	"sell":400,
+	"buy":3e4,
+	"ability":{
+		"atk":68,
+		"matk":5,
+		"diz":5,
+		"critP":-5,
+		"stunP":20
+	},
+	"flavourtext":"A hammer reinforced with silver. Can be charged to cover wider areas. Used to flatten soil.",
+	"craftinglevel":30,
+	"materials":["Silver","Sticks and Stems"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iron Hammer",
+	"sell":138,
+	"buy":5e3,
+	"ability":{
+		"atk":25,
+		"diz":5,
+		"critP":-5,
+		"stunP":20
+	},
+	"flavourtext":"A hammer reinforced with bronze. Can be charged to cover wider areas. Used to flatten soil.",
+	"craftinglevel":15,
+	"materials":["Bronze","Sticks and Stems"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cheap Hammer",
+	"sell":13,
+	"buy":1500,
+	"ability":{
+		"atk":3,
+		"diz":5,
+		"critP":-5,
+		"stunP":20
+	},
+	"flavourtext":"An old, rusty hammer. Too old to be charged. Used to flatten soil.",
+	"craftinglevel":5,
+	"materials":["Minerals","Sticks and Stems"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cheap Sickle",
+	"sell":38,
+	"buy":300,
+	"ability":{
+		"atk":2
+	},
+	"flavourtext":"An old, rusty sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"craftinglevel":5,
+	"materials":["Minerals","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":" Sickle",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":
+	},
+	"flavourtext":"A sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"craftinglevel":,
+	"materials":["","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
