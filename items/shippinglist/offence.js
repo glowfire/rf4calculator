@@ -279,43 +279,20 @@ registerItem({
 })
 
 registerItem({
-	"name":"Cheap Sickle",
-	"sell":38,
-	"buy":300,
+	"name":"Legendary Sickle",
+	"sell":2500,
 	"ability":{
-		"atk":2
+		"atr":["Wind"],
+		"atk":178,
+		"matk":80,
+		"str":50,
+		"diz":5,
+		"critP":20,
+		"stunP":30
 	},
-	"flavourtext":"An old, rusty sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"forginglevel":5,
-	"materials":["Minerals","Shards"],
-	"category":"Sickle",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Iron Sickle",
-	"sell":140,
-	"buy":3e3,
-	"ability":{
-		"atk":20
-	},
-	"flavourtext":"A fairly sharp sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"forginglevel":15,
-	"materials":["Bronze","Shards"],
-	"category":"Sickle",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Quality Sickle",
-	"sell":400,
-	"buy":25e3,
-	"ability":{
-		"atk":60
-	},
-	"flavourtext":"A high-quality sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"forginglevel":30,
-	"materials":["Silver","Shards"],
+	"flavourtext":"This sickle is sick...le! Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":80,
+	"materials":["Platinum","Shards"],
 	"category":"Sickle",
 	"pricemultiplier":"E"
 })
@@ -337,21 +314,58 @@ registerItem({
 })
 
 registerItem({
-	"name":"Legendary Sickle",
-	"sell":2500,
+	"name":"Quality Sickle",
+	"sell":400,
+	"buy":25e3,
 	"ability":{
-		"atr":["Wind"],
-		"atk":178,
-		"matk":80,
-		"str":50,
-		"diz":5,
-		"critP":20,
-		"stunP":30
+		"atk":60
 	},
-	"flavourtext":"This sickle is sick...le! Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"forginglevel":80,
-	"materials":["Platinum","Shards"],
+	"flavourtext":"A high-quality sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":30,
+	"materials":["Silver","Shards"],
 	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iron Sickle",
+	"sell":140,
+	"buy":3e3,
+	"ability":{
+		"atk":20
+	},
+	"flavourtext":"A fairly sharp sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":15,
+	"materials":["Bronze","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cheap Sickle",
+	"sell":38,
+	"buy":300,
+	"ability":{
+		"atk":2
+	},
+	"flavourtext":"An old, rusty sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
+	"forginglevel":5,
+	"materials":["Minerals","Shards"],
+	"category":"Sickle",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Waterpot",
 	"pricemultiplier":"E"
 })
 
