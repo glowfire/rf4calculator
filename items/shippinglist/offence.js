@@ -11,8 +11,7 @@ registerItem({
 	"buy":1900,
 	// No Ability
 	"flavourtext":"An item used to trim and clip Wooly fur. Designed not to hurt its target.",
-	"forginglevel":, // Probably none
-	"materials":["",""], // Probably none
+	// Cannot be forged
 	"category":"Clippers",
 	"pricemultiplier":"E"
 })
@@ -23,8 +22,7 @@ registerItem({
 	"buy":2400,
 	// No Ability
 	"flavourtext":"An item used to brush monsters. Capable of grooming just about anything!",
-	"forginglevel":, // Probably none
-	"materials":["",""], // Probably none
+	// Cannot be forged
 	"category":"Brush",
 	"pricemultiplier":"E"
 })
