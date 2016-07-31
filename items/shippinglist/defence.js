@@ -1145,8 +1145,8 @@ registerItem({
 		"drainresP":50
 	},
 	"flavourtext":"High in magic defense and resists status ailments. The crystal in its center reduces magic attacks.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":65,
+	"materials":["Crimson Scale","Left Rock Shard","Right Rock Shard","Rune Crystal"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1161,8 +1161,8 @@ registerItem({
 		"dizresP":50
 	},
 	"flavourtext":"A shield with high defensive power. Simply shaped, easy to use and highly resistant to knockouts.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":50,
+	"materials":["Proof of Rank","Warrior's Proof","Platinum","Dragon Bones"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1230,8 +1230,8 @@ registerItem({
 		"windresP":15
 	},
 	"flavourtext":"A shield that raises defense against elemental attacks. Lighter than it looks and very easy to use.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":58,
+	"materials":["Yellow Feather","Green Core","Red Core","Yellow Core","Blue Core"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1246,8 +1246,8 @@ registerItem({
 		"sealresP":100
 	},
 	"flavourtext":"A shield that fends off magic attacks. Reduces damage by diffusing magical power. Blocks seals.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":78,
+	"materials":["Blue Scale","Glitter Scale","Crimson Scale","Light Ore","Small Crystal"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1263,8 +1263,8 @@ registerItem({
 		"sealresP":100
 	},
 	"flavourtext":"A shield that blocks magic attacks and seals. Best used together with a staff.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":37,
+	"materials":["Gold","Silver","Mysterious Powder","Crystals"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1280,8 +1280,8 @@ registerItem({
 		"darkresP":50
 	},
 	"flavourtext":"A shield made with runes. Not easily damaged, and blocks magic attacks. Halves light and darkness damage.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":94,
+	"materials":["Dragonic Stone","Dragon Fin","Earthwyrm Scale","Rune Crystal","Small Crystal"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1296,8 +1296,8 @@ registerItem({
 		"critresP":50
 	},
 	"flavourtext":"Proof of bravery, only borne by a chosen few. Has a very high chance of resisting critical hits.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":54,
+	"materials":["Orichalcum","Grimoire Scale"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1313,8 +1313,8 @@ registerItem({
 		"knockresP":20
 	},
 	"flavourtext":"A shield made from layers of silver. Big and tough, it has a high chance of resisting critical hits.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":41,
+	"materials":["Diamond","Shoulder Piece"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1330,8 +1330,8 @@ registerItem({
 		"critresP":70
 	},
 	"flavourtext":"A durable shield made of pure platinum. Greatly resists critical hits.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":43,
+	"materials":["Platinum","Platinum","Blk. Tortoise Shell"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
