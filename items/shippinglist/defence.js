@@ -1,6 +1,8 @@
 // Registration of items in the order as shown in the shipping records.
 // This list contains the items listed in the fourth section.
 
+// Unchecked price multipliers
+
 registerItem({
 	"name":"Four Dragons' Vest",
 	"sell":12e4,
