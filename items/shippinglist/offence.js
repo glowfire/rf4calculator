@@ -356,16 +356,96 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
+	"name":"Joy Waterpot",
+	"sell":2500,
+	"ability":{
+		"atr":["Water"],
+		"def":40,
+		"matk":100,
+		"mdef":80,
+		"int":50,
+		"diz":5,
+		"critP":15,
+		"stunP":80
+	},
+	"flavourtext":"A lovely waterpot. So lovely that its water strikes the field as if tears from an omnibenevolent deity above.",
+	"forginglevel":80,
+	"materials":["Platinum","Cloths and Skins"],
+	"category":"Waterpot",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rainbow Waterpot",
+	"sell":600,
+	"ability":{
+		"atr":["Water"],
+		"matk":60
+	},
+	"flavourtext":"A colorful waterpot. So colorful that it can cover wider areas than most. It wishes to be the prettiest waterpot at the dance.",
+	"forginglevel":45,
+	"materials":["Gold","Cloths and Skins"],
+	"category":"Waterpot",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lion Waterpot",
+	"sell":400,
+	"buy":25e3,
+	"ability":{
+		"atr":["Water"],
+		"matk":35
+	},
+	"flavourtext":"A super-cool waterpot. So cool that it can cover wider areas than most.",
+	"forginglevel":30,
+	"materials":["Silver","Cloths and Skins"],
+	"category":"Waterpot",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Tin Waterpot",
+	"sell":135,
+	"buy":3e3,
+	"ability":{
+		"atr":["Water"],
+		"matk":18
+	},
+	"flavourtext":"A tin waterpot. Though heavy, it can be charged to water the field.",
+	"forginglevel":15,
+	"materials":["Bronze","Cloths and Skins"],
+	"category":"Waterpot",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cheap Waterpot",
+	"sell":37,
+	"buy":150,
+	"ability":{
+		"atr":["Water"],
+		"matk":1
+	},
+	"flavourtext":"An old, rusted waterpot. You can water the fields with it. Press the B Button repeatedly to water as you walk.",
+	"forginglevel":5,
+	"materials":["Minerals","Cloths and Skins"],
+	"category":"Waterpot",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":" Hoe",
 	"sell":,
 	"buy":,
 	"ability":{
-		"":
+		"atr":["Earth"],
+		"atk":
 	},
-	"flavourtext":".",
+	"flavourtext":". .",
 	"forginglevel":,
-	"materials":["",""],
-	"category":"Waterpot",
+	"materials":[""],
+	"category":"Hoe",
 	"pricemultiplier":"E"
 })
 
