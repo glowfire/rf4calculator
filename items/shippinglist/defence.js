@@ -1124,8 +1124,8 @@ registerItem({
 		"loveresP":50
 	},
 	"flavourtext":"A cute stuffed animal. Sold out in stores due to how terrifyingly cuddly it is.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":12,
+	"materials":["Yellow Down","Cloths and Skins","Cloths and Skins"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1176,8 +1176,8 @@ registerItem({
 		"mdef":56
 	},
 	"flavourtext":"A shield that's both light and hard. Its featherweight nature makes it easy to handle.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":32,
+	"materials":["Gold","Shells and Bones"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1193,8 +1193,8 @@ registerItem({
 		"knockresP":75
 	},
 	"flavourtext":"A shield made by combining turtle shells. Very heavy, and often used in training. Resists being blown away.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":20,
+	"materials":["Turtle Shell","Bronze","Liquids"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1211,8 +1211,8 @@ registerItem({
 		"parresP":80
 	},
 	"flavourtext":"A shield that goes with the chaos blade. Highly resistant to poison, paralysis and seals.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":25,
+	"materials":["Silver","Pretty Carapace"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1345,8 +1345,8 @@ registerItem({
 		"mdef":7
 	},
 	"flavourtext":"A rounded shield. Used to fend off attacks rather than simply deflecting them.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":15,
+	"materials":["Bronze"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1359,8 +1359,8 @@ registerItem({
 		"def":8
 	},
 	"flavourtext":"A simple shield made from iron. Wide, so it stops attacks fairly easily.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":8,
+	"materials":["Iron","Iron"],
 	"category":"Shield",
 	"pricemultiplier":"E"
 })
@@ -1376,19 +1376,5 @@ registerItem({
 	"craftinglevel":2,
 	"materials":["Minerals"],
 	"category":"Shield",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
-	"ability":{
-		"":
-	},
-	"flavourtext":".",
-	"craftinglevel":,
-	"materials":["",""],
-	"category":"",
 	"pricemultiplier":"E"
 })
