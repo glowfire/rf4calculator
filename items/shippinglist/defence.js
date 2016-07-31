@@ -623,8 +623,8 @@ registerItem({
 		"int":5
 	},
 	"flavourtext":"When you wear this, you might hear a song. No tricks, no gimmicks!",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":17,
+	"materials":["Black Grass","Cloths and Skins"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -641,8 +641,8 @@ registerItem({
 		"windresP":7
 	},
 	"flavourtext":"A headdress that makes you feel all seasons. It's for those who have pure, strong, merciful and open hearts.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":44,
+	"materials":["Spring Headdress","Summer Headdress","Autumn Headdress","Winter Headdress"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -657,8 +657,8 @@ registerItem({
 		"faintresP":100
 	},
 	"flavourtext":"A classy crown that kings wear.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":95,
+	"materials":["Dragonic Stone","Small Crystal","Black Scale","White Stone","Rune Crystal"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -672,8 +672,8 @@ registerItem({
 		"str":2
 	},
 	"flavourtext":"An accessory inspired by a Palm Cat's ears.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":24,
+	"materials":["Furs"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -687,8 +687,8 @@ registerItem({
 		"int":2
 	},
 	"flavourtext":"An accessory that decorates your head. It must be frilly and flashy.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":20,
+	"materials":["Cloths and Skins","Cloths and Skins","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -702,8 +702,8 @@ registerItem({
 		"mdef":4
 	},
 	"flavourtext":"Gothic Lolita fashion that is popular among some people.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":19,
+	"materials":["Black Grass","Cloths and Skins","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -768,8 +768,8 @@ registerItem({
 		"def":15
 	},
 	"flavourtext":"A hat made from a pumpkin. The hero of Halloween.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":20,
+	"materials":["Pumpkin"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -783,8 +783,8 @@ registerItem({
 		"mdef":10
 	},
 	"flavourtext":"A hat made from a turnip. It was once used during Halloween, but it got replaced by a pumpkin.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":30,
+	"materials":["Turnip"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -798,7 +798,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A white-colored ribbon. Those who wear it should probably avoid eating spaghetti.",
-	"craftinglevel":,
+	"craftinglevel":38,
 	"materials":["White Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -813,8 +813,8 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"An indigo-colored ribbon. Those who wear it look regal.",
-	"craftinglevel":,
-	"materials":["Indigo Grass","Cloths and Skins","Strings"],
+	"craftinglevel":77,
+	"materials":["Blue Scale","Indigo Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -829,7 +829,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A purple-colored ribbon. Those who wear it look sort of gothic.",
-	"craftinglevel":,
+	"craftinglevel":6,
 	"materials":["Purple Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -859,7 +859,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A blue-colored ribbon. Those who wear it look loyal.",
-	"craftinglevel":,
+	"craftinglevel":4,
 	"materials":["Blue Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -874,7 +874,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A yellow-colored ribbon. Those who wear it look intelligent.",
-	"craftinglevel":,
+	"craftinglevel":22,
 	"materials":["Yellow Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -889,7 +889,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A red-colored ribbon. Those who wear it look passionate.",
-	"craftinglevel":,
+	"craftinglevel":30,
 	"materials":["Red Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -904,7 +904,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"An orange-colored ribbon. Those who wear it look fun to hang out with.",
-	"craftinglevel":,
+	"craftinglevel":35,
 	"materials":["Orange Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -920,7 +920,7 @@ registerItem({
 		"sealresP":5
 	},
 	"flavourtext":"A black-colored ribbon. Those who wear it look intimidating.",
-	"craftinglevel":,
+	"craftinglevel":18,
 	"materials":["Black Grass","Cloths and Skins","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
@@ -934,8 +934,8 @@ registerItem({
 		"def":4
 	},
 	"flavourtext":"A warm, woolen hat.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":13,
+	"materials":["Cloths and Skins","Cloths and Skins"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -949,8 +949,8 @@ registerItem({
 		"mdef":1
 	},
 	"flavourtext":"Protects your head. Don't push. Don't run. Don't talk. Just stop, drop...and rooooooll...",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":16,
+	"materials":["Ghost Hood","Cloths and Skins"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -963,8 +963,8 @@ registerItem({
 		"def":3
 	},
 	"flavourtext":"A hat great for summer. It feels good because it lets the heat out.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":8,
+	"materials":["Strings","Strings"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -977,8 +977,8 @@ registerItem({
 		"int":10
 	},
 	"flavourtext":"You look rather more silly than smart in these.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":15,
+	"materials":["Magic Crystal","Aquamarine","Aquamarine"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -992,8 +992,99 @@ registerItem({
 		"int":2
 	},
 	"flavourtext":"People say you look smart with these.",
-	"craftinglevel":,
-	"materials":["",""],
+	"craftinglevel":7,
+	"materials":["Aquamarine","Aquamarine"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Brand Glasses",
+	"sell":650,
+	"buy":6500,
+	"ability":{
+		"mdef":4,
+		"str":2
+	},
+	"flavourtext":"A famous designer's brand. Makes you look stylish!",
+	"craftinglevel":11,
+	"materials":["Dark Crystal","Aquamarine","Aquamarine"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Feathered Hat",
+	"sell":330,
+	"ability":{
+		"def":150,
+		"mdef":120,
+		"loveresP":25,
+		"dizresP":20,
+		"critresP":20
+	},
+	"flavourtext":"A hat with feathers in it. Protects your head and makes you look like an intellectual. Also increases love.",
+	"craftinglevel":51,
+	"materials":["Quality Worn Cloth","Feathers","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Headband",
+	"sell":13,
+	"buy":65,
+	"ability":{
+		"def":1
+	},
+	"flavourtext":"A headband from the Far East. Tie it around your forehead when you want to feel awesome.",
+	"craftinglevel":2,
+	"materials":["Cloths and Skins"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fancy Hat",
+	"sell":47,
+	"buy":2800,
+	"ability":{
+		"def":4
+	},
+	"flavourtext":"A striking red hat. Breathes quite well, offering superior cranial comfort.",
+	"craftinglevel":9,
+	"materials":["Cloths and Skins","Strings"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gold Hairpin",
+	"sell":1200,
+	"ability":{
+		"def":520,
+		"mdef":480,
+		"sealresP":20
+	},
+	"flavourtext":"A traditional craft item from the Far East. Made of finest gold.",
+	"craftinglevel":60,
+	"materials":["Turnip's Miracle","Gold"],
+	"category":"Headgear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Silver Hairpin",
+	"sell":380,
+	"buy":25e3,
+	"ability":{
+		"def":12,
+		"mdef":8,
+		"sealresP":10
+	},
+	"flavourtext":"A traditional craft item from the Far East. Worn on the head to ward off evil spirits.",
+	"craftinglevel":26,
+	"materials":["Silver"],
 	"category":"Headgear",
 	"pricemultiplier":"E"
 })
@@ -1003,12 +1094,12 @@ registerItem({
 	"sell":,
 	"buy":,
 	"ability":{
-		"def":
+		"":
 	},
 	"flavourtext":".",
 	"craftinglevel":,
 	"materials":["",""],
-	"category":"Headgear",
+	"category":"Shield",
 	"pricemultiplier":"E"
 })
 
