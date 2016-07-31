@@ -103,7 +103,7 @@ registerItem({
 	},
 	"flavourtext":"An old, rusty fishing pole. So old that it might break if the fish is too large.",
 	"forginglevel":5,
-	"materials":[Sticks and Stems","Strings"],
+	"materials":["Sticks and Stems","Strings"],
 	"category":"Pole",
 	"pricemultiplier":"E"
 })
