@@ -11,7 +11,7 @@ registerItem({
 	"buy":1900,
 	// No Ability
 	"flavourtext":"An item used to trim and clip Wooly fur. Designed not to hurt its target.",
-	"craftinglevel":, // Probably none
+	"forginglevel":, // Probably none
 	"materials":["",""], // Probably none
 	"category":"Clippers",
 	"pricemultiplier":"E"
@@ -23,7 +23,7 @@ registerItem({
 	"buy":2400,
 	// No Ability
 	"flavourtext":"An item used to brush monsters. Capable of grooming just about anything!",
-	"craftinglevel":, // Probably none
+	"forginglevel":, // Probably none
 	"materials":["",""], // Probably none
 	"category":"Brush",
 	"pricemultiplier":"E"
@@ -45,7 +45,7 @@ registerItem({
 		"stunP":50
 	},
 	"flavourtext":"A pole so strong that it'll never break. Can be charged to attract fish from far away.",
-	"craftinglevel":80,
+	"forginglevel":80,
 	"materials":["Platinum","Sticks and Stems","Strings"],
 	"category":"Pole",
 	"pricemultiplier":"E"
@@ -59,7 +59,7 @@ registerItem({
 		"matk":40
 	},
 	"flavourtext":"A pole for master fishers. Can be charged to attract fish from far away.",
-	"craftinglevel":45,
+	"forginglevel":45,
 	"materials":["Gold","Sticks and Stems","Strings"],
 	"category":"Pole",
 	"pricemultiplier":"E"
@@ -74,7 +74,7 @@ registerItem({
 		"matk":25
 	},
 	"flavourtext":"A pole for novice fishers. Can be charged to attract fish from far away.",
-	"craftinglevel":30,
+	"forginglevel":30,
 	"materials":["Silver","Sticks and Stems","Strings"],
 	"category":"Pole",
 	"pricemultiplier":"E"
@@ -89,7 +89,7 @@ registerItem({
 		"matk":12
 	},
 	"flavourtext":"A pole for beginners. Can be charged to attract fish from far away.",
-	"craftinglevel":15,
+	"forginglevel":15,
 	"materials":["Bronze","Sticks and Stems","Strings"],
 	"category":"Pole",
 	"pricemultiplier":"E"
@@ -104,7 +104,7 @@ registerItem({
 		"matk":3
 	},
 	"flavourtext":"An old, rusty fishing pole. So old that it might break if the fish is too large.",
-	"craftinglevel":5,
+	"forginglevel":5,
 	"materials":[Sticks and Stems","Strings"],
 	"category":"Pole",
 	"pricemultiplier":"E"
@@ -124,7 +124,7 @@ registerItem({
 		"stunP":50
 	},
 	"flavourtext":"An axe so amazing, poems are written of its noble deeds. Shorter time needed to charge, making it highly efficient.",
-	"craftinglevel":80,
+	"forginglevel":80,
 	"materials":["Platinum","Stones","Sticks and Stems"],
 	"category":"Axe",
 	"pricemultiplier":"E"
@@ -139,7 +139,7 @@ registerItem({
 		"critP":5
 	},
 	"flavourtext":"An axe like an ox. Made from gold and can be charged to cover wider areas.",
-	"craftinglevel":45,
+	"forginglevel":45,
 	"materials":["Gold","Stones","Sticks and Stems"],
 	"category":"Axe",
 	"pricemultiplier":"E"
@@ -155,7 +155,7 @@ registerItem({
 		"critP":5
 	},
 	"flavourtext":"A nice, strong silver axe. Can be charged to cover wider areas.",
-	"craftinglevel":30,
+	"forginglevel":30,
 	"materials":["Silver","Stones","Sticks and Stems"],
 	"category":"Axe",
 	"pricemultiplier":"E"
@@ -170,7 +170,7 @@ registerItem({
 		"critP":5
 	},
 	"flavourtext":"A sturdy bronze axe. Can be charged to cover wider areas.",
-	"craftinglevel":15,
+	"forginglevel":15,
 	"materials":["Bronze","Stones","Sticks and Stems"],
 	"category":"Axe",
 	"pricemultiplier":"E"
@@ -185,7 +185,7 @@ registerItem({
 		"critP":5
 	},
 	"flavourtext":"An old rusty axe. Too old to be charged.",
-	"craftinglevel":5,
+	"forginglevel":5,
 	"materials":["Stones","Sticks and Stems"],
 	"category":"Axe",
 	"pricemultiplier":"E"
@@ -205,7 +205,7 @@ registerItem({
 		"stunP":75
 	},
 	"flavourtext":"A hammer made from platinum. Shorter time needed to charge, making it highly efficient. Used to flatten soil.",
-	"craftinglevel":80,
+	"forginglevel":80,
 	"materials":["Platinum","Sticks and Stems"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
@@ -222,7 +222,7 @@ registerItem({
 		"stunP":20
 	},
 	"flavourtext":"A hammer reinforced with gold. Can be charged to cover wider areas. Used to flatten soil.",
-	"craftinglevel":45,
+	"forginglevel":45,
 	"materials":["Gold","Sticks and Stems"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
@@ -240,7 +240,7 @@ registerItem({
 		"stunP":20
 	},
 	"flavourtext":"A hammer reinforced with silver. Can be charged to cover wider areas. Used to flatten soil.",
-	"craftinglevel":30,
+	"forginglevel":30,
 	"materials":["Silver","Sticks and Stems"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
@@ -257,7 +257,7 @@ registerItem({
 		"stunP":20
 	},
 	"flavourtext":"A hammer reinforced with bronze. Can be charged to cover wider areas. Used to flatten soil.",
-	"craftinglevel":15,
+	"forginglevel":15,
 	"materials":["Bronze","Sticks and Stems"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
@@ -274,7 +274,7 @@ registerItem({
 		"stunP":20
 	},
 	"flavourtext":"An old, rusty hammer. Too old to be charged. Used to flatten soil.",
-	"craftinglevel":5,
+	"forginglevel":5,
 	"materials":["Minerals","Sticks and Stems"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
@@ -288,7 +288,7 @@ registerItem({
 		"atk":2
 	},
 	"flavourtext":"An old, rusty sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"craftinglevel":5,
+	"forginglevel":5,
 	"materials":["Minerals","Shards"],
 	"category":"Sickle",
 	"pricemultiplier":"E"
@@ -302,7 +302,7 @@ registerItem({
 		"atk":
 	},
 	"flavourtext":"A sickle. Use it to cut weeds and plants. You can also cut crops to collect seeds",
-	"craftinglevel":,
+	"forginglevel":,
 	"materials":["","Shards"],
 	"category":"Sickle",
 	"pricemultiplier":"E"
@@ -316,7 +316,7 @@ registerItem({
 		"":
 	},
 	"flavourtext":".",
-	"craftinglevel":,
+	"forginglevel":,
 	"materials":["",""],
 	"category":"",
 	"pricemultiplier":"E"
