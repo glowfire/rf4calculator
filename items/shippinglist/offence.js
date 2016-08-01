@@ -1941,7 +1941,7 @@ registerItem({
 	},
 	"flavourtext":"A staff with magical power. Designed for sorcery, so it reduces RP spent when using magic.",
 	"forginglevel":2,
-	"materials":[Sticks and Stems"],
+	"materials":["Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
