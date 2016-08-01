@@ -975,7 +975,7 @@ registerItem({
 		"atk":3580,
 		"def":250,
 		"matk":2500,
-		"mdef":88
+		"mdef":88,
 		"diz":3
 	},
 	"flavourtext":"Dual blades used by priests for protection. They're quite powerful, and guaranteed to keep anyone safely preaching.",
@@ -1094,6 +1094,176 @@ registerItem({
 	"flavourtext":"Dual blade designs inspired by desert winds. Popular for their beauty and strength.",
 	"forginglevel":44,
 	"materials":["Malm Claw","Wind Crystal","Earth Crystal","MTGU Plate"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Chaos Edge",
+	"sell":5400,
+	"buy":186550,
+	"ability":{
+		"atr":["Dark"],
+		"atk":628,
+		"matk":15,
+		"diz":3,
+		"paratkP":15
+	},
+	"flavourtext":"Dual blades imbued with magical power. Has a paralyzing effect.",
+	"forginglevel":40,
+	"materials":["Platinum","Platinum","Quality Propeller","Quality Propeller","Holy Spore"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Twin Leeks",
+	"sell":3939,
+	"buy":30939,
+	"ability":{
+		"atk":309,
+		"def":39,
+		"matk":39,
+		"mdef":39,
+		"str":39,
+		"vit":39,
+		"int":39,
+		"diz":25,
+		"critP":15
+	},
+	"flavourtext":"Leeks. Yes, leeks. Wielding them makes you feel like singing polka.",
+	"forginglevel":39,
+	"materials":["Leek","Leek"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Sonic Dagger",
+	"sell":4800,
+	"buy":145700,
+	"ability":{
+		"atr":["Wind"],
+		"atk":505,
+		"matk":30,
+		"diz":3
+	},
+	"flavourtext":"Slim wind-elemental dual blades that move at sonic speed. You can hear the air itself being cut in two.",
+	"forginglevel":39,
+	"materials":["Platinum","Platinum","Emerald","Emerald","Thunderbird Feather"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Platinum Edge",
+	"sell":4200,
+	"buy":104400,
+	"ability":{
+		"atk":436,
+		"diz":3
+	},
+	"flavourtext":"Dual blades made of pure platinum. Very sharp and durable.",
+	"forginglevel":37,
+	"materials":["Platinum","Platinum","Dragon Fang","Dragon Fang"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Salamander",
+	"sell":2e3,
+	"buy":96700,
+	"ability":{
+		"atr":["Fire"],
+		"atk":400,
+		"matk":20,
+		"diz":3
+	},
+	"flavourtext":"Dual blades set ablaze. Be careful you don't get burned, 'cause these swords are hot, hot, hot!",
+	"forginglevel":35,
+	"materials":["Diamond","Diamond","Fire Crystal","Cheap Propeller"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rampage",
+	"sell":1700,
+	"buy":91400,
+	"ability":{
+		"atk":372,
+		"diz":3,
+		"critP":5
+	},
+	"flavourtext":'Called "Rampage" due to their fiery power and the violence they instill in their bearer.',
+	"forginglevel":33,
+	"materials":["Diamond","Diamond","Gold Wolf Fang"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Twin Blade",
+	"sell":1650,
+	"buy":88e3,
+	"ability":{
+		"atk":324,
+		"diz":3,
+		"psnatkP":15
+	},
+	"flavourtext":"Dual blades that can make you as strong as an ogre. The long blades help extend your reach. Also has a poisoning effect.",
+	"forginglevel":32,
+	"materials":["Gold","Gold","Rigid Horn","Rigid Horn","Paralysis Poison"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Steel Katana",
+	"sell":1300,
+	"buy":71040,
+	"ability":{
+		"atk":276,
+		"diz":3
+	},
+	"flavourtext":"Solid swords reinforced with high heat. So sharp that they can cut steel.",
+	"forginglevel":30,
+	"materials":["Gold","Gold","Black Bird Feather"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gorgeous Lx",
+	"sell":6200,
+	"buy":5e4,
+	"ability":{
+		"atk":232,
+		"vit":5,
+		"int":-5,
+		"diz":3
+	},
+	"flavourtext":"Gorgeous dual blades. Not only one, but two of them. They're gorgeous, and you can be too, by wielding them.",
+	"forginglevel":28,
+	"materials":["Gorgeous Sword","Gorgeous Sword"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Wind Edge",
+	"sell":1e3,
+	"buy":43800,
+	"ability":{
+		"atr":["Wind"],
+		"atk":214,
+		"matk":5,
+		"diz":3
+	},
+	"flavourtext":"Two roaring swords that create winds capable of slicing through enemies.",
+	"forginglevel":25,
+	"materials":["Emerald","Emerald","Palm Claw"],
 	"category":"Dual Blade",
 	"pricemultiplier":"E"
 })
