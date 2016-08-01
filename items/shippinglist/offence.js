@@ -1314,16 +1314,63 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Frost Edge",
+	"sell":438,
+	"buy":9990,
 	"ability":{
-		"atk":,
+		"atr":["Water"]
+		"atk":96,
+		"matk":3,
 		"diz":3
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"Two swords emanating cool air. Not for people who are overly sensitive to the cold.",
+	"forginglevel":13,
+	"materials":["Aquamarine","Aquamarine","Liquids"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Double Scratch",
+	"sell":200,
+	"ability":{
+		"atk":69,
+		"matk":20,
+		"diz":3
+	},
+	"flavourtext":"Dual blades used to soothe itchy backs<br> With [sic] two at your disposal, your whole back is covered!",
+	"forginglevel":12,
+	"materials":["Back Scratcher","Back Scratcher"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Steel Edge",
+	"sell":167,
+	"buy":6500,
+	"ability":{
+		"atk":58,
+		"diz":3
+	},
+	"flavourtext":"Weapon made with sharpened iron. Heavy, and requires considerable skill to wield.",
+	"forginglevel":9,
+	"materials":["Iron","Iron","Bronze"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Short Dagger",
+	"sell":45,
+	"buy":1310,
+	"ability":{
+		"atk":28,
+		"diz":3
+	},
+	"flavourtext":"Hold one in each hand to overwhelm your foes. If you do this, though, you can't bear a shield.",
+	"forginglevel":5,
+	"materials":["Minerals","Minerals"],
 	"category":"Dual Blade",
 	"pricemultiplier":"E"
 })
