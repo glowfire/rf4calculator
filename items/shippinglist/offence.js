@@ -1440,22 +1440,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Basket",
-	"sell":80,
-	"ability":{
-		"atr":["Love"],
-		"matk":5,
-		"vit":20,
-		"critP":25
-	},
-	"flavourtext":"A basket that fits more than you'd think. Be careful not to leave things inside when fighting or they might spill!",
-	"forginglevel":4,
-	"materials":["Strings","Strings","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
 	"name":"Algernon",
 	"sell":28e3,
 	"ability":{
@@ -1466,21 +1450,6 @@ registerItem({
 	"flavourtext":"A staff of flowers given to someone. For some reason, handling it makes you feel extra sharp.",
 	"forginglevel":91,
 	"materials":["Moving Branch","Ambrosia's Thorns","Wind Dragon Tooth","Charm Blue","Lamp Grass"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Sorcerer's Wand",
-	"sell":98e3,
-	"ability":{
-		"atr":["Light"],
-		"matk":12960,
-		"diz":15
-	},
-	"flavourtext":"An almighty staff. But a true sorcerer knows he actually knows nothing.",
-	"forginglevel":99,
-	"materials":["Rune Sphere Shard","Dragon Fin","Rune Crystal","Small Crystal","Moving Branch"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
@@ -1501,67 +1470,144 @@ registerItem({
 })
 
 registerItem({
-	"name":"Magic Shot",
-	"sell":48e3,
-	"ability":{
-		"atr":["Love"],
-		"atk":7980,
-		"matk":7350,
-		"mdef":50,
-		"diz":30,
-		"critP":50,
-		"knockP":50,
-		"stunP":150
-	},
-	"flavourtext":"A trumpet-shaped syringe. Makes mysterious sloshy sounds. Getting pierced with it would hurt a lot.",
-	"forginglevel":85,
-	"materials":["Earthwyrm Scale","Melody Bottle","Rune Crystal","Small Crystal","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Magic Broom",
-	"sell":27e3,
-	"ability":{
-		"atr":["Wind"],
-		"matk":5500,
-		"diz":15
-	},
-	"flavourtext":"A staff that long ago belonged to a witch. You can use it to fly around in classic witchy style.",
-	"forginglevel":82,
-	"materials":["Ancient Orc Cloth","Moving Branch","Rune Crystal","Big Crystal","Strings"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Mage's Staff+",
-	"sell":11500,
-	"ability":{
-		"atr":["Love"],
-		"matk":4400,
-		"vit":60,
-		"diz":15
-	},
-	"flavourtext":"A mage's staff strengthened with magical power. Not only more powerful, but easier to use as well.",
-	"forginglevel":76,
-	"materials":["Dragonic Stone","Orichalcum","Love Scale","Love Crystal","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Rune Staff",
-	"sell":24e3,
+	"name":"Sorcerer's Wand",
+	"sell":98e3,
 	"ability":{
 		"atr":["Light"],
-		"matk":3140,
+		"matk":12960,
 		"diz":15
 	},
-	"flavourtext":"A staff used by great wizards. Its magical power can be boosted by writing runes in the air.",
-	"forginglevel":70,
-	"materials":["Rune Crystal","Rune Crystal","Crimson Scale","Sticks and Stems"],
+	"flavourtext":"An almighty staff. But a true sorcerer knows he actually knows nothing.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Dragon Fin","Rune Crystal","Small Crystal","Moving Branch"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Love-Love Rod",
+	"sell":1300,
+	"buy":5200,
+	"ability":{
+		"atr":["Love"],
+		"matk":35,
+		"diz":15
+	},
+	"flavourtext":"A staff of love. Among wizard couples, it's secretly popular to equip it together.",
+	"forginglevel":15,
+	"materials":["Friendly Rod","Love Crystal","Love Crystal","Love Crystal"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Friendly Rod",
+	"sell":300,
+	"buy":4800,
+	"ability":{
+		"atr":["Love"],
+		"matk":18,
+		"diz":15
+	},
+	"flavourtext":"A staff of friendship. <q>We should be good friends</q> means she doesn't want to date you.",
+	"forginglevel":13,
+	"materials":["Love Crystal","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Diamond Rod",
+	"sell":800,
+	"buy":84800,
+	"ability":{
+		"atr":["Dark"],
+		"matk":94,
+		"diz":15
+	},
+	"flavourtext":"Although it's the king of jewels, the only thing people care about is its hardness. And it IS very hard.",
+	"forginglevel":33,
+	"materials":["Diamond","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Aquamarine Rod",
+	"sell":190,
+	"buy":2500,
+	"ability":{
+		"atr":["Water"],
+		"matk":11,
+		"diz":15
+	},
+	"flavourtext":"A staff decorated with an ocean blue stone.",
+	"forginglevel":8,
+	"materials":["Aquamarine","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Amethyst Rod",
+	"sell":72,
+	"buy":1880,
+	"ability":{
+		"atr":["Earth"],
+		"matk":10,
+		"diz":15
+	},
+	"flavourtext":"A staff decorated with purple amethysts. Many of the wizards who have this rod are attractive, mature people.",
+	"forginglevel":6,
+	"materials":["","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Sapphire Rod",
+	"sell":650,
+	"buy":35e3,
+	"ability":{
+		"atr":["Light"],
+		"matk":60,
+		"diz":15
+	},
+	"flavourtext":"A very cute rod. This is the best for those who care about the beauty of their hair.",
+	"forginglevel":26,
+	"materials":["Sapphire","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Emerald Rod",
+	"sell":470,
+	"buy":9e3,
+	"ability":{
+		"atr":["Wind"],
+		"matk":42,
+		"diz":15
+	},
+	"flavourtext":"Bright green is a symbol of calmness. This rod makes you look intelligent and cool.",
+	"forginglevel":18,
+	"materials":["Emerald","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Ruby Rod",
+	"sell":550,
+	"buy":22500,
+	"ability":{
+		"atr":["Fire"],
+		"matk":56,
+		"diz":15
+	},
+	"flavourtext":"A passionate staff that shines bright red. No one can stop the feelings gushing out from this weapon.",
+	"forginglevel":23,
+	"materials":["Ruby","Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
@@ -1592,6 +1638,22 @@ registerItem({
 	"flavourtext":"A staff that has the power of wind. It produces high suction power which is used as a cleaning tool in another world.",
 	"forginglevel":60,
 	"materials":["Green Core","Grimoire Scale","Turnip's Miracle","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Shooting Star Staff",
+	"sell":550,
+	"buy":165e3,
+	"ability":{
+		"atr":["Light"],
+		"matk":254,
+		"diz":15
+	},
+	"flavourtext":"A staff inspired by speeding stars in the sky. Sadly, your speed will not become twice as fast.",
+	"forginglevel":43,
+	"materials":["Fairy Elixir","Golem Stone","Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
@@ -1659,17 +1721,83 @@ registerItem({
 })
 
 registerItem({
-	"name":"Shooting Star Staff",
-	"sell":550,
-	"buy":165e3,
+	"name":"Magic Shot",
+	"sell":48e3,
 	"ability":{
-		"atr":["Light"],
-		"matk":254,
+		"atr":["Love"],
+		"atk":7980,
+		"matk":7350,
+		"mdef":50,
+		"diz":30,
+		"critP":50,
+		"knockP":50,
+		"stunP":150
+	},
+	"flavourtext":"A trumpet-shaped syringe. Makes mysterious sloshy sounds. Getting pierced with it would hurt a lot.",
+	"forginglevel":85,
+	"materials":["Earthwyrm Scale","Melody Bottle","Rune Crystal","Small Crystal","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Basket",
+	"sell":80,
+	"ability":{
+		"atr":["Love"],
+		"matk":5,
+		"vit":20,
+		"critP":25
+	},
+	"flavourtext":"A basket that fits more than you'd think. Be careful not to leave things inside when fighting or they might spill!",
+	"forginglevel":4,
+	"materials":["Strings","Strings","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Magic Broom",
+	"sell":27e3,
+	"ability":{
+		"atr":["Wind"],
+		"matk":5500,
 		"diz":15
 	},
-	"flavourtext":"A staff inspired by speeding stars in the sky. Sadly, your speed will not become twice as fast.",
-	"forginglevel":43,
-	"materials":["Fairy Elixir","Golem Stone","Sticks and Stems"],
+	"flavourtext":"A staff that long ago belonged to a witch. You can use it to fly around in classic witchy style.",
+	"forginglevel":82,
+	"materials":["Ancient Orc Cloth","Moving Branch","Rune Crystal","Big Crystal","Strings"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Mage's Staff+",
+	"sell":11500,
+	"ability":{
+		"atr":["Love"],
+		"matk":4400,
+		"vit":60,
+		"diz":15
+	},
+	"flavourtext":"A mage's staff strengthened with magical power. Not only more powerful, but easier to use as well.",
+	"forginglevel":76,
+	"materials":["Dragonic Stone","Orichalcum","Love Scale","Love Crystal","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rune Staff",
+	"sell":24e3,
+	"ability":{
+		"atr":["Light"],
+		"matk":3140,
+		"diz":15
+	},
+	"flavourtext":"A staff used by great wizards. Its magical power can be boosted by writing runes in the air.",
+	"forginglevel":70,
+	"materials":["Rune Crystal","Rune Crystal","Crimson Scale","Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
@@ -1707,33 +1835,17 @@ registerItem({
 })
 
 registerItem({
-	"name":"Diamond Rod",
-	"sell":800,
-	"buy":84800,
+	"name":"Earth Staff",
+	"sell":310,
+	"buy":4e4,
 	"ability":{
-		"atr":["Dark"],
-		"matk":94,
+		"atr":["Earth"],
+		"matk":65,
 		"diz":15
 	},
-	"flavourtext":"Although it's the king of jewels, the only thing people care about is its hardness. And it IS very hard.",
-	"forginglevel":33,
-	"materials":["Diamond","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Ice Staff",
-	"sell":380,
-	"buy":7e4,
-	"ability":{
-		"atr":["Water"],
-		"matk":80,
-		"diz":15
-	},
-	"flavourtext":"A staff imbued with the magic power of water. The head is very cold and seems to emanate a faint breeze.",
-	"forginglevel":31,
-	"materials":["Water Crystal","Sticks and Stems"],
+	"flavourtext":"A staff imbued with the magic power of earth. Strong enough to shake the ground.",
+	"forginglevel":28,
+	"materials":["Earth Crystal","Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
@@ -1755,49 +1867,17 @@ registerItem({
 })
 
 registerItem({
-	"name":"Earth Staff",
-	"sell":310,
-	"buy":4e4,
+	"name":"Ice Staff",
+	"sell":380,
+	"buy":7e4,
 	"ability":{
-		"atr":["Earth"],
-		"matk":65,
+		"atr":["Water"],
+		"matk":80,
 		"diz":15
 	},
-	"flavourtext":"A staff imbued with the magic power of earth. Strong enough to shake the ground.",
-	"forginglevel":28,
-	"materials":["Earth Crystal","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Sapphire Rod",
-	"sell":650,
-	"buy":35e3,
-	"ability":{
-		"atr":["Light"],
-		"matk":60,
-		"diz":15
-	},
-	"flavourtext":"A very cute rod. This is the best for those who care about the beauty of their hair.",
-	"forginglevel":26,
-	"materials":["Sapphire","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Ruby Rod",
-	"sell":550,
-	"buy":22500,
-	"ability":{
-		"atr":["Fire"],
-		"matk":56,
-		"diz":15
-	},
-	"flavourtext":"A passionate staff that shines bright red. No one can stop the feelings gushing out from this weapon.",
-	"forginglevel":23,
-	"materials":["Ruby","Sticks and Stems"],
+	"flavourtext":"A staff imbued with the magic power of water. The head is very cold and seems to emanate a faint breeze.",
+	"forginglevel":31,
+	"materials":["Water Crystal","Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
@@ -1835,22 +1915,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Emerald Rod",
-	"sell":470,
-	"buy":9e3,
-	"ability":{
-		"atr":["Wind"],
-		"matk":42,
-		"diz":15
-	},
-	"flavourtext":"Bright green is a symbol of calmness. This rod makes you look intelligent and cool.",
-	"forginglevel":18,
-	"materials":["Emerald","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
 	"name":"Staff",
 	"sell":80,
 	"buy":6280,
@@ -1867,70 +1931,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Love-Love Rod",
-	"sell":1300,
-	"buy":5200,
-	"ability":{
-		"atr":["Love"],
-		"matk":35,
-		"diz":15
-	},
-	"flavourtext":"A staff of love. Among wizard couples, it's secretly popular to equip it together.",
-	"forginglevel":15,
-	"materials":["Friendly Rod","Love Crystal","Love Crystal","Love Crystal"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Friendly Rod",
-	"sell":300,
-	"buy":4800,
-	"ability":{
-		"atr":["Love"],
-		"matk":18,
-		"diz":15
-	},
-	"flavourtext":"A staff of friendship. <q>We should be good friends</q> means she doesn't want to date you.",
-	"forginglevel":13,
-	"materials":["Love Crystal","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Aquamarine Rod",
-	"sell":190,
-	"buy":2500,
-	"ability":{
-		"atr":["Water"],
-		"matk":11,
-		"diz":15
-	},
-	"flavourtext":"A staff decorated with an ocean blue stone.",
-	"forginglevel":8,
-	"materials":["Aquamarine","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Amethyst Rod",
-	"sell":72,
-	"buy":1880,
-	"ability":{
-		"atr":["Earth"],
-		"matk":10,
-		"diz":15
-	},
-	"flavourtext":"A staff decorated with purple amethysts. Many of the wizards who have this rod are attractive, mature people.",
-	"forginglevel":6,
-	"materials":["","Sticks and Stems"],
-	"category":"Staff",
-	"pricemultiplier":"E"
-})
-
-registerItem({
 	"name":"Rod",
 	"sell":12,
 	"buy":1300,
@@ -1941,8 +1941,26 @@ registerItem({
 	},
 	"flavourtext":"A staff with magical power. Designed for sorcery, so it reduces RP spent when using magic.",
 	"forginglevel":2,
-	"materials":["Sticks and Stems"],
+	"materials":[Sticks and Stems"],
 	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Devil Finger",
+	"sell":13333,
+	"ability":{
+		"atk":6e3,
+		"matk":2e3
+		"diz":15,
+		"critP":5,
+		"stunP":10,
+		"drainP":10
+	},
+	"flavourtext":"A weapon that leaves scars said to resemble scratches from the devil's nails. Has the power to absorb life.",
+	"forginglevel":73,
+	"materials":["Love Scale","Legendary Scale","Water Dragon Ash","Fire Dragon Ash","Earth Dragon Ash"],
+	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
@@ -1951,14 +1969,14 @@ registerItem({
 	"sell":,
 	"buy":,
 	"ability":{
-		"atr":[""],
-		"matk":,
-		"diz":
+		"atk":,
+		"diz":,
+		"critP":
 	},
 	"flavourtext":".",
 	"forginglevel":,
-	"materials":["","Sticks and Stems"],
-	"category":"Staff",
+	"materials":["",""],
+	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
