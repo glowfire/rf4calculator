@@ -877,12 +877,234 @@ registerItem({
 })
 
 registerItem({
+	"name":"Twin Justice",
+	"sell":115e3,
+	"ability":{
+		"atk":11200,
+		"matk":9500,
+		"diz":3
+	},
+	"flavourtext":"Justice now comes in two. Twice the justice, twice the power. Mete it upon your foes for... Uh...great justice!",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Firewyrm Scale","Dragon Fin","Fire Dragon Ash","Water Dragon Ash"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Earnest Edge",
+	"sell":5e4,
+	"ability":{
+		"atk":9600,
+		"diz":6,
+		"critP":8
+	},
+	"flavourtext":"In the hands of an expert, these long blades can win a fight without taking a hit.",
+	"forginglevel":90,
+	"materials":["Dragonic Stone","Earthwyrm Scale","Earthwyrm Scale","Glitta Augite","Glitta Augite"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rune Edge",
+	"sell":44e3,
+	"ability":{
+		"atr":["Light"],
+		"atk":7400,
+		"matk":3e3,
+		"diz":3
+	},
+	"flavourtext":"Dual blade imbued with runic power. Those lucky enough to see them in action may have their dreams come true.",
+	"forginglevel":87,
+	"materials":["Dragonic Stone","Rune Crystal","Rune Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Emerald Edge",
+	"sell":18e3,
+	"ability":{
+		"atr":["Wind"],
+		"atk":6100,
+		"matk":1800,
+		"diz":3
+	},
+	"flavourtext":"Dual blades reinforced countless times. The increase to their magic power gives them a green tint.",
+	"forginglevel":79,
+	"materials":["Dragonic Stone","Green Core","Green Core"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Dragoon Claw",
+	"sell":22e3,
+	"ability":{
+		"atk":5220,
+		"diz":3
+	},
+	"flavourtext":"Dual blades in the shape of three dragon heads. The three on the left blade stop the other three from fighting.",
+	"forginglevel":76,
+	"materials":["Dragon Fang","Blue Scale","Glitter Scale","Grimoire Scale","Small Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Efreet",
+	"sell":9800,
+	"ability":{
+		"atr":["Fire"],
+		"atk":4400,
+		"matk":1500,
+		"diz":3
+	},
+	"flavourtext":"High-heat dual blades that generate heat waves. Legend says they once caused an entire sea to evaporate.",
+	"forginglevel":74,
+	"materials":["Red Core","Crimson Scale","Golem Spirit Stone","Fire Dragon Ash","Fire Dragon Ash"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Priest Saber",
+	"sell":9e3,
+	"ability":{
+		"atk":3580,
+		"def":250,
+		"matk":2500,
+		"mdef":88
+		"diz":3
+	},
+	"flavourtext":"Dual blades used by priests for protection. They're quite powerful, and guaranteed to keep anyone safely preaching.",
+	"forginglevel":72,
+	"materials":["Dangerous Scissors","MTGU Plate","MTGU Plate","Light Crystal","Light Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Dark Invitation",
+	"sell":11200,
+	"ability":{
+		"atr":["Dark"],
+		"atk":3800,
+		"matk":500,
+		"diz":3,
+		"drainP":5
+	},
+	"flavourtext":"Magical soul-eating swords. They can end the lives of their targets in a single instant.",
+	"forginglevel":68,
+	"materials":["Dangerous Scissors","Blue Lion Fur","Red Lion Fur","Legendary Scale","Dark Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Deep Blizzard",
+	"sell":8e3,
+	"ability":{
+		"atr":["Water"],
+		"atk":2380,
+		"matk":400,
+		"diz":3
+	},
+	"flavourtext":"Dual blades so cold that all water around them freezes on contact. As such, its blades tend to change shape a lot.",
+	"forginglevel":63,
+	"materials":["Icy Nose","Icy Nose","Water Crystal","Water Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Orcus Sword",
+	"sell":7100,
+	"ability":{
+		"atk":1920,
+		"diz":3
+	},
+	"flavourtext":"These long blades allow for a number of attacks to be made from a distance.",
+	"forginglevel":57,
+	"materials":["Turnip's Miracle","Earth Dragon Ash","Earth Dragon Ash","Glitta Augite","Glitta Augite"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Heart Fire",
+	"sell":5500,
+	"ability":{
+		"atr":["Fire"],
+		"atk":1380,
+		"matk":180,
+		"diz":3
+	},
+	"flavourtext":"Dual blades as hot as the sun. Their fire is said to turn everything to ash.",
+	"forginglevel":54,
+	"materials":["Fire Dragon Ash","Fire Dragon Ash","Yellow Feather","Fire Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Force Divide",
+	"sell":12200,
+	"ability":{
+		"atr":["Fire","Water"],
+		"atk":1066,
+		"matk":300,
+		"diz":3
+	},
+	"flavourtext":"Dual blade imbued with both fire and water energies. The temperature difference increases the damage dealt.",
+	"forginglevel":51,
+	"materials":["Orichalcum","Fire Crystal","Water Crystal","Red Core","Blue Core"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Broken Wall",
+	"sell":6400,
+	"buy":999999,
+	"ability":{
+		"atr":["Earth"],
+		"atk":888,
+		"matk":50,
+		"diz":3
+	},
+	"flavourtext":"Dual blade imbued with earth power. So hard that they can smash rocks to pieces.",
+	"forginglevel":48,
+	"materials":["Left Rock Shard","Right Rock Shard","Earth Crystal"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Desert Wind",
+	"sell":4e3,
+	"buy":419800,
+	"ability":{
+		"atr":["Earth","Wind"],
+		"atk":710,
+		"matk":45,
+		"diz":3
+	},
+	"flavourtext":"Dual blade designs inspired by desert winds. Popular for their beauty and strength.",
+	"forginglevel":44,
+	"materials":["Malm Claw","Wind Crystal","Earth Crystal","MTGU Plate"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
 	"ability":{
 		"atk":,
-		"diz":
+		"diz":3
 	},
 	"flavourtext":".",
 	"forginglevel":,
