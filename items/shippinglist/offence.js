@@ -1269,6 +1269,51 @@ registerItem({
 })
 
 registerItem({
+	"name":"Acutorimass",
+	"sell":800,
+	"ability":{
+		"atk":132,
+		"matk":35,
+		"diz":3
+	},
+	"flavourtext":"Cooking ladles reinforced as weapons. For some reason there are two.",
+	"forginglevel":23,
+	"materials":["Silver","Silver","Iron","Iron"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Thief Knife",
+	"sell":780,
+	"buy":23900,
+	"ability":{
+		"atk":154,
+		"diz":3
+	},
+	"flavourtext":"Dual blades often used by pirates and thieves. Holding them somehow makes you feel more inherently aggressive.",
+	"forginglevel":23,
+	"materials":["Silver","Silver"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iron Edge",
+	"sell":440,
+	"buy":16700,
+	"ability":{
+		"atk":132,
+		"diz":3
+	},
+	"flavourtext":"Reinforced dual blades. Heavy but well-balanced, making them easy to wield.",
+	"forginglevel":21,
+	"materials":["Iron","Iron","Silver"],
+	"category":"Dual Blade",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
