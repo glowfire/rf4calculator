@@ -1376,6 +1376,40 @@ registerItem({
 })
 
 registerItem({
+	"name":"Syringe",
+	"sell":444,
+	"ability":{
+		"atr":["Water"],
+		"atk":40,
+		"matk":1,
+		"diz":30,
+		"critP":30,
+		"knockP":50,
+		"stunP":150
+	},
+	"flavourtext":"A staff that is a fusion of treatment and injury made by a mad doctor. Not recommended for hospitals.",
+	"forginglevel":29,
+	"materials":["Silver","Furs","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Elvish Harp",
+	"sell":45,
+	"ability":{
+		"atr":["Love"],
+		"matk":32,
+		"diz":30
+	},
+	"flavourtext":"A beautiful and well-made harp. Created by famous Elvish craftsmen. You can play, sing, and hit enemies with it.",
+	"forginglevel":24,
+	"materials":["Strings","Sticks and Stems"],
+	"category":"Staff",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
