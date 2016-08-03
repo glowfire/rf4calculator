@@ -1965,31 +1965,246 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Saint Axe",
+	"sell":99800,
 	"ability":{
-		"atk":,
-		"diz":,
-		"critP":
+		"atr":["Light"],
+		"atk":13500,
+		"matk":8500,
+		"diz":2,
+		"critP":10
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"A holy axe with sacred powers. Originally forged for use in rituals, not battle, making it a bit unwieldly.",
+	"forginglevel":98,
+	"materials":["Rune Sphere Shard","Light Crystal","White Crystal","Small Crystal","Big Crystal"],
 	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Executioner",
+	"sell":38e3,
 	"ability":{
-		"":
+		"atr":["Dark"],
+		"atk":8800,
+		"matk":1500,
+		"diz":2,
+		"critP":10
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
-	"category":"",
+	"flavourtext":"An axe with a sketchy past. Was imbued with dark power while trying to raise its attack.",
+	"forginglevel":81,
+	"materials":["Dragonic Stone","Golem Spirit Stone","Light Ore","Chimera Tail","Dark Crystal"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Alldale",
+	"sell":22e3,
+	"ability":{
+		"atk":4600,
+		"diz":3,
+		"critP":8
+	},
+	"flavourtext":"An axe with two golden blades. Called angel wings, they are both strong and beautiful.",
+	"forginglevel":69,
+	"materials":["Orichalcum","Orichalcum","Dangerous Scissors","White Stone","Yellow Core"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Double Edge",
+	"sell":7500,
+	"ability":{
+		"atk":2980,
+		"diz":2,
+		"critP":10
+	},
+	"flavourtext":"A well-balanced axe with double blades. Highly regarded for its strength and ease of use.",
+	"forginglevel":65,
+	"materials":["Big Giant's Nail","Queen's Jaw","Red Lion Fur","Blue Lion Fur"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Heat Axe",
+	"sell":7500,
+	"ability":{
+		"atr":["Fire"],
+		"atk":1420,
+		"matk":150,
+		"diz":2,
+		"critP":10
+	},
+	"flavourtext":"An axe with burning blades. Nicknamed 'Phoenix Feather,' it serves as a symbol of regeneration.",
+	"forginglevel":53,
+	"materials":["Orichalcum","Fire Crystal","Ruby","Fire Dragon Ash"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Crescent Axe+",
+	"sell":4800,
+	"buy":64e4,
+	"ability":{
+		"atk":1e3,
+		"diz":2,
+		"critP":15
+	},
+	"flavourtext":"A crescent axe strengthened with magical power. A true masterpiece designed to be easy to wield.",
+	"forginglevel":47,
+	"materials":["Crescent Axe","Warrior's Proof","Proof of Rank"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Graviton Hammer",
+	"sell":3800,
+	"buy":84e4,
+	"ability":{
+		"atr":["Earth"],
+		"atk":1150,
+		"matk":60,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer imbued with earth power. Designed not to hurt your hands during attack.",
+	"forginglevel":49,
+	"materials":["Grimoire Scale","Earth Crystal","Minerals"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Spiked Hammer",
+	"sell":6100,
+	"buy":999999,
+	"ability":{
+		"atk":1250,
+		"diz":34,
+		"critP":8,
+		"stunP":10
+	},
+	"flavourtext":"A hammer outfitted with spikes. Can easily score critical hits, hammer or no.",
+	"forginglevel":50,
+	"materials":["Left Rock Shard","Right Rock Shard","Claws and Fangs","Sticks and Stems"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Crystal Hammer",
+	"sell":11e3,
+	"ability":{
+		"atr":["Water"],
+		"atk":1650,
+		"matk":300,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer imbued with water power. Its hard head and spikes cause major damage.",
+	"forginglevel":57,
+	"materials":["Orichalcum","Crystal Skull","Big Crystal","Shards"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Schnabel",
+	"sell":11800,
+	"ability":{
+		"atk":2200,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer designed to be small and light. Has good overall balance.",
+	"forginglevel":60,
+	"materials":["Orichalcum","Ammonite","Blue Core","Shards"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gigant Hammer+",
+	"sell":22e3,
+	"ability":{
+		"atk":5555,
+		"matk":10,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"Gigant Hammer imbued with magical power. Originally owned by high-ranking giants. Has engravings of their names.",
+	"forginglevel":71,
+	"materials":["Gigant Hammer","Golem Spirit Stone","Orichalcum","Small Crystal"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Kongo",
+	"sell":25800,
+	"ability":{
+		"atk":,7122
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"Made by fusing together chunks of metal. Long-ranged, but hard to handle.",
+	"forginglevel":77,
+	"materials":["Strong Stone","Dragonic Stone","Small Crystal"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Mjolnir",
+	"sell":68e3,
+	"ability":{
+		"atr":["Earth"],
+		"atk":1e4,
+		"matk":3e3,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer imbued with earth power. It's said to cause earthquakes if three of them hit the ground at once.",
+	"forginglevel":86,
+	"materials":["Earthwyrm Scale","Dragonic Stone","Small Crystal","Rune Crystal"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fatal Crush",
+	"sell":5e4,
+	"ability":{
+		"atk":11500,
+		"diz":40,
+		"critP":7,
+		"stunP":10
+	},
+	"flavourtext":"A hammer way beyond standard size. Long-ranged, and has a high chance of landing critical hits.",
+	"forginglevel":90,
+	"materials":["Wind Dragon Tooth","Throne of the Empire","Dragonic Stone","Dragonic Stone","Dragonic Stone"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Splash Star",
+	"sell":12e4,
+	"ability":{
+		"atr":["Light"],
+		"atk":14e3,
+		"matk":7200,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"Hammer made by using magical power. As its name implies, it looks like splashing stars.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Wind Dragon Tooth","Dragon Fin","Earthwyrm Scale","Firewyrm Scale"],
+	"category":"Hammer",
 	"pricemultiplier":"E"
 })
