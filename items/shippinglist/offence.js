@@ -2148,7 +2148,7 @@ registerItem({
 	"name":"Kongo",
 	"sell":25800,
 	"ability":{
-		"atk":,7122
+		"atk":7122,
 		"diz":35,
 		"stunP":10
 	},
