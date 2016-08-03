@@ -1951,7 +1951,7 @@ registerItem({
 	"sell":13333,
 	"ability":{
 		"atk":6e3,
-		"matk":2e3
+		"matk":2e3,
 		"diz":15,
 		"critP":5,
 		"stunP":10,
