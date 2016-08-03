@@ -2062,6 +2062,54 @@ registerItem({
 })
 
 registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"diz":,
+		"critP":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"diz":,
+		"critP":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"diz":,
+		"critP":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Graviton Hammer",
 	"sell":3800,
 	"buy":84e4,
@@ -2206,5 +2254,19 @@ registerItem({
 	"forginglevel":99,
 	"materials":["Rune Sphere Shard","Wind Dragon Tooth","Dragon Fin","Earthwyrm Scale","Firewyrm Scale"],
 	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"",
 	"pricemultiplier":"E"
 })
