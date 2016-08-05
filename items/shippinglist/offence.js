@@ -1965,6 +1965,105 @@ registerItem({
 })
 
 registerItem({
+	"name":"Basilisk Fang",
+	"sell":770,
+	"buy":71500,
+	"ability":{
+		"atk":360,
+		"diz":2,
+		"critP":15,
+		"paratkP":30
+	},
+	"flavourtext":"A weapon that can cut through anything as if it were cloth. Has a paralyzing effect.",
+	"forginglevel":30,
+	"materials":["Gold","Paralysis Poison","Claws and Fangs","Claws and Fangs"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Battle Scythe",
+	"sell":140,
+	"buy":6590,
+	"ability":{
+		"atk":70,
+		"diz":2,
+		"critP":15
+	},
+	"flavourtext":"An axe with an extremely sharp blade. Much bigger and sharper than a farming sickle.",
+	"forginglevel":13,
+	"materials":["Bronze","Claws and Fangs"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lollipop",
+	"sell":550,
+	"buy":5200,
+	"ability":{
+		"atk":128,
+		"matk":30,
+		"vit":50,
+		"diz":40,
+		"critP":15
+	},
+	"flavourtext":"A sweet candy on a stick that's so hard, it just might work as a weapon. Raises chance of knockouts and cavities.",
+	"forginglevel":28,
+	"materials":["Butter","Apple"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Axe",
+	"sell":64,
+	"buy":600,
+	"ability":{
+		"atk":42,
+		"diz":2,
+		"critP":15
+	},
+	"flavourtext":"Originally a farming axe, it's excited to join you in battle. Its name is Meryl. And it likes you... for now.",
+	"forginglevel":9,
+	"materials":["Cheap Axe","Minerals"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Crescent Axe+",
+	"sell":4800,
+	"buy":64e4,
+	"ability":{
+		"atk":1e3,
+		"diz":2,
+		"critP":15
+	},
+	"flavourtext":"A crescent axe strengthened with magical power. A true masterpiece designed to be easy to wield.",
+	"forginglevel":47,
+	"materials":["Crescent Axe","Warrior's Proof","Proof of Rank"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Pole Axe+",
+	"sell":650,
+	"buy":18900,
+	"ability":{
+		"atk":163,
+		"diz":2,
+		"critP":10
+	},
+	"flavourtext":"A pole axe strengthened with magical power. Easier to hold and has greater balance.",
+	"forginglevel":20,
+	"materials":["Pole Axe","Silver"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Saint Axe",
 	"sell":99800,
 	"ability":{
@@ -1982,38 +2081,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Executioner",
-	"sell":38e3,
-	"ability":{
-		"atr":["Dark"],
-		"atk":8800,
-		"matk":1500,
-		"diz":2,
-		"critP":10
-	},
-	"flavourtext":"An axe with a sketchy past. Was imbued with dark power while trying to raise its attack.",
-	"forginglevel":81,
-	"materials":["Dragonic Stone","Golem Spirit Stone","Light Ore","Chimera Tail","Dark Crystal"],
-	"category":"Axe",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Alldale",
-	"sell":22e3,
-	"ability":{
-		"atk":4600,
-		"diz":3,
-		"critP":8
-	},
-	"flavourtext":"An axe with two golden blades. Called angel wings, they are both strong and beautiful.",
-	"forginglevel":69,
-	"materials":["Orichalcum","Orichalcum","Dangerous Scissors","White Stone","Yellow Core"],
-	"category":"Axe",
-	"pricemultiplier":"E"
-})
-
-registerItem({
 	"name":"Double Edge",
 	"sell":7500,
 	"ability":{
@@ -2024,6 +2091,60 @@ registerItem({
 	"flavourtext":"A well-balanced axe with double blades. Highly regarded for its strength and ease of use.",
 	"forginglevel":65,
 	"materials":["Big Giant's Nail","Queen's Jaw","Red Lion Fur","Blue Lion Fur"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rock Axe",
+	"sell":1450,
+	"buy":80200,
+	"ability":{
+		"atr":["Earth"],
+		"atk":412,
+		"matk":20,
+		"diz":2,
+		"critP":10
+	},
+	"flavourtext":"Has one of the hardest blades of any axe. As a result, it's also one of the heaviest axes around.",
+	"forginglevel":32,
+	"materials":["Gold","Silver","Giant's Gloves","Earth Crystal"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Tomahawk",
+	"sell":1020,
+	"buy":49700,
+	"ability":{
+		"atr":["Wind"]
+		"atk":292,
+		"matk":8,
+		"diz":2,
+		"critP":10
+	},
+	"flavourtext":"An axe with a single blade. The tassel on its edge is always blowing in the wind.",
+	"forginglevel":28,
+	"materials":["Silver","Emerald","Silk Cloth","Claws and Fangs"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Frost Axe",
+	"sell":4600,
+	"buy":198200,
+	"ability":{
+		"atr":["Water"],
+		"atk":736,
+		"matk":50,
+		"diz":2,
+		"critP":10
+	},
+	"flavourtext":"An axe with an icy cold blade. Freezes while it cuts, ensuring less pain for more humane murdering.",
+	"forginglevel":42,
+	"materials":["Platinum","Dragon Fang","Big Crystal","Water Crystal","Aquamarine"],
 	"category":"Axe",
 	"pricemultiplier":"E"
 })
@@ -2046,100 +2167,280 @@ registerItem({
 })
 
 registerItem({
-	"name":"Crescent Axe+",
-	"sell":4800,
-	"buy":64e4,
+	"name":"Executioner",
+	"sell":38e3,
 	"ability":{
-		"atk":1e3,
+		"atr":["Dark"],
+		"atk":8800,
+		"matk":1500,
 		"diz":2,
-		"critP":15
+		"critP":10
 	},
-	"flavourtext":"A crescent axe strengthened with magical power. A true masterpiece designed to be easy to wield.",
-	"forginglevel":47,
-	"materials":["Crescent Axe","Warrior's Proof","Proof of Rank"],
+	"flavourtext":"An axe with a sketchy past. Was imbued with dark power while trying to raise its attack.",
+	"forginglevel":81,
+	"materials":["Dragonic Stone","Golem Spirit Stone","Light Ore","Chimera Tail","Dark Crystal"],
 	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Crescent Axe",
+	"sell":3400,
+	"buy":449e3,
 	"ability":{
-		"atk":,
-		"diz":,
-		"critP":
+		"atk":900,
+		"diz":2,
+		"critP":10
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"An axe with a sleek edge. Its center is unbalanced, however, so it's hard to hold it straight.",
+	"forginglevel":46,
+	"materials":["Platinum","Chimera's Claw","Devil Horn"],
 	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Demon Axe",
+	"sell":1100,
+	"buy":96666,
 	"ability":{
-		"atk":,
-		"diz":,
-		"critP":
+		"atr":["Dark"],
+		"atk":488,
+		"matk":30,
+		"diz":2,
+		"critP":12
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"An axe possessed by an evil spirit ever since it cut down a cursed tree.",
+	"forginglevel":35,
+	"materials":["Diamond","Scorpion Pincer","Devil Blood"],
 	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Great Axe",
+	"sell":610,
+	"buy":30900,
 	"ability":{
-		"atk":,
-		"diz":,
-		"critP":
+		"atk":232,
+		"diz":2,
+		"critP":10
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"An axe with improved balance. Often thought of as a go-to axe when you're just not sure what weapon to use.",
+	"forginglevel":23,
+	"materials":["Gold","Claws and Fangs"],
 	"category":"Axe",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Graviton Hammer",
-	"sell":3800,
-	"buy":84e4,
+	"name":"Alldale",
+	"sell":22e3,
 	"ability":{
-		"atr":["Earth"],
-		"atk":1150,
-		"matk":60,
+		"atk":4600,
+		"diz":3,
+		"critP":8
+	},
+	"flavourtext":"An axe with two golden blades. Called angel wings, they are both strong and beautiful.",
+	"forginglevel":69,
+	"materials":["Orichalcum","Orichalcum","Dangerous Scissors","White Stone","Yellow Core"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Pole Axe",
+	"sell":220,
+	"buy":11800,
+	"ability":{
+		"atk":116,
+		"diz":2,
+		"critP":7
+	},
+	"flavourtext":"An axe with a crescent moon-shaped blade. Has a pointy end as well. Choppy-choppy OR stabby-stabby. You decide!",
+	"forginglevel":16,
+	"materials":["Wolf Fang","Bronze","Sticks and Stems"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Battle Axe",
+	"sell":42,
+	"buy":1380,
+	"ability":{
+		"atk":38,
+		"diz":2,
+		"critP":5
+	},
+	"flavourtext":"An axe with a great deal of force behind it. Must be used carefully. Has a high chance of landing critical hits.",
+	"forginglevel":6,
+	"materials":["Minerals","Claws and Fangs"],
+	"category":"Axe",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Splash Star",
+	"sell":12e4,
+	"ability":{
+		"atr":["Light"],
+		"atk":14e3,
+		"matk":7200,
 		"diz":35,
 		"stunP":10
 	},
-	"flavourtext":"A hammer imbued with earth power. Designed not to hurt your hands during attack.",
-	"forginglevel":49,
-	"materials":["Grimoire Scale","Earth Crystal","Minerals"],
+	"flavourtext":"Hammer made by using magical power. As its name implies, it looks like splashing stars.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Wind Dragon Tooth","Dragon Fin","Earthwyrm Scale","Firewyrm Scale"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Spiked Hammer",
-	"sell":6100,
-	"buy":999999,
+	"name":"Iron Bat",
+	"sell":530,
+	"buy":17200,
 	"ability":{
-		"atk":1250,
+		"atk":140,
+		"diz":35,
+		"knockP":50,
+		"stunP":20
+	},
+	"flavourtext":"An iron bat used in baseball. Not designed as weaponry, but beggars can't be choosers... Maybe you'll hit a home run!",
+	"forginglevel":18,
+	"materials":["Bat","Silver"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Bat",
+	"sell":120,
+	"buy":4620,
+	"ability":{
+		"atk":54,
+		"diz":35,
+		"knockP":50,
+		"stunP":15
+	},
+	"flavourtext":"A wooden bat used in baseball. Only kids in striped shirts make a weapon like this their first choice.",
+	"forginglevel":9,
+	"materials":["Bronze"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Kongo",
+	"sell":25800,
+	"ability":{
+		"atk":7122,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"Made by fusing together chunks of metal. Long-ranged, but hard to handle.",
+	"forginglevel":77,
+	"materials":["Strong Stone","Dragonic Stone","Small Crystal"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Strong Stone",
+	"sell":990,
+	"buy":92080,
+	"ability":{
+		"atk":430,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"Large chunks of metal are connected to its head. High in attack due to its heavy weight.",
+	"forginglevel":33,
+	"materials":["Diamond","Stones","Scales","Strings"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fatal Crush",
+	"sell":5e4,
+	"ability":{
+		"atk":11500,
+		"diz":40,
+		"critP":7,
+		"stunP":10
+	},
+	"flavourtext":"A hammer way beyond standard size. Long-ranged, and has a high chance of landing critical hits.",
+	"forginglevel":90,
+	"materials":["Wind Dragon Tooth","Throne of the Empire","Dragonic Stone","Dragonic Stone","Dragonic Stone"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Toy Hammer",
+	"sell":24,
+	"buy":230,
+	"ability":{
+		"atr":["Light"],
+		"atk":10,
+		"matk":25,
+		"diz":120,
+		"stunP":10
+	},
+	"flavourtext":"Anyone hit by this hammer must pretend that it really hurts. It's the law! Raises chance of knockouts.",
+	"forginglevel":8,
+	"materials":["Sticks and Stems","Cloths and Skins"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Hammer",
+	"sell":38,
+	"buy":580,
+	"ability":{
+		"atk":40,
 		"diz":34,
 		"critP":8,
 		"stunP":10
 	},
-	"flavourtext":"A hammer outfitted with spikes. Can easily score critical hits, hammer or no.",
-	"forginglevel":50,
-	"materials":["Left Rock Shard","Right Rock Shard","Claws and Fangs","Sticks and Stems"],
+	"flavourtext":"Farming hammer given a quickie reforge for battle-readiness. Tougher than it looks.",
+	"forginglevel":7,
+	"materials":["Cheap Hammer","Minerals"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gigant Hammer+",
+	"sell":22e3,
+	"ability":{
+		"atk":5555,
+		"matk":10,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"Gigant Hammer imbued with magical power. Originally owned by high-ranking giants. Has engravings of their names.",
+	"forginglevel":71,
+	"materials":["Gigant Hammer","Golem Spirit Stone","Orichalcum","Small Crystal"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"War Hammer+",
+	"sell":245,
+	"buy":9020,
+	"ability":{
+		"atk":98,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"War Hammer imbued with magical power. Causes less strain on the back.",
+	"forginglevel":15,
+	"materials":["War Hammer","Liquids"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
 })
@@ -2162,47 +2463,108 @@ registerItem({
 })
 
 registerItem({
-	"name":"Schnabel",
-	"sell":11800,
+	"name":"Bone Hammer",
+	"sell":820,
+	"buy":78800,
 	"ability":{
-		"atk":2200,
+		"atr":["Dark"],
+		"atk":400,
+		"matk":20,
 		"diz":35,
 		"stunP":10
 	},
-	"flavourtext":"A hammer designed to be small and light. Has good overall balance.",
-	"forginglevel":60,
-	"materials":["Orichalcum","Ammonite","Blue Core","Shards"],
+	"flavourtext":"A light but strong hammer made from bones.",
+	"forginglevel":31,
+	"materials":["Gold","Giant's Gloves","Shells and Bones","Shells and Bones"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Gigant Hammer+",
-	"sell":22e3,
+	"name":"Graviton Hammer",
+	"sell":3800,
+	"buy":84e4,
 	"ability":{
-		"atk":5555,
+		"atr":["Earth"],
+		"atk":1150,
+		"matk":60,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer imbued with earth power. Designed not to hurt your hands during attack.",
+	"forginglevel":49,
+	"materials":["Grimoire Scale","Earth Crystal","Minerals"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Sky Hammer",
+	"sell":2900,
+	"buy":156100,
+	"ability":{
+		"atr":["Wind"],
+		"atk":644,
+		"matk":50,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer with wings. Very light and easy to use.",
+	"forginglevel":40,
+	"materials":["Platinum","Wind Crystal","Emerald","Thunderbird Feather"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Ice Hammer",
+	"sell":780,
+	"buy":36450,
+	"ability":{
+		"atr":["Water"],
+		"atk":267,
 		"matk":10,
 		"diz":35,
 		"stunP":10
 	},
-	"flavourtext":"Gigant Hammer imbued with magical power. Originally owned by high-ranking giants. Has engravings of their names.",
-	"forginglevel":71,
-	"materials":["Gigant Hammer","Golem Spirit Stone","Orichalcum","Small Crystal"],
+	"flavourtext":"A hammer made of ice. Good for smashing things on a hot day. Refreshing!",
+	"forginglevel":26,
+	"materials":["Gold","Aquamarine","Shards"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Kongo",
-	"sell":25800,
+	"name":"Flame Hammer",
+	"sell":1550,
+	"buy":1e5,
 	"ability":{
-		"atk":7122,
+		"atr":["Fire"],
+		"atk":472,
+		"matk":35,
 		"diz":35,
 		"stunP":10
 	},
-	"flavourtext":"Made by fusing together chunks of metal. Long-ranged, but hard to handle.",
-	"forginglevel":77,
-	"materials":["Strong Stone","Dragonic Stone","Small Crystal"],
+	"flavourtext":"A hammer with fire power on one side. The flame helps enhance its damage output.",
+	"forginglevel":36,
+	"materials":["Diamond","Fire Crystal","Ruby","Shards"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Spiked Hammer",
+	"sell":6100,
+	"buy":999999,
+	"ability":{
+		"atk":1250,
+		"diz":34,
+		"critP":8,
+		"stunP":10
+	},
+	"flavourtext":"A hammer outfitted with spikes. Can easily score critical hits, hammer or no.",
+	"forginglevel":50,
+	"materials":["Left Rock Shard","Right Rock Shard","Claws and Fangs","Sticks and Stems"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
 })
@@ -2225,48 +2587,80 @@ registerItem({
 })
 
 registerItem({
-	"name":"Fatal Crush",
-	"sell":5e4,
+	"name":"Gigant Hammer",
+	"sell":2800,
+	"buy":134980,
 	"ability":{
-		"atk":11500,
-		"diz":40,
-		"critP":7,
-		"stunP":10
-	},
-	"flavourtext":"A hammer way beyond standard size. Long-ranged, and has a high chance of landing critical hits.",
-	"forginglevel":90,
-	"materials":["Wind Dragon Tooth","Throne of the Empire","Dragonic Stone","Dragonic Stone","Dragonic Stone"],
-	"category":"Hammer",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Splash Star",
-	"sell":12e4,
-	"ability":{
-		"atr":["Light"],
-		"atk":14e3,
-		"matk":7200,
+		"atk":580,
 		"diz":35,
 		"stunP":10
 	},
-	"flavourtext":"Hammer made by using magical power. As its name implies, it looks like splashing stars.",
-	"forginglevel":99,
-	"materials":["Rune Sphere Shard","Wind Dragon Tooth","Dragon Fin","Earthwyrm Scale","Firewyrm Scale"],
+	"flavourtext":"A large hammer. Be careful not to hit yourself!",
+	"forginglevel":38,
+	"materials":["Platinum","Gold","Silver","Shards"],
 	"category":"Hammer",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Schnabel",
+	"sell":11800,
 	"ability":{
-		"":
+		"atk":2200,
+		"diz":35,
+		"stunP":10
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
-	"category":"",
+	"flavourtext":"A hammer designed to be small and light. Has good overall balance.",
+	"forginglevel":60,
+	"materials":["Orichalcum","Ammonite","Blue Core","Shards"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Great Hammer",
+	"sell":400,
+	"buy":22400,
+	"ability":{
+		"atk":198,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer designed to eliminate shock when used. Very nicely balanced.",
+	"forginglevel":22,
+	"materials":["Silver","Shards"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"War Hammer",
+	"sell":135,
+	"buy":6120,
+	"ability":{
+		"atk":61,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer much heavier than it looks. Be careful when swinging it -- it bites back!",
+	"forginglevel":11,
+	"materials":["Bronze","Shards"],
+	"category":"Hammer",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Battle Hammer",
+	"sell":42,
+	"buy":340,
+	"ability":{
+		"atk":29,
+		"diz":35,
+		"stunP":10
+	},
+	"flavourtext":"A hammer well-suited to blowing foes away -- or at least knocking them out.",
+	"forginglevel":3,
+	"materials":["Minerals"],
+	"category":"Hammer",
 	"pricemultiplier":"E"
 })
