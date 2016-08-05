@@ -2118,7 +2118,7 @@ registerItem({
 	"sell":1020,
 	"buy":49700,
 	"ability":{
-		"atr":["Wind"]
+		"atr":["Wind"],
 		"atk":292,
 		"matk":8,
 		"diz":2,
