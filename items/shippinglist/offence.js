@@ -3108,31 +3108,116 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Water Spear",
+	"sell":585,
+	"buy":24250,
 	"ability":{
-		"atk":,
-		"def":,
+		"atr":["Water"],
+		"atk":170,
+		"def":8,
+		"matk":3,
 		"diz":8
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"A spear imbued with the magic power of water. It's always wet. Be careful not to let it slip out of your hands!",
+	"forginglevel":21,
+	"materials":["Silver","Aquamarine","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Trident",
+	"sell":400,
+	"buy":18800,
 	"ability":{
-		"":
+		"atk":162,
+		"def":7,
+		"diz":8
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
-	"category":"",
+	"flavourtext":"A three-pronged spear. Some lose their memory in shock when stabbed with it.",
+	"forginglevel":18,
+	"materials":["Silver","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Needle Spear",
+	"sell":225,
+	"buy":9600,
+	"ability":{
+		"atk":108,
+		"def":6,
+		"diz":8
+	},
+	"flavourtext":"A spear with a long blade. Has many uses and a high rate of owner satisfaction. A+++ would wield again!",
+	"forginglevel":15,
+	"materials":["Bronze","Wolf Fang","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lance+",
+	"sell":160,
+	"buy":4580,
+	"ability":{
+		"atk":52,
+		"def":5,
+		"diz":8
+	},
+	"flavourtext":"Lance strengthened by magical power. From tip to handle, it sparkles gorgeously in gold.",
+	"forginglevel":12,
+	"materials":["Lance","Bronze"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lance",
+	"sell":34,
+	"buy":1700,
+	"ability":{
+		"atk":43,
+		"def":4,
+		"diz":8
+	},
+	"flavourtext":"Has a unique triangular shape. Said to have been used in a war fought by an ancient empire.",
+	"forginglevel":9,
+	"materials":["Minerals","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Wood Staff",
+	"sell":12,
+	"buy":1220,
+	"ability":{
+		"atr":["Earth"],
+		"atk":38,
+		"def":2,
+		"diz":8
+	},
+	"flavourtext":"A hard, wooden club. It might hurt more to hit with it than to stab with it.",
+	"forginglevel":6,
+	"materials":["Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Spear",
+	"sell":23,
+	"buy":200,
+	"ability":{
+		"atk":14,
+		"def":1,
+		"diz":8
+	},
+	"flavourtext":"A very simple spear, good for beginners. So simple that it's often used as a skewer for food.",
+	"forginglevel":3,
+	"materials":["Minerals"],
+	"category":"Spear",
 	"pricemultiplier":"E"
 })
