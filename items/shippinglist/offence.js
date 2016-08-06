@@ -2920,3 +2920,189 @@ registerItem({
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
+
+registerItem({
+	"name":"Flare Lance",
+	"sell":4900,
+	"buy":999999,
+	"ability":{
+		"atr":["Fire"],
+		"atk":820,
+		"def":75,
+		"matk":50,
+		"diz":8
+	},
+	"flavourtext":"A spear that lets out high heat. The closer to the tip, the hotter it gets. Perhaps it can cure back pain.",
+	"forginglevel":49,
+	"materials":["Platinum","Devil Horn","Proof of Rank","Fire Crystal","Dragon Bones"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Magical Lance",
+	"sell":2500,
+	"buy":428888,
+	"ability":{
+		"atk":715,
+		"matk":185,
+		"mdef":65,
+		"diz":8
+	},
+	"flavourtext":"A lance with magical power so strong that its entire form changes color rapidly.",
+	"forginglevel":47,
+	"materials":["Devil Horn","Puppetry Strings","Round Stone","Crystals"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Blood Lance",
+	"sell":3500,
+	"buy":186700,
+	"ability":{
+		"atr":["Dark"],
+		"atk":615,
+		"def":50,
+		"matk":10,
+		"diz":8
+	},
+	"flavourtext":"A cursed spear. Its two blades remind you of a warlock.",
+	"forginglevel":43,
+	"materials":["Platinum","Cursed Doll","Thick Stick","Magic Claw","Devil Blood"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iceberg",
+	"sell":4400,
+	"buy":155480,
+	"ability":{
+		"atr":["Water"],
+		"atk":570,
+		"def":45,
+		"matk":30,
+		"diz":8
+	},
+	"flavourtext":"A spear imbued with water power. Designed to work even underwater. Stab the fish, and you won't need a rod!",
+	"forginglevel":41,
+	"materials":["Platinum","Platinum","Thick Stick","Water Crystal","Aquamarine"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Feather Lance",
+	"sell":2900,
+	"buy":124710,
+	"ability":{
+		"atr":["Wind"],
+		"atk":532,
+		"def":35,
+		"matk":30,
+		"diz":8
+	},
+	"flavourtext":"A spear imbued with the magic power of wind. Lift it up to the sky and it will pierce the heavens.",
+	"forginglevel":38,
+	"materials":["Platinum","Silver","Thick Stick","Wind Crystal","Feathers"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Heavy Lance",
+	"sell":2400,
+	"buy":96800,
+	"ability":{
+		"atk":496,
+		"def":30,
+		"diz":8
+	},
+	"flavourtext":"A lance designed with a focus on attack power only, to the detriment of everything else. Heavy and hard to wield.",
+	"forginglevel":37,
+	"materials":["Platinum","Gold","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Fivestaff",
+	"sell":1150,
+	"buy":82800,
+	"ability":{
+		"atk":392,
+		"def":20,
+		"diz":8
+	},
+	"flavourtext":"A long-ranged lance that seems almost as if it were made of blades, from tip to handle. Can also be swung.",
+	"forginglevel":34,
+	"materials":["Diamond","Sticks and Stems","Scales","Scales"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Poison Spear",
+	"sell":900,
+	"buy":75200,
+	"ability":{
+		"atk":380,
+		"def":18,
+		"diz":8,
+		"psnatkP":25
+	},
+	"flavourtext":"A poisoned spear. Has a wide blade, making it easy to spread poison.",
+	"forginglevel":30,
+	"materials":["Diamond","Poison Powder","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Corsesca+",
+	"sell":1050,
+	"buy":60400,
+	"ability":{
+		"atk":333,
+		"def":18,
+		"diz":8
+	},
+	"flavourtext":"Corsesca strengthened by magical power. At half its original weight, it's very easy to wield.",
+	"forginglevel":29,
+	"materials":["Corsesca","Black Bird Feather"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Corsesca",
+	"sell":750,
+	"buy":58800,
+	"ability":{
+		"atk":306,
+		"def":10,
+		"diz":8
+	},
+	"flavourtext":"A spear with a wide blade. Its shape was decided after many experiments trying to forge a high-accuracy blade.",
+	"forginglevel":27,
+	"materials":["Gold","Rigid Horn","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Halberd",
+	"sell":600,
+	"buy":35e3,
+	"ability":{
+		"atk":246,
+		"def":8,
+		"diz":8
+	},
+	"flavourtext":"A spear used for various purposes -- though most involve stabbing and cutting, as you might imagine.",
+	"forginglevel":25,
+	"materials":["Gold","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
