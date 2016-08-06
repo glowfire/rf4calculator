@@ -2673,8 +2673,8 @@ registerItem({
 		"atr":["Earth"],
 		"atk":320,
 		"def":12,
-		"matk":16
-		"diz":16,
+		"matk":16,
+		"diz":16
 	},
 	"flavourtext":"A lance that resembles a pineapple. Its surface stings. The creator of this lance must have been very...unique.",
 	"forginglevel":40,
@@ -2729,6 +2729,42 @@ registerItem({
 	"flavourtext":"A lance with blades orbiting it. Foes can try to dodge, but these phantom blades ensure they won't make it very far.",
 	"forginglevel":99,
 	"materials":["Rune Sphere Shard","Firewyrm Scale","Dragon Fin","Light Ore","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gungnir",
+	"sell":72e3,
+	"ability":{
+		"atr":["Wind"],
+		"atk":1e4,
+		"def":450,
+		"matk":3e3,
+		"mdef":150,
+		"diz":8,
+	},
+	"flavourtext":"A legendary spear that can blow away storms. Its wind speed is so fast, though, that the bearer is equally at risk.",
+	"forginglevel":91,
+	"materials":["Dragon Fin","Green Core","Earth Dragon Ash","Fire Dragon Ash","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Dragon's Fang",
+	"sell":4e4,
+	"ability":{
+		"atk":9200,
+		"def":400,
+		"matk":2500,
+		"mdef":120
+		"diz":8,
+		"critP":10
+	},
+	"flavourtext":"A spear as sharp as a dragon fang. The blade vibrates faster as danger approaches.",
+	"forginglevel":86,
+	"materials":["Earthwyrm Scale","Big Crystal","Rune Crystal","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
