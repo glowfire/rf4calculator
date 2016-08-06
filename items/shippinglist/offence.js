@@ -2758,13 +2758,29 @@ registerItem({
 		"atk":9200,
 		"def":400,
 		"matk":2500,
-		"mdef":120
+		"mdef":120,
 		"diz":8,
 		"critP":10
 	},
 	"flavourtext":"A spear as sharp as a dragon fang. The blade vibrates faster as danger approaches.",
 	"forginglevel":86,
 	"materials":["Earthwyrm Scale","Big Crystal","Rune Crystal","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gae Bolg",
+	"sell":42e3,
+	"ability":{
+		"atk":7480,
+		"def":300,
+		"matk":2e3,
+		"diz":8
+	},
+	"flavourtext":"A fierce spear with a trident-like shape. Every stab hurts.",
+	"forginglevel":81,
+	"materials":["Dragonic Stone","Orichalcum","Grimoire Scale","Black Scale","Moving Branch"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
