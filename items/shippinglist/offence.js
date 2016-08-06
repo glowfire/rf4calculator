@@ -2691,7 +2691,7 @@ registerItem({
 		"atk":67,
 		"def":9,
 		"mdef":25,
-		"diz":8,
+		"diz":8
 	},
 	"flavourtext":"A lance with its tip covered in cotton and cloth. Still hurts, though. We can stab if we want to!",
 	"forginglevel":13,
@@ -2707,7 +2707,7 @@ registerItem({
 	"ability":{
 		"atk":96,
 		"def":10,
-		"diz":8,
+		"diz":8
 	},
 	"flavourtext":"Origin of kitchen forks. Bit big for cake, though. And spaghetti? Fahgeddabouddit!",
 	"forginglevel":14,
@@ -2724,7 +2724,7 @@ registerItem({
 		"def":500,
 		"matk":9e3,
 		"mdef":180,
-		"diz":8,
+		"diz":8
 	},
 	"flavourtext":"A lance with blades orbiting it. Foes can try to dodge, but these phantom blades ensure they won't make it very far.",
 	"forginglevel":99,
@@ -2742,7 +2742,7 @@ registerItem({
 		"def":450,
 		"matk":3e3,
 		"mdef":150,
-		"diz":8,
+		"diz":8
 	},
 	"flavourtext":"A legendary spear that can blow away storms. Its wind speed is so fast, though, that the bearer is equally at risk.",
 	"forginglevel":91,
@@ -2786,31 +2786,137 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Belvarose",
+	"sell":15e3,
 	"ability":{
-		"atk":,
-		"def":,
-		"diz":8,
+		"atk":6150,
+		"def":270,
+		"matk":1800,
+		"diz":16
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"Spear with spikes at the end. Requires skill to use, but as you grow accustomed to it, you can easily land knockouts.",
+	"forginglevel":76,
+	"materials":["Dragonic Stone","Ambrosia's Thorns","Tablet of Truth","MTGU Plate","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Bjor",
+	"sell":24e3,
 	"ability":{
-		"":
+		"atr":["Dark"],
+		"atk":5e3,
+		"def":250,
+		"matk":950,
+		"diz":8,
+		"psnatkP":15,
+		"paratkP":15,
+		"sickatkP":15
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
-	"category":"",
+	"flavourtext":"A spear drenched in all available poisons. Has various effects.",
+	"forginglevel":74,
+	"materials":["Melody Bottle","Holy Spore","Orichalcum","Small Crystal","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Overbreak",
+	"sell":1e4,
+	"ability":{
+		"atk":4420,
+		"def":200,
+		"matk":950,
+		"diz":8
+	},
+	"flavourtext":"A spear with a huge blade. Every swing makes the enemy flinch. Maybe swinging will be enough!",
+	"forginglevel":69,
+	"materials":["Blue Scale","Left Rock Shard","Right Rock Shard","Grimoire Scale","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Silent Grave",
+	"sell":9800,
+	"ability":{
+		"atk":3880,
+		"def":180,
+		"diz":8,
+		"sealatkP":25
+	},
+	"flavourtext":"A spear with a removable knife-like blade at its tip. Has a sealing effect on enemies.",
+	"forginglevel":65,
+	"materials":["Orichalcum","Dangerous Scissors","Crystal Skull","Shards","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Metus",
+	"sell":8888,
+	"ability":{
+		"atr":["Dark"],
+		"atk":2420,
+		"def":150,
+		"matk":700,
+		"diz":8,
+		"drainP":25
+	},
+	"flavourtext":"A spear shaped to dig holes. Those who are struck by it have little hope of survival, thanks to its hidden might.",
+	"forginglevel":60,
+	"materials":["Orichalcum","Queen's Jaw","Cursed Doll","Legendary Scale","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Monk Staff",
+	"sell":6500,
+	"ability":{
+		"atr":["Earth"],
+		"atk":1950,
+		"def":120,
+		"matk":150,
+		"diz":8
+	},
+	"flavourtext":"A nicely decorated stick with adjustable length.",
+	"forginglevel":57,
+	"materials":["Orichalcum","Turnip's Miracle","Glitta Augite","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Poison Queen",
+	"sell":9980,
+	"ability":{
+		"atk":1420,
+		"def":100,
+		"matk":400,
+		"diz":8,
+		"psnatkP":20
+	},
+	"flavourtext":"A lance drenched in poisons from around the world. Handle with care, or you, too, may be poisoned.",
+	"forginglevel":55,
+	"materials":["Orichalcum","Orichalcum","Poison King","Holy Spore","Poison Powder"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Brionac",
+	"sell":7300,
+	"ability":{
+		"atr":["Light"],
+		"atk":1100,
+		"def":80,
+		"diz":8
+	},
+	"flavourtext":"A spear so strong that it can penetrate anything. According to legend, it made a hole in the mountains with one stab!",
+	"forginglevel":51,
+	"materials":["Orichalcum","Light Crystal","Sapphire","Lightning Mane","Sticks and Stems"],
+	"category":"Spear",
 	"pricemultiplier":"E"
 })
