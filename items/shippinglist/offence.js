@@ -3106,3 +3106,33 @@ registerItem({
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"def":,
+		"diz":8
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"",
+	"pricemultiplier":"E"
+})
