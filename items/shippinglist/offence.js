@@ -2666,6 +2666,74 @@ registerItem({
 })
 
 registerItem({
+	"name":"Pine Club",
+	"sell":2e3,
+	"buy":29800,
+	"ability":{
+		"atr":["Earth"],
+		"atk":320,
+		"def":12,
+		"matk":16
+		"diz":16,
+	},
+	"flavourtext":"A lance that resembles a pineapple. Its surface stings. The creator of this lance must have been very...unique.",
+	"forginglevel":40,
+	"materials":["Pineapple","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Safety Lance",
+	"sell":80,
+	"buy":600,
+	"ability":{
+		"atk":67,
+		"def":9,
+		"mdef":25,
+		"diz":8,
+	},
+	"flavourtext":"A lance with its tip covered in cotton and cloth. Still hurts, though. We can stab if we want to!",
+	"forginglevel":13,
+	"materials":["Ghost Hood","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Pitchfork",
+	"sell":200,
+	"buy":1500,
+	"ability":{
+		"atk":96,
+		"def":10,
+		"diz":8,
+	},
+	"flavourtext":"Origin of kitchen forks. Bit big for cake, though. And spaghetti? Fahgeddabouddit!",
+	"forginglevel":14,
+	"materials":["Wolf Fang","Fodder","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Legion",
+	"sell":105e3,
+	"ability":{
+		"atk":12850,
+		"def":500,
+		"matk":9e3,
+		"mdef":180,
+		"diz":8,
+	},
+	"flavourtext":"A lance with blades orbiting it. Foes can try to dodge, but these phantom blades ensure they won't make it very far.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Firewyrm Scale","Dragon Fin","Light Ore","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"",
 	"sell":,
 	"buy":,
