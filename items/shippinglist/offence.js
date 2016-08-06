@@ -2666,6 +2666,22 @@ registerItem({
 })
 
 registerItem({
+	"name":"Fivestaff",
+	"sell":1150,
+	"buy":82800,
+	"ability":{
+		"atk":392,
+		"def":20,
+		"diz":8
+	},
+	"flavourtext":"A long-ranged lance that seems almost as if it were made of blades, from tip to handle. Can also be swung.",
+	"forginglevel":34,
+	"materials":["Diamond","Sticks and Stems","Scales","Scales"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Pine Club",
 	"sell":2e3,
 	"buy":29800,
@@ -2684,34 +2700,18 @@ registerItem({
 })
 
 registerItem({
-	"name":"Safety Lance",
-	"sell":80,
-	"buy":600,
+	"name":"Poison Queen",
+	"sell":9980,
 	"ability":{
-		"atk":67,
-		"def":9,
-		"mdef":25,
-		"diz":8
+		"atk":1420,
+		"def":100,
+		"matk":400,
+		"diz":8,
+		"psnatkP":20
 	},
-	"flavourtext":"A lance with its tip covered in cotton and cloth. Still hurts, though. We can stab if we want to!",
-	"forginglevel":13,
-	"materials":["Ghost Hood","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Pitchfork",
-	"sell":200,
-	"buy":1500,
-	"ability":{
-		"atk":96,
-		"def":10,
-		"diz":8
-	},
-	"flavourtext":"Origin of kitchen forks. Bit big for cake, though. And spaghetti? Fahgeddabouddit!",
-	"forginglevel":14,
-	"materials":["Wolf Fang","Fodder","Sticks and Stems"],
+	"flavourtext":"A lance drenched in poisons from around the world. Handle with care, or you, too, may be poisoned.",
+	"forginglevel":55,
+	"materials":["Orichalcum","Orichalcum","Poison King","Holy Spore","Poison Powder"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -2734,19 +2734,51 @@ registerItem({
 })
 
 registerItem({
-	"name":"Gungnir",
-	"sell":72e3,
+	"name":"Safety Lance",
+	"sell":80,
+	"buy":600,
 	"ability":{
-		"atr":["Wind"],
-		"atk":1e4,
-		"def":450,
-		"matk":3e3,
-		"mdef":150,
+		"atk":67,
+		"def":9,
+		"mdef":25,
 		"diz":8
 	},
-	"flavourtext":"A legendary spear that can blow away storms. Its wind speed is so fast, though, that the bearer is equally at risk.",
-	"forginglevel":91,
-	"materials":["Dragon Fin","Green Core","Earth Dragon Ash","Fire Dragon Ash","Sticks and Stems"],
+	"flavourtext":"A lance with its tip covered in cotton and cloth. Still hurts, though. We can stab if we want to!",
+	"forginglevel":13,
+	"materials":["Ghost Hood","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Magical Lance",
+	"sell":2500,
+	"buy":428888,
+	"ability":{
+		"atk":715,
+		"matk":185,
+		"mdef":65,
+		"diz":8
+	},
+	"flavourtext":"A lance with magical power so strong that its entire form changes color rapidly.",
+	"forginglevel":47,
+	"materials":["Devil Horn","Puppetry Strings","Round Stone","Crystals"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gae Bolg",
+	"sell":42e3,
+	"ability":{
+		"atk":7480,
+		"def":300,
+		"matk":2e3,
+		"diz":8
+	},
+	"flavourtext":"A fierce spear with a trident-like shape. Every stab hurts.",
+	"forginglevel":81,
+	"materials":["Dragonic Stone","Orichalcum","Grimoire Scale","Black Scale","Moving Branch"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -2770,33 +2802,83 @@ registerItem({
 })
 
 registerItem({
-	"name":"Gae Bolg",
-	"sell":42e3,
+	"name":"Pitchfork",
+	"sell":200,
+	"buy":1500,
 	"ability":{
-		"atk":7480,
-		"def":300,
-		"matk":2e3,
+		"atk":96,
+		"def":10,
 		"diz":8
 	},
-	"flavourtext":"A fierce spear with a trident-like shape. Every stab hurts.",
-	"forginglevel":81,
-	"materials":["Dragonic Stone","Orichalcum","Grimoire Scale","Black Scale","Moving Branch"],
+	"flavourtext":"Origin of kitchen forks. Bit big for cake, though. And spaghetti? Fahgeddabouddit!",
+	"forginglevel":14,
+	"materials":["Wolf Fang","Fodder","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Belvarose",
-	"sell":15e3,
+	"name":"Trident",
+	"sell":400,
+	"buy":18800,
 	"ability":{
-		"atk":6150,
-		"def":270,
-		"matk":1800,
-		"diz":16
+		"atk":162,
+		"def":7,
+		"diz":8
 	},
-	"flavourtext":"Spear with spikes at the end. Requires skill to use, but as you grow accustomed to it, you can easily land knockouts.",
-	"forginglevel":76,
-	"materials":["Dragonic Stone","Ambrosia's Thorns","Tablet of Truth","MTGU Plate","Sticks and Stems"],
+	"flavourtext":"A three-pronged spear. Some lose their memory in shock when stabbed with it.",
+	"forginglevel":18,
+	"materials":["Silver","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Corsesca+",
+	"sell":1050,
+	"buy":60400,
+	"ability":{
+		"atk":333,
+		"def":18,
+		"diz":8
+	},
+	"flavourtext":"Corsesca strengthened by magical power. At half its original weight, it's very easy to wield.",
+	"forginglevel":29,
+	"materials":["Corsesca","Black Bird Feather"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Lance+",
+	"sell":160,
+	"buy":4580,
+	"ability":{
+		"atk":52,
+		"def":5,
+		"diz":8
+	},
+	"flavourtext":"Lance strengthened by magical power. From tip to handle, it sparkles gorgeously in gold.",
+	"forginglevel":12,
+	"materials":["Lance","Bronze"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gungnir",
+	"sell":72e3,
+	"ability":{
+		"atr":["Wind"],
+		"atk":1e4,
+		"def":450,
+		"matk":3e3,
+		"mdef":150,
+		"diz":8
+	},
+	"flavourtext":"A legendary spear that can blow away storms. Its wind speed is so fast, though, that the bearer is equally at risk.",
+	"forginglevel":91,
+	"materials":["Dragon Fin","Green Core","Earth Dragon Ash","Fire Dragon Ash","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -2822,172 +2904,17 @@ registerItem({
 })
 
 registerItem({
-	"name":"Overbreak",
-	"sell":1e4,
+	"name":"Belvarose",
+	"sell":15e3,
 	"ability":{
-		"atk":4420,
-		"def":200,
-		"matk":950,
-		"diz":8
+		"atk":6150,
+		"def":270,
+		"matk":1800,
+		"diz":16
 	},
-	"flavourtext":"A spear with a huge blade. Every swing makes the enemy flinch. Maybe swinging will be enough!",
-	"forginglevel":69,
-	"materials":["Blue Scale","Left Rock Shard","Right Rock Shard","Grimoire Scale","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Silent Grave",
-	"sell":9800,
-	"ability":{
-		"atk":3880,
-		"def":180,
-		"diz":8,
-		"sealatkP":25
-	},
-	"flavourtext":"A spear with a removable knife-like blade at its tip. Has a sealing effect on enemies.",
-	"forginglevel":65,
-	"materials":["Orichalcum","Dangerous Scissors","Crystal Skull","Shards","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Metus",
-	"sell":8888,
-	"ability":{
-		"atr":["Dark"],
-		"atk":2420,
-		"def":150,
-		"matk":700,
-		"diz":8,
-		"drainP":25
-	},
-	"flavourtext":"A spear shaped to dig holes. Those who are struck by it have little hope of survival, thanks to its hidden might.",
-	"forginglevel":60,
-	"materials":["Orichalcum","Queen's Jaw","Cursed Doll","Legendary Scale","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Monk Staff",
-	"sell":6500,
-	"ability":{
-		"atr":["Earth"],
-		"atk":1950,
-		"def":120,
-		"matk":150,
-		"diz":8
-	},
-	"flavourtext":"A nicely decorated stick with adjustable length.",
-	"forginglevel":57,
-	"materials":["Orichalcum","Turnip's Miracle","Glitta Augite","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Poison Queen",
-	"sell":9980,
-	"ability":{
-		"atk":1420,
-		"def":100,
-		"matk":400,
-		"diz":8,
-		"psnatkP":20
-	},
-	"flavourtext":"A lance drenched in poisons from around the world. Handle with care, or you, too, may be poisoned.",
-	"forginglevel":55,
-	"materials":["Orichalcum","Orichalcum","Poison King","Holy Spore","Poison Powder"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Brionac",
-	"sell":7300,
-	"ability":{
-		"atr":["Light"],
-		"atk":1100,
-		"def":80,
-		"diz":8
-	},
-	"flavourtext":"A spear so strong that it can penetrate anything. According to legend, it made a hole in the mountains with one stab!",
-	"forginglevel":51,
-	"materials":["Orichalcum","Light Crystal","Sapphire","Lightning Mane","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Flare Lance",
-	"sell":4900,
-	"buy":999999,
-	"ability":{
-		"atr":["Fire"],
-		"atk":820,
-		"def":75,
-		"matk":50,
-		"diz":8
-	},
-	"flavourtext":"A spear that lets out high heat. The closer to the tip, the hotter it gets. Perhaps it can cure back pain.",
-	"forginglevel":49,
-	"materials":["Platinum","Devil Horn","Proof of Rank","Fire Crystal","Dragon Bones"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Magical Lance",
-	"sell":2500,
-	"buy":428888,
-	"ability":{
-		"atk":715,
-		"matk":185,
-		"mdef":65,
-		"diz":8
-	},
-	"flavourtext":"A lance with magical power so strong that its entire form changes color rapidly.",
-	"forginglevel":47,
-	"materials":["Devil Horn","Puppetry Strings","Round Stone","Crystals"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Blood Lance",
-	"sell":3500,
-	"buy":186700,
-	"ability":{
-		"atr":["Dark"],
-		"atk":615,
-		"def":50,
-		"matk":10,
-		"diz":8
-	},
-	"flavourtext":"A cursed spear. Its two blades remind you of a warlock.",
-	"forginglevel":43,
-	"materials":["Platinum","Cursed Doll","Thick Stick","Magic Claw","Devil Blood"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Iceberg",
-	"sell":4400,
-	"buy":155480,
-	"ability":{
-		"atr":["Water"],
-		"atk":570,
-		"def":45,
-		"matk":30,
-		"diz":8
-	},
-	"flavourtext":"A spear imbued with water power. Designed to work even underwater. Stab the fish, and you won't need a rod!",
-	"forginglevel":41,
-	"materials":["Platinum","Platinum","Thick Stick","Water Crystal","Aquamarine"],
+	"flavourtext":"Spear with spikes at the end. Requires skill to use, but as you grow accustomed to it, you can easily land knockouts.",
+	"forginglevel":76,
+	"materials":["Dragonic Stone","Ambrosia's Thorns","Tablet of Truth","MTGU Plate","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -3011,6 +2938,91 @@ registerItem({
 })
 
 registerItem({
+	"name":"Brionac",
+	"sell":7300,
+	"ability":{
+		"atr":["Light"],
+		"atk":1100,
+		"def":80,
+		"diz":8
+	},
+	"flavourtext":"A spear so strong that it can penetrate anything. According to legend, it made a hole in the mountains with one stab!",
+	"forginglevel":51,
+	"materials":["Orichalcum","Light Crystal","Sapphire","Lightning Mane","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Overbreak",
+	"sell":1e4,
+	"ability":{
+		"atk":4420,
+		"def":200,
+		"matk":950,
+		"diz":8
+	},
+	"flavourtext":"A spear with a huge blade. Every swing makes the enemy flinch. Maybe swinging will be enough!",
+	"forginglevel":69,
+	"materials":["Blue Scale","Left Rock Shard","Right Rock Shard","Grimoire Scale","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Monk Staff",
+	"sell":6500,
+	"ability":{
+		"atr":["Earth"],
+		"atk":1950,
+		"def":120,
+		"matk":150,
+		"diz":8
+	},
+	"flavourtext":"A nicely decorated stick with adjustable length.",
+	"forginglevel":57,
+	"materials":["Orichalcum","Turnip's Miracle","Glitta Augite","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Metus",
+	"sell":8888,
+	"ability":{
+		"atr":["Dark"],
+		"atk":2420,
+		"def":150,
+		"matk":700,
+		"diz":8,
+		"drainP":25
+	},
+	"flavourtext":"A spear shaped to dig holes. Those who are struck by it have little hope of survival, thanks to its hidden might.",
+	"forginglevel":60,
+	"materials":["Orichalcum","Queen's Jaw","Cursed Doll","Legendary Scale","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Iceberg",
+	"sell":4400,
+	"buy":155480,
+	"ability":{
+		"atr":["Water"],
+		"atk":570,
+		"def":45,
+		"matk":30,
+		"diz":8
+	},
+	"flavourtext":"A spear imbued with water power. Designed to work even underwater. Stab the fish, and you won't need a rod!",
+	"forginglevel":41,
+	"materials":["Platinum","Platinum","Thick Stick","Water Crystal","Aquamarine"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Heavy Lance",
 	"sell":2400,
 	"buy":96800,
@@ -3027,17 +3039,51 @@ registerItem({
 })
 
 registerItem({
-	"name":"Fivestaff",
-	"sell":1150,
-	"buy":82800,
+	"name":"Flare Lance",
+	"sell":4900,
+	"buy":999999,
 	"ability":{
-		"atk":392,
-		"def":20,
+		"atr":["Fire"],
+		"atk":820,
+		"def":75,
+		"matk":50,
 		"diz":8
 	},
-	"flavourtext":"A long-ranged lance that seems almost as if it were made of blades, from tip to handle. Can also be swung.",
-	"forginglevel":34,
-	"materials":["Diamond","Sticks and Stems","Scales","Scales"],
+	"flavourtext":"A spear that lets out high heat. The closer to the tip, the hotter it gets. Perhaps it can cure back pain.",
+	"forginglevel":49,
+	"materials":["Platinum","Devil Horn","Proof of Rank","Fire Crystal","Dragon Bones"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Silent Grave",
+	"sell":9800,
+	"ability":{
+		"atk":3880,
+		"def":180,
+		"diz":8,
+		"sealatkP":25
+	},
+	"flavourtext":"A spear with a removable knife-like blade at its tip. Has a sealing effect on enemies.",
+	"forginglevel":65,
+	"materials":["Orichalcum","Dangerous Scissors","Crystal Skull","Shards","Sticks and Stems"],
+	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Corsesca",
+	"sell":750,
+	"buy":58800,
+	"ability":{
+		"atk":306,
+		"def":10,
+		"diz":8
+	},
+	"flavourtext":"A spear with a wide blade. Its shape was decided after many experiments trying to forge a high-accuracy blade.",
+	"forginglevel":27,
+	"materials":["Gold","Rigid Horn","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -3060,49 +3106,36 @@ registerItem({
 })
 
 registerItem({
-	"name":"Corsesca+",
-	"sell":1050,
-	"buy":60400,
+	"name":"Wood Staff",
+	"sell":12,
+	"buy":1220,
 	"ability":{
-		"atk":333,
-		"def":18,
+		"atr":["Earth"],
+		"atk":38,
+		"def":2,
 		"diz":8
 	},
-	"flavourtext":"Corsesca strengthened by magical power. At half its original weight, it's very easy to wield.",
-	"forginglevel":29,
-	"materials":["Corsesca","Black Bird Feather"],
+	"flavourtext":"A hard, wooden club. It might hurt more to hit with it than to stab with it.",
+	"forginglevel":6,
+	"materials":["Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Corsesca",
-	"sell":750,
-	"buy":58800,
+	"name":"Blood Lance",
+	"sell":3500,
+	"buy":186700,
 	"ability":{
-		"atk":306,
-		"def":10,
+		"atr":["Dark"],
+		"atk":615,
+		"def":50,
+		"matk":10,
 		"diz":8
 	},
-	"flavourtext":"A spear with a wide blade. Its shape was decided after many experiments trying to forge a high-accuracy blade.",
-	"forginglevel":27,
-	"materials":["Gold","Rigid Horn","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Halberd",
-	"sell":600,
-	"buy":35e3,
-	"ability":{
-		"atk":246,
-		"def":8,
-		"diz":8
-	},
-	"flavourtext":"A spear used for various purposes -- though most involve stabbing and cutting, as you might imagine.",
-	"forginglevel":25,
-	"materials":["Gold","Sticks and Stems"],
+	"flavourtext":"A cursed spear. Its two blades remind you of a warlock.",
+	"forginglevel":43,
+	"materials":["Platinum","Cursed Doll","Thick Stick","Magic Claw","Devil Blood"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -3126,17 +3159,17 @@ registerItem({
 })
 
 registerItem({
-	"name":"Trident",
-	"sell":400,
-	"buy":18800,
+	"name":"Halberd",
+	"sell":600,
+	"buy":35e3,
 	"ability":{
-		"atk":162,
-		"def":7,
+		"atk":246,
+		"def":8,
 		"diz":8
 	},
-	"flavourtext":"A three-pronged spear. Some lose their memory in shock when stabbed with it.",
-	"forginglevel":18,
-	"materials":["Silver","Sticks and Stems"],
+	"flavourtext":"A spear used for various purposes -- though most involve stabbing and cutting, as you might imagine.",
+	"forginglevel":25,
+	"materials":["Gold","Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -3158,22 +3191,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Lance+",
-	"sell":160,
-	"buy":4580,
-	"ability":{
-		"atk":52,
-		"def":5,
-		"diz":8
-	},
-	"flavourtext":"Lance strengthened by magical power. From tip to handle, it sparkles gorgeously in gold.",
-	"forginglevel":12,
-	"materials":["Lance","Bronze"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
 	"name":"Lance",
 	"sell":34,
 	"buy":1700,
@@ -3185,23 +3202,6 @@ registerItem({
 	"flavourtext":"Has a unique triangular shape. Said to have been used in a war fought by an ancient empire.",
 	"forginglevel":9,
 	"materials":["Minerals","Sticks and Stems"],
-	"category":"Spear",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Wood Staff",
-	"sell":12,
-	"buy":1220,
-	"ability":{
-		"atr":["Earth"],
-		"atk":38,
-		"def":2,
-		"diz":8
-	},
-	"flavourtext":"A hard, wooden club. It might hurt more to hit with it than to stab with it.",
-	"forginglevel":6,
-	"materials":["Sticks and Stems"],
 	"category":"Spear",
 	"pricemultiplier":"E"
 })
@@ -3219,5 +3219,24 @@ registerItem({
 	"forginglevel":3,
 	"materials":["Minerals"],
 	"category":"Spear",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Daicone",
+	"sell":450,
+	"buy":4800,
+	"ability":{
+		"atr":["Earth"],
+		"atk":78,
+		"matk":20,
+		"diz":12,
+		"knockP":30,
+		"stunP":10
+	},
+	"flavourtext":"A daikon radish so large and strong that it became a viable weapon. It dreamed big.",
+	"forginglevel":28,
+	"materials":["Radish"],
+	"category":"Long Sword",
 	"pricemultiplier":"E"
 })
