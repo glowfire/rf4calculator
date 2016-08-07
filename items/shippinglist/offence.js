@@ -3240,3 +3240,294 @@ registerItem({
 	"category":"Long Sword",
 	"pricemultiplier":"E"
 })
+
+registerItem({
+	"name":"Dekash",
+	"sell":7200,
+	"buy":26e3,
+	"ability":{
+		"atr":["Water"],
+		"atk":256,
+		"matk":50,
+		"diz":30
+	},
+	"flavourtext":"Smells like fish, so it tends to attract cats.",
+	"forginglevel":42,
+	"materials":["Tuna"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Caliburn",
+	"sell":15e4,
+	"ability":{
+		"atr":["Earth"],
+		"atk":13600,
+		"matk":5800,
+		"diz":23
+	},
+	"flavourtext":"A legendary calorie-burning sword. Few believe it actually exists. But here it is!",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Wind Dragon Tooth","Dragon Fin","Earthwyrm Scale","Firewyrm Scale"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Heaven Asunder",
+	"sell":58e3,
+	"ability":{
+		"atr":["Wind"],
+		"atk":12e3,
+		"matk":9e3,
+		"diz":12,
+		"critP":10,
+		"faintatkP":50
+	},
+	"flavourtext":"A legendary sword with a sharp blade that can pierce clouds. High chance of knocking down foes in a single blow.",
+	"forginglevel":92,
+	"materials":["Rune Sphere Shard","Dragonic Stone","Water Dragon Ash","Fire Dragon Ash","Earth Dragon Ash"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Force Element",
+	"sell":47200,
+	"ability":{
+		"atr":["Light"],
+		"atk":1e4,
+		"matk":5e3,
+		"mdef":100,
+		"diz":12
+	},
+	"flavourtext":"A lighted long sword. Contains strong elemental power, making it hard to use.",
+	"forginglevel":91,
+	"materials":["Firewyrm Scale","Green Core","Red Core","Yellow Core","Blue Core"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Braveheart",
+	"sell":36020,
+	"ability":{
+		"atr":["Light"],
+		"atk":9600,
+		"matk":2750,
+		"diz":12
+	},
+	"flavourtext":"A rare long sword with a glittering blade. Its bearer's courage gives it strength.",
+	"forginglevel":89,
+	"materials":["Dragonic Stone","Earthwyrm Scale","Love Crystal","Light Crystal","Sapphire"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Balmung",
+	"sell":21200,
+	"ability":{
+		"atk":8080,
+		"diz":12
+	},
+	"flavourtext":"A long sword with sleek lines. Though it's big, it's designed to be aerodynamic and easy to handle.",
+	"forginglevel":84,
+	"materials":["Dragonic Stone","Tablet of Truth","Golem Tablet","Claws and Fangs"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Blue-Eyed Blade",
+	"sell":14800,
+	"ability":{
+		"atk":7e3,
+		"matk":1850,
+		"diz":12,
+		"critP":20
+	},
+	"flavourtext":"Makes its bearer's eyes shine blue, and grants the power to see an opponent's skill. Increases critical hit chance.",
+	"forginglevel":79,
+	"materials":["Dragonic Stone","Orichalcum","Blue Core","Claws and Fangs"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Moon Shadow",
+	"sell":9500,
+	"ability":{
+		"atk":5380,
+		"matk":1500,
+		"diz":12,
+		"faintatkP":25
+	},
+	"flavourtext":"A weapon from the Far East. Appears as naught but a shadow under cover of night. Can take down foes in a single blow.",
+	"forginglevel":76,
+	"materials":["Glitter Scale","Light Crystal","Earth Crystal","Red Lion Fur","Blue Lion Fur"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Steel Slicer",
+	"sell":12e3,
+	"ability":{
+		"atk":4890,
+		"diz":12,
+		"critP":10
+	},
+	"flavourtext":"Supposedly can cut through anything -- thus the name.",
+	"forginglevel":73,
+	"materials":["Orichalcum","Orichalcum","Golem Spirit Stone","MTGU Plate"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Punisher",
+	"sell":5400,
+	"ability":{
+		"atk":4444,
+		"diz":24,
+		"stunP":30
+	},
+	"flavourtext":"A long sword with a wide blade. Hurts worse than an atomic wedgie.",
+	"forginglevel":68,
+	"materials":["Dangerous Scissors","Tablet of Truth","Minerals"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Orochi",
+	"sell":4500,
+	"ability":{
+		"atk":2710,
+		"diz":12
+	},
+	"flavourtext":"A sword separated into several parts, making it easy to wrap around foes. Capable of hitting far away enemies.",
+	"forginglevel":63,
+	"materials":["Queen's Jaw","Grimoire Scale","Scales","Scales","Strings"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Belzebuth",
+	"sell":4450,
+	"ability":{
+		"atr":["Dark"],
+		"atk":2040,
+		"matk":500,
+		"diz":12,
+		"critP":10,
+		"drainP":20
+	},
+	"flavourtext":"Short-ranged, but has magical power strong enough to steal an enemy's life. High chance of landing critical hits.",
+	"forginglevel":58,
+	"materials":["Ammonite","Devil Blood","Dark Crystal"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Grand Smasher",
+	"sell":3480,
+	"ability":{
+		"atr":["Earth"],
+		"atk":1560,
+		"matk":300,
+		"diz":12
+	},
+	"flavourtext":"A long sword with spiky edges. Imbued with earth power, its spikes are designed to look like mountains.",
+	"forginglevel":55,
+	"materials":["Yellow Feather","Earth Crystal","Ambrosia's Thorns","Earth Dragon Ash"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Shine Blade",
+	"sell":8e3,
+	"ability":{
+		"atr":["Light"],
+		"atk":1200,
+		"matk":100,
+		"diz":12
+	},
+	"flavourtext":"A sword with a high-heat blade and an ice-cold tip. Even evil hearts are soothed by its shiny glow.",
+	"forginglevel":52,
+	"materials":["Orichalcum","Platinum","Light Crystal","Sapphire"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Psycho",
+	"sell":2469,
+	"buy":999999,
+	"ability":{
+		"atr":["Dark"],
+		"atk":980,
+		"matk":30,
+		"diz":12,
+		"paratkP":30,
+		"ftgatkP":30,
+		"sickatkP":30
+	},
+	"flavourtext":"A uniquely-shaped long sword. Its three blades have assorted curses on them, inflicting numerous status ailments.",
+	"forginglevel":50,
+	"materials":["Devil Horn","Malm Claw","Dark Crystal","Rafflesia Petal"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Volcanon", // Sounds like the name of the elderly butler
+	"sell":2400,
+	"buy":72e4,
+	"ability":{
+		"atr":["Fire"],
+		"atk":868,
+		"matk":30,
+		"diz":12
+	},
+	"flavourtext":"A sword imbued with fire. Beams out a strong light. So hot, it raises the room temperature by 10 degrees.",
+	"forginglevel":48,
+	"materials":["Devil Horn","Fire Crystal","Ruby","Chimera's Claw"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Flamberge+",
+	"sell":7300,
+	"buy":439500,
+	"ability":{
+		"atk":750,
+		"diz":12
+	},
+	"flavourtext":"Flamberge strengthened with magic power. Its thin blade makes it easy to use.",
+	"forginglevel":46,
+	"materials":["Flamberge","Malm Claw"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Flamberge",
+	"sell":5800,
+	"buy":187900,
+	"ability":{
+		"atk":678,
+		"diz":12
+	},
+	"flavourtext":"A sword with a uniquely shaped blade. So beautiful, it's often used in ceremonies.",
+	"forginglevel":45,
+	"materials":["Platinum","Platinum","Magic Claw","Thunderbird Feather","Big Bird's Comb"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
