@@ -3531,3 +3531,81 @@ registerItem({
 	"category":"Long Sword",
 	"pricemultiplier":"E"
 })
+
+registerItem({
+	"name":"Dancing Dicer",
+	"sell":4400,
+	"buy":157200,
+	"ability":{
+		"atk":600,
+		"diz":12,
+		"faintatkP":15
+	},
+	"flavourtext":"A weapon brought from the Far East. With its sharp edges, you can sometimes cut down foes in a single blow.",
+	"forginglevel":43,
+	"materials":["Platinum","Dragon Fang","Dragon Bones"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Snow Crown",
+	"sell":3e3,
+	"buy":130500,
+	"ability":{
+		"atr":["Water"],
+		"atk":548,
+		"matk":25,
+		"diz":12
+	},
+	"flavourtext":"A long sword imbued with water power. When plunged into snow, not a single flake will melt.",
+	"forginglevel":42,
+	"materials":["Platinum","Gold","Water Crystal","Aquamarine"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Bio Smasher",
+	"sell":2700,
+	"buy":105e3,
+	"ability":{
+		"atk":470,
+		"diz":12,
+		"psnatkP":60
+	},
+	"flavourtext":"A poisoned long sword with jagged edges. Designed to spread poison thoroughly.",
+	"forginglevel":40,
+	"materials":["Platinum","Paralysis Poison","Poison Powder","Pom-Pom Grass"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"diz":12
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"",
+	"pricemultiplier":"E"
+})
