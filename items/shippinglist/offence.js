@@ -3582,30 +3582,192 @@ registerItem({
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Flame Saber",
+	"sell":1200,
+	"buy":89800,
 	"ability":{
-		"atk":,
+		"atr":["Fire"],
+		"atk":425,
+		"matk":20,
 		"diz":12
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"A sword imbued with the magic power of fire. A single swing will make you drip with sweat. Kind of icky to use, really.",
+	"forginglevel":39,
+	"materials":["Diamond","Gold Wolf Fang","Fire Crystal"],
 	"category":"Long Sword",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Katana",
+	"sell":980,
+	"buy":87600,
 	"ability":{
-		"":
+		"atk":424,
+		"diz":12,
+		"faintatkP":5
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
-	"category":"",
+	"flavourtext":"A weapon from the Far East. Beautiful, strong and sharp. In rare cases, you may knock down foes with a single blow.",
+	"forginglevel":35,
+	"materials":["Diamond","Magic","Claws and Fangs"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Big Knife",
+	"sell":800,
+	"buy":78600,
+	"ability":{
+		"atk":402,
+		"diz":12
+	},
+	"flavourtext":"A knife with a large blade. So large, in fact, that one cannot easily cut apples with it. Unless they're REALLY BIG.",
+	"forginglevel":32,
+	"materials":["Diamond","Claws and Fangs","Sticks and Stems"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Earth Shade",
+	"sell":1400,
+	"buy":62050,
+	"ability":{
+		"atr":["Earth"],
+		"atk":378,
+		"matk":5,
+		"diz":12
+	},
+	"flavourtext":"A sword blessed by mother nature. Has an interesting design that looks kind of like a fault line.",
+	"forginglevel":30,
+	"materials":["Gold","Silver","Black Bird Feather","Earth Crystal"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Katzbalger",
+	"sell":1100,
+	"buy":50080,
+	"ability":{
+		"atk":333,
+		"diz":12
+	},
+	"flavourtext":"A smartly-designed sword with an aerodynamic shape that makes it easy to swing.",
+	"forginglevel":29,
+	"materials":["Gold","Silver","Rigid Horn"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Poison Blade",
+	"sell":1050,
+	"buy":32300,
+	"ability":{
+		"atk":292,
+		"diz":12,
+		"psnatkP":25
+	},
+	"flavourtext":"A longsword with a poison-covered blade. So dangerous that even a small scratch can kill you.",
+	"forginglevel":27,
+	"materials":["Gold","Silver","Poison Powder"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Cyclone Blade",
+	"sell":1e3,
+	"buy":24e3,
+	"ability":{
+		"atr":["Wind"],
+		"atk":248,
+		"matk":5,
+		"diz":12
+	},
+	"flavourtext":"A sword imbued with the magic power of wind. Its thin blade has small holes in it to allow for air to pass through.",
+	"forginglevel":25,
+	"materials":["Gold","Emerald"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Sea Cutter",
+	"sell":550,
+	"buy":14600,
+	"ability":{
+		"atr":["Water"],
+		"atk":184,
+		"matk":3,
+		"diz":12
+	},
+	"flavourtext":"A sword that can supposedly divide the sea. Listen closely and you'll hear the sound of ocean waves.",
+	"forginglevel":21,
+	"materials":["Silver","Aquamarine"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Great Sword",
+	"sell":200,
+	"buy":9700,
+	"ability":{
+		"atk":120,
+		"diz":12
+	},
+	"flavourtext":"A long sword designed to never dull or need sharpening. Balanced and easy to hold.",
+	"forginglevel":16,
+	"materials":["Bronze","Liquids"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Zweihaender+",
+	"sell":160,
+	"buy":4450,
+	"ability":{
+		"atk":61,
+		"diz":24,
+		"stunP":15
+	},
+	"flavourtext":"Zweihaender strengthened with special power. Hurts worse than a wedgie.",
+	"forginglevel":11,
+	"materials":["Zweihaender","Bronze"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Zweihaender",
+	"sell":41,
+	"buy":1675,
+	"ability":{
+		"atk":42,
+		"diz":12
+	},
+	"flavourtext":"A large two-handed sword. Not much else to say -- it's very straight-forward and to the point, if you know what I mean.",
+	"forginglevel":6,
+	"materials":["Minerals","Claws and Fangs"],
+	"category":"Long Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Claymore",
+	"sell":23,
+	"buy":160,
+	"ability":{
+		"atk":12,
+		"diz":12
+	},
+	"flavourtext":"A long sword that's easy to swing. Has a fun ring on it that you can play with. (But don't try it at home!)",
+	"forginglevel":2,
+	"materials":["Minerals"],
+	"category":"Long Sword",
 	"pricemultiplier":"E"
 })
