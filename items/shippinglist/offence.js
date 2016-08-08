@@ -3788,22 +3788,6 @@ registerItem({
 })
 
 registerItem({
-	"name":"Invisiblade",
-	"sell":800,
-	"buy":18320,
-	"ability":{
-		"atk":150,
-		"matk":5,
-		"diz":6
-	},
-	"flavourtext":"Can you see the true blade?",
-	"forginglevel":16,
-	"materials":["Invisible Stone","Claws and Fangs","Crystals"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
 	"name":"Veggieblade",
 	"sell":500,
 	"buy":6250,
@@ -3817,6 +3801,116 @@ registerItem({
 	"flavourtext":"A vegetable used as a sword. I wonder how much damage it can cause...",
 	"forginglevel":32,
 	"materials":["Carrot"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Spoon",
+	"sell":750,
+	"buy":7800,
+	"ability":{
+		"atk":92,
+		"matk":16,
+		"diz":6
+	},
+	"flavourtext":"A magic sword that somehow makes people want to eat pudding.",
+	"forginglevel":25,
+	"materials":["Silver","Silver"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Back Scratcher",
+	"sell":90,
+	"buy":800,
+	"ability":{
+		"atk":69,
+		"matk":20,
+		"diz":20,
+		"critP":5
+	},
+	"flavourtext":"A sword (?) used to scratch itchy backs. Maybe your foes will freak out when they see it?",
+	"forginglevel":20,
+	"materials":["Glue","Sticks and Stems"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rune Legend",
+	"sell":12e4,
+	"ability":{
+		"atk":9999,
+		"matk":9999,
+		"diz":6
+	},
+	"flavourtext":"Swordsmen call this a legendary short sword. The runes imbued on its blade shine majestically.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Dragonic Stone","Rune Crystal","Green Core","Wind Dragon Tooth"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gladius",
+	"sell":58e3,
+	"ability":{
+		"atk":9800,
+		"matk":1e3,
+		"diz":12,
+		"critP":10
+	},
+	"flavourtext":"A short sword forged through years of disciplined smithing. Like, really sharp and stuff.",
+	"forginglevel":90,
+	"materials":["Dragonic Stone","Firewyrm Scale","Throne of the Empire","Small Crystal","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rune Blade",
+	"sell":5e4,
+	"ability":{
+		"atr":["Light"],
+		"atk":8700,
+		"matk":5e3,
+		"diz":6
+	},
+	"flavourtext":"A treasured sword with rune power. The light beaming from it casts no shadow.",
+	"forginglevel":85,
+	"materials":["Dragonic Stone","Earthwyrm Scale","Rune Crystal","Claws and Fangs","Sticks and Stems"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Dragon Slayer",
+	"sell":23e3,
+	"ability":{
+		"atk":7e3,
+		"diz":6
+	},
+	"flavourtext":"A sword in the shape of three dragon heads. The three often fight over who's the best.",
+	"forginglevel":82,
+	"materials":["Dragonic Stone","Dragonic Stone","Black Scale","Blue Scale","Glitter Scale"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Invisiblade",
+	"sell":800,
+	"buy":18320,
+	"ability":{
+		"atk":150,
+		"matk":5,
+		"diz":6
+	},
+	"flavourtext":"Can you see the true blade?",
+	"forginglevel":16,
+	"materials":["Invisible Stone","Claws and Fangs","Crystals"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
