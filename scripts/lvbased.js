@@ -33,19 +33,21 @@ function getPriceTable(){
 	if (currentItem.harvested!==undefined){
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
-		for (i=0;i<maxLv;i++){
+		
+		var currentSeed = currentItem
+		
+		var integerCorrector=1e6;
+		// Not converting all factors into integers may result in undesirable floating numbers
+		var currentCropString = currentSeed.crop
+		var currentCrop = currentCropString.convertStringToItem()
 			
-			var integerCorrector=1e6;
-			// Not converting all factors into integers may result in undesirable floating numbers
+		for (i=0;i<maxLv;i++){
 			var currentModifiedMultiplier=integerCorrector*priceMultiplierE[i]; // Lousy substitute. Price multiplier should be based on the crop, not fixed at E.
 			
-			var currentCropString = currentItem.crop
-			var currentCrop = currentCropString.convertStringToItem()
-			
-			var currentValueModified = currentModifiedMultiplier*currentItem.harvested*currentCrop.sell//currentItem.value
+			var currentValueModified = currentModifiedMultiplier*currentSeed.harvested*currentCrop.sell//currentItem.value
 			var currentValue = Math.floor(currentValueModified/integerCorrector);
-			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
-			var currentROIperDay = currentROI/currentItem.growth
+			var currentROI = (currentValue-currentSeed.buy)/currentSeed.buy
+			var currentROIperDay = currentROI/currentSeed.growth
 			ROIarray.push(currentROI.toPrecision(5))
 			ROIperDayArray.push(currentROIperDay.toPrecision(5))
 		}
