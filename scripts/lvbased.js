@@ -15,10 +15,40 @@ function getPriceTable(){
 		lvArray.push(i+1);
 		var multiplier = priceMultiArray[i]*integerCorrector
 		sellPriceArray.push(multiplier*currentItem.sell/integerCorrector)
-		cumulativeArray.push(cumSum)
 		if (i>0){
 			incrementArray.push(sellPriceArray[i]-sellPriceArray[i-1])
 			cumSum+=incrementArray[i];
+		}
+		cumulativeArray.push(cumSum)
+	}
+	
+	var priceTableEntry = lvArray
+	priceTableEntry.arrayPush(priceMultiArray)
+	priceTableEntry.arrayPush(sellPriceArray)
+	priceTableEntry.arrayPush(incrementArray)
+	priceTableEntry.arrayPush(cumulativeArray)
+	//priceTableEntry.arrayPush()
+	
+	var priceTable = document.createElement('table')
+	var priceTableHeader = document.createElement('tr')
+	priceTable.appendChild(priceTableHeader)
+	
+	document.getElementById('profitTable').appendChild(priceTable);
+	
+	for (i=0;i<headerArray.length;i++){
+		var c = document.createElement('td');
+		priceTableHeader.appendChild(c);
+		c.innerHTML=headerArray[i];
+	}
+	
+	for (i=0;i<maxLv;i++){
+		var lvRow = document.createElement('tr')
+		priceTable.appendChild(lvRow)
+		
+		for (j=0;j<(priceTableEntry.length)/maxLv;j++){
+			var c = document.createElement('td');
+			c.innerHTML=priceTableEntry[i*maxLv+j];
+			lvRow.appendChild(c);
 		}
 	}
 	
