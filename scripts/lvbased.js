@@ -34,7 +34,7 @@ function getPriceTable(){
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
 		for (i=0;i<maxLv;i++){
-			var currentValue = currentItem.value*currentItem.harvested
+			var currentValue = currentItem.value*currentItem.harvested*priceMultiArray[i] // Must account for weird maths
 			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
 			var currentROIperDay = currentROI/currentItem.growth
 			ROIarray.push(currentROI)
