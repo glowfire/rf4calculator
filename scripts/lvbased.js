@@ -50,7 +50,7 @@ function getPriceTable(){
 		
 		for (j=0;j<(priceTableEntry.length)/maxLv;j++){
 			var c = document.createElement('td');
-			c.innerHTML=priceTableEntry[i*maxLv+j];
+			c.innerHTML=priceTableEntry[i+j*maxLv];
 			lvRow.appendChild(c);
 		}
 	}
