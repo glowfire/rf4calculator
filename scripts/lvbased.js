@@ -30,7 +30,7 @@ function getPriceTable(){
 		cumulativeArray.push(cumSum)
 	}
 	
-	if (currentItem.value!==unedefined){
+	if (currentItem.value!==undefined){
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI/day")
 		for (i=0;i<maxLv;i++){
