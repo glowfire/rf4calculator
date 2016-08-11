@@ -39,12 +39,15 @@ function getPriceTable(){
 			// Not converting all factors into integers may result in undesirable floating numbers
 			var currentModifiedMultiplier=integerCorrector*priceMultiplierE[i]; // Lousy substitute. Price multiplier should be based on the crop, not fixed at E.
 			
-			var currentValueModified = currentItem.value*currentModifiedMultiplier*currentItem.harvested
+			var currentCropString = currentItem.crop
+			var currentCrop = currentCropString.convertStringToItem()
+			
+			var currentValueModified = currentModifiedMultiplier*currentItem.harvested*currentCrop.sell//currentItem.value
 			var currentValue = Math.floor(currentValueModified/integerCorrector);
 			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
 			var currentROIperDay = currentROI/currentItem.growth
-			ROIarray.push(currentROI.toPrecision(3))
-			ROIperDayArray.push(currentROIperDay.toPrecision(3))
+			ROIarray.push(currentROI.toPrecision(5))
+			ROIperDayArray.push(currentROIperDay.toPrecision(5))
 		}
 	}
 	
