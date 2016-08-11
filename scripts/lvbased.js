@@ -16,7 +16,7 @@ function getPriceTable(){
 	
 	for (i=0;i<maxLv;i++){
 		lvArray.push(i+1);
-		var multiplier = priceMultiArray[i]*integerCorrector
+		var multiplier = priceMultiArray[i].toPrecision(3)*integerCorrector
 		sellPriceArray.push(multiplier*currentItem.sell/integerCorrector)
 		if (i>0){
 			incrementArray.push(sellPriceArray[i]-sellPriceArray[i-1])
