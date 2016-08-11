@@ -34,12 +34,16 @@ function getPriceTable(){
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
 		for (i=0;i<maxLv;i++){
-			var currentCropString = currentItem.crop
-			var currentCrop = currentCropString.convertStringToItem()
-			var currentValue = getSellPriceAtLevel(currentCrop,i+1)*currentItem.harvested
+			
+			var integerCorrector=1e6;
+			// Not converting all factors into integers may result in undesirable floating numbers
+			var currentModifiedMultiplier=integerCorrector*priceMultiArray[i];
+			
+			var currentValueModified = currentItem.value*currentModifiedMultiplier*currentItem.harvested
+			var currentValue = Math.floor(currentValueModified/integerCorrector);
 			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
 			var currentROIperDay = currentROI/currentItem.growth
-			ROIarray.push(currentItem.crop)//currentROI.toPrecision(3))
+			ROIarray.push(currentROI.toPrecision(3))
 			ROIperDayArray.push(currentROIperDay.toPrecision(3))
 		}
 	}
