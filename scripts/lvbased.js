@@ -17,8 +17,8 @@ function getPriceTable(){
 	for (i=0;i<maxLv;i++){
 		lvArray.push(i+1);
 		priceMultiArray[i] = priceMultiArray[i].toPrecision(3)
-		var multiplier = priceMultiArray[i]*integerCorrector
-		sellPriceArray.push(multiplier*currentItem.sell/integerCorrector)
+		var multiplier = priceMultiArray[i]
+		sellPriceArray.push(Math.floor(multiplier*integerCorrector*currentItem.sell/integerCorrector))
 		if (i>0){
 			incrementArray.push(sellPriceArray[i]-sellPriceArray[i-1])
 			cumSum+=incrementArray[i];
