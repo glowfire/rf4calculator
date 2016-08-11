@@ -13,6 +13,10 @@ function getPriceTable(){
 	var sellPriceArray = [];
 	var incrementArray = ["N/A"];
 	var cumulativeArray = [];
+	
+	var ROIarray = [];
+	var ROIperDayArray = [];
+	
 	var cumSum = 0;
 	
 	for (i=0;i<maxLv;i++){
@@ -26,11 +30,24 @@ function getPriceTable(){
 		cumulativeArray.push(cumSum)
 	}
 	
+	if (currentItem.value!==unedefined){
+		headerArray.push("Return On<br>Investment")
+		headerArray.push("ROI/day")
+		for (i=0;i<maxLv;i++){
+			var currentValue = currentItem.value*currentItem.harvested
+			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
+			ROIarray.push(currentROI)
+			ROIperDayArray.push(currentROI/currentItem.growth)
+		}
+	}
+	
 	var priceTableEntry = lvArray
 	priceTableEntry.arrayPush(priceMultiArray)
 	priceTableEntry.arrayPush(sellPriceArray)
 	priceTableEntry.arrayPush(incrementArray)
 	priceTableEntry.arrayPush(cumulativeArray)
+	priceTableEntry.arrayPush(ROIarray)
+	priceTableEntry.arrayPush(ROIperDayArray)
 	//priceTableEntry.arrayPush()
 	
 	var priceTable = document.createElement('table')
