@@ -27,7 +27,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Magic Plant Shield"
 })
 
 registerItem({
@@ -49,7 +50,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Plant Sword"
 })
 
 registerItem({
@@ -110,7 +112,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Grapes"
 })
 
 registerItem({
@@ -131,7 +134,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Orange"
 })
 
 registerItem({
@@ -152,7 +156,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Apple"
 })
 
 registerItem({
@@ -174,7 +179,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Hot-Hot Fruit"
 })
 
 registerItem({
@@ -196,7 +202,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Pink Melon"
 })
 
 registerItem({
@@ -218,7 +225,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Golden Turnip"
 })
 
 registerItem({
@@ -240,7 +248,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Golden Potato"
 })
 
 registerItem({
@@ -262,7 +271,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Golden Pumpkin"
 })
 
 registerItem({
@@ -284,7 +294,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Golden Cabbage"
 })
 
 registerItem({
@@ -306,7 +317,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Bok Choy"
 })
 
 registerItem({
@@ -328,7 +340,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Leek"
 })
 
 registerItem({
@@ -350,7 +363,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Radish"
 })
 
 registerItem({
@@ -372,7 +386,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Pink Turnip"
 })
 
 registerItem({
@@ -394,7 +409,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"White Crystal"
 })
 
 registerItem({
@@ -416,7 +432,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Red Crystal"
 })
 
 registerItem({
@@ -438,7 +455,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Pom-Pom Grass"
 })
 
 registerItem({
@@ -460,7 +478,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Autumn Grass"
 })
 
 registerItem({
@@ -482,7 +501,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Noel Grass"
 })
 
 registerItem({
@@ -504,7 +524,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Green Crystal"
 })
 
 registerItem({
@@ -526,7 +547,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Fireflower"
 })
 
 registerItem({
@@ -548,7 +570,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"4-Leaf Clover"
 })
 
 registerItem({
@@ -570,7 +593,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Ironleaf"
 })
 
 registerItem({
@@ -592,7 +616,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Emery Flower"
 })
 
 registerItem({
@@ -614,7 +639,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Blue Crystal"
 })
 
 registerItem({
@@ -636,7 +662,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Lamp Grass"
 })
 
 registerItem({
@@ -658,7 +685,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Cherry Grass"
 })
 
 registerItem({
@@ -680,7 +708,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Fodder"
 })
 
 registerItem({
@@ -702,7 +731,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Charm Blue"
 })
 
 registerItem({
@@ -724,7 +754,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Green Pepper"
 })
 
 registerItem({
@@ -746,7 +777,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Spinach"
 })
 
 registerItem({
@@ -768,7 +800,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Yam"
 })
 
 registerItem({
@@ -790,7 +823,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Carrot"
 })
 
 registerItem({
@@ -812,7 +846,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Eggplant"
 })
 
 registerItem({
@@ -834,7 +869,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Pink Cat"
 })
 
 registerItem({
@@ -856,7 +892,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Pineapple"
 })
 
 registerItem({
@@ -878,7 +915,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Pumpkin"
 })
 
 registerItem({
@@ -900,7 +938,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Onion"
 })
 
 registerItem({
@@ -922,7 +961,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Corn"
 })
 
 registerItem({
@@ -944,7 +984,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Tomato"
 })
 
 registerItem({
@@ -966,7 +1007,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Toyherb"
 })
 
 registerItem({
@@ -988,7 +1030,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Moondrop Flower"
 })
 
 registerItem({
@@ -1010,7 +1053,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Cabbage"
 })
 
 registerItem({
@@ -1032,7 +1076,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Strawberry"
 })
 
 registerItem({
@@ -1054,7 +1099,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Cucumber"
 })
 
 registerItem({
@@ -1076,7 +1122,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Potato"
 })
 
 registerItem({
@@ -1098,7 +1145,8 @@ registerItem({
 	"pricemultiplier":"Sd",
 	"cookingeffects":{
 		"hp":5
-	}
+	},
+	"crop":"Turnip"
 })
 
 registerItem({
