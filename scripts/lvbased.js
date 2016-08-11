@@ -34,7 +34,8 @@ function getPriceTable(){
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
 		for (i=0;i<maxLv;i++){
-			var currentCrop = currentItem.crop.convertStringToItem()
+			var currentCropString = currentItem.crop
+			var currentCrop = currentCropString.convertStringToItem()
 			var currentValue = getSellPriceAtLevel(currentCrop,i+1)*currentItem.harvested
 			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
 			var currentROIperDay = currentROI/currentItem.growth
