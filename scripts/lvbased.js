@@ -6,9 +6,10 @@ function getPriceTable(){
 	headerArray[1]+=currentItem.pricemultiplier+")";
 	
 	var integerCorrector = 1e8;
+	var currentPriceMultiplier = getPriceMultiplierArray(currentItem.pricemultiplier);
 	
 	var lvArray = [];
-	var priceMultiArray = getPriceMultiplierArray(currentItem.pricemultiplier);
+	var priceMultiArray = [];
 	var sellPriceArray = [];
 	var incrementArray = ["N/A"];
 	var cumulativeArray = [];
@@ -16,7 +17,7 @@ function getPriceTable(){
 	
 	for (i=0;i<maxLv;i++){
 		lvArray.push(i+1);
-		priceMultiArray[i] = priceMultiArray[i].toPrecision(3)
+		priceMultiArray.push(currentPriceMultiplier[i].toPrecision(3))
 		var multiplier = priceMultiArray[i]
 		sellPriceArray.push(Math.floor(multiplier*integerCorrector*currentItem.sell/integerCorrector))
 		if (i>0){
