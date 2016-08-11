@@ -32,7 +32,7 @@ function getPriceTable(){
 	
 	if (currentItem.harvested!==undefined){
 		headerArray.push("Return On<br>Investment")
-		headerArray.push("ROI/day")
+		headerArray.push("ROI/Day<br>(Normal Growth)")
 		for (i=0;i<maxLv;i++){
 			var currentValue = currentItem.value*currentItem.harvested
 			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
