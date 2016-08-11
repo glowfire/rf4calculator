@@ -36,8 +36,9 @@ function getPriceTable(){
 		for (i=0;i<maxLv;i++){
 			var currentValue = currentItem.value*currentItem.harvested
 			var currentROI = (currentValue-currentItem.buy)/currentItem.buy
+			var currentROIperDay = currentROI/currentItem.growth
 			ROIarray.push(currentROI)
-			ROIperDayArray.push(currentROI/currentItem.growth)
+			ROIperDayArray.push(currentROIperDay.toPrecision(3))
 		}
 	}
 	
