@@ -40,11 +40,12 @@ function getPriceTable(){
 		// Not converting all factors into integers may result in undesirable floating numbers
 		var currentCropString = currentSeed.crop
 		var currentCrop = currentCropString.convertStringToItem()
+		var currentCropPriceMultiplier = getPriceMultiplierArray(currentCrop.pricemultiplier)
 			
 		for (i=0;i<maxLv;i++){
-			var currentModifiedMultiplier=integerCorrector*getPriceMultiplierArray(currentCrop)[i]; // Lousy substitute. Price multiplier should be based on the crop, not fixed at E.
+			var currentModifiedMultiplier=integerCorrector*currentCropPriceMultiplier[i]; // Lousy substitute. Price multiplier should be based on the crop, not fixed at E.
 			
-			var currentValueModified = currentModifiedMultiplier*currentSeed.harvested*currentCrop.sell//currentItem.value
+			var currentValueModified = currentModifiedMultiplier*currentSeed.harvested*currentCrop.sell
 			var currentValue = Math.floor(currentValueModified/integerCorrector);
 			var currentROI = (currentValue-currentSeed.buy)/currentSeed.buy
 			var currentROIperDay = currentROI/currentSeed.growth
