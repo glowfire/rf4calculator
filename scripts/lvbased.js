@@ -37,7 +37,7 @@ function getPriceTable(){
 			
 			var integerCorrector=1e6;
 			// Not converting all factors into integers may result in undesirable floating numbers
-			var currentModifiedMultiplier=integerCorrector*priceMultiArray[i];
+			var currentModifiedMultiplier=integerCorrector*priceMultiplierE[i]; // Lousy substitute. Price multiplier should be based on the crop, not fixed at E.
 			
 			var currentValueModified = currentItem.value*currentModifiedMultiplier*currentItem.harvested
 			var currentValue = Math.floor(currentValueModified/integerCorrector);
