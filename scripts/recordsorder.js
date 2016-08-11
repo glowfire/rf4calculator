@@ -52,7 +52,7 @@ function getItemInfo(){
 		createMaterialTable()
 	}
 	//document.getElementById("dependantDiv").innerHTML = '';
-	getEffectsTable()
+	//getEffectsTable()
 	if (currentItem.upgradeinfo!==undefined||currentItem.upgradematerial!==undefined){
 		getUpgradeInfo()
 	}
@@ -60,5 +60,5 @@ function getItemInfo(){
 		currentRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
 		showRecipesOfItem();
 	}
-	getProfitTable()
+	getPriceTable()
 }
