@@ -4142,3 +4142,34 @@ registerItem({
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
+
+// Register short swords according to reverse category order in recipe list
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"atk":,
+		"diz":6
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"",
+	"sell":,
+	"buy":,
+	"ability":{
+		"":
+	},
+	"flavourtext":".",
+	"forginglevel":,
+	"materials":["",""],
+	"category":"",
+	"pricemultiplier":"E"
+})
