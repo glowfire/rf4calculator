@@ -4128,6 +4128,103 @@ registerItem({
 })
 
 registerItem({
+	"name":"Luck Blade",
+	"sell":950,
+	"buy":77777,
+	"ability":{
+		"atk":388,
+		"diz":20,
+		"critP":10
+	},
+	"flavourtext":"A sword that brings fortune to its wielder. You should totally buy a lottery ticket!",
+	"forginglevel":35,
+	"materials":["Diamond","Scorpion Pincer","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Snakesword",
+	"sell":780,
+	"buy":75400,
+	"ability":{
+		"atk":367,
+		"diz":6
+	},
+	"flavourtext":"A sword made by connecting small bits of metal into one whip-like blade. Long-ranged and hard to avoid.",
+	"forginglevel":30,
+	"materials":["Diamond","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gaia Sword",
+	"sell":1e3,
+	"buy":59200,
+	"ability":{
+		"atr":["Earth"],
+		"atk":307,
+		"matk":20,
+		"diz":6
+	},
+	"flavourtext":"A sword imbued with the magic power of earth. Because it's made from very hard material, it won't chip easily.",
+	"forginglevel":27,
+	"materials":["Gold","Earth Crystal","Rigid Horn"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gorgeous Sword",
+	"sell":2400,
+	"buy":1e5,
+	"ability":{
+		"atk":232,
+		"int":-5,
+		"diz":6
+	},
+	"flavourtext":"A gorgeous and dazzling sword which shines with an elegance like that of freshly-fallen snow.",
+	"forginglevel":23,
+	"materials":["Gold","Gold","Gold","Gold"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Burning Sword",
+	"sell":800,
+	"buy":35500,
+	"ability":{
+		"atr":["Fire"],
+		"atk":224,
+		"matk":5,
+		"diz":6
+	},
+	"flavourtext":"A sword with a fiery blade. One touch and you'll be burned.",
+	"forginglevel":20,
+	"materials":["Gold","Fire Crystal"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Defender",
+	"sell":640,
+	"buy":26800,
+	"ability":{
+		"atk":188,
+		"def":15,
+		"diz":6
+	},
+	"flavourtext":"A sword designed to be used with a shield. Raises resistance toward incoming attacks and knockouts.",
+	"forginglevel":19,
+	"materials":["Sapphire","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Invisiblade",
 	"sell":800,
 	"buy":18320,
@@ -4143,33 +4240,79 @@ registerItem({
 	"pricemultiplier":"E"
 })
 
-// Register short swords according to reverse category order in recipe list
-
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Aqua Sword",
+	"sell":780,
+	"buy":11800,
 	"ability":{
-		"atk":,
+		"atr":["Water"],
+		"atk":128,
+		"matk":3,
 		"diz":6
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
+	"flavourtext":"A sword imbued with the magic power of water. Its blade is always wet.",
+	"forginglevel":15,
+	"materials":["Silver","Aquamarine"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"",
-	"sell":,
-	"buy":,
+	"name":"Cutlass",
+	"sell":138,
+	"buy":6380,
 	"ability":{
-		"":
+		"atk":58,
+		"diz":6
 	},
-	"flavourtext":".",
-	"forginglevel":,
-	"materials":["",""],
-	"category":"",
+	"flavourtext":"An old sword that belonged to pirates. Sailors carry them as charms.",
+	"forginglevel":7,
+	"materials":["Bronze","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Steel Sword+",
+	"sell":70,
+	"buy":3320,
+	"ability":{
+		"atk":48,
+		"diz":6
+	},
+	"flavourtext":"A strengthened version of the Steel Sword. Born anew with freshly-colored blades.",
+	"forginglevel":4,
+	"materials":["Steel Sword","Minerals"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Steel Sword",
+	"sell":42,
+	"buy":1210,
+	"ability":{
+		"atk":29,
+		"diz":6
+	},
+	"flavourtext":"A short sword forged from steel. Has a longer than average blade that gives you an extended reach.",
+	"forginglevel":3,
+	"materials":["Minerals","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Broadsword",
+	"sell":23,
+	"buy":90,
+	"ability":{
+		"atk":5,
+		"diz":6
+	},
+	"flavourtext":"A light, easy-to-use sword. Recommended for beginners. Some even use it for cooking.",
+	"forginglevel":1,
+	"materials":["Minerals"],
+	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
