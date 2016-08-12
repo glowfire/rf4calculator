@@ -3788,6 +3788,22 @@ registerItem({
 })
 
 registerItem({
+	"name":"Invisiblade",
+	"sell":800,
+	"buy":18320,
+	"ability":{
+		"atk":150,
+		"matk":5,
+		"diz":6
+	},
+	"flavourtext":"Can you see the true blade?",
+	"forginglevel":16,
+	"materials":["Invisible Stone","Claws and Fangs","Crystals"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Veggieblade",
 	"sell":500,
 	"buy":6250,
@@ -3806,6 +3822,36 @@ registerItem({
 })
 
 registerItem({
+	"name":"Snakesword",
+	"sell":780,
+	"buy":75400,
+	"ability":{
+		"atk":367,
+		"diz":6
+	},
+	"flavourtext":"A sword made by connecting small bits of metal into one whip-like blade. Long-ranged and hard to avoid.",
+	"forginglevel":30,
+	"materials":["Diamond","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Rune Legend",
+	"sell":12e4,
+	"ability":{
+		"atk":9999,
+		"matk":9999,
+		"diz":6
+	},
+	"flavourtext":"Swordsmen call this a legendary short sword. The runes imbued on its blade shine majestically.",
+	"forginglevel":99,
+	"materials":["Rune Sphere Shard","Dragonic Stone","Rune Crystal","Green Core","Wind Dragon Tooth"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Spoon",
 	"sell":750,
 	"buy":7800,
@@ -3817,6 +3863,54 @@ registerItem({
 	"flavourtext":"A magic sword that somehow makes people want to eat pudding.",
 	"forginglevel":25,
 	"materials":["Silver","Silver"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gorgeous Sword",
+	"sell":2400,
+	"buy":1e5,
+	"ability":{
+		"atk":232,
+		"int":-5,
+		"diz":6
+	},
+	"flavourtext":"A gorgeous and dazzling sword which shines with an elegance like that of freshly-fallen snow.",
+	"forginglevel":23,
+	"materials":["Gold","Gold","Gold","Gold"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gladius",
+	"sell":58e3,
+	"ability":{
+		"atk":9800,
+		"matk":1e3,
+		"diz":12,
+		"critP":10
+	},
+	"flavourtext":"A short sword forged through years of disciplined smithing. Like, really sharp and stuff.",
+	"forginglevel":90,
+	"materials":["Dragonic Stone","Firewyrm Scale","Throne of the Empire","Small Crystal","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Durendal",
+	"sell":4800,
+	"buy":999999,
+	"ability":{
+		"atk":800,
+		"def":30,
+		"diz":6
+	},
+	"flavourtext":"A sword with a shining blade. You can attack your foes while they're captivated by its radiant beauty.",
+	"forginglevel":50,
+	"materials":["Platinum","Platinum","Malm Claw","Devil Horn","Ambrosia's Thorns"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -3839,32 +3933,45 @@ registerItem({
 })
 
 registerItem({
-	"name":"Rune Legend",
-	"sell":12e4,
+	"name":"Cutlass",
+	"sell":138,
+	"buy":6380,
 	"ability":{
-		"atk":9999,
-		"matk":9999,
+		"atk":58,
 		"diz":6
 	},
-	"flavourtext":"Swordsmen call this a legendary short sword. The runes imbued on its blade shine majestically.",
-	"forginglevel":99,
-	"materials":["Rune Sphere Shard","Dragonic Stone","Rune Crystal","Green Core","Wind Dragon Tooth"],
+	"flavourtext":"An old sword that belonged to pirates. Sailors carry them as charms.",
+	"forginglevel":7,
+	"materials":["Bronze","Claws and Fangs"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Gladius",
-	"sell":58e3,
+	"name":"Platinum Sword+",
+	"sell":8700,
 	"ability":{
-		"atk":9800,
-		"matk":1e3,
-		"diz":12,
-		"critP":10
+		"atk":6050,
+		"diz":6
 	},
-	"flavourtext":"A short sword forged through years of disciplined smithing. Like, really sharp and stuff.",
-	"forginglevel":90,
-	"materials":["Dragonic Stone","Firewyrm Scale","Throne of the Empire","Small Crystal","Claws and Fangs"],
+	"flavourtext":"A strengthened version of the Platinum Sword. Radiates light from its upgraded platinum.",
+	"forginglevel":79,
+	"materials":["Platinum Sword","Dragonic Stone"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Steel Sword+",
+	"sell":70,
+	"buy":3320,
+	"ability":{
+		"atk":48,
+		"diz":6
+	},
+	"flavourtext":"A strengthened version of the Steel Sword. Born anew with freshly-colored blades.",
+	"forginglevel":4,
+	"materials":["Steel Sword","Minerals"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -3886,29 +3993,52 @@ registerItem({
 })
 
 registerItem({
-	"name":"Dragon Slayer",
-	"sell":23e3,
+	"name":"Chaos Blade",
+	"sell":3500,
+	"buy":125105,
 	"ability":{
-		"atk":7e3,
-		"diz":6
+		"atr":["Dark"],
+		"atk":549,
+		"matk":35,
+		"diz":6,
+		"paratkP":20
 	},
-	"flavourtext":"A sword in the shape of three dragon heads. The three often fight over who's the best.",
-	"forginglevel":82,
-	"materials":["Dragonic Stone","Dragonic Stone","Black Scale","Blue Scale","Glitter Scale"],
+	"flavourtext":"Companion to the Chaos Shield. Chooses its bearer with its magical power.",
+	"forginglevel":42,
+	"materials":["Platinum","Gold","Magic","Holy Spore"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
 
 registerItem({
-	"name":"Platinum Sword+",
-	"sell":8700,
+	"name":"Grantale",
+	"sell":5400,
 	"ability":{
-		"atk":6050,
+		"atr":["Earth"],
+		"atk":1352,
+		"matk":250,
 		"diz":6
 	},
-	"flavourtext":"A strengthened version of the Platinum Sword. Radiates light from its upgraded platinum.",
-	"forginglevel":79,
-	"materials":["Platinum Sword","Dragonic Stone"],
+	"flavourtext":"A sword imbued with the magic power of earth. Very tough, and guaranteed not to break or your money back!",
+	"forginglevel":68,
+	"materials":["Orichalcum","Yellow Feather","Earth Crystal","Amethyst","Cursed Doll"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Gaia Sword",
+	"sell":1e3,
+	"buy":59200,
+	"ability":{
+		"atr":["Earth"],
+		"atk":307,
+		"matk":20,
+		"diz":6
+	},
+	"flavourtext":"A sword imbued with the magic power of earth. Because it's made from very hard material, it won't chip easily.",
+	"forginglevel":27,
+	"materials":["Gold","Earth Crystal","Rigid Horn"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -3930,17 +4060,49 @@ registerItem({
 })
 
 registerItem({
-	"name":"Raventine",
-	"sell":12500,
+	"name":"Sunspot",
+	"sell":3600,
+	"buy":308900,
 	"ability":{
 		"atr":["Fire"],
-		"atk":4300,
-		"matk":1800,
+		"atk":692,
+		"matk":30,
 		"diz":6
 	},
-	"flavourtext":"A short sword with high heat. According to legend, it's said to have once turned a lake into a hot spring.",
-	"forginglevel":74,
-	"materials":["Orichalcum","Orichalcum","Golem Spirit Stone","Fire Crystal","Fire Dragon Ash"],
+	"flavourtext":"A sword as hot as the sun. Some say it's so hot that it turns everything it strikes to ash.",
+	"forginglevel":46,
+	"materials":["Platinum","Gold","Warrior's Proof","Fire Crystal","Ruby"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Dragon Slayer",
+	"sell":23e3,
+	"ability":{
+		"atk":7e3,
+		"diz":6
+	},
+	"flavourtext":"A sword in the shape of three dragon heads. The three often fight over who's the best.",
+	"forginglevel":82,
+	"materials":["Dragonic Stone","Dragonic Stone","Black Scale","Blue Scale","Glitter Scale"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
+	"name":"Smash Blade",
+	"sell":7e3,
+	"ability":{
+		"atk":1880,
+		"diz":12,
+		"critP":15,
+		"knockP":15,
+		"stunP":15
+	},
+	"flavourtext":"A sword designed to target a foe's vital points, no matter what style or form you use.",
+	"forginglevel":64,
+	"materials":["Orichalcum","Pirate's Armor","4-Leaf Clover","Chimera's Claw","Claws and Fangs"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -3978,136 +4140,17 @@ registerItem({
 })
 
 registerItem({
-	"name":"Smash Blade",
-	"sell":7e3,
-	"ability":{
-		"atk":1880,
-		"diz":12,
-		"critP":15,
-		"knockP":15,
-		"stunP":15
-	},
-	"flavourtext":"A sword designed to target a foe's vital points, no matter what style or form you use.",
-	"forginglevel":64,
-	"materials":["Orichalcum","Pirate's Armor","4-Leaf Clover","Chimera's Claw","Claws and Fangs"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Grantale",
-	"sell":5400,
-	"ability":{
-		"atr":["Earth"],
-		"atk":1352,
-		"matk":250,
-		"diz":6
-	},
-	"flavourtext":"A sword imbued with the magic power of earth. Very tough, and guaranteed not to break or your money back!",
-	"forginglevel":68,
-	"materials":["Orichalcum","Yellow Feather","Earth Crystal","Amethyst","Cursed Doll"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Aerial Blade",
-	"sell":5600,
-	"ability":{
-		"atr":["Wind"],
-		"atk":1e3,
-		"matk":100,
-		"diz":6
-	},
-	"flavourtext":"A sword imbued with the magic power of wind. Its magical power makes it lighter than other swords.",
-	"forginglevel":54,
-	"materials":["Orichalcum","Lightning Mane","Wind Crystal","Emerald","Claws and Fangs"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Durendal",
-	"sell":4800,
-	"buy":999999,
-	"ability":{
-		"atk":800,
-		"def":30,
-		"diz":6
-	},
-	"flavourtext":"A sword with a shining blade. You can attack your foes while they're captivated by its radiant beauty.",
-	"forginglevel":50,
-	"materials":["Platinum","Platinum","Malm Claw","Devil Horn","Ambrosia's Thorns"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Sunspot",
-	"sell":3600,
-	"buy":308900,
+	"name":"Raventine",
+	"sell":12500,
 	"ability":{
 		"atr":["Fire"],
-		"atk":692,
-		"matk":30,
+		"atk":4300,
+		"matk":1800,
 		"diz":6
 	},
-	"flavourtext":"A sword as hot as the sun. Some say it's so hot that it turns everything it strikes to ash.",
-	"forginglevel":46,
-	"materials":["Platinum","Gold","Warrior's Proof","Fire Crystal","Ruby"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Sakura",
-	"sell":2320,
-	"buy":155400,
-	"ability":{
-		"atr":["Dark"],
-		"atk":590,
-		"matk":5,
-		"diz":6,
-		"psnatkP":15
-	},
-	"flavourtext":"A cursed red sword. Though it has a beautiful name, its edge is coated with poison.",
-	"forginglevel":44,
-	"materials":["Platinum","Paralysis Poison","Poison Powder","Cherry Grass"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Chaos Blade",
-	"sell":3500,
-	"buy":125105,
-	"ability":{
-		"atr":["Dark"],
-		"atk":549,
-		"matk":35,
-		"diz":6,
-		"paratkP":20
-	},
-	"flavourtext":"Companion to the Chaos Shield. Chooses its bearer with its magical power.",
-	"forginglevel":42,
-	"materials":["Platinum","Gold","Magic","Holy Spore"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Wind Sword",
-	"sell":2400,
-	"buy":104475,
-	"ability":{
-		"atr":["Wind"],
-		"atk":496,
-		"matk":30,
-		"diz":6
-	},
-	"flavourtext":"A sword imbued with the magic power of wind. Each swing spawns a miniature gale.",
-	"forginglevel":40,
-	"materials":["Platinum","Silver","Wind Crystal"],
+	"flavourtext":"A short sword with high heat. According to legend, it's said to have once turned a lake into a hot spring.",
+	"forginglevel":74,
+	"materials":["Orichalcum","Orichalcum","Golem Spirit Stone","Fire Crystal","Fire Dragon Ash"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -4144,49 +4187,19 @@ registerItem({
 })
 
 registerItem({
-	"name":"Snakesword",
-	"sell":780,
-	"buy":75400,
+	"name":"Sakura",
+	"sell":2320,
+	"buy":155400,
 	"ability":{
-		"atk":367,
-		"diz":6
+		"atr":["Dark"],
+		"atk":590,
+		"matk":5,
+		"diz":6,
+		"psnatkP":15
 	},
-	"flavourtext":"A sword made by connecting small bits of metal into one whip-like blade. Long-ranged and hard to avoid.",
-	"forginglevel":30,
-	"materials":["Diamond","Claws and Fangs"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Gaia Sword",
-	"sell":1e3,
-	"buy":59200,
-	"ability":{
-		"atr":["Earth"],
-		"atk":307,
-		"matk":20,
-		"diz":6
-	},
-	"flavourtext":"A sword imbued with the magic power of earth. Because it's made from very hard material, it won't chip easily.",
-	"forginglevel":27,
-	"materials":["Gold","Earth Crystal","Rigid Horn"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Gorgeous Sword",
-	"sell":2400,
-	"buy":1e5,
-	"ability":{
-		"atk":232,
-		"int":-5,
-		"diz":6
-	},
-	"flavourtext":"A gorgeous and dazzling sword which shines with an elegance like that of freshly-fallen snow.",
-	"forginglevel":23,
-	"materials":["Gold","Gold","Gold","Gold"],
+	"flavourtext":"A cursed red sword. Though it has a beautiful name, its edge is coated with poison.",
+	"forginglevel":44,
+	"materials":["Platinum","Paralysis Poison","Poison Powder","Cherry Grass"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -4209,6 +4222,22 @@ registerItem({
 })
 
 registerItem({
+	"name":"Aerial Blade",
+	"sell":5600,
+	"ability":{
+		"atr":["Wind"],
+		"atk":1e3,
+		"matk":100,
+		"diz":6
+	},
+	"flavourtext":"A sword imbued with the magic power of wind. Its magical power makes it lighter than other swords.",
+	"forginglevel":54,
+	"materials":["Orichalcum","Lightning Mane","Wind Crystal","Emerald","Claws and Fangs"],
+	"category":"Short Sword",
+	"pricemultiplier":"E"
+})
+
+registerItem({
 	"name":"Defender",
 	"sell":640,
 	"buy":26800,
@@ -4220,22 +4249,6 @@ registerItem({
 	"flavourtext":"A sword designed to be used with a shield. Raises resistance toward incoming attacks and knockouts.",
 	"forginglevel":19,
 	"materials":["Sapphire","Claws and Fangs"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Invisiblade",
-	"sell":800,
-	"buy":18320,
-	"ability":{
-		"atk":150,
-		"matk":5,
-		"diz":6
-	},
-	"flavourtext":"Can you see the true blade?",
-	"forginglevel":16,
-	"materials":["Invisible Stone","Claws and Fangs","Crystals"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
@@ -4258,31 +4271,18 @@ registerItem({
 })
 
 registerItem({
-	"name":"Cutlass",
-	"sell":138,
-	"buy":6380,
+	"name":"Wind Sword",
+	"sell":2400,
+	"buy":104475,
 	"ability":{
-		"atk":58,
+		"atr":["Wind"],
+		"atk":496,
+		"matk":30,
 		"diz":6
 	},
-	"flavourtext":"An old sword that belonged to pirates. Sailors carry them as charms.",
-	"forginglevel":7,
-	"materials":["Bronze","Claws and Fangs"],
-	"category":"Short Sword",
-	"pricemultiplier":"E"
-})
-
-registerItem({
-	"name":"Steel Sword+",
-	"sell":70,
-	"buy":3320,
-	"ability":{
-		"atk":48,
-		"diz":6
-	},
-	"flavourtext":"A strengthened version of the Steel Sword. Born anew with freshly-colored blades.",
-	"forginglevel":4,
-	"materials":["Steel Sword","Minerals"],
+	"flavourtext":"A sword imbued with the magic power of wind. Each swing spawns a miniature gale.",
+	"forginglevel":40,
+	"materials":["Platinum","Silver","Wind Crystal"],
 	"category":"Short Sword",
 	"pricemultiplier":"E"
 })
