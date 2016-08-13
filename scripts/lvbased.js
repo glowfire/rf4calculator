@@ -51,7 +51,8 @@ function getPriceTable(){
 			var currentModifiedMultiplier=integerCorrector*currentCropPriceMultiplier[i];
 			
 			var currentValueModified = currentModifiedMultiplier*currentSeed.harvested*currentCrop.sell
-			var currentValue = Math.floor(currentValueModified/integerCorrector);
+			//var currentValue = Math.floor(currentValueModified/integerCorrector);
+			var currentValue = currentSeed.harvested*getSellPriceAtLevel(currentCrop,i+1)
 			var currentROI = (currentValue-currentSeed.buy)/currentSeed.buy
 			var currentROIperDay = currentROI/currentSeed.growth
 			ROIarray.push(currentROI.toPrecision(5))
