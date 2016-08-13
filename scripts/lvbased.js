@@ -104,11 +104,21 @@ function getPriceTable(){
 			lvRow.appendChild(c);
 			
 			if (j==headerArray.indexOf("Profit<br>(no discounts)")){
-				c.style.color="red";
+				if (c.innerHTML<0){
+					c.style.color="red"
+				} else {
+					c.style.color="green"
+				}
 			}
 			
 			if (j==headerArray.indexOf("Profit<br>(with discounts)")){
-				c.style.color="red";
+				if (c.innerHTML<0){
+					c.style.color="red"
+				} else if(priceTableEntry[i+(j-1)*maxLv]<0){
+					c.style.color="blue"
+				} else {
+					c.style.color="green"
+				}
 			}
 		}
 	}
