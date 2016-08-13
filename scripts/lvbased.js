@@ -57,7 +57,7 @@ function getPriceTable(){
 		}
 	}
 	
-	if (currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined){
+	if ((currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined)&&currentMaterialsBuyPrice>0){
 		headerArray.push("Profit<br>(without discounts)")
 		headerArray.push("Profit<br>(with discounts)")
 		
