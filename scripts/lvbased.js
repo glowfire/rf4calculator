@@ -16,11 +16,14 @@ function getPriceTable(){
 	
 	var cumSum = 0;
 	
-	var ROIarray = [];
-	var ROIperDayArray = [];
-	
 	var profitArrayNoDisc = [];
 	var profitArrayWDisc = [];
+	
+	var ROInoDiscArray = [];
+	var ROIwDiscArray = [];
+	
+	var seedROIarray = [];
+	var seedROIperDayArray = [];
 	
 	var opportunityArray = [];
 	
@@ -35,39 +38,43 @@ function getPriceTable(){
 		cumulativeArray.push(cumSum)
 	}
 	
+	if ((currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined)&&currentMaterialsBuyPrice>0){
+		headerArray.push("Profit<br>(no discounts)")
+		headerArray.push("Profit<br>(with discounts)")
+		
+		headerArray.push("Return On<br>Investment")
+		headerArray.push("ROI with<br>Discounts")
+		
+		for (i=0;i<maxLv;i++){
+			var currentSellPrice = getSellPriceAtLevel(currentItem,i+1)
+			
+			var currentProfitNoDisc = currentSellPrice-currentMaterialsBuyPrice
+			var currentProfitWDisc = currentSellPrice-currentMaterialsBuyPriceDiscount
+			var currentROInoDisc = currentProfitNoDisc/currentMaterialsBuyPrice
+			var currentROIwDisc = currentProfitWDisc/currentMaterialsBuyPriceDiscount
+			
+			profitArrayNoDisc.push(currentProfitNoDisc)
+			profitArrayWDisc.push(currentProfitWDisc)
+			ROInoDiscArray.push(currentROInoDisc.toPrecision(5))
+			ROIwDiscArray.push(currentROIwDisc.toPrecision(5))
+		}
+	}
+	
 	if (currentItem.harvested!==undefined){
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
 		
 		var currentSeed = currentItem
 		
-		var integerCorrector=1e6;
-		// Not converting all factors into integers may result in undesirable floating numbers
 		var currentCropString = currentSeed.crop
 		var currentCrop = currentCropString.convertStringToItem()
-		var currentCropPriceMultiplier = getPriceMultiplierArray(currentCrop.pricemultiplier)
 			
 		for (i=0;i<maxLv;i++){
-			var currentModifiedMultiplier=integerCorrector*currentCropPriceMultiplier[i];
-			
-			var currentValueModified = currentModifiedMultiplier*currentSeed.harvested*currentCrop.sell
-			//var currentValue = Math.floor(currentValueModified/integerCorrector);
-			var currentValue = currentSeed.harvested*getSellPriceAtLevel(currentCrop,i+1)
-			var currentROI = (currentValue-currentSeed.buy)/currentSeed.buy
+			var currentTotalValue = currentSeed.harvested*getSellPriceAtLevel(currentCrop,i+1)
+			var currentROI = (currentTotalValue-currentSeed.buy)/currentSeed.buy
 			var currentROIperDay = currentROI/currentSeed.growth
-			ROIarray.push(currentROI.toPrecision(5))
-			ROIperDayArray.push(currentROIperDay.toPrecision(5))
-		}
-	}
-	
-	if ((currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined)&&currentMaterialsBuyPrice>0){
-		headerArray.push("Profit<br>(no discounts)")
-		headerArray.push("Profit<br>(with discounts)")
-		
-		for (i=0;i<maxLv;i++){
-			var currentSellPrice = getSellPriceAtLevel(currentItem,i+1)
-			profitArrayNoDisc.push(currentSellPrice-currentMaterialsBuyPrice)
-			profitArrayWDisc.push(currentSellPrice-currentMaterialsBuyPriceDiscount)
+			seedROIarray.push(currentROI.toPrecision(5))
+			seedROIperDayArray.push(currentROIperDay.toPrecision(5))
 		}
 	}
 	////////////// unfinished
@@ -85,11 +92,14 @@ function getPriceTable(){
 	priceTableEntry.arrayPush(incrementArray)
 	priceTableEntry.arrayPush(cumulativeArray)
 	
-	priceTableEntry.arrayPush(ROIarray)
-	priceTableEntry.arrayPush(ROIperDayArray)
-	
 	priceTableEntry.arrayPush(profitArrayNoDisc)
 	priceTableEntry.arrayPush(profitArrayWDisc)
+	
+	priceTableEntry.arrayPush(ROInoDiscArray)
+	priceTableEntry.arrayPush(ROIwDiscArray)
+	
+	priceTableEntry.arrayPush(seedROIarray)
+	priceTableEntry.arrayPush(seedROIperDayArray)
 	
 	//priceTableEntry.arrayPush(opportunityArray)
 	//priceTableEntry.arrayPush()
