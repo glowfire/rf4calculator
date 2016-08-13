@@ -105,9 +105,10 @@ function getPriceTable(){
 			
 			if (j==headerArray.indexOf("Profit<br>(no discounts)")){
 				if (c.innerHTML<0){
-					c.style.color="red"
+					c.style.color="red";
 				} else {
-					c.style.color="green"
+					c.style.color="#00FF00";
+					c.style.fontWeight="bold";
 				}
 			}
 			
@@ -115,9 +116,11 @@ function getPriceTable(){
 				if (c.innerHTML<0){
 					c.style.color="red"
 				} else if(priceTableEntry[i+(j-1)*maxLv]<0){
-					c.style.color="blue"
+					c.style.color="blue";
+					c.style.fontWeight="bold";
 				} else {
-					c.style.color="green"
+					c.style.color="green";
+					c.style.fontWeight="bold";
 				}
 			}
 		}
