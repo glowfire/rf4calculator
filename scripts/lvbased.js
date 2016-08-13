@@ -22,6 +22,8 @@ function getPriceTable(){
 	var profitArrayNoDisc = [];
 	var profitArrayWDisc = [];
 	
+	var opportunityArray = [];
+	
 	for (i=0;i<maxLv;i++){
 		lvArray.push(i+1);
 		priceMultiArray.push(currentPriceMultiplier[i].toPrecision(3))
@@ -66,7 +68,14 @@ function getPriceTable(){
 			profitArrayNoDisc.push(currentSellPrice-currentMaterialsBuyPrice)
 			profitArrayWDisc.push(currentSellPrice-currentMaterialsBuyPriceDiscount)
 		}
+	}
+	////////////// unfinished
+	if (currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined){
+		//headerArray.push("Opportunity Cost")
 		
+		for (i=0;i<maxLv;i++){
+			//opportunityArray.push()
+		}
 	}
 	
 	var priceTableEntry = lvArray
@@ -80,6 +89,8 @@ function getPriceTable(){
 	
 	priceTableEntry.arrayPush(profitArrayNoDisc)
 	priceTableEntry.arrayPush(profitArrayWDisc)
+	
+	//priceTableEntry.arrayPush(opportunityArray)
 	//priceTableEntry.arrayPush()
 	
 	var priceTable = document.createElement('table')
