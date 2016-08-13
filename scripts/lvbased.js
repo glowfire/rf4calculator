@@ -145,6 +145,11 @@ function getPriceTable(){
 					c.style.fontWeight="bold";
 				}
 			}
+			
+			if (j==headerArray.indexOf("Return On<br>Investment")||j==headerArray.indexOf("ROI with<br>Discounts")||j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
+				c.innerHTML*=100;
+				c.innerHTML+="%"
+			}
 		}
 	}
 	
