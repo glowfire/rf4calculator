@@ -55,8 +55,8 @@ function getPriceTable(){
 			
 			profitArrayNoDisc.push(currentProfitNoDisc)
 			profitArrayWDisc.push(currentProfitWDisc)
-			ROInoDiscArray.push(currentROInoDisc.toPrecision(5))
-			ROIwDiscArray.push(currentROIwDisc.toPrecision(5))
+			ROInoDiscArray.push(currentROInoDisc)
+			ROIwDiscArray.push(currentROIwDisc)
 		}
 	}
 	
@@ -73,8 +73,8 @@ function getPriceTable(){
 			var currentTotalValue = currentSeed.harvested*getSellPriceAtLevel(currentCrop,i+1)
 			var currentROI = (currentTotalValue-currentSeed.buy)/currentSeed.buy
 			var currentROIperDay = currentROI/currentSeed.growth
-			seedROIarray.push(currentROI.toPrecision(5))
-			seedROIperDayArray.push(currentROIperDay.toPrecision(5))
+			seedROIarray.push(currentROI)
+			seedROIperDayArray.push(currentROIperDay)
 		}
 	}
 	////////////// unfinished
@@ -148,6 +148,7 @@ function getPriceTable(){
 			
 			if (j==headerArray.indexOf("Return On<br>Investment")||j==headerArray.indexOf("ROI with<br>Discounts")||j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
 				c.innerHTML*=100;
+				c.innerHTML.toPrecision(5)
 				c.innerHTML+="%"
 			}
 		}
