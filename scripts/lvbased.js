@@ -58,7 +58,7 @@ function getPriceTable(){
 	}
 	
 	if ((currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined)&&currentMaterialsBuyPrice>0){
-		headerArray.push("Profit<br>(without discounts)")
+		headerArray.push("Profit<br>(no discounts)")
 		headerArray.push("Profit<br>(with discounts)")
 		
 		for (i=0;i<maxLv;i++){
@@ -102,6 +102,14 @@ function getPriceTable(){
 			var c = document.createElement('td');
 			c.innerHTML=priceTableEntry[i+j*maxLv];
 			lvRow.appendChild(c);
+			
+			if (j==headerArray.indexOf("Profit<br>(no discounts)")){
+				c.style.color="red";
+			}
+			
+			if (j==headerArray.indexOf("Profit<br>(with discounts)")){
+				c.style.color="red";
+			}
 		}
 	}
 	
