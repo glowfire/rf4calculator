@@ -2,7 +2,7 @@ function getPriceTable(){
 	
 	document.getElementById('profitTable').innerHTML=""
 	
-	var headerArray=["Lv.","Multiplier<br>(Type: ","Sell Price","Increment","Cumulative<br>Increment"];
+	var headerArray=["Lv.","Multiplier<br>(Type: ","Sell Price","Increment from<br>Previous Level","Cumulative<br>Increment"];
 	headerArray[1]+=currentItem.pricemultiplier+")";
 	
 	var integerCorrector = 1e8;
@@ -14,10 +14,13 @@ function getPriceTable(){
 	var incrementArray = ["N/A"];
 	var cumulativeArray = [];
 	
+	var cumSum = 0;
+	
 	var ROIarray = [];
 	var ROIperDayArray = [];
 	
-	var cumSum = 0;
+	var profitArrayNoDisc = [];
+	var profitArrayWDisc = [];
 	
 	for (i=0;i<maxLv;i++){
 		lvArray.push(i+1);
@@ -43,7 +46,7 @@ function getPriceTable(){
 		var currentCropPriceMultiplier = getPriceMultiplierArray(currentCrop.pricemultiplier)
 			
 		for (i=0;i<maxLv;i++){
-			var currentModifiedMultiplier=integerCorrector*currentCropPriceMultiplier[i]; // Lousy substitute. Price multiplier should be based on the crop, not fixed at E.
+			var currentModifiedMultiplier=integerCorrector*currentCropPriceMultiplier[i];
 			
 			var currentValueModified = currentModifiedMultiplier*currentSeed.harvested*currentCrop.sell
 			var currentValue = Math.floor(currentValueModified/integerCorrector);
@@ -54,13 +57,29 @@ function getPriceTable(){
 		}
 	}
 	
+	if (currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined){
+		headerArray.push("Profit<br>(without discounts)")
+		headerArray.push("Profit<br>(with discounts)")
+		
+		for (i=0;i<maxLv;i++){
+			var currentSellPrice = getSellPriceAtLevel(currentItem,i+1)
+			profitArrayNoDisc.push(currentSellPrice-currentMaterialsBuyPrice)
+			profitArrayWDisc.push(currentSellPrice-currentMaterialsBuyPriceDiscount)
+		}
+		
+	}
+	
 	var priceTableEntry = lvArray
 	priceTableEntry.arrayPush(priceMultiArray)
 	priceTableEntry.arrayPush(sellPriceArray)
 	priceTableEntry.arrayPush(incrementArray)
 	priceTableEntry.arrayPush(cumulativeArray)
+	
 	priceTableEntry.arrayPush(ROIarray)
 	priceTableEntry.arrayPush(ROIperDayArray)
+	
+	priceTableEntry.arrayPush(profitArrayNoDisc)
+	priceTableEntry.arrayPush(profitArrayWDisc)
 	//priceTableEntry.arrayPush()
 	
 	var priceTable = document.createElement('table')
