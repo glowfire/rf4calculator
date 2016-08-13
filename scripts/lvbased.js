@@ -147,9 +147,9 @@ function getPriceTable(){
 			}
 			
 			if (j==headerArray.indexOf("Return On<br>Investment")||j==headerArray.indexOf("ROI with<br>Discounts")||j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
-				c.innerHTML*=100;
-				c.innerHTML.toPrecision(5)
-				c.innerHTML+="%"
+				var correctedValue = c.innerHTML
+				correctedValue*=100;
+				c.innerHTML=correctedValue.toPrecision(5)+"%"
 			}
 		}
 	}
