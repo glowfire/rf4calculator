@@ -21,7 +21,7 @@ for (i in masterItemList){
 		if (currentSeed.crop!==undefined){
 			currentSeedInfo.push(currentSeed.crop);
 		} else {
-			currentSeedInfo.push("")
+			currentSeedInfo.push("Dungeon")
 		}
 		currentSeedInfo.push(currentSeed.buy);
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("spring"));
@@ -29,5 +29,43 @@ for (i in masterItemList){
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
 		seedListing.push(currentSeedInfo)
+	}
+}
+
+function springComparator(a, b) {
+	if (parseInt(a[2]) < parseInt(b[2])){ return -1;
+	} else if (parseInt(a[2]) > parseInt(b[2])){ return 1;
+	} else {return 0};
+}
+
+var sortedSeedListSpring = seedListing.sort(springComparator);
+
+var seedTable = document.createElement("table");
+document.getElementById('otherInfo').appendChild(seedTable);
+seedTableHeader=document.createElement('tr');
+seedTable.appendChild(seedTableHeader);
+
+function appendSeedHeader(string){
+	var c = document.createElement('td');
+	seedTableHeader.appendChild(c);
+	c.innerHTML=string;
+}
+
+appendSeedHeader("Crop");
+appendSeedHeader("Buy Price");
+appendSeedHeader("Spring Growth");
+appendSeedHeader("Summer Growth");
+appendSeedHeader("Autumn Growth");
+appendSeedHeader("Winter Growth");
+
+for (i=0;i<seedListing.length;i++){
+	var row = document.createElement('tr');
+	seedTable.appendChild(row);
+	
+	var currentRow = seedListing[i];
+	for (j=0;j<currentRow.length;j++){
+		var c = document.createElement('td');
+		row.appendChild(c);
+		c.innerHTML=currentRow[j];
 	}
 }
