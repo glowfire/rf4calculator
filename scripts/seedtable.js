@@ -2,7 +2,7 @@ var seedListing=[];
 
 Object.prototype.getGrowthAtSeason = function(currentSeason){
 	var seedSeasons = this.seasons
-	switch(seedSeasons.currentSeason){
+	switch(seedSeasons[currentSeason]){
 		case ("good"):
 			return Math.ceil(this.growth*2/3);
 			break;
