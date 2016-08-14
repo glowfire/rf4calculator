@@ -14,9 +14,12 @@ Object.prototype.getGrowthAtSeason = function(currentSeason){
 	}
 }
 
-for (i in masterCategoryList["Seed"].membershipList){
-	//if (i.category=="Seed"){
-		var currentSeed = i;
+for (i=0;i<sortedMasterNameList.length;i++){
+	var currentNameSet = sortedMasterNameList[i];
+	var currentUniqueName = currentNameSet[2];
+	var currentObject = masterItemList[currentUniqueName]
+	if (currentObject.category=="Seed"){
+		var currentSeed = currentObject;
 		var currentSeedInfo = [];
 		if (currentSeed.crop!==undefined){
 			currentSeedInfo.push(currentSeed.crop);
@@ -29,7 +32,7 @@ for (i in masterCategoryList["Seed"].membershipList){
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
 		seedListing.push(currentSeedInfo)
-	//}
+	}
 }
 
 function springComparator(a, b) {
