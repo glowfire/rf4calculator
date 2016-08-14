@@ -14,7 +14,7 @@ Object.prototype.getGrowthAtSeason = function(currentSeason){
 	}
 }
 
-for (i=0;i<masterCategoryList["Seed"].membershipList.length;i++){
+for (for i in masterCategoryList["Seed"].membershipList){
 	//if (i.category=="Seed"){
 		var currentSeed = i;
 		var currentSeedInfo = [];
@@ -24,10 +24,10 @@ for (i=0;i<masterCategoryList["Seed"].membershipList.length;i++){
 			currentSeedInfo.push("Dungeon")
 		}
 		currentSeedInfo.push(currentSeed.buy);
-		//currentSeedInfo.push(currentSeed.getGrowthAtSeason("spring"));
-		//currentSeedInfo.push(currentSeed.getGrowthAtSeason("summer"));
-		//currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
-		//currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
+		currentSeedInfo.push(currentSeed.getGrowthAtSeason("spring"));
+		currentSeedInfo.push(currentSeed.getGrowthAtSeason("summer"));
+		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
+		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
 		seedListing.push(currentSeedInfo)
 	//}
 }
