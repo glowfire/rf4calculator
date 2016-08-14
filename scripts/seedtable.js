@@ -14,8 +14,8 @@ Object.prototype.getGrowthAtSeason = function(currentSeason){
 	}
 }
 
-for (i in masterItemList){
-	if (i.category=="Seed"){
+for (i in masterCategoryList."Seed"){
+	//if (i.category=="Seed"){
 		var currentSeed = i;
 		var currentSeedInfo = [];
 		if (currentSeed.crop!==undefined){
@@ -29,7 +29,7 @@ for (i in masterItemList){
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
 		seedListing.push(currentSeedInfo)
-	}
+	//}
 }
 
 function springComparator(a, b) {
