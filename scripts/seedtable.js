@@ -41,7 +41,7 @@ function springComparator(a, b) {
 	} else {return 0};
 }
 
-//var sortedSeedListSpring = seedListing.sort(springComparator);
+var sortedSeedListSpring = seedListing.sort(springComparator);
 
 var seedTable = document.createElement("table");
 document.getElementById('otherInfo').appendChild(seedTable);
@@ -56,10 +56,10 @@ function appendSeedHeader(string){
 
 appendSeedHeader("Crop");
 appendSeedHeader("Buy Price");
-//appendSeedHeader("Spring Growth");
-//appendSeedHeader("Summer Growth");
-//appendSeedHeader("Autumn Growth");
-//appendSeedHeader("Winter Growth");
+appendSeedHeader("Spring Growth");
+appendSeedHeader("Summer Growth");
+appendSeedHeader("Autumn Growth");
+appendSeedHeader("Winter Growth");
 
 for (i=0;i<seedListing.length;i++){
 	var row = document.createElement('tr');
