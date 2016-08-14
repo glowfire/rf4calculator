@@ -14,7 +14,7 @@ Object.prototype.getGrowthAtSeason = function(currentSeason){
 	}
 }
 
-for (for i in masterCategoryList["Seed"].membershipList){
+for (i in masterCategoryList["Seed"].membershipList){
 	//if (i.category=="Seed"){
 		var currentSeed = i;
 		var currentSeedInfo = [];
