@@ -41,12 +41,6 @@ function springComparator(a, b) {
 	} else {return 0};
 }
 
-function summerComparator(a, b) {
-	if (parseInt(a[3]) < parseInt(b[3])){ return -1;
-	} else if (parseInt(a[3]) > parseInt(b[3])){ return 1;
-	} else {return 0};
-}
-
 var sortedSeedListSpring = seedListing.sort(springComparator);
 
 var seedTable = document.createElement("table");
@@ -94,7 +88,13 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	}
 }
 
-var sortedSeedListSpring = seedListing.sort(summerComparator);
+function fooComparator(a, b) {
+	if (parseInt(a[1]) < parseInt(b[1])){ return -1;
+	} else if (parseInt(a[1]) > parseInt(b[1])){ return 1;
+	} else {return 0};
+}
+
+var sortedSeedListSpring = seedListing.sort(fooComparator);
 
 var seedTable = document.createElement("table");
 document.getElementById('otherInfo').appendChild(seedTable);
