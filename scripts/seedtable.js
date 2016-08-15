@@ -44,7 +44,7 @@ function springComparator(a, b) {
 var sortedSeedListSpring = seedListing.sort(springComparator);
 
 var seedTable = document.createElement("table");
-//document.getElementById('otherInfo').appendChild(seedTable);
+document.getElementById('otherInfo').appendChild(seedTable);
 seedTableHeader=document.createElement('tr');
 seedTable.appendChild(seedTableHeader);
 
