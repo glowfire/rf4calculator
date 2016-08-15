@@ -82,7 +82,6 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	if (currentObject.sell!==undefined){
 		var currentSeed = currentObject;
 		var currentSeedInfo = [];
-		currentSeedInfo.push(i+1);
 		currentSeedInfo.push(currentSeed.name);
 		currentSeedInfo.push(currentSeed.sell);
 		seedListing.push(currentSeedInfo)
@@ -110,13 +109,14 @@ for (i=0;i<seedListing.length;i++){
 	var row = document.createElement('tr');
 	seedTable.appendChild(row);
 	
+	var c = document.createElement('td');
+	row.appendChild(c);
+	c.innerHTML=i+1;
+	
 	var currentRow = seedListing[i];
 	for (j=0;j<currentRow.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
 		c.innerHTML=currentRow[j];
 	}
-	var c = document.createElement('td');
-	row.appendChild(c);
-	c.innerHTML=i+1;
 }
