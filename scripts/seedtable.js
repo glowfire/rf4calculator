@@ -73,6 +73,8 @@ for (i=0;i<seedListing.length;i++){
 	}
 }
 
+var seedListing=[];
+
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
 	var currentUniqueName = currentNameSet[2];
