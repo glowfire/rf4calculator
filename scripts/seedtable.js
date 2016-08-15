@@ -79,12 +79,14 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
 	var currentUniqueName = currentNameSet[2];
 	var currentObject = masterItemList[currentUniqueName]
-	if (currentObject.sell!==undefined&&currentObject.name!=seedListing[i-1][0]){
+	var previousName
+	if (currentObject.sell!==undefined&&currentObject.name!=previousName){
 		var currentSeed = currentObject;
 		var currentSeedInfo = [];
 		currentSeedInfo.push(currentSeed.name);
 		currentSeedInfo.push(currentSeed.sell);
 		seedListing.push(currentSeedInfo)
+		previousName = currentSeed.name;
 	}
 }
 
