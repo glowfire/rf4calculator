@@ -79,14 +79,10 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
 	var currentUniqueName = currentNameSet[2];
 	var currentObject = masterItemList[currentUniqueName]
-	if (currentObject.buy!==undefined){
+	if (currentObject.sell!==undefined){
 		var currentSeed = currentObject;
 		var currentSeedInfo = [];
-		if (currentSeed.name!==undefined){
-			currentSeedInfo.push(currentSeed.name);
-		} else {
-			currentSeedInfo.push("")
-		}
+		currentSeedInfo.push(currentSeed.name);
 		currentSeedInfo.push(currentSeed.buy);
 		currentSeedInfo.push(currentSeed.sell);
 		seedListing.push(currentSeedInfo)
