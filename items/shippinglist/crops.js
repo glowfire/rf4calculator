@@ -171,9 +171,9 @@ registerItem({
 	"regrow":false,
 	"seasons":{
 		"spring":"normal",
-		"summer":"normal",
+		"summer":"bad",
 		"autumn":"normal",
-		"winter":"normal"
+		"winter":"good"
 	},
 	"category":"Seed",
 	"pricemultiplier":"Sd",
