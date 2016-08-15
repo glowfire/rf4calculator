@@ -126,7 +126,7 @@ for (i=0;i<objectListing.length;i++){
 	row.appendChild(c);
 	c.innerHTML=i+1;
 	
-	var currentRow = seedListing[i];
+	var currentRow = objectListing[i];
 	for (j=0;j<currentRow.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
