@@ -85,6 +85,11 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		var currentSeedInfo = [];
 		currentSeedInfo.push(currentSeed.name);
 		currentSeedInfo.push(currentSeed.sell);
+		if (currentSeed.buy!==undefined){
+			currentSeedInfo.push(currentSeed.buy);
+		} else {
+			currentSeedInfo.push("Not Buyable");
+		}
 		seedListing.push(currentSeedInfo)
 		previousName = currentSeed.name;
 	}
@@ -112,6 +117,7 @@ function appendSeedHeader(string){
 appendSeedHeader("Number");
 appendSeedHeader("Name");
 appendSeedHeader("Sell Price");
+appendSeedHeader("Buy Price");
 
 for (i=0;i<seedListing.length;i++){
 	var row = document.createElement('tr');
