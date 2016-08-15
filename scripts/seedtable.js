@@ -73,7 +73,7 @@ for (i=0;i<seedListing.length;i++){
 	}
 }
 
-var seedListing=[];
+var objectListing=[];
 
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
@@ -81,17 +81,16 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	var currentObject = masterItemList[currentUniqueName]
 	var previousName
 	if (currentObject.sell!==undefined&&currentObject.name!=previousName){
-		var currentSeed = currentObject;
-		var currentSeedInfo = [];
-		currentSeedInfo.push(currentSeed.name);
-		currentSeedInfo.push(currentSeed.sell);
-		if (currentSeed.buy!==undefined){
-			currentSeedInfo.push(currentSeed.buy);
+		var currentObjectInfo = [];
+		currentObjectInfo.push(currentObject.name);
+		currentObjectInfo.push(currentObject.sell);
+		if (currentObject.buy!==undefined){
+			currentObjectInfo.push(currentObject.buy);
 		} else {
-			currentSeedInfo.push("Not Buyable");
+			currentObjectInfo.push("Not Buyable");
 		}
-		seedListing.push(currentSeedInfo)
-		previousName = currentSeed.name;
+		objectListing.push(currentObjectInfo)
+		previousName = currentObject.name;
 	}
 }
 
@@ -101,27 +100,27 @@ function fooComparator(a, b) {
 	} else {return 0};
 }
 
-var sortedSeedListSpring = seedListing.sort(fooComparator);
+var sortedObjectListBySell = objectListing.sort(fooComparator);
 
-var seedTable = document.createElement("table");
-document.getElementById('otherInfo').appendChild(seedTable);
-seedTableHeader=document.createElement('tr');
-seedTable.appendChild(seedTableHeader);
+var objectTable = document.createElement("table");
+document.getElementById('otherInfo').appendChild(objectTable);
+objectTableHeader=document.createElement('tr');
+objectTable.appendChild(objectTableHeader);
 
-function appendSeedHeader(string){
+function appendObjectHeader(string){
 	var c = document.createElement('td');
-	seedTableHeader.appendChild(c);
+	objectTableHeader.appendChild(c);
 	c.innerHTML=string;
 }
 
-appendSeedHeader("Number");
-appendSeedHeader("Name");
-appendSeedHeader("Sell Price");
-appendSeedHeader("Buy Price");
+appendObjectHeader("Number");
+appendObjectHeader("Name");
+appendObjectHeader("Sell Price");
+appendObjectHeader("Buy Price");
 
-for (i=0;i<seedListing.length;i++){
+for (i=0;i<objectListing.length;i++){
 	var row = document.createElement('tr');
-	seedTable.appendChild(row);
+	objectTable.appendChild(row);
 	
 	var c = document.createElement('td');
 	row.appendChild(c);
