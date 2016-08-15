@@ -28,7 +28,7 @@ function fooComparator(a, b) {
 var sortedObjectListBySell = objectListing.sort(fooComparator);
 
 var objectTable = document.createElement("table");
-document.getElementById('otherInfo').appendChild(objectTable);
+//document.getElementById('otherInfo').appendChild(objectTable);
 objectTableHeader=document.createElement('tr');
 objectTable.appendChild(objectTableHeader);
 
