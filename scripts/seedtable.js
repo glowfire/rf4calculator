@@ -89,7 +89,6 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		}
 		currentSeedInfo.push(currentSeed.buy);
 		currentSeedInfo.push(currentSeed.sell);
-		currentSeedInfo.push(i+1);
 		seedListing.push(currentSeedInfo)
 	}
 }
@@ -122,4 +121,7 @@ for (i=0;i<seedListing.length;i++){
 		row.appendChild(c);
 		c.innerHTML=currentRow[j];
 	}
+	var c = document.createElement('td');
+	row.appendChild(c);
+	c.innerHTML=i+1;
 }
