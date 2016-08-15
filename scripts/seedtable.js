@@ -72,3 +72,50 @@ for (i=0;i<seedListing.length;i++){
 		c.innerHTML=currentRow[j];
 	}
 }
+
+for (i=0;i<sortedMasterNameList.length;i++){
+	var currentNameSet = sortedMasterNameList[i];
+	var currentUniqueName = currentNameSet[2];
+	var currentObject = masterItemList[currentUniqueName]
+	if (currentObject.buy!==undefined){
+		var currentSeed = currentObject;
+		var currentSeedInfo = [];
+		if (currentSeed.name!==undefined){
+			currentSeedInfo.push(currentSeed.name);
+		} else {
+			currentSeedInfo.push("")
+		}
+		currentSeedInfo.push(currentSeed.buy);
+		currentSeedInfo.push(currentSeed.sell);
+		seedListing.push(currentSeedInfo)
+	}
+}
+
+var sortedSeedListSpring = seedListing.sort(springComparator);
+
+var seedTable = document.createElement("table");
+document.getElementById('otherInfo').appendChild(seedTable);
+seedTableHeader=document.createElement('tr');
+seedTable.appendChild(seedTableHeader);
+
+function appendSeedHeader(string){
+	var c = document.createElement('td');
+	seedTableHeader.appendChild(c);
+	c.innerHTML=string;
+}
+
+appendSeedHeader("Name");
+appendSeedHeader("Buy Price");
+appendSeedHeader("Sell Price");
+
+for (i=0;i<seedListing.length;i++){
+	var row = document.createElement('tr');
+	seedTable.appendChild(row);
+	
+	var currentRow = seedListing[i];
+	for (j=0;j<currentRow.length;j++){
+		var c = document.createElement('td');
+		row.appendChild(c);
+		c.innerHTML=currentRow[j];
+	}
+}
