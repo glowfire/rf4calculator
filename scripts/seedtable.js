@@ -82,8 +82,8 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	if (currentObject.sell!==undefined){
 		var currentSeed = currentObject;
 		var currentSeedInfo = [];
+		currentSeedInfo.push(i+1);
 		currentSeedInfo.push(currentSeed.name);
-		currentSeedInfo.push(currentSeed.buy);
 		currentSeedInfo.push(currentSeed.sell);
 		seedListing.push(currentSeedInfo)
 	}
@@ -102,10 +102,9 @@ function appendSeedHeader(string){
 	c.innerHTML=string;
 }
 
-appendSeedHeader("Name");
-appendSeedHeader("Buy Price");
-appendSeedHeader("Sell Price");
 appendSeedHeader("Number");
+appendSeedHeader("Name");
+appendSeedHeader("Sell Price");
 
 for (i=0;i<seedListing.length;i++){
 	var row = document.createElement('tr');
