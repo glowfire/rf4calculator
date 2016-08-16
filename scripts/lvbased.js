@@ -5,7 +5,6 @@ function getPriceTable(){
 	var headerArray=["Lv.","Multiplier<br>(Type: ","Sell Price","Increment from<br>Previous Level","Cumulative<br>Increment"];
 	headerArray[1]+=currentItem.pricemultiplier+")";
 	
-	var integerCorrector = 1e8;
 	var currentPriceMultiplier = getPriceMultiplierArray(currentItem.pricemultiplier);
 	
 	var lvArray = [];
