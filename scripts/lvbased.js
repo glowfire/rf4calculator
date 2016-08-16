@@ -110,6 +110,10 @@ function getPriceTable(){
 	
 	document.getElementById('profitTable').appendChild(priceTable);
 	
+	var redText = false
+	var blueText = false
+	var greenText = false
+	
 	for (i=0;i<headerArray.length;i++){
 		var c = document.createElement('td');
 		priceTableHeader.appendChild(c);
@@ -128,21 +132,26 @@ function getPriceTable(){
 			if (j==headerArray.indexOf("Profit<br>(no discounts)")){
 				if (c.innerHTML<0){
 					c.style.color="red";
+					redText = true
 				} else {
 					c.style.color="#00FF00";
 					c.style.fontWeight="bold";
+					greenText = true
 				}
 			}
 			
 			if (j==headerArray.indexOf("Profit<br>(with discounts)")){
 				if (c.innerHTML<0){
 					c.style.color="red"
+					redText = true
 				} else if(priceTableEntry[i+(j-1)*maxLv]<0){
 					c.style.color="lightskyblue";
 					c.style.fontWeight="bold";
+					blueText = true
 				} else {
 					c.style.color="#00FF00";
 					c.style.fontWeight="bold";
+					greenText = true
 				}
 			}
 			
@@ -154,4 +163,21 @@ function getPriceTable(){
 		}
 	}
 	
+	var footerString = ""
+	if (redText==true){
+		footerString += "Red denotes <span style='color:#FF0000'>not profitable</span> at the specified level.<br>"
+	}
+	if (blueText==true){
+		footerString += "Blue denotes profit only if the <span style='color:#87CEFA'>materials are discounted</span>.<br>"
+	}
+	if (greenText==true){
+		footerString += "Green denotes <span style='color:#00FF00'>profit</span> at the specified level.<br>"
+	}
+	
+	if (footerString!==""){
+		priceTableFooter = document.createElement('p')
+		priceTableFooter.style.color="yellow"
+		priceTableFooter.innerHTML = footerString
+		document.getElementById('profitTable').appendChild(priceTableFooter)
+	}
 }
