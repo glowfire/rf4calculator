@@ -1,6 +1,6 @@
 function getPriceTable(){
 	
-	document.getElementById('profitTable').innerHTML=""
+	document.getElementById('profitTable').innerHTML="<b>Price Table</b>"
 	
 	var headerArray=["Lv.","Multiplier<br>(Type: ","Sell Price","Increment from<br>Previous Level","Cumulative<br>Increment"];
 	headerArray[1]+=currentItem.pricemultiplier+")";
