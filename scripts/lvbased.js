@@ -118,6 +118,7 @@ function getPriceTable(){
 		var c = document.createElement('td');
 		priceTableHeader.appendChild(c);
 		c.innerHTML=headerArray[i];
+		c.style.color="yellow"
 	}
 	
 	for (i=0;i<maxLv;i++){
