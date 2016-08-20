@@ -108,7 +108,7 @@ function showRecipesOfItem(){
 		c.style.color="yellow"
 		c.style.border=borderString
 		if (item=="Materials"){
-			c.colSpan=6
+			c.colSpan=maxMaterialListLength
 		}
 	}
 	
