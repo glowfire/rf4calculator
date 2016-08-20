@@ -1822,7 +1822,7 @@ registerItem({
 	},
 	"flavourtext":"Jam made by boiling apples. Generally eaten with bread.",
 	"cookinglevel":10,
-	"materials":["Grapes"],
+	"materials":["Apple"],
 	"cookingeffects":{},
 	"pricemultiplier":"C1",
 	"category":"Pot"
