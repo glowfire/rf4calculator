@@ -45,9 +45,9 @@ function showBasicStats(){
 	}
 }
 
-function showRecipesOfItem(){
+function showRecipesOfItemP(){
 	var recipeComment = document.createElement("p");
-	document.getElementById('currentItemDiv').appendChild(recipeComment);
+	document.getElemcentById('currentItemDiv').appendChild(recipeComment);
 	recipeComment.innerHTML = "There "
 	
 	if (currentRecipeListing.length!==1){
@@ -65,6 +65,78 @@ function showRecipesOfItem(){
 	currentRecipeListing.forEach(addRecipeToList)
 	
 	recipeComment.innerHTML = recipeComment.innerHTML.slice(0,-2)
+}
+
+function showRecipesOfItem(){
+	var recipeComment = document.createElement("p");
+	document.getElemcentById('currentItemDiv').appendChild(recipeComment);
+	recipeComment.innerHTML = "There "
+	
+	if (currentRecipeListing.length!==1){
+		recipeComment.innerHTML += "are " + currentRecipeListing.length + " recipes";
+	} else {
+		recipeComment.innerHTML += "is 1 recipe"
+	}
+	
+	recipeComment.innerHTML += " involving " + currentItem.name + "."
+	
+	var recipeTable = document.createElement('table')
+	document.getElementById('currentItemDiv').appendChild(recipeTable);
+	var recipeTableHeader = document.createElement('tr')
+	recipeTable.appendChild(recipeTableHeader)
+	
+	var headerStrings = ["Name","Category","Recipe Lv","Sell Price","Materials"]
+	
+	function addHeaderColumn(item,index){
+		var c = document.createElement('td')
+		recipeTableHeader.appendChild(c)
+		c.innerHTML=item
+		if (item=="Materials"){
+			c.colSpan=6
+		}
+	}
+	
+	headerStrings.forEach(addHeaderColumn)
+	
+	function addRecipeToList(item,index){
+		var recipeRow = document.createElement('tr')
+		recipeTable.appendChild(recipeRow)
+		
+		var nameColumn = document.createElement('td')
+		recipeTableRow.appendChild(nameColumn)
+		nameColumn.innerHTML = item.name
+		
+		var catColumn = document.createElement('td')
+		recipeTableRow.appendChild(catColumn)
+		catColumn.innerHTML = item.category
+		
+		var lvColumn = document.createElement('td')
+		recipeTableRow.appendChild(lvColumn)
+		if (item.craftinglevel!==undefined){
+			lvColumn.innerHTML = item.craftinglevel
+		}
+		if (item.forginglevel!==undefined){
+			lvColumn.innerHTML = item.forginglevel
+		}
+		if (item.cookinglevel!==undefined){
+			lvColumn.innerHTML = item.cookinglevel
+		}
+		if (item.chemistrylevel!==undefined){
+			lvColumn.innerHTML = item.chemistrylevel
+		}
+		
+		var sellColumn = document.createElement('td')
+		recipeTableRow.appendChild(sellColumn)
+		sellColumn.innerHTML = item.sell
+		
+		for (i=0;i<item.materials.length;i++){
+			var matColumn = document.createElement('td')
+			recipeTableRow.appendChild(matColumn)
+			matColumn.innerHTML = item.materials[i]
+		}
+	}
+	
+	currentRecipeListing.forEach(addRecipeToList)
 }
     
 var materialsList // May not be needed
