@@ -99,8 +99,8 @@ function showRecipesOfItem(){
 	headerStrings.forEach(addHeaderColumn)
 	
 	function addRecipeToList(item,index){
-		var recipeRow = document.createElement('tr')
-		recipeTable.appendChild(recipeRow)
+		var recipeTableRow = document.createElement('tr')
+		recipeTable.appendChild(recipeTableRow)
 		
 		var nameColumn = document.createElement('td')
 		recipeTableRow.appendChild(nameColumn)
