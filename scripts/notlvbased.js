@@ -69,7 +69,7 @@ function showRecipesOfItemP(){
 
 function showRecipesOfItem(){
 	var recipeComment = document.createElement("p");
-	document.getElemcentById('currentItemDiv').appendChild(recipeComment);
+	document.getElementById('currentItemDiv').appendChild(recipeComment);
 	recipeComment.innerHTML = "There "
 	
 	if (currentRecipeListing.length!==1){
