@@ -145,11 +145,16 @@ function showRecipesOfItem(){
 		recipeTableRow.appendChild(sellColumn)
 		sellColumn.innerHTML = currentRecipe[3]
 		
-		var currentMaterialList = currentRecipe[4]
-		for (i=0;i<currentMaterialList.length;i++){
+		var currentMaterial_List = currentRecipe[4]
+		for (i=0;i<6;i++){
 			var matColumn = document.createElement('td')
 			recipeTableRow.appendChild(matColumn)
-			matColumn.innerHTML = currentMaterialList[i]
+			var currentMaterials_Name = currentMaterial_List[i]
+			if (currentMaterials_Name!==undefined){
+				matColumn.innerHTML = currentMaterials_Name
+			} else {
+				//matColumn.innerHTML = ""
+			}
 		}
 	}
 	
