@@ -142,31 +142,37 @@ function showRecipesOfItem(){
 		var nameColumn = document.createElement('td')
 		recipeTableRow.appendChild(nameColumn)
 		nameColumn.innerHTML = currentRecipe[0]
-		nameColumn.style.border=borderString
+		nameColumn.style.borderLeft=borderString
+		nameColumn.style.borderRight=borderString
+		nameColumn.style.borderBottom=borderString
 		
 		var catColumn = document.createElement('td')
 		recipeTableRow.appendChild(catColumn)
 		catColumn.innerHTML = currentRecipe[1]
-		catColumn.style.border=borderString
+		catColumn.style.borderRight=borderString
+		catColumn.style.borderBottom=borderString
 		
 		var lvColumn = document.createElement('td')
 		recipeTableRow.appendChild(lvColumn)
 		lvColumn.innerHTML = currentRecipe[2]
-		lvColumn.style.border=borderString
+		lvColumn.style.borderRight=borderString
+		lvColumn.style.borderBottom=borderString
 		
 		var sellColumn = document.createElement('td')
 		recipeTableRow.appendChild(sellColumn)
 		sellColumn.innerHTML = currentRecipe[3]
-		sellColumn.style.border=borderString
+		sellColumn.style.borderRight=borderString
+		sellColumn.style.borderBottom=borderString
 		
 		var currentMaterial_List = currentRecipe[4]
 		for (i=0;i<maxMaterialListLength;i++){
 			var matColumn = document.createElement('td')
 			recipeTableRow.appendChild(matColumn)
+			matColumn.style.borderRight=borderString
+			matColumn.style.borderBottom=borderString
 			var currentMaterials_Name = currentMaterial_List[i]
 			if (currentMaterials_Name!==undefined){
 				matColumn.innerHTML = currentMaterials_Name
-				matColumn.style.border=borderString
 			}
 		}
 	}
