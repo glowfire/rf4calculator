@@ -12,4 +12,4 @@ Should check if their upgrade stats are not unique.
 
 The liquids may have cooking effects
 
-The registration function does not work for Scrap Metal+ and Recipe Bread+.
+Check MTGU Plate's flavour text.
