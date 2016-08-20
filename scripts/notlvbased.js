@@ -154,10 +154,10 @@ function showRecipesOfItem(){
 		
 		var currentMaterial_List = currentRecipe[4]
 		for (i=0;i<maxMaterialListLength;i++){
-			var matColumn = document.createElement('td')
-			recipeTableRow.appendChild(matColumn)
 			var currentMaterials_Name = currentMaterial_List[i]
 			if (currentMaterials_Name!==undefined){
+				var matColumn = document.createElement('td')
+				recipeTableRow.appendChild(matColumn)
 				matColumn.innerHTML = currentMaterials_Name
 			}
 		}
