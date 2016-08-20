@@ -100,8 +100,8 @@ function showRecipesOfItem(){
 	currentRecipeListing.forEach(addRecipeToArray)
 	
 	function sellComparator(a, b) {
-		if (parseInt(a[3]) < parseInt(b[3])){ return -1;
-		} else if (parseInt(a[3]) > parseInt(b[3])){ return 1;
+		if (parseInt(a[3]) > parseInt(b[3])){ return -1;
+		} else if (parseInt(a[3]) < parseInt(b[3])){ return 1;
 		} else {return 0};
 	}
 	
