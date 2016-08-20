@@ -86,6 +86,7 @@ function showRecipesOfItem(){
 	recipeTable.appendChild(recipeTableHeader)
 	
 	var recipeArray = [];
+	var maxMaterialListLength = 0
 	
 	function addRecipeToArray(item,index){
 		var currentRecipeArray = [];
@@ -106,6 +107,12 @@ function showRecipesOfItem(){
 		currentRecipeArray.push(item.sell)
 		currentRecipeArray.push(item.materials)
 		recipeArray.push(currentRecipeArray)
+		
+		var currentMaterials_List = item.materials
+		
+		if (currentMaterials_List.length>maxMaterialListLength){
+			maxMaterialListLength=currentMaterials_List.length
+		}
 	}
 	
 	currentRecipeListing.forEach(addRecipeToArray)
@@ -146,14 +153,12 @@ function showRecipesOfItem(){
 		sellColumn.innerHTML = currentRecipe[3]
 		
 		var currentMaterial_List = currentRecipe[4]
-		for (i=0;i<6;i++){
+		for (i=0;i<maxMaterialListLength;i++){
 			var matColumn = document.createElement('td')
 			recipeTableRow.appendChild(matColumn)
 			var currentMaterials_Name = currentMaterial_List[i]
 			if (currentMaterials_Name!==undefined){
 				matColumn.innerHTML = currentMaterials_Name
-			} else {
-				//matColumn.innerHTML = ""
 			}
 		}
 	}
