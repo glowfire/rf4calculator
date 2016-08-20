@@ -83,7 +83,6 @@ function showRecipesOfItem(){
 	recipeComment.innerHTML += " involving " + currentItem.name + "."
 	
 	var recipeTable = document.createElement('table')
-	recipeTable.style.border=borderString
 	document.getElementById('currentItemDiv').appendChild(recipeTable);
 	var recipeTableHeader = document.createElement('tr')
 	recipeTable.appendChild(recipeTableHeader)
