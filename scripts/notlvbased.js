@@ -85,6 +85,31 @@ function showRecipesOfItem(){
 	var recipeTableHeader = document.createElement('tr')
 	recipeTable.appendChild(recipeTableHeader)
 	
+	var recipeArray = [];
+	
+	function addRecipeToArray(item,index){
+		var currentRecipeArray = [];
+		currentRecipeArray.push(item.name)
+		currentRecipeArray.push(item.category)
+		if (item.craftinglevel!==undefined){
+			currentRecipeArray.push(item.craftinglevel)
+		}
+		if (item.forginglevel!==undefined){
+			currentRecipeArray.push(item.forginglevel)
+		}
+		if (item.cookinglevel!==undefined){
+			currentRecipeArray.push(item.cookinglevel)
+		}
+		if (item.chemistrylevel!==undefined){
+			currentRecipeArray.push(item.chemistrylevel)
+		}
+		currentRecipeArray.push(item.sell)
+		currentRecipeArray.push(item.materials)
+		recipeArray.push(currentRecipeArray)
+	}
+	
+	currentRecipeListing.forEach(addRecipeToArray)
+	
 	var headerStrings = ["Name","Category","Recipe Lv","Sell Price","Materials"]
 	
 	function addHeaderColumn(item,index){
@@ -98,45 +123,38 @@ function showRecipesOfItem(){
 	
 	headerStrings.forEach(addHeaderColumn)
 	
-	function addRecipeToList(item,index){
+	function addRecipeToTable(item,index){
+		var currentRecipe = item
+		
 		var recipeTableRow = document.createElement('tr')
 		recipeTable.appendChild(recipeTableRow)
 		
 		var nameColumn = document.createElement('td')
 		recipeTableRow.appendChild(nameColumn)
-		nameColumn.innerHTML = item.name
+		nameColumn.innerHTML = currentRecipe[0]
 		
 		var catColumn = document.createElement('td')
 		recipeTableRow.appendChild(catColumn)
-		catColumn.innerHTML = item.category
+		catColumn.innerHTML = currentRecipe[1]
 		
 		var lvColumn = document.createElement('td')
 		recipeTableRow.appendChild(lvColumn)
-		if (item.craftinglevel!==undefined){
-			lvColumn.innerHTML = item.craftinglevel
-		}
-		if (item.forginglevel!==undefined){
-			lvColumn.innerHTML = item.forginglevel
-		}
-		if (item.cookinglevel!==undefined){
-			lvColumn.innerHTML = item.cookinglevel
-		}
-		if (item.chemistrylevel!==undefined){
-			lvColumn.innerHTML = item.chemistrylevel
-		}
+		lvColumn.innerHTML = currentRecipe[2]
 		
 		var sellColumn = document.createElement('td')
 		recipeTableRow.appendChild(sellColumn)
-		sellColumn.innerHTML = item.sell
+		sellColumn.innerHTML = currentRecipe[3]
 		
-		for (i=0;i<item.materials.length;i++){
+		var currentMaterialList = currentRecipe[4]
+		for (i=0;i<currentMaterialList.length;i++){
 			var matColumn = document.createElement('td')
 			recipeTableRow.appendChild(matColumn)
-			matColumn.innerHTML = item.materials[i]
+			matColumn.innerHTML = currentMaterialList[i]
 		}
 	}
 	
-	currentRecipeListing.forEach(addRecipeToList)
+	recipeArray.forEach(addRecipeToTable)
+
 }
     
 var materialsList // May not be needed
