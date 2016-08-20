@@ -45,28 +45,6 @@ function showBasicStats(){
 	}
 }
 
-function showRecipesOfItemP(){
-	var recipeComment = document.createElement("p");
-	document.getElemcentById('currentItemDiv').appendChild(recipeComment);
-	recipeComment.innerHTML = "There "
-	
-	if (currentRecipeListing.length!==1){
-		recipeComment.innerHTML += "are " + currentRecipeListing.length + " recipes";
-	} else {
-		recipeComment.innerHTML += "is 1 recipe"
-	}
-	
-	recipeComment.innerHTML += " involving " + currentItem.name + ": "
-	
-	function addRecipeToList(item,index){
-		recipeComment.innerHTML += item.name + ", "
-	}
-	
-	currentRecipeListing.forEach(addRecipeToList)
-	
-	recipeComment.innerHTML = recipeComment.innerHTML.slice(0,-2)
-}
-
 function showRecipesOfItem(){
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
@@ -127,6 +105,7 @@ function showRecipesOfItem(){
 		var c = document.createElement('td')
 		recipeTableHeader.appendChild(c)
 		c.innerHTML=item
+		c.style.border=borderString
 		if (item=="Materials"){
 			c.colSpan=6
 		}
@@ -139,27 +118,33 @@ function showRecipesOfItem(){
 		
 		var recipeTableRow = document.createElement('tr')
 		recipeTable.appendChild(recipeTableRow)
+		recipeTableRow.style.border=borderString
 		
 		var nameColumn = document.createElement('td')
 		recipeTableRow.appendChild(nameColumn)
 		nameColumn.innerHTML = currentRecipe[0]
+		nameColumn.style.border=borderString
 		
 		var catColumn = document.createElement('td')
 		recipeTableRow.appendChild(catColumn)
 		catColumn.innerHTML = currentRecipe[1]
+		catColumn.style.border=borderString
 		
 		var lvColumn = document.createElement('td')
 		recipeTableRow.appendChild(lvColumn)
 		lvColumn.innerHTML = currentRecipe[2]
+		lvColumn.style.border=borderString
 		
 		var sellColumn = document.createElement('td')
 		recipeTableRow.appendChild(sellColumn)
 		sellColumn.innerHTML = currentRecipe[3]
+		sellColumn.style.border=borderString
 		
 		var currentMaterial_List = currentRecipe[4]
 		for (i=0;i<maxMaterialListLength;i++){
 			var matColumn = document.createElement('td')
 			recipeTableRow.appendChild(matColumn)
+			matColumn.style.border=borderString
 			var currentMaterials_Name = currentMaterial_List[i]
 			if (currentMaterials_Name!==undefined){
 				matColumn.innerHTML = currentMaterials_Name
