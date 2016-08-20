@@ -105,6 +105,7 @@ function showRecipesOfItem(){
 		var c = document.createElement('td')
 		recipeTableHeader.appendChild(c)
 		c.innerHTML=item
+		c.style.color="yellow"
 		c.style.border=borderString
 		if (item=="Materials"){
 			c.colSpan=6
