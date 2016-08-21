@@ -46,6 +46,9 @@ function showBasicStats(){
 }
 
 function showRecipesOfItem(){
+	
+	currentRecipeListing = currentSpecificRecipeListing.arrayPush(currentGeneralRecipeListing)
+	
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
 	recipeComment.innerHTML = "There "
@@ -95,10 +98,6 @@ function showRecipesOfItem(){
 		if (currentMaterials_List.length>maxMaterialListLength){
 			maxMaterialListLength=currentMaterials_List.length
 		}
-	}
-	
-	if (productMaterialMapping[currentItem.category.getModifiedNameString("")]!==undefined){
-		currentRecipeListing.arrayPush(productMaterialMapping[currentItem.category.getModifiedNameString("")]);
 	}
 	
 	currentRecipeListing.forEach(addRecipeToArray)
