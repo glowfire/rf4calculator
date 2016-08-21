@@ -74,7 +74,8 @@ function showRecipesOfItem(){
 		} else {
 			recipeComment.innerHTML += "is " + currentGeneralRecipeListing.length + " recipe"
 		}
-		recipeComment.innerHTML += " involving " + currentItem.category + "."
+		recipeComment.innerHTML += " involving " + currentItem.category
+		recipeComment.innerHTML += " for a total of " + currentRecipeListing.length + " recipes."
 	} else if (currentSpecificRecipeListing.length>0){
 		recipeComment.innerHTML += "There "
 		if (currentSpecificRecipeListing.length!==1){
