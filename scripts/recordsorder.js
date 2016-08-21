@@ -40,9 +40,9 @@ var currentItem
 var currentSellPrice
 var currentBuyPrice
 var currentBuyPriceDiscount
-var currentRecipeListing
-var currentSpecificRecipeListing
-var currentGeneralRecipeListing
+var currentRecipeListing = []
+var currentSpecificRecipeListing = []
+var currentGeneralRecipeListing = []
         
 function getItemInfo(){
 	var itemSelected = document.getElementById("itemSelect").value
@@ -61,14 +61,14 @@ function getItemInfo(){
 	if (productMaterialMapping[currentItem.name.getModifiedNameString("")]!==undefined){
 		currentSpecificRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
 	} else {
-		currentSpecificRecipeListing = undefined
+		currentSpecificRecipeListing = []
 	}
 	if (productMaterialMapping[currentItem.category.getModifiedNameString("")]!==undefined){
 		currentGeneralRecipeListing = productMaterialMapping[currentItem.category.getModifiedNameString("")];
 	} else {
-		currentGeneralRecipeListing = undefined
+		currentGeneralRecipeListing = []
 	}
-	if (currentSpecificRecipeListing!==undefined||currentGeneralRecipeListing!==undefined){
+	if (currentSpecificRecipeListing.length>0||currentGeneralRecipeListing.length>0){
 		showRecipesOfItem();
 	}
 	getPriceTable()
