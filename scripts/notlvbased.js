@@ -97,6 +97,10 @@ function showRecipesOfItem(){
 		}
 	}
 	
+	if (masterCategoryList[currentItem.category]!==undefined){
+		currentRecipeListing.arrayPush(masterCategoryList[itemCategory].membershipList);
+	}
+	
 	currentRecipeListing.forEach(addRecipeToArray)
 	
 	function sellComparator(a, b) {
