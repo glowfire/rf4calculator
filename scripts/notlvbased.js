@@ -47,7 +47,7 @@ function showBasicStats(){
 
 function showRecipesOfItem(){
 	
-	currentRecipeListing = currentSpecificRecipeListing.arrayPush(currentGeneralRecipeListing)
+	currentRecipeListing = currentSpecificRecipeListing//.arrayPush(currentGeneralRecipeListing)
 	
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
