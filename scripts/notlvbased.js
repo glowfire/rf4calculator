@@ -59,23 +59,9 @@ function showRecipesOfItem(){
 	
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
+	recipeComment.innerHTML = ""
 	
-	if (currentSpecificRecipeListing!==undefined&&currentGeneralRecipeListing!==undefined){
-		recipeComment.innerHTML = "There "
-		if (currentSpecificRecipeListing.length!==1){
-			recipeComment += "are " + currentSpecificRecipeListing.length + " recipes"
-		} else {
-			recipeComment += "is " + currentSpecificRecipeListing.length + " recipe"
-		}
-		recipeComment.innerHTML += " involving " + currentItem.name + " and "
-		if (currentGeneralRecipeListing.length!==1){
-			recipeComment += currentGeneralRecipeListing.length + " recipes"
-		} else {
-			recipeComment += currentGeneralRecipeListing.length + " recipe"
-		}
-		recipeComment.innerHTML += " involving " + currentItem.category
-		recipeComment.innerHTML += " for a total of " + currentRecipeListing.length + " recipes"
-	} else if (currentSpecificRecipeListing!==undefined){
+	if (currentSpecificRecipeListing!==undefined){
 		recipeComment.innerHTML = "There "
 		if (currentSpecificRecipeListing.length!==1){
 			recipeComment += "are " + currentSpecificRecipeListing.length + " recipes"
@@ -83,7 +69,8 @@ function showRecipesOfItem(){
 			recipeComment += "is " + currentSpecificRecipeListing.length + " recipe"
 		}
 		recipeComment.innerHTML += " involving " + currentItem.name + "."
-	} else if (currentGeneralRecipeListing!==undefined){
+	}
+	if (currentGeneralRecipeListing!==undefined){
 		recipeComment.innerHTML = "There "
 		if (currentGeneralRecipeListing.length!==1){
 			recipeComment += "are " + currentGeneralRecipeListing.length + " recipes"
