@@ -59,17 +59,41 @@ function showRecipesOfItem(){
 	
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
-	recipeComment.innerHTML = "There "
 	
-	if (currentRecipeListing.length!==1){
-		recipeComment.innerHTML += "are " + currentRecipeListing.length + " recipes";
-	} else {
-		recipeComment.innerHTML += "is 1 recipe"
+	if (currentSpecificRecipeListing!==undefined&&currentGeneralRecipeListing!==undefined){
+		recipeComment.innerHTML = "There "
+		if (currentSpecificRecipeListing.length!==1){
+			recipeComment += "are " + currentSpecificRecipeListing.length + " recipes"
+		} else {
+			recipeComment += "is " + currentSpecificRecipeListing.length + " recipe"
+		}
+		recipeComment.innerHTML += " involving " + currentItem.name + " and "
+		if (currentGeneralRecipeListing.length!==1){
+			recipeComment += currentGeneralRecipeListing.length + " recipes"
+		} else {
+			recipeComment += currentGeneralRecipeListing.length + " recipe"
+		}
+		recipeComment.innerHTML += " involving " + currentItem.category
+		recipeComment.innerHTML += " for a total of " + currentRecipeListing.length + " recipes"
+	} else if (currentSpecificRecipeListing!==undefined){
+		recipeComment.innerHTML = "There "
+		if (currentSpecificRecipeListing.length!==1){
+			recipeComment += "are " + currentSpecificRecipeListing.length + " recipes"
+		} else {
+			recipeComment += "is " + currentSpecificRecipeListing.length + " recipe"
+		}
+		recipeComment.innerHTML += " involving " + currentItem.name + "."
+	} else if (currentGeneralRecipeListing!==undefined){
+		recipeComment.innerHTML = "There "
+		if (currentGeneralRecipeListing.length!==1){
+			recipeComment += "are " + currentGeneralRecipeListing.length + " recipes"
+		} else {
+			recipeComment += "is " + currentGeneralRecipeListing.length + " recipe"
+		}
+		recipeComment.innerHTML += " involving " + currentItem.category + "."
 	}
 	
 	var borderString = "1px solid red"
-	
-	recipeComment.innerHTML += " involving " + currentItem.name + "."
 	
 	var recipeTable = document.createElement('table')
 	recipeTable.style.border=borderString
