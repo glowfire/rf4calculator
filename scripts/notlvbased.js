@@ -70,9 +70,9 @@ function showRecipesOfItem(){
 		}
 		recipeComment.innerHTML += " involving " + currentItem.name + " and "
 		if (currentGeneralRecipeListing.length!==1){
-			recipeComment.innerHTML += "are " + currentGeneralRecipeListing.length + " recipes"
+			recipeComment.innerHTML += currentGeneralRecipeListing.length + " recipes"
 		} else {
-			recipeComment.innerHTML += "is " + currentGeneralRecipeListing.length + " recipe"
+			recipeComment.innerHTML += currentGeneralRecipeListing.length + " recipe"
 		}
 		recipeComment.innerHTML += " involving " + currentItem.category
 		recipeComment.innerHTML += " for a total of " + currentRecipeListing.length + " recipes."
