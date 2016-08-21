@@ -97,8 +97,8 @@ function showRecipesOfItem(){
 		}
 	}
 	
-	if (masterCategoryList[currentItem.category]!==undefined){
-		currentRecipeListing.arrayPush(masterCategoryList[currentItem.category].membershipList);
+	if (productMaterialMapping[currentItem.category]!==undefined){
+		currentRecipeListing.arrayPush(productMaterialMapping[currentItem.category]);
 	}
 	
 	currentRecipeListing.forEach(addRecipeToArray)
