@@ -60,9 +60,13 @@ function getItemInfo(){
 	}
 	if (productMaterialMapping[currentItem.name.getModifiedNameString("")]!==undefined){
 		currentSpecificRecipeListing = productMaterialMapping[currentItem.name.getModifiedNameString("")];
+	} else {
+		currentSpecificRecipeListing = undefined
 	}
 	if (productMaterialMapping[currentItem.category.getModifiedNameString("")]!==undefined){
 		currentGeneralRecipeListing = productMaterialMapping[currentItem.category.getModifiedNameString("")];
+	} else {
+		currentGeneralRecipeListing = undefined
 	}
 	if (currentSpecificRecipeListing!==undefined||currentGeneralRecipeListing!==undefined){
 		showRecipesOfItem();
