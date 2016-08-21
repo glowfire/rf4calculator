@@ -47,8 +47,6 @@ function showBasicStats(){
 
 function showRecipesOfItem(){
 	
-	currentRecipeListing = []
-	
 	for (i=0;i<currentSpecificRecipeListing.length;i++){
 		currentRecipeListing.push(currentSpecificRecipeListing[i])
 	}
@@ -60,20 +58,6 @@ function showRecipesOfItem(){
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
 	recipeComment.innerHTML = ""
-	
-	if (currentSpecificRecipeListing.length!==1){
-		recipeComment += "are " + currentSpecificRecipeListing.length + " recipes"
-	} else {
-		recipeComment += "is " + currentSpecificRecipeListing.length + " recipe"
-	}
-	recipeComment.innerHTML += " involving " + currentItem.name + "."
-	
-	if (currentGeneralRecipeListing.length!==1){
-		recipeComment += "are " + currentGeneralRecipeListing.length + " recipes"
-	} else {
-		recipeComment += "is " + currentGeneralRecipeListing.length + " recipe"
-	}
-	recipeComment.innerHTML += " involving " + currentItem.category + "."
 	
 	var borderString = "1px solid red"
 	
