@@ -47,7 +47,15 @@ function showBasicStats(){
 
 function showRecipesOfItem(){
 	
-	currentRecipeListing = currentSpecificRecipeListing.arrayPush(currentGeneralRecipeListing)
+	currentRecipeListing = []
+	
+	for (i=0;i<currentSpecificRecipeListing.length;i++){
+		currentRecipeListing.push(currentSpecificRecipeListing[i])
+	}
+	
+	for (i=0;i<currentGeneralRecipeListing.length;i++){
+		currentRecipeListing.push(currentGeneralRecipeListing[i])
+	}
 	
 	var recipeComment = document.createElement("p");
 	document.getElementById('currentItemDiv').appendChild(recipeComment);
