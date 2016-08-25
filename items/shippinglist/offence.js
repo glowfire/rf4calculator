@@ -1560,7 +1560,7 @@ registerItem({
 	},
 	"flavourtext":"A staff decorated with purple amethysts. Many of the wizards who have this rod are attractive, mature people.",
 	"forginglevel":6,
-	"materials":["","Sticks and Stems"],
+	"materials":["Amethyst","Sticks and Stems"],
 	"category":"Staff",
 	"pricemultiplier":"E"
 })
