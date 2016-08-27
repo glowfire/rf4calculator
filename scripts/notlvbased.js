@@ -41,7 +41,7 @@ function showBasicStats(){
 	priceLine.appendChild(node);
 	if (currentItem.buy!==undefined){
 		priceLine.innerHTML+="<br>Base Buy Price: "+currentBuyPrice+" G";
-		priceLine.innerHTML+=" (with discount: "+currentBuyPriceDiscount+" G)";
+		priceLine.innerHTML+=" (with 10% discount: "+currentBuyPriceDiscount+" G)";
 	}
 }
 
