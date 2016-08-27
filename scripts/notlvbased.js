@@ -31,7 +31,7 @@ function showBasicStats(){
 
 	if (currentItem.buy!==undefined){
 		currentBuyPrice=currentItem.buy;
-		currentBuyPriceDiscount=Math.ceil(currentBuyPrice*.9);
+		currentBuyPriceDiscount=Math.ceil(iNiM(currentBuyPrice,.9));
 	}
 
 	var priceLine = document.createElement('p');
@@ -248,19 +248,19 @@ function createMaterialTable(){
 			var currentCategory = masterCategoryList[item];
 			
 			if (currentCategory.minBuy==currentCategory.maxBuy){
-				appendMaterialRow(Math.ceil(currentCategory.minBuy*.9));
+				appendMaterialRow(Math.ceil(iNiM(currentCategory.minBuy,.9)));
 				appendMaterialRow(currentCategory.minBuy);
 				currentMaterialsBuyPrice+=currentCategory.minBuy;
-				currentMaterialsBuyPriceDiscount+=Math.ceil(currentCategory.minBuy*.9);
+				currentMaterialsBuyPriceDiscount+=Math.ceil(iNiM(currentCategory.minBuy,.9));
 			} else if (currentCategory.minBuy<currentCategory.maxBuy){
 				var c34 = document.createElement('td');
 				materialRow.appendChild(c34);
 				c34.colSpan=2
-				c34.innerHTML=Math.ceil(currentCategory.minBuy*.9);
+				c34.innerHTML=Math.ceil(iNiM(currentCategory.minBuy,.9));
 				c34.innerHTML+=" - "
 				c34.innerHTML+=currentCategory.maxBuy
 				currentMaterialsBuyPrice+=currentCategory.minBuy;
-				currentMaterialsBuyPriceDiscount+=Math.ceil(currentCategory.minBuy*.9);
+				currentMaterialsBuyPriceDiscount+=Math.ceil(iNiM(currentCategory.minBuy,.9));
 			} else {
 				var c34 = document.createElement('td');
 				c34.colSpan=2
@@ -273,10 +273,10 @@ function createMaterialTable(){
 			var currentMaterial = item.convertStringToItem();
 			
 			if (currentMaterial.buy!==undefined){
-				appendMaterialRow(Math.ceil(currentMaterial.buy*.9));
+				appendMaterialRow(Math.ceil(iNiM(currentMaterial.buy,.9)));
 				appendMaterialRow(currentMaterial.buy);
 				currentMaterialsBuyPrice+=currentMaterial.buy;
-				currentMaterialsBuyPriceDiscount+=Math.ceil(currentMaterial.buy*.9);
+				currentMaterialsBuyPriceDiscount+=Math.ceil(iNiM(currentMaterial.buy,.9));
 			} else {
 				var c34 = document.createElement('td');
 				c34.colSpan=2
