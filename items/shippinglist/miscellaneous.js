@@ -59,7 +59,7 @@ registerItem({ // unconfirmed
 	"sell":240,
 	"buy":5800,
 	"weapon":"Fist",
-	"flavourtext":"???",
+	"flavourtext":"Punch many times at high speed. Enemies are already dead.",
 	"pricemultiplier":"X" /// unknown
 	// cannot be used as material
 })
@@ -367,7 +367,7 @@ registerItem({
 	"sell":75,
 	"buy":1500,
 	"flavourtext":"If you say hello, even people who don't like you will say hi back. They'll be your special friends. Your special awake friends.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// confirmed
 	// cannot be used as material
 })
 
@@ -377,7 +377,7 @@ registerItem({
 	"sell":240,
 	"buy":4800,
 	"flavourtext":"Cures seals. A purifying light will bring back your inner power.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// confirmed
 	// cannot be used as material
 })
 
@@ -387,7 +387,7 @@ registerItem({
 	"sell":160,
 	"buy":3200,
 	"flavourtext":"Cures paralysis. A purifying light will enable you to move once more.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// confirmed
 	// cannot be used as material
 })
 
@@ -397,7 +397,7 @@ registerItem({
 	"sell":90,
 	"buy":1800,
 	"flavourtext":"Cures poison. A purifying light will cleanse the toxins in your body.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// confirmed
 	// cannot be used as material
 })
 
@@ -596,8 +596,8 @@ registerItem({ // unconfirmed
 	"category":"Magic",
 	"sell":220,
 	"buy":4400,
-	"flavourtext":"???",
-	"pricemultiplier":"X" /// unknown
+	"flavourtext":"Hurls large fireballs. Can hurl up to 2 at a time.",
+	"pricemultiplier":"E" /// confirmed
 	// cannot be used as material
 })
 
