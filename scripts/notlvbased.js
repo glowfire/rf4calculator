@@ -222,6 +222,7 @@ function createMaterialTable(){
 		var c = document.createElement('td');
 		materialTableHeader.appendChild(c);
 		c.innerHTML=string;
+		c.style.color="yellow"
 	}
 	
 	appendMaterialHeader("#");
