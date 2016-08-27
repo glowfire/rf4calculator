@@ -1,8 +1,8 @@
 var maxLv=10;
 var integerCorrector = 1e6; // For use when non-integers are involved in multiplications.
 
-function iNiM(a,b){
-	var intCorrFactor = 1e7
+function iNiM(a,b){ // integer-noninteger multiplication. Directly multiplying floating numbers and integers can be imprecise.
+	var intCorrFactor = 1e7; // Arbitrary number to convert a floating number into an integer
 	
 	b *= intCorrFactor
 	a *= intCorrFactor
@@ -54,9 +54,9 @@ for (i=1;i<maxLv;i++){
 	var currentElementSd=lastElementSd+SdIncrement;
 	
 	if (i==(maxLv-1)){
-		currentElementCh=lastElementCh+(2*(ChIncrement*integerCorrector))/integerCorrector;
-		currentElementE=lastElementE+(2*(EIncrement*integerCorrector))/integerCorrector;
-		currentElementSd=lastElementSd+(2*(SdIncrement*integerCorrector))/integerCorrector;
+		currentElementCh=lastElementCh+iNiM(2,ChIncrement);
+		currentElementE=lastElementE+iNiM(2,EIncrement);
+		currentElementSd=lastElementSd+iNiM(2,SdIncrement);
 	}
 	
 	statMultiplier.push(currentElementStat);
@@ -202,9 +202,6 @@ function getMultiplierAtLevel(multiplierArray,level){
 function getValueAtLevel(baseValue,level){
 	// Gets stat value based on level and base stat
     var currentMultiplierValue=statMultiplier[level-1];
-    var integerCorrector=1e6;
-    var currentModifiedMultiplierValue=currentMultiplierValue*integerCorrector;
-    var currentModifiedValue=currentModifiedMultiplierValue*baseValue;
-    var currentValue=currentModifiedValue/integerCorrector;
+    var currentValue=iNiM(baseValue,currentMultiplierValue);
     return currentValue;
 }
