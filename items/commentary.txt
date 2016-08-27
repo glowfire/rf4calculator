@@ -13,3 +13,5 @@ Should check if their upgrade stats are not unique.
 The liquids may have cooking effects
 
 Check MTGU Plate's flavour text.
+
+Check Magic's flavour text.
