@@ -39,10 +39,10 @@ function getPriceTable(){
 	
 	if ((currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined)&&currentMaterialsBuyPrice>0){
 		headerArray.push("Profit<br>(no discounts)")
-		headerArray.push("Profit<br>(with discounts)")
+		headerArray.push("Profit<br>(10% discount)")
 		
 		headerArray.push("Return On<br>Investment")
-		headerArray.push("ROI with<br>Discounts")
+		headerArray.push("ROI with<br>10% Discount")
 		
 		for (i=0;i<maxLv;i++){
 			var currentSellPrice = getSellPriceAtLevel(currentItem,i+1)
@@ -140,7 +140,7 @@ function getPriceTable(){
 				}
 			}
 			
-			if (j==headerArray.indexOf("Profit<br>(with discounts)")){
+			if (j==headerArray.indexOf("Profit<br>(10% discount)")){
 				if (c.innerHTML<0){
 					c.style.color="red"
 					redText = true
@@ -155,7 +155,7 @@ function getPriceTable(){
 				}
 			}
 			
-			if (j==headerArray.indexOf("Return On<br>Investment")||j==headerArray.indexOf("ROI with<br>Discounts")||j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
+			if (j==headerArray.indexOf("Return On<br>Investment")||j==headerArray.indexOf("ROI with<br>10% Discount")||j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
 				var correctedValue = c.innerHTML
 				correctedValue*=100;
 				c.innerHTML=correctedValue.toPrecision(5)+"%"
