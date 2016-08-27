@@ -8,7 +8,8 @@ Objectives:
 4.1. All sections of the shipping list (except Crops) may not be complete in terms of price multipliers and effect multipliers.
 4.2. Crops (first section) are lacking data on Mushrooms.
 5. Must investigate the effects multipliers. Some items follow the minor effect multipliers while the rest appear to follow the standard effect multipliers.
-6. Calculate final equipment stats given inheritance and upgrade materials. (Not started)
-7. Predict effects of cooked dishes based on ingredients. (Not started)
-8. 20% discounts, although rare and personally only seen in Arthur's shop, exist in the game and must be accounted for. (Not started)
-9. Register not-for-sale "items" e.g. Venti's Charm, categories. (Not started. This may be optional.)
+6. Investigate and register categories like Squid and Jam, which are mentioned only in recipes. E.g. Apple Jam's entry may have an extra key like "subcategories":["Jam"]. The array allows for the item to have more than one subcategory. (Not started)
+7. Calculate final equipment stats given inheritance and upgrade materials. (Not started)
+8. Predict effects of cooked dishes based on ingredients. (Not started)
+9. 20% discounts, although rare and personally only seen in Arthur's shop, exist in the game and must be accounted for. (Not started)
+10. Register not-for-sale "items" e.g. Venti's Charm, categories. (Not started. This may be optional.)
