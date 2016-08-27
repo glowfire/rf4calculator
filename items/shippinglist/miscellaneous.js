@@ -407,7 +407,7 @@ registerItem({ // unconfirmed
 	"sell":490,
 	"buy":9800,
 	"flavourtext":"???",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -417,7 +417,7 @@ registerItem({
 	"sell":290,
 	"buy":5800,
 	"flavourtext":"Recovers a lot of HP for you and your companions, even if they're not close by. Uses lots of RP.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -427,7 +427,7 @@ registerItem({
 	"sell":60,
 	"buy":1200,
 	"flavourtext":"Recovers HP, for yourself and for nearby companions. Doesn't recover much, but uses few RP.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -437,7 +437,7 @@ registerItem({
 	"sell":420,
 	"buy":8400,
 	"flavourtext":"Forbidden spell that summons an entrance to the depths of darkness.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -447,7 +447,7 @@ registerItem({
 	"sell":280,
 	"buy":5600,
 	"flavourtext":"Emits a dark light ball that snakes forward slowly and destroys everything in its path.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -457,7 +457,7 @@ registerItem({ // unconfirmed
 	"sell":140,
 	"buy":2800,
 	"flavourtext":"???",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -467,7 +467,7 @@ registerItem({ // unconfirmed
 	"sell":450,
 	"buy":9e3,
 	"flavourtext":"???",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -477,7 +477,7 @@ registerItem({
 	"sell":300,
 	"buy":6e3,
 	"flavourtext":"Emits 4 light balls that spin around you, protecting you from enemies.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -487,7 +487,7 @@ registerItem({
 	"sell":150,
 	"buy":3e3,
 	"flavourtext":"Emits 2 light balls in front of you, protecting from enemies.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -497,7 +497,7 @@ registerItem({
 	"sell":375,
 	"buy":7500,
 	"flavourtext":"Emits 3 spinning wind blades that move freely in multiple directions, shredding to bits all who get in their way.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -507,7 +507,7 @@ registerItem({
 	"sell":250,
 	"buy":5e3,
 	"flavourtext":"Emits 2 spinning wind blades. Their arched trajectory makes it hard to attack enemies in front.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -517,7 +517,7 @@ registerItem({
 	"sell":125,
 	"buy":2500,
 	"flavourtext":"Emits spinning wind blades that automatically track and shred their foes to pieces.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -527,7 +527,7 @@ registerItem({
 	"sell":345,
 	"buy":6900,
 	"flavourtext":'Stabs its target with a large rock. Also known as the "drill punch."',
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -537,7 +537,7 @@ registerItem({
 	"sell":230,
 	"buy":4600,
 	"flavourtext":"Summons stone pillars that track enemies and strike them from below.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -547,7 +547,7 @@ registerItem({
 	"sell":115,
 	"buy":2300,
 	"flavourtext":"Summons sharp rocks that substitute for your fists. Designed for fighter mages.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -557,7 +557,7 @@ registerItem({
 	"sell":360,
 	"buy":7200,
 	"flavourtext":"Emits 3 water beams that can penetrate stone. Particularly effective when surrounded by foes.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -567,7 +567,7 @@ registerItem({
 	"sell":240,
 	"buy":4800,
 	"flavourtext":"Emits 2 water beams that can penetrate stone. The longer you maintain them, the bigger the impact.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -577,7 +577,7 @@ registerItem({
 	"sell":120,
 	"buy":2400,
 	"flavourtext":"Emits a water beam that can penetrate stone. The longer you maintain it, the bigger the impact.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -587,7 +587,7 @@ registerItem({ // unconfirmed
 	"sell":330,
 	"buy":6600,
 	"flavourtext":"???",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
@@ -607,7 +607,7 @@ registerItem({
 	"sell":110,
 	"buy":2200,
 	"flavourtext":"Hurls small fireballs. Can hurl up to 3 at a time.",
-	"pricemultiplier":"X" /// unknown
+	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
 
