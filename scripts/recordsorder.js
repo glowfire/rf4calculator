@@ -68,8 +68,10 @@ function getItemInfo(){
 	} else {
 		currentGeneralRecipeListing = []
 	}
-	if (currentSpecificRecipeListing.length>0||currentGeneralRecipeListing.length>0){
-		showRecipesOfItem();
+	if (currentItem.category!=="Magic"){
+		if (currentSpecificRecipeListing.length>0||currentGeneralRecipeListing.length>0){
+			showRecipesOfItem();
+		}
 	}
 	getPriceTable()
 }
