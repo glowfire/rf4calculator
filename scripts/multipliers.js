@@ -1,6 +1,18 @@
 var maxLv=10;
 var integerCorrector = 1e6; // For use when non-integers are involved in multiplications.
 
+function iNiM(a,b){
+	var intCorrFactor = 1e7
+	
+	b *= intCorrFactor
+	a *= intCorrFactor
+	
+	var intIntAns = a * b
+	var semiAns = intIntAns / intCorrFactor
+	var actualAns = semiAns / intCorrFactor
+	return actualAns
+}
+
 var statMultiplier=[1];
 var statIncrement=.125;
 
