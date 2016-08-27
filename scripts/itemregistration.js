@@ -328,14 +328,13 @@ Array.prototype.convertStringListToObjectList=function(){
 function getSellPriceAtLevel(item,level){
 	// Gets the price of an item at a specified level
 	var sellPriceAtLv1=item.sell;
-    var currentMultiplierArray = getPriceMultiplierArray(item.pricemultiplier);
-    var currentMultiplier=getMultiplierAtLevel(currentMultiplierArray,level);
-    var integerCorrector=1e6;
-    // Not converting all factors into integers may result in undesirable floating numbers
-    var currentModifiedMultiplier=integerCorrector*currentMultiplier;
-    var sellPriceAtSpecifiedLvModified=sellPriceAtLv1*currentModifiedMultiplier;
-    var sellPriceAtSpecifiedLv=Math.floor(sellPriceAtSpecifiedLvModified/integerCorrector);
-    return sellPriceAtSpecifiedLv;
+	var currentMultiplierArray = getPriceMultiplierArray(item.pricemultiplier);
+	var currentMultiplier=getMultiplierAtLevel(currentMultiplierArray,level);
+	var integerCorrector=1e6;
+	// Not converting all factors into integers may result in undesirable floating numbers
+	var nonIntegerSellPrice = iNiM(sellPriceAtLv1,currentMultiplier)
+	var sellPriceAtSpecifiedLv=Math.floor(nonIntegerSellPrice);
+	return sellPriceAtSpecifiedLv;
 }
 
 String.prototype.isAnItem=function(){
