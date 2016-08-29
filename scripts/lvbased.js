@@ -17,9 +17,11 @@ function getPriceTable(){
 	
 	var profitArrayNoDisc = [];
 	var profitArrayWDisc = [];
+	var profitArrayWDisc20 = [];
 	
 	var ROInoDiscArray = [];
 	var ROIwDiscArray = [];
+	var ROIwDiscArray20 = [];
 	
 	var seedROIarray = [];
 	var seedROIperDayArray = [];
@@ -40,22 +42,28 @@ function getPriceTable(){
 	if ((currentItem.cookinglevel!=undefined||currentItem.chemistrylevel!==undefined)&&currentMaterialsBuyPrice>0){
 		headerArray.push("Profit<br>(no discounts)")
 		headerArray.push("Profit<br>(10% discount)")
+		headerArray.push("Profit<br>(20% discount)")
 		
 		headerArray.push("Return On<br>Investment")
 		headerArray.push("ROI with<br>10% Discount")
+		headerArray.push("ROI with<br>20% Discount")
 		
 		for (i=0;i<maxLv;i++){
 			var currentSellPrice = getSellPriceAtLevel(currentItem,i+1)
 			
 			var currentProfitNoDisc = currentSellPrice-currentMaterialsBuyPrice
 			var currentProfitWDisc = currentSellPrice-currentMaterialsBuyPriceDiscount
+			var currentProfitWDisc20 = currentSellPrice-currentMaterialsBuyPriceDiscount20
 			var currentROInoDisc = currentProfitNoDisc/currentMaterialsBuyPrice
 			var currentROIwDisc = currentProfitWDisc/currentMaterialsBuyPriceDiscount
+			var currentROIwDisc20 = currentProfitWDisc/currentMaterialsBuyPriceDiscount20
 			
 			profitArrayNoDisc.push(currentProfitNoDisc)
 			profitArrayWDisc.push(currentProfitWDisc)
+			profitArrayWDisc20.push(currentProfitWDisc20)
 			ROInoDiscArray.push(currentROInoDisc)
 			ROIwDiscArray.push(currentROIwDisc)
+			ROIwDiscArray20.push(currentROIwDisc20)
 		}
 	}
 	
@@ -93,9 +101,11 @@ function getPriceTable(){
 	
 	priceTableEntry.arrayPush(profitArrayNoDisc)
 	priceTableEntry.arrayPush(profitArrayWDisc)
+	priceTableEntry.arrayPush(profitArrayWDisc20)
 	
 	priceTableEntry.arrayPush(ROInoDiscArray)
 	priceTableEntry.arrayPush(ROIwDiscArray)
+	priceTableEntry.arrayPush(ROIwDiscArray20)
 	
 	priceTableEntry.arrayPush(seedROIarray)
 	priceTableEntry.arrayPush(seedROIperDayArray)
@@ -155,7 +165,29 @@ function getPriceTable(){
 				}
 			}
 			
-			if (j==headerArray.indexOf("Return On<br>Investment")||j==headerArray.indexOf("ROI with<br>10% Discount")||j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
+			if (j==headerArray.indexOf("Profit<br>(20% discount)")){
+				if (c.innerHTML<0){
+					c.style.color="red"
+					redText = true
+				} else if(priceTableEntry[i+(j-1)*maxLv]<0){
+					c.style.color="darkblue";
+					c.style.fontWeight="bold";
+					blueText = true
+				} else if(priceTableEntry[i+(j-2)*maxLv]<0){
+					c.style.color="lightskyblue";
+					c.style.fontWeight="bold";
+					blueText = true
+				} else {
+					c.style.color="#00FF00";
+					c.style.fontWeight="bold";
+					greenText = true
+				}
+			}
+			
+			if (j==headerArray.indexOf("Return On<br>Investment")||
+			j==headerArray.indexOf("ROI with<br>10% Discount")||
+			j==headerArray.indexOf("ROI with<br>20% Discount")||
+			j==headerArray.indexOf("ROI/Day<br>(Normal Growth)")){
 				var correctedValue = c.innerHTML
 				correctedValue*=100;
 				c.innerHTML=correctedValue.toPrecision(5)+"%"
