@@ -28,7 +28,13 @@ function showBasicStats(){
 	if (currentItem.chemistrylevel!==undefined){
 		basicStats.innerHTML+="Chemistry Lv: "+currentItem.chemistrylevel
 	}
-	basicStats.title="分類"
+	//basicStats.title="分類"
+	basicStats.onmouseover = function() {
+		document.getElementById('popup').style.display = 'block';
+	}
+	basicStats.onmouseout = function() {
+		document.getElementById('popup').style.display = 'none';
+	}
 
 	if (currentItem.buy!==undefined){
 		currentBuyPrice=currentItem.buy;
