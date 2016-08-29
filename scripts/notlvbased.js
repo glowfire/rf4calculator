@@ -146,7 +146,7 @@ function showRecipesOfItem(){
 	recipeArray = recipeArray.sort(sellComparator);
 	
 	var headerStrings = ["Name","Category","Recipe Lv","Sell Price","Materials"]
-	var headerStringsJP = ["名称","分類","レシピのLv","売値","素材"]
+	var headerStringsJP = ["名称","分類","スキルレベル","売値","素材"]
 	
 	function addHeaderColumn(item,index){
 		var c = document.createElement('td')
