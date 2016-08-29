@@ -28,6 +28,7 @@ function showBasicStats(){
 	if (currentItem.chemistrylevel!==undefined){
 		basicStats.innerHTML+="Chemistry Lv: "+currentItem.chemistrylevel
 	}
+	basicStats.title="分類"
 
 	if (currentItem.buy!==undefined){
 		currentBuyPrice=currentItem.buy;
