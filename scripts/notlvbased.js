@@ -30,10 +30,10 @@ function showBasicStats(){
 	}
 	//basicStats.title="分類"
 	basicStats.onmouseover = function() {
-		document.getElementById('popup').style.display = 'block';
+		basicStats.style.display = 'block';
 	}
 	basicStats.onmouseout = function() {
-		document.getElementById('popup').style.display = 'none';
+		basicStats.style.display = 'none';
 	}
 
 	if (currentItem.buy!==undefined){
