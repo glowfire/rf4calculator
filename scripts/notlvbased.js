@@ -147,6 +147,7 @@ function showRecipesOfItem(){
 	
 	var headerStrings = ["Name","Category","Recipe Lv","Sell Price","Materials"]
 	var headerStringsJP = ["名称","分類","スキルレベル","売値","素材"]
+	// Should "スキルレベル" be "レシピのLv"?
 	
 	function addHeaderColumn(item,index){
 		var c = document.createElement('td')
