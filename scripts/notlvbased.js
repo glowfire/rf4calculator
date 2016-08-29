@@ -68,7 +68,7 @@ function showRecipesOfItem(){
 		} else {
 			recipeComment.innerHTML += "is " + currentSpecificRecipeListing.length + " recipe"
 		}
-		recipeComment.innerHTML += " involving " + currentItem.name + " and "
+		recipeComment.innerHTML += " requiring " + currentItem.name + " and "
 		if (currentGeneralRecipeListing.length!==1){
 			recipeComment.innerHTML += currentGeneralRecipeListing.length + " recipes"
 		} else {
@@ -83,7 +83,7 @@ function showRecipesOfItem(){
 		} else {
 			recipeComment.innerHTML += "is " + currentSpecificRecipeListing.length + " recipe"
 		}
-		recipeComment.innerHTML += " involving " + currentItem.name + "."
+		recipeComment.innerHTML += " requiring " + currentItem.name + "."
 	} else if (currentGeneralRecipeListing.length>0){
 		recipeComment.innerHTML += "There "
 		if (currentGeneralRecipeListing.length!==1){
