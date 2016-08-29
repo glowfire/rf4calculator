@@ -28,13 +28,8 @@ function showBasicStats(){
 	if (currentItem.chemistrylevel!==undefined){
 		basicStats.innerHTML+="Chemistry Lv: "+currentItem.chemistrylevel
 	}
-	//basicStats.title="分類"
-	basicStats.onmouseover = function() {
-		basicStats.style.display = 'block';
-	}
-	basicStats.onmouseout = function() {
-		basicStats.style.display = 'none';
-	}
+	basicStats.title="分類"
+	// Should investigate instant pop ups here: http://stackoverflow.com/questions/3559467/description-box-on-mouseover
 
 	if (currentItem.buy!==undefined){
 		currentBuyPrice=currentItem.buy;
@@ -151,11 +146,13 @@ function showRecipesOfItem(){
 	recipeArray = recipeArray.sort(sellComparator);
 	
 	var headerStrings = ["Name","Category","Recipe Lv","Sell Price","Materials"]
+	var headerStringsJP = ["名称","分類","レシピのLv","売値","素材"]
 	
 	function addHeaderColumn(item,index){
 		var c = document.createElement('td')
 		recipeTableHeader.appendChild(c)
 		c.innerHTML=item
+		c.title = headerStringsJP[index]
 		c.style.color="yellow"
 		c.style.border=borderString
 		if (item=="Materials"){
