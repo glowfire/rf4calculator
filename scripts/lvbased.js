@@ -56,7 +56,7 @@ function getPriceTable(){
 			var currentProfitWDisc20 = currentSellPrice-currentMaterialsBuyPriceDiscount20
 			var currentROInoDisc = currentProfitNoDisc/currentMaterialsBuyPrice
 			var currentROIwDisc = currentProfitWDisc/currentMaterialsBuyPriceDiscount
-			var currentROIwDisc20 = currentProfitWDisc/currentMaterialsBuyPriceDiscount20
+			var currentROIwDisc20 = currentProfitWDisc20/currentMaterialsBuyPriceDiscount20
 			
 			profitArrayNoDisc.push(currentProfitNoDisc)
 			profitArrayWDisc.push(currentProfitWDisc)
