@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family:"Gyre", Helvetica, Arial, Sans-serif;
+    /* Might want to try font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif */
     font-size:150%;
     color:aquamarine;
 }
