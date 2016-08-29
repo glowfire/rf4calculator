@@ -210,11 +210,13 @@ var materialsList // May not be needed
 
 var currentMaterialsBuyPrice // needed
 var currentMaterialsBuyPriceDiscount // needed
+var currentMaterialsBuyPriceDiscount20 // needed
 var canBuyAllMaterials // Used because the allMaterialsBuyable function seems unfixable
 
 function createMaterialTable(){
 	currentMaterialsBuyPrice = 0
 	currentMaterialsBuyPriceDiscount = 0
+	currentMaterialsBuyPriceDiscount20 = 0
 	
 	canBuyAllMaterials = true
 	
@@ -232,7 +234,8 @@ function createMaterialTable(){
 	
 	appendMaterialHeader("#");
 	appendMaterialHeader("Name of Material");
-	appendMaterialHeader("Discounted<br>Buy Price");
+	appendMaterialHeader("Discounted<br>20% Buy Price");
+	appendMaterialHeader("Discounted<br>10% Buy Price");
 	appendMaterialHeader("Normal<br>Buy Price");
 	
 	function createMaterialRow(item,index){
@@ -254,22 +257,25 @@ function createMaterialTable(){
 			var currentCategory = masterCategoryList[item];
 			
 			if (currentCategory.minBuy==currentCategory.maxBuy){
+				appendMaterialRow(Math.ceil(iNiM(currentCategory.minBuy,.8)));
 				appendMaterialRow(Math.ceil(iNiM(currentCategory.minBuy,.9)));
 				appendMaterialRow(currentCategory.minBuy);
 				currentMaterialsBuyPrice+=currentCategory.minBuy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(iNiM(currentCategory.minBuy,.9));
+				currentMaterialsBuyPriceDiscount20+=Math.ceil(iNiM(currentCategory.minBuy,.8));
 			} else if (currentCategory.minBuy<currentCategory.maxBuy){
 				var c34 = document.createElement('td');
 				materialRow.appendChild(c34);
-				c34.colSpan=2
-				c34.innerHTML=Math.ceil(iNiM(currentCategory.minBuy,.9));
+				c34.colSpan=3
+				c34.innerHTML=Math.ceil(iNiM(currentCategory.minBuy,.8));
 				c34.innerHTML+=" - "
 				c34.innerHTML+=currentCategory.maxBuy
 				currentMaterialsBuyPrice+=currentCategory.minBuy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(iNiM(currentCategory.minBuy,.9));
+				currentMaterialsBuyPriceDiscount20+=Math.ceil(iNiM(currentCategory.minBuy,.8));
 			} else {
 				var c34 = document.createElement('td');
-				c34.colSpan=2
+				c34.colSpan=3
 				materialRow.appendChild(c34);
 				c34.innerHTML="Not Buyable";
 				canBuyAllMaterials = false
@@ -279,13 +285,15 @@ function createMaterialTable(){
 			var currentMaterial = item.convertStringToItem();
 			
 			if (currentMaterial.buy!==undefined){
+				appendMaterialRow(Math.ceil(iNiM(currentMaterial.buy,.8)));
 				appendMaterialRow(Math.ceil(iNiM(currentMaterial.buy,.9)));
 				appendMaterialRow(currentMaterial.buy);
 				currentMaterialsBuyPrice+=currentMaterial.buy;
 				currentMaterialsBuyPriceDiscount+=Math.ceil(iNiM(currentMaterial.buy,.9));
+				currentMaterialsBuyPriceDiscount20+=Math.ceil(iNiM(currentMaterial.buy,.8));
 			} else {
 				var c34 = document.createElement('td');
-				c34.colSpan=2
+				c34.colSpan=3
 				materialRow.appendChild(c34);
 				c34.innerHTML="Not Buyable";
 				canBuyAllMaterials = false
@@ -310,11 +318,15 @@ function createMaterialTable(){
 		
 		var c3 = document.createElement('td');
 		summationRow.appendChild(c3);
-		c3.innerHTML=currentMaterialsBuyPriceDiscount;
+		c3.innerHTML=currentMaterialsBuyPriceDiscount20;
 		
 		var c4 = document.createElement('td');
 		summationRow.appendChild(c4);
-		c4.innerHTML=currentMaterialsBuyPrice;
+		c4.innerHTML=currentMaterialsBuyPriceDiscount;
+		
+		var c5 = document.createElement('td');
+		summationRow.appendChild(c5);
+		c5.innerHTML=currentMaterialsBuyPrice;
 		
 	} else {
 		
