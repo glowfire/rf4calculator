@@ -306,7 +306,7 @@ function createMaterialTable(){
 		c12.colSpan=2
 		summationRow.appendChild(c12);
 		c12.innerHTML="Total cost of buyable materials";
-		c12.style.color="light pink"
+		c12.style.color="lightpink"
 		
 		var c3 = document.createElement('td');
 		summationRow.appendChild(c3);
@@ -322,7 +322,7 @@ function createMaterialTable(){
 		lastC.colSpan = 4;
 		summationRow.appendChild(lastC);
 		lastC.innerHTML = "None of the materials can be bought."
-		lastC.style.color = "pink"
+		lastC.style.color = "lightpink"
 		
 	}
 	
