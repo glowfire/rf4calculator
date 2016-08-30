@@ -105,14 +105,32 @@ function registerItem(item){
 		if (masterCategoryList[itemCategory].maxSell<item.sell){
 			masterCategoryList[itemCategory].maxSell=item.sell
 		}
+		if (item.buy!==undefined){
+			if (masterCategoryList[itemCategory].minBuy!==undefined){
+				if (masterCategoryList[itemCategory].minBuy>item.buy){
+					masterCategoryList[itemCategory].minBuy=item.buy
+				}
+				if (masterCategoryList[itemCategory].maxBuy<item.buy){
+					masterCategoryList[itemCategory].maxBuy=item.buy
+				}
+			} else {
+				masterCategoryList[itemCategory].minBuy=item.buy
+				masterCategoryList[itemCategory].maxBuy=item.buy
+			}
+		}
 	} else {
 		masterCategoryList[itemCategory]={}
 		masterCategoryList[itemCategory].name=itemCategory
 		masterCategoryList[itemCategory].membershipList=[item]
 		masterCategoryList[itemCategory].minSell=item.sell
 		masterCategoryList[itemCategory].maxSell=item.sell
-		masterCategoryList[itemCategory].minBuy=undefined
-		masterCategoryList[itemCategory].maxBuy=undefined
+		if (item.buy!==undefined){
+			masterCategoryList[itemCategory].minBuy=item.buy
+			masterCategoryList[itemCategory].maxBuy=item.buy
+		} else {
+			masterCategoryList[itemCategory].minBuy=undefined
+			masterCategoryList[itemCategory].maxBuy=undefined
+		}
 	}
 	
 	if (item.buy!==undefined){
