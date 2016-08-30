@@ -237,6 +237,7 @@ function createMaterialTable(){
 	appendMaterialHeader("Discounted<br>20% Buy Price");
 	appendMaterialHeader("Discounted<br>10% Buy Price");
 	appendMaterialHeader("Normal<br>Buy Price");
+	// Should create minimum sell price and maximum sell price column as well
 	
 	function createMaterialRow(item,index){
 		
@@ -251,6 +252,10 @@ function createMaterialTable(){
 		
 		appendMaterialRow(index+1);
 		appendMaterialRow(item);
+		
+		// Should check if the material exists as an item first before checking if it exists as a category.
+		// Since the algorithm checks for category first, Chaos Blade's material list shows Magic as a category
+		// rather than the Powders and Spores item Magic.
 		
 		if (masterCategoryList[item]!==undefined){
 			
