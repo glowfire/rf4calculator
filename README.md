@@ -14,3 +14,4 @@ Objectives:
 9. Predict effects of cooked dishes based on ingredients. (Not started)
 10. 20% discounts, although rare and personally only seen in Arthur's shop and Blossom's store, exist in the game and must be accounted for. (Not started)
 11. Register not-for-sale "items" e.g. Venti's Charm, categories. (Not started. This may be optional.)
+12. Should fix the table of materials algorithm. (Not optional!)
