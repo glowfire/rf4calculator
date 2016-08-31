@@ -456,7 +456,7 @@ registerItem({ // unconfirmed
 	"category":"Magic",
 	"sell":140,
 	"buy":2800,
-	"flavourtext":"???",
+	"flavourtext":"Emits a dark light ball that travels slowly and destroys everything in its way.",
 	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
