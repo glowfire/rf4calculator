@@ -58,3 +58,8 @@ for (i=0;i<objectListing.length;i++){
 		c.innerHTML=currentRow[j];
 	}
 }
+
+function showAllRecipes(){
+	clearPage()
+	document.getElementById('otherInfo').appendChild(objectTable)
+}
