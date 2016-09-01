@@ -72,3 +72,8 @@ for (i=0;i<seedListing.length;i++){
 		c.innerHTML=currentRow[j];
 	}
 }
+
+function showAllSeed(){
+	clearPage()
+	document.getElementById('otherInfo').appendChild(seedTable);
+}
