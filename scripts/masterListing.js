@@ -59,7 +59,7 @@ for (i=0;i<objectListing.length;i++){
 	}
 }
 
-function showAllRecipes(){
+function showAllItems(){
 	clearPage()
 	document.getElementById('otherInfo').appendChild(objectTable)
 }
