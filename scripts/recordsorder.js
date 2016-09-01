@@ -1,3 +1,12 @@
+function clearPage(){
+	document.getElementById("currentItemDiv").innerHTML="";
+	document.getElementById("dependantDiv").innerHTML="";
+	document.getElementById("profitTable").innerHTML="";
+	document.getElementById("profitTableDiv").innerHTML="";
+	document.getElementById("multiplierTableDiv").innerHTML="";
+	document.getElementById("otherInfo").innerHTML="";
+}
+
 // For sorting list of objects.
 
 var sortedMasterNameList = masterNameList.sort(listedNameComparator);
@@ -48,7 +57,8 @@ function getItemInfo(){
 	var itemSelected = document.getElementById("itemSelect").value
 	currentItem=masterItemList[itemSelected]
 	currentSellPrice=currentItem.sell;
-	document.getElementById("currentItemDiv").innerHTML = '';
+	clearPage()
+	//document.getElementById("currentItemDiv").innerHTML = '';
 	showBasicStats()
 	if (currentItem.materials!==undefined){
 		createMaterialTable()
