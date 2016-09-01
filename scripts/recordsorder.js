@@ -3,6 +3,9 @@ function clearPage(){
 	document.getElementById("dependantDiv").innerHTML="";
 	document.getElementById("profitTable").innerHTML="";
 	document.getElementById("profitTableDiv").innerHTML="";
+	var profitTableDivParagraph = document.createElement("p");
+	profitTableDivParagraph.id = "profitTable";
+	document.getElementById("profitTableDiv").appendChild(profitTableDivParagraph)
 	document.getElementById("multiplierTableDiv").innerHTML="";
 	document.getElementById("otherInfo").innerHTML="";
 }
