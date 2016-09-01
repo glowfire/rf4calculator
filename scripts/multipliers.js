@@ -162,10 +162,7 @@ function hideMultiplierTable(){
 	var node = document.getElementById('multiplierTable');
 	node.innerHTML="Show Multiplier Table";
 	node.setAttribute('onclick','showMultiplierTable()');
-	document.getElementById('multiplierTableDiv').removeChild(multiplierTableTitle);
-	document.getElementById('multiplierTableDiv').removeChild(multiplierTable);
-	document.getElementById('multiplierTableDiv').removeChild(explanation);
-	document.getElementById('multiplierTableDiv').removeChild(examples);
+	document.getElementById('multiplierTableDiv').innerHTML=""
 }
 
 function getPriceMultiplierArray(multiplierType){
