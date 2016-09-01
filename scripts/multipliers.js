@@ -148,6 +148,7 @@ examples.innerHTML+="<br>Group Sd: This group may exclusively consist of [Seed] 
 examples.innerHTML+="<br>Group X: Items in this tiny group have sell prices that are the same regardless of their levels. Currently known items with this behaviour are Dolphin Brooch and Strange Pendant.";
 
 function showMultiplierTable(){
+	clearPage()
 	var node = document.getElementById('multiplierTable');
 	node.innerHTML="Hide Multiplier Table";
 	document.getElementById('multiplierTableDiv').appendChild(multiplierTableTitle);
