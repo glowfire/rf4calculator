@@ -11,7 +11,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		currentRecipeInfo.push(currentRecipe.category);
 		currentRecipeInfo.push(currentRecipe.sell);
 		currentRecipeInfo.push(currentRecipe.pricemultiplier);
-		currentRecipeInfo.push(currentRecipe.materials);
+		currentRecipeInfo.arrayPush(currentRecipe.materials);
 		allRecipeListing.push(currentRecipeInfo)
 	}
 }
@@ -47,20 +47,15 @@ for (i=0;i<allRecipeListing.length;i++){
 	allRecipeTable.appendChild(row);
 	
 	var currentRow = allRecipeListing[i];
-	for (j=0;j<currentRow.length;j++){
-		if (j!==recipeTableHeaderArray.indexOf("Materials")){
-			var c = document.createElement('td');
-			row.appendChild(c);
-			c.innerHTML=currentRow[j];
-		} else {
-			var materialArr = currentRow[j]
-		}
-	}
-	
-	for (k=0;k<materialArr.length;k++){
+	for (j=0;j<(recipeTableHeaderArray+5).length;j++){
+		var currentString = currentRow[j]
 		var c = document.createElement('td');
 		row.appendChild(c);
-		c.innerHTML=materialArr[j];
+		if (currentString!==undefined){
+			c.innerHTML=currentString;
+		} else {
+			c.innerHTML=""
+		}
 	}
 }
 
