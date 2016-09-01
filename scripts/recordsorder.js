@@ -7,7 +7,9 @@ function clearPage(){
 	profitTableDivParagraph.id = "profitTable";
 	document.getElementById("profitTableDiv").appendChild(profitTableDivParagraph)
 	//document.getElementById("multiplierTableDiv").innerHTML="";
-	hideMultiplierTable()
+	if (document.getElementById("multiplierTableDiv").innerHTML!==""){
+		hideMultiplierTable()
+	}
 	document.getElementById("otherInfo").innerHTML="";
 }
 
