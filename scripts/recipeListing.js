@@ -27,7 +27,7 @@ var sortedRecipeList = allRecipeListing.sort(categoryComparator);
 var allRecipeTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(allRecipeTable);
 allRecipeTableHeader=document.createElement('tr');
-allRecipeTable.appendChild(AllRecipeTableHeader);
+allRecipeTable.appendChild(allRecipeTableHeader);
 
 function appendRecipeHeader(string){
 	var c = document.createElement('td');
