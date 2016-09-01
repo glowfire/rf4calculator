@@ -9,11 +9,13 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		var currentObjectInfo = [];
 		currentObjectInfo.push(currentObject.name);
 		currentObjectInfo.push(currentObject.sell);
+		currentObjectInfo.push(currentObject.pricemultiplier);
 		if (currentObject.buy!==undefined){
 			currentObjectInfo.push(currentObject.buy);
 		} else {
 			currentObjectInfo.push("Not Buyable");
 		}
+		currentObjectInfo.push(currentObject.flavourtext);
 		objectListing.push(currentObjectInfo)
 		previousName = currentObject.name;
 	}
@@ -41,7 +43,9 @@ function appendObjectHeader(string){
 appendObjectHeader("Number");
 appendObjectHeader("Name");
 appendObjectHeader("Sell Price");
+appendObjectHeader("Price Multiplier");
 appendObjectHeader("Buy Price");
+appendObjectHeader("Flavour Text");
 
 for (i=0;i<objectListing.length;i++){
 	var row = document.createElement('tr');
