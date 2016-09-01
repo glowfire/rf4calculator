@@ -38,23 +38,25 @@ function appendRecipeHeader(string){
 	}
 }
 
-appendRecipeHeader("Name");
-appendRecipeHeader("Category");
-appendRecipeHeader("Sell Price");
-appendRecipeHeader("Price Multiplier");
-appendRecipeHeader("Materials");
+var recipeTableHeaderArray = ["Name","Category","Sell Price","Price Multiplier","Materials"]
+
+recipeTableHeaderArray.forEach(appendRecipeHeader)
 
 for (i=0;i<allRecipeListing.length;i++){
 	var row = document.createElement('tr');
 	allRecipeTable.appendChild(row);
 	
 	var currentRow = allRecipeListing[i];
-	for (j=0;j<(currentRow.length-1);j++){
-		var c = document.createElement('td');
-		row.appendChild(c);
-		c.innerHTML=currentRow[j];
+	for (j=0;j<currentRow.length;j++){
+		if (j!==recipeTableHeaderArray.indexOf("Materials")){
+			var c = document.createElement('td');
+			row.appendChild(c);
+			c.innerHTML=currentRow[j];
+		} else {
+			var materialArr = currentRow[j]
+		}
 	}
-	var materialArr = currentRow[currentRow.length-1]
+	
 	for (k=0;k<materialArr.length;k++){
 		var c = document.createElement('td');
 		row.appendChild(c);
