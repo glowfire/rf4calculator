@@ -1,4 +1,5 @@
 var seedListing=[];
+var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Min ROI/day"];
 
 Object.prototype.getGrowthAtSeason = function(currentSeason){
 	var seedSeasons = this.seasons
@@ -36,14 +37,28 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("summer"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
+		if (currentSeed.harvest!==undefined||currentSeed.value!==undefined){
+			currentSeedInfo.push(currentSeed.harvested);
+			currentSeedInfo.push(currentSeed.value);
+			var a = currentSeed.harvested
+			var b = currentSeed.value
+			var c = currentSeed.sell
+			var d = Math.max(currentSeed.getGrowthAtSeason("spring"),currentSeed.getGrowthAtSeason("summer"),currentSeed.getGrowthAtSeason("winter"))
+			var current ROIpd = (a*b-c)/d
+		} else {
+			currentSeedInfo.push("N/A");
+			currentSeedInfo.push("N/A");
+			currentSeedInfo.push("N/A");
+		}
 		currentSeedInfo.push(currentSeed.getTotalFourSeasonsGrowth());
 		seedListing.push(currentSeedInfo)
 	}
 }
 
 function springComparator(a, b) {
-	if (parseInt(a[2]) < parseInt(b[2])){ return -1;
-	} else if (parseInt(a[2]) > parseInt(b[2])){ return 1;
+	var index = seedHeaderArray.length + 1
+	if (parseInt(a[index]) < parseInt(b[index])){ return -1;
+	} else if (parseInt(a[index]) > parseInt(b[index])){ return 1;
 	} else {return 0};
 }
 
@@ -68,12 +83,7 @@ function appendSeedHeader(string){
 	c.style.color="yellow"
 }
 
-appendSeedHeader("Seed");
-appendSeedHeader("Buy Price");
-appendSeedHeader("Spring Growth");
-appendSeedHeader("Summer Growth");
-appendSeedHeader("Autumn Growth");
-appendSeedHeader("Winter Growth");
+seedHeaderArray.forEach(appendSeedHeader);
 
 for (i=0;i<sortedSeedListByFourSeasons.length;i++){
 	var row = document.createElement('tr');
