@@ -27,6 +27,12 @@ function appendRecipeHeader(string){
 	c.style.color="yellow"
 }
 
+function categoryComparator(a, b) {
+	if (a[1].toLowerCase() < b[1].toLowerCase()){ return -1;
+	} else if (a[1].toLowerCase() > b[1].toLowerCase()){ return 1;
+	} else {return 0;}
+}
+
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
 for (i=0;i<allRecipesListing.length;i++){
