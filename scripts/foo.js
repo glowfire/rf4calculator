@@ -24,19 +24,6 @@ for (i=0;i<shippingList.length;i++){
 	}
 }
 
-function categoryComparator(a, b) {
-	if (a[1].toLowerCase() < b[1].toLowerCase()){ return -1;
-	} else if (a[1].toLowerCase() > b[1].toLowerCase()){ return 1;
-	} else {return 0;}
-}
-
-// Cannot use this function without crashing
-function levelComparator(a, b) {
-	if (parseInt(a[3]) < parseInt(b[3])){ return -1;
-	} else if (parseInt(a[3]) > parseInt(b[3])){ return 1;
-	} else {return 0;}
-}
-
 var recipeTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(seedTable);
 recipeTableHeader=document.createElement('tr');
