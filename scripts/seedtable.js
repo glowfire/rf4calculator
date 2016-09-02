@@ -50,10 +50,11 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			var currentSeedBuy = currentSeed.buy
 			var maxGrowthDays = Math.max(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
 			var minGrowthDays = Math.min(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
-			var currentROIpd = (currentValue*currentHarvested-currentSeedBuy)/maxGrowthDays
+			var currentROI = (currentValue*currentHarvested-currentSeedBuy)/currentSeedBuy
+			var currentROIpd = currentROI/maxGrowthDays
 			currentSeedInfo.push(currentHarvested);
 			currentSeedInfo.push(currentValue);
-			currentSeedInfo.push(currentROIpd.toPrecision(5))
+			currentSeedInfo.push(currentROIpd.toPrecision(5)*100+"%")
 		} else {
 			currentSeedInfo.push("N/A");
 			if (currentSeed.value!==undefined){
