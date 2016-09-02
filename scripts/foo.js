@@ -1,17 +1,8 @@
 var allRecipesListing = []
 var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level"]
-var allRecipeCategory = {}
-var unsortedRecipeByCategory = []
-var masterRecipeByCategory = []
 
-arrayOfCategories=arrayOfCategories.sort()
-
-for (i=0;i<arrayOfCategories.length;i++){
-	unsortedRecipeByCategory.push([])
-}
-
-for (i=0;i<sortedMasterNameList.length;i++){
-	var currentNameSet = sortedMasterNameList[i];
+for (i=0;i<shippingList.length;i++){
+	var currentNameSet = shippingList[i];
 	var currentUniqueName = currentNameSet[2];
 	var currentObject = masterItemList[currentUniqueName]
 	if (currentObject.materials!==undefined){
@@ -30,16 +21,6 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			currentRecipeInfo.push(currentRecipe.forginglevel)
 		}
 		allRecipesListing.push(currentRecipeInfo)
-		
-		unsortedRecipeByCategory[arrayOfCategories.indexOf(currentRecipe.category)].push(currentRecipeInfo)
-		
-		var currentCategory = currentRecipe.category
-		if (allRecipeCategory[currentCategory]!==undefined){
-			allRecipeCategory[currentCategory].push(currentRecipeInfo)
-		} else {
-			allRecipeCategory[currentCategory]=[]
-			allRecipeCategory[currentCategory].push(currentRecipeInfo)
-		}
 	}
 }
 
@@ -49,16 +30,11 @@ function categoryComparator(a, b) {
 	} else {return 0;}
 }
 
+// Cannot use this function without crashing
 function levelComparator(a, b) {
 	if (parseInt(a[3]) < parseInt(b[3])){ return -1;
 	} else if (parseInt(a[3]) > parseInt(b[3])){ return 1;
 	} else {return 0;}
-}
-
-for (i=0;i<arrayOfCategories.length;i++){
-	var currentCategoryEntries = unsortedRecipeByCategory[i]
-	var newSubOrder=currentCategoryEntries.sort(levelComparator)
-	masterRecipeByCategory.arrayPush(newSubOrder)
 }
 
 var recipeTable = document.createElement("table");
@@ -75,12 +51,11 @@ function appendRecipeHeader(string){
 
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
-//for (i=0;i<allRecipesListing.length;i++){
-for (i=0;i<masterRecipeByCategory.length;i++){
+for (i=0;i<allRecipesListing.length;i++){
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
 	
-	var currentRow = masterRecipeByCategory[i];
+	var currentRow = allRecipesListing[i];
 	for (j=0;j<currentRow.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
