@@ -1,5 +1,5 @@
 var seedListing=[];
-var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Min ROI/day","Max ROI/day"];
+var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Minimum Profit","Min ROI/day"];
 
 Object.prototype.getGrowthAtSeason = function(currentSeason){
 	var seedSeasons = this.seasons
@@ -49,15 +49,12 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			var currentValue = currentSeed.value
 			var currentSeedBuy = currentSeed.buy
 			var maxGrowthDays = Math.max(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
-			var minGrowthDays = Math.min(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
 			var currentMinROI = (currentValue*currentHarvested-currentSeedBuy)/currentSeedBuy
 			var currentMinROIpd = currentMinROI/maxGrowthDays
-			var currentMaxROI = (currentValue*currentHarvested*2-currentSeedBuy*.9)/iNiM(currentSeedBuy,.9)
-			var currentMaxROIpd = currentMaxROI/minGrowthDays
 			currentSeedInfo.push(currentHarvested);
 			currentSeedInfo.push(currentValue);
-			currentSeedInfo.push((currentMinROIpd*100).toPrecision(5)+"%")//
-			currentSeedInfo.push((currentMaxROIpd*100).toPrecision(5)+"%")//
+			currentSeedInfo.push(currentValue*currentHarvested-currentSeedBuy)
+			currentSeedInfo.push((currentMinROIpd*100).toPrecision(5)+"%")
 		} else {
 			currentSeedInfo.push("N/A");
 			if (currentSeed.value!==undefined){
