@@ -49,8 +49,7 @@ for (i=0;i<allRecipesListing.length;i++){
 	recipeTable.appendChild(row);
 	
 	var currentRow = allRecipesListing[i];
-	var nColumn = allRecipeTableHeaderArray.length + 5
-	for (j=0;j<allRecipeTableHeaderArray.length;j++){
+	for (j=0;j<(allRecipeTableHeaderArray.length-1);j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
 		if (j!==materialsIndex)
