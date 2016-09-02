@@ -42,18 +42,27 @@ function appendRecipeHeader(string){
 
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
+var materialsIndex = allRecipeTableHeaderArray.indexOf("Materials")
+
 for (i=0;i<allRecipesListing.length;i++){
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
 	
 	var currentRow = allRecipesListing[i];
 	var nColumn = allRecipeTableHeaderArray.length + 5
-	for (j=0;j<nColumn;j++){
+	for (j=0;j<allRecipeTableHeaderArray.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
-		var currentString = currentRow[j]
+		if (j!==materialsIndex)
+		c.innerHTML=currentRow[j]
+	}
+	var currentMaterials = currentRow[materialsIndex]
+	for (k=0;k<6;k++){
+		var c = document.createElement('td');
+		row.appendChild(c);
+		currentString=currentMaterials[j]
 		if (currentString!==undefined){
-			c.innerHTML=currentString;
+			c.innerHTML=currentString
 		} else {
 			c.innerHTML=""
 		}
