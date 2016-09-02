@@ -1,8 +1,14 @@
 var allRecipesListing = []
 var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level"]
-var allRecipeCategoryArray = [];
 var allRecipeCategory = {}
+var unsortedRecipeByCategory = []
 var masterRecipeByCategory = []
+
+arrayOfCategories=arrayOfCategories.sort()
+
+for (i=0;i<arrayOfCategories.length;i++){
+	unsortedRecipeByCategory.push([])
+}
 
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
@@ -25,11 +31,12 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		}
 		allRecipesListing.push(currentRecipeInfo)
 		
+		unsortedRecipeByCategory[arrayOfCategories.indexOf(currentRecipe.category)].push(currentRecipeInfo)
+		
 		var currentCategory = currentRecipe.category
-		if (allRecipeCategoryArray.indexOf(currentCategory)>-1){
+		if (allRecipeCategory[currentCategory]!==undefined){
 			allRecipeCategory[currentCategory].push(currentRecipeInfo)
 		} else {
-			allRecipeCategoryArray.push(currentCategory)
 			allRecipeCategory[currentCategory]=[]
 			allRecipeCategory[currentCategory].push(currentRecipeInfo)
 		}
@@ -50,11 +57,10 @@ function levelComparator(a, b) {
 
 allRecipeCategoryArray = allRecipeCategoryArray.sort
 
-for (i=0;i<allRecipeCategoryArray.length;i++){
-	var currentCategory = allRecipeCategory[i]
-	var currentCategoryEntries = allRecipeCategory[currentCategory]
+for (i=0;i<arrayOfCategories.length;i++){
+	var currentCategoryEntries = unsortedRecipeByCategory[i]
 	var newSubOrder=currentCategoryEntries.sort(levelComparator)
-	masterRecipeByCategory.push(newSubOrder)
+	masterRecipeByCategory.arrayPush(newSubOrder)
 }
 
 var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
@@ -81,7 +87,7 @@ function appendRecipeHeader(string){
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
 //for (i=0;i<allRecipesListing.length;i++){
-for (i=0;i<sortedRecipeListByCategoryThenLevel.length;i++){
+for (i=0;i<masterRecipeByCategory.length;i++){
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
 	
