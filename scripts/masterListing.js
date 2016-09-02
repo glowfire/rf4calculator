@@ -66,8 +66,8 @@ for (i=0;i<objectListing.length;i++){
 		var c = document.createElement('td');
 		row.appendChild(c);
 		c.innerHTML=currentRow[j];
-		if (j%2==0){
-			c.style.color="blue"
+		if (i%2==0){
+			c.style.color="gray"
 		}
 	}
 }
