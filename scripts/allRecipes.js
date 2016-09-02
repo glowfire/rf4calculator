@@ -1,5 +1,5 @@
 var allRecipesListing = []
-var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level"]
+var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level","Materials"]
 
 for (i=0;i<shippingList.length;i++){
 	var currentNameSet = shippingList[i];
@@ -20,6 +20,7 @@ for (i=0;i<shippingList.length;i++){
 		} else if (currentRecipe.forginglevel!==undefined){
 			currentRecipeInfo.push(currentRecipe.forginglevel)
 		}
+		currentRecipeInfo.arrayPush(currentRecipe.materials)
 		allRecipesListing.push(currentRecipeInfo)
 	}
 }
@@ -43,10 +44,16 @@ for (i=0;i<allRecipesListing.length;i++){
 	recipeTable.appendChild(row);
 	
 	var currentRow = allRecipesListing[i];
-	for (j=0;j<currentRow.length;j++){
+	var nColumn = currentRow.length + 5
+	for (j=0;j<nColumn;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
-		c.innerHTML=currentRow[j];
+		var currentString = currentRow[j]
+		if (currentString!==undefined){
+			c.innerHTML=currentString;
+		} else {
+			c.innerHTML=""
+		}
 	}
 }
 
