@@ -14,4 +14,5 @@ Objectives:
 9. Predict effects of cooked dishes based on ingredients. (Not started)
 10. 20% discounts, although rare and personally only seen in Arthur's shop and Blossom's store, exist in the game and must be accounted for. (Not started)
 11. Register not-for-sale "items" e.g. Venti's Charm, categories. (Not started. This may be optional.)
-12. Should fix the table of materials algorithm. (Not optional!)
+12. Should fix the table of materials algorithm. Details in the algorithm comments. (Not optional!)
+13. Consider giving giant crops a subcategory to enable listing in recipes. For example, Great Emery Flower, the giant version of Emery Flower, can have the key "subcategories":["Emery Flower"] which may allow Gold Juice (which lists Emery Flower in its materials list) to show up in GEF's recipes list section.
