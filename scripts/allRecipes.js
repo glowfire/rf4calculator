@@ -12,7 +12,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		currentRecipeInfo.push(currentRecipe.name);
 		currentRecipeInfo.push(currentRecipe.category);
 		currentRecipeInfo.push(currentRecipe.sell);
-		currentRecipeInfo.arrayPush(currentRecipe.materials);
+		//currentRecipeInfo.arrayPush(currentRecipe.materials);
 		allRecipesListing.push(currentRecipeInfo)
 	}
 }
@@ -24,7 +24,7 @@ function categoryComparator(a, b) {
 	} else {return 0};
 }
 
-var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
+//var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
 
 var allRecipesTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(allRecipesTable);
