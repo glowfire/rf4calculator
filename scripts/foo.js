@@ -15,6 +15,14 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	}
 }
 
+function categoryComparator(a, b) {
+	if (a[1].toLowerCase() < b[1].toLowerCase()){ return -1;
+	} else if (a[1].toLowerCase() > b[1].toLowerCase()){ return 1;
+	} else {return 0;}
+}
+
+var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
+
 var recipeTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(seedTable);
 recipeTableHeader=document.createElement('tr');
@@ -25,12 +33,6 @@ function appendRecipeHeader(string){
 	recipeTableHeader.appendChild(c);
 	c.innerHTML=string;
 	c.style.color="yellow"
-}
-
-function categoryComparator(a, b) {
-	if (a[1].toLowerCase() < b[1].toLowerCase()){ return -1;
-	} else if (a[1].toLowerCase() > b[1].toLowerCase()){ return 1;
-	} else {return 0;}
 }
 
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
