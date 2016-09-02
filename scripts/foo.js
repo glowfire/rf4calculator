@@ -1,5 +1,7 @@
 var allRecipesListing = []
 var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level"]
+var allRecipeCategoryArray = [];
+var allRecipeCategory = {}
 
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
@@ -21,7 +23,21 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			currentRecipeInfo.push(currentRecipe.forginglevel)
 		}
 		allRecipesListing.push(currentRecipeInfo)
+		
+		if (allRecipeCategoryArray.indexOf(currentRecipe.category)<0){
+			allRecipeCategoryArray.push(currentRecipe.category)
+			allRecipeCategory[currentRecipe.category]=[currentRecipeInfo]
+		} else {
+			allRecipeCategory[currentRecipe.category].push(currentRecipeInfo)
+		}
 	}
+}
+
+allRecipeCategoryArray = allRecipeCategoryArray.sort
+
+for (j in allRecipeCategory){
+	var newSubOrder=j.sort(levelComparator)
+	allRecipeCategory[j]=newSubOrder
 }
 
 function categoryComparator(a, b) {
@@ -30,7 +46,20 @@ function categoryComparator(a, b) {
 	} else {return 0;}
 }
 
+function levelComparator(a, b) {
+	if (a[3].toLowerCase() < b[3].toLowerCase()){ return -1;
+	} else if (a[3].toLowerCase() > b[3].toLowerCase()){ return 1;
+	} else {return 0;}
+}
+
 var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
+
+var sortedRecipeListByCategoryThenLevel = [];
+
+for (i=0;i<allRecipeCategoryArray.length;i++){
+	var currentCategory = allRecipeCategoryArray[i]
+	sortedRecipeListByCategoryThenLevel.push(allRecipeCategory[currentCategory])
+}
 
 var recipeTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(seedTable);
@@ -46,11 +75,12 @@ function appendRecipeHeader(string){
 
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
-for (i=0;i<allRecipesListing.length;i++){
+//for (i=0;i<allRecipesListing.length;i++){
+for (i=0;i<sortedRecipeListByCategoryThenLevel.length;i++){
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
 	
-	var currentRow = allRecipesListing[i];
+	var currentRow = sortedRecipeListByCategoryThenLevel[i];
 	for (j=0;j<currentRow.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
