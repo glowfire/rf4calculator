@@ -19,7 +19,7 @@ function getPriceTable(){
 	var profitArrayWDisc = [];
 	var profitArrayWDisc20 = [];
 	
-	var ROInoDiscArray = [];see
+	var ROInoDiscArray = [];
 	var ROIwDiscArray = [];
 	var ROIwDiscArray20 = [];
 	
