@@ -26,7 +26,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 }
 
 function categoryComparator(a, b) {
-	var catIndex = recipeHeaderArray.indexOf("Category")
+	var catIndex = 1
 	if (a[catIndex] < b[catIndex]){ return -1;
 	} else if (a[catIndex] > b[catIndex]){ return 1;
 	} else {return 0};
