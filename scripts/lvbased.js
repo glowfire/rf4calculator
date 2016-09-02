@@ -19,7 +19,7 @@ function getPriceTable(){
 	var profitArrayWDisc = [];
 	var profitArrayWDisc20 = [];
 	
-	var ROInoDiscArray = [];
+	var ROInoDiscArray = [];see
 	var ROIwDiscArray = [];
 	var ROIwDiscArray20 = [];
 	
@@ -81,7 +81,7 @@ function getPriceTable(){
 			var currentProfit = currentTotalValue-currentSeed.buy
 			var currentROI = (currentProfit)/currentSeed.buy
 			var currentROIperDay = currentROI/currentSeed.growth
-			seedROIarray.push(currentProfit)
+			seedProfitArray.push(currentProfit)
 			seedROIperDayArray.push(currentROIperDay)
 		}
 	}
