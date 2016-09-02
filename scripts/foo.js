@@ -2,6 +2,7 @@ var allRecipesListing = []
 var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level"]
 var allRecipeCategoryArray = [];
 var allRecipeCategory = {}
+var masterRecipeByCategory = []
 
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
@@ -47,9 +48,9 @@ function levelComparator(a, b) {
 
 allRecipeCategoryArray = allRecipeCategoryArray.sort
 
-for (j in allRecipeCategory){
-	var newSubOrder=j.sort(levelComparator)
-	allRecipeCategory[j]=newSubOrder
+for (i=0;i<allRecipeCategoryArray.length;i++){
+	var newSubOrder=allRecipeCategory[allRecipeCategoryArray[i]].sort(levelComparator)
+	masterRecipeByCategory.push(newSubOrder)
 }
 
 var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
@@ -80,7 +81,7 @@ for (i=0;i<sortedRecipeListByCategoryThenLevel.length;i++){
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
 	
-	var currentRow = sortedRecipeListByCategoryThenLevel[i];
+	var currentRow = masterRecipeByCategory[i];
 	for (j=0;j<currentRow.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
