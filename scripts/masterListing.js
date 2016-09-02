@@ -25,13 +25,19 @@ for (i=0;i<shippingList.length;i++){
 	}
 }
 
-function fooComparator(a, b) {
+function listedNameComparator(a, b) {
+   if (a[0].toLowerCase() < b[0].toLowerCase()){ return -1;
+   } else if (a[0].toLowerCase() > b[0].toLowerCase()){ return 1;
+   } else {return 0;}
+}
+
+function sellComparator(a, b) {
 	if (parseInt(a[1]) < parseInt(b[1])){ return -1;
 	} else if (parseInt(a[1]) > parseInt(b[1])){ return 1;
 	} else {return 0};
 }
 
-//var sortedObjectListBySell = objectListing.sort(fooComparator);
+//var sortedObjectListBySell = objectListing.sort(sellComparator);
 
 var objectTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(objectTable);
