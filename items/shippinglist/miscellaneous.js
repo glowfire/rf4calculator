@@ -257,7 +257,7 @@ registerItem({ // unconfirmed
 	"sell":190,
 	"buy":3800,
 	"weapon":"Dual Blades",
-	"flavourtext":"???",
+	"flavourtext":"A jump-spin attack. Dynamic and hard to counter.",
 	"pricemultiplier":"X" /// unknown
 	// cannot be used as material
 })
@@ -466,7 +466,7 @@ registerItem({ // unconfirmed
 	"category":"Magic",
 	"sell":450,
 	"buy":9e3,
-	"flavourtext":"???",
+	"flavourtext":"Emits spinning light balls. Provides complete protection from all enemies for a short while.",
 	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
