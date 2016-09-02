@@ -50,8 +50,8 @@ function categoryComparator(a, b) {
 }
 
 function levelComparator(a, b) {
-	if (a[3].toLowerCase() < b[3].toLowerCase()){ return -1;
-	} else if (a[3].toLowerCase() > b[3].toLowerCase()){ return 1;
+	if (parseInt(a[3]) < parseInt(b[3])){ return -1;
+	} else if (parseInt(a[3]) > parseInt(b[3])){ return 1;
 	} else {return 0;}
 }
 
