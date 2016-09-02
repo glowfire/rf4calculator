@@ -1,7 +1,7 @@
 var objectListing=[];
 
-for (i=0;i<sortedMasterNameList.length;i++){
-	var currentNameSet = sortedMasterNameList[i];
+for (i=0;i<masterNameList.length;i++){
+	var currentNameSet = masterNameList[i];
 	var currentUniqueName = currentNameSet[2];
 	var currentObject = masterItemList[currentUniqueName]
 	var previousName
