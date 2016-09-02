@@ -45,7 +45,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			var c = currentSeed.sell
 			var d = Math.max(currentSeed.getGrowthAtSeason("spring"),currentSeed.getGrowthAtSeason("summer"),currentSeed.getGrowthAtSeason("winter"))
 			var currentROIpd = (a*b-c)/d
-			currentSeedInfo.push(currentROIpd)
+			currentSeedInfo.push(currentROIpd.toPrecision(5))
 		} else {
 			currentSeedInfo.push("N/A");
 			if (currentSeed.value!==undefined){
