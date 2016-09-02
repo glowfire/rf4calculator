@@ -35,6 +35,9 @@ function appendRecipeHeader(string){
 	recipeTableHeader.appendChild(c);
 	c.innerHTML=string;
 	c.style.color="yellow"
+	if (string=="Materials"){
+		c.colSpan=6
+	}
 }
 
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
