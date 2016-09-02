@@ -1,79 +1,67 @@
-var seedListing=[];
+var allRecipesListing=[];
 
-Object.prototype.getGrowthAtSeason = function(currentSeason){
-	var seedSeasons = this.seasons
-	switch(seedSeasons[currentSeason]){
-		case ("good"):
-			return Math.ceil(this.growth*2/3);
-			break;
-		case ("bad"):
-			return Math.ceil(this.growth*3/2);
-			break;
-		default:
-			return this.growth
-	}
-}
+var recipeHeaderArray=["Name","Category","Sell Price","Materials"]
 
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
 	var currentUniqueName = currentNameSet[2];
 	var currentObject = masterItemList[currentUniqueName]
-	if (currentObject.category=="Seed"){
-		var currentSeed = currentObject;
-		var currentSeedInfo = [];
-		if (currentSeed.crop!==undefined){
-			currentSeedInfo.push(currentSeed.crop);
-		} else {
-			currentSeedInfo.push("Dungeon")
-		}
-		currentSeedInfo.push(currentSeed.buy);
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("spring"));
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("summer"));
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
-		seedListing.push(currentSeedInfo)
+	if (currentObject.materials!==undefined){
+		var currentRecipe = currentObject;
+		var currentRecipeInfo = [];
+		currentRecipeInfo.push(currentRecipe.name);
+		currentRecipeInfo.push(currentRecipe.category);
+		currentRecipeInfo.push(currentRecipe.sell);
+		currentRecipeInfo.arrayPush(currentRecipe.materials);
+		allRecipesListing.push(currentRecipeInfo)
 	}
 }
 
-function springComparator(a, b) {
-	if (parseInt(a[2]) < parseInt(b[2])){ return -1;
-	} else if (parseInt(a[2]) > parseInt(b[2])){ return 1;
+function categoryComparator(a, b) {
+	var categoryColumnIndex = recipeHeaderArray.indexOf("Category")
+	if (a[categoryColumnIndex] < b[categoryColumnIndex]){ return -1;
+	} else if (a[categoryColumnIndex] > b[categoryColumnIndex]){ return 1;
 	} else {return 0};
 }
 
-var sortedSeedListSpring = seedListing.sort(springComparator);
+var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
 
-var seedTable = document.createElement("table");
-//document.getElementById('otherInfo').appendChild(seedTable);
-seedTableHeader=document.createElement('tr');
-seedTable.appendChild(seedTableHeader);
+var allRecipesTable = document.createElement("table");
+//document.getElementById('otherInfo').appendChild(allRecipesTable);
+allRecipesTableHeader=document.createElement('tr');
+allRecipesTable.appendChild(allRecipesTableHeader);
 
-function appendSeedHeader(string){
+function appendRecipeHeader(string){
 	var c = document.createElement('td');
-	seedTableHeader.appendChild(c);
+	allRecipesTableHeader.appendChild(c);
 	c.innerHTML=string;
-}
-
-appendSeedHeader("Crop");
-appendSeedHeader("Buy Price");
-appendSeedHeader("Spring Growth");
-appendSeedHeader("Summer Growth");
-appendSeedHeader("Autumn Growth");
-appendSeedHeader("Winter Growth");
-
-for (i=0;i<seedListing.length;i++){
-	var row = document.createElement('tr');
-	seedTable.appendChild(row);
-	
-	var currentRow = seedListing[i];
-	for (j=0;j<currentRow.length;j++){
-		var c = document.createElement('td');
-		row.appendChild(c);
-		c.innerHTML=currentRow[j];
+	c.style.color="yellow"
+	if (string=="Materials"){
+		c.colSpan = 6
 	}
 }
 
-function showAllSeed(){
+recipeHeaderArray.forEach(appendRecipeHeader)
+
+for (i=0;i<allRecipesListing.length;i++){
+	var row = document.createElement('tr');
+	allRecipesTable.appendChild(row);
+	
+	var currentRow = allRecipesListing[i];
+	var nColumn = recipeHeaderArray.length+5
+	for (j=0;j<nColumn;j++){
+		var c = document.createElement('td');
+		row.appendChild(c);
+		var currentString = currentRow[j]
+		if (currentString!==undefined){
+			c.innerHTML=currentString;
+		} else {
+			c.innerHTML=""
+		}
+	}
+}
+
+function showAllRecipes(){
 	clearPage()
-	document.getElementById('otherInfo').appendChild(seedTable);
+	document.getElementById('otherInfo').appendChild(allRecipesTable);
 }
