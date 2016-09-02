@@ -75,9 +75,11 @@ function springComparator(a, b) {
 	} else {return 0};
 }
 
+var fourSeasonsIndex = seedHeaderArray.length
+
 function fourSeasonsComparator(a, b) {
-	if (parseInt(a[6]) < parseInt(b[6])){ return -1;
-	} else if (parseInt(a[6]) > parseInt(b[6])){ return 1;
+	if (parseInt(a[fourSeasonsIndex]) < parseInt(b[fourSeasonsIndex])){ return -1;
+	} else if (parseInt(a[fourSeasonsIndex]) > parseInt(b[fourSeasonsIndex])){ return 1;
 	} else {return 0};
 }
 
@@ -97,7 +99,6 @@ function appendSeedHeader(string){
 }
 
 seedHeaderArray.forEach(appendSeedHeader);
-
 for (i=0;i<sortedSeedListByFourSeasons.length;i++){
 	var row = document.createElement('tr');
 	seedTable.appendChild(row);
