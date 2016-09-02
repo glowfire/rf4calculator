@@ -25,13 +25,13 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	}
 }
 
-function categoryComparator(a, b) {
-	if (a[1] < b[1]){ return -1;
-	} else if (a[1] > b[1]){ return 1;
-	} else {return 0};
-}
+//function categoryComparator(a, b) {
+//	if (a[1] < b[1]){ return -1;
+//	} else if (a[1] > b[1]){ return 1;
+//	} else {return 0};
+//}
 
-var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
+//var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
 
 var allRecipesTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(allRecipesTable);
