@@ -43,8 +43,18 @@ function appendRecipeHeader(string){
 allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
 var materialsIndex = allRecipeTableHeaderArray.indexOf("Materials")
+var categoryIndex = allRecipeTableHeaderArray.indexOf("Category")
+
+var colString1 = "white"
+var colString2 = "pink"
+
+var switchCat = 1
+var previousCat = (allRecipesListing[0])[categoryIndex]
 
 for (i=0;i<allRecipesListing.length;i++){
+	if ((allRecipesListing[i])[categoryIndex]!==previousCat){
+		switchCat*=-1
+	}
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
 	
@@ -52,8 +62,14 @@ for (i=0;i<allRecipesListing.length;i++){
 	for (j=0;j<(allRecipeTableHeaderArray.length-1);j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
-		if (j!==materialsIndex)
-		c.innerHTML=currentRow[j]
+		if (j!==materialsIndex){
+			c.innerHTML=currentRow[j]
+		}
+		if (switchCat>0){
+			c.style.color=colString1
+		} else {
+			c.style.color=colString2
+		}
 	}
 	var currentMaterials = currentRow[materialsIndex]
 	for (k=0;k<6;k++){
@@ -65,7 +81,13 @@ for (i=0;i<allRecipesListing.length;i++){
 		} else {
 			c.innerHTML=""
 		}
+		if (switchCat>0){
+			c.style.color=colString1
+		} else {
+			c.style.color=colString2
+		}
 	}
+	previousCat = (allRecipesListing[i])[categoryIndex]
 }
 
 function showAllRecipes(){
