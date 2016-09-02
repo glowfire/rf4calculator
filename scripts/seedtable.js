@@ -33,20 +33,26 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		var currentSeedInfo = [];
 		currentSeedInfo.push(currentSeed.name);
 		currentSeedInfo.push(currentSeed.buy);
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("spring"));
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("summer"));
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
-		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
+		
+		var currentSpringGrowth = currentSeed.getGrowthAtSeason("spring")
+		var currentSummerGrowth = currentSeed.getGrowthAtSeason("summer")
+		var currentAutumnGrowth = currentSeed.getGrowthAtSeason("autumn")
+		var currentWinterGrowth = currentSeed.getGrowthAtSeason("winter")
+		
+		currentSeedInfo.push(currentSpringGrowth);
+		currentSeedInfo.push(currentSummerGrowth);
+		currentSeedInfo.push(currentAutumnGrowth);
+		currentSeedInfo.push(currentWinterGrowth);
+		
 		if (currentSeed.harvested!==undefined){
-			currentSeedInfo.push(currentSeed.harvested);
-			currentSeedInfo.push(currentSeed.value);
-			var a = currentSeed.harvested
-			var b = currentSeed.value
-			var c = currentSeed.sell
-			var d = Math.max(currentSeed.getGrowthAtSeason("spring"),currentSeed.getGrowthAtSeason("summer"),currentSeed.getGrowthAtSeason("winter"))
-			var currentROIpd = a*b
-			currentROIpd -=c
-			currentROIpd/=d
+			var currentHarvested = currentSeed.harvested
+			var currentValue = currentSeed.value
+			var currentSeedBuy = currentSeed.buy
+			var maxGrowthDays = Math.max(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
+			var minGrowthDays = Math.min(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
+			var currentROIpd = (currentValue*currentHarvested-currentSeedBuy)/maxGrowthDays
+			currentSeedInfo.push(currentHarvested);
+			currentSeedInfo.push(currentValue);
 			currentSeedInfo.push(currentROIpd.toPrecision(5))
 		} else {
 			currentSeedInfo.push("N/A");
