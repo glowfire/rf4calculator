@@ -44,7 +44,7 @@ for (i=0;i<allRecipesListing.length;i++){
 	recipeTable.appendChild(row);
 	
 	var currentRow = allRecipesListing[i];
-	var nColumn = currentRow.length + 5
+	var nColumn = allRecipeTableHeaderArray.length + 5
 	for (j=0;j<nColumn;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
