@@ -20,7 +20,7 @@ for (i=0;i<shippingList.length;i++){
 		} else if (currentRecipe.forginglevel!==undefined){
 			currentRecipeInfo.push(currentRecipe.forginglevel)
 		}
-		currentRecipeInfo.arrayPush(currentRecipe.materials)
+		currentRecipeInfo.push(currentRecipe.materials)
 		allRecipesListing.push(currentRecipeInfo)
 	}
 }
@@ -45,7 +45,7 @@ for (i=0;i<allRecipesListing.length;i++){
 	
 	var currentRow = allRecipesListing[i];
 	var nColumn = allRecipeTableHeaderArray.length + 5
-	for (j=0;j<nColumn;j++){
+	for (j=0;j<allRecipeTableHeaderArray.length;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
 		var currentString = currentRow[j]
