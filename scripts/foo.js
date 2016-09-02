@@ -26,10 +26,11 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		allRecipesListing.push(currentRecipeInfo)
 		
 		var currentCategory = currentRecipe.category
-		if (allRecipeCategoryArray.indexOf(currentCategory)<0){
-			allRecipeCategoryArray.push(currentCategory)
-			allRecipeCategory[currentCategory]=[currentRecipeInfo]
+		if (allRecipeCategoryArray.indexOf(currentCategory)>-1){
+			allRecipeCategory[currentCategory].push(currentRecipeInfo)
 		} else {
+			allRecipeCategoryArray.push(currentCategory)
+			allRecipeCategory[currentCategory]=[]
 			allRecipeCategory[currentCategory].push(currentRecipeInfo)
 		}
 	}
