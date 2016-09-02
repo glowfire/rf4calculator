@@ -60,7 +60,7 @@ for (i=0;i<allRecipesListing.length;i++){
 	for (k=0;k<6;k++){
 		var c = document.createElement('td');
 		row.appendChild(c);
-		currentString=currentMaterials[j]
+		currentString=currentMaterials[k]
 		if (currentString!==undefined){
 			c.innerHTML=currentString
 		} else {
