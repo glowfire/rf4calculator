@@ -27,7 +27,7 @@ function appendRecipeHeader(string){
 	c.style.color="yellow"
 }
 
-allRecipeTableHeaderArray.forEach(appendSeedHeader)
+allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 
 for (i=0;i<allRecipesListing.length;i++){
 	var row = document.createElement('tr');
