@@ -37,7 +37,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("summer"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("autumn"));
 		currentSeedInfo.push(currentSeed.getGrowthAtSeason("winter"));
-		if (currentSeed.harvest!==undefined||currentSeed.value!==undefined){
+		if (currentSeed.harvested!==undefined){
 			currentSeedInfo.push(currentSeed.harvested);
 			currentSeedInfo.push(currentSeed.value);
 			var a = currentSeed.harvested
@@ -48,7 +48,11 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			currentSeedInfo.push(currentROIpd)
 		} else {
 			currentSeedInfo.push("N/A");
-			currentSeedInfo.push("N/A");
+			if (currentSeed.value!==undefined){
+				currentSeedInfo.push(currentSeed.value);
+			} else {
+				currentSeedInfo.push("N/A");
+			}
 			currentSeedInfo.push("N/A");
 		}
 		currentSeedInfo.push(currentSeed.getTotalFourSeasonsGrowth());
