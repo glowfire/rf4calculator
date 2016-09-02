@@ -83,6 +83,8 @@ productMaterialMapping={};
 normalNameList=[];
 nonUniqueNames=[];
 
+var indexNumber = 0
+
 function registerItem(item){
 	var normalName = item.name;
 	var uniqueNumber = item.getProductionLevel();
@@ -176,8 +178,9 @@ function registerItem(item){
 	}
 	
 	masterItemList[uniqueName]=item;
-	masterNameList.push([listedName,normalName,uniqueName,uniqueNumber]);
+	masterNameList.push([listedName,normalName,uniqueName,uniqueNumber,indexNumber]);
 	normalNameList.push(normalName)
+	indexNumber++
 }
 
 function listedNameComparator(a, b) {
