@@ -1,5 +1,5 @@
 var seedListing=[];
-var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Min ROI/day"];
+var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Min ROI/day","Max ROI/day"];
 
 Object.prototype.getGrowthAtSeason = function(currentSeason){
 	var seedSeasons = this.seasons
@@ -50,11 +50,14 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			var currentSeedBuy = currentSeed.buy
 			var maxGrowthDays = Math.max(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
 			var minGrowthDays = Math.min(currentSpringGrowth,currentSummerGrowth,currentAutumnGrowth,currentWinterGrowth)
-			var currentROI = (currentValue*currentHarvested-currentSeedBuy)/currentSeedBuy
-			var currentROIpd = currentROI/maxGrowthDays
+			var currentMinROI = (currentValue*currentHarvested-currentSeedBuy)/currentSeedBuy
+			var currentMinROIpd = currentMinROI/maxGrowthDays
+			var currentMaxROI = (currentValue*currentHarvested*2-currentSeedBuy*.9)/iNiM(currentSeedBuy,.9)
+			var currentMaxROIpd = currentMaxROI/minGrowthDays
 			currentSeedInfo.push(currentHarvested);
 			currentSeedInfo.push(currentValue);
-			currentSeedInfo.push((currentROIpd*100))//.toPrecision(5)+"%"
+			currentSeedInfo.push((currentMinROIpd*100).toPrecision(5)+"%")//
+			currentSeedInfo.push((currentMaxROIpd*100).toPrecision(5)+"%")//
 		} else {
 			currentSeedInfo.push("N/A");
 			if (currentSeed.value!==undefined){
@@ -62,6 +65,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			} else {
 				currentSeedInfo.push("N/A");
 			}
+			currentSeedInfo.push("N/A");
 			currentSeedInfo.push("N/A");
 		}
 		currentSeedInfo.push(currentSeed.getTotalFourSeasonsGrowth());
@@ -76,7 +80,7 @@ function springComparator(a, b) {
 	} else {return 0};
 }
 
-var fourSeasonsIndex = seedHeaderArray.length - 1
+var fourSeasonsIndex = seedHeaderArray.length
 
 function fourSeasonsComparator(a, b) {
 	if (parseInt(a[fourSeasonsIndex]) < parseInt(b[fourSeasonsIndex])){ return -1;
