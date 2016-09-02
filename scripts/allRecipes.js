@@ -45,15 +45,14 @@ allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 var materialsIndex = allRecipeTableHeaderArray.indexOf("Materials")
 var categoryIndex = allRecipeTableHeaderArray.indexOf("Category")
 
-var colString1 = "white"
-var colString2 = "pink"
+var colStringArray = ["white","pink"]
 
-var switchCat = 1
+var switchCat = 0
 var previousCat = (allRecipesListing[0])[categoryIndex]
 
 for (i=0;i<allRecipesListing.length;i++){
 	if ((allRecipesListing[i])[categoryIndex]!==previousCat){
-		switchCat*=-1
+		switchCat++
 	}
 	var row = document.createElement('tr');
 	recipeTable.appendChild(row);
@@ -65,11 +64,7 @@ for (i=0;i<allRecipesListing.length;i++){
 		if (j!==materialsIndex){
 			c.innerHTML=currentRow[j]
 		}
-		if (switchCat>0){
-			c.style.color=colString1
-		} else {
-			c.style.color=colString2
-		}
+		c.style.color=colString1[switchCat%2]
 	}
 	var currentMaterials = currentRow[materialsIndex]
 	for (k=0;k<6;k++){
@@ -81,11 +76,7 @@ for (i=0;i<allRecipesListing.length;i++){
 		} else {
 			c.innerHTML=""
 		}
-		if (switchCat>0){
-			c.style.color=colString1
-		} else {
-			c.style.color=colString2
-		}
+		c.style.color=colString1[switchCat%2]
 	}
 	previousCat = (allRecipesListing[i])[categoryIndex]
 }
