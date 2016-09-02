@@ -1,6 +1,7 @@
 # Item database for Rune Factory 4
 
-Objectives:  
+Objectives/To-do list:
+
 I. Show item stats as the game would. (TBD: Ability)
 
 II. Show item hidden stats. (TBD: Cooking effects)
