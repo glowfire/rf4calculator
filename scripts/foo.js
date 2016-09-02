@@ -26,9 +26,8 @@ for (i=0;i<sortedMasterNameList.length;i++){
 }
 
 function categoryComparator(a, b) {
-	var catIndex = 1
-	if (a[catIndex] < b[catIndex]){ return -1;
-	} else if (a[catIndex] > b[catIndex]){ return 1;
+	if (a[1] < b[1]){ return -1;
+	} else if (a[1] > b[1]){ return 1;
 	} else {return 0};
 }
 
