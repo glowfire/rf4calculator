@@ -54,7 +54,7 @@ for (i=0;i<sortedMasterNameList.length;i++){
 			var currentROIpd = currentROI/maxGrowthDays
 			currentSeedInfo.push(currentHarvested);
 			currentSeedInfo.push(currentValue);
-			currentSeedInfo.push((currentROIpd*100).toPrecision(5)+"%")
+			currentSeedInfo.push((currentROIpd*100).toPrecision(5))//+"%"
 		} else {
 			currentSeedInfo.push("N/A");
 			if (currentSeed.value!==undefined){
@@ -76,7 +76,7 @@ function springComparator(a, b) {
 	} else {return 0};
 }
 
-var fourSeasonsIndex = seedHeaderArray.length
+var fourSeasonsIndex = seedHeaderArray.length - 1
 
 function fourSeasonsComparator(a, b) {
 	if (parseInt(a[fourSeasonsIndex]) < parseInt(b[fourSeasonsIndex])){ return -1;
