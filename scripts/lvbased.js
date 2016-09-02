@@ -68,7 +68,7 @@ function getPriceTable(){
 	}
 	
 	if (currentItem.harvested!==undefined){
-		headerArray.push("Crop Profit<br>(no discounts)")
+		headerArray.push("Crop Profit<br>(one harvest)")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
 		
 		var currentSeed = currentItem
