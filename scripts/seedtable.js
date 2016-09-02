@@ -1,5 +1,5 @@
 var seedListing=[];
-var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Minimum Profit","Min ROI/day"];
+var seedHeaderArray=["Seed","Buy Price","Spring Growth","Summer Growth","Autumn Growth","Winter Growth","Harvested","Value","Minimum Profit<br>(one harvest)","Min ROI/day"];
 
 Object.prototype.getGrowthAtSeason = function(currentSeason){
 	var seedSeasons = this.seasons
