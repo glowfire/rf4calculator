@@ -17,7 +17,7 @@ for (i=0;i<shippingList.length;i++){
 		if (currentObject.buy!==undefined){
 			currentObjectInfo.push(currentObject.buy);
 		} else {
-			currentObjectInfo.push("Not Buyable");
+			currentObjectInfo.push("N/A");
 		}
 		currentObjectInfo.push(currentObject.flavourtext);
 		objectListing.push(currentObjectInfo)
@@ -48,6 +48,7 @@ function appendObjectHeader(string){
 	var c = document.createElement('td');
 	objectTableHeader.appendChild(c);
 	c.innerHTML=string;
+	c.style.color="yellow"
 }
 
 objectHeaderArray.forEach(appendObjectHeader);
@@ -65,6 +66,9 @@ for (i=0;i<objectListing.length;i++){
 		var c = document.createElement('td');
 		row.appendChild(c);
 		c.innerHTML=currentRow[j];
+		if (isEven(j)){
+			c.style.color="lightgray"
+		}
 	}
 }
 
