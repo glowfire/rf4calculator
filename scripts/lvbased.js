@@ -23,7 +23,7 @@ function getPriceTable(){
 	var ROIwDiscArray = [];
 	var ROIwDiscArray20 = [];
 	
-	var seedROIarray = [];
+	var seedProfitArray = [];
 	var seedROIperDayArray = [];
 	
 	var opportunityArray = [];
@@ -68,7 +68,7 @@ function getPriceTable(){
 	}
 	
 	if (currentItem.harvested!==undefined){
-		headerArray.push("Return On<br>Investment")
+		headerArray.push("Crop Profit<br>(no discounts)")
 		headerArray.push("ROI/Day<br>(Normal Growth)")
 		
 		var currentSeed = currentItem
@@ -78,9 +78,10 @@ function getPriceTable(){
 			
 		for (i=0;i<maxLv;i++){
 			var currentTotalValue = currentSeed.harvested*getSellPriceAtLevel(currentCrop,i+1)
-			var currentROI = (currentTotalValue-currentSeed.buy)/currentSeed.buy
+			var currentProfit = currentTotalValue-currentSeed.buy
+			var currentROI = (currentProfit)/currentSeed.buy
 			var currentROIperDay = currentROI/currentSeed.growth
-			seedROIarray.push(currentROI)
+			seedROIarray.push(currentProfit)
 			seedROIperDayArray.push(currentROIperDay)
 		}
 	}
@@ -107,7 +108,7 @@ function getPriceTable(){
 	priceTableEntry.arrayPush(ROIwDiscArray)
 	priceTableEntry.arrayPush(ROIwDiscArray20)
 	
-	priceTableEntry.arrayPush(seedROIarray)
+	priceTableEntry.arrayPush(seedProfitArray)
 	priceTableEntry.arrayPush(seedROIperDayArray)
 	
 	//priceTableEntry.arrayPush(opportunityArray)
