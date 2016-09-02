@@ -82,6 +82,7 @@ masterNameList=[];
 productMaterialMapping={};
 normalNameList=[];
 nonUniqueNames=[];
+arrayOfCategories=[]
 
 var indexNumber = 0
 
@@ -100,6 +101,7 @@ function registerItem(item){
 	var itemCategory = item.category
 	
 	if (masterCategoryList[itemCategory]!==undefined){
+		arrayOfCategories.push(itemCategory)
 		masterCategoryList[itemCategory].membershipList.push(item)
 		if (masterCategoryList[itemCategory].minSell>item.sell){
 			masterCategoryList[itemCategory].minSell=item.sell
