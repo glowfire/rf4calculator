@@ -2,8 +2,10 @@ var objectListing=[];
 
 var objectHeaderArray = ["Name","Category","Sell Price","Buy Price","Flavour Text"]
 
-for (i=0;i<masterNameList.length;i++){
-	var currentNameSet = masterNameList[i];
+var shippingList = masterNameList.sort(indexComparator);
+
+for (i=0;i<shippingList.length;i++){
+	var currentNameSet = shippingList[i];
 	var currentUniqueName = currentNameSet[2];
 	var currentObject = masterItemList[currentUniqueName]
 	var previousName
