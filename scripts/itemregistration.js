@@ -195,6 +195,12 @@ function levelComparator(a, b) {
    } else {return 0};
 }
 
+function indexComparator(a, b) {
+   if (parseInt(a[4]) < parseInt(b[4])){ return -1;
+   } else if (parseInt(a[4]) > parseInt(b[4])){ return 1;
+   } else {return 0};
+}
+
 function canProduceAtVaryingLevels(item){
 	var foo=false;
     
