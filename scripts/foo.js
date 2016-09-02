@@ -1,5 +1,5 @@
 var allRecipesListing = []
-var allRecipeTableHeaderArray = ["Name","Category","Sell Price"]
+var allRecipeTableHeaderArray = ["Name","Category","Sell Price","Recipe Level"]
 
 for (i=0;i<sortedMasterNameList.length;i++){
 	var currentNameSet = sortedMasterNameList[i];
@@ -11,6 +11,15 @@ for (i=0;i<sortedMasterNameList.length;i++){
 		currentRecipeInfo.push(currentRecipe.name)
 		currentRecipeInfo.push(currentRecipe.category)
 		currentRecipeInfo.push(currentRecipe.sell)
+		if (currentRecipe.cookinglevel!==undefined){
+			currentRecipeInfo.push(currentRecipe.cookinglevel)
+		} else if (currentRecipe.chemistrylevel!==undefined){
+			currentRecipeInfo.push(currentRecipe.chemistrylevel)
+		} else if (currentRecipe.craftinglevel!==undefined){
+			currentRecipeInfo.push(currentRecipe.craftinglevel)
+		} else if (currentRecipe.forginglevel!==undefined){
+			currentRecipeInfo.push(currentRecipe.forginglevel)
+		}
 		allRecipesListing.push(currentRecipeInfo)
 	}
 }
