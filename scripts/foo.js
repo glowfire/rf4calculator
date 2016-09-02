@@ -33,13 +33,6 @@ for (i=0;i<sortedMasterNameList.length;i++){
 	}
 }
 
-allRecipeCategoryArray = allRecipeCategoryArray.sort
-
-for (j in allRecipeCategory){
-	var newSubOrder=j.sort(levelComparator)
-	allRecipeCategory[j]=newSubOrder
-}
-
 function categoryComparator(a, b) {
 	if (a[1].toLowerCase() < b[1].toLowerCase()){ return -1;
 	} else if (a[1].toLowerCase() > b[1].toLowerCase()){ return 1;
@@ -50,6 +43,13 @@ function levelComparator(a, b) {
 	if (a[3].toLowerCase() < b[3].toLowerCase()){ return -1;
 	} else if (a[3].toLowerCase() > b[3].toLowerCase()){ return 1;
 	} else {return 0;}
+}
+
+allRecipeCategoryArray = allRecipeCategoryArray.sort
+
+for (j in allRecipeCategory){
+	var newSubOrder=j.sort(levelComparator)
+	allRecipeCategory[j]=newSubOrder
 }
 
 var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
