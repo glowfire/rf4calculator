@@ -1,5 +1,7 @@
 var objectListing=[];
 
+var objectHeaderArray = ["Name","Category","Sell Price","Buy Price","Flavour Text"]
+
 for (i=0;i<masterNameList.length;i++){
 	var currentNameSet = masterNameList[i];
 	var currentUniqueName = currentNameSet[2];
@@ -8,8 +10,8 @@ for (i=0;i<masterNameList.length;i++){
 	if (currentObject.sell!==undefined&&currentObject.name!=previousName){
 		var currentObjectInfo = [];
 		currentObjectInfo.push(currentObject.name);
+		currentObjectInfo.push(currentObject.category);
 		currentObjectInfo.push(currentObject.sell);
-		currentObjectInfo.push(currentObject.pricemultiplier);
 		if (currentObject.buy!==undefined){
 			currentObjectInfo.push(currentObject.buy);
 		} else {
@@ -27,7 +29,7 @@ function fooComparator(a, b) {
 	} else {return 0};
 }
 
-var sortedObjectListBySell = objectListing.sort(fooComparator);
+//var sortedObjectListBySell = objectListing.sort(fooComparator);
 
 var objectTable = document.createElement("table");
 //document.getElementById('otherInfo').appendChild(objectTable);
@@ -40,20 +42,15 @@ function appendObjectHeader(string){
 	c.innerHTML=string;
 }
 
-appendObjectHeader("Number");
-appendObjectHeader("Name");
-appendObjectHeader("Sell Price");
-appendObjectHeader("Price Multiplier");
-appendObjectHeader("Buy Price");
-appendObjectHeader("Flavour Text");
+objectHeaderArray.forEach(appendObjectHeader);
 
 for (i=0;i<objectListing.length;i++){
 	var row = document.createElement('tr');
 	objectTable.appendChild(row);
 	
-	var c = document.createElement('td');
-	row.appendChild(c);
-	c.innerHTML=i+1;
+	//var c = document.createElement('td');
+	//row.appendChild(c);
+	//c.innerHTML=i+1;
 	
 	var currentRow = objectListing[i];
 	for (j=0;j<currentRow.length;j++){
