@@ -55,21 +55,10 @@ function levelComparator(a, b) {
 	} else {return 0;}
 }
 
-allRecipeCategoryArray = allRecipeCategoryArray.sort
-
 for (i=0;i<arrayOfCategories.length;i++){
 	var currentCategoryEntries = unsortedRecipeByCategory[i]
 	var newSubOrder=currentCategoryEntries.sort(levelComparator)
 	masterRecipeByCategory.arrayPush(newSubOrder)
-}
-
-var sortedRecipeListByCategory = allRecipesListing.sort(categoryComparator);
-
-var sortedRecipeListByCategoryThenLevel = [];
-
-for (i=0;i<allRecipeCategoryArray.length;i++){
-	var currentCategory = allRecipeCategoryArray[i]
-	sortedRecipeListByCategoryThenLevel.push(allRecipeCategory[currentCategory])
 }
 
 var recipeTable = document.createElement("table");
