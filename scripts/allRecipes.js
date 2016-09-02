@@ -64,7 +64,7 @@ for (i=0;i<allRecipesListing.length;i++){
 		if (j!==materialsIndex){
 			c.innerHTML=currentRow[j]
 		}
-		c.style.color=colStringArray[switchCat%2]
+		c.style.color=colStringArray[switchCat%colStringArray.length]
 	}
 	var currentMaterials = currentRow[materialsIndex]
 	for (k=0;k<6;k++){
@@ -76,7 +76,7 @@ for (i=0;i<allRecipesListing.length;i++){
 		} else {
 			c.innerHTML=""
 		}
-		c.style.color=colStringArray[switchCat%2]
+		c.style.color=colStringArray[switchCat%colStringArray.length]
 	}
 	previousCat = (allRecipesListing[i])[categoryIndex]
 }
