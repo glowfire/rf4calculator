@@ -45,7 +45,7 @@ for (i=0;i<allRecipesListing.length;i++){
 	
 	var currentRow = allRecipesListing[i];
 	var nColumn = allRecipeTableHeaderArray.length + 5
-	for (j=0;j<allRecipeTableHeaderArray.length;j++){
+	for (j=0;j<nColumn;j++){
 		var c = document.createElement('td');
 		row.appendChild(c);
 		var currentString = currentRow[j]
