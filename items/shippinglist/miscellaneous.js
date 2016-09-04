@@ -136,7 +136,7 @@ registerItem({ // unconfirmed
 	"sell":120,
 	"buy":2400,
 	"weapon":"Axe/Hammer",
-	"flavourtext":"???",
+	"flavourtext":"Spinning lunge attack. Keep pressing the button to increase the number of spins. Just don't make yourself dizzy!",
 	"pricemultiplier":"X" /// unknown
 	// cannot be used as material
 })
@@ -586,7 +586,7 @@ registerItem({ // unconfirmed
 	"category":"Magic",
 	"sell":330,
 	"buy":6600,
-	"flavourtext":"???",
+	"flavourtext":"Hurls giant fireballs that cause explosions on impact, damaging their surroundings.",
 	"pricemultiplier":"E" /// unknown
 	// cannot be used as material
 })
