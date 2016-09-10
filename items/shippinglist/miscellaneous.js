@@ -125,7 +125,7 @@ registerItem({ // unconfirmed
 	"sell":285,
 	"buy":5700,
 	"weapon":"Axe/Hammer",
-	"flavourtext":"???",
+	"flavourtext":"Hit the ground and cause an earthquake. Press the button for multiple hits",
 	"pricemultiplier":"X" /// unknown
 	// cannot be used as material
 })
@@ -268,7 +268,7 @@ registerItem({ // unconfirmed
 	"sell":85,
 	"buy":1700,
 	"weapon":"Dual Blades",
-	"flavourtext":"???",
+	"flavourtext":"Stab, twist and pull -- like a psychotic mantra. Simple, but effective.",
 	"pricemultiplier":"X" /// unknown
 	// cannot be used as material
 })
