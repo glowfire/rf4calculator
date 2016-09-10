@@ -2106,7 +2106,7 @@ registerItem({
 	"flavourtext":"Dried and grilled sunsquid. Savory, but easily burned.",
 	"cookinglevel":78,
 	"materials":["Sunsquid","Sour Drop"],
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C3",
 	"cookingeffects":{},
 	"category":"Frying Pan"
 })
@@ -2401,7 +2401,7 @@ registerItem({
 	"flavourtext":"Salted and grilled snapper. The fresher it is, the better it tastes.",
 	"cookinglevel":51,
 	"materials":["Snapper","Sour Drop"],
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C2",
 	"cookingeffects":{},
 	"category":"Frying Pan"
 })
@@ -3374,7 +3374,7 @@ registerItem({
 	"flavourtext":"Freshly sliced taimen. Eat it with soy sauce.",
 	"cookinglevel":79,
 	"materials":["Taimen"],
-	"pricemultiplier":"C1",
+	"pricemultiplier":"C3",
 	"category":"Knife",
 	"cookingeffects":{}
 })
