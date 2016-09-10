@@ -125,7 +125,7 @@ registerItem({ // unconfirmed
 	"sell":285,
 	"buy":5700,
 	"weapon":"Axe/Hammer",
-	"flavourtext":"Hit the ground and cause an earthquake. Press the button for multiple hits",
+	"flavourtext":"Hit the ground and cause an earthquake. Press the button for multiple hits.",
 	"pricemultiplier":"X" /// unknown
 	// cannot be used as material
 })
