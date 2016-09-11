@@ -55,6 +55,7 @@ var currentItem
 var currentSellPrice
 var currentBuyPrice
 var currentBuyPriceDiscount
+var currentBuyPriceDiscount20
 var currentRecipeListing = []
 var currentSpecificRecipeListing = []
 var currentGeneralRecipeListing = []
