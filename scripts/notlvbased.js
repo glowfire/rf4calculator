@@ -34,6 +34,7 @@ function showBasicStats(){
 	if (currentItem.buy!==undefined){
 		currentBuyPrice=currentItem.buy;
 		currentBuyPriceDiscount=Math.ceil(iNiM(currentBuyPrice,.9));
+		currentBuyPriceDiscount20=Math.ceil(iNiM(currentBuyPrice,.8));
 	}
 
 	var priceLine = document.createElement('p');
@@ -43,7 +44,8 @@ function showBasicStats(){
 	priceLine.appendChild(node);
 	if (currentItem.buy!==undefined){
 		priceLine.innerHTML+="<br>Base Buy Price: "+currentBuyPrice+" G";
-		priceLine.innerHTML+=" (with 10% discount: "+currentBuyPriceDiscount+" G)";
+		priceLine.innerHTML+="<br>Discounted 10% Buy Price: "+currentBuyPriceDiscount+" G";
+		priceLine.innerHTML+="<br>Discounted 20% Buy Price: "+currentBuyPriceDiscount20+" G";
 	}
 }
 
