@@ -67,7 +67,7 @@ for (i=0;i<objectListing.length;i++){
 		row.appendChild(c);
 		c.innerHTML=currentRow[j];
 		if (i%2==0){
-			c.style.color="pink"
+			c.style.color="hotpink"
 		}
 	}
 }
