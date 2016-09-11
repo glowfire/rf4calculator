@@ -45,7 +45,7 @@ allRecipeTableHeaderArray.forEach(appendRecipeHeader)
 var materialsIndex = allRecipeTableHeaderArray.indexOf("Materials")
 var categoryIndex = allRecipeTableHeaderArray.indexOf("Category")
 
-var colStringArray = ["white","hotpink"]
+var colStringArray = ["white","plum"]
 
 var switchCat = 0
 var previousCat = (allRecipesListing[0])[categoryIndex]
