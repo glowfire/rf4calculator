@@ -34,7 +34,7 @@ for (i=0;i<nonUniqueNames.length;i++){
 
 var dropdownInput = document.createElement("input");
 dropdownInput.setAttribute("list","itemSelect")
-dropdownInput.setAttribute("name","itemSelect")
+dropdownInput.setAttribute("name","sortedMasterNameList")
 document.getElementById("itemSelectionDiv").appendChild(dropdownInput);
 
 var dropdownList = document.createElement("datalist");
