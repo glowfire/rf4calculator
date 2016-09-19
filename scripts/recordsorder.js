@@ -32,7 +32,7 @@ for (i=0;i<nonUniqueNames.length;i++){
     }
 }
 
-var dropdownList = document.createElement("select");
+var dropdownList = document.createElement("datalist");
 dropdownList.setAttribute("id","itemSelect")
 document.getElementById("itemSelectionDiv").appendChild(dropdownList);
 
