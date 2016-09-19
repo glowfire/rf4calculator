@@ -32,12 +32,7 @@ for (i=0;i<nonUniqueNames.length;i++){
     }
 }
 
-var dropdownInput = document.createElement("input");
-dropdownInput.setAttribute("list","itemSelect")
-dropdownInput.setAttribute("name","sortedMasterNameList")
-document.getElementById("itemSelectionDiv").appendChild(dropdownInput);
-
-var dropdownList = document.createElement("datalist");
+var dropdownList = document.createElement("select");
 dropdownList.setAttribute("id","itemSelect")
 document.getElementById("itemSelectionDiv").appendChild(dropdownList);
 
